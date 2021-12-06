@@ -8,5 +8,12 @@
 
 import Foundation
 
-print("Hello, World!")
+let iceCreamImage = "***********"
 
+func drawIceCreamImage() {
+    for _ in 1...8 {
+        print("\(iceCreamImage)")
+    }
+}
+
+drawIceCreamImage()
