@@ -9,6 +9,7 @@
 import Foundation
 
 let iceCreamImage = "***********"
+let stickImage = "    | |"
 
 func drawIceCreamImage() {
     for _ in 1...8 {
@@ -16,4 +17,11 @@ func drawIceCreamImage() {
     }
 }
 
+func drawStickImage() {
+    for _ in 1...4 {
+        print("\(stickImage)")
+    }
+}
+
 drawIceCreamImage()
+drawStickImage()
