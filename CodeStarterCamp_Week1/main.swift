@@ -44,5 +44,5 @@ func rod(count2: Int){
     print("    | |    ")
 }
 for count2 in 1...4{
-    rod(count2: count2)
+    rod(count2: count2) 
 }
