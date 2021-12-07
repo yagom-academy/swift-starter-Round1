@@ -12,4 +12,9 @@ struct IceCreamFactory {
         let iceCream = IceCream(size: size, shape: shape)
         return iceCream
     }
+    
+    func makeStick(size: Int, shape: String) -> Stick {
+        let stick = Stick(size: size, shape: shape)
+        return stick
+    }
 }
