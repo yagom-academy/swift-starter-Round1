@@ -17,4 +17,17 @@ struct IceCreamMarket {
         static let size = 4
         static let shape = "    | |    "
     }
+    
+    private let iceCream = IceCreamFactory().makeIceCream(size: IceCreamOption.size, shape: IceCreamOption.shape)
+    private let stick = IceCreamFactory().makeStick(size: StickOption.size, shape: StickOption.shape)
+
+    func giveIceCream() {
+        for _ in 1 ... iceCream.size {
+            print(iceCream.shape)
+        }
+        
+        for _ in 1 ... stick.size {
+            print(stick.shape)
+        }
+    }
 }
