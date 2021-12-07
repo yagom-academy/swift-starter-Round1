@@ -15,6 +15,9 @@ for count in 1...6 {
 }
 
 func printMuYaHo(num: Int) {
+    print(1, 2, 3, separator: ", ", terminator: " ")
+    print("다 함께", terminator: "!, ")
     print(num, "번째 무야호!")
+    
 }
 
