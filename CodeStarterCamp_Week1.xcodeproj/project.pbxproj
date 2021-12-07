@@ -65,13 +65,21 @@
 		34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {
 			isa = PBXGroup;
 			children = (
+				A1B173BE275F4DC0006C4D96 /* IceCream */,
 				34811DAE274B938F00A1E994 /* main.swift */,
+			);
+			path = CodeStarterCamp_Week1;
+			sourceTree = "<group>";
+		};
+		A1B173BE275F4DC0006C4D96 /* IceCream */ = {
+			isa = PBXGroup;
+			children = (
 				A1B173B6275F4644006C4D96 /* IceCream.swift */,
 				A1B173B8275F4683006C4D96 /* Stick.swift */,
 				A1B173BA275F46A2006C4D96 /* IceCreamFactory.swift */,
 				A1B173BC275F4700006C4D96 /* IceCreamMarket.swift */,
 			);
-			path = CodeStarterCamp_Week1;
+			path = IceCream;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
