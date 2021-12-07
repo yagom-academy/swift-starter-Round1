@@ -10,6 +10,7 @@
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
 		A1B173B7275F4644006C4D96 /* IceCream.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B173B6275F4644006C4D96 /* IceCream.swift */; };
 		A1B173B9275F4683006C4D96 /* Stick.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B173B8275F4683006C4D96 /* Stick.swift */; };
+		A1B173BB275F46A2006C4D96 /* IceCreamFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B173BA275F46A2006C4D96 /* IceCreamFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A1B173B6275F4644006C4D96 /* IceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCream.swift; sourceTree = "<group>"; };
 		A1B173B8275F4683006C4D96 /* Stick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stick.swift; sourceTree = "<group>"; };
+		A1B173BA275F46A2006C4D96 /* IceCreamFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				34811DAE274B938F00A1E994 /* main.swift */,
 				A1B173B6275F4644006C4D96 /* IceCream.swift */,
 				A1B173B8275F4683006C4D96 /* Stick.swift */,
+				A1B173BA275F46A2006C4D96 /* IceCreamFactory.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B173B9275F4683006C4D96 /* Stick.swift in Sources */,
+				A1B173BB275F46A2006C4D96 /* IceCreamFactory.swift in Sources */,
 				A1B173B7275F4644006C4D96 /* IceCream.swift in Sources */,
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
 			);
