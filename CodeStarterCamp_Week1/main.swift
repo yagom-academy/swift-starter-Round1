@@ -1,12 +1,26 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
+func printIceCream(){
+    for _ in 1...8{
+        for _ in 1...11{
+            print("*", terminator: "")
+        }
+        print("")
+    }
+}
 
-import Foundation
+func printBar(){
+    for _ in 1...4{
+        for _ in 1...4{
+            print(" ", terminator: "")
+        }
+        for _ in 1...1{
+            print("| |", terminator: "")
+        }
+        print("")
+}
+}
 
-print("Hello, World!")
+printStar()
+printBar()
+
+
 
