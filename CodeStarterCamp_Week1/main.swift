@@ -11,18 +11,18 @@ import Foundation
 var iceBody = "***********"
 var stick = "    | |  "
 
-func toMakeIce() {
+func makeIceCream() {
   for _ in 1...8 {
     print(iceBody)
   }
 }
 
-func toMakeStick() {
+func makeStick() {
   for _ in 1...4 {
     print(stick)
   }
 }
 
-toMakeIce()
-toMakeStick()
+makeIceCream()
+makeStick()
 
