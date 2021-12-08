@@ -8,6 +8,34 @@
 
 import Foundation
 
-print("Hello, World!")
+// 첫번째 방법
+func drawIceCream() {
+    for _ in 1...8 {
+        print("***********")
+    }
+}
 
-print("Hello, i'm marisol")
+func drawBar() {
+    for _ in 1...4 {
+        print("    | |")
+    }
+}
+
+drawIceCream()
+drawBar()
+
+// 두번째 방법
+func drawIceCream2() {
+    for _ in 1...8 {
+        print("*****", "*****", separator: "*")
+    }
+}
+
+func drawBar2() {
+    for _ in 1...4 {
+        print("    ", "    ", separator: "| |")
+    }
+}
+
+drawIceCream2()
+drawBar2()
