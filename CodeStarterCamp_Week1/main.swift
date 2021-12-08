@@ -29,4 +29,3 @@ func printStick() {
         print("    ||")
     }
 }
-
