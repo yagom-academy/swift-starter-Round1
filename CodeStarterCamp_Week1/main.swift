@@ -8,5 +8,21 @@
 
 import Foundation
 
-print("Hello, World!")
+func iceCreamGenerator() {
+    for _ in 1...8 {
+        let result = "***********"
+        print("\(result)")
+    }
+}
+
+func iceCreamStickGenerator() {
+    for _ in 1...4 {
+        let result = "    | |    "
+        print("\(result)")
+    }
+}
+
+iceCreamGenerator()
+iceCreamStickGenerator()
+
 
