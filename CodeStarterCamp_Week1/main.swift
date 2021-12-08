@@ -9,37 +9,33 @@
 import Foundation
 
 // 첫번째 방법
-
-func iceCream() {
+func drawIceCream() {
     for _ in 1...8 {
         print("***********")
     }
 }
 
-func bar() {
+func drawBar() {
     for _ in 1...4 {
         print("    | |")
     }
 }
 
-iceCream()
-bar()
-
-
+drawIceCream()
+drawBar()
 
 // 두번째 방법
-
-func iceCream2() {
+func drawIceCream2() {
     for _ in 1...8 {
         print("*****", "*****", separator: "*")
     }
 }
 
-func bar2() {
+func drawBar2() {
     for _ in 1...4 {
         print("    ", "    ", separator: "| |")
     }
 }
 
-iceCream2()
-bar2()
+drawIceCream2()
+drawBar2()
