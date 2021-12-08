@@ -10,19 +10,18 @@ import Foundation
 
 func iceCreamGenerator() {
     for _ in 1...8 {
-        let result = "***********"
-        print("\(result)")
+        let body = "***********"
+        print("\(body)")
+    }
+}
+func iceCreameStickGenerator() {
+    for _ in 1...4 {
+        let stick = "    | |    "
+        print("\(stick)")
     }
 }
 
-func iceCreamStickGenerator() {
-    for _ in 1...4 {
-        let result = "    | |    "
-        print("\(result)")
-    }
-}
+
 
 iceCreamGenerator()
-iceCreamStickGenerator()
-
-
+iceCreameStickGenerator()
