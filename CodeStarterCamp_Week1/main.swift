@@ -1,4 +1,4 @@
-func printIceCream(){
+func iceCream(){
     for _ in 1...8{
         for _ in 1...11{
             print("*", terminator: "")
@@ -7,20 +7,19 @@ func printIceCream(){
     }
 }
 
-func printBar(){
+func iceCreamBar(){
     for _ in 1...4{
         for _ in 1...4{
             print(" ", terminator: "")
         }
-        for _ in 1...1{
-            print("| |", terminator: "")
-        }
-        print("")
+        print("| |")
 }
+    print("")
 }
 
-printStar()
-printBar()
+iceCream()
+iceCreamBar()
+
 
 
 
