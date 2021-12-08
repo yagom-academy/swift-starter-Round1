@@ -29,9 +29,6 @@ func makeIcecreamBar(){
         }
  
 }                                     // 결론: 띄어쓰기를 4번 반복하고 | |를                                        쓴뒤에 줄바꿈을 시행한다를 5번 반복한다.
-    
 // 가장 중요시 생각한점:최대한 반복은 for문을 통해 해결하려함
-
-
 makeIcecreamBody()
 makeIcecreamBar()
