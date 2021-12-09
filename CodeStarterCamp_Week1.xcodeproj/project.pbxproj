@@ -29,11 +29,11 @@
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A16BC7782761B9B900E663D8 /* FlowChart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FlowChart.png; sourceTree = "<group>"; };
 		A1B173B6275F4644006C4D96 /* IceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCream.swift; sourceTree = "<group>"; };
 		A1B173B8275F4683006C4D96 /* Stick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stick.swift; sourceTree = "<group>"; };
 		A1B173BA275F46A2006C4D96 /* IceCreamFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamFactory.swift; sourceTree = "<group>"; };
 		A1B173BC275F4700006C4D96 /* IceCreamMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamMarket.swift; sourceTree = "<group>"; };
-		A1B173C0275F5CB2006C4D96 /* 무제.drawio */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "무제.drawio"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 		A1B173BF275F5CB2006C4D96 /* FlowChart */ = {
 			isa = PBXGroup;
 			children = (
-				A1B173C0275F5CB2006C4D96 /* 무제.drawio */,
+				A16BC7782761B9B900E663D8 /* FlowChart.png */,
 			);
 			path = FlowChart;
 			sourceTree = "<group>";
