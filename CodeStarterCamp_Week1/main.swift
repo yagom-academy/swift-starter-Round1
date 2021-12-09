@@ -25,4 +25,5 @@ makeIcecreamBar()
 
 makePepero(lengthOfBody: 6, body: "|0|", lengthOfBar: 4)
 makePepero(lengthOfBody: 7, body: "***", topping: "&", lengthOfBar: 3)
+makePepero(lengthOfBody: 9, body: "|0|", topping: "*", lengthOfBar: 4)
 makePepero()

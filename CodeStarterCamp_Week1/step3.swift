@@ -16,16 +16,11 @@ func makeBar(length : Int){
 func makeBody(body : String, topping: String, length: Int) {
     for count in 1...length {
         if count % 2 == 0 {
-            switch body {
-                case "|0|":
-                    print(" \(body)")
-                default:
                     print(" \(body)\(topping)")
-            }
         }else {
             switch body {
                 case "|0|":
-                    print(" | |")
+                    print("\(topping)| |")
                 default:
                     print("\(topping)\(body)")
             }
