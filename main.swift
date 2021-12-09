@@ -8,16 +8,19 @@
 
 import Foundation
 
-func printIceCream(star: String) {
-    for star in 0...7 {
-    print(star, "**********")
+func printIceCream() {
+    for _ in 0...7 {
+    print("**********")
+}
 }
 
-func printIceCreamBar(vertical: String) {
-    for vertical in 0...3 {
-    print(vertical, "   | |    ")
+func printIceCreamBar() {
+    for _ in 0...3 {
+    print("   | |    ")
 }
 
+}
+printIceCream()
+printIceCreamBar()
 
-printIceCream(star: <#T##String#>)
-printIceCreamBar(vertical: <#T##String#>)
+
