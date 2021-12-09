@@ -9,7 +9,7 @@
 import Foundation
 
 // Step 3 : 주문에 따른 빼뺴로 그리기
-func mainName(name: String) {
+func orderName(name: String) {
     print("\(name)")
 }
 
@@ -29,26 +29,23 @@ func stickLengthOrder(stickLength: Int) {
     print(" 막대길이: ","\(stickLength)\n")
 }
 
-
-
-func drawpepero() {
-    for _ in 1...10{
-        print("  ***   ")
-    }
-    print("\n")
-}
-
-func drawStick() {
-    for _ in 1...4{
-        print("  | |    \n")
+func drawpepero(lengthOrder: Int, bodyOrder:String ,toppingOrder:String) {
+    for _ in 1...lengthOrder{
+        print("\(bodyOrder)")
     }
 }
 
-mainName(name: " < 정보 > ")
-lengthOrder(length: 3)
+func drawStick(stickLengthOrder:Int) {
+    for _ in 1...stickLengthOrder{
+        print("  | |    ")
+    }
+}
+
+orderName(name: " < 정보 > ")
+lengthOrder(length: 10)
 bodyOrder(body: "***")
 toppingOrder(topping: "")
 stickLengthOrder(stickLength: 4)
-drawpepero()
-drawStick()
+drawpepero(lengthOrder: 10 , bodyOrder: "  ***  " ,toppingOrder: " ")
+drawStick(stickLengthOrder: 4)
 //실행  예시2
