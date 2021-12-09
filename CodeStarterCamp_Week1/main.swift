@@ -38,7 +38,7 @@ func printInfo(bodyLength: Int, bodyShape: String, topping: String, stickLength:
 }
 
 func drawIceCream(bodyLength: Int, bodyShape: String, topping: String) {
-    for i in 1...bodyLength {
+    for i in 0..<bodyLength {
         print(makeBodyShape(iteration: i, bodyShape: bodyShape, topping: topping))
     }
 }
@@ -75,8 +75,8 @@ func makeBodyShape(iteration: Int, bodyShape: String, topping: String) -> String
 
 func drawStick(body: String, length: Int) {
     let freeSpace: Int = ((body.count+1) / 2) - 1
-    for _ in 1...length {
-        for _ in 1...freeSpace {
+    for _ in 0..<length {
+        for _ in 0..<freeSpace {
             print(" ", terminator: "")
         }
         print("| |")
