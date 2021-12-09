@@ -7,13 +7,13 @@
 
 import Foundation
 
-func drawIcecream(size: Int) {
+private func drawIcecream(size: Int) {
     for _ in 0..<size {
         print("***********")
     }
 }
 
-func drawIcecreamStick(length: Int) {
+private func drawIcecreamStick(length: Int) {
     for _ in 0..<length {
         print("    | |")
     }
@@ -23,7 +23,7 @@ drawIcecreamStick(length: 4)
 
 print("===========method 2===============")
 // method 2
-func drawIcecream(width: Int, height: Int) {
+private func drawIcecream(width: Int, height: Int) {
     var icecreamWidth = ""
     for _ in 0..<width {
         icecreamWidth += "*"
@@ -33,7 +33,7 @@ func drawIcecream(width: Int, height: Int) {
     }
 }
 
-func drawIcecreamStick(height: Int) {
+private func drawIcecreamStick(height: Int) {
     for _ in 0..<height {
         print("    | |")
     }
