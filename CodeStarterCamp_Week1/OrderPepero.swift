@@ -9,11 +9,11 @@ import Foundation
 
 var bodyLengthValue = 6
 var bodyValue = "\(bodyInsideValue)"
-var toppingValue = " "
+var toppingValue = "$"
 var stickLengthValue = 4
 
-var bodyInsideValue = "|0|"
-var stickValue = " | |"
+var bodyInsideValue = "***"
+let stickValue = " | |"
 
 var toppingPositionChanger = 0
 
@@ -78,3 +78,32 @@ func drawPepero(body: String, topping: String, bodyLength: Int, stickLength: Int
     drawPeperoBody(length: bodyLength)
     drawPeperoStick(length: stickLength)
 }
+// 두번째 방법
+
+//func drawPepero(body: String = " ", topping: String) {
+//    if toppingPositionChanger % 2 == 0 {
+//        print("\(topping)\(body)")
+//        toppingPositionChanger += 1
+//    } else {
+//        print(" \(body)\(topping)")
+//        toppingPositionChanger += 1
+//    }
+//}
+//
+//func drawPeperoBody(length: Int, body: String, topping: String) {
+//    for _ in 0..<length {
+//        drawPepero(body: body, topping: topping)
+//    }
+//}
+//
+//func drawPeperoStick(length: Int) {
+//    for _ in 0..<length {
+//        print("\(stickValue)")
+//    }
+//}
+//
+//func drawPepero(body: String, topping: String, stickLength: Int, bodyLenth: Int) {
+//    printPeperoMenuInformation()
+//    drawPeperoBody(length: bodyLenth, body: body, topping: topping)
+//    drawPeperoStick(length: stickLength)
+//}
