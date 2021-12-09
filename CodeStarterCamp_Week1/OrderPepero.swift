@@ -39,7 +39,14 @@ enum Menu {
         }
     }
 }
-
+// 메뉴정보
+func printPeperoMenuInformation() {
+    print("\(Menu.information.name)")
+    print("\(Menu.length.name): \(bodyLengthValue)")
+    print("\(Menu.body.name): \(bodyValue)")
+    print("\(Menu.topping.name): \(toppingValue)")
+    print("\(Menu.stickLength.name): \(stickLengthValue)\n")
+}
 // 몸통, 토핑
 func drawPepero(body: String, topping: String) {
     if toppingPositionChanger % 2 == 0 {
@@ -66,6 +73,7 @@ func drawPeperoStick(length: Int) {
 }
 // 최종 실행
 func drawPepero(body: String, topping: String, bodyLength: Int, stickLength: Int) {
+    printPeperoMenuInfomation()
     drawPepero(body: body, topping: topping)
     drawPeperoBody(length: bodyLength)
     drawPeperoStick(length: stickLength)
