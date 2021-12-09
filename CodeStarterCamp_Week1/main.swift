@@ -8,13 +8,13 @@
 
 import Foundation
 
-func makeIcecream (){
+func makeIcecream(){
     for _ in 1...8 {
         print("***********")
     }
 }
 
-func makeIcecreamBar (){
+func makeIcecreamBar(){
     for _ in 1...4 {
         print("    | |")
     }
@@ -23,3 +23,6 @@ func makeIcecreamBar (){
 makeIcecream()
 makeIcecreamBar()
 
+makePepero(lengthOfBody: 6, body: "|0|", lengthOfBar: 4)
+makePepero(lengthOfBody: 7, body: "***", topping: "&", lengthOfBar: 3)
+makePepero()
