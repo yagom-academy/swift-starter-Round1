@@ -8,14 +8,26 @@
 
 import Foundation
 
-
-for i in 0...3 {
-    for _ in stride(from: 2, through: i, by: -1) {
-        print(" ", terminator:"")
+func makeIcecreamBody(){
+    
+    for _ in 0...7 {
+        for _ in 0...10 {
+            print("*", terminator:"")
+        }
+        print("")
     }
-    for _ in stride(from: 0, through: 2*i, by: 1) {
-        print("*", terminator:"")
-    }
-    print("")
+    
 }
 
+func makeIcecreamBar(){
+    
+    for _ in 0...4 {
+        for _ in 0...3{
+            print(" ",terminator:"")
+        }
+        print("| |")
+        }
+ 
+}                                    opㅁㅇ
+makeIcecreamBody()
+makeIcecreamBar()
