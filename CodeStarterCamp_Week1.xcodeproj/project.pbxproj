@@ -11,7 +11,7 @@
 		A1B173B7275F4644006C4D96 /* IceCream.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B173B6275F4644006C4D96 /* IceCream.swift */; };
 		A1B173B9275F4683006C4D96 /* Stick.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B173B8275F4683006C4D96 /* Stick.swift */; };
 		A1B173BB275F46A2006C4D96 /* IceCreamFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B173BA275F46A2006C4D96 /* IceCreamFactory.swift */; };
-		A1B173BD275F4700006C4D96 /* IceCreamMarket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B173BC275F4700006C4D96 /* IceCreamMarket.swift */; };
+		A1B173BD275F4700006C4D96 /* IceCreamEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B173BC275F4700006C4D96 /* IceCreamEmployee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,7 +33,7 @@
 		A1B173B6275F4644006C4D96 /* IceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCream.swift; sourceTree = "<group>"; };
 		A1B173B8275F4683006C4D96 /* Stick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stick.swift; sourceTree = "<group>"; };
 		A1B173BA275F46A2006C4D96 /* IceCreamFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamFactory.swift; sourceTree = "<group>"; };
-		A1B173BC275F4700006C4D96 /* IceCreamMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamMarket.swift; sourceTree = "<group>"; };
+		A1B173BC275F4700006C4D96 /* IceCreamEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamEmployee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 				A1B173B6275F4644006C4D96 /* IceCream.swift */,
 				A1B173B8275F4683006C4D96 /* Stick.swift */,
 				A1B173BA275F46A2006C4D96 /* IceCreamFactory.swift */,
-				A1B173BC275F4700006C4D96 /* IceCreamMarket.swift */,
+				A1B173BC275F4700006C4D96 /* IceCreamEmployee.swift */,
 			);
 			path = IceCream;
 			sourceTree = "<group>";
@@ -152,7 +152,7 @@
 				A1B173B9275F4683006C4D96 /* Stick.swift in Sources */,
 				A1B173BB275F46A2006C4D96 /* IceCreamFactory.swift in Sources */,
 				A1B173B7275F4644006C4D96 /* IceCream.swift in Sources */,
-				A1B173BD275F4700006C4D96 /* IceCreamMarket.swift in Sources */,
+				A1B173BD275F4700006C4D96 /* IceCreamEmployee.swift in Sources */,
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

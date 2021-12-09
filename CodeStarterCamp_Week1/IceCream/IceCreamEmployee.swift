@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct IceCreamMarket {
+struct IceCreamEmployee {
     private enum IceCreamOption {
         static let size = 8
         static let shape = "***********"
