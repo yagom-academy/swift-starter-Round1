@@ -1,6 +1,6 @@
 //iceCream 을 만들어보자!
 
-func drawIceCream(){ // *를 11개 만드는함수
+func drawIceCream(){
     var width1 : Int = 1
     let iceCreamWidth : Int = 11
     while iceCreamWidth >= width1 {
@@ -10,7 +10,7 @@ func drawIceCream(){ // *를 11개 만드는함수
     print("")
 }
 
-func drawEmpty(){ //공백4칸을 만드는 함수
+func drawEmpty(){
     var empty : Int = 1
     let emptyMax : Int = 4
     while emptyMax >= empty {
@@ -19,23 +19,29 @@ func drawEmpty(){ //공백4칸을 만드는 함수
     }
 }
 
-func drawIceCreamBar(){ //막대모양을 출력하는 함수
+func drawIceCreamBar(){
     print("| |")
 }
 
-drawIceCream()
-drawIceCream()
-drawIceCream()
-drawIceCream()
-drawIceCream()
-drawIceCream()
-drawIceCream()
-drawIceCream()
-drawEmpty()
-drawIceCreamBar()
-drawEmpty()
-drawIceCreamBar()
-drawEmpty()
-drawIceCreamBar()
-drawEmpty()
-drawIceCreamBar()
+func makeIceCream(){
+    drawIceCream()
+    drawIceCream()
+    drawIceCream()
+    drawIceCream()
+    drawIceCream()
+    drawIceCream()
+    drawIceCream()
+    drawIceCream()
+}
+func makeIceCreamBar(){
+    drawEmpty()
+    drawIceCreamBar()
+    drawEmpty()
+    drawIceCreamBar()
+    drawEmpty()
+    drawIceCreamBar()
+    drawEmpty()
+    drawIceCreamBar()
+}
+makeIceCream()
+makeIceCreamBar()
