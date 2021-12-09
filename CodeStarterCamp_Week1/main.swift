@@ -47,6 +47,7 @@ func drawStick() {
         print("   | |    \n")
     }
 }
+
 inFormation()
 length()
 body()
@@ -55,12 +56,3 @@ stickLength()
 drawpepero()
 drawStick()
 //실행  예시2
-
-
-  
-   
-
-
-
-
-
