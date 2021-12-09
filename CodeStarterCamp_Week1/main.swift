@@ -26,18 +26,19 @@ func toppingOrder(topping: String) {
 }
 
 func stickLengthOrder(stickLength: Int) {
-    print(" 막대길이: ","\(stickLength)\n")
+    print(" 막대길이:","\(stickLength)\n")
 }
 
-func drawpepero(lengthOrder: Int, bodyOrder:String ,toppingOrder:String) {
+func drawPepero(bodyOrder: String , toppingOrder:String, lengthOrder: Int) {
     for _ in 1...lengthOrder{
-        print("\(bodyOrder)")
+        print("   \(toppingOrder)\(bodyOrder)")
+        print("    \(bodyOrder)\(toppingOrder)")
     }
 }
 
-func drawStick(stickLengthOrder:Int) {
+func drawStick(stickLengthOrder:Int, stick: String) {
     for _ in 1...stickLengthOrder{
-        print("  | |    ")
+        print("    \(stick)")
     }
 }
 
@@ -45,7 +46,7 @@ orderName(name: " < 정보 > ")
 lengthOrder(length: 10)
 bodyOrder(body: "***")
 toppingOrder(topping: "")
-stickLengthOrder(stickLength: 4)
-drawpepero(lengthOrder: 10 , bodyOrder: "  ***  " ,toppingOrder: " ")
-drawStick(stickLengthOrder: 4)
+stickLengthOrder(stickLength:6)
+drawPepero(bodyOrder:"***", toppingOrder: "#", lengthOrder: 5)
+drawStick(stickLengthOrder: 6,stick:  "| |")
 //실행  예시2
