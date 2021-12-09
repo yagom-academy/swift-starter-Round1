@@ -10,7 +10,7 @@ import Foundation
 
 let myBodySpape: String = "|0|"
 let myTopping: String = ""
-let myBodyLength: Int = 10
+let myBodyLength: Int = 9
 let myStickLength: Int = 4
 
 makeIceCream(bodyShape: myBodySpape, topping: myTopping, bodyLength: myBodyLength, stickLength: myStickLength)
@@ -79,7 +79,7 @@ func drawStick(body: String, length: Int) {
         for _ in 1...freeSpace {
             print(" ", terminator: "")
         }
-        print("|","|")
+        print("| |")
     }
 }
 
