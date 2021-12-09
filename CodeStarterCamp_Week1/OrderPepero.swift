@@ -27,3 +27,11 @@ func drawPepero(body: String, topping: String) {
         toppingPositionChanger += 1
     }
 }
+// 몸통 길이
+func drawPeperoBody(length: Int) {
+    for _ in 0..<length {
+        toppingPositionChanger % 2 == 0 ?
+        print("\(toppingValue)\(bodyValue)") : print(" \(bodyValue)\(toppingValue)")
+        toppingPositionChanger += 1
+    }
+}
