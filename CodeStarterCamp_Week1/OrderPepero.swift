@@ -17,6 +17,29 @@ var stickValue = " | |"
 
 var toppingPositionChanger = 0
 
+enum Menu {
+    case information
+    case length
+    case body
+    case topping
+    case stickLength
+    
+    var name: String {
+        switch self {
+        case .information:
+            return "<정보>"
+        case .length:
+            return "길이"
+        case .body:
+            return "몸통"
+        case .topping:
+            return "토핑"
+        case .stickLength:
+            return "막대길이"
+        }
+    }
+}
+
 // 몸통, 토핑
 func drawPepero(body: String, topping: String) {
     if toppingPositionChanger % 2 == 0 {
