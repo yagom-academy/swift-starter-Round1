@@ -10,3 +10,7 @@
 
 1. 개인적으로 CPU와 RAM이 중요한 요소라고 생각이 됩니다.
 2. 주기억 장치는 컴퓨터 내부에서 현재 CPU가 처리하고 있는 내용을 저장하고 CPU의 명령에 의해 기억된 장소에 직접 접근할 수 있기 떄문에 주기억 장치라고 불리는 것 같습니다.
+
+---
+### 순서도
+![Mission Contents  STEP 2  flow_chart_vayne](https://user-images.githubusercontent.com/50446512/145349410-e6489671-2536-4fab-b257-fb109970b5a7.png)
