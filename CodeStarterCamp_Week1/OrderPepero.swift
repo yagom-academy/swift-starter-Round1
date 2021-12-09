@@ -41,4 +41,9 @@ func drawPeperoStick(length: Int) {
         print(stickValue)
     }
 }
-
+// 최종 실행
+func drawPepero(body: String, topping: String, bodyLength: Int, stickLength: Int) {
+    drawPepero(body: body, topping: topping)
+    drawPeperoBody(length: bodyLength)
+    drawPeperoStick(length: stickLength)
+}
