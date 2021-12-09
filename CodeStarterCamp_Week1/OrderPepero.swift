@@ -35,3 +35,10 @@ func drawPeperoBody(length: Int) {
         toppingPositionChanger += 1
     }
 }
+// 막대 길이
+func drawPeperoStick(length: Int) {
+    for _ in 0..<length {
+        print(stickValue)
+    }
+}
+
