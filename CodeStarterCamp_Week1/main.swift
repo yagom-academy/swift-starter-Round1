@@ -24,24 +24,15 @@ func drawIceCreamBar(){
 }
 
 func makeIceCream(){
-    drawIceCream()
-    drawIceCream()
-    drawIceCream()
-    drawIceCream()
-    drawIceCream()
-    drawIceCream()
-    drawIceCream()
-    drawIceCream()
+    for _ in 1...8{
+        drawIceCream()
+    }
 }
 func makeIceCreamBar(){
-    drawEmpty()
-    drawIceCreamBar()
-    drawEmpty()
-    drawIceCreamBar()
-    drawEmpty()
-    drawIceCreamBar()
-    drawEmpty()
-    drawIceCreamBar()
+    for _ in 1...4{
+        drawEmpty()
+        drawIceCreamBar()
+    }
 }
 makeIceCream()
 makeIceCreamBar()
