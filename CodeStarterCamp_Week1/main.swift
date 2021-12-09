@@ -1,17 +1,19 @@
+func printManyTime(c: Character, times: Int) {
+    for _ in 1...times {
+        print(c, terminator: "")
+    }
+}
+
 func printIceCream() {
     for _ in 1...8 {
-        for _ in 1...11 {
-            print("*", separator: "", terminator: "")
-        }
+        printManyTime(c: "*", times: 11)
         print("")
     }
 }
 
 func printStick() {
     for _ in 1...4 {
-        for _ in 1...4 {
-            print(" ", separator: "", terminator: "")
-        }
+        printManyTime(c: " ", times: 4)
         print("| |")
     }
 }
