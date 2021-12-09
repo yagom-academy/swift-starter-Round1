@@ -40,3 +40,5 @@ private func drawIcecreamStick(height: Int) {
 }
 drawIcecream(width: 11, height: 8)
 drawIcecreamStick(height: 4)
+print("=========빼빼로=========")
+drawPepero(body: bodyValue, topping: toppingValue, bodyLength: stickLengthValue, stickLength: bodyLengthValue)
