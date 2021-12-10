@@ -8,20 +8,24 @@
 
 import Foundation
 
-func iceCreamGenerator() {
+func iceCreamBodyGenerator() {
     for _ in 1...8 {
         let body = "***********"
-        print("\(body)")
+        print(body)
     }
 }
+
 func iceCreameStickGenerator() {
     for _ in 1...4 {
         let stick = "    | |    "
-        print("\(stick)")
+        print(stick)
     }
 }
 
-
-
-iceCreamGenerator()
+//step2
+iceCreamBodyGenerator()
 iceCreameStickGenerator()
+
+//step3
+printPaparo(length: 9, body: "*", topping: "^", stickLength: 4)
+
