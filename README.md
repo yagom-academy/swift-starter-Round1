@@ -17,5 +17,12 @@
 
 
 ##Step2 순서도
+###1
 ![image](https://ifh.cc/g/bdHgUe.jpg)
+###2
 ![image](https://ifh.cc/g/NcpJtd.jpg)
+
+
+##Step 순서도
+
+![image](https://ifh.cc/g/JJpBXH.jpg)

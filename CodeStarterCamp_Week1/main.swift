@@ -28,6 +28,6 @@ func makeIcecreamBar(){
         print("| |")
         }
  
-}                                    opㅁㅇ
+}
 makeIcecreamBody()
 makeIcecreamBar()
