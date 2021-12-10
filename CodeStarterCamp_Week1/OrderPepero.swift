@@ -8,16 +8,17 @@
 import Foundation
 
 var bodyLengthValue = 6
-var bodyValue = "\(bodyInsideValue)"
-var toppingValue = "$"
+var bodyValue = "|\(bodyInsideValue)|"
+var toppingValue = " "
 var stickLengthValue = 4
 
-var bodyInsideValue = "***"
+var bodyInsideValue = "0"
 let stickValue = " | |"
 
 var toppingPositionChanger = 0
+var toppingPositionCounter = 0
 
-enum Menu {
+enum Pepero {
     case information
     case length
     case body
@@ -41,28 +42,26 @@ enum Menu {
 }
 
 func printPeperoMenuInformation() {
-    print("\(Menu.information.name)")
-    print("\(Menu.length.name): \(bodyLengthValue)")
-    print("\(Menu.body.name): \(bodyValue)")
-    print("\(Menu.topping.name): \(toppingValue)")
-    print("\(Menu.stickLength.name): \(stickLengthValue)\n")
+    print("\(Pepero.information.name)")
+    print("\(Pepero.length.name): \(bodyLengthValue)")
+    print("\(Pepero.body.name): \(bodyValue)")
+    print("\(Pepero.topping.name): \(toppingValue)")
+    print("\(Pepero.stickLength.name): \(stickLengthValue)\n")
 }
 
-func drawPepero(body: String, topping: String) {
+func drawPepero(body: String = " ", topping: String) {
     if toppingPositionChanger % 2 == 0 {
         print("\(topping)\(body)")
         toppingPositionChanger += 1
     } else {
-        print("\(body)\(topping)")
+        print(" \(body)\(topping)")
         toppingPositionChanger += 1
     }
 }
 
 func drawPeperoBody(length: Int) {
     for _ in 0..<length {
-        toppingPositionChanger % 2 == 0 ?
-        print("\(toppingValue)\(bodyValue)") : print(" \(bodyValue)\(toppingValue)")
-        toppingPositionChanger += 1
+        drawPepero(body: bodyValue, topping: toppingValue)
     }
 }
 
