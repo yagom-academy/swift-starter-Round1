@@ -41,7 +41,7 @@
 		34811DA2274B938F00A1E994 = {
 			isa = PBXGroup;
 			children = (
-				34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */,
+				34811DAE274B938F00A1E994 /* main.swift */,
 				34811DAC274B938F00A1E994 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,14 +52,6 @@
 				34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {
-			isa = PBXGroup;
-			children = (
-				34811DAE274B938F00A1E994 /* main.swift */,
-			);
-			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
