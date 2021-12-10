@@ -8,19 +8,18 @@
 
 import Foundation
 
-func printIceCream() {
+func printIceCreamTop() {
     for _ in 0...7 {
-    print("**********")
-}
+        print("**********")
+    }
 }
 
 func printIceCreamBar() {
     for _ in 0...3 {
-    print("   | |    ")
+        print("   | |    ")
+    }
+    
 }
-
-}
-printIceCream()
+printIceCreamTop()
 printIceCreamBar()
 
-// 찐최종본 //
