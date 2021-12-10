@@ -8,5 +8,17 @@
 
 import Foundation
 
-print("Hello, World!")
+func cream() -> Void {
+    for _ in 1...8 {
+        print("***********")
+    }
+}
 
+func bar() -> Void {
+    for _ in 1...4 {
+        print("    | |    ")
+    }
+}
+
+cream()
+bar()
