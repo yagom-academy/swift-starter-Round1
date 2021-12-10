@@ -8,5 +8,22 @@
 
 import Foundation
 
-print("Hello, World!")
+let icecream : String = "***********"
+let bar : String = "| |"
+
+func createIcecream(){
+    for count in 0...7{
+        print(icecream)
+    }
+}
+
+func createBar(){
+    for count in 0...3{
+        print("\t\(bar)\t")
+    }
+}
+
+createIcecream()
+createBar()
+
 
