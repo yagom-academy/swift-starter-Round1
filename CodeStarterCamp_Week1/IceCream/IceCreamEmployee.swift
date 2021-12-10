@@ -21,7 +21,7 @@ struct IceCreamEmployee {
     private let iceCream = IceCreamFactory().makeIceCream(size: IceCreamOption.size, shape: IceCreamOption.shape)
     private let stick = IceCreamFactory().makeStick(size: StickOption.size, shape: StickOption.shape)
 
-    func giveIceCream() {
+    func combineIceCream() {
         drawIceCream()
         drawStick()
     }
