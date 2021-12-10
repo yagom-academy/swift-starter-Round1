@@ -7,13 +7,13 @@
 
 import Foundation
 
-func makeBar(length : Int){
+func makeBar(length : Int) {
     let bar : String = " | |"
     for _ in 1...length {
         print(bar)
     }
 }
-func makeBody(body : String, topping: String, length: Int) {
+func makeBody(body: String, topping: String, length: Int) {
     for count in 1...length {
         if count % 2 == 0 {
                     print(" \(body)\(topping)")
@@ -27,17 +27,16 @@ func makeBody(body : String, topping: String, length: Int) {
         }
     }
 }
-func makePepero (lengthOfBody : Int = 10, body: String = "***", topping: String = " ", lengthOfBar: Int = 4){
-    let info : String =
-"""
-<정보>
-길이: \(lengthOfBody)
-몸통: \(body)
-토핑: \(topping)
-막대길이: \(lengthOfBar)
-"""
-print(info)
-makeBody(body: body, topping: topping, length: lengthOfBody)
-makeBar(length: lengthOfBar)
-}
-
+func makePepero (lengthOfBody: Int = 10, body: String = "***", topping: String = " ", lengthOfBar: Int = 4){
+    let info: String = """
+        <정보>
+        길이: \(lengthOfBody)
+        몸통: \(body)
+        토핑: \(topping)
+        막대길이: \(lengthOfBar)
+        
+        """
+    print(info)
+    makeBody(body: body, topping: topping, length: lengthOfBody)
+    makeBar(length: lengthOfBar)
+    }
