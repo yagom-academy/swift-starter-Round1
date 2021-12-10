@@ -21,3 +21,4 @@ func printMuYaHo(num: Int) {
     
 }
 
+drawTotal(heightOfStick: 4, bodyOfMain: " |0|", toppingOfMain: "", heightOfPPR: 12)
