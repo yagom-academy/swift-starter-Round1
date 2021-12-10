@@ -10,15 +10,17 @@ import Foundation
 
 let iceCreamImage = "***********"
 let stickImage = "    | |"
+var iceCreamLength = 8
+var stickLength = 4
 
 func drawIceCreamImage() {
-    for _ in 1...8 {
+    for _ in 1...iceCreamLength {
         print("\(iceCreamImage)")
     }
 }
 
 func drawStickImage() {
-    for _ in 1...4 {
+    for _ in 1...stickLength {
         print("\(stickImage)")
     }
 }
