@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-10T08:26:04.619Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36" etag="b4ffl8gVSKLK2qS9HaiO" version="15.9.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-10T08:40:25.706Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36" etag="JwJkHuJans6_hgISe0Bj" version="15.9.1" type="github">
   <diagram id="HRE3wdy9X-8jivXJD9Lz" name="Page-1">
-    <mxGraphModel dx="441" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="469" dy="675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -28,41 +28,37 @@
         <mxCell id="54Wu9B7z_5bbS7SCBlU6-4" value="아이스크림 막대기 출력" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="390" y="500" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="54Wu9B7z_5bbS7SCBlU6-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="54Wu9B7z_5bbS7SCBlU6-8" target="54Wu9B7z_5bbS7SCBlU6-11">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="54Wu9B7z_5bbS7SCBlU6-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FFFFFF;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="270" as="sourcePoint" />
+            <mxPoint x="450" y="310" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="54Wu9B7z_5bbS7SCBlU6-8" value="아이스크림 상단 만들기" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="210" width="120" height="60" as="geometry" />
+        <mxCell id="54Wu9B7z_5bbS7SCBlU6-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FFFFFF;" edge="1" parent="1" target="54Wu9B7z_5bbS7SCBlU6-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230.5" y="420" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="54Wu9B7z_5bbS7SCBlU6-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="54Wu9B7z_5bbS7SCBlU6-10" target="54Wu9B7z_5bbS7SCBlU6-25">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="54Wu9B7z_5bbS7SCBlU6-10" value="아이스크림 막대기&lt;br&gt;&amp;nbsp;만들기" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="390" y="210" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="54Wu9B7z_5bbS7SCBlU6-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="54Wu9B7z_5bbS7SCBlU6-11" target="54Wu9B7z_5bbS7SCBlU6-3">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="54Wu9B7z_5bbS7SCBlU6-11" value="&lt;p class=&quot;p1&quot; style=&quot;margin: 0px ; font-stretch: normal ; line-height: normal ; font-family: &amp;#34;menlo&amp;#34; ; color: rgb(252 , 116 , 103)&quot;&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; background-color: rgb(255 , 255 , 255)&quot;&gt;&amp;nbsp;문자열&lt;/span&gt;&lt;/p&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; background-color: rgb(255 , 255 , 255)&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; color: rgb(252 , 116 , 103) ; font-family: &amp;#34;menlo&amp;#34;&quot;&gt;**********&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; background-color: rgb(255 , 255 , 255)&quot;&gt;&quot;&lt;/span&gt;&lt;p class=&quot;p1&quot; style=&quot;margin: 0px ; font-stretch: normal ; line-height: normal ; font-family: &amp;#34;menlo&amp;#34;&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;8번 반복 출력하기&lt;/span&gt;&lt;/p&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="171" y="310" width="119" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="54Wu9B7z_5bbS7SCBlU6-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="54Wu9B7z_5bbS7SCBlU6-16" target="54Wu9B7z_5bbS7SCBlU6-8">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="54Wu9B7z_5bbS7SCBlU6-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="54Wu9B7z_5bbS7SCBlU6-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="210" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="54Wu9B7z_5bbS7SCBlU6-16" value="" style="shape=waypoint;size=6;pointerEvents=1;points=[];fillColor=rgb(255, 255, 255);resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="210" y="110" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="54Wu9B7z_5bbS7SCBlU6-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="54Wu9B7z_5bbS7SCBlU6-21" target="54Wu9B7z_5bbS7SCBlU6-10">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="54Wu9B7z_5bbS7SCBlU6-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="54Wu9B7z_5bbS7SCBlU6-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="210" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="54Wu9B7z_5bbS7SCBlU6-21" value="" style="shape=waypoint;size=6;pointerEvents=1;points=[];fillColor=rgb(255, 255, 255);resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="430" y="110" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="54Wu9B7z_5bbS7SCBlU6-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="54Wu9B7z_5bbS7SCBlU6-25" target="54Wu9B7z_5bbS7SCBlU6-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="54Wu9B7z_5bbS7SCBlU6-25" value="&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; background-color: rgb(255 , 255 , 255)&quot;&gt;문자열&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;br&gt;&quot;&lt;/span&gt;&lt;span class=&quot;Apple-converted-space&quot; style=&quot;color: rgb(252 , 116 , 103) ; font-family: &amp;#34;menlo&amp;#34;&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; color: rgb(252 , 116 , 103) ; font-family: &amp;#34;menlo&amp;#34;&quot;&gt;| | &lt;/span&gt;&lt;span class=&quot;Apple-converted-space&quot; style=&quot;color: rgb(252 , 116 , 103) ; font-family: &amp;#34;menlo&amp;#34;&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; background-color: rgb(255 , 255 , 255)&quot;&gt;&quot;&lt;br&gt;4번반복 출력하기&lt;br&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="390" y="310" width="120" height="110" as="geometry" />
+        <mxCell id="54Wu9B7z_5bbS7SCBlU6-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FFFFFF;" edge="1" parent="1" target="54Wu9B7z_5bbS7SCBlU6-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="420" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="54Wu9B7z_5bbS7SCBlU6-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FFFFFF;" edge="1" parent="1" source="54Wu9B7z_5bbS7SCBlU6-37" target="54Wu9B7z_5bbS7SCBlU6-2">
           <mxGeometry relative="1" as="geometry" />
@@ -75,6 +71,23 @@
         </mxCell>
         <mxCell id="54Wu9B7z_5bbS7SCBlU6-40" value="" style="shape=waypoint;size=6;pointerEvents=1;points=[];fillColor=rgb(255, 255, 255);resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="430" y="620" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="54Wu9B7z_5bbS7SCBlU6-48" value="&lt;p class=&quot;p1&quot; style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250) ; margin: 0px ; font-stretch: normal ; line-height: normal ; font-family: &amp;#34;menlo&amp;#34; ; color: rgb(252 , 116 , 103)&quot;&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; background-color: rgb(255 , 255 , 255)&quot;&gt;&amp;nbsp;문자열&lt;/span&gt;&lt;/p&gt;&lt;span style=&quot;font-size: 12px ; font-family: &amp;#34;menlo&amp;#34;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;font-size: 12px ; color: rgb(252 , 116 , 103) ; font-family: &amp;#34;menlo&amp;#34;&quot;&gt;**********&lt;/span&gt;&lt;span style=&quot;font-size: 12px ; font-family: &amp;#34;menlo&amp;#34;&quot;&gt;&quot;&lt;/span&gt;&lt;p class=&quot;p1&quot; style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250) ; margin: 0px ; font-stretch: normal ; line-height: normal ; font-family: &amp;#34;menlo&amp;#34;&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;8번 반복 입력하기&lt;/span&gt;&lt;/p&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=#FFFFFF;fontSize=15;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="160" y="310" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="54Wu9B7z_5bbS7SCBlU6-49" value="&lt;p class=&quot;p1&quot; style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250) ; margin: 0px ; font-stretch: normal ; line-height: normal ; font-family: &amp;#34;menlo&amp;#34; ; color: rgb(252 , 116 , 103)&quot;&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; background-color: rgb(255 , 255 , 255)&quot;&gt;문자열&lt;/span&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;br&gt;&quot;&lt;/span&gt;&lt;span class=&quot;Apple-converted-space&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;| |&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;Apple-converted-space&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; background-color: rgb(255 , 255 , 255)&quot;&gt;&quot;&lt;br&gt;4번반복 출력하기&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=#FFFFFF;fontSize=15;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="380" y="310" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="54Wu9B7z_5bbS7SCBlU6-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;fontColor=#000000;" edge="1" parent="1" target="54Wu9B7z_5bbS7SCBlU6-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="54Wu9B7z_5bbS7SCBlU6-53" value="아이스크림 막대기 만들기" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="390" y="210" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="54Wu9B7z_5bbS7SCBlU6-54" value="아이스크림 상단 만들기" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="170" y="210" width="130" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
