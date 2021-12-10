@@ -27,6 +27,5 @@ func drawBar() {
 //아이스크림 완전체
 func completeIcecream() {
     drawIcecream()
-    
     drawBar()
 }
