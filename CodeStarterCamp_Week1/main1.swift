@@ -19,6 +19,7 @@ func makeIcecreamBody(){
     
 }
 
+
 func makeIcecreamBar(){
     
     for _ in 0...4 {
@@ -29,5 +30,13 @@ func makeIcecreamBar(){
         }
  
 }
-makeIcecreamBody()
-makeIcecreamBar()
+
+
+
+//
+//makeIcecreamBody()
+//makeIcecreamBar()
+
+
+
+//merge
