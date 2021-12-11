@@ -8,17 +8,17 @@
 
 import Foundation
 
-func cream() -> Void {
+func drawCream() -> Void {
     for _ in 1...8 {
         print("***********")
     }
 }
 
-func bar() -> Void {
+func drawBar() -> Void {
     for _ in 1...4 {
         print("    | |    ")
     }
 }
 
-cream()
-bar()
+drawCream()
+drawBar()
