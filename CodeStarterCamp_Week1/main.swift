@@ -22,6 +22,7 @@ func printMuYaHo(num: Int) {
     
 }
 
+
 func drawAnIceCream(widthOfIceCream: Int, heightOfIceCream: Int, heightOfStick: Int) {
     var icecreamPart: String = ""
     var stickPart: String = ""
@@ -52,4 +53,5 @@ func drawAnIceCream(widthOfIceCream: Int, heightOfIceCream: Int, heightOfStick: 
 
 drawAnIceCream(widthOfIceCream: 11, heightOfIceCream: 8, heightOfStick: 4)
 
+drawTotal(heightOfStick: 4, bodyOfMain: " |0|", toppingOfMain: "", heightOfPPR: 12)
 
