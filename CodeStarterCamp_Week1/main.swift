@@ -39,3 +39,7 @@ func drawBar2() {
 
 drawIceCream2()
 drawBar2()
+
+
+drawWhole(body: "&&&", bodyNum: 12, barNum: 4)
+drawWhole(body: "|0|", bodyNum: 10, barNum: 5)
