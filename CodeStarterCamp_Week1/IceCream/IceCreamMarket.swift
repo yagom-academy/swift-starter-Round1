@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct IceCreamEmployee {
+struct IceCreamMarket {
     private enum IceCreamOption {
         static let size = 8
         static let shape = "***********"
@@ -21,7 +21,7 @@ struct IceCreamEmployee {
     private let iceCream = IceCreamFactory().makeIceCream(size: IceCreamOption.size, shape: IceCreamOption.shape)
     private let stick = IceCreamFactory().makeStick(size: StickOption.size, shape: StickOption.shape)
 
-    func combineIceCream() {
+    func giveMenu() {
         drawIceCream()
         drawStick()
     }
