@@ -9,21 +9,8 @@
 
 import Foundation
 
-print("Hello, World!")
 
-for count in 1...6 {
-    printMuYaHo(num: count)
-}
-
-func printMuYaHo(num: Int) {
-    print(1, 2, 3, separator: ", ", terminator: " ")
-    print("다 함께", terminator: "!, ")
-    print(num, "번째 무야호!")
-    
-}
-
-
-func drawAnIceCream(widthOfIceCream: Int, heightOfIceCream: Int, heightOfStick: Int) {
+func drawIceCream(widthOfIceCream: Int, heightOfIceCream: Int, heightOfStick: Int) {
     var icecreamPart: String = ""
     var stickPart: String = ""
     
@@ -51,7 +38,5 @@ func drawAnIceCream(widthOfIceCream: Int, heightOfIceCream: Int, heightOfStick: 
     }
 }
 
-drawAnIceCream(widthOfIceCream: 11, heightOfIceCream: 8, heightOfStick: 4)
-
-drawTotal(heightOfStick: 4, bodyOfMain: " |0|", toppingOfMain: "", heightOfPPR: 12)
+drawIceCream(widthOfIceCream: 11, heightOfIceCream: 8, heightOfStick: 4)
 
