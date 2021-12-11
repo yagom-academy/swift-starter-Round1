@@ -40,7 +40,7 @@ func makeBodyShape(iteration: Int, bodyShape: String, topping: String) -> String
     var isNude : Bool = false
     var bodyShape:String = bodyShape
     
-    if bodyShape.contains("|") == true {
+    if bodyShape.contains("|") {
         isNude = true
     }
     
