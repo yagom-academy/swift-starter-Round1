@@ -17,9 +17,9 @@ func drawBodyAndTopping(body: String, topping: String, bodyNum: Int) {
     if body == "|0|" {
         for num in 1...bodyNum {
             if num % 2 != 0 {
-                print(" | |")
+                print("\(topping)| |")
             } else {
-                print(" |0|")
+                print(" |0|\(topping)")
             }
         }
     } else {
