@@ -10,8 +10,7 @@ import Foundation
 // Step 3 : 주문에 따른 빼뺴로 그리기
 
 // 정보 및  주문
-func Order(name: String, length: Int , body: String ,
-           topping: String,stickLength:Int){
+func Order(name: String, length: Int , body: String , topping: String, stickLength:Int) {
     print("\(name)")
     print("길이:", "\(length)")
     print("몸통:","\(body)")
@@ -19,6 +18,6 @@ func Order(name: String, length: Int , body: String ,
     print("막대길이:","\(stickLength)\n")
 }
 
-Order(name: " < 정보 > ", length: 12, body:"***",topping: "#", stickLength: 6)
-drawPepro(drawstick: 12, drawbody: "***", drawtopping: "#", drawlength: 6/2,  drawbodylength: 6)
+Order(name: info, length: length, body: body ,topping: topping , stickLength: sticklength )
+drawPepro(drawstick: sticklength, drawbody: body, drawtopping: topping, drawlength: sticklength/2,  drawbodylength: length - 1)
 
