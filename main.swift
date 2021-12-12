@@ -8,7 +8,6 @@ func makeBar (barLenth:Int){
     }
 }//막대부분만들기
 
-
 func makeChocoleteTopping(chocolete: String, topping: String, chocoleteLenth:Int) -> String {
     if chocolete == "|0|"{
         
@@ -42,18 +41,15 @@ func makeBody(chocolete: String, topping: String, chocoleteLenth:Int){
     }
 }//초콜릿몸통 전체부분만들기
 
-
-
-
-
 func makePepero(chocolete: String, topping: String, chocoleteLenth:Int ,barLenth:Int){
     makeBody(chocolete: chocolete, topping: topping, chocoleteLenth:chocoleteLenth)
     makeBar (barLenth:barLenth)
 }//호출함수 만들기
 
 
- makePepero(chocolete: "***", topping: "&", chocoleteLenth: 12, barLenth: 5)
+makePepero(chocolete: "***", topping: "&", chocoleteLenth: 12, barLenth: 5)
 
-
+//makeIcecreamBody()
+//makeIcecreamBar()
 
 
