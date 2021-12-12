@@ -40,6 +40,9 @@ func drawBar2() {
 drawIceCream2()
 drawBar2()
 
+drawWhole(body: "***", bodyNum: 10, barNum: 4)
+drawWhole(body: "***", topping: "&", bodyNum: 12, barNum: 4)
+drawWhole(body: "***", topping: "#", bodyNum: 12, barNum: 6)
+drawWhole(body: "|0|", bodyNum: 6, barNum: 4)
 
-drawWhole(body: "&&&", bodyNum: 12, barNum: 4)
-drawWhole(body: "|0|", bodyNum: 10, barNum: 5)
+drawWhole(body: "@@@", topping: "*", bodyNum: 10, barNum: 4)
