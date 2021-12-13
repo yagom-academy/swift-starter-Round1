@@ -15,6 +15,7 @@
 		A1EC1F5E2766FBDE007BAC54 /* Pepero.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC1F5D2766FBDE007BAC54 /* Pepero.swift */; };
 		A1EC1F602766FF09007BAC54 /* PeperoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC1F5F2766FF09007BAC54 /* PeperoFactory.swift */; };
 		A1EC1F622767001B007BAC54 /* PeperoEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC1F612767001B007BAC54 /* PeperoEmployee.swift */; };
+		A1EC1F6427670076007BAC54 /* PeperoMarket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC1F6327670076007BAC54 /* PeperoMarket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,7 @@
 		A1EC1F5D2766FBDE007BAC54 /* Pepero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pepero.swift; sourceTree = "<group>"; };
 		A1EC1F5F2766FF09007BAC54 /* PeperoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeperoFactory.swift; sourceTree = "<group>"; };
 		A1EC1F612767001B007BAC54 /* PeperoEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeperoEmployee.swift; sourceTree = "<group>"; };
+		A1EC1F6327670076007BAC54 /* PeperoMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeperoMarket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				A1EC1F5D2766FBDE007BAC54 /* Pepero.swift */,
 				A1EC1F5F2766FF09007BAC54 /* PeperoFactory.swift */,
 				A1EC1F612767001B007BAC54 /* PeperoEmployee.swift */,
+				A1EC1F6327670076007BAC54 /* PeperoMarket.swift */,
 			);
 			path = Pepero;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1EC1F5E2766FBDE007BAC54 /* Pepero.swift in Sources */,
+				A1EC1F6427670076007BAC54 /* PeperoMarket.swift in Sources */,
 				A1B173B9275F4683006C4D96 /* Stick.swift in Sources */,
 				A1EC1F622767001B007BAC54 /* PeperoEmployee.swift in Sources */,
 				A1EC1F602766FF09007BAC54 /* PeperoFactory.swift in Sources */,
