@@ -14,6 +14,7 @@
 		A1B173BD275F4700006C4D96 /* IceCreamMarket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B173BC275F4700006C4D96 /* IceCreamMarket.swift */; };
 		A1EC1F5E2766FBDE007BAC54 /* Pepero.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC1F5D2766FBDE007BAC54 /* Pepero.swift */; };
 		A1EC1F602766FF09007BAC54 /* PeperoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC1F5F2766FF09007BAC54 /* PeperoFactory.swift */; };
+		A1EC1F622767001B007BAC54 /* PeperoEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC1F612767001B007BAC54 /* PeperoEmployee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,7 @@
 		A1B173BC275F4700006C4D96 /* IceCreamMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamMarket.swift; sourceTree = "<group>"; };
 		A1EC1F5D2766FBDE007BAC54 /* Pepero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pepero.swift; sourceTree = "<group>"; };
 		A1EC1F5F2766FF09007BAC54 /* PeperoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeperoFactory.swift; sourceTree = "<group>"; };
+		A1EC1F612767001B007BAC54 /* PeperoEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeperoEmployee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				A1EC1F5D2766FBDE007BAC54 /* Pepero.swift */,
 				A1EC1F5F2766FF09007BAC54 /* PeperoFactory.swift */,
+				A1EC1F612767001B007BAC54 /* PeperoEmployee.swift */,
 			);
 			path = Pepero;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				A1EC1F5E2766FBDE007BAC54 /* Pepero.swift in Sources */,
 				A1B173B9275F4683006C4D96 /* Stick.swift in Sources */,
+				A1EC1F622767001B007BAC54 /* PeperoEmployee.swift in Sources */,
 				A1EC1F602766FF09007BAC54 /* PeperoFactory.swift in Sources */,
 				A1B173BB275F46A2006C4D96 /* IceCreamFactory.swift in Sources */,
 				A1B173B7275F4644006C4D96 /* IceCream.swift in Sources */,
