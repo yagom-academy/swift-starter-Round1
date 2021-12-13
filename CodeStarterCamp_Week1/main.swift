@@ -18,6 +18,7 @@ func Order(name: String, length: Int , body: String , topping: String, stickLeng
     print("막대길이:","\(stickLength)\n")
 }
 
-Order(name: info, length: length, body: body ,topping: topping , stickLength: sticklength )
-drawPepro(drawstick: sticklength, drawbody: body, drawtopping: topping, drawlength: sticklength/2,  drawbodylength: length - 1)
+Order(name: info, length: length, body: body ,topping: topping , stickLength: stickLength )
+drawPepro(stickLength: stickLength, body: body, topping: topping, drawBody: stickLength/2, bodyLength: length-1)
+
 
