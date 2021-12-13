@@ -8,17 +8,16 @@
 import Foundation
 
 
-let peperoStickImage = "    | |"
+let peperoStickImage = "| |"
 
-
-func drawPeperoBody(peperoLegnth: Int) {
-    for _ in 1...peperoLegnth {
-        print(drawPeperoBodyShape())
-    }
+func drawPeperoBodyShape(peperoBody: String, peperoTopping: String) {
+ 
 }
 
-func drawPeperoBodyShape() {
-    
+func drawPeperoBody(peperoLength: Int, peperoBody: String, peperoTopping: String) {
+    for _ in 1...peperoLength {
+        print(drawPeperoBodyShape(peperoBody: peperoBody, peperoTopping: peperoTopping))
+    }
 }
 
 func drawPeperoStick(stickLength: Int) {
@@ -26,6 +25,7 @@ func drawPeperoStick(stickLength: Int) {
         print(peperoStickImage)
     }
 }
+
 
 
 
