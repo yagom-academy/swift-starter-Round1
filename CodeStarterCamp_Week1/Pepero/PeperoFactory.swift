@@ -23,7 +23,7 @@ struct PeperoFactory {
     
     private func drawType(bodyShape: String, topping: String, bodyIndex: Int) {
         if topping == "" && bodyShape != "|0|" {
-            bodyIndex % 2 == 0 ? print(" \(bodyShape) ") : print(" \(bodyShape) ")
+            print(" \(bodyShape) ")
         }
         
         if topping != "" {
