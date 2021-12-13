@@ -13,7 +13,7 @@ struct PeperoMarket {
     private let peanutPepero = Pepero(bodySize: 12, bodyShape: "***", topping: "#", stickSize: 6)
     private let nudePepero = Pepero(bodySize: 6, bodyShape: "|0|", topping: "", stickSize: 4)
 
-    let peperoEmployee = PeperoEmployee()
+    private let peperoEmployee = PeperoEmployee()
 
     func giveMenu() {
         peperoEmployee.drawOrderedMenu(bodyShape: defaultPepero.bodyShape, topping: defaultPepero.topping, bodySize: defaultPepero.bodySize, stickSize: defaultPepero.stickSize)
