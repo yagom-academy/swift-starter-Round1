@@ -1,19 +1,19 @@
-func printOneLineOfText(Text: Character, times: Int) {
+func printOneLineOfText(text: Character, times: Int) {
     for _ in 1...times {
-        print(Text, terminator: "")
+        print(text, terminator: "")
     }
 }
 
 func printIceCream() {
     for _ in 1...8 {
-        printOneLineOfText(Text: "*", times: 11)
+        printOneLineOfText(text: "*", times: 11)
         print("")
     }
 }
 
 func printStick() {
     for _ in 1...4 {
-        printOneLineOfText(Text: " ", times: 4)
+        printOneLineOfText(text: " ", times: 4)
         print("| |")
     }
 }
