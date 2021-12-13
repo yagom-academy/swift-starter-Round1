@@ -19,6 +19,6 @@ func Order(name: String, length: Int , body: String , topping: String, stickLeng
 }
 
 Order(name: info, length: length, body: body ,topping: topping , stickLength: stickLength )
-drawPepro(stickLength: stickLength, body: body, topping: topping, drawBody: stickLength/2, bodyLength: length-1)
+drawPepro(stickLength: stickLength, body: body, topping: topping, drawBody: stickLength/2, bodyLength: length - 1)
 
 
