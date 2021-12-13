@@ -15,14 +15,11 @@ class MyPepero {
         self.body = body
         self.topping = topping
         self.stickLength = stickLength
-        
-        printInfo(self.length, self.body, self.topping, self.stickLength)
-        printMyPepero(length: self.length, body: self.body, topping: self.topping, stickLength: self.stickLength)
     }
     
     /**
         정보를 출력하는 함수
-     */
+    */
     func printInfo(_ length: Int, _ body: String, _ topping: String, _ stickLength: Int) {
         print("<정보>")
         print("길이: \(length)")
@@ -34,7 +31,7 @@ class MyPepero {
     /**
         출력 함수
      */
-    func printMyPepero(length: Int, body: String, topping: String, stickLength: Int) {
+    func printMyPepero(_ length: Int, _ body: String, _ topping: String, _ stickLength: Int) {
         var result: String = ""
         
         result += makeBody(length, body, topping)

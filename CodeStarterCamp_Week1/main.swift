@@ -38,3 +38,8 @@ let topping: String = "#"
 let stickLength: Int = 4
     
 let myPepero = MyPepero(length: length, body: body, topping: topping, stickLength: stickLength)
+
+myPepero.printInfo(length, body, topping, stickLength)
+myPepero.printMyPepero(length, body, topping, stickLength)
+
+
