@@ -29,15 +29,19 @@ func makePeperoBody(body: String, topping: String) -> (String, String) {
         if topping == "" {
             oddToppingBody = " | |\n"
             evenToppingBody = " \(body)\n"
-        }
-        else {
+        } else {
             oddToppingBody = "\(topping)| |\n"
             evenToppingBody = " \(body)\(topping)\n"
         }
     }
     else {
-        oddToppingBody = "\(topping)\(body)\n"
-        evenToppingBody = " \(body)\(topping)\n"
+        if topping == "" {
+            oddToppingBody = " \(topping)\(body)\n"
+            evenToppingBody = " \(body)\(topping)\n"
+        } else {
+            oddToppingBody = "\(topping)\(body)\n"
+            evenToppingBody = " \(body)\(topping)\n"
+        }
     }
     return (oddToppingBody, evenToppingBody)
 }
@@ -63,7 +67,7 @@ func printPepero(length: Int, body: String, topping: String, stickLength: Int){
             길이: \(length)
             몸통: \(body)
             토핑: \(topping)
-            막대길이: \(stickLength)
+            막대길이: \(stickLength)\n
             """)
     
     makePeperoStick(stickLength: stickLength)
