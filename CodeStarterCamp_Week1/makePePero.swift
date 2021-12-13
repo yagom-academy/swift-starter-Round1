@@ -9,6 +9,18 @@ import Foundation
 
 
 let peperoStickImage = "    | |"
+
+
+func drawPeperoBody(peperoLegnth: Int) {
+    for _ in 1...peperoLegnth {
+        print(drawPeperoBodyShape())
+    }
+}
+
+func drawPeperoBodyShape() {
+    
+}
+
 func drawPeperoStick(stickLength: Int) {
     for _ in 1...stickLength {
         print(peperoStickImage)
