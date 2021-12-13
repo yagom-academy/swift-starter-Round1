@@ -26,6 +26,17 @@ func drawPeperoStick(stickLength: Int) {
     }
 }
 
-
+func orderPepero(peperoLength: Int, peperoBody: String, peperoTopping: String, stickLength: Int) {
+    print("""
+    <정보>
+    길이: \(peperoLength)
+    몸통: \(peperoBody)
+    토핑: \(peperoTopping)
+    막대길이: \(stickLength)
+    """)
+    
+    drawPeperoBody(peperoLength: peperoLength, peperoBody: peperoBody, peperoTopping: peperoTopping)
+    drawPeperoStick(stickLength: stickLength)
+}
 
 
