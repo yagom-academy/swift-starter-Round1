@@ -12,3 +12,4 @@ import Foundation
 /// IceCreamMarket().giveMenu()
 
 /// Step3 호출
+PeperoMarket().giveMenu()
