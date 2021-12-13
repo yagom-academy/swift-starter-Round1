@@ -25,5 +25,7 @@ func drawStickImage() {
     }
 }
 
-drawIceCreamImage()
-drawStickImage()
+//drawIceCreamImage()
+//drawStickImage()
+
+
