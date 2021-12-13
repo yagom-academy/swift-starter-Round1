@@ -7,7 +7,7 @@
 //
  
 import Foundation
-
+ 
 
 printIce(count:8)
 printBar(count:4)
