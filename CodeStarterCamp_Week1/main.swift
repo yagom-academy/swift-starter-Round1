@@ -28,4 +28,4 @@ func drawStickImage() {
 //drawIceCreamImage()
 //drawStickImage()
 
-
+orderPepero(peperoLength: 12, peperoBody: "***", peperoTopping: "", stickLength: 4)
