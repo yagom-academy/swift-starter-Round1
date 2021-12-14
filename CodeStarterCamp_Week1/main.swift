@@ -9,17 +9,17 @@
 import Foundation
 
 
-func iceCream(){
-    for vertical in 1...8{
-        for horizontal in 1...11{
-            print("*",terminator:"")
+func iceCream() {
+    for _ in 1...8 {
+        for _ in 1...11 {
+            print("*", terminator: "")
         }
         print("")
     }
 }
 
-func iceCreamStick(){
-    for stick in 1...4{
+func iceCreamStick() {
+    for _ in 1...4 {
         print("    | |   ")
     }
 }
@@ -27,3 +27,4 @@ func iceCreamStick(){
 
 iceCream()
 iceCreamStick()
+
