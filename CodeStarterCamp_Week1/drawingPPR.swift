@@ -10,18 +10,18 @@ import Foundation
 // <정보> 추가
 // 토핑이 없을 때
 
-func drawTotal(heightOfStick: Int, bodyOfMain: String, toppingOfMain: String, heightOfPPR: Int) {
-    PPRInfo(heightOfStick: heightOfStick, bodyOfMain: bodyOfMain, toppingOfMain: toppingOfMain, heightOfPPR: heightOfPPR)
-    drawMainPPR(bodyOfMain: bodyOfMain, toppingOfMain: toppingOfMain)
-    drawBodyOfPPR(heightOfPPR: heightOfPPR)
+func makeTotal(heightOfStick: Int, peperoBody: String, topping: String, height: Int) {
+    makePeperoInfo(heightOfStick: heightOfStick, peperoBody: peperoBody, topping: topping, height: height)
+    drawPeperoBody(peperoBody: peperoBody, topping: topping)
+    drawBody(height: height)
     drawStick(heightOfStick: heightOfStick)
 }
 
-func PPRInfo(heightOfStick: Int, bodyOfMain: String, toppingOfMain: String, heightOfPPR: Int) {
+func makePeperoInfo(heightOfStick: Int, peperoBody: String, topping: String, height: Int) {
     print("<정보>")
-    print("길이: " + String(heightOfPPR))
-    print("몸통: " + bodyOfMain)
-    print("토핑: " + toppingOfMain)
+    print("길이: " + String(height))
+    print("몸통: " + peperoBody)
+    print("토핑: " + topping)
     print("막대길이: " + String(heightOfStick))
 }
 
@@ -31,33 +31,33 @@ func drawStick(heightOfStick: Int) {
         print(" |", "| ");
     }
 }
-var mainPPR_odd: String = ""
-var mainPPR_even: String = ""
+var bodyOdd: String = ""
+var bodyEven: String = ""
 
 // 몸통 모양과 토핑 모양을 받아 몸통을 그리는 함수
-func drawMainPPR(bodyOfMain: String, toppingOfMain: String) {
-    var topping = " "
-    if (toppingOfMain != "") {
-        topping = toppingOfMain
+func drawPeperoBody(peperoBody: String, topping: String) {
+    var realTopping = " "
+    if (topping != "") {
+        realTopping = topping
     }
     
-    if (bodyOfMain.contains("|")) {
-        let bodyOfMainArray: Array = bodyOfMain.split(separator: "|")
-        mainPPR_odd = topping + "|" + bodyOfMainArray[0] + "|" + " "
-        mainPPR_even = " " + "|" + bodyOfMainArray[1] + "|" + topping
+    if (peperoBody.contains("|")) {
+        let peperoBodyArray: Array = peperoBody.split(separator: "|")
+        bodyOdd = realTopping + "|" + peperoBodyArray[0] + "|" + " "
+        bodyEven = " " + "|" + peperoBodyArray[1] + "|" + realTopping
     } else {
-        mainPPR_odd = topping + bodyOfMain + " "
-        mainPPR_even = " " + bodyOfMain + topping
+        bodyOdd = realTopping + peperoBody + " "
+        bodyEven = " " + peperoBody + realTopping
     }
 }
 
 // 몸통 길이를 받아 몸통 모양에 따라 몸통을 그리는 함수
-func drawBodyOfPPR(heightOfPPR: Int) {
-    for i in 0...heightOfPPR-1 {
-        if (i%2 == 0){
-            print(mainPPR_odd)
+func drawBody(height: Int) {
+    for i in 0...height - 1 {
+        if (i % 2 == 0) {
+            print(bodyOdd)
         } else {
-            print(mainPPR_even)
+            print(bodyEven)
         }
     }
 }
