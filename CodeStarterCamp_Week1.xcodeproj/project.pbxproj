@@ -42,7 +42,7 @@
 		A1EC1F5F2766FF09007BAC54 /* PeperoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeperoFactory.swift; sourceTree = "<group>"; };
 		A1EC1F612767001B007BAC54 /* PeperoEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeperoEmployee.swift; sourceTree = "<group>"; };
 		A1EC1F6327670076007BAC54 /* PeperoMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeperoMarket.swift; sourceTree = "<group>"; };
-		A1EC1F682767115D007BAC54 /* step3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step3.png; sourceTree = "<group>"; };
+		A1F66F1827684F36008D77D1 /* step3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = step3.png; path = ../../../../step3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				A16BC7782761B9B900E663D8 /* step2.png */,
-				A1EC1F682767115D007BAC54 /* step3.png */,
+				A1F66F1827684F36008D77D1 /* step3.png */,
 			);
 			path = FlowChart;
 			sourceTree = "<group>";

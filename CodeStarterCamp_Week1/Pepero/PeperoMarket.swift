@@ -12,7 +12,7 @@ struct PeperoMarket {
                                        bodyShape: "***",
                                        topping: "",
                                        stickSize: 4)
-    private let amondPepero = Pepero(bodySize: 12,
+    private let almondPepero = Pepero(bodySize: 12,
                                      bodyShape: "***",
                                      topping: "&",
                                      stickSize: 4)
@@ -32,10 +32,10 @@ struct PeperoMarket {
                                        topping: defaultPepero.topping,
                                        bodySize: defaultPepero.bodySize,
                                        stickSize: defaultPepero.stickSize)
-        peperoEmployee.drawOrderedMenu(bodyShape: amondPepero.bodyShape,
-                                       topping: amondPepero.topping,
-                                       bodySize: amondPepero.bodySize,
-                                       stickSize: amondPepero.stickSize)
+        peperoEmployee.drawOrderedMenu(bodyShape: almondPepero.bodyShape,
+                                       topping: almondPepero.topping,
+                                       bodySize: almondPepero.bodySize,
+                                       stickSize: almondPepero.stickSize)
         peperoEmployee.drawOrderedMenu(bodyShape: peanutPepero.bodyShape,
                                        topping: peanutPepero.topping,
                                        bodySize: peanutPepero.bodySize,
