@@ -9,18 +9,18 @@
 import Foundation
  
 
-printIce(count:8)
-printBar(count:4)
+printIce(lengthOfIce:8)
+printBar(lengthOfBar:4)
 
 
-func printIce(count : Int) -> Void {
-    for i in 1...count{
+func printIce(lengthOfIce : Int) {
+    for _ in 1...lengthOfIce{
         print("***********")
     }
 }
 
-func printBar(count : Int) -> Void{
-    for i in 1...count{
+func printBar(lengthOfBar : Int) {
+    for _ in 1...lengthOfBar{
         print("    | |")
     }
 }
