@@ -46,14 +46,23 @@ func nude (body: String, topping: String) {
 //길이(Int)에 따라 몸통을 그리는 함수
 func drawBodyLength(bodyLength: Int) {
     for _ in 0...bodyLength {
-      nude(body: body, topping: topping)
-        //drawToppingBody(body: body, topping: topping)
-        // if 문으로 어떻게  할지 모르겠습니다 ㅠㅠ
+    if body == "|0|" {
+        nude(body: body, topping: topping)
+    } else {
+        drawToppingBody(body: body, topping: topping)
     }
 }
+}
+    //for _ in 0...bodyLength {
+      //nude(body: body, topping: topping)
+        //drawToppingBody(body: body, topping: topping)
+        // if 문으로 어떻게  할지 모르겠습니다 ㅠㅠ
+    //}
+
 
 //각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
 func drawPepro(stickLength: Int, body: String, topping: String, drawBody: Int, bodyLength: Int) {
     drawBodyLength(bodyLength: bodyLength)
     drawStick(stickLength: stickLength)
-}
+    }
+
