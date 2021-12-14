@@ -8,22 +8,37 @@
 import Foundation
 
 
-let peperoStickImage = " | |"
+let peperoStickImage = " | | "
 
-func drawPeperoBodyShape(iteration: Int, peperoBody: String, peperoTopping: String) -> String {
+func judgeToppingPosition(iteration: Int, peperoBody: String, peperoTopping: String) -> String {
     var leftTopping = ""
     var rightTopping = ""
-    let peperoBody = peperoBody
     
-    if iteration % 2 == 1 {
+    if (iteration % 2) == 1 {
         leftTopping = peperoTopping
         rightTopping = " "
         return leftTopping + peperoBody + rightTopping
         
     } else {
-        rightTopping = peperoTopping
         leftTopping = " "
+        rightTopping = peperoTopping
         return leftTopping + peperoBody + rightTopping
+    }
+    
+}
+
+func drawPeperoBodyShape(iteration: Int, peperoBody: String, peperoTopping: String) -> String {
+    let peperoBody = peperoBody
+    var nudePepero: Bool = false
+    
+    if peperoBody.contains("|0|") {
+       nudePepero = true
+        return ""
+    } else if peperoBody == "" {
+        return " " + peperoBody + " "
+        
+    } else {
+        return judgeToppingPosition(iteration: iteration, peperoBody: peperoBody, peperoTopping: peperoTopping)
     }
 }
 
@@ -52,5 +67,3 @@ func orderPepero(peperoLength: Int, peperoBody: String, peperoTopping: String, s
     drawPeperoBody(peperoLength: peperoLength, peperoBody: peperoBody, peperoTopping: peperoTopping)
     drawPeperoStick(stickLength: stickLength)
 }
-
-
