@@ -50,6 +50,13 @@ func printPeperoMenuInformation() {
 }
 
 func drawPepero(body: String = " ", topping: String) {
+    if bodyInsideValue == "0" {
+        let space = " "
+        toppingPositionChanger % 2 == 0 ?
+        print("\(topping)|\(space)|") : print(" \(body)\(topping)")
+        toppingPositionChanger += 1
+        return
+    }
     if toppingPositionChanger % 2 == 0 {
         print("\(topping)\(body)")
         toppingPositionChanger += 1
