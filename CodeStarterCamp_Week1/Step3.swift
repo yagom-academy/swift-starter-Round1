@@ -13,18 +13,15 @@ var evenToppingBody: String = ""
 var totalBody: String = ""
 
 //아이스크림 막대 만드는 함수
-@discardableResult
-func makePeperoStick(stickLength:Int) -> String {
+func makePeperoStick(stickLength:Int) {
     let stick: String = " | |\n"
     for _ in 1...stickLength {
         totalStick += stick
     }
-    return totalStick
 }
 
 //빼빼로 몸통 한줄 만드는 함수
-@discardableResult
-func makePeperoBody(body: String, topping: String) -> (String, String) {
+func makePeperoBody(body: String, topping: String) {
     if body == "|0|" {
         if topping == "" {
             oddToppingBody = " | |\n"
@@ -43,12 +40,10 @@ func makePeperoBody(body: String, topping: String) -> (String, String) {
             evenToppingBody = " \(body)\(topping)\n"
         }
     }
-    return (oddToppingBody, evenToppingBody)
 }
 
 //빼빼로 몸통 전체 만드는 함수
-@discardableResult
-func makePeperoTotalBody(length: Int) -> String {
+func makePeperoTotalBody(length: Int) {
     for count in 1...length {
         if count % 2 != 0 {
             totalBody += oddToppingBody
@@ -57,7 +52,6 @@ func makePeperoTotalBody(length: Int) -> String {
             totalBody += evenToppingBody
         }
     }
-    return totalBody
 }
 
 //빼빼로 전체 print하는 함수
