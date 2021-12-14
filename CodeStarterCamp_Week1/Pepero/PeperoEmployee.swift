@@ -8,12 +8,24 @@
 import Foundation
 
 struct PeperoEmployee {
-    func drawOrderedMenu(bodyShape: String, topping: String, bodySize: Int, stickSize: Int) {
-        drawInfo(bodyShape: bodyShape, topping: topping, bodySize: bodySize, stickSize: stickSize)
-        PeperoFactory().drawFinishedProduct(bodyShape: bodyShape, topping: topping, bodySize: bodySize, stickSize: stickSize)
+    func drawOrderedMenu(bodyShape: String,
+                         topping: String,
+                         bodySize: Int,
+                         stickSize: Int) {
+        drawInfo(bodyShape: bodyShape,
+                 topping: topping,
+                 bodySize: bodySize,
+                 stickSize: stickSize)
+        PeperoFactory().drawFinishedProduct(bodyShape: bodyShape,
+                                            topping: topping,
+                                            bodySize: bodySize,
+                                            stickSize: stickSize)
     }
     
-    private func drawInfo(bodyShape: String, topping: String, bodySize: Int, stickSize: Int) {
+    private func drawInfo(bodyShape: String,
+                          topping: String,
+                          bodySize: Int,
+                          stickSize: Int) {
         print("<정보>")
         print("길이: \(bodySize)")
         print("몸통: \(bodyShape)")

@@ -10,7 +10,10 @@ import Foundation
 struct PeperoFactory {
     private let stick = " | | "
     
-    func drawFinishedProduct(bodyShape: String, topping: String, bodySize: Int, stickSize: Int) {
+    func drawFinishedProduct(bodyShape: String,
+                             topping: String,
+                             bodySize: Int,
+                             stickSize: Int) {
         drawBody(bodyShape: bodyShape, topping: topping, bodySize: bodySize)
         drawStick(stickSize: stickSize)
     }
