@@ -8,4 +8,8 @@
 
 import Foundation
 
-IceCreamMarket().giveMenu()
+/// Step2 호출
+/// IceCreamMarket().giveMenu()
+
+/// Step3 호출
+PeperoMarket().giveMenu()
