@@ -8,10 +8,10 @@
 
 import Foundation
 
-func printb() -> Void{
+func printbody() {
     
-    for ice_t in 1...8{
-        for ice_e in 1...11{
+    for ice_body in 1...8{
+        for ice_inside in 1...11{
             print("*",terminator: "")
         }
         print()
@@ -19,14 +19,14 @@ func printb() -> Void{
         
 }
 
-func printf() -> Void{
-    for ice_s in 1...4{
+func printstick() {
+    for ice_stick in 1...4{
         print("    | |     ")
     }
 }
 
 //아이스 크림 몸통,막대
-printb()
-printf()
+printbody()
+printstick()
 
 
