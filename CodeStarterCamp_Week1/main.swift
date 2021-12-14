@@ -8,22 +8,20 @@
 
 import Foundation
 
-let icecream : String = "***********"
-let bar : String = "| |"
+let icecreamBody : String = "***********"
+let icecreamBar : String = "| |"
 
-func createIcecream(){
-    for count in 0...7{
-        print(icecream)
+func createIcecreamBody(){
+    for _ in 1...8{
+        print(icecreamBody)
     }
 }
 
-func createBar(){
-    for count in 0...3{
-        print("\t\(bar)\t")
+func createIcecreamBar(){
+    for _ in 1...4{
+        print("\t\(icecreamBar)\t")
     }
 }
 
-createIcecream()
-createBar()
-
-
+createIcecreamBody()
+createIcecreamBar()
