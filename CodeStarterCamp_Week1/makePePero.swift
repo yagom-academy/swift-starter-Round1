@@ -10,6 +10,16 @@ import Foundation
 
 let peperoStickImage = " | | "
 
+func judePeperoBodyisNude(iteration: Int, peperoBody: String) -> String {
+    
+    if (iteration % 2) == 1 {
+        let peperoBody = peperoBody.replacingOccurrences(of: "0", with: " ")
+        return " " + peperoBody + " "
+    } else {
+        return " " + peperoBody + " "
+    }
+}
+
 func judgeToppingPosition(iteration: Int, peperoBody: String, peperoTopping: String) -> String {
     var leftTopping = ""
     var rightTopping = ""
@@ -29,12 +39,10 @@ func judgeToppingPosition(iteration: Int, peperoBody: String, peperoTopping: Str
 
 func drawPeperoBodyShape(iteration: Int, peperoBody: String, peperoTopping: String) -> String {
     let peperoBody = peperoBody
-    var nudePepero: Bool = false
     
     if peperoBody.contains("|0|") {
-       nudePepero = true
-        return ""
-    } else if peperoBody == "" {
+        return judePeperoBodyisNude(iteration: iteration, peperoBody: peperoBody)
+    } else if peperoTopping == "" {
         return " " + peperoBody + " "
         
     } else {
