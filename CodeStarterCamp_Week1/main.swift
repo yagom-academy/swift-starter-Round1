@@ -8,19 +8,7 @@
 
 import Foundation
 
-//정보창 입력란
-var infoBodyLength: Int = 12
-var infoBodyStyle: String = "***"
-var infoToppingStyle: String = "#"
-var infoBarLength: Int = 4
-
-//빼빼로 만들기 입력란
-func makePepero() {
-  peperoInfo()
-  stackBody(bodylength: 10, topping: Topping.hash, body: Body.basic)
-  stackBar(barlength: 6)
-}
-
-makePepero()
-
-
+makePepero(body: basic.rawValue, topping: tab.rawValue, bodyLength: 10, barLength: 4)
+makePepero(body: basic.rawValue, topping: ampersand.rawValue, bodyLength: 12, barLength: 4)
+makePepero(body: basic.rawValue, topping: hash.rawValue, bodyLength: 12, barLength: 6)
+makePepero(body: nude.rawValue, topping: tab.rawValue, bodyLength: 6, barLength: 4)
