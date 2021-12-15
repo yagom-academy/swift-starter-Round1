@@ -8,5 +8,20 @@
 
 import Foundation
 
-print("Hello, World!")
+let icecreamBody : String = "***********"
+let icecreamBar : String = "| |"
 
+func createIcecreamBody(){
+    for _ in 1...8{
+        print(icecreamBody)
+    }
+}
+
+func createIcecreamBar(){
+    for _ in 1...4{
+        print("\t\(icecreamBar)\t")
+    }
+}
+
+createIcecreamBody()
+createIcecreamBar()
