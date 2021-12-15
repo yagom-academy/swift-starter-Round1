@@ -8,5 +8,10 @@
 
 import Foundation
 
-print("Hello, World!")
+func makeCream(){print("***********")}
 
+for _ in 0...7 {makeCream()}
+
+func makeStick(){print("    | |")}
+
+for _ in 0...3 {makeStick()}
