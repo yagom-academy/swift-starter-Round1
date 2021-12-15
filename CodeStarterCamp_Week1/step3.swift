@@ -42,4 +42,11 @@ class Pepero {
         print("토핑: \(topping)")
         print("막대길이: \(stickLength)\n")
     }
+    
+    //빼빼로그리기
+    func drawPepero(bodyLength: Int, body:String, topping: String, stickLength: Int) {
+        printPeperoInformation(bodyLength: bodyLength, body: body, topping: topping, stickLength: stickLength)
+        drawLengthBody(length: bodyLength, body_LB: body, topping_LB: topping)
+        drawLengthStick(length: stickLength)
+    }
 }
