@@ -16,10 +16,10 @@ func icecreamStick() {
     print("     | |  ")
 }
 
-for i in 1...8 {
+for iceBody in 1...8 {
     icecreamBody()
 }
-for i in 1...4 {
+for iceStick in 1...4 {
     icecreamStick()
 }
 
