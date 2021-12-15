@@ -13,4 +13,7 @@
 * 내가 앞으로 컴퓨터를 구매할때, 가장 중요하게 생각할 컴퓨터의 구성요소는 CPU인거 같다. 
 컴퓨터를 뇌에 비유하자면 RAM은 단기기억
 하드디스크 는 장기기억 ,CPU는 사고를 담당하는 대뇌피질 정도로 생각 한다. 대뇌피질 없이는 인간이 사고가 성립이 안 되듯 컴퓨터도 CPU 없이는 고철이라 생각 하기때문이다. 
-/Users/son-wonbin/Desktop/onebin/swift-starter-week1/아이스크림 순서도 (수정).png
+
+---
+# 아이스크림 순서도
+![아이스크림 순서도 (수정)](https://user-images.githubusercontent.com/94177308/146202438-d5ff1ded-27f6-43dd-9593-4c284daf6b5c.png)
