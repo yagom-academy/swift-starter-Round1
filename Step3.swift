@@ -13,11 +13,8 @@ func makeBar (barLength:Int){
     }
 }
 
-
-
 func makeBodyType(body: String, topping: String, bodyLength:Int) -> String {
     if body == "|0|" {
-        
         if bodyLength % 2 == 1 {
             return "| |"
         }
@@ -37,12 +34,9 @@ func makeBodyType(body: String, topping: String, bodyLength:Int) -> String {
 
 func makeBody(body: String, topping: String, bodyLength:Int){
     for bodyLength in 1...bodyLength{
-        
         let pepero = makeBodyType(body: body, topping: topping, bodyLength:bodyLength)
         print(pepero)
-        
     }
-    
 }
 
 func generatorPepero(body: String, topping: String,bodyLength:Int, barLength:Int){
