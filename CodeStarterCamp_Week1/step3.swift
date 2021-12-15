@@ -22,5 +22,16 @@ class Pepero {
     func drawBodyRTopping(body: String, topping: String) {
         print(" \(body)\(topping)")
     }
-
+    
+    //길이에 따른 몸통 그리기
+    func drawLengthBody(length: Int, body_LB: String, topping_LB: String) {
+        for count in 1...length {
+            if count % 2 == 0 {
+                drawBodyRTopping(body: body_LB, topping: topping_LB)
+            } else {
+                drawBodyLTopping(body: body_LB, topping: topping_LB)
+            }
+        }
+    }
+    
 }
