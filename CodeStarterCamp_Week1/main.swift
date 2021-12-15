@@ -8,4 +8,18 @@
 
 import Foundation
 
+func icecreamBody() {
+    print(" ***********")
+}
+
+func icecreamStick() {
+    print("     | |  ")
+}
+
+for i in 1...8 {
+    icecreamBody()
+}
+for i in 1...4 {
+    icecreamStick()
+}
 
