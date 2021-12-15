@@ -12,61 +12,55 @@ var oddToppingBody: String = ""
 var evenToppingBody: String = ""
 var totalBody: String = ""
 
-func paparoStickGenerator(stickLength:Int) -> String {
+func generatePeperoStick(stickLength:Int) {
     let stick: String = " | |\n"
     for _ in 1...stickLength {
         totalStick += stick
     }
-    return totalStick
 }
 
-func paparoBodyGenerator(body: String, topping: String) -> (String, String) {
-    var rowBody: String = ""
+func generatePeperoBody(body: String, topping: String) {
     if body == "|0|" {
         if topping == "" {
             oddToppingBody = " | |\n"
             evenToppingBody = " \(body)\n"
-        }
-        else {
+        } else {
             oddToppingBody = "\(topping)| |\n"
             evenToppingBody = " \(body)\(topping)\n"
         }
-    }
-    else {
-        for _ in 1...3 {
-            rowBody += body
+    } else {
+        if topping == "" {
+            oddToppingBody = " \(topping)\(body)\n"
+            evenToppingBody = " \(body)\(topping)\n"
+        } else {
+            oddToppingBody = "\(topping)\(body)\n"
+            evenToppingBody = " \(body)\(topping)\n"
         }
-        oddToppingBody = "\(topping)\(rowBody)\n"
-        evenToppingBody = " \(rowBody)\(topping)\n"
     }
-    return (oddToppingBody, evenToppingBody)
 }
 
-func paparoTotalBodyGenerator(length: Int) -> String {
+func generatePeperoTotalBody(length: Int) {
     for count in 1...length {
         if count % 2 != 0 {
             totalBody += oddToppingBody
-        }
-        else {
+        } else {
             totalBody += evenToppingBody
         }
     }
-    return totalBody
 }
 
-
-func printPaparo(length: Int, body: String, topping: String, stickLength: Int){
+func printPepero(length: Int, body: String, topping: String, stickLength: Int){
     print("""
             <정보>
             길이: \(length)
             몸통: \(body)
             토핑: \(topping)
-            막대길이: \(stickLength)
+            막대길이: \(stickLength)\n
             """)
     
-    paparoStickGenerator(stickLength: stickLength)
-    paparoBodyGenerator(body: body, topping: topping)
-    paparoTotalBodyGenerator(length: length)
+    generatePeperoStick(stickLength: stickLength)
+    generatePeperoBody(body: body, topping: topping)
+    generatePeperoTotalBody(length: length)
     
     print("\(totalBody)\(totalStick)")
 }
