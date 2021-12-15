@@ -8,6 +8,16 @@
 
 import Foundation
 
+// MARK: Step3: 빼빼로 그리기
+
+// 요구사항 2 : 빼빼로 출력
+printPepero(type: PeperoType.one)
+printPepero(type: PeperoType.two)
+printPepero(type: PeperoType.three)
+printPepero(type: PeperoType.four)
+
+
+
 // MARK: Step2: 아이스크림 그리기
 
 // 일단 보자마자 내가 생각한대로
