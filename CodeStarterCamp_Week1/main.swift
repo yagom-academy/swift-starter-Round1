@@ -29,6 +29,7 @@ func makeIceCream(){
 
     }
 }
+
 func makeIceCreamBar(){
     for _ in 1...4 {
         drawEmpty()

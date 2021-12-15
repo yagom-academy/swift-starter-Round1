@@ -3,21 +3,22 @@ var peperoBodyLength : Int = 0
 var peperoBody : String = ""
 var peperoTopping : String = ""
 
-func makePeperoInfo(BarLength : Int, BodyLength : Int, Body : String, Topping : String){
+func makePeperoInfo(barLength : Int, bodyLength : Int, body : String, topping : String){
     print("빼빼로 정보입니다")
     print("#############")
-    print("빼뺴로 막대 길이 : \(BarLength)")
-    print("뺴빼로 몸통 길이 : \(BodyLength)")
-    print("빼빼로 몸통 : \(Body)")
-    print("빼뺴로 토핑 : \(Topping)")
+    print("빼뺴로 막대 길이 : \(barLength)")
+    print("뺴빼로 몸통 길이 : \(bodyLength)")
+    print("빼빼로 몸통 : \(body)")
+    print("빼뺴로 토핑 : \(topping)")
     
-    peperoBar = BarLength
-    peperoBodyLength = BodyLength
-    peperoBody = Body
-    peperoTopping = Topping
+    peperoBar = barLength
+    peperoBodyLength = bodyLength
+    peperoBody = body
+    peperoTopping = topping
     
     makePepero()
 }
+
 func makePepero(){
     makeBodyShape()
     makeBar()
