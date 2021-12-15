@@ -10,25 +10,23 @@ func makeBar(barLenth: Int){
 
 func setPeperoBody(chocolete: String, topping: String, chocoleteLenth: Int) -> String {
     if chocolete == "|0|" {
-        
-     return  NudepeperoBody(chocolete: chocolete, chocoleteLenth: chocoleteLenth)
+     return  nudepeperoBody(chocolete: chocolete, chocoleteLenth: chocoleteLenth)
     } else {
- 
-     return PeperoBody(chocolete: chocolete, topping: topping, chocoleteLenth: chocoleteLenth)
+       return peperoBody(chocolete: chocolete, topping: topping, chocoleteLenth: chocoleteLenth)
 }
 }
 
 
-func NudepeperoBody(chocolete: String, chocoleteLenth: Int) -> String {
+func nudepeperoBody(chocolete: String, chocoleteLenth: Int) -> String {
     if chocoleteLenth % 2 == 1 {
-        return " | |"
+       return " | |"
     } else {
-        return " "+chocolete
-    }
+       return " "+chocolete
+}
 }
 
 
-func PeperoBody(chocolete: String, topping: String, chocoleteLenth: Int) -> String {
+func peperoBody(chocolete: String, topping: String, chocoleteLenth: Int) -> String {
     if chocoleteLenth % 2 == 1 {
         return topping+chocolete
     } else {
