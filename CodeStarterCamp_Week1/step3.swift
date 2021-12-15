@@ -34,4 +34,12 @@ class Pepero {
         }
     }
     
+    //빼빼로 정보 출력
+    func printPeperoInformation(bodyLength: Int, body:String, topping: String, stickLength: Int) {
+        print("<정보>")
+        print("길이: \(bodyLength)")
+        print("몸통: \(body)")
+        print("토핑: \(topping)")
+        print("막대길이: \(stickLength)\n")
+    }
 }
