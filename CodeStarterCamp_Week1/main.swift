@@ -8,23 +8,12 @@
 
 import Foundation
 
-
-func iceCream() {
-    for _ in 1...8 {
-        for _ in 1...11 {
-            print("*", terminator: "")
-        }
-        print("")
-    }
-}
-
-func iceCreamStick() {
-    for _ in 1...4 {
-        print("    | |   ")
-    }
-}
+//step3
+let bodyHeight: Int = 6
+let body: String = "***"
+let topping: String = " "
+let stickHeight: Int = 4
 
 
-iceCream()
-iceCreamStick()
-
+var pepero: Pepero = Pepero()
+pepero.finalPepero(bodyHeight: bodyHeight, body: body, topping: topping, stickHeight: stickHeight)
