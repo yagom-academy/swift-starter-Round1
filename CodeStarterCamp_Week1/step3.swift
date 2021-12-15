@@ -14,4 +14,13 @@ class Pepero {
             print(" | |")
         }
     }
+    
+    //몸통,토핑 그리기
+    func drawBodyLTopping(body: String, topping: String) {
+        print("\(topping)\(body)")
+    }
+    func drawBodyRTopping(body: String, topping: String) {
+        print(" \(body)\(topping)")
+    }
+
 }
