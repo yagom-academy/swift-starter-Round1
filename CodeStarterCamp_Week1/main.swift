@@ -8,6 +8,7 @@
 
 import Foundation
 
+/*
 printIceCream()     // 아이스크림 부분을 그리는 함수
 printStick()        // 막대기(손잡이) 부분을 그리는 함수
 
@@ -29,3 +30,16 @@ func printStick() {
         print("    ||")
     }
 }
+*/
+
+let length: Int = 10
+let body: String = "***"
+let topping: String = "#"
+let stickLength: Int = 4
+    
+let myPepero = MyPepero(length: length, body: body, topping: topping, stickLength: stickLength)
+
+myPepero.printInfo(length, body, topping, stickLength)
+myPepero.printMyPepero(length, body, topping, stickLength)
+
+
