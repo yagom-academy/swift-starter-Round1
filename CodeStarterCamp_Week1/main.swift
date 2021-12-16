@@ -8,5 +8,27 @@
 
 import Foundation
 
-print("Hello, World!")
 
+func printIceCreamBody() {
+    print("***********")
+}
+
+func printIceCreamStick() {
+    print("    | |")
+}
+
+
+func printWholeIceCreamBody(count: Int) {
+    for _ in 1...count {
+            printIceCreamBody()
+    }
+}
+
+func printWholeIceCreamStick(count: Int) {
+    for _ in 1...count {
+        printIceCreamStick()
+    }
+}
+
+printWholeIceCreamBody(count: 8)
+printWholeIceCreamStick(count: 4)
