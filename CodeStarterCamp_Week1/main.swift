@@ -1,3 +1,3 @@
 printIceCream()
 printStick()
-printPepero(lenOfBody: 10, bodyOfPepero: "***", toppingOfPepero: "&", lenOfStick: 4)
+printPepero(lengthOfBody: 10, body: "|0|", topping: "", lengthOfStick: 4)
