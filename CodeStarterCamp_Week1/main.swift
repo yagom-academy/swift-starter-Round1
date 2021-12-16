@@ -23,18 +23,22 @@ func drawStick() {
 drawIceCream()
 drawStick()
 
-var lengthIceCream = 1
-var lengthStick = 1
+
+
 
 func makeIceCream() {
-    while lengthIceCream <= 8 {
+    var lengthIceCream = 0
+    
+    while lengthIceCream < 8 {
         print("***********")
         lengthIceCream += 1
     }
 }
 
 func makeStick() {
-    while lengthStick <= 4 {
+    var lengthStick = 0
+    
+    while lengthStick < 4 {
         print("    | |")
         lengthStick += 1
     }
