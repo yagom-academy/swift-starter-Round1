@@ -8,8 +8,6 @@
 import Foundation
 
 
-let peperoStickImage = " | | "
-
 func drawNudePepero(iteration: Int, peperoBody: String) -> String {
     if (iteration % 2) == 1 {
         let peperoBody = peperoBody.replacingOccurrences(of: "0", with: " ")
@@ -61,8 +59,9 @@ func drawPeperoBody(peperoLength: Int, peperoBody: String, peperoTopping: String
 }
 
 func drawPeperoStick(stickLength: Int) {
+    let peperoStick = " | | "
     for _ in 1...stickLength {
-        print(peperoStickImage)
+        print(peperoStick)
     }
 }
 
