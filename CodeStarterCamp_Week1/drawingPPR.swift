@@ -7,10 +7,12 @@
 
 import Foundation
 
-// <정보> 추가
-// 토핑이 없을 때
+//필요한 변수 선언
+var bodyOdd: String = ""
+var bodyEven: String = ""
 
-func makeTotal(heightOfStick: Int, peperoBody: String, topping: String, height: Int) {
+
+func makeFullPepero(peperoBody: String, topping: String, height: Int, heightOfStick: Int) {
     makePeperoInfo(heightOfStick: heightOfStick, peperoBody: peperoBody, topping: topping, height: height)
     drawPeperoBody(peperoBody: peperoBody, topping: topping)
     drawBody(height: height)
@@ -28,11 +30,9 @@ func makePeperoInfo(heightOfStick: Int, peperoBody: String, topping: String, hei
 // 길이값을 인자로 받아 막대를 그린다.
 func drawStick(heightOfStick: Int) {
     for _ in 0...heightOfStick-1 {
-        print(" |", "| ");
+        print(" |", "|");
     }
 }
-var bodyOdd: String = ""
-var bodyEven: String = ""
 
 // 몸통 모양과 토핑 모양을 받아 몸통을 그리는 함수
 func drawPeperoBody(peperoBody: String, topping: String) {
@@ -42,8 +42,9 @@ func drawPeperoBody(peperoBody: String, topping: String) {
     }
     
     if (peperoBody.contains("|")) {
-        let peperoBodyArray: Array = peperoBody.split(separator: "|")
-        bodyOdd = realTopping + "|" + peperoBodyArray[0] + "|" + " "
+        var addBlankOnPeperoBody = " " + peperoBody
+        let peperoBodyArray: Array = addBlankOnPeperoBody.split(separator: "|")
+        bodyOdd = realTopping + "|" + peperoBodyArray[0] + "|"
         bodyEven = " " + "|" + peperoBodyArray[1] + "|" + realTopping
     } else {
         bodyOdd = realTopping + peperoBody + " "

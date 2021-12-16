@@ -8,5 +8,5 @@
 // PR 전에 제목 확인 ! Week3 [STEP 1] 고도 <-----형태로 PR 보내기!
 
 // 빼빼로 그리기
-makeTotal(heightOfStick: 5, peperoBody: " |0|", topping: "", height: 7)
+makeFullPepero(peperoBody: "***", topping: "a", height: 7, heightOfStick: 5)
 
