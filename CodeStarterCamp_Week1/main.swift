@@ -10,4 +10,4 @@ import Foundation
 
 var makePepero = Pepero()
 
-makePepero.drawPepero(bodyLength: 10, body: "+++", topping: "!", stickLength: 4)
+makePepero.drawPepero(bodyLength: 10, peperoBody: "|0|", topping: "@", stickLength: 4)
