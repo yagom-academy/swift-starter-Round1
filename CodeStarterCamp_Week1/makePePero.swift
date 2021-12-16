@@ -6,17 +6,13 @@
 //
 
 import Foundation
-
-
 func drawNudePepero(iteration: Int, peperoBody: String) -> String {
     if (iteration % 2) == 1 {
         let peperoBody = peperoBody.replacingOccurrences(of: "0", with: " ")
-        
         return " " + peperoBody + " "
         
     } else {
         return " " + peperoBody + " "
-
     }
 }
 
@@ -27,13 +23,11 @@ func judgeToppingPosition(iteration: Int, peperoBody: String, peperoTopping: Str
     if (iteration % 2) == 1 {
         leftTopping = peperoTopping
         rightTopping = " "
-        
         return leftTopping + peperoBody + rightTopping
         
     } else {
         leftTopping = " "
         rightTopping = peperoTopping
-        
         return leftTopping + peperoBody + rightTopping
     }
 }
