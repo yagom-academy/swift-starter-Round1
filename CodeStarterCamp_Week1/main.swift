@@ -8,10 +8,18 @@
 
 import Foundation
 
-func makeCream(){print("***********")}
+func makeIceCream(){
+    print("***********")
+}
 
-for _ in 0...7 {makeCream()}
+for _ in 0...7 {
+    makeIceCream()
+}
 
-func makeStick(){print("    | |")}
+func makeIceCreamStick(){
+    print("    | |")
+}
 
-for _ in 0...3 {makeStick()}
+for _ in 0...3 {
+    makeIceCreamStick()
+}
