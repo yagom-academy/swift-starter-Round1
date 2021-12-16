@@ -6,8 +6,8 @@
 //
 
 import Foundation
-func drawNudePepero(iteration: Int, peperoBody: String) -> String {
-    if (iteration % 2) == 1 {
+func drawNudePepero(iterationCount: Int, peperoBody: String) -> String {
+    if (iterationCount % 2) == 1 {
         let peperoBody = peperoBody.replacingOccurrences(of: "0", with: " ")
         return " " + peperoBody + " "
         
@@ -16,11 +16,11 @@ func drawNudePepero(iteration: Int, peperoBody: String) -> String {
     }
 }
 
-func judgeToppingPosition(iteration: Int, peperoBody: String, peperoTopping: String) -> String {
+func judgeToppingPosition(iterationCount: Int, peperoBody: String, peperoTopping: String) -> String {
     var leftTopping = ""
     var rightTopping = ""
     
-    if (iteration % 2) == 1 {
+    if (iterationCount % 2) == 1 {
         leftTopping = peperoTopping
         rightTopping = " "
         return leftTopping + peperoBody + rightTopping
@@ -32,23 +32,23 @@ func judgeToppingPosition(iteration: Int, peperoBody: String, peperoTopping: Str
     }
 }
 
-func drawPeperoBodyShape(iteration: Int, peperoBody: String, peperoTopping: String) -> String {
+func drawPeperoBodyShape(iterationCount: Int, peperoBody: String, peperoTopping: String) -> String {
     let peperoBody = peperoBody
     
     if peperoBody.contains("|0|") {
-        return drawNudePepero(iteration: iteration, peperoBody: peperoBody)
+        return drawNudePepero(iterationCount: iterationCount, peperoBody: peperoBody)
         
     } else if peperoTopping == "" {
         return " " + peperoBody + " "
         
     } else {
-        return judgeToppingPosition(iteration: iteration, peperoBody: peperoBody, peperoTopping: peperoTopping)
+        return judgeToppingPosition(iterationCount: iterationCount, peperoBody: peperoBody, peperoTopping: peperoTopping)
     }
 }
 
 func drawPeperoBody(peperoLength: Int, peperoBody: String, peperoTopping: String) {
-    for i in 1...peperoLength {
-        print(drawPeperoBodyShape(iteration: i, peperoBody: peperoBody, peperoTopping: peperoTopping))
+    for num in 1...peperoLength {
+        print(drawPeperoBodyShape(iterationCount: num, peperoBody: peperoBody, peperoTopping: peperoTopping))
     }
 }
 
