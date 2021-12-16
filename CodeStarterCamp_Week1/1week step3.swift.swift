@@ -36,33 +36,31 @@ func makeBar(){
     }
 }
 
-//빼빼로 몸통을 그리는 함수
 func makeBodyShape(){
   for count in 1...peperoBodyLength {
-      if peperoBody == "***" {
-          if peperoTopping == "" {
-                  print(" \(peperoBody)")
+      switch peperoBody {
+      case "***" :
+              if peperoTopping == "" {
+                      print(" \(peperoBody)")
+                  }
+              else {
+                  if count % 2 == 1{
+                      print("\(peperoTopping)\(peperoBody)")
+                  }
+                  else{
+                      print(" \(peperoBody)\(peperoTopping)")
+                  }
               }
-          else {
-              if count % 2 == 1{
-                  print("\(peperoTopping)\(peperoBody)")
-              }
-              else{
-                  print(" \(peperoBody)\(peperoTopping)")
-              }
-          }
-          }
-      else if peperoBody == "| |"{
+          
+      case "| |" :
           if count % 2 == 1{
               print("  | |")
           }
           else {
               print("  |0|")
           }
-      }
-      else {
+      default :
           print("정보를 잘못 입력하였습니다 다시 입력해주세요")
       }
       }
  }
-
