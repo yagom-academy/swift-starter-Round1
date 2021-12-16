@@ -18,30 +18,17 @@ func printIceCreamStick() {
 }
 
 
- for _ in 1...8 {
-    printIceCreamBody()
-}
-
-for _ in 1...4 {
-    printIceCreamStick()
-}
-
-
-
-
-
-func printWholeIceCreamBody() {
-    for _ in 1...8 {
-        print("***********")
+func printWholeIceCreamBody(count: Int) {
+    for _ in 1...count {
+            printIceCreamBody()
     }
 }
 
-func printWholeIceCreamStick() {
-    for _ in 1...4 {
-        print("    | |")
+func printWholeIceCreamStick(count: Int) {
+    for _ in 1...count {
+        printIceCreamStick()
     }
 }
 
-printWholeIceCreamBody()
-printWholeIceCreamStick()
-
+printWholeIceCreamBody(count: 8)
+printWholeIceCreamStick(count: 4)
