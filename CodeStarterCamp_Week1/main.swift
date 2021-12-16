@@ -8,17 +8,17 @@
 
 import Foundation
 
-func body() {
+func makeIceCreamBody() {
     print(" ***********")
 }
 
-func stick() {
+func makeIceCreamStick() {
     print("     | |  ")
 }
 
-for i in 1...8 {
-    body()
+for iceCreamBody in 1...8 {
+    makeIceCreamBody()
 }
-for i in 1...4 {
-    stick()
+for iceCreamStick in 1...4 {
+    makeIceCreamStick()
 }
