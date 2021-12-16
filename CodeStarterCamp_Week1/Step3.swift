@@ -7,33 +7,36 @@
 
 import Foundation
 
-func drawBar(barNum: Int) {
-    for _ in 1...barNum {
+func drawBar(barSize: Int) {
+    for _ in 1...barSize {
         print(" | |")
     }
 }
 
-func drawBodyAndTopping(body: String, topping: String, bodyNum: Int) {
-    if body == "|0|" {
-        for num in 1...bodyNum {
-            if num % 2 != 0 {
-                print("\(topping)| |")
-            } else {
-                print(" |0|\(topping)")
-            }
-        }
-    } else {
-        for num in 1...bodyNum {
-            if num % 2 != 0 {
-                print("\(topping)\(body)")
-            } else {
-                print(" \(body)\(topping)")
-            }
-        }
+func drawBodyAndTopping(body: String, topping: String, bodySize: Int) {
+    for number in 1...bodySize {
+        drawBodyShape(body: body, topping: topping, bodySize: number)
     }
 }
 
-func drawWhole(body: String, topping: String = " ", bodyNum: Int, barNum: Int) {
-    drawBodyAndTopping(body: body, topping: topping, bodyNum: bodyNum)
-    drawBar(barNum: barNum)
+func drawBodyShape(body: String, topping: String, bodySize: Int) {
+    if body == "|0|" {
+        bodySize % 2 == 0 ? print(" |0|\(topping)") : print("\(topping)| |")
+    }
+    
+    if body != "|0|" {
+        bodySize % 2 == 0 ? print(" \(body)\(topping)") : print("\(topping)\(body)")
+    }
 }
+
+func drawWhole(body: String, topping: String = " ", bodySize: Int, barSize: Int) {
+    print("<정보>")
+    print("길이: \(bodySize)")
+    print("몸통: \(body)")
+    print("토핑: \(topping)")
+    print("막대길이: \(barSize)")
+    
+    drawBodyAndTopping(body: body, topping: topping, bodySize: bodySize)
+    drawBar(barSize: barSize)
+}
+
