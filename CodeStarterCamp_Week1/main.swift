@@ -28,4 +28,4 @@ func drawStickImage() {
 //drawIceCreamImage()
 //drawStickImage()
 
-orderPepero(peperoLength: 6, peperoBody: "|0|", peperoTopping: "", stickLength: 4)
+printPeperoInfo(peperoLength: 6, peperoBody: "|0|", peperoTopping: "", stickLength: 4)
