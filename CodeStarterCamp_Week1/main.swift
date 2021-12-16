@@ -10,8 +10,8 @@ import Foundation
 
 func printbody() {
     
-    for ice_body in 1...8{
-        for ice_inside in 1...11{
+    for _ in 1...8{
+        for _ in 1...11{
             print("*",terminator: "")
         }
         print()
@@ -20,13 +20,13 @@ func printbody() {
 }
 
 func printstick() {
-    for ice_stick in 1...4{
+    for _ in 1...4{
         print("    | |     ")
     }
 }
 
 //아이스 크림 몸통,막대
-printbody()
-printstick()
+//printbody()
+//printstick()
 
-
+order_Custom_PePero(peperoLength: 10, peperoBody: "|0|", peperoTopping: "", stickLength: 4)
