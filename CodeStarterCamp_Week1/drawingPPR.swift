@@ -12,14 +12,14 @@ var bodyOdd: String = ""
 var bodyEven: String = ""
 
 
-func makeFullPepero(peperoBody: String, topping: String, height: Int, heightOfStick: Int) {
-    makePeperoInfo(heightOfStick: heightOfStick, peperoBody: peperoBody, topping: topping, height: height)
+func makeFullPepero(height: Int, peperoBody: String, topping: String, heightOfStick: Int) {
+    makePeperoInfo(height: height, peperoBody: peperoBody, topping: topping, heightOfStick: heightOfStick)
     drawPeperoBody(peperoBody: peperoBody, topping: topping)
     drawBody(height: height)
     drawStick(heightOfStick: heightOfStick)
 }
 
-func makePeperoInfo(heightOfStick: Int, peperoBody: String, topping: String, height: Int) {
+func makePeperoInfo(height: Int, peperoBody: String, topping: String, heightOfStick: Int) {
     print("<정보>")
     print("길이: " + String(height))
     print("몸통: " + peperoBody)
