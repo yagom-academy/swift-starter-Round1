@@ -65,6 +65,11 @@ func drawPeperoStick(stickLength: Int) {
     }
 }
 
+func orderPepero(peperoLength: Int, peperoBody: String, peperoTopping: String, stickLength: Int) {
+    drawPeperoBody(peperoLength: peperoLength, peperoBody: peperoBody, peperoTopping: peperoTopping)
+    drawPeperoStick(stickLength: stickLength)
+}
+
 func printPeperoInfo(peperoLength: Int, peperoBody: String, peperoTopping: String, stickLength: Int) {
     print("""
     <정보>
@@ -75,6 +80,5 @@ func printPeperoInfo(peperoLength: Int, peperoBody: String, peperoTopping: Strin
     
     """)
     
-    drawPeperoBody(peperoLength: peperoLength, peperoBody: peperoBody, peperoTopping: peperoTopping)
-    drawPeperoStick(stickLength: stickLength)
+   orderPepero(peperoLength: peperoLength, peperoBody: peperoBody, peperoTopping: peperoTopping, stickLength: stickLength)
 }
