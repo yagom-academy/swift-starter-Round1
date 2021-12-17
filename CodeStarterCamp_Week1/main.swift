@@ -34,6 +34,7 @@ var barLength : Int = 4
 
 printIceCreamInfo(length: length, body: body, topping: topping, barLegnth: barLength)
 drawIceCream(length: length, body: body, topping: topping, barLegnth: barLength)
+print("\n")
 
 // case 2
 length = 12
@@ -43,6 +44,7 @@ barLength = 4
 
 printIceCreamInfo(length: length, body: body, topping: topping, barLegnth: barLength)
 drawIceCream(length: length, body: body, topping: topping, barLegnth: barLength)
+print("\n")
 
 // case 3
 length = 12
@@ -52,7 +54,7 @@ barLength = 6
 
 printIceCreamInfo(length: length, body: body, topping: topping, barLegnth: barLength)
 drawIceCream(length: length, body: body, topping: topping, barLegnth: barLength)
-
+print("\n")
 
 // case 4
 length = 6
@@ -62,7 +64,7 @@ barLength = 4
 
 printIceCreamInfo(length: length, body: body, topping: topping, barLegnth: barLength)
 drawIceCream(length: length, body: body, topping: topping, barLegnth: barLength)
-
+print("\n")
 
 // my case
 length = 3
@@ -72,4 +74,4 @@ barLength = 3
 
 printIceCreamInfo(length: length, body: body, topping: topping, barLegnth: barLength)
 drawIceCream(length: length, body: body, topping: topping, barLegnth: barLength)
-
+print("\n")

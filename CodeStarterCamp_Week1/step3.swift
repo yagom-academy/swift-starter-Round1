@@ -12,17 +12,21 @@ func printIceCreamInfo(length : Int, body : String, topping: String, barLegnth :
     print("길이:", length)
     print("몸통:", body)
     print("토핑:", topping)
-    print("막대길이:", barLegnth)
+    print("막대길이:", barLength)
     print("")
 }
 
-func makeWholeBody(body : String, topping: String) {
-    print(topping, body, topping, separator: "")
+func makeWholeBody(body : String, topping: String, count: Int) {
+    if count%2 == 0 {
+        print(" \(body)\(topping)")
+    } else {
+        print("\(topping)\(body) ")
+    }
 }
 
 func drawWholeBody(body : String, topping: String, length : Int) {
-    for _ in 1...length {
-        makeWholeBody(body: body, topping: topping)
+    for count in 1...length {
+        makeWholeBody(body: body, topping: topping, count: count)
     }
 }
 
@@ -33,10 +37,9 @@ func drawBar(barLength : Int) {
 }
 
 func drawIceCream(length : Int, body : String, topping: String, barLegnth : Int) {
-    makeWholeBody(body: body, topping: topping)
-    drawWholeBody(body : body, topping: topping, length : barLegnth)
-    drawBar(barLength: barLegnth)
-    print("")
+    drawWholeBody(body : body, topping: topping, length : length)
+    drawBar(barLength: barLength)
+    //print("")
 }
 
 
