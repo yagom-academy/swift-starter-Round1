@@ -8,15 +8,6 @@
 
 import Foundation
 
-func makeIceCream() {
-    for _ in 1...8 {
-        print("***********")
-    }
-}
-func makeStick() {
-    for _ in 1...4 {
-        print("    | |")
-    }
-}
-makeIceCream()
-makeStick()
+var makePepero = Pepero()
+
+makePepero.drawPepero(bodyLength: 10, peperoBody: "|0|", topping: "@", stickLength: 4)
