@@ -22,21 +22,21 @@ func drawBodyAndTopping(body: String, topping: String, bodySize: Int) {
 func drawBodyShape(body: String, topping: String, bodySize: Int) {
     if body == "|0|" {
         bodySize % 2 == 0 ? print(" |0|\(topping)") : print("\(topping)| |")
-    }
-    
-    if body != "|0|" {
+    } else {
         bodySize % 2 == 0 ? print(" \(body)\(topping)") : print("\(topping)\(body)")
     }
 }
 
 func drawWhole(body: String, topping: String = " ", bodySize: Int, barSize: Int) {
+    print("-------------------------", "\n")
     print("<정보>")
     print("길이: \(bodySize)")
     print("몸통: \(body)")
     print("토핑: \(topping)")
-    print("막대길이: \(barSize)")
+    print("막대길이: \(barSize)", "\n")
     
     drawBodyAndTopping(body: body, topping: topping, bodySize: bodySize)
     drawBar(barSize: barSize)
+    print("\n")
 }
 
