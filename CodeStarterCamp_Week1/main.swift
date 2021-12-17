@@ -23,9 +23,6 @@ func drawStick() {
 drawIceCream()
 drawStick()
 
-
-
-
 func makeIceCream() {
     var lengthIceCream = 0
     
