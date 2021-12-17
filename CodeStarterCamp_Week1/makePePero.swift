@@ -6,13 +6,17 @@
 //
 
 import Foundation
+var fullPepero = ""
+
 func drawNudePepero(iterationCount: Int, peperoBody: String) -> String {
     if (iterationCount % 2) == 1 {
         let peperoBody = peperoBody.replacingOccurrences(of: "0", with: " ")
-        return " " + peperoBody + " "
+        fullPepero = " " + peperoBody + " "
+        return fullPepero
         
     } else {
-        return " " + peperoBody + " "
+        fullPepero = " " + peperoBody + " "
+        return fullPepero
     }
 }
 
@@ -23,12 +27,14 @@ func judgeToppingPosition(iterationCount: Int, peperoBody: String, peperoTopping
     if (iterationCount % 2) == 1 {
         leftTopping = peperoTopping
         rightTopping = " "
-        return leftTopping + peperoBody + rightTopping
+        fullPepero = leftTopping + peperoBody + rightTopping
+        return fullPepero
         
     } else {
         leftTopping = " "
         rightTopping = peperoTopping
-        return leftTopping + peperoBody + rightTopping
+        fullPepero = leftTopping + peperoBody + rightTopping
+        return fullPepero
     }
 }
 
@@ -39,7 +45,8 @@ func drawPeperoBodyShape(iterationCount: Int, peperoBody: String, peperoTopping:
         return drawNudePepero(iterationCount: iterationCount, peperoBody: peperoBody)
         
     } else if peperoTopping == "" {
-        return " " + peperoBody + " "
+        fullPepero = " " + peperoBody + " "
+        return fullPepero
         
     } else {
         return judgeToppingPosition(iterationCount: iterationCount, peperoBody: peperoBody, peperoTopping: peperoTopping)
