@@ -8,17 +8,70 @@
 
 import Foundation
 
-func cream() -> Void {
+// step2
+func drawSimpleCream() -> Void {
     for _ in 1...8 {
         print("***********")
     }
 }
 
-func bar() -> Void {
+func drawSimpleBar() -> Void {
     for _ in 1...4 {
         print("    | |    ")
     }
 }
 
-cream()
-bar()
+drawSimpleCream()
+drawSimpleBar()
+print("")
+
+// step 3
+// case 1
+var length : Int = 10
+var body : String = "***"
+var topping : String = " "
+var barLength : Int = 4
+
+printIceCreamInfo(length: length, body: body, topping: topping, barLegnth: barLength)
+drawIceCream(length: length, body: body, topping: topping, barLegnth: barLength)
+print("\n")
+
+// case 2
+length = 12
+body = "***"
+topping = "&"
+barLength = 4
+
+printIceCreamInfo(length: length, body: body, topping: topping, barLegnth: barLength)
+drawIceCream(length: length, body: body, topping: topping, barLegnth: barLength)
+print("\n")
+
+// case 3
+length = 12
+body = "***"
+topping = "#"
+barLength = 6
+
+printIceCreamInfo(length: length, body: body, topping: topping, barLegnth: barLength)
+drawIceCream(length: length, body: body, topping: topping, barLegnth: barLength)
+print("\n")
+
+// case 4
+length = 6
+body = "|0|"
+topping = " "
+barLength = 4
+
+printIceCreamInfo(length: length, body: body, topping: topping, barLegnth: barLength)
+drawIceCream(length: length, body: body, topping: topping, barLegnth: barLength)
+print("\n")
+
+// my case
+length = 3
+body = "***"
+topping = "!"
+barLength = 3
+
+printIceCreamInfo(length: length, body: body, topping: topping, barLegnth: barLength)
+drawIceCream(length: length, body: body, topping: topping, barLegnth: barLength)
+print("\n")
