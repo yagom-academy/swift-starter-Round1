@@ -8,23 +8,20 @@
 import Foundation
 var fullPepero = ""
 
-func drawNudePepero(iterationCount: Int, peperoBody: String) -> String {
-    if (iterationCount % 2) == 1 {
+func judgeToppingPosition(iterationCount: Int, peperoBody: String, peperoTopping: String, isNudePepero: Bool) -> String {
+    var leftTopping = ""
+    var rightTopping = ""
+    
+    if (iterationCount % 2) == 1 && isNudePepero == true {
         let peperoBody = peperoBody.replacingOccurrences(of: "0", with: " ")
         fullPepero = " " + peperoBody + " "
         return fullPepero
         
-    } else {
+    } else if isNudePepero == true {
         fullPepero = " " + peperoBody + " "
         return fullPepero
-    }
-}
-
-func judgeToppingPosition(iterationCount: Int, peperoBody: String, peperoTopping: String) -> String {
-    var leftTopping = ""
-    var rightTopping = ""
-    
-    if (iterationCount % 2) == 1 {
+        
+    } else if (iterationCount % 2) == 1 {
         leftTopping = peperoTopping
         rightTopping = " "
         fullPepero = leftTopping + peperoBody + rightTopping
@@ -40,16 +37,18 @@ func judgeToppingPosition(iterationCount: Int, peperoBody: String, peperoTopping
 
 func drawPeperoBodyShape(iterationCount: Int, peperoBody: String, peperoTopping: String) -> String {
     let peperoBody = peperoBody
+    var isNudePepero: Bool = false
     
     if peperoBody.contains("|0|") {
-        return drawNudePepero(iterationCount: iterationCount, peperoBody: peperoBody)
+        isNudePepero = true
+        return judgeToppingPosition(iterationCount: iterationCount, peperoBody: peperoBody, peperoTopping: peperoTopping, isNudePepero: isNudePepero)
         
     } else if peperoTopping == "" {
         fullPepero = " " + peperoBody + " "
         return fullPepero
         
     } else {
-        return judgeToppingPosition(iterationCount: iterationCount, peperoBody: peperoBody, peperoTopping: peperoTopping)
+        return judgeToppingPosition(iterationCount: iterationCount, peperoBody: peperoBody, peperoTopping: peperoTopping, isNudePepero: isNudePepero)
     }
 }
 
