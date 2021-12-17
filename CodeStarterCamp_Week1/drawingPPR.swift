@@ -42,7 +42,7 @@ func drawPeperoBody(peperoBody: String, topping: String) {
     }
     
     if (peperoBody.contains("|")) {
-        var addBlankOnPeperoBody = " " + peperoBody
+        let addBlankOnPeperoBody = " " + peperoBody
         let peperoBodyArray: Array = addBlankOnPeperoBody.split(separator: "|")
         bodyOdd = realTopping + "|" + peperoBodyArray[0] + "|"
         bodyEven = " " + "|" + peperoBodyArray[1] + "|" + realTopping
