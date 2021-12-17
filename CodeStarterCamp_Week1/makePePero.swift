@@ -53,8 +53,8 @@ func drawPeperoBodyShape(iterationCount: Int, peperoBody: String, peperoTopping:
 }
 
 func drawPeperoBody(peperoLength: Int, peperoBody: String, peperoTopping: String) {
-    for num in 1...peperoLength {
-        print(drawPeperoBodyShape(iterationCount: num, peperoBody: peperoBody, peperoTopping: peperoTopping))
+    for number in 1...peperoLength {
+        print(drawPeperoBodyShape(iterationCount: number, peperoBody: peperoBody, peperoTopping: peperoTopping))
     }
 }
 
