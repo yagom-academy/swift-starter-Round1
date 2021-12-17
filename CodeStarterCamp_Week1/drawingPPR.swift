@@ -7,7 +7,7 @@
 
 import Foundation
 
-//필요한 변수 선언
+
 var bodyOdd: String = ""
 var bodyEven: String = ""
 
@@ -27,14 +27,14 @@ func makePeperoInfo(height: Int, peperoBody: String, topping: String, heightOfSt
     print("막대길이: " + String(heightOfStick))
 }
 
-// 길이값을 인자로 받아 막대를 그린다.
+
 func drawStick(heightOfStick: Int) {
     for _ in 0...heightOfStick-1 {
         print(" |", "|");
     }
 }
 
-// 몸통 모양과 토핑 모양을 받아 몸통을 그리는 함수
+
 func drawPeperoBody(peperoBody: String, topping: String) {
     var realTopping = " "
     if (topping != "") {
@@ -52,7 +52,7 @@ func drawPeperoBody(peperoBody: String, topping: String) {
     }
 }
 
-// 몸통 길이를 받아 몸통 모양에 따라 몸통을 그리는 함수
+
 func drawBody(height: Int) {
     for i in 0...height - 1 {
         if (i % 2 == 0) {
