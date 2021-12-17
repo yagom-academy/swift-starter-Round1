@@ -8,17 +8,8 @@
 
 import Foundation
 
-func printIceCreamTop() {
-    for _ in 0...7 {
-        print("**********")
-    }
-}
-
-func printIceCreamBar() {
-    for _ in 0...3 {
-        print("   | |    ")
-    }
-}
-printIceCreamTop()
-printIceCreamBar()
-
+generatorPepero(body: "***", topping: " ", bodyLength: 10, barLength: 4)
+generatorPepero(body: "***", topping: "&", bodyLength: 12, barLength: 4)
+generatorPepero(body: "***", topping: "#", bodyLength: 12, barLength: 6)
+generatorPepero(body: "|0|", topping: "", bodyLength: 6, barLength: 4)
+generatorPepero(body: "***", topping: "^", bodyLength: 11, barLength: 4)
