@@ -7,26 +7,32 @@
 
 import Foundation
 
-func makeTwoChco(body : String,topping : String) -> Void{
-    print("\(topping)\(body)")
-    print(" \(body)\(topping)")
+func makeTwoChocoBody(body: String,topping: String) -> Void{
+    //print("\(topping)\(body)")
+    //print(" \(body)\(topping)")
+    print("""
+               \(topping)\(body)
+                \(body)\(topping)
+               """)
 }
 
-func printChco (body : String, topping : String, size : Int) {
-    let halfChcoSize = size/2
+func printChocoBody(body: String, topping: String, size: Int) {
+    let halfChcoSize = size / 2
     
     for _ in 1...halfChcoSize{
-        makeTwoChco(body: body, topping: topping)
+        makeTwoChocoBody(body: body, topping: topping)
     }
  }
 
-func printBar (barSize : Int){
-    for _ in 1 ... barSize{
+func printBar (barSize: Int){
+    for _ in 1...barSize{
         print(" | | ")
     }
 }
     
-func makePaParow (body : String, topping : String, size : Int, barSize: Int){
-    printChco(body: body, topping: topping, size:size)
+func makePaParow (body: String, topping: String, size: Int, barSize: Int){
+    printChocoBody(body: body, topping: topping, size:size)
     printBar(barSize: barSize)
 }
+
+
