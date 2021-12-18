@@ -6,55 +6,46 @@
 //
 
 import Foundation
-
-//길이에 따른 막대를 그리는 함수
-func stackBar(barlength: Int) {
-  for _ in 1...barlength {
-    print("\(tab.rawValue)\(bar.rawValue)")
-  }
+//빼빼로를 만드는 함수
+func makePepero(body: String, topping: String, bodyLength: Int, barLength: Int) {
+  printInfo(body: body, topping: topping, bodyLength: bodyLength, barLength: barLength)
+  stackBody(length: bodyLength, body: body, topping: topping)
+  stackBar(length: barLength)
 }
-//길이에 따른 몸통을 그리는 함수
-func stackBody(bodylength: Int, topping: String, body: String) {
-  for _ in 1...bodylength / 2 {
-    stackTopping(length: bodylength, body: body, topping: topping)
-  }
-}
-//몸통, 토핑을 매개변수로 받아 토핑과 몸통을 그리는 함수
-func stackTopping(length: Int, body: String, topping: String) {
-  if topping == "#" && body == "***" {
-    print("\(hash.rawValue)\(basic.rawValue)")
-    print("\(tab.rawValue)\(basic.rawValue)\(hash.rawValue)")
-  }
-  if topping == "&" && body == "***" {
-    print("\(ampersand.rawValue)\(basic.rawValue)")
-    print("\(tab.rawValue)\(basic.rawValue)\(ampersand.rawValue)")
-  }
-  if topping == " " && body == "***" {
-    print("\(tab.rawValue)\(basic.rawValue)")
-    print("\(tab.rawValue)\(basic.rawValue)")
-  }
-  if topping == " " && body == "|0|" {
-    print("\(tab.rawValue)\(bar.rawValue)")
-    print("\(tab.rawValue)\(nude.rawValue)")
-  }
-}
-
-func peperoInfo(body: String, topping: String, bodyLength: Int, barLength: Int) {
+//빼빼로 정보 함수
+func printInfo(body: String, topping: String, bodyLength: Int, barLength: Int) {
   print("<정보>")
   print("길이: \(bodyLength)")
   print("몸통: \(body)")
   print("토핑: \(topping)")
   print("막대길이: \(barLength)")
 }
-
-func makePepero(body: String, topping: String, bodyLength: Int, barLength: Int) {
-  peperoInfo(body: body, topping: topping, bodyLength: bodyLength, barLength: barLength)
-  stackBody(bodylength: bodyLength, topping: topping, body: body)
-  stackBar(barlength: barLength)
+//길이에 따른 몸통을 그리는 함수
+func stackBody(length: Int, body: String, topping: String) {
+  for stack in 1...length {
+    stackTopping(stack: stack, body: body, topping: topping)
+  }
 }
-
-
-
-
-
+//몸통, 토핑을 매개변수로 받아 토핑과 몸통을 그리는 함수
+func stackTopping(stack: Int, body: String, topping: String) {
+  if body == "|0|" {
+    if stack.isMultiple(of: 2) {
+      print(topping + body)
+    } else {
+      print(" " + "| |")
+    }
+  } else {
+    if stack.isMultiple(of: 2) {
+      print(" " + body)
+    } else {
+      print(topping + body)
+    }
+  }
+}
+//길이에 따른 막대를 그리는 함수
+func stackBar(length: Int) {
+  for _ in 1...length {
+    print(" | |")
+  }
+}
 
