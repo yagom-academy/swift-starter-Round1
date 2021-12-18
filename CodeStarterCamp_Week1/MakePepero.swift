@@ -99,14 +99,3 @@ func makeStick(length: Int) -> [String] {
     
     return stick
 }
-
-
-
-
-
-
-
-
-
-
-
