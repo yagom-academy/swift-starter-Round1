@@ -41,7 +41,7 @@ func makeIceCreamBar(){
 
 
 //빼빼로 정보 를 입력할때 주의할점
-//몸통부분은 "***", "| |" 만 선택가능합니다
-//누드빼빼로는 토핑선택이 불가능합니다
-makePeperoInfo(barLength: 2, bodyLength: 4, body: "***", topping: "")
+//몸통부분은 "***", "|0|" 만 선택가능합니다
+makePrinrtInfo(barLength: 4, bodyLength: 4, body: "|0|", topping: "%")
+
 

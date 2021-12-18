@@ -3,7 +3,7 @@ var peperoBodyLength : Int = 0
 var peperoBody : String = ""
 var peperoTopping : String = ""
 
-func makePeperoInfo(barLength : Int, bodyLength : Int, body : String, topping : String){
+func makePeperoInfo1(barLength : Int, bodyLength : Int, body : String, topping : String){
     print("빼빼로 정보입니다")
     print("#############")
     print("빼뺴로 막대 길이 : \(barLength)")
@@ -27,40 +27,42 @@ func makePepero(){
 //빼뺴로 막대 그리는 함수
 func makeBar(){
     for _ in 1...peperoBar{
-        if peperoBody == "***" {
-            print(" | |")
+        if peperoBody == "| |" {
+            print("  | |")
         }
         else {
-            print("  | |")
+            print(" | |")
         }
     }
 }
 
 func makeBodyShape(){
-  for count in 1...peperoBodyLength {
-      switch peperoBody {
-      case "***" :
-              if peperoTopping == "" {
-                      print(" \(peperoBody)")
-                  }
-              else {
-                  if count % 2 == 1{
-                      print("\(peperoTopping)\(peperoBody)")
-                  }
-                  else{
-                      print(" \(peperoBody)\(peperoTopping)")
-                  }
-              }
-          
-      case "| |" :
-          if count % 2 == 1{
-              print("  | |")
-          }
-          else {
-              print("  |0|")
-          }
-      default :
-          print("정보를 잘못 입력하였습니다 다시 입력해주세요")
-      }
-      }
- }
+    for count in 1...peperoBodyLength {
+        switch peperoBody {
+        case "***" :
+            if peperoTopping == "" {
+                print(" \(peperoBody)")
+            }
+            else {
+                if count % 2 == 1{
+                    print("\(peperoTopping)\(peperoBody)")
+                }
+                else{
+                    print(" \(peperoBody)\(peperoTopping)")
+                }
+            }
+            
+        case "| |" :
+            if count % 2 == 1{
+                print("  | |")
+            }
+            else {
+                print("  |0|")
+            }
+            
+        default :
+            print("정보를 잘못 입력하였습니다 다시 입력해주세요")
+        }
+        
+    }
+}
