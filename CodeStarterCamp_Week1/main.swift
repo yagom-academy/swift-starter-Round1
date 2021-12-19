@@ -8,59 +8,60 @@
 
 import Foundation
 
-
-
-
 func makePeperoStick(length:Int) {
     for peperoStick in 1...length {
         print( " | | ")
-        
     }
 }
-func makePepero(body:String,length:Int,sticklength:Int) {
+
+func makePepero(body:String,length:Int,stickLength:Int) {
     for peperoBody in 1...length {
         print(" \(body)")
     }
-    makePeperoStick(length:sticklength)
+    makePeperoStick(length:stickLength)
 }
 
 func makeToppingPeperoStick(length:Int) {
     for toppingPeperoStick in 1...length{
-            print( "  | |") }
+        print( "  | |") }
 }
 
-
-func makeToppingPepero(body:String,topping:String,length:Int,sticklength:Int) {
-    for toppingPeperoBody in 1...length/2 {
-        
-    
-    print(" \(topping)\(body)")
-    print("  \(body)\(topping)")
+func makeToppingPepero(body:String,topping:String,length:Int,stickLength:Int) {
+    for toppingPeperoBody in 1...length {
+        if toppingPeperoBody % 2 == 0 {
+            print("  \(body)\(topping)")
+        }else {
+            print(" \(topping)\(body)")
+        }
     }
-    makeToppingPeperoStick(length: sticklength)
-    
-}
-func makeNudePepero(body:String,body2:String,length:Int,sticklength:Int) {
-    for nudePepero in 1...length {
-        print(" \(body)\n\(body2)")
-    }
-            makePeperoStick(length: sticklength)
+    makeToppingPeperoStick(length: stickLength)
 }
 
-func peperoRecipe(body:String,length:Int,topping:String,sticklength:Int) {
+func makeNudePepero(body:String,length:Int,stickLength:Int) {
+    for nudePeperobody in 1...length {
+        if nudePeperobody % 2 == 0{
+            print(" |0|")
+        } else {
+            print(" | |")
+        }
+    }
+    makePeperoStick(length: stickLength)
+}
+
+func peperoRecipe(body:String,length:Int,topping:String,stickLength:Int) {
     print("""
           <정보>
           길이: \(length)
           몸통: \(body)
           토핑: \(topping)
-          막대길이: \(sticklength)
+          막대길이: \(stickLength)
           """)
 }
-peperoRecipe(body: "***", length: 10, topping: "", sticklength: 4)
-makePepero(body: "***", length: 10, sticklength: 4)
-peperoRecipe(body: "***", length: 12, topping: "&", sticklength: 4)
-makeToppingPepero(body: "***", topping: "&", length: 12, sticklength: 4)
-peperoRecipe(body: "***", length: 12, topping: "#", sticklength: 4)
-makeToppingPepero(body: "***", topping: "#", length: 12, sticklength: 4)
-peperoRecipe(body: "|0|", length: 6, topping: "", sticklength: 4)
-makeNudePepero(body: "| |",body2:" |0|", length: 3,sticklength: 4)
+peperoRecipe(body: "***", length: 10, topping: "", stickLength: 4)
+makePepero(body: "***", length: 10, stickLength: 4)
+peperoRecipe(body: "***", length: 12, topping: "&", stickLength: 4)
+makeToppingPepero(body: "***", topping: "&", length: 12, stickLength: 4)
+peperoRecipe(body: "***", length: 12, topping: "#", stickLength: 4)
+makeToppingPepero(body: "***", topping: "#", length: 12, stickLength: 4)
+peperoRecipe(body: "|0|", length: 6, topping: "", stickLength: 4)
+makeNudePepero(body: "| |", length: 6,stickLength: 4)
