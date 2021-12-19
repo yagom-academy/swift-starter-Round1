@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
+		E165E00C2769F33C007D8612 /* makePaparow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165E00B2769F33C007D8612 /* makePaparow.swift */; };
+		E1F2AD4A276D90E5008356C3 /* iceCream.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F2AD49276D90E5008356C3 /* iceCream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E165E00B2769F33C007D8612 /* makePaparow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = makePaparow.swift; sourceTree = "<group>"; };
+		E1F2AD49276D90E5008356C3 /* iceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iceCream.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				34811DAE274B938F00A1E994 /* main.swift */,
+				E165E00B2769F33C007D8612 /* makePaparow.swift */,
+				E1F2AD49276D90E5008356C3 /* iceCream.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -89,7 +95,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					34811DAA274B938F00A1E994 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -119,6 +125,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E165E00C2769F33C007D8612 /* makePaparow.swift in Sources */,
+				E1F2AD4A276D90E5008356C3 /* iceCream.swift in Sources */,
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +252,7 @@
 		34811DB3274B938F00A1E994 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -253,6 +262,7 @@
 		34811DB4274B938F00A1E994 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
