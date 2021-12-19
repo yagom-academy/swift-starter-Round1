@@ -8,25 +8,25 @@
 
 import Foundation
 
-func makePeperoStick(length:Int) {
+func makePeperoStick(length: Int) {
     for peperoStick in 1...length {
         print( " | | ")
     }
 }
 
-func makePepero(body:String,length:Int,stickLength:Int) {
+func makePepero(body: String, length: Int, stickLength: Int) {
     for peperoBody in 1...length {
         print(" \(body)")
     }
     makePeperoStick(length:stickLength)
 }
 
-func makeToppingPeperoStick(length:Int) {
+func makeToppingPeperoStick(length: Int) {
     for toppingPeperoStick in 1...length{
         print( "  | |") }
 }
 
-func makeToppingPepero(body:String,topping:String,length:Int,stickLength:Int) {
+func makeToppingPepero(body: String, topping: String, length: Int, stickLength: Int) {
     for toppingPeperoBody in 1...length {
         if toppingPeperoBody % 2 == 0 {
             print("  \(body)\(topping)")
@@ -37,7 +37,7 @@ func makeToppingPepero(body:String,topping:String,length:Int,stickLength:Int) {
     makeToppingPeperoStick(length: stickLength)
 }
 
-func makeNudePepero(body:String,length:Int,stickLength:Int) {
+func makeNudePepero(body: String, length: Int, stickLength: Int) {
     for nudePeperobody in 1...length {
         if nudePeperobody % 2 == 0{
             print(" |0|")
@@ -48,7 +48,7 @@ func makeNudePepero(body:String,length:Int,stickLength:Int) {
     makePeperoStick(length: stickLength)
 }
 
-func peperoRecipe(body:String,length:Int,topping:String,stickLength:Int) {
+func peperoRecipe(body: String, length: Int, topping: String, stickLength: Int) {
     print("""
           <정보>
           길이: \(length)
