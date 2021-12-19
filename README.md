@@ -10,6 +10,5 @@
 
 
 빼빼로 초코부분 출력할때 토핑이 양옆으로 나오는대 홀수길이를 출력할때 문제가 됩니다. IF문을 이용해서 해결하면 될꺼 같은대 일단은 짝수 처럼만 출력되도록 처리하였습니다.
-![뺴뺴로 (1)](https://user-images.githubusercontent.com/43274246/146633465-b4d19403-0027-44c8-81b4-e7105a7825ad.jpg)
-
+![뺴뺴로 (2)](https://user-images.githubusercontent.com/43274246/146679525-c3cfc965-b230-4791-b52f-298c29cda03f.jpg)
 
