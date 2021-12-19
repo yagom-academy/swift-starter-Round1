@@ -6,22 +6,7 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
+//drawStickImage()
+//drawIceCreamImage()
 
-let iceCreamImage = "***********"
-let stickImage = "    | |"
-
-func drawIceCreamImage() {
-    for _ in 1...8 {
-        print("\(iceCreamImage)")
-    }
-}
-
-func drawStickImage() {
-    for _ in 1...4 {
-        print("\(stickImage)")
-    }
-}
-
-drawIceCreamImage()
-drawStickImage()
+printPeperoInfo(peperoLength: 6, peperoBody: "|0|", peperoTopping: "", stickLength: 4)
