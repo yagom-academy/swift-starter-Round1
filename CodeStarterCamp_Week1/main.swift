@@ -22,3 +22,5 @@ func drawCone(length: Int) {
 
 drawIceCream(length: 8)
 drawCone(length: 4)
+
+print("git test")
