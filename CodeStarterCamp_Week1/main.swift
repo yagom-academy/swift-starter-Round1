@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: Step3: 빼빼로 그리기
 
-// 요구사항 2 : 빼빼로 출력
+/// 요구사항 2 : 빼빼로 출력
 //Pepero Type 1
 drawPepero(bodyShape: "***",
            topping: nil,
@@ -36,10 +36,23 @@ drawPepero(bodyShape: "|0|",
            barLength: 4)
 
 
+/// 요구사항3 : 내가 원한는 빼빼로 출력
+//Pepero Type my self 1
+drawPepero(bodyShape: "000",
+           topping: "%",
+           bodyLength: 10,
+           barLength: 4)
 
-//printPepero(type: PeperoType.one)
-//printPepero(type: PeperoType.two)
-//printPepero(type: PeperoType.three)
-//printPepero(type: PeperoType.four)
+//Pepero Type my self 2
+drawPepero(bodyShape: "*&*",
+           topping: "&",
+           bodyLength: 4,
+           barLength: 2)
+
+//Pepero Type my self 3
+drawPepero(bodyShape: "***",
+           topping: "@",
+           bodyLength: 7,
+           barLength: 4)
 
 
