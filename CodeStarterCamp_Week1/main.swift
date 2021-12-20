@@ -8,6 +8,17 @@
 
 import Foundation
 
-print("Hello, Siwft!")
-print("from sharking0928")
+func drawIceCream(length: Int) {
+    for count in 1...length {
+        print("***********")
+    }
+}
 
+func drawCone(length: Int) {
+    for count in 1...length {
+        print("    | |")
+    }
+}
+
+drawIceCream(length: 8)
+drawCone(length: 4)
