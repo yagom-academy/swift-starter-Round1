@@ -12,22 +12,19 @@ class Pepero {
     
     // 몸통(String), 토핑(String)을 매개변수로 받아 토핑과 몸통을 그리는 함수
     func bodyTopping(bodyHeight: Int, body: String, topping: String) {
-        if(body == "|0|") {
-            if(bodyHeight%2 == 1) {
+        if body == "|0|" {
+            if bodyHeight % 2 == 1 {
                 print(" | | ")
-            }else {
+            } else {
                 print(" \(body) ")
             }
-        }else if(topping == "") {
+        } else if topping == "" {
             print(" \(body)")
-        }else if(bodyHeight%2 == 1) {
+        } else if bodyHeight % 2 == 1 {
             print("\(topping)\(body)")
-        }else {
+        } else {
             print(" \(body)\(topping)")
         }
-       /* }else{
-            print("error")
-        }*/
     }
     
     // 길이(Int)에 따라 몸통을 그리는 함수
@@ -58,5 +55,6 @@ class Pepero {
         peperoInformation(bodyHeight: bodyHeight, body: body, topping: topping, stickHeight: stickHeight)
         PeperoBody(bodyHeight: bodyHeight, body: body, topping: topping)
         peperoStick(stickHeight: stickHeight)
+        print("\n\n")
     }
 }
