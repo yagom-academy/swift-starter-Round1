@@ -24,7 +24,13 @@ func peperoRecipe(pepero: PeperoRecipe){
         막대길이: \(pepero.stickLength)
         
         """
+    
+    print(info)
+    
+    makePepero(pepero: pepero)
+}
 
+func makePepero(pepero: PeperoRecipe) {
     var body = makeBody(shape: pepero.bodyShape, length: pepero.length)
     let stick = makeStick(length: pepero.stickLength)
     
@@ -32,10 +38,7 @@ func peperoRecipe(pepero: PeperoRecipe){
         body = addTopping(topping: topping, length: pepero.length, peperoBody: body)
     }
     
-    print(info)
-    
     printPepero(peperoBody: body, stick: stick)
-
 }
 
 func printPepero(peperoBody: [String], stick: [String]) {
@@ -48,7 +51,6 @@ func printPepero(peperoBody: [String], stick: [String]) {
     }
 }
 
-//빼빼로 몸통
 func makeBody(shape: String, length: Int) -> [String] {
     var peperoBody: [String]
     
@@ -76,7 +78,6 @@ func makeNudePepero(length: Int) -> [String] {
     return peperoAddTopping
 }
 
-//빼빼로 토핑
 func addTopping(topping: String, length: Int, peperoBody: [String]) -> [String] {
     
     var peperoAddTopping: [String] = []
@@ -92,7 +93,6 @@ func addTopping(topping: String, length: Int, peperoBody: [String]) -> [String] 
     return peperoAddTopping
 }
 
-//빼빼로 스틱
 func makeStick(length: Int) -> [String] {
     let lineOfStick: String = " | |"
     let stick: [String] = Array(repeating: lineOfStick, count: length)
