@@ -66,7 +66,6 @@ func makeBody(shape: String,
 }
 
 func makeNudePepero(length: Int) -> [String] {
-    
     var peperoAddTopping: [String] = []
     
     for index in 1...length {
@@ -83,7 +82,6 @@ func makeNudePepero(length: Int) -> [String] {
 func addTopping(topping: String,
                 length: Int,
                 peperoBody: [String]) -> [String] {
-    
     var peperoAddTopping: [String] = []
     
     for (index, element) in peperoBody.enumerated() {
