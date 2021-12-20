@@ -8,12 +8,12 @@
 
 import Foundation
 
-func ice_Cream_Body()
-{
-    for _ in 1...8
-    {
-        for _ in 1...11
-        {
+func ice_Cream_Body(){
+    
+    for _ in 1...8{
+        
+        for _ in 1...11{
+            
             print("*",terminator: "")
         }
         print()
@@ -23,10 +23,10 @@ func ice_Cream_Body()
 //아이스 크림 몸통 출력
 //ice_Cream_Body()
 
-func ice_Cream_Stick()
-{
-    for _ in 1...4
-    {
+func ice_Cream_Stick(){
+    
+    for _ in 1...4{
+        
         print("    | |     ")
     }
 }

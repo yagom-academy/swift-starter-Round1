@@ -21,70 +21,55 @@ func order_Custom_PePero(peperoLength:Int, peperoBody:String, peperoTopping:Stri
             막대길이: \(stickLength)
           \n
           """)
-    
-    //누드 빼빼로
-    if peperoBody == "|0|"
-    {
-        for pepero_Body_Count in 0...peperoLength-1
-        {
-            
-            if(pepero_Body_Count % 2 < 1 ){
-                print("   | |")
-            }
-            else
-            {
-                print("   \(peperoBody)")
-            }
-        }
-    }
-    //일반 빼빼로
-    else if peperoTopping == ""
-    {
-        for normal_Pepero_Body in 0...peperoLength
-        {
-            print("   "+peperoBody)
-        }
-    }
-    //나머지 주문 빼빼로
-    else
-    {
-        for pepero_Body_Count in 0...peperoLength-1{
-            
-            if(pepero_Body_Count % 2 < 1){
-                print("  \(peperoTopping)\(peperoBody)")
-            }
-            else
-            {
-                print("   \(peperoBody)\(peperoTopping)")
-            }
-        }
-    }
-    
+
+    //빼빼로 몸통
+    order_Pepero_Body(order_Length: peperoLength, order_Body:peperoBody, order_Topping: peperoTopping)
     
     //뻬뻬로 막대
-    for peperoStick in 1...stickLength{
-        
+    order_Pepero_Stick(Length: stickLength)
+     
+}
+
+//뻬뻬로 막대 함수
+func order_Pepero_Stick(Length:Int) {
+    
+    for peperoStick in 1...Length {
         print("   | |")
     }
 }
 
-//뻬뻬로 막대 함수
-func order_Pepero_Stick(Length:Int){
-    
-    print("   | |")
-}
-
 //토핑과 몸통을 그리는 함수
-func order_Pepero_Body_Topping(body:String, topping:String){
+func order_Pepero_Body_Topping(body:String, topping:String, pepero_Body_Count:Int) {
     
-    print("\(body)\(topping)")
+    //누드 빼빼로
+    if body == "|0|" {
+        
+        if(pepero_Body_Count % 2 < 1 ) {
+            print("   | |")
+        }
+        else {
+            print("   \(body)")
+        }
+    }
+    //일반 빼빼로
+    else if topping == "" {
+        print("   "+body)
+    }
+    //나머지 주문 빼빼로
+    else {
+            if(pepero_Body_Count % 2 < 1) {
+                print("  \(topping)\(body)")
+            }
+            else {
+                print("   \(body)\(topping)")
+            }
+    }
 }
 
 //길이에 따라 몸통 함수
-func order_Pepero_Body_Length(Length:Int){
+func order_Pepero_Body(order_Length:Int, order_Body:String, order_Topping:String) {
     
-    for _ in 1...Length
-    {
-        print("***")
+    for pepero_Body_Length in 0...order_Length-1 {
+        order_Pepero_Body_Topping(body:order_Body,topping: order_Topping,pepero_Body_Count: pepero_Body_Length)
     }
 }
