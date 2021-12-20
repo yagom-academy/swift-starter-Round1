@@ -20,9 +20,9 @@ func drawPeperoBar(bar: Int) {
 }
 
 func addToppingOnPeperoBody(body : String, topping : String) {
-    if body == " |0|" {
-        leftSideTopping = body
-        rightSideTopping = body
+    if body == "|0|" {
+        leftSideTopping = " | |"
+        rightSideTopping = " " + body
     } else if topping == "" {
         leftSideTopping = " " + body
         rightSideTopping = " " + body
