@@ -10,7 +10,6 @@ import Foundation
 
 func ice_Cream_Body()
 {
-    
     for _ in 1...8
     {
         for _ in 1...11
@@ -19,7 +18,6 @@ func ice_Cream_Body()
         }
         print()
     }
-        
 }
 
 //아이스 크림 몸통 출력
