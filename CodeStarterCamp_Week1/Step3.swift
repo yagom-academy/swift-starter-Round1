@@ -17,7 +17,7 @@ var peperoBody : String = ""
 
 // MARK: 빼빼로 그리기 요구사항1
 
-// 요구사항 1-1 : 길이에 따른 막대(빼빼로 손잡이)를 그리는 함수
+/// 요구사항 1-1 : 길이에 따른 막대(빼빼로 손잡이)를 그리는 함수
 func printPeperoBar(barLength:Int) {
     for _ in 1...barLength{
         print(peperoBar)
@@ -25,7 +25,7 @@ func printPeperoBar(barLength:Int) {
 }
 
 
-// 요구사항 1-2 : 몸통(String), 토핑(String)을 매개변수로 받아 토핑과 몸통을 그리는 함수
+/// 요구사항 1-2 : 몸통(String), 토핑(String)을 매개변수로 받아 토핑과 몸통을 그리는 함수
 func makePeperoBody(body:String, topping:String?) -> String {
     
     let lineBreak = "\n "
@@ -39,7 +39,8 @@ func makePeperoBody(body:String, topping:String?) -> String {
     return tempBody
 }
 
-// 요구사항 1-3 : 길이(Int)에 따라 몸통을 그리는 함수
+
+/// 요구사항 1-3 : 길이(Int)에 따라 몸통을 그리는 함수
 func printPeperoBody(bodyLength:Int) {
     
     var tempLength = bodyLength / 2
@@ -49,8 +50,12 @@ func printPeperoBody(bodyLength:Int) {
     }
 }
 
-// 요구사항 1-4 : 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
-func drawPepero(bodyShape: String, topping:String?, bodyLength: Int, barLength: Int) {
+
+/// 요구사항 1-4 : 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
+func drawPepero(bodyShape: String,
+                topping:String?,
+                bodyLength: Int,
+                barLength: Int) {
     
     peperoBody = makePeperoBody(body: bodyShape, topping: topping)
     printPeperoBody(bodyLength: bodyLength)
