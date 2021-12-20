@@ -19,7 +19,7 @@ var peperoBody : String = ""
 
 // 요구사항 1-1 : 길이에 따른 막대(빼빼로 손잡이)를 그리는 함수
 func printPeperoBar(barLength:Int) {
-    for i in 1...barLength{
+    for _ in 1...barLength{
         print(peperoBar)
     }
 }
@@ -50,6 +50,17 @@ func printPeperoBody(bodyLength:Int) {
 }
 
 // 요구사항 1-4 : 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
+func drawPepero(bodyShape: String, topping:String?, bodyLength: Int, barLength: Int) {
+    
+    peperoBody = makePeperoBody(body: bodyShape, topping: topping)
+    printPeperoBody(bodyLength: bodyLength)
+    printPeperoBar(barLength: barLength)
+    print("")
+
+}
+
+
+/*
 func printPepero(type:PeperoType) {
     
     var body: String = "***"
@@ -86,5 +97,6 @@ func printPepero(type:PeperoType) {
     print("")
         
 }
+ */
 
 
