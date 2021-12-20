@@ -1,14 +1,9 @@
-/*
- 길이(Int)에 따른 막대(빼빼로 손잡이)를 그리는 함수
- 몸통(String), 토핑(String)을 매개변수로 받아 토핑과 몸통을 그리는 함수
- 길이(Int)에 따라 몸통을 그리는 함수
- 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
- 
- 다양한 빼빼로를 출력해봅시다.
- 실행 예시의 정보(길이, 몸통, 토핑, 막대길이)를 함께 출력합니다.
- 실행 예시의 빼빼로가 모두 출력되어야 합니다.
- 자신만의 토핑, 몸통, 막대 등을 만들어 출력해봅시다
- */
+//
+//  repeatstep3.swift.swift
+//  CodeStarterCamp_Week1
+//
+//  Created by 김동욱 on 2021/12/20.
+//
 
 import Foundation
 
@@ -30,20 +25,20 @@ func makePrinrtInfo(barLength : Int = 4, bodyLength : Int = 10, body : String = 
     }
     
     func makeBody(body: String, topping: String) -> String {
-        if body == "|0|" {
+        switch body {
+        case "|0|" :
             return " \(body)\(topping)\n\(topping)| |"
-        } else if body == "***" {
+        case "***" :
             return " \(body)\(topping)\n\(topping)\(body)"
-        } else {
+        default :
             return "잘못된 정보"
         }
-        
     }
     
     func drawBody(body: String, topping: String, bodyLength: Int) {
         let peperoBody: String = makeBody(body: body, topping: topping)
         let bodyArray: Array<String> = peperoBody.components(separatedBy: "\n")
-        if makeBody(body: body, topping: topping) == "잘못된 정보" {
+        if peperoBody == "잘못된 정보" {
             print("정보를 잘못 입력 하였습니다")
         } else {
             for count in 1...bodyLength {
@@ -52,12 +47,7 @@ func makePrinrtInfo(barLength : Int = 4, bodyLength : Int = 10, body : String = 
         }
     }
     
-    
     drawBody(body: body, topping: topping, bodyLength: bodyLength)
     drawpeperoBar(barLength: barLength)
     
 }
-
-
-
-

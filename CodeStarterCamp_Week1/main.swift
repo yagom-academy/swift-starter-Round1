@@ -1,5 +1,4 @@
 //iceCream 을 만들어보자!
-
 func drawIceCream(){
     var width1 : Int = 1
     let iceCreamWidth : Int = 11
@@ -36,12 +35,9 @@ func makeIceCreamBar(){
         drawIceCreamBar()
     }
 }
-// makeIceCream()
-// makeIceCreamBar()
-
 
 //빼빼로 정보 를 입력할때 주의할점
 //몸통부분은 "***", "|0|" 만 선택가능합니다
-makePrinrtInfo(barLength: 4, bodyLength: 4, body: "|0|", topping: "%")
+makePrinrtInfo(barLength: 4, bodyLength: 4, body: "|0|", topping: "&")
 
 
