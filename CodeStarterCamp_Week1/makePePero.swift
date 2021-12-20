@@ -33,7 +33,7 @@ func order_Custom_PePero(peperoLength:Int, peperoBody:String, peperoTopping:Stri
 //뻬뻬로 막대 함수
 func order_Pepero_Stick(Length:Int) {
     
-    for peperoStick in 1...Length {
+    for _ in 1...Length {
         print("   | |")
     }
 }
