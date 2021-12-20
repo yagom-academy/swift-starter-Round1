@@ -41,7 +41,8 @@ func makePepero(pepero: PeperoRecipe) {
     printPepero(peperoBody: body, stick: stick)
 }
 
-func printPepero(peperoBody: [String], stick: [String]) {
+func printPepero(peperoBody: [String],
+                 stick: [String]) {
     for body in peperoBody {
         print(body)
     }
@@ -51,7 +52,8 @@ func printPepero(peperoBody: [String], stick: [String]) {
     }
 }
 
-func makeBody(shape: String, length: Int) -> [String] {
+func makeBody(shape: String,
+              length: Int) -> [String] {
     var peperoBody: [String]
     
     if shape == "|0|" {
@@ -78,7 +80,9 @@ func makeNudePepero(length: Int) -> [String] {
     return peperoAddTopping
 }
 
-func addTopping(topping: String, length: Int, peperoBody: [String]) -> [String] {
+func addTopping(topping: String,
+                length: Int,
+                peperoBody: [String]) -> [String] {
     
     var peperoAddTopping: [String] = []
     
