@@ -37,7 +37,7 @@ func makeToppingPepero(body: String, topping: String, length: Int, stickLength: 
     makeToppingPeperoStick(length: stickLength)
 }
 
-func makeNudePepero(body: String, length: Int, stickLength: Int) {
+func makeNudePepero(length: Int, stickLength: Int) {
     for nudePeperobody in 1...length {
         if nudePeperobody % 2 == 0{
             print(" |0|")
@@ -64,4 +64,4 @@ makeToppingPepero(body: "***", topping: "&", length: 12, stickLength: 4)
 peperoRecipe(body: "***", length: 12, topping: "#", stickLength: 4)
 makeToppingPepero(body: "***", topping: "#", length: 12, stickLength: 4)
 peperoRecipe(body: "|0|", length: 6, topping: "", stickLength: 4)
-makeNudePepero(body: "| |", length: 6,stickLength: 4)
+makeNudePepero(length: 6,stickLength: 4)
