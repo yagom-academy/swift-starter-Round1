@@ -32,11 +32,11 @@ func stackTopping(stack: Int, body: String, topping: String) {
     if stack.isMultiple(of: 2) {
       print(topping + body)
     } else {
-      print(" " + "| |")
+      print(" " + "| |" + topping)
     }
   } else {
     if stack.isMultiple(of: 2) {
-      print(" " + body)
+      print(" " + body + topping)
     } else {
       print(topping + body)
     }
