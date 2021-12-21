@@ -3,7 +3,7 @@
 ## [WEEK1 - STEP3]
 ### 빼빼로 그리기
 - 빼빼로 순서도 <br>
-![week1-step3](https://github.com/hogang1223/swift-starter-week1/blob/2_hogang1223/FlowChart/week1-step3.png?raw=true)
+![week1-step3](https://github.com/hogang1223/swift-starter-week1/blob/2_hogang1223/FlowChart/fix1-week1-step3.png?raw=true)
 
 - swift style guide에 맞춰 작성하기 : https://cozzin.gitbook.io/swift-api-design-guidelines/
 
