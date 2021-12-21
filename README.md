@@ -1,5 +1,13 @@
 # 코드 스타터 캠프 1주차 미션을 위한 저장소입니다.
 
+## [WEEK1 - STEP3]
+### 빼빼로 그리기
+- 빼빼로 순서도 <br>
+![week1-step3](https://github.com/hogang1223/swift-starter-week1/blob/2_hogang1223/FlowChart/fix1-week1-step3.png?raw=true)
+
+- swift style guide에 맞춰 작성하기 : https://cozzin.gitbook.io/swift-api-design-guidelines/
+
+
 ## [WEEK1 - STEP2]
 ### 아이스크림 그리기
 - 아이스크림 순서도<br>
