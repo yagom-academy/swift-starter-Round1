@@ -17,3 +17,6 @@
 ---
 # 아이스크림 순서도
 ![아이스크림 순서도 (수정)](https://user-images.githubusercontent.com/94177308/146202438-d5ff1ded-27f6-43dd-9593-4c284daf6b5c.png)
+---
+# 빼빼로 순서도
+![빼빼로 순서도 수정](https://user-images.githubusercontent.com/94177308/146562140-b1b63122-f1d7-48f1-8209-9b9887fc5219.png)
