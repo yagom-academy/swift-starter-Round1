@@ -25,24 +25,20 @@ func printPeperoBar(barLength: Int) {
 }
 
 /// 요구사항 1-2 : 몸통(String), 토핑(String)을 매개변수로 받아 토핑과 몸통을 그리는 함수
-func makePeperoBody(body: String, topping: String?) -> String {
+func makePeperoBody(bodyShape: String, topping: String?) -> String {
     let lineBreak = "\n "
+    let tempTopping = topping ?? " "
     
-    if topping != nil {
-        return topping! + body + lineBreak + body + topping!
-    } else if topping == nil && body.hasPrefix("|") {
-        return " | |" + lineBreak + body
+    if bodyShape.hasPrefix("|") {
+        return " | |" + lineBreak + bodyShape
     }
-    let tempBody = " " + body + lineBreak + body
     
-    return tempBody
+    return tempTopping + bodyShape + lineBreak + bodyShape + tempTopping
 }
 
 /// 요구사항 1-3 : 길이(Int)에 따라 몸통을 그리는 함수
 func printPeperoBody(bodyLength: Int) {
-    var tempLength = bodyLength / 2
-    
-    for _ in 1...tempLength {
+    for _ in 1...(bodyLength / 2) {
         print(peperoBody)
     }
 }
@@ -98,7 +94,7 @@ func drawPepero(type:PeperoType) {
     
     print("빼빼로 타입 : \(type)")
     print("몸통 :\(bodyShape), 토핑 :\(tempTopping), 몸통 길이 :\(bodyLength), 막대 길이 :\(barLength)")
-    peperoBody = makePeperoBody(body: bodyShape, topping: topping)
+    peperoBody = makePeperoBody(bodyShape: bodyShape, topping: topping)
     printPeperoBody(bodyLength: bodyLength)
     printPeperoBar(barLength: barLength)
     print("")
