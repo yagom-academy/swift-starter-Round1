@@ -12,6 +12,11 @@ var peperoBody: String = ""
 
 // MARK: 빼빼로 그리기 요구사항1
 
+enum PeperoType {
+    case one, two, three, four
+    case custom1, custom2, custom3
+}
+
 /// 요구사항 1-1 : 길이에 따른 막대(빼빼로 손잡이)를 그리는 함수
 func printPeperoBar(barLength: Int) {
     for _ in 1...barLength {
@@ -23,12 +28,12 @@ func printPeperoBar(barLength: Int) {
 func makePeperoBody(body: String, topping: String?) -> String {
     let lineBreak = "\n "
     
-    if topping == nil && body.hasPrefix("*") {
-        return " " + body + lineBreak + body
-    } else if topping == nil {
+    if topping != nil {
+        return topping! + body + lineBreak + body + topping!
+    } else if topping == nil && body.hasPrefix("|") {
         return " | |" + lineBreak + body
     }
-    let tempBody = topping! + body + lineBreak + body + topping!
+    let tempBody = " " + body + lineBreak + body
     
     return tempBody
 }
@@ -43,15 +48,56 @@ func printPeperoBody(bodyLength: Int) {
 }
 
 /// 요구사항 1-4 : 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
-func drawPepero(bodyShape: String,
-                topping: String?,
-                bodyLength: Int,
-                barLength: Int) {
+func drawPepero(type:PeperoType) {
     
-    if bodyLength % 2 != 0 {
-        print("몸통 길이는 짝수로 입력해주셔야 한다구요!")
-        return
+    var bodyShape: String = "***"
+    var topping: String?
+    var bodyLength: Int = 0
+    var barLength: Int = 0
+    
+    switch type {
+    case .one:
+        bodyLength = 10
+        barLength = 4
+        break
+    case .two:
+        topping = "&"
+        bodyLength = 12
+        barLength = 4
+        break
+    case .three:
+        topping = "#"
+        bodyLength = 12
+        barLength = 6
+        break
+    case .four:
+        bodyShape = "|0|"
+        bodyLength = 6
+        barLength = 4
+        break
+    case .custom1:
+        bodyShape = "000"
+        topping = "%"
+        bodyLength = 10
+        barLength = 4
+        break
+    case .custom2:
+        bodyShape = "*&*"
+        topping = "&"
+        bodyLength = 6
+        barLength = 4
+        break
+    case .custom3:
+        bodyShape = "+++"
+        bodyLength = 8
+        barLength = 4
+        break
     }
+    
+    let tempTopping = topping ?? "없음"
+    
+    print("빼빼로 타입 : \(type)")
+    print("몸통 :\(bodyShape), 토핑 :\(tempTopping), 몸통 길이 :\(bodyLength), 막대 길이 :\(barLength)")
     peperoBody = makePeperoBody(body: bodyShape, topping: topping)
     printPeperoBody(bodyLength: bodyLength)
     printPeperoBar(barLength: barLength)
