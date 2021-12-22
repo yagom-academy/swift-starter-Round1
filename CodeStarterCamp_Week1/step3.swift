@@ -6,45 +6,45 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-var pepero: String = ""
-var stick: String = " | |"
+var peperoBody: String = ""
+var peperoHandle: String = " | |"
 
-func makePepero(topping: String, body: String) {
-    if body == "***" {
-        pepero = topping+body+"\n "+body+topping
+func makeBody(topping: String, chocolate: String) {
+    if chocolate == "***" {
+        peperoBody = topping+chocolate+"\n "+chocolate+topping
     } else {
-        pepero = stick+"\n "+body+topping
+        peperoBody = peperoHandle+"\n "+chocolate+topping
     }
 }
 
-func printPepero(bodyLength: Int) {
-    for _ in 1...(bodyLength/2) {
-        print(pepero)
+func printBody(bodyLength: Int) {
+    for _ in 1...bodyLength / 2 {
+        print(peperoBody)
     }
 }
 
-func makeStick(stickLength: Int) {
-    for _ in 1...stickLength {
-        print(stick)
+func printHandle(handleLength: Int) {
+    for _ in 1...handleLength {
+        print(peperoHandle)
     }
 }
 
-func initPepero(topping: String, body: String, bodyLength: Int, stickLength: Int) {
-    printInfo(topping: topping, body: body, bodyLength: bodyLength, stickLength: stickLength)
-    makePepero(topping: topping, body: body)
-    printPepero(bodyLength: bodyLength)
-    makeStick(stickLength: stickLength)
+func initPepero(topping: String, chocolate: String, bodyLength: Int, handleLength: Int) {
+    printInfo(topping: topping, chocolate: chocolate, bodyLength: bodyLength, handleLength: handleLength)
+    makeBody(topping: topping, chocolate: chocolate)
+    printBody(bodyLength: bodyLength)
+    printHandle(handleLength: handleLength)
 }
 
-func printInfo(topping: String, body: String, bodyLength: Int, stickLength: Int) {
+func printInfo(topping: String, chocolate: String, bodyLength: Int, handleLength: Int) {
     print("<정보>")
     print("길이: \(bodyLength)")
-    print("몸통: \(body)")
+    print("몸통: \(chocolate)")
     print("토핑: \(topping)")
-    print("막대길이: \(stickLength)\n")
+    print("막대길이: \(handleLength)\n")
 }
 
-initPepero(topping: " ", body: "***", bodyLength: 10, stickLength: 4)
-initPepero(topping: "&", body: "***", bodyLength: 12, stickLength: 4)
-initPepero(topping: "#", body: "***", bodyLength: 12, stickLength: 6)
-initPepero(topping: " ", body: "|0|", bodyLength: 6, stickLength: 4)
+initPepero(topping: " ", chocolate: "***", bodyLength: 10, handleLength: 4)
+initPepero(topping: "&", chocolate: "***", bodyLength: 12, handleLength: 4)
+initPepero(topping: "#", chocolate: "***", bodyLength: 12, handleLength: 6)
+initPepero(topping: " ", chocolate: "|0|", bodyLength: 6, handleLength: 4)
