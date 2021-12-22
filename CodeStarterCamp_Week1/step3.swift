@@ -8,44 +8,57 @@
 
 import Foundation
 
-func stickLength(count: Int) {
-    for _ in 1...count {
+func drawStickLength(stickLength: Int) {
+    for _ in 1...stickLength {
         print(" | |")
     }
 }
 
-func bodyShape(shape1: String, shape2: String) {
-    if shape1 == "|0|" {
-       print(" | |")
-       print(" |0|")
-    } else {
-        print(shape2, shape1, separator: "")
-        print(" ", shape1, shape2, separator: "")
+func drawBodyShape(bodyLength: Int, body: String, topping: String) {
+    for _ in 1...bodyLength/2 {
+        if body == "|0|" {
+            print(" | |\n |0|")
+        } else {
+            print("\(topping)\(body)\n \(body)\(topping)")
+        }
     }
 }
 
-func bodyLength(count: Int, shape1: String, shape2: String) {
-    if count % 2 == 0 {
-        for _ in 1...count/2 {
-            bodyShape(shape1: shape1, shape2: shape2)
-        }
-    } else if count % 2 == 1 && shape1 == "|0|" {
-        for _ in 1...count/2 {
-            bodyShape(shape1: shape1, shape2: shape2)
-        }
+func drawBodyLength(bodyLength: Int, body: String, topping: String) {
+    if bodyLength % 2 == 0 {
+        drawBodyShape(bodyLength: bodyLength, body: body, topping: topping)
+    } else if bodyLength % 2 == 1 && body == "|0|" {
+        drawBodyShape(bodyLength: bodyLength, body: body, topping: topping)
         print(" | |")
     } else {
-        for _ in 1...count/2 {
-            bodyShape(shape1: shape1, shape2: shape2)
-        }
-        print(shape2, shape1, separator: "")
+        drawBodyShape(bodyLength: bodyLength, body: body, topping: topping)
+        print(topping, body, separator: "")
     }
 }
 
-func drawPePeRo(길이: Int, 몸통: String, 토핑: String, 막대길이: Int) {
-    print("<정보>\n길이: \(길이)\n몸통: \(몸통)\n토핑: \(토핑)\n막대길이: \(막대길이)")
-    bodyLength(count: 길이, shape1: 몸통, shape2: 토핑)
-    stickLength(count: 막대길이)
+func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int) {
+    print("<정보>\n길이: \(bodyLength)\n몸통: \(body)\n토핑: \(topping)\n막대길이: \(stickLength)")
+    drawBodyLength(bodyLength: bodyLength, body: body, topping: topping)
+    drawStickLength(stickLength: stickLength)
+    print("_______________________________________")
 }
 
+func makeBodyLength(bodyLength: Int, body: String, topping: String) {
+    switch bodyLength {
+    case let bodyLength where !bodyLength.isMultiple(of: 2) && body == "|0|":
+        drawBodyShape(bodyLength: bodyLength, body: body, topping: topping)
+        print(" | |")
+    case let bodyLength where !bodyLength.isMultiple(of: 2) && body != "|0|":
+        drawBodyShape(bodyLength: bodyLength, body: body, topping: topping)
+        print(topping, body, separator: "")
+    default:
+        drawBodyShape(bodyLength: bodyLength, body: body, topping: topping)
+    }
+}
 
+func makePepero(bodyLength: Int, body: String, topping: String, stickLength: Int) {
+    print("<정보>\n길이: \(bodyLength)\n몸통: \(body)\n토핑: \(topping)\n막대길이: \(stickLength)")
+    makeBodyLength(bodyLength: bodyLength, body: body, topping: topping)
+    drawStickLength(stickLength: stickLength)
+    print("_______________________________________")
+}

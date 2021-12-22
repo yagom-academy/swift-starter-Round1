@@ -7,6 +7,10 @@
 
 import Foundation
 
-// drawPePeRo(길이: 12, 몸통: "***", 토핑: "#", 막대길이: 6)
-// drawPePeRo(길이: 5, 몸통: "|0|", 토핑: " ", 막대길이: 4)
-drawPePeRo(길이: 7, 몸통: "%%%", 토핑: "$", 막대길이: 3)
+drawPepero(bodyLength: 12, body: "***", topping: "#", stickLength: 6)
+drawPepero(bodyLength: 5, body: "|0|", topping: " ", stickLength: 4)
+drawPepero(bodyLength: 7, body: "%%%", topping: "$", stickLength: 3)
+
+makePepero(bodyLength: 12, body: "***", topping: "#", stickLength: 6)
+makePepero(bodyLength: 5, body: "|0|", topping: " ", stickLength: 4)
+makePepero(bodyLength: 7, body: "%%%", topping: "$", stickLength: 3)
