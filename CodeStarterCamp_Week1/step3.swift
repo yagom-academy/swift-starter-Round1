@@ -44,15 +44,14 @@ func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int
 }
 
 func makeBodyLength(bodyLength: Int, body: String, topping: String) {
+    drawBodyShape(bodyLength: bodyLength, body: body, topping: topping)
+    
     switch bodyLength {
     case let bodyLength where !bodyLength.isMultiple(of: 2) && body == "|0|":
-        drawBodyShape(bodyLength: bodyLength, body: body, topping: topping)
         print(" | |")
     case let bodyLength where !bodyLength.isMultiple(of: 2) && body != "|0|":
-        drawBodyShape(bodyLength: bodyLength, body: body, topping: topping)
         print(topping, body, separator: "")
-    default:
-        drawBodyShape(bodyLength: bodyLength, body: body, topping: topping)
+    default: break
     }
 }
 
