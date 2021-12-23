@@ -16,4 +16,3 @@ callPeperoFunc(bodyLength: 12, bodyShape: "***", toppingShape: "#", stickLength:
 print("--------------")
 callPeperoFunc(bodyLength: 6, bodyShape: "|0|", toppingShape: "", stickLength: 4)
 
-print("PR message")
