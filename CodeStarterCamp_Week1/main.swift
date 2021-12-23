@@ -8,19 +8,10 @@
 
 import Foundation
 
-func drawIceCream(length: Int) {
-    for count in 1...length {
-        print("***********")
-    }
-}
-
-func drawCone(length: Int) {
-    for count in 1...length {
-        print("    | |")
-    }
-}
-
-drawIceCream(length: 8)
-drawCone(length: 4)
-
-print("git test")
+callPeperoFunc(bodyLength: 12, bodyShape: "***", toppingShape: "", stickLength: 4)
+print("--------------")
+callPeperoFunc(bodyLength: 12, bodyShape: "***", toppingShape: "&", stickLength: 4)
+print("--------------")
+callPeperoFunc(bodyLength: 12, bodyShape: "***", toppingShape: "#", stickLength: 4)
+print("--------------")
+callPeperoFunc(bodyLength: 6, bodyShape: "|0|", toppingShape: "", stickLength: 4)
