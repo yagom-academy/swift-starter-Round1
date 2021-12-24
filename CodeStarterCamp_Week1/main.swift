@@ -8,119 +8,115 @@
 import Foundation
 
 
-var num: Int = 1
-var peperoBodyLength: Int = 10
-var peperoStickLength: Int = 4
-var peperoBody: String = "***"
-var peperoTopping: String = " "
-var peperoStick: String = "| |"
-
-
 func printPeperoInformation() {
-    print("실행 예시 \(num) 정보")
-    print("peperoBodyLength: \(peperoBodyLength)")
-    print("peperoStickLength: \(peperoStickLength)")
-    print("peperoBody: \(peperoBody)")
-    print("peperoTopping: \(peperoTopping)")
+    print("실행 예시 \(peperoExampleNumber) 정보")
+    print("bodyLength: \(bodyLength)")
+    print("stickLength: \(stickLength)")
 }
 
-func printWholePeperoStick(peperoStickLength: Int) {
-   for _ in 1...peperoStickLength {
-       print(" | |")
+func printPeperoWholeStick(stickLength: Int) {
+   for _ in 1...stickLength {
+       print(" \(stick)")
    }
 }
 
-func printPeperoBodyTopping(peperoBody: String, peperoTopping: String) {
-    print(peperoTopping, peperoBody, " ", separator: "")
-    print(" ",peperoBody,peperoTopping, separator: "")
+func printPeperoToppingAndBody(topping: String, body: String) {
+    print("peperoTopping")
+    print(topping)
+    print("peperoBody")
+    print(body)
+    print("~~~~~~~~~~")
 }
 
-func printWholePeperoBodyTopping(peperoBodyLength: Int) {
-        for _ in 1...peperoBodyLength/2 {
-            printPeperoBodyTopping(peperoBody: peperoBody, peperoTopping: peperoTopping)
+func printPeperoWholeBody(bodyLength: Int) {
+        for _ in 1...bodyLength / 2 {
+            print(" \(body)\(topping)")
+            print("\(topping)\(body)")
         }
-    }
-
-func callThreeMethod(peperoBodyLength: Int, peperoStickLength: Int, peperoBody: String, peperoTopping: String) {
-    printWholePeperoStick(peperoStickLength: peperoStickLength)
-    printPeperoBodyTopping(peperoBody: peperoBody, peperoTopping: peperoTopping)
-    printWholePeperoBodyTopping(peperoBodyLength: peperoBodyLength)
 }
 
-func printWholePepero() {
-    printWholePeperoBodyTopping(peperoBodyLength: peperoBodyLength)
-    printWholePeperoStick(peperoStickLength: peperoStickLength)
-}
-    
-
-printPeperoInformation()
-printWholePepero()
-
-num = 2
-peperoBodyLength = 12
-peperoStickLength = 4
-peperoBody = "***"
-peperoTopping = "&"
-
-printPeperoInformation()
-printWholePepero()
-
-num = 3
-peperoBodyLength = 12
-peperoStickLength = 4
-peperoBody = "***"
-peperoTopping = "#"
-
-printPeperoInformation()
-printWholePepero()
-
-num = 4
-peperoBodyLength = 6
-peperoStickLength = 4
-peperoBody = "|0|"
-peperoTopping = " "
-
-
-func printNudePeperoBody(peperoBody: String, peperoTopping: String) {
-    print(peperoTopping, peperoStick, " ", separator: "")
-    print(" ", peperoBody, peperoTopping, separator: "")
+func printToppingAndBodyAndWholePepero(bodyLength: Int, stickLength: Int, body: String, topping: String) {
+    printPeperoToppingAndBody(topping: topping, body: body)
+    printPeperoWholeBody(bodyLength: bodyLength)
+    printPeperoWholeStick(stickLength: stickLength)
 }
 
-func printWholeNudePeperoBody(peperoBodyLength: Int) {
-    for _ in 1...peperoBodyLength/2 {
-            printNudePeperoBody(peperoBody: peperoBody, peperoTopping: peperoTopping)
+var peperoExampleNumber: Int = 1
+var bodyLength: Int = 10
+var stickLength: Int = 4
+var body: String = "***"
+var topping: String = " "
+var stick: String = "| |"
+
+printPeperoInformation()
+printToppingAndBodyAndWholePepero(bodyLength: bodyLength, stickLength: stickLength, body: body, topping: topping)
+
+
+peperoExampleNumber = 2
+bodyLength = 12
+stickLength = 4
+body = "***"
+topping = "&"
+
+printPeperoInformation()
+printToppingAndBodyAndWholePepero(bodyLength: bodyLength, stickLength: stickLength, body: body, topping: topping)
+
+peperoExampleNumber = 3
+bodyLength = 12
+stickLength = 4
+body = "***"
+topping = "#"
+
+printPeperoInformation()
+printToppingAndBodyAndWholePepero(bodyLength: bodyLength, stickLength: stickLength, body: body, topping: topping)
+
+
+peperoExampleNumber = 4
+bodyLength = 12
+stickLength = 4
+body = "|0|"
+topping = " "
+
+
+func printNudePeperoWholeBody(bodyLength: Int) {
+    for _ in 1...bodyLength / 2 {
+        print(" \(stick)")
+        print(" \(body)")
+        
     }
 }
         
-func printWholeNudePepero() {
-    printWholeNudePeperoBody(peperoBodyLength: peperoBodyLength)
-    printWholePeperoStick(peperoStickLength: peperoStickLength)
+func printToppingAndBodyAndWholeNudePepero(bodyLength: Int, stickLength: Int, topping: String, body: String) {
+    printPeperoToppingAndBody(topping: topping, body: body)
+    printNudePeperoWholeBody(bodyLength: bodyLength)
+    printPeperoWholeStick(stickLength: stickLength)
 }
 
 printPeperoInformation()
-printWholeNudePepero()
+printToppingAndBodyAndWholeNudePepero(bodyLength: bodyLength, stickLength: stickLength, topping: topping, body: body)
 
-num = 5
-peperoBodyLength = 8
-peperoStickLength = 4
-peperoBody = "|*|"
-peperoTopping = "%"
 
-func printNudeToppingPeperoBody(peperoBody: String, peperoTopping: String) {
-    print(peperoTopping, peperoStick, " ", separator: "")
-    print(" ", peperoBody, peperoTopping, separator: "")
-}
+peperoExampleNumber = 5
+bodyLength = 8
+stickLength = 4
+body = "|*|"
+topping = "%"
 
-func printWholeNudeToppingPeperoBody(peperoBodyLength: Int) {
-    for _ in 1...peperoBodyLength/2 {
-        printNudeToppingPeperoBody(peperoBody: peperoBody, peperoTopping: peperoTopping)
+
+func printToppingNudePeperoWholeBody(bodyLength: Int) {
+    for _ in 1...bodyLength / 2 {
+        print(" \(stick)\(topping)")
+        print("\(topping)\(body)")
     }
 }
 
-func printWholeNudeToppingPepero() {
-    printWholeNudeToppingPeperoBody(peperoBodyLength: peperoBodyLength)
-    printWholePeperoStick(peperoStickLength: peperoStickLength)
+func printToppingAndBodyAndWholeToppingNudePepero(bodyLength: Int, stickLength: Int, topping: String, body: String) {
+    printPeperoToppingAndBody(topping: topping, body: body)
+    printToppingNudePeperoWholeBody(bodyLength: bodyLength)
+    printPeperoWholeStick(stickLength: stickLength)
 }
 
 printPeperoInformation()
-printWholeNudeToppingPepero()
+printToppingAndBodyAndWholeToppingNudePepero(bodyLength: bodyLength, stickLength: stickLength, topping: topping, body: body)
+
+
