@@ -1,12 +1,13 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
+func icecreamPart() {
+    for _ in 1...8 {
+        print("***********")
+    }
+}
+icecreamPart()
 
-import Foundation
-
-print("Hello, World!")
-
+func stickPart() {
+    for _ in 1...4 {
+        print("    | |    ")
+    }
+}
+stickPart()
