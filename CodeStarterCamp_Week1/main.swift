@@ -21,3 +21,5 @@ func bar() -> Void{
 }
 star()
 bar()
+
+// 실수로 step 1 머지에 포함이 되어 버렸습니다..
