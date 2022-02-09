@@ -8,4 +8,4 @@
 import Foundation
 
 print("Hello, World!")
-
+print("깃 포함 폴더 삭제 후 다시 깃허브 연결")
