@@ -8,5 +8,21 @@
 
 import Foundation
 
-print("Hello, World!")
+func drawIcecream() {
+    for count in 1...8 {
+        for _ in 1...11 {
+            print("*", terminator: "")
+        }
+        print("")
+    }
+}
+
+func drawStick() {
+    for _ in 1...4 {
+        print("    ", "    ", separator: "| |")
+    }
+}
+
+drawIcecream()
+drawStick()
 
