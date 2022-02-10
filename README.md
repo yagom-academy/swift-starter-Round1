@@ -9,4 +9,4 @@
   트랜지스터를 ON/OFF하는 행위를 반복하는데 이러한 전기적 신호를 0과 1, 즉 2진수 기반으로 처리하기 때문입니다. 만약
   십진법을 사용하게 된다면 전기적 신호는 10가지 경우로 구분되는데 이는 오류 발생량과 소요 시간 및 비용이 증가되기 때문입니다.
 
-![image](CodeStarterCamp_Week1/Icecream_Drawing.drawio.png)
+![image](./Icecream_Drawing.drawio.png)
