@@ -8,5 +8,21 @@
 
 import Foundation
 
-print("Hello, World!")
+for count in 0...8 {
+    
+    func bodyOfIcecream(){
+        
+        print("***********")
+    }
+    bodyOfIcecream()
+}
 
+for count in 0...3 {
+    
+    func tailOfIcecream(){
+        
+        print("   |   | ")
+    }
+    
+    tailOfIcecream()
+}
