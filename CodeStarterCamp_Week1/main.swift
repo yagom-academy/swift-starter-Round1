@@ -1,13 +1,13 @@
-func icecreamPart() {
+func makingIcecreamBody() {
     for _ in 1...8 {
         print("***********")
     }
 }
-icecreamPart()
+makingIcecreamBody()
 
-func stickPart() {
+func makingIcecreamStick() {
     for _ in 1...4 {
         print("    | |    ")
     }
 }
-stickPart()
+makingIcecreamStick()
