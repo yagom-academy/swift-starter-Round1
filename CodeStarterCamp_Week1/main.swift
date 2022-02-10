@@ -8,8 +8,6 @@
 
 import Foundation
 
-
-
 func countingStar(height: Int, width: Int) {
     for _ in 1...height {
         for _ in 1...width {
