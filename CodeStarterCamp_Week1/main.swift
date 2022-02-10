@@ -9,7 +9,7 @@
 import Foundation
 
 func drawIcecream() {
-    for count in 1...8 {
+    for _ in 1...8 {
         for _ in 1...11 {
             print("*", terminator: "")
         }
