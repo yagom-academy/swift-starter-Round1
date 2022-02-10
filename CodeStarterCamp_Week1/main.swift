@@ -22,3 +22,6 @@ func printStick(){
         print("    | |")
     }
 }
+
+printCreamy()
+printStick()
