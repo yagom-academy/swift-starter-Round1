@@ -8,7 +8,7 @@
 
 import Swift
 
-func part_Creamy(){
+func printCreamy(){
     for _ in 0...7{
         for _ in 0...10{
             print("*", terminator: "")
@@ -17,11 +17,3 @@ func part_Creamy(){
     }
 }
 
-func part_Stick(){
-    for _ in 0...4{
-        print("    | |")
-    }
-}
-
-part_Creamy()
-part_Stick()
