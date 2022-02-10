@@ -8,5 +8,27 @@
 
 import Foundation
 
-print("Hello, World!")
+func iceCream() {
+    print("""
+***********
+***********
+***********
+***********
+***********
+***********
+***********
+***********
+""")
+}
 
+func stick() {
+    print("""
+    | |
+    | |
+    | |
+    | |
+""")
+}
+
+iceCream()
+stick()
