@@ -1,6 +1,3 @@
-
-
-
 //
 //  main.swift
 //  CodeStarterCamp_Week1
@@ -12,7 +9,7 @@
 
 import Foundation
 
-func star() -> Void{ // Void 생략가능
+func iceCreamPrinter() -> Void{ // Void 생략가능
     for _ in 1...8{
         print("***********")
     }
@@ -22,7 +19,5 @@ func bar() -> Void{
         print("    | |")
     }
 }
-star()
+iceCreamPrinter()
 bar()
-
-// 재업로드
