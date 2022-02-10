@@ -8,21 +8,23 @@
 
 import Foundation
 
-for count in 0...8 {
+
+func bodyOfIcecream() {
     
-    func bodyOfIcecream(){
+    for _ in 0...7{
         
         print("***********")
     }
-    bodyOfIcecream()
 }
 
-for count in 0...3 {
+func tailOfIcecream(){
     
-    func tailOfIcecream(){
+    for _ in 0...3 {
         
         print("   |   | ")
     }
-    
-    tailOfIcecream()
 }
+
+
+bodyOfIcecream()
+tailOfIcecream()
