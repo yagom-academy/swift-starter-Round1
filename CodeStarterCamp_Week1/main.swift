@@ -20,6 +20,5 @@ func tailOfIcecream(){
         print("  |   | ")
     }
 }
-
 bodyOfIcecream()
 tailOfIcecream()
