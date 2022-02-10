@@ -7,3 +7,5 @@
 답변2: 컴퓨터를 제어/연산 하기 위해 Coding을 하지만, 궁극적으로는 HW인 CPU와 Memory가 동작을 해야 하고, 이 HW들은 “0 ”과 “1”, 즉 On/Off를 통해 동작하고 있기 때문에 기계어는 이진법으로만 표현이 가능. 
 
 Commit_test: 3rd commit
+
+Commit_test: 4th commit --> Where to check? 
