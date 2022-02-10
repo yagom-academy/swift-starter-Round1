@@ -9,22 +9,17 @@
 import Foundation
 
 
-func bodyOfIcecream() {
-    
+func bodyOfIcecream(){
     for _ in 0...7{
-        
         print("***********")
     }
 }
 
 func tailOfIcecream(){
-    
-    for _ in 0...3 {
-        
-        print("   |   | ")
+    for _ in 0...3{
+        print("  |   | ")
     }
 }
-
 
 bodyOfIcecream()
 tailOfIcecream()
