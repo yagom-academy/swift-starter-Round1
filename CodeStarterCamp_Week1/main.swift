@@ -14,7 +14,7 @@ func drawIceCream(here: Int){
     }}
 func drawIceCreamStick(here: Int){
 for _ in 1...here {
-    print("    | |     ")
+    print("    | |    ")
 }}
 drawIceCream(here: 8)
 drawIceCreamStick(here: 4)
