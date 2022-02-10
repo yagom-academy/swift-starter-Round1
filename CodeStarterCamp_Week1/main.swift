@@ -8,5 +8,18 @@
 
 import Foundation
 
-print("Hello, World!")
+func iceCreamDraw(){
+    for _ in 1...11{
+        print("***********")
+    }
+}
 
+func stickDraw(){
+    for _ in 1...4{
+        print("    ",terminator: "")
+        print("| |")
+    }
+}
+
+iceCreamDraw()
+stickDraw()
