@@ -17,3 +17,8 @@ func printCreamy(){
     }
 }
 
+func printStick(){
+    for _ in 0...4{
+        print("    | |")
+    }
+}
