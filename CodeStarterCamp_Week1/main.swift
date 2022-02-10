@@ -6,7 +6,22 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
+import Swift
 
-print("Hello, World!")
+func printCreamy(){
+    for _ in 0...7{
+        for _ in 0...10{
+            print("*", terminator: "")
+        }
+        print("")
+    }
+}
 
+func printStick(){
+    for _ in 0...4{
+        print("    | |")
+    }
+}
+
+printCreamy()
+printStick()
