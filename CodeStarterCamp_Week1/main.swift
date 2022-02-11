@@ -23,3 +23,5 @@ func stickDraw(){
 
 iceCreamDraw()
 stickDraw()
+
+//
