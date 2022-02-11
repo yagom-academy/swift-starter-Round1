@@ -7,36 +7,47 @@
 
 import Swift
 
-func printPockyStick(lengthStick : Int) {
-    for _ in 1...lengthStick {
-        print(" | |")
+let singleSpace = " "
+let normalStick: String = " | |"
+let nudePockyWithChoco: String = "|0|"
+let nudePockyWithoutChoco: String = "| |"
+
+func printPockyStick(lengthOfStick: Int) {
+    for _ in 1...lengthOfStick {
+        print(normalStick)
     }
 }
 
-func printPockyToppingBody(topping : String, body : String) {
-    var localTopping: String = topping
-    if localTopping == "" {
-        localTopping = " "
+func printPockyToppingBody(topping: String, body: String) {
+    var topping: String = topping
+    if topping.isEmpty {
+        topping = singleSpace
     }
-    print(localTopping + body + localTopping)
+    print(topping + body + topping)
 }
 
-func printPockyBody(lengthBody : Int, toppingPara : String, bodyPara : String) {
-    for index in 1...lengthBody {
-        var localBody: String = bodyPara
-        if localBody == "|0|" {
-            if (index % 2) != 0 {
-                localBody = "| |"
+func printPockyBody(lengthOfBody: Int, pockyTopping: String, pockyBody: String) {
+    for index in 1...lengthOfBody {
+        var pockyBody: String = pockyBody
+        if pockyBody == nudePockyWithChoco {
+            if checkIsOdd(number: index) {
+                pockyBody = nudePockyWithoutChoco
             }
-            printPockyToppingBody(topping : toppingPara, body : localBody)
         }
-        else {
-            printPockyToppingBody(topping : toppingPara, body : localBody)
-        }
+        printPockyToppingBody(topping: pockyTopping, body: pockyBody)
     }
 }
 
-func printPocky(lengthBody : Int, bodyPara : String, toppingPara : String, lengthStick : Int) {
-    printPockyBody(lengthBody: lengthBody, toppingPara: toppingPara, bodyPara: bodyPara)
-    printPockyStick(lengthStick: lengthStick)
+func checkIsOdd(number: Int) -> Bool {
+    if (number % 2) != 0 {
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+func printPocky(lengthOfBody: Int, pockyBody: String, pockyTopping: String, lengthOfStick: Int) {
+    printPockyBody(lengthOfBody: lengthOfBody, pockyTopping: pockyTopping, pockyBody: pockyBody)
+    printPockyStick(lengthOfStick: lengthOfStick)
 }
