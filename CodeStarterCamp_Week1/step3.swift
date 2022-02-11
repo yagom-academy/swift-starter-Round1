@@ -8,9 +8,13 @@
 import Foundation
 
 func drawPepero(bodyLength: Int, body: String, topping: String, barLength: Int) {
-  let ingredient = makeIngredient(body: body, topping: topping)
-  drawPeperoBody(bodyLength: bodyLength, ingredient: ingredient)
-  drawPeperoBar(barLength: barLength)
+  if body == "|0|" {
+    drawNudePepero(bodyLength: bodyLength, barLength: barLength)
+  } else {
+    let ingredient = makeIngredient(body: body, topping: topping)
+    drawPeperoBody(bodyLength: bodyLength, ingredient: ingredient)
+    drawPeperoBar(barLength: barLength)
+  }
 }
 
 func makeIngredient(body: String, topping: String) -> String {
@@ -27,4 +31,10 @@ func drawPeperoBar(barLength: Int) {
   for _ in 0..<barLength {
     print(" | |")
   }
+}
+
+func drawNudePepero(bodyLength: Int, barLength: Int) {
+  let length: Int = bodyLength/2
+  drawPeperoBody(bodyLength: length, ingredient: " | |\n |0|")
+  drawPeperoBar(barLength: barLength)
 }
