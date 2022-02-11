@@ -14,3 +14,10 @@ func drawIceCream(){
     }
 }
 drawIceCream()
+
+func drawBar(){
+    for _ in 1...4 {
+        print("    | |    ")
+    }
+}
+drawBar()
