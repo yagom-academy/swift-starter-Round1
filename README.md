@@ -10,9 +10,6 @@
   십진법을 사용하게 된다면 전기적 신호는 10가지 경우로 구분되는데 이는 오류 발생량과 소요 시간 및 비용이 증가되기 때문입니다.
 
 ## Step 2 순서도
-
-초기 순서도
-![image](/CodeStarterCamp_Week1/Icecream_Drawing_1.drawio.png)
-
-변화된 순서도
-![image](/CodeStarterCamp_Week1/Icecream_Drawing_2.drawio.png)
+| 초기 순서도 | 변화된 순서도 |
+|:---:|:---:|
+| ![image](/CodeStarterCamp_Week1/Icecream_Drawing_1.drawio.png) | ![image](/CodeStarterCamp_Week1/Icecream_Drawing_2.drawio.png) |
