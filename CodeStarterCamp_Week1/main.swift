@@ -19,7 +19,7 @@ func countingStar(height: Int, width: Int) {
 
 func countingBar(height: Int) {
     for _ in 1...height {
-        print("   |  |   ")
+        print("","|","|",  separator:"   ")
     }
 }
 
