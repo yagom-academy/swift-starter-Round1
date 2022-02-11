@@ -33,3 +33,16 @@ func makeBodyAndTopping(bodyLength: Int , body: String , topping: String ) {
         }
     }
 }
+
+func makePepero(bodyLength: Int , body: String , topping: String , stickLength: Int) {
+    print("<정보>")
+    print("길이: \(bodyLength)")
+    print("몸통: \(body)")
+    print("토핑: \(topping)")
+    print("막대길이: \(stickLength)")
+    print("")
+    makeBodyAndTopping(bodyLength: bodyLength, body: body, topping: topping)
+    makeStick(stickLength: stickLength)
+}
+
+makePepero(bodyLength: 5 , body: " ###", topping: "" , stickLength: 4)
