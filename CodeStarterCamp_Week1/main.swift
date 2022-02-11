@@ -1,17 +1,17 @@
 import Foundation
 
-iceTop()
-iceBar()
+drawIceTop()
+drawIceBar()
 
 // 1. 아이스크림을 그리는 함수
-func iceTop() {
+func drawIceTop() {
     for _ in 1...8 {
        print("***********")
      }
 }
 
 // 2. 아이스크림 막대기를 그리는 함수
-func iceBar() {
+func drawIceBar() {
     for _ in 1...4 {
         print("    | |")
     }
