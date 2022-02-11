@@ -8,21 +8,21 @@
 
 import Foundation
 
-print("Hello, World!")
+
 let icecreamSize = "***********"
 let barSize = "    | |    "
 
-printIcecream(x: 8)
-printBar(y: 4)
+printIcecream(iceLength: 8)
+printBar(barLength: 4)
 
-func printIcecream(x: Int){
-    for _ in 0...x-1{
+func printIcecream(iceLength: Int){
+    for _ in 0...iceLength-1{
         print(icecreamSize)
     }
 }
 
-func printBar(y: Int){
-    for _ in 0...y-1{
+func printBar(barLength: Int){
+    for _ in 0...barLength-1{
         print(barSize)
     }
 }
