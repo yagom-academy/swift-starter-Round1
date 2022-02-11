@@ -26,15 +26,15 @@ makeStick()
 // 피드백 후의 답안
 var blank = ""
 func makeElevenStars() {
-            for count in 1...11 {
-                if count > 10 {
-                    blank = "\n"
-                } else if count == 1 {
-                    blank = ""
-                }
-                print("*", terminator: blank)
-            }
+    for count in 1...11 {
+        if count > 10 {
+            blank = "\n"
+        } else if count == 1 {
+            blank = ""
         }
+        print("*", terminator: blank)
+    }
+}
 func makeStick() {
     for count in 1...4 {
         print("    | |", terminator: blank)
