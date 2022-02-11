@@ -12,3 +12,11 @@ func printPockyStick(lengthStick : Int) {
         print(" | |")
     }
 }
+
+func printPockyToppingBody(topping : String, body : String) {
+    var localTopping: String = topping
+    if localTopping == "" {
+        localTopping = " "
+    }
+    print(localTopping + body + localTopping)
+}
