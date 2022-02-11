@@ -11,4 +11,5 @@
 
 ## Step 2 순서도
 
-![image](/CodeStarterCamp_Week1/Icecream_Drawing.drawio.png)
+
+![image](/CodeStarterCamp_Week1/Icecream_Drawing_1.drawio.png) -> ![image](/CodeStarterCamp_Week1/Icecream_Drawing_2.drawio.png)
