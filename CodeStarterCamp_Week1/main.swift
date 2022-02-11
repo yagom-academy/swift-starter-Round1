@@ -8,15 +8,15 @@
 
 import Foundation
 
-func printIcecream(icecream: Int) {
-    for _ in 1...icecream {
+func printIcecream(icecreamSize: Int) {
+    for _ in 1...icecreamSize {
         print("***********")
     }
 }
-func printStick(stick: Int) {
-    for _ in 1...stick {
+func printStick(stickSize: Int) {
+    for _ in 1...stickSize {
         print("    | |")
     }
 }
-printIcecream(icecream: 8)
-printStick(stick: 4)
+printIcecream(icecreamSize: 8)
+printStick(stickSize: 4)
