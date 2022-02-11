@@ -20,3 +20,18 @@ func printPockyToppingBody(topping : String, body : String) {
     }
     print(localTopping + body + localTopping)
 }
+
+func printPockyBody(lengthBody : Int, toppingPara : String, bodyPara : String) {
+    for index in 1...lengthBody {
+        var localBody: String = bodyPara
+        if localBody == "|0|" {
+            if (index % 2) != 0 {
+                localBody = "| |"
+            }
+            printPockyToppingBody(topping : toppingPara, body : localBody)
+        }
+        else {
+            printPockyToppingBody(topping : toppingPara, body : localBody)
+        }
+    }
+}
