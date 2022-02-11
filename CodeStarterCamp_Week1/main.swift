@@ -9,16 +9,17 @@
 import Foundation
 
 
-func bodyOfIcecream(){
-    for _ in 0...7{
+func makeBodyOfIcecream(bodyCount: Int){
+    for bodyCount in 0...bodyCount {
         print("***********")
     }
 }
 
-func tailOfIcecream(){
-    for _ in 0...3{
+func makeTailOfIcecream(tailCount: Int){
+    for tailCount in 0...tailCount {
         print("  |   | ")
     }
 }
-bodyOfIcecream()
-tailOfIcecream()
+
+makeBodyOfIcecream(bodyCount: 7)
+makeTailOfIcecream(tailCount: 3)
