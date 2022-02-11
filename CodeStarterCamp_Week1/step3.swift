@@ -28,3 +28,8 @@ func drawPeperoBar(barLength: Int) {
     print(" | |")
   }
 }
+
+
+
+drawPepero(bodyLength: 3, body: "", topping: "", barLength: 3)
+
