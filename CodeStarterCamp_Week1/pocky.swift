@@ -6,3 +6,9 @@
 //
 
 import Swift
+
+func printPockyStick(lengthStick : Int) {
+    for _ in 1...lengthStick {
+        print(" | |")
+    }
+}
