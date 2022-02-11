@@ -1,25 +1,14 @@
 //
 //  main.swift
-//  CodeStarterCamp_Week1
+//  step3
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 김태성 on 2022/02/11.
 //
-
 import Foundation
 
-func makeIcecream() {
-    for _ in 1...8 {
-        print("***********")
-    }
-    
-}
-
-func makeStick() {
-    for _ in 1...4 {
-        print("    | |")
+func makeStick(stickLength: Int) {
+    for _ in 1...stickLength {
+        print(" | |")
     }
 }
 
-makeIcecream()
-makeStick()
