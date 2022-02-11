@@ -11,5 +11,8 @@
 
 ## Step 2 순서도
 
+초기 순서도
+![image](/CodeStarterCamp_Week1/Icecream_Drawing_1.drawio.png)
 
-![image](/CodeStarterCamp_Week1/Icecream_Drawing_1.drawio.png) -> ![image](/CodeStarterCamp_Week1/Icecream_Drawing_2.drawio.png)
+변화된 순서도
+![image](/CodeStarterCamp_Week1/Icecream_Drawing_2.drawio.png)
