@@ -8,27 +8,22 @@
 
 import Foundation
 
-func icecreamBody(numberOfRows : Int) {
-    for _ in 1...numberOfRows {
+
+func drawIceCreamBody(numberOfBodyRows : Int) {
+    for _ in 1...numberOfBodyRows {
         print("***********")
     }
 }
 
-func icecreamStick(numberOfRows : Int) {
+func drawIceCreamStick(numberOfStickRows : Int) {
     
-    for i in 1...numberOfRows { //와일드 패턴을 썻지만, 순서도에 표현 쉽게 하기 위해  i, j 부여 하였습니다.
+    for _ in 1...numberOfStickRows {
         
-        for j in 1...4 {    //공백(space) 갯수
-            print(" ",terminator: "")
-        }
-        
-        print("|",terminator: "")
-        print(" ",terminator: "")
-        print("|")
+        print("    | |")
         
     }
 }
 
-icecreamBody(numberOfRows: 8)
-icecreamStick(numberOfRows: 4)
+drawIceCreamBody(numberOfBodyRows: 8)
+drawIceCreamStick(numberOfStickRows: 4)
 
