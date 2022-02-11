@@ -7,8 +7,6 @@
 //
 
 import Foundation
-print("Hello, World!")
-
 
 //첫번째 방법
 let totalIcecream = 8
@@ -34,6 +32,9 @@ while layerIcecream < totalIcecream{
 }
 
 makeLayerStick()
+
+
+
 
 // 두번째 방법
 //func makeLayerIcecream(){
