@@ -35,3 +35,8 @@ func printPockyBody(lengthBody : Int, toppingPara : String, bodyPara : String) {
         }
     }
 }
+
+func printPocky(lengthBody : Int, bodyPara : String, toppingPara : String, lengthStick : Int) {
+    printPockyBody(lengthBody: lengthBody, toppingPara: toppingPara, bodyPara: bodyPara)
+    printPockyStick(lengthStick: lengthStick)
+}
