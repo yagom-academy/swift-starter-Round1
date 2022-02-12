@@ -19,7 +19,7 @@ func stackIcecream(){
     print("")
 }
 
-func stackStick(){
+func makeLayerStick(){
     for _ in 1...4{
         print("    |", terminator: " ")
         print("|    ")
@@ -33,7 +33,7 @@ func stackStick(){
 //for loop에서 ''의 역할은 인덱스에 할당하지 않겠다는 의미로 사용된다고 알게되었습니다. 그래서 ''를 쓰게 되면 for안에 있는 명령어들이 인덱스를 할당받지 않은 상태에서 반복만 진행한다는 것도 알게됐습니다.
 
 while layerIcecream < totalIcecream{
-    makeLayerIcecream()
+    stackIcecream()
     layerIcecream += 1
 }
 
