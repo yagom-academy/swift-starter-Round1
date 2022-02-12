@@ -44,6 +44,7 @@ func makePeperoThreeFour(threeFourBodyLength: Int, threeFourStickLength: Int) {
         print(" | |")
     }
 }
+
 makePeperoOneTwo(oneTwoBodyLength: 10, oneTwoStickLength: 4)
 makePeperoOneTwo(oneTwoBodyLength: 12, oneTwoStickLength: 4)
 makePeperoThreeFour(threeFourBodyLength: 12, threeFourStickLength: 6)
