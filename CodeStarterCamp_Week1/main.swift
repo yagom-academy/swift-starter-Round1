@@ -10,17 +10,19 @@ import Foundation
 
 
 func makeBodyOfIcecream(bodyWidth: Int, bodyLonger: Int){
+    let bodyOfIcecream = "*"
     for _ in 0...bodyLonger {
         for _ in 0...bodyWidth {
-            print("*", terminator:"")
+            print(bodyOfIcecream, terminator:"")
         }
         print("")
     }
 }
 
 func makeTailOfIcecream(tailLonger: Int){
+    let tailOfIcecream = "   |  | "
     for _ in 0...tailLonger {
-        print("  |   | ")
+        print(tailOfIcecream)
     }
 }
 
