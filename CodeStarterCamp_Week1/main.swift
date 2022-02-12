@@ -8,27 +8,21 @@
 
 import Foundation
 
-func iceCream() {
-    print("""
-***********
-***********
-***********
-***********
-***********
-***********
-***********
-***********
-""")
+
+let iceCreamBody = "***********"
+let stick = "    | |"
+
+func drawIceCreamBody(몸통길이: Int) {
+    for _ in 1...몸통길이 {
+        print(iceCreamBody)
+    }
 }
 
-func stick() {
-    print("""
-    | |
-    | |
-    | |
-    | |
-""")
+func drawStick(막대길이: Int) {
+    for _ in 1...막대길이 {
+        print(stick)
+    }
 }
 
-iceCream()
-stick()
+drawIceCreamBody(몸통길이: 8)
+drawStick(막대길이: 4)
