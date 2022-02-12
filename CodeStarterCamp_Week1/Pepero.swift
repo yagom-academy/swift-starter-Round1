@@ -14,6 +14,9 @@ func printPeperoStick(stickSize: Int) {
 }
 
 func peperoHeadShape(body: String, toping: String) -> String {
+    if toping == "" {
+        return " " + body
+    }
     return toping + body + toping
 }
 
