@@ -1,4 +1,3 @@
-//
 //  main.swift
 //  CodeStarterCamp_Week1
 //
@@ -14,10 +13,10 @@ func iceCreamPrinter() -> Void{ // Void 생략가능
         print("***********")
     }
 }
-func bar() -> Void{
+func iceCreamBottomPrinter() -> Void{
     for _ in 1...4{
         print("    | |")
     }
 }
 iceCreamPrinter()
-bar()
+iceCreamBottomPrinter()
