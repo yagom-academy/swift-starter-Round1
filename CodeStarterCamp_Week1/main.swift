@@ -37,7 +37,7 @@ func makeStars(numberOfStars: Int) {
 }
 func makeStick() {
     for count in 1...4 {
-        print("    | |", terminator: blankOrReturn)
+        print("    | |")
     }
 }
 
