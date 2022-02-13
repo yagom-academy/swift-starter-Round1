@@ -11,9 +11,12 @@ import Foundation
 // 2. 막대길이만큼    | | 를 반복하는 반복문
 // 3. (길이)와 (막대길이)를 매개변수로 하는 함수
 
+
+
 var length = 10
 var topingBody = "  ***"
 var length2 = 4
+
 
 func drawPeperoBody(length : Int){
     for _ in 1...length{
