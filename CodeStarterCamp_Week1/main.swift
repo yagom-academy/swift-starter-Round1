@@ -24,20 +24,20 @@ makeStick()
 */
 
 // 피드백 후의 답안
-var blank = ""
+var blankOrReturn = ""
 func makeElevenStars() {
     for count in 1...11 {
         if count > 10 {
-            blank = "\n"
+            blankOrReturn = "\n"
         } else if count == 1 {
-            blank = ""
+            blankOrReturn = ""
         }
-        print("*", terminator: blank)
+        print("*", terminator: blankOrReturn)
     }
 }
 func makeStick() {
     for count in 1...4 {
-        print("    | |", terminator: blank)
+        print("    | |", terminator: blankOrReturn)
     }
 }
 
