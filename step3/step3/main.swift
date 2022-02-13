@@ -7,72 +7,80 @@
 
 import Foundation
 
-print("Hello, World!")
-
 // 1. 길이만큼 \(토핑)***\(토핑)을 반복하는 반복문
 // 2. 막대길이만큼    | | 를 반복하는 반복문
 // 3. (길이)와 (막대길이)를 매개변수로 하는 함수
 
 var length = 10
 var topingBody = "  ***"
-var stickLength = 4
+var length2 = 4
 
 func drawPeperoBody(length : Int){
     for _ in 1...length{
-            print(topingBody)
-    }}
-    func drawPeperoStick(stickLength : Int){
-        for _ in 1...stickLength{
-            print("  | |  ")
-        }}
+        print(topingBody)
+    }
+}
+func drawPeperoStick(length2 : Int){
+    for _ in 1...length2{
+        print("  | |  ")
+    }
+}
 drawPeperoBody(length: length)
-drawPeperoStick(stickLength: stickLength)
+drawPeperoStick(length2: length2)
 
 
 length = 12
 topingBody = " &***&"
-stickLength = 4
+length2 = 4
 
 func drawAmondPeperoBody(length : Int){
     for _ in 1...length{
-            print(topingBody)
-    }}
-    func drawAmondPeperoStick(stickLength : Int){
-        for _ in 1...stickLength{
-            print("  | |  ")
-        }}
+        print(topingBody)
+    }
+}
+func drawAmondPeperoStick(length2 : Int){
+    for _ in 1...length2{
+        print("  | |  ")
+    }
+}
 drawAmondPeperoBody(length: length)
-drawAmondPeperoStick(stickLength: stickLength)
+drawAmondPeperoStick(length2: length2)
 
 
 length = 12
 topingBody = " #***#"
-stickLength = 6
+length = 6
 
 func drawSharpPeperoBody(length : Int){
     for _ in 1...length{
-            print(topingBody)
-    }}
-    func drawSharpPeperoStick(stickLength : Int){
-        for _ in 1...stickLength{
-            print("  | |  ")
-        }}
+        print(topingBody)
+    }
+}
+func drawSharpPeperoStick(length2 : Int){
+    for _ in 1...length{
+        print("  | |  ")
+    }
+}
 drawSharpPeperoBody(length: length)
-drawSharpPeperoStick(stickLength: stickLength)
+drawSharpPeperoStick(length2: length2)
 
 
-length = 6
+length = 3
 topingBody = "  |0|  "
-stickLength = 4
+var topingBody2 = "  | |  "
+length2 = 4
 
 func drawNudePeperoBody(length : Int){
     for _ in 1...length{
-            print(topingBody)
-    }}
-    func drawNudePeperoStick(stickLength : Int){
-        for _ in 1...stickLength{
-            print("  | |  ")
-        }}
+        print(topingBody2)
+        print(topingBody)
+    }
+}
+func drawNudePeperoStick(length2 : Int){
+    for _ in 1...length2{
+        print("  | |  ")
+    }
+}
 drawNudePeperoBody(length: length)
-drawNudePeperoStick(stickLength: stickLength)
+drawNudePeperoStick(length2: length2)
 
