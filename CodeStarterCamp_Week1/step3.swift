@@ -6,3 +6,63 @@
 //
 
 import Foundation
+
+func drawStick(numberOfStickRows : Int) {
+    for _ in 1...numberOfStickRows {
+        print(" | |")
+    }
+}
+
+@discardableResult
+func decideBodyShapeAndToppingShape(bodyShape : String, toppingShape : String) -> String {
+    
+    if toppingShape == "" {
+        
+        return " \(bodyShape)"
+        
+    }else{
+        
+        return "\(toppingShape)\(bodyShape)\(toppingShape)"
+        
+    }
+
+}
+
+func drawBody(numberOfBodyRows : Int,bodyShape : String,toppingShape : String) {
+    
+    if bodyShape == "***" {
+        
+        for _ in 1...numberOfBodyRows {
+            print(decideBodyShapeAndToppingShape(bodyShape: bodyShape, toppingShape: toppingShape))
+            
+        }
+        
+    }else{
+        
+        for currentRowPosition in 1...numberOfBodyRows {
+            if currentRowPosition % 2 == 0 {
+                print(" |0|")
+            }else{
+                print(" | |")
+            }
+        }
+        
+        
+    }
+}
+func customedPepero(numberOfBodyRows : Int, bodyShape : String, toppingShape : String,numberOfStickRows : Int) {
+    
+    print("""
+          <정보>
+          길이: \(numberOfBodyRows)
+          몸통: \(bodyShape)
+          토핑: \(toppingShape)
+          막대길이: \(numberOfStickRows)
+          
+          """)
+    
+    
+    decideBodyShapeAndToppingShape(bodyShape: bodyShape, toppingShape: toppingShape)
+    drawBody(numberOfBodyRows: numberOfBodyRows, bodyShape: bodyShape, toppingShape: toppingShape)
+    drawStick(numberOfStickRows: numberOfStickRows)
+}
