@@ -25,7 +25,7 @@ makeStick()
 
 // 피드백 후의 답안
 var blankOrReturn = ""
-func makeStars(numberOfStars: Int) {
+func makeStarsOfOneRow(numberOfStars: Int) {
     for count in 1...numberOfStars {
         if count == numberOfStars {
             blankOrReturn = "\n"
@@ -42,6 +42,6 @@ func makeStick() {
 }
 
 for rowOfIceCream in 1...8 {
-   makeStars(numberOfStars: 11)
+   makeStarsOfOneRow(numberOfStars: 11)
 }
 makeStick()
