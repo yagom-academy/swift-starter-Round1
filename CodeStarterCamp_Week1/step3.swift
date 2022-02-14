@@ -14,34 +14,29 @@ func drawPepero(bodyLength: Int, body: String, topping: String, barLength: Int) 
   print("토핑: \(topping)")
   print("막대길이: \(barLength)\n")
   
-  if body == "|0|" {
-    drawNudePepero(bodyLength: bodyLength, barLength: barLength)
-  } else {
-    let ingredient = makeIngredient(body: body, topping: topping)
-    drawPeperoBody(bodyLength: bodyLength, ingredient: ingredient)
-    drawPeperoBar(barLength: barLength)
-  }
+  let ingredient = body == "|0|" ? body : makeIngredient(body: body, topping: topping)
+  drawPeperoBody(length: bodyLength, ingredient: ingredient)
+  drawPeperoBar(length: barLength)
 }
 
 private func makeIngredient(body: String, topping: String) -> String {
   return topping == "" ? " \(body)" : "\(topping)\(body)\(topping)"
 }
 
-private func drawPeperoBody(bodyLength: Int, ingredient: String) {
-  for _ in 0..<bodyLength {
-    print(ingredient)
+private func drawPeperoBody(length: Int, ingredient: String) {
+  if ingredient == "|0|" {
+    for number in 0..<length {
+      number % 2 == 0 ? print(" | |") : print(" |0|")
+    }
+  } else {
+    for _ in 0..<length {
+      print(ingredient)
+    }
   }
 }
 
-private func drawPeperoBar(barLength: Int) {
-  for _ in 0..<barLength {
+private func drawPeperoBar(length: Int) {
+  for _ in 0..<length {
     print(" | |")
   }
 }
-
-private func drawNudePepero(bodyLength: Int, barLength: Int) {
-  let length: Int = bodyLength/2
-  drawPeperoBody(bodyLength: length, ingredient: " | |\n |0|")
-  drawPeperoBar(barLength: barLength)
-}
-
