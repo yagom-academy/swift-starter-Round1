@@ -8,21 +8,21 @@
 
 import Foundation
 
-func drawIcecream() {
-    for _ in 1...8 {
-        for _ in 1...11 {
-            print("*", terminator: "")
+func drawBody(column: Int, row: Int, bodyParticle: Character) {
+    for _ in 1...column {
+        for _ in 1...row {
+            print("\(bodyParticle)", terminator: "")
         }
         print("")
     }
 }
 
-func drawStick() {
-    for _ in 1...4 {
-        print("    ", "    ", separator: "| |")
+func drawStick(column: Int, stickParticle: String) {
+    for _ in 1...column {
+        print("    ", "    ", separator: "\(stickParticle)")
     }
 }
 
-drawIcecream()
-drawStick()
+drawBody(column: 8, row: 11, bodyParticle: "*")
+drawStick(column: 4, stickParticle: "| |")
 
