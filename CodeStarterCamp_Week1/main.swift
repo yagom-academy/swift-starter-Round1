@@ -8,5 +8,5 @@
 
 import Foundation
 
-print("Hello, World!")
-
+drawIcecreamPart() //step2_drawIcecream.swift에서 함수 정의
+drawBarPart() //step2_drawIcecream.swift에서 함수 정의
