@@ -25,3 +25,12 @@ func printStick(){
 
 printCreamy()
 printStick()
+print("\n")
+
+printPocky(lengthOfBody: 10, pockyBody: "***", pockyTopping: "", lengthOfStick: 4)
+print("\n")
+printPocky(lengthOfBody: 12, pockyBody: "***", pockyTopping: "&", lengthOfStick: 4)
+print("\n")
+printPocky(lengthOfBody: 12, pockyBody: "***", pockyTopping: "#", lengthOfStick: 6)
+print("\n")
+printPocky(lengthOfBody: 6, pockyBody: "|0|", pockyTopping: "", lengthOfStick: 4)
