@@ -14,15 +14,16 @@ func printPeperoStick(stickSize: Int) {
 }
 
 func peperoHeadShape(body: String, toping: String) -> String {
-    if toping == "" {
-        return " " + body
-    }
     return toping + body + toping
 }
 
-func printPePeroHead(peperoHeadSize: Int, body: String, toping: String) {
+func printPeperoHead(peperoHeadSize: Int, body: String, toping: String) {
+    var NewToping = toping
+    if toping == "" {
+        NewToping += " "
+    }
     for _ in 1...peperoHeadSize {
-        print(peperoHeadShape(body: body, toping: toping))
+        print(peperoHeadShape(body: body, toping: NewToping))
     }
 }
 
@@ -33,7 +34,7 @@ func printPepero(peperoHeadSize: Int, body: String, toping: String, stickSize: I
     print("토핑: \(toping)")
     print("막대길이: \(stickSize)")
     print()
-    printPePeroHead(peperoHeadSize: peperoHeadSize, body: body, toping: toping)
+    printPeperoHead(peperoHeadSize: peperoHeadSize, body: body, toping: toping)
     printPeperoStick(stickSize: stickSize)
     print()
 }
