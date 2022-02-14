@@ -8,8 +8,8 @@
 
 import Foundation
 
-func drawStick(length: Int, stick: String) {
-    for _ in 1...length {
+func drawStick(stickLength: Int, stick: String) {
+    for _ in 1...stickLength {
             print(" ", " ", separator: "\(stick)")
     }
 }
@@ -18,18 +18,18 @@ func drawBody(body: String, topping: String) {
     print(topping + body + topping)
 }
 
-func drawFullBody(body: String, toppping: String, length: Int) {
+func drawFullBody(body: String, toppping: String, bodyLength: Int) {
     if (body.hasPrefix("|")) {
-        let halfLength: Int = length / 2
+        let halfLength: Int = bodyLength / 2
         for _ in 1...halfLength {
             drawBody(body: "| |", topping: toppping)
             drawBody(body: body, topping: toppping)
         }
-        if (length % 2 == 1) {
+        if (bodyLength % 2 == 1) {
             drawBody(body: "| |", topping: toppping)
         }
     } else {
-        for _ in 1...length {
+        for _ in 1...bodyLength {
             drawBody(body: body, topping: toppping)
         }
     }
@@ -44,8 +44,8 @@ func drawBBR(bodyLength: Int, body: String, orderedTopping: String, stickLength:
     print("몸통: \(body)")
     print("토핑: \(orderedTopping)")
     print("막대길이: \(stickLength)\n")
-    drawFullBody(body: body, toppping: topping, length: bodyLength)
-    drawStick(length: stickLength, stick: "| |")
+    drawFullBody(body: body, toppping: topping, bodyLength: bodyLength)
+    drawStick(stickLength: stickLength, stick: "| |")
 }
 
 drawBBR(bodyLength: 12, body: "000", orderedTopping: "$", stickLength: 4)
