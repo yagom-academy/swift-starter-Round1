@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
 		FD5C2DD527B64DBD00BE1BD7 /* step2_drawIcecream.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5C2DD427B64DBD00BE1BD7 /* step2_drawIcecream.swift */; };
-		FDAC5FF027BAD41700B5B813 /* step3_drawPepero.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC5FEF27BAD41700B5B813 /* step3_drawPepero.swift */; };
+		FDAC5FF027BAD41700B5B813 /* step3_drawPeperoByOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAC5FEF27BAD41700B5B813 /* step3_drawPeperoByOrder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +28,7 @@
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FD5C2DD427B64DBD00BE1BD7 /* step2_drawIcecream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = step2_drawIcecream.swift; sourceTree = "<group>"; };
-		FDAC5FEF27BAD41700B5B813 /* step3_drawPepero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step3_drawPepero.swift; sourceTree = "<group>"; };
+		FDAC5FEF27BAD41700B5B813 /* step3_drawPeperoByOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step3_drawPeperoByOrder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			children = (
 				34811DAE274B938F00A1E994 /* main.swift */,
 				FD5C2DD427B64DBD00BE1BD7 /* step2_drawIcecream.swift */,
-				FDAC5FEF27BAD41700B5B813 /* step3_drawPepero.swift */,
+				FDAC5FEF27BAD41700B5B813 /* step3_drawPeperoByOrder.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDAC5FF027BAD41700B5B813 /* step3_drawPepero.swift in Sources */,
+				FDAC5FF027BAD41700B5B813 /* step3_drawPeperoByOrder.swift in Sources */,
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
 				FD5C2DD527B64DBD00BE1BD7 /* step2_drawIcecream.swift in Sources */,
 			);
