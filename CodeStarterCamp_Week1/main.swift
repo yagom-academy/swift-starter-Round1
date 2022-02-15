@@ -38,7 +38,7 @@ func printChocolate(height: Int, body: String, chocolate: String) {
 }
 
 func printPepero(chocolateHeight: Int, chocolateBody: String, chocolateToppings: String?, stickHeight: Int) {
-    let chocolate: String = designChocolate(body: chocolateBody, optionalToppings: chocolateToppings)
+    let chocolate = designChocolate(body: chocolateBody, optionalToppings: chocolateToppings)
     
     if let toppings = chocolateToppings {
     print("""
