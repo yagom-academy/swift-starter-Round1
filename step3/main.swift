@@ -7,8 +7,7 @@
 
 import Foundation
 
-
-
+// MARK: - drawStick
 // 길이에 따른 막대를 그리는 함수
 func drawStick(막대길이: Int) {
     for _ in 1...막대길이 {
@@ -16,7 +15,8 @@ func drawStick(막대길이: Int) {
     }
 }
 
-//몸통, 토핑을 매개변수로 받아 토핑과 몸통을 그리는 함수
+// MARK: - peperoBody
+// 몸통, 토핑을 매개변수로 받아 토핑과 몸통을 그리는 함수
 func peperoBody(몸통: String, 토핑: String) {
     if 몸통 == "|0|" {
         print("""
@@ -30,8 +30,8 @@ func peperoBody(몸통: String, 토핑: String) {
     }
 }
  
-
-//길이에 따라 몸통을 그리는 함수 -> 길이에 따라가 아니라 몸통 길이에 따라였다면 덜 헷갈렸을 듯
+// MARK: - drawPeperoBody
+// 길이에 따라 몸통을 그리는 함수 -> 길이에 따라가 아니라 몸통 길이에 따라였다면 덜 헷갈렸을 듯
 func drawPeperoBody(길이: Int, 몸통: String, 토핑: String) {
     if 몸통 == "|0|" {
         for _ in 1...길이/2 {
@@ -45,7 +45,8 @@ func drawPeperoBody(길이: Int, 몸통: String, 토핑: String) {
     }
 }
 
-//각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
+//MARK: - drawPepero
+// 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
 func drawPepero(길이: Int, 몸통: String, 토핑: String, 막대길이: Int) {
     
     print("""
@@ -61,15 +62,16 @@ func drawPepero(길이: Int, 몸통: String, 토핑: String, 막대길이: Int) 
     drawStick(막대길이: 막대길이)
 }
 
-//실행 예시 1
+// MARK: - examples
+// 실행 예시 1
 drawPepero(길이: 10, 몸통: "***", 토핑: "", 막대길이: 4)
-//실행 예시 2
+// 실행 예시 2
 drawPepero(길이: 12, 몸통: "***", 토핑: "&", 막대길이: 4)
-//실행 예시 3
+// 실행 예시 3
 drawPepero(길이: 12, 몸통: "***", 토핑: "#", 막대길이: 6)
-//실행 예시 4
+// 실행 예시 4
 drawPepero(길이: 6, 몸통: "|0|", 토핑: "", 막대길이: 4)
-//나만의 빼빼로
+// 나만의 빼빼로
 drawPepero(길이: 10, 몸통: "&&&", 토핑: "^", 막대길이: 4)
 
 
