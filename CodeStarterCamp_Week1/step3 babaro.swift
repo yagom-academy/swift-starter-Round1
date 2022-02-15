@@ -16,18 +16,17 @@ func makingBabarolength (babarolength: Int, topping: String, body: String) {
     }
     else {
         for i in 1...babarolength {
-                if (i%2) != 0 {
-                    print(" | |")
+                if ((i+1) % 2) != 0 {
+                    print(" |0|")
                 }
                 else {
-                    print(" |0|")
+                    print(" | |")
                 }
             }
         }
 }
 
 func makingEntireBabaro (sticknumber :Int,babarolength: Int, topping: String, body: String){
-    makingBabaroBody(topping: topping, body: body)
     makingBabarolength(babarolength: babarolength, topping: topping, body: body)
     makingBabaroStick(sticknumber :sticknumber)
 }
