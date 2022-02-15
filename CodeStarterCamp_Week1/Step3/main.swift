@@ -40,10 +40,12 @@ func drawPepero(bodyLength: Int, body: String, orderedTopping: String, stickLeng
     if topping.isEmpty {
        topping = " "
     }
-    print("길이: \(bodyLength)")
-    print("몸통: \(body)")
-    print("토핑: \(orderedTopping)")
-    print("막대길이: \(stickLength)\n")
+    print("""
+    길이: \(bodyLength)
+    몸통: \(body)
+    토핑: \(orderedTopping)
+    막대길이: \(stickLength)\n
+    """)
     drawFullBody(body: body, topping: topping, bodyLength: bodyLength)
     drawStick(stickLength: stickLength, stick: "| |")
 }
