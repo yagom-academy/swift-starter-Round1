@@ -17,35 +17,37 @@ func drawStick(막대길이: Int) {
 
 // MARK: - peperoBody
 // 몸통, 토핑을 매개변수로 받아 토핑과 몸통을 그리는 함수
-func peperoBody(몸통: String, 토핑: String) {
-    if 몸통 == "|0|" {
-        print("""
-                 | |
-                 |0|
-                """)    // 몸통 앞에 하나의 공백을 만들고 프린트한다
-    }else if 토핑 == "" {
+func drawPeperoBodyIngredient(몸통: String, 토핑: String) {
+    if 토핑 == "" {
         print(" \(몸통)")
-    }else {
+    } else {
         print("\(토핑)\(몸통)\(토핑)")
     }
 }
- 
 // MARK: - drawPeperoBody
 // 길이에 따라 몸통을 그리는 함수 -> 길이에 따라가 아니라 몸통 길이에 따라였다면 덜 헷갈렸을 듯
 func drawPeperoBody(길이: Int, 몸통: String, 토핑: String) {
     if 몸통 == "|0|" {
-        for _ in 1...길이/2 {
-            peperoBody(몸통: 몸통, 토핑: 토핑)
-        }
+         if 길이 % 2 == 0 {
+             for _ in 1...길이/2 {
+                 print(" | |")
+                 print(" \(토핑)\(몸통)\(토핑)")
+             }
+         } else {
+             print(" |0|")  //짝수일때는 숫자가 맞게 나오지만 홀수는 맞게 떨어지지 않기에 반복문 전에 한칸만 출력하도록 따로 출력을 먼저 함
+             for _ in 1...길이/2 {
+                 print(" | |")
+                 print(" \(토핑)\(몸통)\(토핑)")
+             }
+         }
     } else {
         for _ in 1...길이 {
-            peperoBody(몸통: 몸통, 토핑: 토핑)
-            
+            drawPeperoBodyIngredient(몸통: 몸통, 토핑: 토핑)
         }
     }
 }
 
-//MARK: - drawPepero
+// MARK: - drawPepero
 // 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
 func drawPepero(길이: Int, 몸통: String, 토핑: String, 막대길이: Int) {
     
@@ -73,5 +75,3 @@ drawPepero(길이: 12, 몸통: "***", 토핑: "#", 막대길이: 6)
 drawPepero(길이: 6, 몸통: "|0|", 토핑: "", 막대길이: 4)
 // 나만의 빼빼로
 drawPepero(길이: 10, 몸통: "&&&", 토핑: "^", 막대길이: 4)
-
-
