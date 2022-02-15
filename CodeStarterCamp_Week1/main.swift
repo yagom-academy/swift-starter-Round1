@@ -40,17 +40,26 @@ func printChocolate(height: Int, body: String, chocolate: String) {
 func printPepero(chocolateHeight: Int, chocolateBody: String, chocolateToppings: String?, stickHeight: Int) {
     let chocolate: String = designChocolate(body: chocolateBody, optionalToppings: chocolateToppings)
     
-    print("<정보>")
-    print("길이: \(chocolateHeight)")
-    print("몸통: " + chocolateBody)
     if let toppings = chocolateToppings {
-        print("토핑: " + toppings)
+    print("""
+    <정보>
+    길이: \(chocolateHeight)
+    몸통: \(chocolateBody)
+    토핑: \(toppings)
+    막대길이: \(stickHeight)\n
+    """)
+    } else {
+    print("""
+    <정보>
+    길이: \(chocolateHeight)
+    몸통: \(chocolateBody)
+    토핑:
+    막대길이: \(stickHeight)\n
+    """)
     }
-    print("토핑: ")
-    print("막대길이: \(stickHeight)\n")
     
     printChocolate(height: chocolateHeight, body: chocolateBody, chocolate: chocolate)
     printStick(height: stickHeight)
 }
 
-printPepero(chocolateHeight: 10, chocolateBody: "***", chocolateToppings: nil, stickHeight: 4)
+printPepero(chocolateHeight: 10, chocolateBody: "***", chocolateToppings: "&", stickHeight: 4)
