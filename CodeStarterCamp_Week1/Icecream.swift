@@ -12,6 +12,7 @@ func printIcecream(icecreamSize: Int) {
         print("***********")
     }
 }
+
 func printIcecreamStick(stickSize: Int) {
     for _ in 1...stickSize {
         print("    | |")
