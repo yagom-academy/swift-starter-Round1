@@ -7,32 +7,42 @@
 
 import Foundation
 
+func standardSnack(bodyContents : String, additional : String){
+    if additional.isEmpty{ // 토핑 없는 일반 빼빼로
+        print(" \(bodyContents)")
+    }else{ // 토핑 있는 빼빼로
+        print(additional, bodyContents, additional, separator: "")
+    }
+}
+
+func nudeSnack(bodyContents : String, length : Int){
+    if length % 2 == 1{ // 홀수
+        print(" | |")
+    }else{ // 짝수
+        print(" \(bodyContents)")
+    }
+}
+
+func stickPrinter(upperStickLength stickLength : Int){
+    for _ in 1...stickLength{
+        print(" | |")
+    }
+}
+
 func createdSnackPrinter(snackLength : Int, bodyContents : String, additional : String, stickLength: Int){
     // 정보 Print
     print("<정보>")
     print("길이: \(snackLength) \n몸통: \(bodyContents) \n토핑: \(additional) \n막대길이: \(stickLength)\n")
     
-    for len in 1...snackLength{ // 길이만큼 뺴빼로 제작
-        
+    for length in 1...snackLength{ // 길이만큼 뺴빼로 제작
         if bodyContents == "|0|"{ // 누드 빼뺴로
-            if len % 2 == 1{ // 홀수
-                print(" | |")
-            }else{ // 짝수
-                print(" \(bodyContents)")
-            }
-        }else{
-            if additional.isEmpty{ // additional이 비어있는 일반 빼빼로
-                print(" \(bodyContents)")
-            }else{ // 빼빼로
-                print(additional, bodyContents, additional, separator: "")
-            }
+            nudeSnack(bodyContents: bodyContents, length: length)
+        }else{ // 나머지 뺴빼로
+            standardSnack(bodyContents: bodyContents, additional: additional)
         }
-        
     }
     
-    for _ in 1...stickLength{
-        print(" | |")
-    }
+    stickPrinter(upperStickLength: stickLength) // 막대 제작
 }
 
 createdSnackPrinter(snackLength: 10, bodyContents: "***", additional: "", stickLength: 4) // Start 1
