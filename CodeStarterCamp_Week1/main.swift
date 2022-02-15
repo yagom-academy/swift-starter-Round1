@@ -102,5 +102,5 @@ draw(length: 10, stick: 4)
 // 실행예시 2
 draw(length: 12, stick: 4)
 // 길이(Int)에 따라 몸통을 그리는 함수 부분 코드에 토핑 추가
-// line 50: let bodySet = makeBody(outside: "&", inside: "***")
+// line 80: let bodySet = makeBody(outside: "&", inside: "***")
 
