@@ -17,4 +17,4 @@
 ## Step 3 순서도
 | 초기 순서도 | 1번째 수정 |
 |:---:|:---:|
-| ![image](/FlowCharts/Step3/Pepero_Drawing_1.drawio.png) | ![image](/FlowCharts/Step3/Pepero_Drawing_2.drawio.png
+| ![image](/FlowCharts/Step3/Pepero_Drawing_1.drawio.png) | ![image](/FlowCharts/Step3/Pepero_Drawing_2.drawio.png)
