@@ -1,47 +1,15 @@
 //
-//  main.swift
+//  Week1_Step2_Dino.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by Jun on 2022/02/15.
 //
 
 import Foundation
 
-/* 첫 번째 답안
-func makeIceCream() {
-    for rowOfIceCream in 1...8 {
-        print("***********")
+func makeStick(lengthOfStick: Int) {
+    for count in 1...lengthOfStick {
+        print(" | |")
     }
 }
-func makeStick() {
-    for rowOfStick in 1...4 {
-        print("    | |")
-    }
-}
-makeIceCream()
-makeStick()
-*/
-
-// 피드백 후의 답안
-var blankOrReturn = ""
-func makeStarsOfOneRow(numberOfStars: Int) {
-    for count in 1...numberOfStars {
-        if count == numberOfStars {
-            blankOrReturn = "\n"
-        } else if count == 1 {
-            blankOrReturn = ""
-        }
-        print("*", terminator: blankOrReturn)
-    }
-}
-func makeStick() {
-    for count in 1...4 {
-        print("    | |")
-    }
-}
-
-for rowOfIceCream in 1...8 {
-   makeStarsOfOneRow(numberOfStars: 11)
-}
-makeStick()
+makeStick(lengthOfStick: 4)
