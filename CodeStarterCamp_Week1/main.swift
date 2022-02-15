@@ -12,13 +12,13 @@ func chooseBodyAndToppingOfIceCream(body: String, topping: String) {
 }
 
 func makeIceCreamPart(lengthOfIceCream: Int, body: String, topping: String) {
-    for count in 1...lengthOfIceCream {
+    for rowOfIceCream in 1...lengthOfIceCream {
         chooseBodyAndToppingOfIceCream(body: body, topping: topping)
     }
 }
 
 func makeStickPart(lengthOfStick: Int) {
-    for count in 1...lengthOfStick {
+    for rowOfStick in 1...lengthOfStick {
         print("  | |")
     }
 }
