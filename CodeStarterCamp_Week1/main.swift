@@ -7,7 +7,7 @@
 
 func printStick(height: Int) {
     for _ in 1...height {
-        print(" | | ")
+        print(" | |")
     }
 }
 
@@ -21,20 +21,18 @@ func designChocolate(body: String, optionalToppings: String?) -> String {
 }
 
 func printChocolate(height: Int, body: String, chocolate: String) {
-    var isSameString: Bool = false
-    isSameString = body == "***"
+    var isNormalBody: Bool = false
+    isNormalBody = body == "***"
 
-    if isSameString == true {
-        for _ in 1...height {
+    for count in 1...height {
+        if isNormalBody == true {
             print(chocolate)
-        }
-    } else {
-        for count in 1...height {
-            if count % 2 == 0 {
-                print(chocolate)
-            } else {
-                print(" | | ")
-            }
+        } else {
+            if count.isMultiple(of: 2) {
+                    print(chocolate)
+                } else {
+                    print(" | |")
+                }
         }
     }
 }
@@ -45,8 +43,8 @@ func printPepero(chocolateHeight: Int, chocolateBody: String, chocolateToppings:
     print("<정보>")
     print("길이: \(chocolateHeight)")
     print("몸통: " + chocolateBody)
-    if let email = chocolateToppings {
-        print("토핑: " + email)
+    if let toppings = chocolateToppings {
+        print("토핑: " + toppings)
     }
     print("토핑: ")
     print("막대길이: \(stickHeight)\n")
