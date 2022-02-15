@@ -24,8 +24,8 @@
 
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
-		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = /Users/jinyoo/yagom/CodeStarterCamp_Week1/Step3/main.swift; sourceTree = "<absolute>"; };
-		CCA7912327BAAEB0003E01A3 /* DrawIcecream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawIcecream.swift; path = /Users/jinyoo/yagom/CodeStarterCamp_Week1/Step2/DrawIcecream.swift; sourceTree = "<absolute>"; };
+		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = /Users/jinyoo/yagom/Week_1/CodeStarterCamp_Week1/Step3/main.swift; sourceTree = "<absolute>"; };
+		CCA7912327BAAEB0003E01A3 /* DrawIcecream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawIcecream.swift; path = /Users/jinyoo/yagom/Week_1/CodeStarterCamp_Week1/Step2/DrawIcecream.swift; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
