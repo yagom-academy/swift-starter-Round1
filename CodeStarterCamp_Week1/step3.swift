@@ -14,13 +14,13 @@ func drawStick(numberOfStickRows : Int) {
 }
 
 @discardableResult
-func decideBodyShapeAndToppingShape(bodyShape : String, toppingShape : String) -> String {
+func decide(bodyShape : String, toppingShape : String) -> String {
     
     if toppingShape == "" {
         
         return " \(bodyShape)"
         
-    }else{
+    } else {
         
         return "\(toppingShape)\(bodyShape)\(toppingShape)"
         
@@ -31,38 +31,33 @@ func decideBodyShapeAndToppingShape(bodyShape : String, toppingShape : String) -
 func drawBody(numberOfBodyRows : Int,bodyShape : String,toppingShape : String) {
     
     if bodyShape == "***" {
-        
         for _ in 1...numberOfBodyRows {
-            print(decideBodyShapeAndToppingShape(bodyShape: bodyShape, toppingShape: toppingShape))
-            
+            print(decide(bodyShape: bodyShape, toppingShape: toppingShape))
         }
-        
-    }else{
-        
+    } else {
         for currentRowPosition in 1...numberOfBodyRows {
             if currentRowPosition % 2 == 0 {
                 print(" |0|")
-            }else{
+            } else {
                 print(" | |")
             }
         }
-        
-        
     }
 }
+
 func customedPepero(numberOfBodyRows : Int, bodyShape : String, toppingShape : String,numberOfStickRows : Int) {
     
-    print("""
+    let information =
+          """
           <정보>
           길이: \(numberOfBodyRows)
           몸통: \(bodyShape)
           토핑: \(toppingShape)
           막대길이: \(numberOfStickRows)
-          
-          """)
+          """
     
-    
-    decideBodyShapeAndToppingShape(bodyShape: bodyShape, toppingShape: toppingShape)
+    print(information)
+    decide(bodyShape: bodyShape, toppingShape: toppingShape)
     drawBody(numberOfBodyRows: numberOfBodyRows, bodyShape: bodyShape, toppingShape: toppingShape)
     drawStick(numberOfStickRows: numberOfStickRows)
 }
