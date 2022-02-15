@@ -9,103 +9,78 @@
 import Foundation
 
 
-func makeBodyOfIcecream(bodyWidth: Int, bodyLonger: Int){
+func makeBodyOfIcecream(icecreamBodyWidth: Int, icecreamBodyLonger: Int) {
     let bodyOfIcecream = "*"
-    for _ in 0...bodyLonger {
-        for _ in 0...bodyWidth {
+    for _ in 0...icecreamBodyLonger {
+        for _ in 0...icecreamBodyWidth {
             print(bodyOfIcecream, terminator:"")
         }
         print("")
     }
 }
 
-func makeTailOfIcecream(tailLonger: Int){
+func makeTailOfIcecream(icecreamTailLonger: Int) {
     let tailOfIcecream = "   |  | "
-    for _ in 0...tailLonger {
+    for _ in 0...icecreamTailLonger {
         print(tailOfIcecream)
     }
 }
 
-makeBodyOfIcecream(bodyWidth: 10, bodyLonger: 7)
-makeTailOfIcecream(tailLonger: 3)
+makeBodyOfIcecream(icecreamBodyWidth: 10, icecreamBodyLonger: 7)
+makeTailOfIcecream(icecreamTailLonger: 3)
 
 
 
+let tailOfPpero = " | | "
 
-func makeStickOfPpero(sticklonger : Int){
-    for _ in 1...sticklonger{
-        print(" | | ")
+func makeStickOfPpero(stickHeigth: Int) {
+    for _ in 1...stickHeigth {
+        print(tailOfPpero)
     }
 }
 
-func makeBodyOfPpero(body : String, topping : String){
-    print(topping + body + topping)
+func makeBodyOfPpero(bodyForm: String, topping: String) {
+    print(topping + bodyForm + topping)
 }
 
-func longerOfPpero(bodyLonger: Int, body: String, topping: String){
-    if body == "***"{
-        for _ in 1...bodyLonger{
-            makeBodyOfPpero(body: body, topping: topping)
+func makeHeightOfPpero(bodyHeigth: Int, bodyForm: String, topping: String) {
+    if bodyForm == "***" {
+        for _ in 1...bodyHeigth {
+            makeBodyOfPpero(bodyForm: bodyForm, topping: topping)
         }
-    } else{
-        for i in 1...bodyLonger{
-            if i%2 != 0{
+    } else {
+        for count in 1...bodyHeigth {
+            if count%2 != 0 {
                 print(" |0|")
-            }else{
-                print(" | |")
+            }else {
+                print(tailOfPpero)
             }
         }
     }
 }
-func orderPpero(stickLonger: Int, bodyLonger: Int, body: String, topping: String){
-    makeBodyOfPpero(body: body, topping: topping)
-    longerOfPpero(bodyLonger: bodyLonger, body: body, topping: topping)
-    makeStickOfPpero(sticklonger: stickLonger)
+func orderPpero(stickHeigth: Int, bodyHeigth: Int, bodyForm: String, topping: String) {
+    print("""
+길이:\(bodyHeigth)
+몸통:\(bodyForm)
+토핑:\(topping)
+막대길이:\(stickHeigth)
+""")
+    makeHeightOfPpero(bodyHeigth: bodyHeigth, bodyForm: bodyForm, topping: topping)
+    makeStickOfPpero(stickHeigth: stickHeigth)
+    
 }
 
 //first Ppero order
-print("""
-길이: 10
-몸통: ***
-토핑:
-막대길이: 4
-""" )
-
-orderPpero(stickLonger: 4, bodyLonger: 10, body: "***", topping: " ")
-
+orderPpero(stickHeigth: 4, bodyHeigth: 10, bodyForm: "***", topping: " ")
 
 //second Ppero order
-print("""
-길이: 12
-몸통: ***
-토핑: &
-막대길이: 4
-""" )
-orderPpero(stickLonger: 4, bodyLonger: 12, body: "***", topping: "&")
+orderPpero(stickHeigth: 4, bodyHeigth: 12, bodyForm: "***", topping: "&")
 
 //third Ppero order
-print("""
-길이: 12
-몸통: ***
-토핑: #
-막대길이: 6
-""" )
-orderPpero(stickLonger: 6, bodyLonger: 12, body: "***", topping: "#")
+orderPpero(stickHeigth: 6, bodyHeigth: 12, bodyForm: "***", topping: "#")
 
 //forth Ppero order
-print("""
-길이: 6
-몸통: |0|
-토핑:
-막대길이: 4
-""" )
-orderPpero(stickLonger: 4, bodyLonger: 6, body: "| |", topping: " ")
+orderPpero(stickHeigth: 4, bodyHeigth: 6, bodyForm: "| |", topping: " ")
 
 //my own Ppero order
-print("""
-길이: 6
-몸통: ±±±
-토핑:!
-막대길이: 4
-""" )
-orderPpero(stickLonger: 4, bodyLonger: 6, body: "***", topping: "!")
+orderPpero(stickHeigth: 4, bodyHeigth: 6, bodyForm: "***", topping: "!")
