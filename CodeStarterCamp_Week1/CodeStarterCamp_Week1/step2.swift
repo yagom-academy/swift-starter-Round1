@@ -1,9 +1,8 @@
 //
-//  main.swift
+//  step2.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 지상률 on 2022/02/15.
 //
 
 import Foundation
@@ -32,12 +31,6 @@ func makeLayerStick(){
 //
 //for loop에서 ''의 역할은 인덱스에 할당하지 않겠다는 의미로 사용된다고 알게되었습니다. 그래서 ''를 쓰게 되면 for안에 있는 명령어들이 인덱스를 할당받지 않은 상태에서 반복만 진행한다는 것도 알게됐습니다.
 
-//while layerIcecream < totalIcecream{
-//    stackIcecream()
-//    layerIcecream += 1
-//}
-//
-//makeLayerStick()
 
 
 

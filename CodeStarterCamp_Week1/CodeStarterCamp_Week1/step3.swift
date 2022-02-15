@@ -2,7 +2,7 @@
 //  step3.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by 지상률 on 2022/02/14.
+//  Created by 지상률 on 2022/02/15.
 //
 
 import Foundation
@@ -43,13 +43,3 @@ func makeBBeBBeRo(total: Int,body: String , topping: String, stick : Int){
     totalBody(total: total, body: body, topping: topping)
     layerStick(stick: stick)
 }
-
-makeBBeBBeRo(total: 10, body: "***", topping: " ", stick: 4)
-print("")
-makeBBeBBeRo(total: 12, body: "***", topping: "&", stick: 4)
-print("")
-makeBBeBBeRo(total: 12, body: "***", topping: "#", stick: 6)
-print("")
-makeBBeBBeRo(total: 6, body: "|0|", topping: " ", stick: 4)
-print("")
-makeBBeBBeRo(total: 8, body: "|$|", topping: "^", stick: 4)
