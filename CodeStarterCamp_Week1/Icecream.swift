@@ -7,14 +7,14 @@
 
 import Foundation
 
-func printIcecream(icecreamSize: Int) {
-    for _ in 1...icecreamSize {
+func printIcecream(size: Int) {
+    for _ in 1...size {
         print("***********")
     }
 }
 
-func printIcecreamStick(stickSize: Int) {
-    for _ in 1...stickSize {
+func printIcecreamStick(size: Int) {
+    for _ in 1...size {
         print("    | |")
     }
 }
