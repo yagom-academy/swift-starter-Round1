@@ -8,19 +8,18 @@
 
 import Foundation
 
-drawIceCreamTop()
-drawIceCreamBar()
+// MARK: - STEP 2 아이스크림 그리기
+//drawIceCreamTop()
+//drawIceCreamBar()
 
-// 1. 아이스크림 부분을 그리는 함수
-func drawIceCreamTop() {
-  for _ in 0..<8 {
-    print("***********\n")
-  }
-}
-
-// 2. 막대기(손잡이) 부분을 그리는 함수
-func drawIceCreamBar() {
-  for _ in 0..<4 {
-    print("    | |\n")
-  }
-}
+// MARK: - STEP 3 뺴뺴로 그리기
+// 예시 1
+drawPepero(bodyLength: 10, body: "***", topping: "", barLength: 4)
+// 예시 2
+drawPepero(bodyLength: 12, body: "***", topping: "&", barLength: 4)
+// 예시 3
+drawPepero(bodyLength: 12, body: "***", topping: "#", barLength: 6)
+// 예시 4
+drawPepero(bodyLength: 6, body: "|0|", topping: "", barLength: 4)
+// 나만의 빼빼로
+drawPepero(bodyLength: 8, body: "***", topping: "@", barLength: 5)
