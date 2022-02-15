@@ -7,12 +7,12 @@
 
 import Foundation
 
-func createdIceCreamPrinter(iceCreamIen : Int, bodyContents : String, additional : String = "", iceCreamBarIen: Int){
+func createdSnackPrinter(snackLength : Int, bodyContents : String, additional : String, stickLength: Int){
     // 정보 Print
     print("<정보>")
-    print("길이: \(iceCreamIen) \n몸통: \(bodyContents) \n토핑: \(additional) \n막대길이: \(iceCreamBarIen)\n")
+    print("길이: \(snackLength) \n몸통: \(bodyContents) \n토핑: \(additional) \n막대길이: \(stickLength)\n")
     
-    for len in 1...iceCreamIen{ // 길이만큼 아이스크림을 제작
+    for len in 1...snackLength{ // 길이만큼 뺴빼로 제작
         
         if bodyContents == "|0|"{ // 누드 빼뺴로
             if len % 2 == 1{ // 홀수
@@ -30,12 +30,12 @@ func createdIceCreamPrinter(iceCreamIen : Int, bodyContents : String, additional
         
     }
     
-    for _ in 1...iceCreamBarIen{
+    for _ in 1...stickLength{
         print(" | |")
     }
 }
 
-createdIceCreamPrinter(iceCreamIen: 10, bodyContents: "***", iceCreamBarIen: 4) // Start 1
-createdIceCreamPrinter(iceCreamIen: 12, bodyContents: "***", additional: "&", iceCreamBarIen: 4) // Start 2
-createdIceCreamPrinter(iceCreamIen: 12, bodyContents: "***", additional: "#", iceCreamBarIen: 6) // Start 3
-createdIceCreamPrinter(iceCreamIen: 6, bodyContents: "|0|", iceCreamBarIen: 4) // Start 4
+createdSnackPrinter(snackLength: 10, bodyContents: "***", additional: "", stickLength: 4) // Start 1
+createdSnackPrinter(snackLength: 12, bodyContents: "***", additional: "&", stickLength: 4) // Start 2
+createdSnackPrinter(snackLength: 12, bodyContents: "***", additional: "#", stickLength: 6) // Start 3
+createdSnackPrinter(snackLength: 6, bodyContents: "|0|", additional: "", stickLength: 4) // Start 4
