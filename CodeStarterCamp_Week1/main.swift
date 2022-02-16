@@ -10,22 +10,7 @@ import Foundation
 print("Hello, World!")
 
 //step2
-while layerIcecream < totalIcecream{
-    stackIcecream()
-    layerIcecream += 1
-}
-
-makeLayerStick()
-print("")
-
+//makeOneBBeBBeRo()
 
 //step3
-makeBBeBBeRo(total: 10, body: "***", topping: " ", stick: 4)
-print("")
-makeBBeBBeRo(total: 12, body: "***", topping: "&", stick: 4)
-print("")
-makeBBeBBeRo(total: 12, body: "***", topping: "#", stick: 6)
-print("")
-makeBBeBBeRo(total: 6, body: "|0|", topping: " ", stick: 4)
-print("")
-makeBBeBBeRo(total: 8, body: "|$|", topping: "^", stick: 4)
+makeBBeBBeRo(length: 6, body: "|0|", topping: " ", layer: 4)
