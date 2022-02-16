@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Week1_Step2.swift
 //  CodeStarterCamp_Week1
 //
 //  Created by yagom.
