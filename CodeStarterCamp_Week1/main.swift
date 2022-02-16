@@ -61,7 +61,7 @@ func makeHeightOfPpepero(bodyHeigth: Int, bodyForm: String, topping: String) {
 
 
 func orderPpepero(stickHeigth: Int, bodyHeigth: Int, bodyForm: String, topping: String) {
-    func formationOrder() {
+    func informationOrder() {
         print("""
     길이:\(bodyHeigth)
     몸통:\(bodyForm)
@@ -69,7 +69,7 @@ func orderPpepero(stickHeigth: Int, bodyHeigth: Int, bodyForm: String, topping: 
     막대길이:\(stickHeigth)
     """)
     }
-    formationOrder()
+    informationOrder()
     makeHeightOfPpepero(bodyHeigth: bodyHeigth, bodyForm: bodyForm, topping: topping)
     makeStickOfPpepero(stickHeigth: stickHeigth)
     
