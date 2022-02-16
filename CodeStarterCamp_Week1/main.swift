@@ -8,13 +8,13 @@
 
 import Foundation
 
-func iceCreamDraw(){
+func drawIceCream(){
     for _ in 1...11{
         print("***********")
     }
 }
 
-func stickDraw(){
+func drawStick(){
     for _ in 1...4{
         print("    ",terminator: "")
         print("| |")
