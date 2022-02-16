@@ -35,20 +35,25 @@ func makePeperoBody(body: String, topping: String, bodyLength: Int) {
     }
 }
 
-func makeOrderedPepero(bodyLength: Int, body: String, orderedTopping: String, stickLength: Int) {
-    var topping: String = orderedTopping
-    if topping.isEmpty {
-       topping = " "
-    }
+func printOrderInformation(bodyLength: Int, body: String, topping: String, stickLength: Int) {
     print("""
     길이: \(bodyLength)
     몸통: \(body)
-    토핑: \(orderedTopping)
+    토핑: \(topping)
     막대길이: \(stickLength)\n
     """)
+}
+
+func handleOrderedPepero(bodyLength: Int, body: String, orderedTopping: String, stickLength: Int) {
+    var topping: String = orderedTopping
+    
+    if topping.isEmpty {
+       topping = " "
+    }
+    printOrderInformation(bodyLength: bodyLength, body: body, topping: orderedTopping, stickLength: stickLength)
     makePeperoBody(body: body, topping: topping, bodyLength: bodyLength)
     makePeperoStick(stickLength: stickLength, stick: "| |")
 }
 
-makeOrderedPepero(bodyLength: 12, body: "000", orderedTopping: "$", stickLength: 4)
-makeOrderedPepero(bodyLength: 13, body: "|0|", orderedTopping: "", stickLength: 4)
+handleOrderedPepero(bodyLength: 12, body: "000", orderedTopping: "$", stickLength: 4)
+handleOrderedPepero(bodyLength: 13, body: "|0|", orderedTopping: "", stickLength: 4)
