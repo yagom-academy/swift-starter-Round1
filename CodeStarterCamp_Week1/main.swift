@@ -7,13 +7,13 @@
 
 import Foundation
 
-func chooseBodyAndToppingOfIceCream(body: String, topping: String) {
+func chooseOptionsOfIceCream(body: String, topping: String) {
     print(" \(topping)\(body)\(topping)")
 }
 
 func makeIceCreamPart(lengthOfIceCream: Int, body: String, topping: String) {
     for rowOfIceCream in 1...lengthOfIceCream {
-        chooseBodyAndToppingOfIceCream(body: body, topping: topping)
+        chooseOptionsOfIceCream(body: body, topping: topping)
     }
 }
 
