@@ -6,7 +6,17 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
+func drawingStar(star: Int) {
+    for star in 1...star {
+        print("*************")
+    }
+}
 
-print("Hello, World!")
+func drawingBody(body: Int) {
+    for body in 1...body {
+        print("    |  |")
+    }
+}
 
+drawingStar(star: 15)
+drawingBody(body: 5)
