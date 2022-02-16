@@ -22,5 +22,3 @@ func drawStick(column: Int, stickParticle: String) {
     }
 }
 
-drawBody(column: 8, row: 11, bodyParticle: "*")
-drawStick(column: 4, stickParticle: "| |")
