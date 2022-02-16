@@ -8,7 +8,7 @@
 
 import Foundation
 
-func countingStar(height: Int, width: Int) {
+func makeIceCream(height: Int, width: Int) {
     for _ in 1...height {
         for _ in 1...width {
             print("*", terminator: "")
@@ -17,13 +17,13 @@ func countingStar(height: Int, width: Int) {
     }
 }
 
-func countingBar(height: Int) {
+func makeBar(height: Int) {
     for _ in 1...height {
-        print("   |  |   ")
+        print("","|","|",  separator:"   ")
     }
 }
 
-countingStar(height: 8, width: 11)
+makeIceCream(height: 8, width: 11)
 
-countingBar(height: 4)
+makeBar(height: 4)
 
