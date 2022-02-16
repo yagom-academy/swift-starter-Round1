@@ -12,17 +12,17 @@ let totalIcecream = 8
 var layerIcecream = 0
 
 func stackIcecream(){
-for _ in 1...11{
-print("*" , terminator: "")
-}
-print("")
+    for _ in 1...11{
+        print("*" , terminator: "")
+    }
+    print("")
 }
 
 func makeLayerStick(){
-for _ in 1...4{
-print("    |", terminator: " ")
-print("|    ")
-}
+    for _ in 1...4{
+        print("    |", terminator: " ")
+        print("|    ")
+    }
 }
 
 func makeOneBBeBBeRo(){
@@ -30,7 +30,7 @@ func makeOneBBeBBeRo(){
         stackIcecream()
         layerIcecream += 1
     }
-
+    
     makeLayerStick()
     print("")
 }

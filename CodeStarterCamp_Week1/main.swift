@@ -6,11 +6,9 @@
 //
 
 import Foundation
-
-print("Hello, World!")
-
 //step2
 //makeOneBBeBBeRo()
 
 //step3
 makeBBeBBeRo(length: 6, body: "|0|", topping: " ", layer: 4)
+
