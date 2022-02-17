@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  main.swift -> customSnackPrinter.swift (file name change)
 //  CodeStarterCamp_Week1
 //
 //  Created by 이예직 on 2022/02/11.
