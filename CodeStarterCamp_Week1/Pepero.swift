@@ -13,18 +13,18 @@ func printPeperoStick(Size: Int) {
     }
 }
 
-func makingPeperoHead(body: String, toping: String) -> String {
+func makePeperoHead(body: String, toping: String) -> String {
     return toping + body + toping
 }
 
-func checkingToping(toping: String) -> String {
+func checkToping(toping: String) -> String {
     return toping == "" ? " " : toping
 }
 
 func printPeperoHead(Size: Int, body: String, toping: String) {
-    let newToping = checkingToping(toping: toping)
+    let newToping = checkToping(toping: toping)
     for _ in 1...Size {
-        print(makingPeperoHead(body: body, toping: newToping))
+        print(makePeperoHead(body: body, toping: newToping))
     }
 }
 
