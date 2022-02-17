@@ -20,6 +20,3 @@ func drawStick() {
         print("| |")
     }
 }
-
-icecream()
-stick()
