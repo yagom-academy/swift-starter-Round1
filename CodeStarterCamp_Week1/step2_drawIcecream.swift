@@ -1,5 +1,5 @@
 //
-//  [Step2]drawIcecream.swift
+//  Step2_drawIcecream.swift
 //  CodeStarterCamp_Week1
 //
 //  Created by Minseong Kang on 2022/02/11.
