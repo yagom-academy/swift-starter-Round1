@@ -8,13 +8,13 @@
 
 import Foundation
 
-func icecream() {
+func drawIcecream() {
     for count1 in 1...8 {
         print("***********")
     }
 }
 
-func stick() {
+func drawStick() {
     for count2 in 1...4 {
         print("    ", terminator: "")
         print("| |")
