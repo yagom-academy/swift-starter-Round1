@@ -8,15 +8,8 @@
 
 import Foundation
 
-func printIcecream(icecreamSize: Int) {
-    for _ in 1...icecreamSize {
-        print("***********")
-    }
-}
-func printStick(stickSize: Int) {
-    for _ in 1...stickSize {
-        print("    | |")
-    }
-}
-printIcecream(icecreamSize: 8)
-printStick(stickSize: 4)
+printPepero(headSize: 10, body: "***", toping: "", stickSize: 4) //실행예시 1
+printPepero(headSize: 12, body: "***", toping: "&", stickSize: 4) //실행예시 2
+printPepero(headSize: 12, body: "***", toping: "#", stickSize: 6) //실행예시 3
+printPepero(headSize: 6, body: "|0|", toping: "", stickSize: 4) //실행예시 4
+printPepero(headSize: 10, body: "zzz", toping: "@", stickSize: 6) //자신만의 빼빼로
