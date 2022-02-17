@@ -1,9 +1,8 @@
 //
-//  main.swift
+//  DrawIcecream.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by Jinyoung Yoo on 2022/02/15.
 //
 
 import Foundation
@@ -22,7 +21,4 @@ func drawStick(column: Int, stickParticle: String) {
         print("    ", "    ", separator: "\(stickParticle)")
     }
 }
-
-drawBody(column: 8, row: 11, bodyParticle: "*")
-drawStick(column: 4, stickParticle: "| |")
 

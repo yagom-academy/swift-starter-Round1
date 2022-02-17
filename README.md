@@ -12,4 +12,9 @@
 ## Step 2 순서도
 | 초기 순서도 | 1번째 수정 | 2번째 수정|
 |:---:|:---|:---:|
-| ![image](/CodeStarterCamp_Week1/Icecream_Drawing_1.drawio.png) | ![image](/CodeStarterCamp_Week1/Icecream_Drawing_2.drawio.png) | ![image](/CodeStarterCamp_Week1/Icecream_Drawing_3.drawio.png)
+| ![image](/FlowCharts/Step2/Icecream_Drawing_1.drawio.png) | ![image](/FlowCharts/Step2/Icecream_Drawing_2.drawio.png) | ![image](/FlowCharts/Step2/Icecream_Drawing_3.drawio.png)
+
+## Step 3 순서도
+| 초기 순서도 | 1번째 수정 |
+|:---:|:---:|
+| ![image](/FlowCharts/Step3/Pepero_Drawing_1.drawio.png) | ![image](/FlowCharts/Step3/Pepero_Drawing_2.drawio.png)

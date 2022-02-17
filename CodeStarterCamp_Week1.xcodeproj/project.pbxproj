@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CCA7912327BAAEB0003E01A3 /* DrawIcecream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawIcecream.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +58,26 @@
 		34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {
 			isa = PBXGroup;
 			children = (
-				34811DAE274B938F00A1E994 /* main.swift */,
+				CC60F22927BCB81400A4D910 /* Step2 */,
+				CC60F22827BCB7BA00A4D910 /* Step3 */,
 			);
 			path = CodeStarterCamp_Week1;
+			sourceTree = "<group>";
+		};
+		CC60F22827BCB7BA00A4D910 /* Step3 */ = {
+			isa = PBXGroup;
+			children = (
+				34811DAE274B938F00A1E994 /* main.swift */,
+			);
+			path = Step3;
+			sourceTree = "<group>";
+		};
+		CC60F22927BCB81400A4D910 /* Step2 */ = {
+			isa = PBXGroup;
+			children = (
+				CCA7912327BAAEB0003E01A3 /* DrawIcecream.swift */,
+			);
+			path = Step2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
