@@ -21,6 +21,5 @@ func stick(){
     }
 }
 
-
 icecream()
 stick()
