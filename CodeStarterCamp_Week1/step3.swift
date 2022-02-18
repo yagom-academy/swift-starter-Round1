@@ -15,25 +15,42 @@ func drawStick(stickLength: Int) {
 
 func drawTopping(body: String, topping: String) {
     if body == "***" {
-            if topping == " " {
-                print(" *** ")
-            }
-            else if topping == "&" {
-                print("&***&")
-            }
-            else if topping == "#" {
-                print("#***#")
-            }
+        if topping == " " {
+            print(" *** ")
+        }
+        else if topping == "&" {
+            print("&***&")
+        }
+        else if topping == "#" {
+            print("#***#")
+        }
     }
     else if body == "|0|" {
         print(" | | ")
         print(" |0| ")
     }
+    else if body == "@@@" {
+        if topping == "$" {
+            print("$@@@$")
+        }
+    }
 }
 
 func drawBody(bodyLength: Int, body: String, topping: String) {
-    for _ in 1...bodyLength {
-        drawTopping(body: body, topping: topping)
+    if body == "***" {
+        for _ in 1...bodyLength-1 {
+            drawTopping(body: body, topping: topping)
+        }
+    }
+    else if body == "|0|" {
+        for _ in 1...(bodyLength/2)-1 {
+            drawTopping(body: body, topping: topping)
+        }
+    }
+    else if body == "@@@" {
+        for _ in 1...bodyLength-1 {
+            drawTopping(body: body, topping: topping)
+        }
     }
 }
 
@@ -42,7 +59,11 @@ func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int
     drawTopping(body: body, topping: topping)
     drawBody(bodyLength: bodyLength, body: body, topping: topping)
     drawStick(stickLength: stickLength)
+    print(" ")
 }
 
 drawPepero(bodyLength: 10, body: "***", topping: " ", stickLength: 4)
-
+drawPepero(bodyLength: 12, body: "***", topping: "&", stickLength: 4)
+drawPepero(bodyLength: 12, body: "***", topping: "#", stickLength: 6)
+drawPepero(bodyLength: 6, body: "|0|", topping: " ", stickLength: 4)
+drawPepero(bodyLength: 7, body: "@@@", topping: "$", stickLength: 5)
