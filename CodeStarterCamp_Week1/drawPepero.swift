@@ -36,3 +36,18 @@ func printPeperoBody(Length: Int, Body: String, topping: String) {
         }
     }
 }
+
+func drawPepero(Length: Int, Body: String, topping: String, stickLength: Int) {
+    let information = """
+    <정보>
+    길이: \(Length)
+    몸통: \(Body)
+    토핑: \(topping)
+    막대길이: \(stickLength)
+    """
+    
+    print(information)
+    
+    printPeperoBody(Length: Length, Body: Body, topping: topping)
+    drawStick(length: stickLength)
+}
