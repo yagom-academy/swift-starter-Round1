@@ -26,6 +26,7 @@ func drawTopping(body: String, topping: String) {
             }
     }
     else if body == "|0|" {
+        print(" | | ")
         print(" |0| ")
     }
 }
