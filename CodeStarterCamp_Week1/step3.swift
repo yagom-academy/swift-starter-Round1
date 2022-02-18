@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+func drawStick(stickLength: Int) {
+    
+}
+
+func drawTopping(body: String, topping: String) {
+    
+}
+
+func drawBody(bodyLength: Int) {
+    
+}
+
+func drawPepero(stickLength: Int, body: String, topping: String, bodyLength: Int) {
+    
+}
