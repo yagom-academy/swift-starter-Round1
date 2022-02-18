@@ -31,15 +31,18 @@ func drawTopping(body: String, topping: String) {
     }
 }
 
-func drawBody(bodyLength: Int) {
-    
+func drawBody(bodyLength: Int, body: String, topping: String) {
+    for _ in 1...bodyLength {
+        drawTopping(body: body, topping: topping)
+    }
 }
 
 func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int) {
     print("<정보>\n", "길이: \(bodyLength)\n", "몸통: \(body)\n", "토핑: \(topping)\n", "막대길이: \(stickLength)\n")
     drawTopping(body: body, topping: topping)
-    drawBody(bodyLength: bodyLength)
+    drawBody(bodyLength: bodyLength, body: body, topping: topping)
     drawStick(stickLength: stickLength)
 }
 
 drawPepero(bodyLength: 10, body: "***", topping: " ", stickLength: 4)
+
