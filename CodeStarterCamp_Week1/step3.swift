@@ -18,12 +18,14 @@ func drawTopping(body: String, topping: String) {
 }
 
 func drawBody(bodyLength: Int) {
-
+    
 }
 
-func drawPepero(stickLength: Int, body: String, topping: String, bodyLength: Int) {
-    print("<정보>", "길이: \(bodyLength)", "몸통: \(body)", "토핑: \(topping)", "막대길이: \(stickLength)", " ")
+func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int) {
+    print("<정보>\n", "길이: \(bodyLength)\n", "몸통: \(body)\n", "토핑: \(topping)\n", "막대길이: \(stickLength)\n")
+    drawTopping(body: body, topping: topping)
+    drawBody(bodyLength: bodyLength)
     drawStick(stickLength: stickLength)
 }
 
-drawPepero(stickLength: 4, body: "***", topping: " ", bodyLength: 10)
+drawPepero(bodyLength: 10, body: "***", topping: " ", stickLength: 4)
