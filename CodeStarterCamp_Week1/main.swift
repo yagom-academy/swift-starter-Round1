@@ -8,5 +8,18 @@
 
 import Foundation
 
-print("Hello, World!")
+func printicecream(lengthoficecream: Int) {
+    for _ in 1 ... lengthoficecream {
+    print("***********")
+}
+}
+func printbar(lengthofbar: Int) {
+    for _ in 1...lengthofbar {
+    print("    | |    ")
+}
+}
+    printicecream(lengthoficecream: 8)
+    printbar(lengthofbar: 4)
+
+
 
