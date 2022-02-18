@@ -14,7 +14,20 @@ func drawStick(stickLength: Int) {
 }
 
 func drawTopping(body: String, topping: String) {
-    
+    if body == "***" {
+            if topping == " " {
+                print(" *** ")
+            }
+            else if topping == "&" {
+                print("&***&")
+            }
+            else if topping == "#" {
+                print("#***#")
+            }
+    }
+    else if body == "|0|" {
+        print(" |0| ")
+    }
 }
 
 func drawBody(bodyLength: Int) {
