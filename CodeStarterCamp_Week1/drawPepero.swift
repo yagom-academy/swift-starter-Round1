@@ -13,3 +13,12 @@ func drawStick(length: Int) {
         print(" | |")
     }
 }
+
+func makePeperoBody(Body: String, topping: String ) -> String {
+    if topping.isEmpty {
+        return " " + Body
+    }
+    else{
+    return topping + Body + topping
+    }
+}
