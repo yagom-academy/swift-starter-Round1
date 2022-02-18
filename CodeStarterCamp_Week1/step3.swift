@@ -8,7 +8,7 @@
 import Foundation
 
 func drawStick(stickLength: Int) {
-    
+    print(" | |")
 }
 
 func drawTopping(body: String, topping: String) {
