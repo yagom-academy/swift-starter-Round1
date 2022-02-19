@@ -6,7 +6,17 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
+func drawIcecreamStar(numberOfStars: Int) {
+    for _ in 1...numberOfStars {
+        print("*************")
+    }
+}
 
-print("Hello, World!")
+func drawIcecreamBody(numberOfBodies: Int) {
+    for _ in 1...numberOfBodies {
+        print("    |  |")
+    }
+}
 
+drawIcecreamStar(numberOfStars: 15)
+drawIcecreamBody(numberOfBodies: 5)
