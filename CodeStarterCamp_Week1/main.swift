@@ -20,3 +20,4 @@ func drawingBody(body: Int) {
 
 drawingStar(star: 15)
 drawingBody(body: 5)
+
