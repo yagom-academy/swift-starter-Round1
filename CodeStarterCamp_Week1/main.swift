@@ -6,18 +6,17 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-func drawingStar(star: Int) {
-    for star in 1...star {
+func drawIcecreamStar(numberOfStars: Int) {
+    for _ in 1...numberOfStars {
         print("*************")
     }
 }
 
-func drawingBody(body: Int) {
-    for body in 1...body {
+func drawIcecreamBody(numberOfBodies: Int) {
+    for _ in 1...numberOfBodies {
         print("    |  |")
     }
 }
 
-drawingStar(star: 15)
-drawingBody(body: 5)
-
+drawIcecreamStar(numberOfStars: 15)
+drawIcecreamBody(numberOfBodies: 5)
