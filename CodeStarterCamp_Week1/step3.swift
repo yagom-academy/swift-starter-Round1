@@ -24,6 +24,9 @@ func drawTopping(body: String, topping: String) {
         else if topping == "#" {
             print("#***#")
         }
+        else {
+            print("\(topping)모양 토핑은 재료가 부족해요.")
+        }
     }
     else if body == "|0|" {
         print(" | | ")
@@ -33,6 +36,12 @@ func drawTopping(body: String, topping: String) {
         if topping == "$" {
             print("$@@@$")
         }
+        else {
+            print("\(topping)모양 토핑은 재료가 부족해요.")
+        }
+    }
+    else {
+        print("\(body)몸통 빼빼로는 재료가 부족해요.")
     }
 }
 
@@ -52,6 +61,11 @@ func drawBody(bodyLength: Int, body: String, topping: String) {
             drawTopping(body: body, topping: topping)
         }
     }
+    else {
+        for _ in 1...bodyLength-1 {
+            drawTopping(body: body, topping: topping)
+        }
+    }
 }
 
 func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int) {
@@ -67,3 +81,6 @@ drawPepero(bodyLength: 12, body: "***", topping: "&", stickLength: 4)
 drawPepero(bodyLength: 12, body: "***", topping: "#", stickLength: 6)
 drawPepero(bodyLength: 6, body: "|0|", topping: " ", stickLength: 4)
 drawPepero(bodyLength: 7, body: "@@@", topping: "$", stickLength: 5)
+drawPepero(bodyLength: 4, body: "^^^", topping: "&", stickLength: 3)
+drawPepero(bodyLength: 10, body: "@@@", topping: "^", stickLength: 5)
+drawPepero(bodyLength: 12, body: "^^^", topping: "^", stickLength: 6)
