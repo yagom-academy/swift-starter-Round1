@@ -9,20 +9,5 @@
 import Foundation
 
 
-func printIceCream(iceCreamLength: Int, iceCreamWidth: Int) {
-    for i in 1...iceCreamLength {
-        for j in 1...iceCreamWidth {
-            print("*", terminator: "")
-        }
-        print("")
-    }
-}
+drawPepero(Length: 12, Body: "|0|", topping: "", stickLength: 4)
 
-func printStick(stickLength: Int) {
-    for i in 1...stickLength {
-        print("    | |")
-    }
-}
-
-printIceCream(iceCreamLength: 8, iceCreamWidth: 11)
-printStick(stickLength: 4)
