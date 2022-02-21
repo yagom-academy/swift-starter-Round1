@@ -8,10 +8,10 @@
 
 import Foundation
 
-print("Hello, World!")
+
 for _ in 1...8 {
-    let makeIcecream = String(repeating: "*",count:11)
-    print(makeIcecream)
+    let icePart = String(repeating: "*",count:11)
+    print(icePart)
 }
 for _ in 1...4 {
     print("    | |    ")
