@@ -47,7 +47,9 @@ func drawPepero(Length: Int, Body: String, topping: String, stickLength: Int) {
     """
     
     print(information)
+
+    let newBody: String = makePeperoBody(Body: Body, topping: topping)
     
-    printPeperoBody(Length: Length, Body: Body, topping: topping)
+    printPeperoBody(Length: Length, Body: Body, topping: topping, newBody: newBody)
     drawStick(length: stickLength)
 }
