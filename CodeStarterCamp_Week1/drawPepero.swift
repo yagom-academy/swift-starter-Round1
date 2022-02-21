@@ -23,7 +23,7 @@ func makePeperoBody(Body: String, topping: String ) -> String {
     }
 }
 
-func printPeperoBody(Length: Int, Body: String, topping: String) {
+func printPeperoBody(Length: Int, Body: String, topping: String, newBody: String) {
     for count in 1...Length {
         if Body == "|0|" {
             if count % 2 == 0 {
@@ -32,7 +32,7 @@ func printPeperoBody(Length: Int, Body: String, topping: String) {
                 print(" | |")
             }
         } else {
-            print(makePeperoBody(Body: Body, topping: topping))
+            print(newBody)
         }
     }
 }
