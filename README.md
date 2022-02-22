@@ -6,3 +6,8 @@
 
 -> 트랜지스터로 표현하기에 이진법이 가장 간단하고 빨라서 그런거 아닐까요,,?
 십진법으로 처리하려면 그만큼 많은 전류가 들려나요,
+
+# Step3 빼빼로 만들기
+
+##순서도
+![Bebero drawio](https://user-images.githubusercontent.com/96932116/154400229-aae9a489-6d7c-4f11-8a14-b9f27fc6bd1b.png)
