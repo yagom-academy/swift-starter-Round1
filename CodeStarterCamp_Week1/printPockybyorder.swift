@@ -1,7 +1,8 @@
 import Foundation
 
-func printPockybody(lengthofPocky:Int){
-    for _ in 1 ... lengthofPocky {
-        makePockybody(topping: "", pockybody: "")
+func printPockybar(pockyBar:String, lengthofpockybar: Int) {
+    for _ in 1 ... lengthofpockybar {
+            print(pockyBar)
 }
 }
+
