@@ -8,7 +8,7 @@ func makePockybody(topping:String, pockybody:String){
 
 func printPockybody(lengthofPocky:Int){
     for _ in 1 ... lengthofPocky {
-        makePockybody(topping: "", pockybody: "")
+        makePockybody(topping: " ", pockybody: "***")
 }
 }
 
@@ -19,5 +19,6 @@ func printPockybar(pockyBar:String, lengthofpockybar: Int) {
 }
 
 func printPocky(){
-    printPockybody(lengthofPocky: )
-    printPockybar(pockyBar: "", lengthofpockybar: )
+    printPockybody(lengthofPocky: 10)
+    printPockybar(pockyBar: " | | ", lengthofpockybar: 4)
+}
