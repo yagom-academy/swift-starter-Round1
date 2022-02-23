@@ -24,7 +24,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A559D5B27C676E800CF0A88 /* swift-starter-week1 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "swift-starter-week1"; sourceTree = "<group>"; };
 		0A559D5C27C6772200CF0A88 /* PrintPockyByOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintPockyByOrder.swift; sourceTree = "<group>"; };
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -44,7 +43,6 @@
 		34811DA2274B938F00A1E994 = {
 			isa = PBXGroup;
 			children = (
-				0A559D5B27C676E800CF0A88 /* swift-starter-week1 */,
 				34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */,
 				34811DAC274B938F00A1E994 /* Products */,
 			);
