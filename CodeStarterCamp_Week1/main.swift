@@ -8,70 +8,33 @@
 
 import Foundation
 
+// Step 2: 내 번호와 맞추어보기!
 
-// 빼빼로 모양을 정하는 함수 
-// 이 부분에서 사용자에게 값을 입력받습니다.
-// 아예 함수로 만들어서 모든 함수에 적용시키면 좋을텐데 모르겠습니다!
-let peperoShape: String = "***"
-let peperoTopping: String = "&"
-
-
-// 길이(Int)에 따른 막대(빼빼로 손잡이)를 그리는 함수
-func drawPeperoStick(length: Int) {
-    if length < 5 {
-        for _ in 1...length {
-            print(" " + "|" + " " + "|")
+    // 자동로또번호를 생성하는 함수
+func randomLottoNumberGenerator() {
+    // 우리가 찍은 6개의 번호 배열(Set<Int>)을 myLottoNumbers 변수에 할당합니다.
+    let myLottoNumbes: Set<Int> = [1, 2, 3, 4, 5, 6]
+    // 생성한 로또번호가 담길 Set
+    var autoNumberGenerator: Set<Int> = []
+    
+    // 겹치지 않는 6자리 랜덤한 숫자가 담길 때까지 반복하는 조건
+    if autoNumberGenerator.count != 6 {
+        while autoNumberGenerator.count < 6 {
+            let randomNum:Int = Int.random(in: 1...45)
+            autoNumberGenerator.insert(randomNum)
         }
-    } else if length > 5 {
-        for _ in 1...length {
-            print(" " + "|" + " " + "|")
-        }
+    // print(autoNumberGenerator)
+    }
+    
+    if autoNumberGenerator.isSubset(of: myLottoNumbes) {
+        let intersection = autoNumberGenerator.intersection(myLottoNumbes)
+        // 겹치는 번호를 포함하는 문구를 print합니다.
+        print("축하합니다! 겹치는 번호는 \(intersection) 입니다!")
+    } else {
+        // 만약 겹치는 번호가 없다면 다음과 같은 문구를 print합니다.
+        print("아쉽지만 겹치는 번호가 없습니다.")
     }
 }
 
-
-// 몸통(String), 토핑(String)을 매개변수로 받아 토핑과 몸통을 그리는 함수
-func drawPeperoToppingAndBody(peperoBody: String, topping: String) {
-    // 몸통 그리기
-    var body = peperoBody
-    if body == "***" || body == "| |" || body == "|0|" {
-        if topping == " " {
-            body.insert(" ", at: body.startIndex)
-        }
-    }
-    // 토핑 그리기
-    if body == "***" {
-        if topping == "&" {
-            body.insert("&", at: body.startIndex)
-            body.insert("&", at: body.endIndex)
-        } else if topping == "#" {
-            body.insert("#", at: body.startIndex)
-            body.insert("#", at: body.endIndex)
-        }
-    } else if body == "| |" && body == "|0|" {
-        
-    }
-    print(body)
-}
-
-// 길이(Int)에 따라 몸통을 그리는 함수
-func drawPeperoBody(length: Int) {
-    for _ in 1...length {
-        // 여기서 파라미터에 전달받을 값을 지정하는 것을 모르겠습니다
-        drawPeperoToppingAndBody(peperoBody: peperoShape, topping: peperoTopping)
-    }
-}
-
-// 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
-
-func drawPepero(bodyLength: Int, stickRange: Int) {
-    drawPeperoBody(length: bodyLength)
-    drawPeperoStick(length: stickRange)
-}
-
-drawPepero(bodyLength: 10, stickRange: 4)
-
-// 누드 빼빼로에서 빼빼로 모양이 | | 와 |0|가 교차되어 그려야하는데 이 부분도 모르겠습니다.
-// 이프 문을 통해서 하면 될 것 같은데 잘 안되네요 ㅋㅋ
-
+randomLottoNumberGenerator()
 
