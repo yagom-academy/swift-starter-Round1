@@ -9,12 +9,10 @@
 import Foundation
 
 
-
 var iceLength: Int = 0         // 숫자 입력
 var iceBody: String = "$$$"     // 문자 3자 입력
 var iceTopping: String = "@"  // 문자 1자 입력, 토핑 불필요시 공백 한칸 유지 " "
 var iceBarLength: Int = 0      // 숫자 입력
-
 
 
 // icecream 정보 출력 함수
@@ -63,6 +61,8 @@ func combineIce() {
     print()
 }
 
+// 최종 Icecream 그리기
+
 iceLength = 4        // 숫자 입력
 iceBody = "$%$"      // 문자 3자 입력
 iceTopping = "@"     // 문자 1자 입력, 토핑 불필요시 공백 한칸 유지 " "
@@ -75,6 +75,7 @@ iceBody = "^!^"      // 문자 3자 입력
 iceTopping = "&"     // 문자 1자 입력, 토핑 불필요시 공백 한칸 유지 " "
 iceBarLength = 3
 combineIce()
+
 
 //makeIce(iceHeight: 8) // Icecream 길이 조정
 //makeIcebar(icebarHeight: 4) // Icebar 길이 조정
