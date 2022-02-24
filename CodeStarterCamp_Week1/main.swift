@@ -9,42 +9,72 @@
 import Foundation
 
 
-let iceLength: Int = 5 // 숫자 입력
-let iceBody: String = "&*&" // 문자 3자 입력
-let iceTopping: String = " " // 문자 1자 입력, 토핑 불필요시 공백 한칸 유지 " "
-let iceBarLength: Int = 5 // 숫자 입력
 
-    
-func icecreamInfo () {                                                 // icecream 정보 출력 함수
-    print ("길이: \(iceLength)")
-    print ("몸통: \(iceBody)")
-    print ("토핑: \(iceTopping)")
-    print ("막대길이: \(iceBarLength)")
-    print ()
+var iceLength: Int = 0         // 숫자 입력
+var iceBody: String = "$$$"     // 문자 3자 입력
+var iceTopping: String = "@"  // 문자 1자 입력, 토핑 불필요시 공백 한칸 유지 " "
+var iceBarLength: Int = 0      // 숫자 입력
+
+
+
+// icecream 정보 출력 함수
+func showIcecreamInfo() {
+    var iceInfo: String = """
+        길이: \(iceLength)
+        몸통: \(iceBody)
+        토핑: \(iceTopping)
+        막대길이: \(iceBarLength)
+        """
+    print(iceInfo)
 }
 
-func formIcecream (iceBodyIn: String, iceToppingIn: String) {         // iceLength에 따라 몸통 그리는 함수
-    print ("\(iceToppingIn)", "\(iceBodyIn)", "\(iceToppingIn)", separator:"")
+
+// 입력된 Icecream의 길이에 따라 몸통을 그리는 함수
+func formIceBody(iceBodyIn: String, iceToppingIn: String) {
+    print("\(iceToppingIn)", "\(iceBodyIn)", "\(iceToppingIn)", separator:"")
     }
 
 
-func makeIceBar () {                                                  // ice막대 그리는 함수
+// Icecream 막대를 그리는 함수
+func makeIceBar() {
+    let iceBar: String = " | |"
+    
     for _ in 1...iceBarLength {
-            print (" | |")
+            print(iceBar)
     }
 }
 
-func makeIcecream () {                                                // icecream 그리는 함수
+
+//Icecream을 그리는 함수
+func makeIceBody() {
     for _ in 1...iceLength {
-        formIcecream(iceBodyIn: iceBody, iceToppingIn: iceTopping)
+        formIceBody(iceBodyIn: iceBody, iceToppingIn: iceTopping)
     }
 }
 
-icecreamInfo()
-makeIcecream()
-makeIceBar()
 
-    
+//Icecream 그리기 (합치기?)
+func combineIce() {
+    showIcecreamInfo()
+    print()
+    makeIceBody()
+    makeIceBar()
+    print()
+    print()
+}
+
+iceLength = 4        // 숫자 입력
+iceBody = "$%$"      // 문자 3자 입력
+iceTopping = "@"     // 문자 1자 입력, 토핑 불필요시 공백 한칸 유지 " "
+iceBarLength = 3
+combineIce()
+
+
+iceLength = 7        // 숫자 입력
+iceBody = "^!^"      // 문자 3자 입력
+iceTopping = "&"     // 문자 1자 입력, 토핑 불필요시 공백 한칸 유지 " "
+iceBarLength = 3
+combineIce()
 
 //makeIce(iceHeight: 8) // Icecream 길이 조정
 //makeIcebar(icebarHeight: 4) // Icebar 길이 조정
