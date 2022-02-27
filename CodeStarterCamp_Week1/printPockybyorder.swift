@@ -1,35 +1,35 @@
 import Foundation
 
-func makePockybody(topping: String, body: String){
+func makePockyBody(topping: String, body: String){
     print(topping, terminator: "")
     print(body, terminator: "")
     print(topping)
 }
 
-func printPockybody(topping: String, body: String, lengthofPocky: Int){
-    if body == "***" {
-        for _ in 1 ... lengthofPocky {
-            makePockybody(topping: topping, body: body)
+func printPockyBody(topping: String, body: String, lengthOfPocky: Int){
+
+    if body == "|0|" {
+        for _ in 1...lengthOfPocky / 2 {
+            makePockyBody(topping: topping, body: "| |")
+            makePockyBody(topping: topping, body: body)
         }
-    }
-    else {
-        for _ in 1 ... lengthofPocky/2 {
-            makePockybody(topping: topping, body: "| |")
-            makePockybody(topping: topping, body:  body)
+    } else {
+        for _ in 1...lengthOfPocky {
+            makePockyBody(topping: topping, body: body)
         }
     }
 }
+    
 
-
-func printPockybar(lengthofpockybar: Int){
-    for _ in 1 ... lengthofpockybar {
+func printPockyBar(lengthOfPockyBar: Int){
+    for _ in 1 ... lengthOfPockyBar {
         print(" | | ")
     }
 }
 
-func printPocky(pockytopping: String, pockybody: String, lengthofPocky: Int, lengthofpockybar: Int){
-    printPockybody(topping: pockytopping, body: pockybody, lengthofPocky: lengthofPocky)
-    printPockybar(lengthofpockybar: lengthofpockybar)
+func printPocky(pockyTopping: String, pockyBody: String, lengthOfPocky: Int, lengthOfPockyBar: Int){
+    printPockyBody(topping: pockyTopping, body: pockyBody, lengthOfPocky: lengthOfPocky)
+    printPockyBar(lengthOfPockyBar: lengthOfPockyBar)
 }
 
 

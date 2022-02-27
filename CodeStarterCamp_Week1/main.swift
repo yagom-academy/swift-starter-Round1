@@ -1,6 +1,6 @@
 import Foundation
 
-printPocky(pockytopping: " ", pockybody: "***", lengthofPocky: 10, lengthofpockybar: 4)
-printPocky(pockytopping: "&", pockybody: "***", lengthofPocky: 12, lengthofpockybar: 4)
-printPocky(pockytopping: "#", pockybody: "***", lengthofPocky: 12, lengthofpockybar: 6)
-printPocky(pockytopping: " ", pockybody: "|0|", lengthofPocky: 6, lengthofpockybar: 4)
+printPocky(pockyTopping: " ", pockyBody: "***", lengthOfPocky: 10, lengthOfPockyBar: 4)
+printPocky(pockyTopping: "&", pockyBody: "***", lengthOfPocky: 12, lengthOfPockyBar: 4)
+printPocky(pockyTopping: "#", pockyBody: "***", lengthOfPocky: 12, lengthOfPockyBar: 6)
+printPocky(pockyTopping: " ", pockyBody: "|0|", lengthOfPocky: 6, lengthOfPockyBar: 4)
