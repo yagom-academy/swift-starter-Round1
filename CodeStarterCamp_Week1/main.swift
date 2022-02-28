@@ -1,18 +1,6 @@
 import Foundation
 
-printicecream(of: 8)
-
-func printicecream(of length: Int) {
-    for icecream in 1 ... length {
-        print("***********")
-    }
-}
-
-printbar(of: 4)
-
-func printbar(of length: Int) {
-    for bar in 1 ... length {
-        print("    | |    ")
-    }
-}
-
+printPocky(pockyTopping: " ", pockyBody: "***", lengthOfPocky: 10, lengthOfPockyBar: 4)
+printPocky(pockyTopping: "&", pockyBody: "***", lengthOfPocky: 12, lengthOfPockyBar: 4)
+printPocky(pockyTopping: "#", pockyBody: "***", lengthOfPocky: 12, lengthOfPockyBar: 6)
+printPocky(pockyTopping: " ", pockyBody: "|0|", lengthOfPocky: 6, lengthOfPockyBar: 4)
