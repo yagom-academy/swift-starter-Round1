@@ -9,73 +9,96 @@
 import Foundation
 
 
-var iceLength: Int = 0         // 숫자 입력
-var iceBody: String = "$$$"     // 문자 3자 입력
-var iceTopping: String = "@"  // 문자 1자 입력, 토핑 불필요시 공백 한칸 유지 " "
-var iceBarLength: Int = 0      // 숫자 입력
+func createBebero(beberoLength: Int, beberoBody: String, beberoTopping: String, beberoBarLength: Int) {
 
-
-// icecream 정보 출력 함수
-func showIcecreamInfo() {
-    var iceInfo: String = """
-        길이: \(iceLength)
-        몸통: \(iceBody)
-        토핑: \(iceTopping)
-        막대길이: \(iceBarLength)
-        """
-    print(iceInfo)
-}
-
-
-// 입력된 Icecream의 길이에 따라 몸통을 그리는 함수
-func formIceBody(iceBodyIn: String, iceToppingIn: String) {
-    print("\(iceToppingIn)", "\(iceBodyIn)", "\(iceToppingIn)", separator:"")
-    }
-
-
-// Icecream 막대를 그리는 함수
-func makeIceBar() {
-    let iceBar: String = " | |"
     
-    for _ in 1...iceBarLength {
-            print(iceBar)
+    // beberocream 정보 출력 함수
+    func showBeberoInfo() {
+        let beberoInfo: String = """
+            길이: \(beberoLength)
+            몸통: \(beberoBody)
+            토핑: \(beberoTopping)
+            막대길이: \(beberoBarLength)
+            """
+        print(beberoInfo)
+    }
+    
+    
+    // beberocream 막대를 그리는 함수
+    func makeBeberoBar() {
+        let beberoBar: String = " | |"
+        
+        for _ in 1...beberoBarLength {
+                print(beberoBar)
+        }
+    }
+
+    
+    if beberoBody == "|0|" {
+        
+        
+        // 입력된 bebero의 길이에 따라 몸통을 그리는 함수 (Nude)
+        func formBeberoBodyNude(beberoBodyIn: String, beberoToppingIn: String) {
+            print("\(beberoToppingIn)", "| |", "\(beberoToppingIn)", separator:"")
+            print("\(beberoToppingIn)", "\(beberoBodyIn)", "\(beberoToppingIn)", separator:"")
+        }
+        
+        
+        //beberocream을 그리는 함수
+        func makeBeberoBody() {
+            for _ in 1...beberoLength/2 {
+                formBeberoBodyNude(beberoBodyIn: beberoBody, beberoToppingIn: beberoTopping)
+            }
+        }
+          
+        
+        //beberocream 그리기 (합치기?)
+        func combineBebero() {
+            showBeberoInfo()
+            print()
+            makeBeberoBody()
+            makeBeberoBar()
+            print()
+            print()
+        }
+        
+        return combineBebero()
+    }
+        
+    
+    else {
+
+        
+        // 입력된 beberocream의 길이에 따라 몸통을 그리는 함수
+        func formBeberoBody(beberoBodyIn: String, beberoToppingIn: String) {
+            print("\(beberoToppingIn)", "\(beberoBodyIn)", "\(beberoToppingIn)", separator:"")
+        }
+
+        
+        //beberocream을 그리는 함수
+        func makeBeberoBody() {
+            for _ in 1...beberoLength {
+                formBeberoBody(beberoBodyIn: beberoBody, beberoToppingIn: beberoTopping)
+            }
+        }
+          
+        
+        //beberocream 그리기 (합치기?)
+        func combineBebero() {
+            showBeberoInfo()
+            print()
+            makeBeberoBody()
+            makeBeberoBar()
+            print()
+            print()
+        }
+        
+        return combineBebero()
     }
 }
+        
 
-
-//Icecream을 그리는 함수
-func makeIceBody() {
-    for _ in 1...iceLength {
-        formIceBody(iceBodyIn: iceBody, iceToppingIn: iceTopping)
-    }
-}
-
-
-//Icecream 그리기 (합치기?)
-func combineIce() {
-    showIcecreamInfo()
-    print()
-    makeIceBody()
-    makeIceBar()
-    print()
-    print()
-}
-
-// 최종 Icecream 그리기
-
-iceLength = 4        // 숫자 입력
-iceBody = "$%$"      // 문자 3자 입력
-iceTopping = "@"     // 문자 1자 입력, 토핑 불필요시 공백 한칸 유지 " "
-iceBarLength = 3
-combineIce()
-
-
-iceLength = 7        // 숫자 입력
-iceBody = "^!^"      // 문자 3자 입력
-iceTopping = "&"     // 문자 1자 입력, 토핑 불필요시 공백 한칸 유지 " "
-iceBarLength = 3
-combineIce()
-
-
-//makeIce(iceHeight: 8) // Icecream 길이 조정
-//makeIcebar(icebarHeight: 4) // Icebar 길이 조정
+createBebero(beberoLength: 10, beberoBody: "***", beberoTopping: " ", beberoBarLength: 4)
+createBebero(beberoLength: 12, beberoBody: "***", beberoTopping: "&", beberoBarLength: 4)
+createBebero(beberoLength: 12, beberoBody: "***", beberoTopping: "#", beberoBarLength: 6)
+createBebero(beberoLength: 6, beberoBody: "|0|", beberoTopping: " ", beberoBarLength: 4)
