@@ -1,5 +1,5 @@
 //
-//  STEP 2.swift
+//  Step2.swift
 //  CodeStarterCamp_Week1
 //
 //  Created by 변재은 on 2022/03/03.
