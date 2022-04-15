@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// ice cream을 만드는 함수!
 func makeIceCream() {
     let iceCreamHeight = 8
     let iceCreamWidth = 11
