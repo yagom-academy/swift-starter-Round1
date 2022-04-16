@@ -6,27 +6,39 @@
 //
 import Foundation
 
-func makePeperoBar(peperoHeight: Int) {
-    let rangeOfPeperoHeight = 0..<peperoHeight
+func makePeperoBar(barLength: Int) {
+    let rangeOfPeperoBarLength = 0..<barLength
 
-    for _ in rangeOfPeperoHeight {
+    for _ in rangeOfPeperoBarLength {
         print(" | |")
     }
 }
 
-func makePeperoBody(peperoBody: String, peperoToping: String, peperoBodyHeight: Int) {
-    let rangeOfPeperoHeight = 0..<peperoBodyHeight
-    for height in rangeOfPeperoHeight {
-        makePeperoBodyLayer(peperoBody: peperoBody, peperoToping: peperoToping, peperoHeight: height)
+func makePeperoBody(bodyContent: String, topingContent: String, bodyLength: Int) {
+    let rangeOfPeperoBodyLength = 0..<bodyLength
+    let bodyLayer = makePeperoBodyLayer(bodyContent: bodyContent, topingContent: topingContent)
+    
+    for length in rangeOfPeperoBodyLength {
+        if length % 2 == 0 {
+            print(bodyLayer.evenLayer)
+        } else {
+            print(bodyLayer.oddLayer)
+        }
     }
 }
 
-func makePeperoBodyLayer(peperoBody: String, peperoToping: String, peperoHeight: Int) {
-    if peperoHeight % 2 == 0 {
-        print("\(peperoToping + peperoBody)")
+func makePeperoBodyLayer(bodyContent: String, topingContent: String) -> (evenLayer: String, oddLayer: String) {
+    var bodyLayerOddAndEven = (evenLayer: "", oddLayer: "")
+    
+    if topingContent.count == 0 {
+        bodyLayerOddAndEven.evenLayer = " \(bodyContent)"
     }else {
-        print(" \(peperoBody + peperoToping)")
+        bodyLayerOddAndEven.evenLayer = "\(topingContent + bodyContent)"
     }
+    
+    bodyLayerOddAndEven.oddLayer = " \(bodyContent + topingContent)"
+    
+    return bodyLayerOddAndEven
 }
 
 
@@ -37,16 +49,16 @@ func makePepero(peperoBodyLength: Int, peperoBodyContent: String, pepeproBodyTop
     print("토핑: \(pepeproBodyTopingContent)")
     print("막대길이: \(peperoBarLength)")
     
-    makePeperoBody(peperoBody: peperoBodyContent, peperoToping: pepeproBodyTopingContent, peperoBodyHeight: peperoBodyLength)
-    makePeperoBar(peperoHeight: peperoBarLength)
-    
     print()
+    
+    makePeperoBody(bodyContent: peperoBodyContent, topingContent: pepeproBodyTopingContent, bodyLength: peperoBodyLength)
+    makePeperoBar(barLength: peperoBarLength)
 }
 
-makePepero(peperoBodyLength: 10, peperoBodyContent: "***", pepeproBodyTopingContent: " ", peperoBarLength: 4)
+makePepero(peperoBodyLength: 10, peperoBodyContent: "***", pepeproBodyTopingContent: "", peperoBarLength: 4)
 makePepero(peperoBodyLength: 12, peperoBodyContent: "***", pepeproBodyTopingContent: "&", peperoBarLength: 4)
 makePepero(peperoBodyLength: 12, peperoBodyContent: "***", pepeproBodyTopingContent: "#", peperoBarLength: 6)
-makePepero(peperoBodyLength: 6, peperoBodyContent: "|0|", pepeproBodyTopingContent: " ", peperoBarLength: 4)
+makePepero(peperoBodyLength: 6, peperoBodyContent: "|0|", pepeproBodyTopingContent: "", peperoBarLength: 4)
 makePepero(peperoBodyLength: 7, peperoBodyContent: "@@@", pepeproBodyTopingContent: "$", peperoBarLength: 5)
 makePepero(peperoBodyLength: 4, peperoBodyContent: "&&&", pepeproBodyTopingContent: "*", peperoBarLength: 3)
 makePepero(peperoBodyLength: 10, peperoBodyContent: "###", pepeproBodyTopingContent: "^", peperoBarLength: 5)
