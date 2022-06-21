@@ -8,5 +8,15 @@
 
 import Foundation
 
-print("Hello, World!")
+func drawIcecream(rowI : Int) {
+    for count in 1...rowI{
+        print("***********")}
+}
+func drawBar(rowB : Int){
+    for count in 1...rowB{
+        print("    | |")}
+}
 
+drawIcecream(rowI: 8)
+
+drawBar(rowB: 4)
