@@ -29,3 +29,15 @@ func printStick (){
 }
 
 printStick()
+
+
+
+//아이스크림을 원하는 길이대로 그리는 함수
+
+func printIceCream_2(lineNum: Int){
+    for _ in 1...lineNum {
+        print ("***********")
+    }
+}
+
+printIceCream_2(lineNum: 13)
