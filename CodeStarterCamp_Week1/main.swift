@@ -5,18 +5,17 @@
 //  Created by yagom.
 //  Copyright © yagom academy. All rights reserved.
 //
-
 import Foundation
 
-func drawIcecream(rowI : Int) {
-    for count in 1...rowI{
+func drawIcecream(rowIcecream : Int) {
+    for count in 1...rowIcecream{
         print("***********")}
 }
-func drawBar(rowB : Int){
-    for count in 1...rowB{
+func drawBar(rowBar : Int) {
+    for count in 1...rowBar{
         print("    | |")}
 }
 
-drawIcecream(rowI: 8)
+drawIcecream(rowIcecream: 8)
 
-drawBar(rowB: 4)
+drawBar(rowBar: 4)
