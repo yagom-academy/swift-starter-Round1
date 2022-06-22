@@ -8,15 +8,15 @@
 
 import Foundation
 
-func drawPopsicleStick() {
-    for stickRow in 1...4 {
-        print("    | |")
-    }
-}
-
 func drawPopsicleBody() {
     for bodyRow in 1...8 {
         print("***********")
+    }
+}
+
+func drawPopsicleStick() {
+    for stickRow in 1...4 {
+        print("    | |")
     }
 }
 
