@@ -8,5 +8,25 @@
 
 import Foundation
 
-print("Hello, World!")
+
+//아이스크림 부분을 그리는 함수
+func makeIceCream(layer count: Int) {
+    for _ in 0..<count{
+        for _ in 1...11{
+            print("*", terminator: "")
+        }
+        print()
+    }
+}
+
+//막대기(손잡이) 부분을 그리는 함수
+func makeHandle(stick count: Int) {
+    for _ in 0..<count{
+        print("    | |    ")
+    }
+}
+
+//함수 호출
+makeIceCream(layer: 8)
+makeHandle(stick: 4)
 
