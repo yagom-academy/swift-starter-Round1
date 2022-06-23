@@ -1,15 +1,21 @@
-func makeIce(ice:Int){
-    for _ in 1...ice{
-            print("***********")
-        }
-} // 아이스크림 부분을 ice만큼 그리기
+// 아이스크림 몸통 그리기 함수
+func makeBody(bodyHeight:Int){
+    for _ in 1...bodyHeight{
+        print("***********")
+    }
+}
 
-func makeBar(bar:Int){
-    for _ in 1...bar{
-            print("    | |")
-        }
-} // 막대부분을 bar만큼 그리기
+//아이스크림 바 그리기 함수
+func makeBar(barHeight:Int){
+    for _ in 1...barHeight{
+        print("    | |")
+    }
+}
 
+//아이스크림 그리기 함수
+func makeIceCream(bodyHeight:Int,barHeight:Int){
+    makeBody(bodyHeight: bodyHeight)
+    makeBar(barHeight: barHeight)
+}
 
-makeIce(ice: 8) // 아이스크림 부분 8만큼 호출
-makeBar(bar: 4) // 막대 부분을 4만큼 호출
+makeIceCream(bodyHeight: 8, barHeight: 4) //8,4만큼 호출
