@@ -6,7 +6,7 @@
 import Foundation
 
 // 아이스크림 부분을 그리는 함수
-func iceCream (width: Int,height: Int){
+func makeIceCream(width: Int,height: Int){
     for _ in 1...height{
         for _ in 1...width {
             print("",terminator: "*")
@@ -16,10 +16,10 @@ func iceCream (width: Int,height: Int){
 }
 
 // 막대기(손잡이) 부분을 그리는 함수
-func bar (width: Int, height: Int){
-    for _ in 1...height{
-        for i in 1...width {
-            if i == width/2  || i == width/2 + 2 {
+func makeBar(iceCreamWidth: Int, barHeight: Int){
+    for _ in 1...barHeight{
+        for i in 1...iceCreamWidth {
+            if i == iceCreamWidth/2  || i == iceCreamWidth/2 + 2 {
                 print("",terminator: "|")
             }
             else {
@@ -29,6 +29,7 @@ func bar (width: Int, height: Int){
         print("")
     }
 }
-iceCream(width: 11, height: 8)
-bar(width: 11, height: 4)
+
+makeIceCream(width: 11, height: 8)
+makeBar(iceCreamWidth: 11, barHeight: 4)
 
