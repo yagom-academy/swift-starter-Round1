@@ -1,12 +1,12 @@
 import Foundation
 
-func printIceCreamHandle(handleLength: Int, iceCreamBodyShape: String) {
+func printPeperoHandle(handleLength: Int, peperoBodyShape: String) {
     for _ in 1...handleLength {
-        if (iceCreamBodyShape.count == 3) {
+        if (peperoBodyShape.count == 3) {
             print("| |")
         }
         else {
-            for _ in 2...(iceCreamBodyShape.count/2) {
+            for _ in 2...(peperoBodyShape.count/2) {
                 print(" ", terminator: "")
             }
             print("| |")
@@ -14,53 +14,53 @@ func printIceCreamHandle(handleLength: Int, iceCreamBodyShape: String) {
     }
 }
 
-func printIceCreamBody(iceCreamBody: String, iceCreamTopping: String) -> String {
-    if ((iceCreamBody + iceCreamTopping).count % 2 == 0) {
-        return (iceCreamTopping + iceCreamBody + iceCreamTopping)
+func printPeperoBody(peperoBody: String, peperoTopping: String) -> String {
+    if ((peperoBody + peperoTopping).count % 2 == 0) {
+        return (peperoTopping + peperoBody + peperoTopping)
     } else {
-        return (" " + iceCreamTopping + iceCreamBody + iceCreamTopping)
+        return (" " + peperoTopping + peperoBody + peperoTopping)
     }
 }
 
-func printWholeIceCreamBody(iceCreamHeight: Int, iceCreamBodyShape: String) {
-    for _ in 1...iceCreamHeight {
-        print(iceCreamBodyShape)
+func printWholePeperoBody(peperoHeight: Int, peperoBodyShape: String) {
+    for _ in 1...peperoHeight {
+        print(peperoBodyShape)
     }
 }
 
-func makeIceCream(iceCreamHeight: Int, iceCreamBody: String, iceCreamTopping: String, handleLength: Int) {
+func makePepero(peperoHeight: Int, peperoBody: String, peperoTopping: String, handleLength: Int) {
     print("<정보>")
-    print("길이: \(iceCreamHeight)")
-    print("몸통: \(iceCreamBody)")
-    print("토핑: \(iceCreamTopping)")
+    print("길이: \(peperoHeight)")
+    print("몸통: \(peperoBody)")
+    print("토핑: \(peperoTopping)")
     print("막대길이: \(handleLength)")
     print()
-    printWholeIceCreamBody(iceCreamHeight: iceCreamHeight, iceCreamBodyShape: printIceCreamBody(iceCreamBody: iceCreamBody, iceCreamTopping: iceCreamTopping))
-    printIceCreamHandle(handleLength: handleLength, iceCreamBodyShape: printIceCreamBody(iceCreamBody: iceCreamBody, iceCreamTopping: iceCreamTopping))
+    printWholePeperoBody(peperoHeight: peperoHeight, peperoBodyShape: printPeperoBody(peperoBody: peperoBody, peperoTopping: peperoTopping))
+    printPeperoHandle(handleLength: handleLength, peperoBodyShape: printPeperoBody(peperoBody: peperoBody, peperoTopping: peperoTopping))
     print()
 }
 
 //MARK: 실행예시 1
-makeIceCream(iceCreamHeight: 10, iceCreamBody: "***", iceCreamTopping: "", handleLength: 4)
+makePepero(peperoHeight: 10, peperoBody: "***", peperoTopping: "", handleLength: 4)
 //MARK: 실행예시 2
-makeIceCream(iceCreamHeight: 12, iceCreamBody: "***", iceCreamTopping: "&", handleLength: 4)
+makePepero(peperoHeight: 12, peperoBody: "***", peperoTopping: "&", handleLength: 4)
 //MARK: 실행예시 3
-makeIceCream(iceCreamHeight: 12, iceCreamBody: "***", iceCreamTopping: "#", handleLength: 6)
+makePepero(peperoHeight: 12, peperoBody: "***", peperoTopping: "#", handleLength: 6)
 //MARK: 실행예시 4
-makeIceCream(iceCreamHeight: 6, iceCreamBody: "|0|", iceCreamTopping: "", handleLength: 4)
+makePepero(peperoHeight: 6, peperoBody: "|0|", peperoTopping: "", handleLength: 4)
 
 //MARK: 자신만의 아이스크림을 만들어보자
-makeIceCream(iceCreamHeight: 10, iceCreamBody: "**#**", iceCreamTopping: "##$$", handleLength: 4)
+makePepero(peperoHeight: 10, peperoBody: "**#**", peperoTopping: "##$$", handleLength: 4)
 
 //MARK: user input practice
 print("<정보>")
 print("아이스크림 길이를 입력하세요: ", terminator: "")
-let iceCreamHeight = Int(readLine()!)!
+let peperoHeight = Int(readLine()!)!
 print("아이스크림 몸통를 입력하세요: ", terminator: "")
-let iceCreamBody = readLine()!
+let peperoBody = readLine()!
 print("아이스크림 토핑를 입력하세요: ", terminator: "")
-let iceCreamTopping = readLine()!
+let peperoTopping = readLine()!
 print("아이스크림 막대길이를 입력하세요: ", terminator: "")
 let handleLength = Int(readLine()!)!
 
-makeIceCream(iceCreamHeight: iceCreamHeight, iceCreamBody: iceCreamBody, iceCreamTopping: iceCreamTopping, handleLength: handleLength)
+makePepero(peperoHeight: peperoHeight, peperoBody: peperoBody, peperoTopping: peperoTopping, handleLength: handleLength)
