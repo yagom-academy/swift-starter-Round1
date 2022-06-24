@@ -9,8 +9,8 @@
 import Foundation
 
 func makeIceCream(){
-    for countingstars in 0...7{
-        for nightpearl in 0...10 {
+    for _ in 0...7{
+        for _ in 0...10 {
             print("*",terminator: "")
         }
         print("")
@@ -18,7 +18,7 @@ func makeIceCream(){
 }
 
 func makeIceBar(){
-    for horizobtalbar in 0...3 {
+    for _ in 0...3 {
         print("    | |    ")
     }
 }
