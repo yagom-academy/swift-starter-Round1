@@ -2,7 +2,7 @@ import Foundation
 
 func printIceCreamBody() {
     for _ in 1...8 {
-        print(" ***********")
+        print("***********")
     }
 }
 
