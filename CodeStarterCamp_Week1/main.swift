@@ -8,17 +8,30 @@
 
 import Foundation
 
-func drawPopsicleBody() {
-    for bodyRow in 1...8 {
-        print("***********")
+func drawPeperoStick(Length: Int) {
+    for _ in 1...Length {
+        print(" | |")
+    }
+}
+func drawPeperoToppingBody(body: String, topping: String) -> String {
+    return (topping + body + topping)
+}
+func calculatePeperoBodyLength(Length: Int, toppingBody: String) {
+    for _ in 1...Length {
+        print(toppingBody)
     }
 }
 
-func drawPopsicleStick() {
-    for stickRow in 1...4 {
-        print("    | |")
-    }
+func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int) {
+    print("<정보>")
+    print("길이: \(bodyLength)")
+    print("몸통: \(body)")
+    print("토핑: \(topping)")
+    print("막대길이: \(stickLength)\n")
+    
+    let toppingBody = drawPeperoToppingBody(body: body, topping: topping)
+    calculatePeperoBodyLength(Length: bodyLength, toppingBody: toppingBody)
+    drawPeperoStick(Length: stickLength)
 }
 
-drawPopsicleBody()
-drawPopsicleStick()
+drawPepero(bodyLength: 6, body: "|0|", topping: " ", stickLength: 4)
