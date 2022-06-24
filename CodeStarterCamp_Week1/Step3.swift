@@ -9,7 +9,7 @@ import Foundation
 
 
 
-var peperoBody: String = String()
+var peperoBodyPart: String = String()
 
 func makeStick(size: Int) {
     for _ in 0..<size {
@@ -18,14 +18,19 @@ func makeStick(size: Int) {
 }
 
 func makeBodyPart(body: String, topping: String) {
-    peperoBody = " " + topping + body + topping
+    
+    if topping.isEmpty {
+        peperoBodyPart = "  " + topping + body + topping
+    }else{
+        peperoBodyPart = " " + topping + body + topping
+    }
+    
 }
-
 
 
 func makeBodyAll(size: Int) {
     for _ in 0..<size {
-        print(peperoBody)
+        print(peperoBodyPart)
     }
 }
    
@@ -36,10 +41,4 @@ func customPepero(bodySize: Int, topping: String, handleSize: Int, body: String 
     makeBodyAll(size: bodySize)
     makeStick(size: handleSize)
 }
-//for _ in 0..<length {
-//    for _ in 1...3{
-//        print("*", terminator: "")
-//    }
-//    print()
-//}
 
