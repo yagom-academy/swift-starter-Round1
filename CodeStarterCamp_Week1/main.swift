@@ -8,5 +8,23 @@
 
 import Foundation
 
-print("Hello, World!")
+var name = "cream"
 
+func cream() {
+for _ in 1...8 {
+    for _ in 1...11{
+        print("*", terminator: "")
+    }; print(terminator:"\n")
+}
+}
+
+name = "stick"
+
+func stick() {
+    for _ in 1...4 {
+ print("    | |    ")
+}
+}
+
+cream()
+stick()
