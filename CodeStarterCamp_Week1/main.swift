@@ -6,30 +6,20 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
-
-print("Hello, World!")
-
-func icecream (x:Int) -> String{
+func MakeIceCream() -> String{
     return "***********"
 }
-print(icecream(x:1))
 
 for _ in 1...8{
-    print(icecream(x:1))
+    print(MakeIceCream())
 }
 
-func hardbar (x:Int) -> String{
-    return "    |  |    "
+func MakeIceCreamHardBar() {
+    print("    | |    ")
 }
+
 for _ in 1...4{
-    print(hardbar(x: 1))
+   MakeIceCreamHardBar()
 }
-
-//for number in 1...8{
-//    let a = icecream(x:1)
-//    print (a)
-//}
-
 
 
