@@ -3,7 +3,6 @@
 //  CodeStarterCamp_Week1
 //
 //  Created by 한겨레 on 2022/06/23.
-//
 
 import Foundation //기본적인 기능을 구현하기 위해서 필수적으로 import되어야하는 Framework정도?
 
