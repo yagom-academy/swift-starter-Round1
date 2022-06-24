@@ -16,7 +16,7 @@ func makeBar(barLength: Int){
     }
 }
 //요구사항2. 몸통 ,토핑을 매개변수로 받아 토핑과 몸통을 그리는 함수.
-func makeBody(bodyShape:String,toppingShape:String)->String{
+func makeBody(bodyShape: String,toppingShape: String)->String{
     if(bodyShape == nudeDesign){
         return " \(bodyShape)"
     }//누드뺴뺴로
@@ -28,7 +28,7 @@ func makeBody(bodyShape:String,toppingShape:String)->String{
     }//토핑이 있는 빼빼로는 앞뒤에 토핑을 추가
 }
 //요구사항3. 길이(Int)에 따라 몸통을 그리는 함수
-func drawBody(bodyHeight:Int,makeBody:String){
+func drawBody(bodyHeight: Int,makeBody: String){
     for count in 1...bodyHeight{
         print(makeBody)
     }
