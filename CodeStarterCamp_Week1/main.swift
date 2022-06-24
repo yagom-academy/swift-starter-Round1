@@ -1,13 +1,16 @@
+import Foundation
+
+
 // 아이스크림 몸통 그리기 함수
 func makeBody(bodyHeight:Int){
-    for _ in 1...bodyHeight{
+    for cup in 1...bodyHeight{
         print("***********")
     }
 }
 
 //아이스크림 바 그리기 함수
 func makeBar(barHeight:Int){
-    for _ in 1...barHeight{
+    for car in 1...barHeight{
         print("    | |")
     }
 }
