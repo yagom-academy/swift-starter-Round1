@@ -52,3 +52,15 @@ makeIceCream(iceCreamHeight: 6, iceCreamBody: "|0|", iceCreamTopping: "", handle
 //MARK: 자신만의 아이스크림을 만들어보자
 makeIceCream(iceCreamHeight: 10, iceCreamBody: "**#**", iceCreamTopping: "##$$", handleLength: 4)
 
+//MARK: user input practice
+print("<정보>")
+print("아이스크림 길이를 입력하세요: ", terminator: "")
+let iceCreamHeight = Int(readLine()!)!
+print("아이스크림 몸통를 입력하세요: ", terminator: "")
+let iceCreamBody = readLine()!
+print("아이스크림 토핑를 입력하세요: ", terminator: "")
+let iceCreamTopping = readLine()!
+print("아이스크림 막대길이를 입력하세요: ", terminator: "")
+let handleLength = Int(readLine()!)!
+
+makeIceCream(iceCreamHeight: iceCreamHeight, iceCreamBody: iceCreamBody, iceCreamTopping: iceCreamTopping, handleLength: handleLength)
