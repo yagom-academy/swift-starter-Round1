@@ -31,5 +31,5 @@ makeIceCream(layer: 8)
 makeHandle(4)
 
 // custom
-customPepero(bodySize: 10, topping: "", handleSize: 4)
+customPepero(bodySize: 10, topping: "", handleSize: 4, body:"|0|")
 

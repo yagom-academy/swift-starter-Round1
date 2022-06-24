@@ -35,7 +35,7 @@ func makeBodyAll(size: Int) {
 }
    
 
-func customPepero(bodySize: Int, topping: String, handleSize: Int, body: String = "***", handle: String = "    | |    ") {
+func customPepero(bodySize: Int, topping: String, handleSize: Int, body: String, handle: String = "    | |    ") {
     print(" <정보>\n 길이: \(bodySize)\n 몸통: \(body)\n 토핑: \(topping)\n 막대길이: \(handleSize)\n")
     makeBodyPart(body: body, topping: topping)
     makeBodyAll(size: bodySize)
