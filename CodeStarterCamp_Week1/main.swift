@@ -6,20 +6,20 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-func MakeIceCream() -> String{
+func makeIceCream() -> String{
     return "***********"
 }
 
 for _ in 1...8{
-    print(MakeIceCream())
+    print(makeIceCream())
 }
 
-func MakeIceCreamHardBar() {
+func makeIceCreamHardbar() {
     print("    | |    ")
 }
 
 for _ in 1...4{
-   MakeIceCreamHardBar()
+   makeIceCreamHardbar()
 }
 
 
