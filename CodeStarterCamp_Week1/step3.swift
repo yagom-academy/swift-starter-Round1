@@ -23,9 +23,9 @@ func drawBar(lengthBar: Int, toppingBody: String) {    //bar를 print 해준다.
 func returnToppingBody(body: String, topping: String) -> String {   //한 줄에 출력될 body,topping 반환해줌
     return "\(topping)\(body)\(topping)"
 }
-func drawBody(lengthBody: Int, toppingBody: String) {   //body를 길이 만큼 출력
-    for _ in 1...lengthBody {
-        print("\(toppingBody)")
+func drawBody(length: Int, topping: String) {   //body를 길이 만큼 출력
+    for _ in 1...length {
+        print("\(topping)")
     }
 }
 func draw(lengthBody: Int = 10, body: String = "***", topping: String = " ", lengthBar: Int = 4 ) {  //매개변수를 받아서 함수를 출력
@@ -37,7 +37,7 @@ func draw(lengthBody: Int = 10, body: String = "***", topping: String = " ", len
     print("토핑: \(topping)")
     print("막대길이: \(lengthBar)\n")
     
-    drawBody(lengthBody: lengthBody, toppingBody: toppingBody)
+    drawBody(length: lengthBody, topping: toppingBody)
     drawBar(lengthBar: lengthBar, toppingBody: toppingBody)
     
 }
