@@ -8,5 +8,20 @@
 
 import Foundation
 
-print("Hello, World!")
+func makeIceCream(){
+    for _ in 0...7{
+        for _ in 0...10 {
+            print("*",terminator: "")
+        }
+        print("")
+    }
+}
 
+func makeIceBar(){
+    for _ in 0...3 {
+        print("    | |    ")
+    }
+}
+
+makeIceCream()
+makeIceBar()
