@@ -7,21 +7,23 @@
 //
 
 import Foundation
+//
+//func makeIceCream(){
+//    for _ in 0...7{
+//        for _ in 0...10 {
+//            print("*",terminator: "")
+//        }
+//        print("")
+//    }
+//}
+//
+//func makeIceBar(){
+//    for _ in 0...3 {
+//        print("    | |    ")
+//    }
+//}
+//
+//makeIceCream()
+//makeIceBar()
 
-func makeIceCream(){
-    for _ in 0...7{
-        for _ in 0...10 {
-            print("*",terminator: "")
-        }
-        print("")
-    }
-}
-
-func makeIceBar(){
-    for _ in 0...3 {
-        print("    | |    ")
-    }
-}
-
-makeIceCream()
-makeIceBar()
+makeYammyBar(bodyLength: 6, bodyShape: "|0|", bodyTopping: "*", footLength: 4)
