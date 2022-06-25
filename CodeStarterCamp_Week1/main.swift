@@ -6,25 +6,20 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
 
-var name = "cream"
-
-func cream() {
+func makeIceCream() {
 for _ in 1...8 {
     for _ in 1...11{
         print("*", terminator: "")
-    }; print(terminator:"\n")
-}
+      }; print(terminator:"\n")
+   }
 }
 
-name = "stick"
-
-func stick() {
+func makeStick() {
     for _ in 1...4 {
- print("    | |    ")
-}
+      print("    | |    ")
+   }
 }
 
-cream()
-stick()
+makeIceCream()
+makeStick()
