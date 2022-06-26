@@ -6,7 +6,20 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
 
-print("Hello, World!")
+func makeIceCream() {
+for _ in 1...8 {
+    for _ in 1...11{
+        print("*", terminator: "")
+      }; print(terminator:"\n")
+   }
+}
 
+func makeStick() {
+    for _ in 1...4 {
+      print("    | |    ")
+   }
+}
+
+makeIceCream()
+makeStick()
