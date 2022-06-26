@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 var peperoBodyPart: String = String()
 
 func makeStick(size: Int) {
@@ -20,11 +18,10 @@ func makeStick(size: Int) {
 func makeBodyPart(body: String, topping: String) {
     if topping.isEmpty {
         peperoBodyPart = "  " + topping + body + topping
-    }else{
+    } else {
         peperoBodyPart = " " + topping + body + topping
     }
 }
-
 
 func makeBodyAll(size: Int) {
     for _ in 0..<size {
@@ -32,7 +29,6 @@ func makeBodyAll(size: Int) {
     }
 }
    
-
 func customPepero(bodySize: Int, topping: String, handleSize: Int, body: String, handle: String = "    | |    ") {
     print("""
          <정보>
@@ -45,4 +41,3 @@ func customPepero(bodySize: Int, topping: String, handleSize: Int, body: String,
     makeBodyAll(size: bodySize)
     makeStick(size: handleSize)
 }
-
