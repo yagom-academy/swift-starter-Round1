@@ -6,7 +6,20 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
+func makeIceCream() -> String{
+    return "***********"
+}
 
-print("Hello, World!")
+for _ in 1...8{
+    print(makeIceCream())
+}
+
+func makeIceCreamHardbar() {
+    print("    | |    ")
+}
+
+for _ in 1...4{
+   makeIceCreamHardbar()
+}
+
 
