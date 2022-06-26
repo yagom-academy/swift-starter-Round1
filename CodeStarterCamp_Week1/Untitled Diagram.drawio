@@ -1,1 +1,58 @@
-<mxfile host="app.diagrams.net" modified="2022-06-26T08:44:13.257Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.3 Safari/605.1.15" version="20.0.3" etag="2FHvdcKs6PpC-0w_iL0z" type="github"><diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">7VhZc9MwEP41Hp5gfBQnecRp0wKhU2ihw6NiK7aI7DWynINfzyqWYzsOOYD0yDQv0a43K2m/b4/YcPrx/FKQNPoEAeWGbQZzwzk3bNuybQe/lGZRaLq9bqEIBQu0UaW4Zb+oVppam7OAZg1DCcAlS5tKH5KE+rKhI0LArGk2Bt7cNSUhbSlufcLb2nsWyEjfwu5U+ivKwqjc2XJ7xZOYlMb6JllEApjVVM6F4fQFgCxW8bxPuQpeGZf794t7Ppy4lx8+Zz/JV+/j3fW314WzwSE/WV1B0ET+X9d24XpKeK7jpe8qF2UABeRJQJUT03C8SMYclxYuf1ApFxpwkktAFQgZQQgJ4UOAVNuNIZHazFIyTYJ3CliURxz8SaEaMM71Hihp+y5KmRQwWWGnHKyAUMacjCj3iD8JlwftAweBjxJIqHIVIBn0XarDXVRab8/YagwyyIVPt9jpbJFEhHSbP7ewU+er8VQjd0khplIs0EBQTiSbNslMdE6EK7sKd1xo6A+ggdOiwZDEqcp6oFnySuJqBmKyhRsKl1nEJL1NyTJAMywnTb7UeYBX9UJOskyjuAPkw0CaUiHpfGtYy6euzu2yuGlxVlUKq0z/qFYlzswjAXHWAuI7Fs+XlPyXlHT3TMmyY+3MSU2Wkhh7p6j2dAMskTUTGI8zPNg6dVYb/j2b3rbYdA0tMu3G41nT7ZHI1DmMS9aT55L7hxbhcgyDNxK4CtUq5XkYIlnQXWI4g3btiiAe5dnudtHAWDFoQGLGVbyuKJ9SyXyyoakQzkLc99xHuKnYTB7ckiUhSm4l3S3JivX3iM2m02w2K7nebcwN3aZ7rG7TaWF6g+gV0NkmX+J7Yh3fsddA6D12y+/uU6SfdQl+8I5fVtPdLd/as0xr9phvHPw0CPT0p4DeXjPlyxhwHIbZpzYIlCes8cnL+ag9CYxykSwHAcjlyySwbRKwNzWhB50EykJYA/ULTQlDMM3hKc4B6//8z5zHngPKStGEgKuY2maRYSeGwfos5ljHwwDF6k1tUQqr993OxW8=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-26T09:31:06.022Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.3 Safari/605.1.15" etag="dO6VzZ-fPue18cWvfVYh" version="20.0.3" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1018" dy="690" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="LvunvnlRqouOMN42FH6n-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="WIyWlLk6GJQsqaUBKTNV-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="*를 11번 쓰기! 하지만 &amp;nbsp;일일이 쓰는게 아니라 반복문 이용해야겠다!&lt;br&gt;for _ in 1...11" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="375" y="80" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LvunvnlRqouOMN42FH6n-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-7" target="LvunvnlRqouOMN42FH6n-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="근데 그냥 print를 하면 한줄 띄기가 되니까 안되도록 &lt;br&gt;print(&quot;*&quot;,terminator: &quot;&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="390" y="190" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="LvunvnlRqouOMN42FH6n-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LvunvnlRqouOMN42FH6n-0" target="WIyWlLk6GJQsqaUBKTNV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LvunvnlRqouOMN42FH6n-0" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;아이스크림부분&lt;br&gt;시작&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="10" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LvunvnlRqouOMN42FH6n-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LvunvnlRqouOMN42FH6n-8" target="LvunvnlRqouOMN42FH6n-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LvunvnlRqouOMN42FH6n-8" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;그렇게 줄이 한줄 생겼는데&lt;br&gt;(***********)&lt;br&gt;&amp;nbsp;이거를 몇 번 반복할지를 &lt;br&gt;함수의 Int인 argument로 &lt;br&gt;받아야겠다!&lt;br&gt;func ice cream(x: Int){&lt;br&gt;for _ in 1...x&lt;br&gt;}&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="370" y="360" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="LvunvnlRqouOMN42FH6n-10" value="문제는 그냥 &amp;nbsp;단순 반복하면 ***********가 한줄씩 &lt;br&gt;나오는 것이 아니라&lt;br&gt;terminator:&quot;&quot; 때문에 &lt;br&gt;이어서 쭉 출력된다는 것!&lt;br&gt;본래 print의 default값처럼 &lt;br&gt;출력되도록 하기 위해&lt;br&gt;print()를 추가하기!" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="366.25" y="585" width="167.5" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="LvunvnlRqouOMN42FH6n-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LvunvnlRqouOMN42FH6n-13" target="LvunvnlRqouOMN42FH6n-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LvunvnlRqouOMN42FH6n-13" value="막대기 부분 시작" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="610" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LvunvnlRqouOMN42FH6n-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LvunvnlRqouOMN42FH6n-14" target="LvunvnlRqouOMN42FH6n-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LvunvnlRqouOMN42FH6n-14" value="&quot;|&quot;부분을 세어보니.&lt;br&gt;5번째여서 4칸의 공백을 주고 &quot;|&quot;를 다음 인수로 주면 되겠다고 생각했는데 아니었음!" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="610" y="130" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="LvunvnlRqouOMN42FH6n-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LvunvnlRqouOMN42FH6n-16" target="LvunvnlRqouOMN42FH6n-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LvunvnlRqouOMN42FH6n-16" value="왜 그런가 봤더니 print의 인자끼리는 separator의 default가 &quot; &quot;기 때문에 한칸 띄워져서 처음에 4칸이 아니라 3칸을 치면 되는거였음!" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="610" y="340" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="LvunvnlRqouOMN42FH6n-18" value="이렇게 완성된 것&lt;br&gt;print(&quot; &amp;nbsp; &quot;, &quot;|&quot;, &quot;|&quot;)&lt;br&gt;이거를 4번 반복하도록 반복문을 만들고 몇번 반복할지는 함수의 인자로 주어 함수 안에 반복문을 만드는 형태로 하기!&lt;br&gt;func stick(y: Int){&lt;br&gt;for _ in 1...y{&lt;br&gt;}&lt;br&gt;}" style="whiteSpace=wrap;html=1;fontSize=13;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="610" y="540" width="120" height="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
