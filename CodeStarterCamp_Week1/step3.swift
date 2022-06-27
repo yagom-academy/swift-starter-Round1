@@ -8,12 +8,13 @@
 import Foundation
 
 func printPeperoHandle(length: Int, peperoBodyShape: String) {
+    let peperoBodyWidth = peperoBodyShape.count
     for _ in 1...length {
-        if (peperoBodyShape.count == 4) {
+        if (peperoBodyWidth == 4) {
             print(" | |")
         }
         else {
-            for _ in 2...(peperoBodyShape.count/2) {
+            for _ in 2...(peperoBodyWidth / 2) {
                 print(" ", terminator: "")
             }
             print("| |")
@@ -22,11 +23,12 @@ func printPeperoHandle(length: Int, peperoBodyShape: String) {
 }
 
 func returnPeperoBodyShape(body: String, topping: String) -> String {
-    if ((topping + body + topping).count == 3) {
-        return (" " + topping + body + topping)
+    let peperoBodyShape = topping + body + topping
+    if ((peperoBodyShape).count == 3) {
+        return (" " + peperoBodyShape)
     }
     else {
-        return (topping + body + topping)
+        return peperoBodyShape
     }
 }
 
@@ -37,7 +39,15 @@ func printWholePeperoBody(height: Int, bodyShape: String) {
 }
 
 func makePepero(height: Int, body: String, topping: String, handleLength: Int) {
-    print("<정보>\n길이: \(height)\n몸통: \(body)\n토핑: \(topping)\n막대길이: \(handleLength)\n")
+    let peperoInfomations = """
+    <정보>
+    길이: \(height)
+    몸통: \(body)
+    토핑: \(topping)
+    막대길이: \(handleLength)
+    
+    """
+    print(peperoInfomations)
     printWholePeperoBody(height: height, bodyShape: returnPeperoBodyShape(body: body, topping: topping))
     printPeperoHandle(length: handleLength, peperoBodyShape: returnPeperoBodyShape(body: body,topping: topping))
     print()
