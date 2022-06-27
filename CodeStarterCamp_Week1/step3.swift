@@ -22,7 +22,7 @@ func printPeperoHandle(length: Int, peperoBodyShape: String) {
     }
 }
 
-func returnPeperoBodyShape(body: String, topping: String) -> String {
+func assemblePeperoBodyShape(body: String, topping: String) -> String {
     let peperoBodyShape = topping + body + topping
     if ((peperoBodyShape).count == 3) {
         return (" " + peperoBodyShape)
@@ -48,8 +48,9 @@ func makePepero(height: Int, body: String, topping: String, handleLength: Int) {
     
     """
     print(peperoInfomations)
-    printWholePeperoBody(height: height, bodyShape: returnPeperoBodyShape(body: body, topping: topping))
-    printPeperoHandle(length: handleLength, peperoBodyShape: returnPeperoBodyShape(body: body,topping: topping))
+    let bodyShape = assemblePeperoBodyShape(body: body, topping: topping)
+    printWholePeperoBody(height: height, bodyShape: bodyShape)
+    printPeperoHandle(length: handleLength, peperoBodyShape: bodyShape)
     print()
 }
 
