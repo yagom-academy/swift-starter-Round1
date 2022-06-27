@@ -1,12 +1,2 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
-
-import Foundation
-
-print("Hello, World!")
-
+iceCream(width: 11, height: 8)
+iceCreamBar(width: 11, height: 8)
