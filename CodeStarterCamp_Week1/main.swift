@@ -8,4 +8,19 @@
 
 import Foundation
 
-print("Hello World")
+func drawHead(size : Int, size2 : Int){
+    for _ in 0..<size{
+        for _ in 0..<size2{
+            print("*", terminator: "")
+        }
+        print("")
+    }
+}
+drawHead(size: 8, size2: 11)
+
+func drawBody(size : Int){
+    for _ in 0..<size{
+        print("    | |")
+    }
+}
+drawBody(size: 4)
