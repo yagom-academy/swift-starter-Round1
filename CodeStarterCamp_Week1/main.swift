@@ -20,9 +20,9 @@ func printPepero(bodyLength: Int,
     
     """
     print(peperoInformation)
-    printPeperoBody(length: bodyLength,
-                    bodyShape: bodyShape,
-                    toppingShape: toppingShape)
+    printPeperoAllBody(length: bodyLength,
+                       bodyShape: bodyShape,
+                       toppingShape: toppingShape)
     printPeperoStick(length: stickLength)
     print()
 }
@@ -33,13 +33,13 @@ func printPeperoStick(length: Int) {
     }
 }
 
-func printPeperoBodyAndTopping(bodyshape: String, toppingShape: String) {
-    print("\(toppingShape)\(bodyshape)\(toppingShape)")
+func printPeperoBodyAndTopping(bodyShape: String, toppingShape: String) {
+    print("\(toppingShape)\(bodyShape)\(toppingShape)")
 }
 
-func printPeperoBody(length: Int, bodyShape: String, toppingShape: String) {
+func printPeperoAllBody(length: Int, bodyShape: String, toppingShape: String) {
     for _ in 1...length {
-        printPeperoBodyAndTopping(bodyshape: bodyShape,
+        printPeperoBodyAndTopping(bodyShape: bodyShape,
                                   toppingShape: toppingShape)
     }
 }
