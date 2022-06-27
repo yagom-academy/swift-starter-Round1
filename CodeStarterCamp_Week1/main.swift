@@ -2,20 +2,12 @@
 //  main.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 한서영 on 2022/06/22.
 //
 import Foundation
 
-func drawIcecream(rowIcecream : Int) {
-    for count in 1...rowIcecream{
-        print("***********")}
-}
-func drawBar(rowBar : Int) {
-    for count in 1...rowBar{
-        print("    | |")}
-}
 
-drawIcecream(rowIcecream: 8)
-
-drawBar(rowBar: 4)
+draw(lengthBody: 10, body: "***", lengthBar: 4)
+draw(lengthBody: 12, body: "***", topping: "&", lengthBar: 4)
+draw(lengthBody: 12, body: "***", topping: "#", lengthBar: 6)
+draw(lengthBody: 6, body: "|0|", lengthBar: 4)
