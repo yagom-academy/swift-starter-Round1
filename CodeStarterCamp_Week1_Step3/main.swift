@@ -16,8 +16,13 @@
 //  - 실행 예시의 빼빼로가 모두 출력되어야 함
 //  - 자신만의 토핑, 몸통, 막대 등을 만들어 출력해봅시다.
 //
-//  * 함수는 소문자 동사 시작, 변수는 소문자 명사 시작
-
+// * 함수명/변수명
+//  - "함수는 소문자 동사 시작, 변수는 소문자 명사 시작"이 항상 옳은 것은 아님.
+//  - 함수지만 명사 혹은 동명사를 사용하는 경우가 있음.
+//  - 전치사를 생략할 수 있으면 생략해도 됨.
+//  - 모호함을 피하라 == 이름의 길이가 길어지는 것에 거부감을 갖지마라
+//  - 불필요한 단어를 생각하라 == 전달인자나 매개변수 명에 이미 있는 단어를 함수명에 중복하여 사용하지 말라!
+//
 
 import Foundation
 
@@ -33,7 +38,7 @@ func drawStick(height: Int) {
 
 // 2. 몸통(String), 토핑(String)을 매개변수로 받아 토핑과 몸통을 그리는 함수
 func designBody(body: String, topping: String) -> String {
-    let toppingResult: String = "\(topping)\(body)\(topping)"
+    let toppingResult = "\(topping)\(body)\(topping)"
     return toppingResult
 }
 
@@ -44,32 +49,28 @@ func drawBody(body: String, height: Int) {
     }
 }
 
-// 4. 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
-func orderPepero(heightOfBody: Int = 10, body: String = "***", topping: String = " ",  heightOfStick: Int = 4) {
-    
-    exampleCount = exampleCount + 1
-    print("-- 실행 예시 \(exampleCount) --")
-    
+func printInfomation(bodyHeight: Int, body: String, topping: String, stickHeight: Int) {
+    exampleCount += 1
+    print("\n-- 실행 예시 \(exampleCount) --")
     print("<정보>")
-    print("길이: \(heightOfBody)")
+    print("길이: \(bodyHeight)")
     print("몸통: \(body)")
     print("토핑: \(topping)")
-    print("막대길이: \(heightOfStick) \n")
+    print("막대길이: \(stickHeight) \n")
+}
+
+// 4. 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
+func orderPepero(bodyHeight: Int = 10, body: String = "***", topping: String = " ",  stickHeight: Int = 4) {
+        
+    let toppingBody = designBody(body: body, topping: topping)
     
-    let bodyWithTopping = designBody(body: body, topping: topping)
-    
-    drawBody(body: bodyWithTopping, height: heightOfBody)
-    drawStick(height: heightOfStick)
-    
-    print("")
+    printInfomation(bodyHeight: bodyHeight, body: body, topping: topping, stickHeight: stickHeight)
+    drawBody(body: toppingBody, height: bodyHeight)
+    drawStick(height: stickHeight)
 }
 
 orderPepero()
-orderPepero(heightOfBody: 12, body: "***", topping: "&", heightOfStick: 4)
-orderPepero(heightOfBody: 12, body: "***", topping: "#", heightOfStick: 6)
-orderPepero(heightOfBody: 6, body: "|0|", heightOfStick: 4)
-orderPepero(body: "///", topping: "*", heightOfStick: 4) // 크런치 빼빼로
-
-
-// 순서도: let bodyWithTopping = designBody(body: body, topping: topping)
-// 변수 공간을 먼저 잡는 것이 먼저인지, 함수 실행이 먼저?
+orderPepero(bodyHeight: 12, body: "***", topping: "&", stickHeight: 4)
+orderPepero(bodyHeight: 12, body: "***", topping: "#", stickHeight: 6)
+orderPepero(bodyHeight: 6, body: "|0|", stickHeight: 4)
+orderPepero(body: "///", topping: "*", stickHeight: 4) // 크런치 빼빼로
