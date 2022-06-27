@@ -8,5 +8,27 @@
 
 import Foundation
 
-print("Hello, World!")
+/*(1)
+ 아이스크림 부분 행 : * x 8
+ 아이스크림 부분 열 : * x 11
+ */
 
+func TopIcecream() {
+     for _ in 1...8 {
+         print("***********")
+     }
+}
+
+/*(2)
+ 막대기 부분 행 :"    | |    "
+ 막대기 부분 열 :"    | |    " x 4
+ */
+
+func BelowBar() {
+     for _ in 1...4{
+         print("    | |    ")
+     }
+}
+
+TopIcecream()
+BelowBar()
