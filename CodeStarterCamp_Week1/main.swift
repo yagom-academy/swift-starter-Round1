@@ -26,4 +26,4 @@ import Foundation
 //makeIceCream()
 //makeIceBar()
 
-makeYammyBar(bodyLength: 6, bodyShape: "|0|", bodyTopping: "*", footLength: 4)
+makeYammyBar(bodyLength: 6, bodyShape: "|0|", bodyTopping: "", footLength: 4)
