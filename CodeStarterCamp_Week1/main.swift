@@ -27,3 +27,7 @@ func drawStick() {
 
 drawIceCream()
 drawStick()
+
+print("<정보>\n길이: \(iceCreamsize)\n몸통: \(iceCreamshape)\n토핑: \(topping)\n막대길이: \(stickSize)\n")
+
+cookIceCream()
