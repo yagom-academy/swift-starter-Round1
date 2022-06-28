@@ -9,7 +9,7 @@ func makeIceCream(width: Int, height: Int) {
 
 
 func addBar(width: Int, barLength: Int) {
-    for _ in 1...(barLength/2){
+    for _ in 1...(barLength){
         for j in 1...width{
             if j == (width / 2) || j == (width/2 + 2){
                 print("|", terminator: "")

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
+		C830BB8A286B532A0009A497 /* PeperoMake.swift in Sources */ = {isa = PBXBuildFile; fileRef = C830BB89286B532A0009A497 /* PeperoMake.swift */; };
 		C8F35C992869BA8D00CE9799 /* IcecreamMake.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F35C982869BA8D00CE9799 /* IcecreamMake.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C830BB89286B532A0009A497 /* PeperoMake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeperoMake.swift; sourceTree = "<group>"; };
 		C8F35C982869BA8D00CE9799 /* IcecreamMake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcecreamMake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 			children = (
 				34811DAE274B938F00A1E994 /* main.swift */,
 				C8F35C982869BA8D00CE9799 /* IcecreamMake.swift */,
+				C830BB89286B532A0009A497 /* PeperoMake.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			files = (
 				C8F35C992869BA8D00CE9799 /* IcecreamMake.swift in Sources */,
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
+				C830BB8A286B532A0009A497 /* PeperoMake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
