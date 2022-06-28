@@ -13,7 +13,7 @@ import Foundation
  아이스크림 부분 열 : * x 11
  */
 
-func TopIcecream() {
+func icecreamBody() {
      for _ in 1...8 {
          print("***********")
      }
@@ -24,11 +24,11 @@ func TopIcecream() {
  막대기 부분 열 :"    | |    " x 4
  */
 
-func BelowBar() {
+func icecreamStick() {
      for _ in 1...4{
          print("    | |    ")
      }
 }
 
-TopIcecream()
-BelowBar()
+icecreamBody()
+icecreamStick()
