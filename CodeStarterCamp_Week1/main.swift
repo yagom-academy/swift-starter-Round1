@@ -8,5 +8,11 @@
 
 import Foundation
 
-print("Hello, World!")
 
+for icecream in 1...8 {
+    print("***********")
+}
+
+for stick in 1...4 {
+    print("    | |")
+}
