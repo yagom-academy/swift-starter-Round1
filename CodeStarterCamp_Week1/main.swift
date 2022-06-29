@@ -21,5 +21,5 @@ func drawedIceStick() -> Void {
     
 }
 
-drawedIceBar();
-drawedIceStick();
+drawedIceBar()
+drawedIceStick()
