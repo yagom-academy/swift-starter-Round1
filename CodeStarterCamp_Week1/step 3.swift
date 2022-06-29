@@ -7,33 +7,24 @@
 
 import Foundation
 
-let stickShape: String = " | |"
-var peperoTopping: String = " "
-var peperoShape: String = "***"
-var stickSize: Int = 4
-var peperoSize: Int = 10
-
-func drawStickBody(size: Int) {
+func drawStickBody(size: Int, shape: String) {
     for _ in 1...size {
-        print(stickShape)
+        print(shape)
     }
 }
 
-func drawPeperoPart(body: String, topping: String) -> String {
-    return topping + body + topping
+func drawPeperoPart(shape: String, topping: String) -> String {
+    return topping + shape + topping
 }
 
-func drawPeperoBody(size: Int) {
+func drawPeperoBody(size: Int, shape: String, topping: String) {
     for _ in 1...size {
-        print(drawPeperoPart(body: peperoShape, topping: peperoTopping))
+        print(drawPeperoPart(shape: shape, topping: topping))
     }
 }
 
-func cookPepero() {
-            drawPeperoBody(size: peperoSize)
-            drawStickBody(size: stickSize)
-}
-
-func printInformation() {
-    print("\n<정보>\n길이: \(peperoSize)\n몸통: \(peperoShape)\n토핑: \(peperoTopping)\n막대길이: \(stickSize)\n")
+func cookPepero(peperoSize: Int, peperoShape: String, topping: String, stickSize: Int, stickShape: String) {
+    print("\n<정보>\n길이: \(peperoSize)\n몸통: \(drawPeperoPart(shape: peperoShape, topping: topping))\n토핑: \(topping)\n막대길이: \(stickSize)\n")
+    drawPeperoBody(size: peperoSize, shape: peperoShape, topping: topping)
+    drawStickBody(size: stickSize, shape: stickShape)
 }
