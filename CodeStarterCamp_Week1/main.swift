@@ -10,20 +10,10 @@ import Foundation
 
 print("Hello, World!")
 
-let iceCream = "***********"
-let stick = "    | |"
-
-func drawIceCream() {
-    for _ in 1...8 {
-        print("\(iceCream)")
-    }
-}
-
-func drawStick() {
-    for _ in 1...4 {
-        print("\(stick)")
-    }
-}
-
 drawIceCream()
 drawStick()
+
+cookPepero(peperoSize: 10, peperoShape: "***", topping: " ", stickSize: 4, stickShape: " | |")
+cookPepero(peperoSize: 12, peperoShape: "***", topping: "&", stickSize: 4, stickShape: " | |")
+cookPepero(peperoSize: 12, peperoShape: "***", topping: "#", stickSize: 6, stickShape: " | |")
+cookPepero(peperoSize: 6, peperoShape: "|0|", topping: " ", stickSize: 4, stickShape: " | |")
