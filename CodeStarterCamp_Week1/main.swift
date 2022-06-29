@@ -8,10 +8,17 @@
 
 import Foundation
 
-for _ in 1...8{
-    print("***********")
+func icecreamHead(Head: Int) {
+    for _ in 1...Head{
+        print("***********")
+    }
 }
 
-for _ in 1...4 {
-    print("    | |")
+func icecreamBody(Body: Int) {
+    for _ in 1...Body{
+        print("    | |")
+    }
 }
+
+icecreamHead(Head: 8)
+icecreamBody(Body: 4)
