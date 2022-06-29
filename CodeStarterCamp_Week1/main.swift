@@ -8,19 +8,19 @@
 
 import Foundation
 
-func drawHead(size : Int, size2 : Int){
-    for _ in 0..<size{
-        for _ in 0..<size2{
+func drawHead(height : Int, width : Int){
+    for _ in 0..<height{
+        for _ in 0..<width{
             print("*", terminator: "")
         }
         print("")
     }
 }
-drawHead(size: 8, size2: 11)
+drawHead(height: 8, width: 11)
 
-func drawBody(size : Int){
-    for _ in 0..<size{
+func drawBody(height : Int){
+    for _ in 0..<height{
         print("    | |")
     }
 }
-drawBody(size: 4)
+drawBody(height: 4)
