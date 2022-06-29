@@ -8,11 +8,10 @@
 
 import Foundation
 
-
-for icecream in 1...8 {
+for _ in 1...8{
     print("***********")
 }
 
-for stick in 1...4 {
+for _ in 1...4 {
     print("    | |")
 }
