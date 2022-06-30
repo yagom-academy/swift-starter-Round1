@@ -8,5 +8,17 @@
 
 import Foundation
 
-print("Hello, World!")
+func drawedIceBar() -> Void {
+    for _ in 1...8 {
+        print("***********")
+    }
+}
 
+func drawedIceStick() -> Void {
+    for _ in 1...4 {
+        print("    | |")
+    }
+}
+
+drawedIceBar()
+drawedIceStick()
