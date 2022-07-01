@@ -43,3 +43,10 @@ func drawOneLineOfToppedIceCreamBody(typeOfBody: String, typeOfTopping: String) 
     return orderOfTopping_Body
 }
 
+
+// 길이에 따른 전체 아이스크림 부분 구현 (whole line)
+func drawIceCreamBodyWholeLine(lengthOfIceCreamBody: Int, oneLineOfToppingBody: String) {
+    for printingOnlyIceCreamBody in 0..<lengthOfIceCreamBody {
+        print(oneLineOfToppingBody)
+    }
+}
