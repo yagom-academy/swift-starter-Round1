@@ -31,3 +31,15 @@ func drawBarOfIceCream(lengthOfIceCreamBody: Int) {
         }
     }
 }
+
+// 몸통, 토핑에 따른 아이스크림 부분 구현(one line)
+func drawOneLineOfToppedIceCreamBody(typeOfBody: String, typeOfTopping: String) -> String {
+    
+    var orderOfTopping_Body: String = "\(typeOfTopping)\(typeOfBody)\(typeOfTopping)"
+    
+    if typeOfTopping == "" {
+            orderOfTopping_Body = " " + orderOfTopping_Body
+    }
+    return orderOfTopping_Body
+}
+
