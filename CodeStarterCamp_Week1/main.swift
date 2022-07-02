@@ -1,24 +1,15 @@
 //
-//  main.swift
+//  CodeStarterCamp_step3.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 조용현 on 2022/07/01.
 //
 
 import Foundation
 
-func icecreamHead(Head: Int) {
-    for _ in 1...Head{
-        print("***********")
-    }
+func makeIcecream(body: String, topping: String){
+    print("\(topping) \(body) \(topping)")
 }
 
-func icecreamBody(Body: Int) {
-    for _ in 1...Body{
-        print("    | |")
-    }
-}
+makeIcecream(body: "바보", topping: "천재")
 
-icecreamHead(Head: 8)
-icecreamBody(Body: 4)
