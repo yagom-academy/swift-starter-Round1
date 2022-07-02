@@ -19,7 +19,7 @@ func drawBarOfIceCream(length: Int) {
         for _ in 0..<lengthOfTypicalBar {
             print(" | | ")
         }
-    }else if length >= 12 {
+    }else {
         if typeOfTopping == "#" {
             for _ in 0..<lengthOfExceptionalBar {
                 print(" | | ")
