@@ -65,4 +65,4 @@ func drawIceCream(actualLengthOfIceCreamBody: Int, actualTypeOfBody: String, act
 }
 
 // topping이 없을 시 ""라고 기재 !
-drawIceCream (actualLengthOfIceCreamBody: 6, actualTypeOfBody: "|8|", actualTypeOfTopping:"",actualLengthOfBar: 4)
+drawIceCream (actualLengthOfIceCreamBody: 6, actualTypeOfBody: "|8|", actualTypeOfTopping:"#",actualLengthOfBar: 4)
