@@ -8,14 +8,23 @@
 
 import Foundation
 
-var iceCream = "*********"
+let iceCream = "*********"
 
-var stick = "   | |   "
+let stick = "   | |   "
 
-for count in 1...8{
-    print(iceCream)
+var count = ""
+
+func IceCream () {
+    for count in 1...8 {
+        print(iceCream)
+    }
 }
-for count in 1...2{
-    print(stick)
+func IceCreamStick () {
+    for count in 1...2 {
+        print(stick)
+    }
 }
+
+IceCream()
+IceCreamStick()
 
