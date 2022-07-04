@@ -9,7 +9,6 @@ import Foundation
 
 // 손잡이
 func drawBarOfIceCream(length: Int) {
-    
     var typeOfTopping: String = ""
     let lengthOfTypicalBar: Int = 4
     let lengthOfExceptionalBar: Int = 6
@@ -52,15 +51,10 @@ func drawIceCreamBodyWholeLine(length: Int, singleLineOfToppingBody: String) {
 
 // 전체 함수
 func drawIceCream(actualLengthOfIceCreamBody: Int, actualTypeOfBody: String, actualTypeOfTopping: String, actualLengthOfBar: Int) {
-        
     print("<정보>\n길이: \(actualLengthOfIceCreamBody)\n몸통: \(actualTypeOfBody)\n토핑: \(actualTypeOfTopping)\n막대길이: \(actualLengthOfBar)\n")
-    
     let resultOfOneLine: String = oneLineOfToppedIceCreamBody(typeOfBody: actualTypeOfBody, typeOfTopping: actualTypeOfTopping)
-    
     drawIceCreamBodyWholeLine(length: actualLengthOfIceCreamBody, singleLineOfToppingBody: resultOfOneLine)
-
     drawBarOfIceCream(length: actualLengthOfIceCreamBody)
 }
-
 // topping이 없을 시 ""라고 기재 !
 drawIceCream(actualLengthOfIceCreamBody: 6, actualTypeOfBody: "|8|", actualTypeOfTopping:"#",actualLengthOfBar: 4)
