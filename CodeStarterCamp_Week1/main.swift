@@ -8,5 +8,23 @@
 
 import Foundation
 
-print("Hello, World!")
+let iceCream = "*********"
+
+let stick = "   | |   "
+
+var count = ""
+
+func IceCream () {
+    for count in 1...8 {
+        print(iceCream)
+    }
+}
+func IceCreamStick () {
+    for count in 1...2 {
+        print(stick)
+    }
+}
+
+IceCream()
+IceCreamStick()
 
