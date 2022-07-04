@@ -33,10 +33,8 @@ func drawBarOfIceCream(length: Int) {
 }
 
 // 몸통, 토핑에 따른 아이스크림 부분 구현(one line)
-func drawOneLineOfToppedIceCreamBody(typeOfBody: String, typeOfTopping: String) -> String {
-    
+func oneLineOfToppedIceCreamBody(typeOfBody: String, typeOfTopping: String) -> String {
     var orderOfToppingBody: String = "\(typeOfTopping)\(typeOfBody)\(typeOfTopping)"
-    
     if typeOfTopping == "" {
             orderOfToppingBody = " " + orderOfToppingBody
     }
@@ -57,7 +55,7 @@ func drawIceCream(actualLengthOfIceCreamBody: Int, actualTypeOfBody: String, act
         
     print("<정보>\n길이: \(actualLengthOfIceCreamBody)\n몸통: \(actualTypeOfBody)\n토핑: \(actualTypeOfTopping)\n막대길이: \(actualLengthOfBar)\n")
     
-    let resultOfOneLine: String = drawOneLineOfToppedIceCreamBody(typeOfBody: actualTypeOfBody,typeOfTopping: actualTypeOfTopping)
+    let resultOfOneLine: String = oneLineOfToppedIceCreamBody(typeOfBody: actualTypeOfBody,typeOfTopping: actualTypeOfTopping)
     
     drawIceCreamBodyWholeLine(length: actualLengthOfIceCreamBody, singleLineOfToppingBody: resultOfOneLine)
 
