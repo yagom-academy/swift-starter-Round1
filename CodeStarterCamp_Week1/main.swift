@@ -1,30 +1,22 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
-
 import Foundation
 
-let iceCream = "*********"
+//sub1
+makeChocolateBody(topping: "#", chodoBody: "***")
 
-let stick = "   | |   "
+//sub2
+makeChocolateStick(chocolateStick: " | | ")
 
-var count = ""
 
-func IceCream () {
-    for count in 1...8 {
-        print(iceCream)
-    }
-}
-func IceCreamStick () {
-    for count in 1...2 {
-        print(stick)
-    }
-}
 
-IceCream()
-IceCreamStick()
+//sub3
+//실행예시1
+makeAllChocolate(chocoStickLength: 4, chocoBodyLength: 10, chocolateStick: " | | ", chocolateTopping: "", chocolateBody: " *** ")
 
+//실행예시2
+makeAllChocolate(chocoStickLength: 4, chocoBodyLength: 12, chocolateStick: " | | ", chocolateTopping: "&", chocolateBody: "***")
+
+//실행예시3
+makeAllChocolate(chocoStickLength: 6, chocoBodyLength: 12, chocolateStick: " | | ", chocolateTopping: "#", chocolateBody: "***")
+
+//실행예시4
+makeAllChocolate(chocoStickLength: 4, chocoBodyLength: 6, chocolateStick: " | | ", chocolateTopping: "", chocolateBody: " |0| ")
