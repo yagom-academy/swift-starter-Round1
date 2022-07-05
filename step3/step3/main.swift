@@ -9,25 +9,8 @@ import Foundation
 
 // 손잡이
 func drawBarOfIceCream(length: Int) {
-    var typeOfTopping: String = ""
-    let lengthOfTypicalBar: Int = 4
-    let lengthOfExceptionalBar: Int = 6
-    
-    if length < 12 {
-        
-        for _ in 0..<lengthOfTypicalBar {
-            print(" | | ")
-        }
-    }else {
-        if typeOfTopping == "#" {
-            for _ in 0..<lengthOfExceptionalBar {
-                print(" | | ")
-            }
-        }else {
-            for _ in 0..<lengthOfTypicalBar {
-                print(" | | ")
-            }
-        }
+    for _ in 0..<length {
+        print(" | | ")
     }
 }
 
