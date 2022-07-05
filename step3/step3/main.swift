@@ -52,6 +52,7 @@ func drawIceCreamBodyWholeLine(length: Int, singleLineOfToppingBody: String) {
 // 전체 함수
 func drawIceCream(actualLengthOfIceCreamBody: Int, actualTypeOfBody: String, actualTypeOfTopping: String, actualLengthOfBar: Int) {
     print("<정보>\n길이: \(actualLengthOfIceCreamBody)\n몸통: \(actualTypeOfBody)\n토핑: \(actualTypeOfTopping)\n막대길이: \(actualLengthOfBar)\n")
+    
     let resultOfOneLine: String = oneLineOfToppedIceCreamBody(typeOfBody: actualTypeOfBody, typeOfTopping: actualTypeOfTopping)
     drawIceCreamBodyWholeLine(length: actualLengthOfIceCreamBody, singleLineOfToppingBody: resultOfOneLine)
     drawBarOfIceCream(length: actualLengthOfIceCreamBody)
