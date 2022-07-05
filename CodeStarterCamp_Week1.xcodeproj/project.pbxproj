@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
-		58123F7E2872BAD6009A2649 /* sub1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58123F7D2872BAD6009A2649 /* sub1.swift */; };
-		58123F802872BB12009A2649 /* sub2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58123F7F2872BB12009A2649 /* sub2.swift */; };
-		58123F822872CD20009A2649 /* sub3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58123F812872CD20009A2649 /* sub3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +25,6 @@
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		58123F7D2872BAD6009A2649 /* sub1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sub1.swift; sourceTree = "<group>"; };
-		58123F7F2872BB12009A2649 /* sub2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sub2.swift; sourceTree = "<group>"; };
-		58123F812872CD20009A2649 /* sub3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sub3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				34811DAE274B938F00A1E994 /* main.swift */,
-				58123F7D2872BAD6009A2649 /* sub1.swift */,
-				58123F7F2872BB12009A2649 /* sub2.swift */,
-				58123F812872CD20009A2649 /* sub3.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -128,9 +119,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58123F7E2872BAD6009A2649 /* sub1.swift in Sources */,
-				58123F802872BB12009A2649 /* sub2.swift in Sources */,
-				58123F822872CD20009A2649 /* sub3.swift in Sources */,
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
