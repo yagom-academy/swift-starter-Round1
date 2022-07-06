@@ -1,8 +1,8 @@
 //
-//  CodeStarterCamp_step3.swift
+//  File.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by 조용현 on 2022/07/01.
+//  Created by 조용현 on 2022/07/06.
 //
 
 import Foundation
@@ -37,14 +37,9 @@ func makePepero(길이: Int, 몸통: String, 토핑: String, 막대길이: Int) 
     makePeperoStick(stickHigh: 막대길이)
 }
 
-makePepero(길이: 10, 몸통: "***", 토핑: " ", 막대길이: 4) //실행 예시1
-makePepero(길이: 12, 몸통: "***", 토핑: "&", 막대길이: 4) //실행 예시2
-makePepero(길이: 10, 몸통: "***", 토핑: "#", 막대길이: 6) //실행 예시3
-makePepero(길이: 10, 몸통: "|0|", 토핑: " ", 막대길이: 4) //실행 예시4
-
-makePepero(길이: 12, 몸통: "@@@", 토핑: "~", 막대길이: 4) // 자신만의 빼빼로
-
-
-
-
-
+//makePepero(길이: 10, 몸통: "***", 토핑: " ", 막대길이: 4) //실행 예시1
+//makePepero(길이: 12, 몸통: "***", 토핑: "&", 막대길이: 4) //실행 예시2
+//makePepero(길이: 10, 몸통: "***", 토핑: "#", 막대길이: 6) //실행 예시3
+//makePepero(길이: 10, 몸통: "|0|", 토핑: " ", 막대길이: 4) //실행 예시4
+//
+//makePepero(길이: 12, 몸통: "@@@", 토핑: "~", 막대길이: 4) // 자신만의 빼빼로

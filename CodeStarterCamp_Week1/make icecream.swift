@@ -20,5 +20,5 @@ func icecreamBody(Body: Int) {
     }
 }
 
-icecreamHead(Head: 8)
-icecreamBody(Body: 4)
+//icecreamHead(Head: 8)
+//icecreamBody(Body: 4)

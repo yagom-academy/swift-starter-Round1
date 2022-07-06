@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB8C7C1B28755FEA006F9DB6 /* make pepero.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8C7C1A28755FEA006F9DB6 /* make pepero.swift */; };
+		EB8C7C1C28756090006F9DB6 /* make icecream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* make icecream.swift */; };
 		EBD92E25286ED346006A885D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD92E24286ED346006A885D /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +26,8 @@
 
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
-		34811DAE274B938F00A1E994 /* CodeStarterCamp_step1~2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodeStarterCamp_step1~2.swift"; sourceTree = "<group>"; };
+		34811DAE274B938F00A1E994 /* make icecream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "make icecream.swift"; sourceTree = "<group>"; };
+		EB8C7C1A28755FEA006F9DB6 /* make pepero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "make pepero.swift"; sourceTree = "<group>"; };
 		EBD92E24286ED346006A885D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				EBD92E24286ED346006A885D /* main.swift */,
-				34811DAE274B938F00A1E994 /* CodeStarterCamp_step1~2.swift */,
+				34811DAE274B938F00A1E994 /* make icecream.swift */,
+				EB8C7C1A28755FEA006F9DB6 /* make pepero.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -121,7 +125,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8C7C1C28756090006F9DB6 /* make icecream.swift in Sources */,
 				EBD92E25286ED346006A885D /* main.swift in Sources */,
+				EB8C7C1B28755FEA006F9DB6 /* make pepero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
