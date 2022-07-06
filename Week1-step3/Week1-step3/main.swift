@@ -7,38 +7,38 @@
 
 import Foundation
 
-func makerChocoStick(길이: Int, 몸통: String, 토핑: String, 막대길이: Int) {
+func makeChocoStick(length: Int, body: String, topping: String, stickLength: Int) {
     print("""
-<정보>
-길이:\(길이)
-몸통:\(몸통)
-토핑:\(토핑)
-막대길이:\(막대길이)
+ <정보>
+ 길이:\(length)
+ 몸통:\(body)
+ 토핑:\(topping)
+ 막대길이:\(stickLength)
 """)
     print("")
-    makerChoco(topping: 토핑, body: 몸통, length: 길이)
-    makerStick(stickLength: 막대길이)
+    makeChoco(topping: topping, body: body, length: length)
+    makeStick(stickLength: stickLength)
 }
 
 
-func makerChoco(topping : String, body : String, length : Int) {
+func makeChoco(topping : String, body : String, length : Int) {
     for _ in 1...length {
         print("\(topping)\(body)\(topping)")
     }
 }
 
 
-func makerStick(stickLength : Int) {
+func makeStick(stickLength : Int) {
     for _ in 1...stickLength {
         print(" | | ")
     }
     print("")
 }
 
-makerChocoStick(길이: 10, 몸통: "***", 토핑: " ", 막대길이: 4)
-makerChocoStick(길이: 12, 몸통: "***", 토핑: "&", 막대길이: 4)
-makerChocoStick(길이: 12, 몸통: "***", 토핑: "#", 막대길이: 6)
-makerChocoStick(길이: 6, 몸통: "|0|", 토핑: " ", 막대길이: 4)
+makeChocoStick(length: 10, body: "***", topping: " ", stickLength: 4)
+makeChocoStick(length: 12, body: "***", topping: "&", stickLength: 4)
+makeChocoStick(length: 12, body: "***", topping: "#", stickLength: 6)
+makeChocoStick(length: 6, body: "|0|", topping: " ", stickLength: 4)
 
 
 
