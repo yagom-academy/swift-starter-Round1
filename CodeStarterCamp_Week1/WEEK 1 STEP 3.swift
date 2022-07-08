@@ -8,25 +8,25 @@
 import Foundation
 
 // 아이스크림 몸통 출력
-func drawedIceCreamBody(length: Int, shape: String, topping: String) {
+func drawIceCreamBody(length: Int, shape: String, topping: String) {
     for _ in 1...length {
-        drawedIceCreamShape(shape: shape,topping: topping)
+        drawIceCreamShape(shape: shape,topping: topping)
     }
 }
     
 // 아이스크림 모양 출력
-func drawedIceCreamShape(shape: String, topping : String) {
+func drawIceCreamShape(shape: String, topping : String) {
     print(topping,shape,topping)
 }
     
 // 아이스크림 막대 출력
-func drawedIceStick(stickLength: Int) {
+func drawIceStick(stickLength: Int) {
     for _ in 1...stickLength {
         print(" | |")
     }
 }
 
-func drawedIceCream(length: Int, shape: String, topping: String, stickLength:Int) {
+func drawIceCream(length: Int, shape: String, topping: String, stickLength:Int) {
     print("<정보>")
     print("길이: \(length)")
     print("몸통: \(shape)")
@@ -34,7 +34,7 @@ func drawedIceCream(length: Int, shape: String, topping: String, stickLength:Int
     print("막대길이: \(stickLength)")
     print("")
     
-    drawedIceCreamBody(length: length, shape: shape, topping: topping)
+    drawIceCreamBody(length: length, shape: shape, topping: topping)
     
-    drawedIceStick(stickLength: stickLength)
+    drawIceStick(stickLength: stickLength)
 }
