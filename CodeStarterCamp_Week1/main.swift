@@ -8,17 +8,15 @@
 
 import Foundation
 
-func drawedIceBar() -> Void {
-    for _ in 1...8 {
-        print("***********")
-    }
-}
+// STEP3
+// 실행 예시1
+drawIceCream(length: 10, shape: "***", topping: "", stickLength: 4)
 
-func drawedIceStick() -> Void {
-    for _ in 1...4 {
-        print("    | |")
-    }
-}
+// 실행 예시2
+drawIceCream(length: 12, shape: "***", topping: "&", stickLength: 4)
 
-drawedIceBar()
-drawedIceStick()
+// 실행 예시3
+drawIceCream(length: 12, shape: "***", topping: "#", stickLength: 6)
+
+// 실행 예시4
+drawIceCream(length: 6, shape: "|0|", topping: "", stickLength: 4)
