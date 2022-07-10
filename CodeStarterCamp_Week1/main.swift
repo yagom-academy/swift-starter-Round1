@@ -1,25 +1,30 @@
+//func makeIceCream() -> String{
+//    return "***********"
+//}
 //
-//  main.swift
-//  CodeStarterCamp_Week1
+//for _ in 1...8{
+//    print(makeIceCream())
+//}
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//func makeIceCreamHardbar() {
+//    print("    | |    ")
+//}
 //
+//for _ in 1...4{
+//   makeIceCreamHardbar()
+//}
 
-func makeIceCream() -> String{
-    return "***********"
-}
+//실행예시 1
+MakePepero(bodyHeight: 10, peperoBody:" ***", topping: "", stickHeight: 4, bar: " | |")
 
-for _ in 1...8{
-    print(makeIceCream())
-}
+//실행예시 2
+MakePepero(bodyHeight: 12, peperoBody: "***", topping: "&", stickHeight: 4, bar: " | |")
 
-func makeIceCreamHardbar() {
-    print("    | |    ")
-}
+//실행예시 3
+MakePepero(bodyHeight: 12, peperoBody: "***", topping: "#", stickHeight: 6, bar: " | |")
 
-for _ in 1...4{
-   makeIceCreamHardbar()
-}
+//실행예시 4
+MakePepero(bodyHeight: 6, peperoBody: " |0|", topping: "", stickHeight: 4, bar: " | |")
 
-
+//나만의 빼빼로
+MakePepero(bodyHeight: 4, peperoBody: "@@@", topping: "*", stickHeight: 4, bar: " |_|")
