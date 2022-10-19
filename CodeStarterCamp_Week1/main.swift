@@ -22,12 +22,18 @@ func drawIcecream(bodylength: Int, bodywidth: Int) {
     }
 }
 
-func drawStick(sticklength: Int, stickwidth: Int) {
+func drawStick(sticklength: Int, stickleft: Int) {
     for count in 1...sticklength {
-        print(stick)
+        for count in 1...stickleft-1 {
+            print(" ", terminator: "")
+        }
+        for count in 1...2 {
+            print(stick, terminator: "")
+        }
+        print("\n")
     }
 }
 
 drawIcecream(bodylength: 8, bodywidth: 11)
-
-
+drawStick(sticklength: 4, stickleft: 5)
+    
