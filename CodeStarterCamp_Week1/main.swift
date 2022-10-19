@@ -90,6 +90,7 @@ topping = ""                // 토핑
 nBarLength = 4              // 막대 길이
 bar = "| |"                 // 막대
 
+// MARK: - Step 3 빼빼로 그리기
 // MARK: Step 3 - 1: 주문에 따른 빼빼로 그리기
 createIceCream()
 
