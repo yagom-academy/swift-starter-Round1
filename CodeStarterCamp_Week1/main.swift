@@ -8,6 +8,35 @@
 
 import Foundation
 
-print("Hello, World!")
+let ice = "*"
+let blank = "    "
+let bar = "| |"
 
-print(1234567890)
+func iceCream() {
+
+    func iceCreamLine() {
+        for _ in 1...11 {
+            print(ice, terminator: "")
+        }
+    }
+    
+    for _ in 1...8 {
+        print("")
+        iceCreamLine()
+    }
+    
+}
+
+func stick() {
+
+    for _ in 1...4 {
+        print(blank + bar)
+    }
+    
+}
+
+iceCream()
+print("")
+stick()
+
+
