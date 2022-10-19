@@ -1,19 +1,19 @@
 import Foundation
 
-let iceCream = "***********"
-let Stick = "    | |    "
-let iceCreamHeight = 10
-let StickHeight = 4
+let icecream = "***********"
+let stick = "    | |    "
+let icecreamHeight = 8
+let stickHeight = 4
 
 func makeIcecream() {
-    for _ in 0..<iceCreamHeight {
-        print(iceCream)
+    for _ in 0..<icecreamHeight {
+        print(icecream)
     }
 }
 
 func makeStick() {
-    for _ in 0..<StickHeight {
-        print(Stick)
+    for _ in 0..<stickHeight {
+        print(stick)
     }
 }
 
