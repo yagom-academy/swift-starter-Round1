@@ -8,5 +8,4 @@
 
 import Foundation
 
-print("Hello, World!")
-
+print("step1 작업 완료")
