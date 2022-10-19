@@ -8,8 +8,6 @@
 
 import Foundation
 
-print("step1 작업 완료")
-
 var nLength = 8                 // 길이
 var body = "***********"        // 몸통
 var topping = ""                // 토핑
@@ -79,3 +77,6 @@ barRowsLog()
 
 // MARK: Step 2: 아이스크림 그리기 실행
 createIceCream()
+
+
+print("step2 작업 완료")
