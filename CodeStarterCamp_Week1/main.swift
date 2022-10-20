@@ -5,7 +5,7 @@
 //  Created by yagom.
 //  Copyright © yagom academy. All rights reserved.
 //
-
+//
 /**
 for stars in 1...8{
         print(stars, "***********" )
@@ -26,3 +26,4 @@ func bars (count: Int){
 for count in 1...4{
     bars(count: count)
 }
+ 
