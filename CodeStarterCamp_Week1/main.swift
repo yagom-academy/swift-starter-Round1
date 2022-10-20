@@ -8,19 +8,16 @@
 
 import Foundation
 
-/// 아이스크림 부분 출력
-func iceCreamPartDraw(count: Int) {
-    for _ in 0..<count {
-        print("***********")
-    }
-}
+let peperoRow = 12
+let stickRow = 4
+let peperoBody = "***"
+let peperoStick = "| |"
+let topping = ""
 
-/// 막대 부분 출력
-func stickPartDraw(count: Int) {
-    for _ in 0..<count {
-        print("    | |")
-    }
-}
+drawPeperoOrder(peperoRow: peperoRow,
+                peperoBody: peperoBody,
+                topping: topping,
+                stickRow: stickRow,
+                stick: peperoStick)
 
-iceCreamPartDraw(count: 8)
-stickPartDraw(count: 4)
+

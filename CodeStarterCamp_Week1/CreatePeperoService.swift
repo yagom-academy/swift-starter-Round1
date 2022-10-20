@@ -11,7 +11,7 @@
 /// - Parameters:
 ///   - pepero: 그려야할 빼빼로
 ///   - peperoRow: 그려야할 길이
-func drawPepero(pepero: String, peperoRow: Int) {
+func drawPepero(_ pepero: String, peperoRow: Int) {
     for _ in 0..<peperoRow {
         print(pepero)
     }
@@ -22,15 +22,15 @@ func drawPepero(pepero: String, peperoRow: Int) {
 ///   - peperoBody: 빼배로 몸통
 ///   - topping: 양 옆에 그려줄 토핑
 /// - Returns: 토핑이 추가된 빼배로 몸통
-func makePepero(peperoBody: String, topping: String) -> String {
-    return "\(topping)\(peperoBody)\(topping)"
+func makePepero(_ pepero: String, with topping: String) -> String {
+    return "\(topping)\(pepero)\(topping)"
 }
 
 /// 빼배로 막대 그리기 함수
 /// - Parameters:
 ///   - stick: 그려야할 막대
 ///   - stickNumRow: 그려야 할 길이
-func drawStick(stick: String, stickNumRow: Int)  {
+func drawStick(_ stick: String, stickNumRow: Int)  {
     for  _ in 0..<stickNumRow {
         print(stick)
     }
@@ -41,7 +41,7 @@ func drawStick(stick: String, stickNumRow: Int)  {
 ///   - topping: 막대 간격을 계산할 토핑
 ///   - stick: 그려야할 막대
 /// - Returns: 간격이 추가된 막대
-func makeStick(topping: String, stick: String) -> String {
+func makeStick(_ stick: String, with topping: String) -> String {
     let padding = makeStickPadding(topping: topping)
     return padding + stick
 }
@@ -66,13 +66,22 @@ func makeStickPadding(topping: String) -> String {
 ///   - stickRow: 빼빼로 막대 길이
 ///   - stick: 빼빼로 막대 모양
 func drawPeperoOrder(peperoRow: Int,
-               peperoBody: String,
-               topping: String = "",
-               stickRow: Int,
-               stick: String) {
-    let pepero = makePepero(peperoBody: peperoBody, topping: topping)
-    let stick = makeStick(topping: topping, stick: stick)
+                     peperoBody: String,
+                     topping: String = "",
+                     stickRow: Int,
+                     stick: String) {
+    print("""
+          <정보>
+          길이: \(peperoRow)
+          몸통: \(peperoBody)
+          토핑: \(topping)
+          막대길이: \(stickRow)
+          
+          """)
     
-    drawPepero(pepero: pepero, peperoRow: peperoRow)
-    drawStick(stick: stick, stickNumRow: stickRow)
+    let pepero = makePepero(peperoBody, with: topping)
+    let stick = makeStick(stick, with: topping)
+    
+    drawPepero(pepero, peperoRow: peperoRow)
+    drawStick(stick, stickNumRow: stickRow)
 }
