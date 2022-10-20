@@ -12,31 +12,22 @@ let ice = "*"
 let blank = "    "
 let bar = "| |"
 
-func iceCream() {
-
-    func iceCreamLine() {
-        for _ in 1...11 {
+func getIceCream() {
+    for lineCount in 1...8 {
+        print("")
+        for iceCount in 1...11 {
             print(ice, terminator: "")
         }
     }
-    
-    for _ in 1...8 {
-        print("")
-        iceCreamLine()
-    }
-    
 }
 
-func stick() {
-
-    for _ in 1...4 {
+func getStick() {
+    for stickCount in 1...4 {
         print(blank + bar)
     }
-    
 }
 
-iceCream()
+
+getIceCream()
 print("")
-stick()
-
-
+getStick()
