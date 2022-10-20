@@ -10,7 +10,7 @@ import Foundation
 
 
 let ice: String = "*"
-let stick: String = "| "
+let stickIngredient: String = "| "
 
 
 func drawIcecream(bodylength: Int, bodywidth: Int) {
@@ -28,7 +28,7 @@ func drawStick(sticklength: Int, stickleft: Int) {
             print(" ", terminator: "")
         }
         for count in 1...2 {
-            print(stick, terminator: "")
+            print(stickIngredient, terminator: "")
         }
         print("\n")
     }
