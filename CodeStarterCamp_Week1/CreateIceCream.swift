@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - STEP 2 아이스크림 그리기
 
 /// 아이스크림 부분 출력
 func iceCreamPartDraw(count: Int) {
@@ -21,6 +22,7 @@ func stickPartDraw(count: Int) {
         print("    | |")
     }
 }
+
 /*
  iceCreamPartDraw(count: 8)
  stickPartDraw(count: 4)
