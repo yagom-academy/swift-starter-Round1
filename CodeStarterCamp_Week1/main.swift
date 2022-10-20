@@ -8,5 +8,20 @@
 
 import Foundation
 
-print("Hello, World!")
+func drawStick(dan: Int) {
+    for count in 1...dan {
+        print("***********")
+    }
+}
 
+func drawIcecream(heightStick: Int) {
+    for count in 1...heightStick {
+        print("    | |")
+    }
+}
+
+let dan = 8
+let heightStick = 4
+
+drawStick(dan: dan)
+drawIcecream(heightStick: heightStick)
