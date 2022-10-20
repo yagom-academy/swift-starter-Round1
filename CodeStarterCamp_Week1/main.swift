@@ -14,10 +14,10 @@ let bar = "| |"
 
 func getIceCream() {
     for lineCount in 1...8 {
-        print("")
         for iceCount in 1...11 {
             print(ice, terminator: "")
         }
+        print("")
     }
 }
 
@@ -29,5 +29,4 @@ func getStick() {
 
 
 getIceCream()
-print("")
 getStick()
