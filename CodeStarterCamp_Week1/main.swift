@@ -7,31 +7,33 @@
 
 import Foundation
 
-var body: String = "***"
-var topping: String = " "
-var stick: String = " | |"
+func drawBodyrow(body: String, topping: String) -> String {
+    return "\(topping)\(body)\(topping)"
+}
 
-func drawStick(stickHeight: Int) {
+var drawBodyrow: (String, String) -> String = drawBodyrow(body:topping:)
+
+func drawBodycolumn(bodyHeight: Int, bodyRow: String) {
+    for _ in 1...bodyHeight {
+        print(bodyRow)
+    }
+}
+
+func drawStick(stickHeight: Int, stick: String) {
     for _ in 1...stickHeight {
         print(stick)
     }
 }
 
-func drawBodyRow(body: String, topping: String) -> String {
-    return "\(topping)\(body)\(topping)"
+func drawPepero(bodyHeight: Int, body: String, topping: String, stick: String, stickHeight: Int) {
+    
+    print("\n<정보>\n길이: \(bodyHeight)\n몸통: \(body)\n토핑: \(topping)\n막대길이: \(stickHeight)\n")
+
+    drawBodycolumn(bodyHeight: bodyHeight, bodyRow: drawBodyrow(body: body, topping: topping))
+    drawStick(stickHeight: stickHeight, stick: stick)
+
+    
 }
-
-var drawBodyRow: (String, String) -> String = drawBodyRow(body:topping:)
-
-func drawBodycolumn(bodyHeight: Int) {
-    for _ in 1...bodyHeight {
-        print(drawBodyRow(body, topping))
-    }
-}
-
-
-
-
 
 /*
  실행예시 1
@@ -42,6 +44,8 @@ func drawBodycolumn(bodyHeight: Int) {
  막대길이: 4
  */
 
+drawPepero(bodyHeight: 10, body: "***", topping: " ", stick: " | |", stickHeight: 4)
+
 /*
  실행예시 2
  <정보>
@@ -50,6 +54,8 @@ func drawBodycolumn(bodyHeight: Int) {
  토핑: &
  막대길이: 4
  */
+
+drawPepero(bodyHeight: 12, body: "***", topping: "&", stick: " | |", stickHeight: 4)
 
 /*
  실행예시 3
@@ -60,6 +66,8 @@ func drawBodycolumn(bodyHeight: Int) {
  막대길이: 6
  */
 
+drawPepero(bodyHeight: 12, body: "***", topping: "#", stick: " | |", stickHeight: 6)
+
 /*
  <정보>
  길이: 6
@@ -67,4 +75,6 @@ func drawBodycolumn(bodyHeight: Int) {
  토핑:
  막대길이: 4
  */
+
+drawPepero(bodyHeight: 6, body: "|0|", topping: " ", stick: " | |", stickHeight: 4)
 
