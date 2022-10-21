@@ -8,5 +8,17 @@
 
 import Foundation
 
-print("Hello, World!")
+func iceCream(height: Int) {
+    for _ in 1...height {
+        print("***********")
+    }
+}
 
+func stick(height: Int) {
+    for _ in 1...height {
+        print("    | |")
+    }
+}
+
+iceCream(height: 8)
+stick(height: 4)
