@@ -1,39 +1,70 @@
 //
-//  main.swift
+//  STEP3_drawPepero.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 김경준 on 2022/10/21.
 //
 
 import Foundation
 
+var body: String = "***"
+var topping: String = " "
+var stick: String = " | |"
 
-let ice: String = "*"
-let stickIngredient: String = "| "
-
-
-func drawIcecream(bodylength: Int, bodywidth: Int) {
-    for count in 1...bodylength {
-        for count in 1...bodywidth {
-            print(ice, terminator: "")
-        }
-        print("\n")
+func drawStick(stickHeight: Int) {
+    for _ in 1...stickHeight {
+        print(stick)
     }
 }
 
-func drawStick(sticklength: Int, stickleft: Int) {
-    for count in 1...sticklength {
-        for count in 1...stickleft-1 {
-            print(" ", terminator: "")
-        }
-        for count in 1...2 {
-            print(stickIngredient, terminator: "")
-        }
-        print("\n")
+func drawBodyRow(body: String, topping: String) -> String {
+    return "\(topping)\(body)\(topping)"
+}
+
+var drawBodyRow: (String, String) -> String = drawBodyRow(body:topping:)
+
+func drawBodycolumn(bodyHeight: Int) {
+    for _ in 1...bodyHeight {
+        print(drawBodyRow(body, topping))
     }
 }
 
-drawIcecream(bodylength: 8, bodywidth: 11)
-drawStick(sticklength: 4, stickleft: 5)
-    
+
+
+
+
+/*
+ 실행예시 1
+ <정보>
+ 길이: 10
+ 몸통: ***
+ 토핑:
+ 막대길이: 4
+ */
+
+/*
+ 실행예시 2
+ <정보>
+ 길이: 12
+ 몸통: ***
+ 토핑: &
+ 막대길이: 4
+ */
+
+/*
+ 실행예시 3
+ <정보>
+ 길이: 12
+ 몸통: ***
+ 토핑: #
+ 막대길이: 6
+ */
+
+/*
+ <정보>
+ 길이: 6
+ 몸통: |0|
+ 토핑:
+ 막대길이: 4
+ */
+
