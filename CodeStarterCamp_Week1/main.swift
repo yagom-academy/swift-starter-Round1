@@ -8,5 +8,36 @@
 
 import Foundation
 
-print("Hello, World!")
 
+//
+//func icecream() {
+//
+//    for cream in 1...8 {
+//        print("***********")
+//    }
+//
+//    for woodBar in 1...4 {
+//        print("    | |    ")
+//    }
+//}
+//
+//icecream()
+
+var cream = "***********"
+var stick = "    ||    "
+
+func iceCream() {
+    for _ in 1...8 {
+        print(cream)
+    }
+}
+
+func iceCreamstick() {
+    for _ in 1...4 {
+        print(stick)
+    }
+    
+}
+
+iceCream()
+iceCreamstick()
