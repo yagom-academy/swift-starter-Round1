@@ -69,6 +69,7 @@ func stick2(space : Int, length: Int) {
             //print(" ")쓰면 반복문이 진행되면서 행을 띄워버린다. 터미네이터로 붙여주자!
             //이렇게하면 공백이 따다닥 붙어서 출력된다.
             print(" ", terminator: "")
+        
         }
         //막대기 길이 모양을 만들어준다. |와 | 사이를 공백으로 띄우게 만들었다.
         print("|", "|", separator: " ")
