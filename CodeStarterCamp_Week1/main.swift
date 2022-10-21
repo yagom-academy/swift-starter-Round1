@@ -69,6 +69,7 @@ drawPepero(bodyHeight: 12, body: "***", topping: "&", stick: " | |", stickHeight
 drawPepero(bodyHeight: 12, body: "***", topping: "#", stick: " | |", stickHeight: 6)
 
 /*
+ 실행예시 4
  <정보>
  길이: 6
  몸통: |0|
@@ -77,4 +78,16 @@ drawPepero(bodyHeight: 12, body: "***", topping: "#", stick: " | |", stickHeight
  */
 
 drawPepero(bodyHeight: 6, body: "|0|", topping: " ", stick: " | |", stickHeight: 4)
+
+/*
+ 나만의 뺴빼로 만들기
+ <정보>
+ 길이: 10
+ 몸통: ***
+ 토핑: $
+ 막대길이: 4
+ 스틱: |0|
+ */
+
+drawPepero(bodyHeight: 10, body: "***", topping: "$", stick: " |0|", stickHeight: 4)
 
