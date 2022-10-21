@@ -9,13 +9,13 @@
 import Foundation
 
 func drawCream() {
-    for cream in 1...8 {
+    for _ in 1...8 {
         print("***********")
     }
 }
 
 func drawStick() {
-    for stick in 1...4 {
+    for _ in 1...4 {
         print("    | |    ")
     }
 }
