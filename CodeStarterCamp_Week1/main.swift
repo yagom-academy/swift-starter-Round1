@@ -11,8 +11,8 @@ import Foundation
 
 func printHandle(){
     for count in 1...4 {
-        print("    |", separator: " ", terminator: "|    \n")}
-}
+        print("    | |   ")}
+    }
 
 func printIceCream(){
     for count in 1...8{
