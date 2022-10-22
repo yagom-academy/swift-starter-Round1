@@ -7,19 +7,3 @@
 //
 
 import Foundation
-
-func iceMake(iceHeight: Int) {
-    for _ in 1...iceHeight {
-        print("***********")
-                }
-            }
-
-iceMake(iceHeight: 8)
-
-func stickMake(stickHeight: Int) {
-    for _ in 1...stickHeight {
-        print("    | |")
-    }
-}
-
-stickMake(stickHeight: 4)
