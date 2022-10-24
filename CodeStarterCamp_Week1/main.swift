@@ -54,7 +54,7 @@ makeBbebbeRoFunction(8, "@@@", "*", 4, " | |")
 
 
 
-
+print(abcd)
 
     
 
