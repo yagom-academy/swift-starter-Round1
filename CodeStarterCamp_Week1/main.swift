@@ -16,7 +16,7 @@ func drawIcecreamBody(height: Int) {
 }
 
 // Mark: - 아이스크림 스틱을 그리는 함수
-func drawIcecreamStick(height: Int ) {
+func drawIcecreamStick(height: Int) {
     for n in 0..<height {
         print ("    | |")
     }
