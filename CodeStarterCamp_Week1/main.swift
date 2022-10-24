@@ -8,25 +8,21 @@
 
 import Foundation
 
-let ice = "*"
-let blank = "    "
-let bar = "| |"
+// MARK: - STEP 2 미션 함수 호출
+// step2.swift 참조
 
-func getIceCream() {
-    for lineCount in 1...8 {
-        for iceCount in 1...11 {
-            print(ice, terminator: "")
-        }
-        print("")
-    }
-}
+// getIceCream()
+// getStick()
 
-func getStick() {
-    for stickCount in 1...4 {
-        print(blank + bar)
-    }
-}
+// MARK: - STEP 3 미션 함수 호출
+// step3.swift 참조
 
+drawPepero(stickLength: 4, bodyShape: "***", bodyLength: 10)
 
-getIceCream()
-getStick()
+drawPepero(stickLength: 4, bodyShape: "***", bodyLength: 12, toppingShape: "&")
+
+drawPepero(stickLength: 6, bodyShape: "***", bodyLength: 12, toppingShape: "#")
+
+drawPepero(stickLength: 4, bodyShape: "|0|", bodyLength: 6)
+
+drawPepero(stickLength: 3, bodyShape: "^^^", bodyLength: 8, toppingShape: "@")
