@@ -31,6 +31,7 @@
 		6802C4C2290150BA004D716D /* CreateIceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIceCream.swift; sourceTree = "<group>"; };
 		6854219729069E900086579C /* IceCream_FlowChart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IceCream_FlowChart.png; sourceTree = "<group>"; };
 		6854219829069E900086579C /* Pepero_FlowChart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pepero_FlowChart.png; sourceTree = "<group>"; };
+		6854219929069F960086579C /* LottoCollection_FlowChart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LottoCollection_FlowChart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		6854219629069E5F0086579C /* FlowChart */ = {
 			isa = PBXGroup;
 			children = (
+				6854219929069F960086579C /* LottoCollection_FlowChart.png */,
 				6854219729069E900086579C /* IceCream_FlowChart.png */,
 				6854219829069E900086579C /* Pepero_FlowChart.png */,
 			);
