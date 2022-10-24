@@ -8,17 +8,17 @@
 
 import Foundation
 
-func iceCream(height: Int) {
+func makeIceCream(height: Int) {
     for _ in 1...height {
         print("***********")
     }
 }
 
-func stick(height: Int) {
+func makeStick(height: Int) {
     for _ in 1...height {
         print("    | |")
     }
 }
 
-iceCream(height: 8)
-stick(height: 4)
+makeIceCream(height: 8)
+makeStick(height: 4)
