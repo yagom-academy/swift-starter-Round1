@@ -27,7 +27,7 @@ func drawPepero(bodyHeight: Int, body: String, topping: String, stick: String, s
     
     print("\n<정보>\n길이: \(bodyHeight)\n몸통: \(body)\n토핑: \(topping)\n막대길이: \(stickHeight)\n")
     
-    var bodyRow = drawBodyrow(body: body, topping: topping)
+    let bodyRow = drawBodyrow(body: body, topping: topping)
     
     drawBodycolumn(bodyHeight: bodyHeight, bodyRow: bodyRow)
     
