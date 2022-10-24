@@ -6,15 +6,8 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-
 import Foundation
 
-//길이에 따른 막대를 그리는 함수
-func makeHandle(handlelenght: Int, 막대: String){
-    for _ in 1...handlelenght{
-        print("\(막대)")
-    }
-}
 
 //몸통, 토핑을 그리는 함수
 func makeBody(몸통: String, 토핑: String){
@@ -54,7 +47,6 @@ makeBbebbeRoFunction(8, "@@@", "*", 4, " | |")
 
 
 
-print(abcd)
 
-    
+
 
