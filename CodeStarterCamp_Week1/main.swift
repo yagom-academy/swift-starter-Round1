@@ -11,8 +11,6 @@ func drawBodyrow(body: String, topping: String) -> String {
     return "\(topping)\(body)\(topping)"
 }
 
-var drawBodyrow: (String, String) -> String = drawBodyrow(body:topping:)
-
 func drawBodycolumn(bodyHeight: Int, bodyRow: String) {
     for _ in 1...bodyHeight {
         print(bodyRow)
@@ -28,11 +26,12 @@ func drawStick(stickHeight: Int, stick: String) {
 func drawPepero(bodyHeight: Int, body: String, topping: String, stick: String, stickHeight: Int) {
     
     print("\n<정보>\n길이: \(bodyHeight)\n몸통: \(body)\n토핑: \(topping)\n막대길이: \(stickHeight)\n")
-
-    drawBodycolumn(bodyHeight: bodyHeight, bodyRow: drawBodyrow(body: body, topping: topping))
-    drawStick(stickHeight: stickHeight, stick: stick)
-
     
+    var bodyRow = drawBodyrow(body: body, topping: topping)
+    
+    drawBodycolumn(bodyHeight: bodyHeight, bodyRow: bodyRow)
+    
+    drawStick(stickHeight: stickHeight, stick: stick)
 }
 
 /*
