@@ -17,12 +17,12 @@ import Foundation
 // MARK: - STEP 3 미션 함수 호출
 // step3.swift 참조
 
-callPepero(stickLength: 4, bodyShape: "***", bodyLength: 10, toppingShape: " ")
+drawPepero(stickLength: 4, bodyShape: "***", bodyLength: 10)
 
-callPepero(stickLength: 4, bodyShape: "***", bodyLength: 12, toppingShape: "&")
+drawPepero(stickLength: 4, bodyShape: "***", bodyLength: 12, toppingShape: "&")
 
-callPepero(stickLength: 6, bodyShape: "***", bodyLength: 12, toppingShape: "#")
+drawPepero(stickLength: 6, bodyShape: "***", bodyLength: 12, toppingShape: "#")
 
-callPepero(stickLength: 4, bodyShape: "|0|", bodyLength: 6, toppingShape: " ")
+drawPepero(stickLength: 4, bodyShape: "|0|", bodyLength: 6)
 
-callPepero(stickLength: 3, bodyShape: "^^^", bodyLength: 8, toppingShape: "@")
+drawPepero(stickLength: 3, bodyShape: "^^^", bodyLength: 8, toppingShape: "@")
