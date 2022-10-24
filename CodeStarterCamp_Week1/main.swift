@@ -5,8 +5,25 @@
 //  Created by yagom.
 //  Copyright © yagom academy. All rights reserved.
 //
+//MARK: - Step2: IceCream
+import Swift
 
-import Foundation
+func drawBody(){
+    for _ in 1...8{
+        for _ in 1...11{
+            print("*", terminator: "")
+        }
+        print("\n", terminator: "")
+    }
+}
 
-print("Hello, World!")
+func drawStick(){
+    for _ in 1...4{
+        print("    | |")
+    }
+}
+
+drawBody()
+drawStick()
+
 
