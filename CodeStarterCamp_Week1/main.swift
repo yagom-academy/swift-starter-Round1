@@ -1,5 +1,5 @@
-let ice: String = "***********" // 상수 ice에 값 할당
-let bar: String = "    | |    " // 상수 bar에 값 할당
+let iceBody: String = "***********" // 상수 ice에 값 할당
+let iceStick: String = "    | |    " // 상수 bar에 값 할당
 
 /*
 아이스크림을 두 부분으로
@@ -8,20 +8,20 @@ let bar: String = "    | |    " // 상수 bar에 값 할당
 */
 
 // 윗부분
-func icecream() -> Void {
-    for length in 1...8{
-        print(ice)
+func makingIceBody() {
+    for _ in 1...8{
+        print(iceBody)
     }
 }
 
 // 아랫부분
-func stick() -> Void {
-    for length in  1...4{
-        print(bar)
+func makingIceStick() {
+    for _ in  1...4{
+        print(iceStick)
     }
 }
 
 // 함수 실행
-icecream()
-stick()
+makingIceBody()
+makingIceStick()
 
