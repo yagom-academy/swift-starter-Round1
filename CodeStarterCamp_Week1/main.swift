@@ -1,5 +1,5 @@
-let iceBody: String = "***********" // 상수 ice에 값 할당
-let iceStick: String = "    | |    " // 상수 bar에 값 할당
+let iceBody: String = "***********" // 상수 iceBody에 값 할당
+let iceStick: String = "    | |    " // 상수 iceStick에 값 할당
 
 /*
 아이스크림을 두 부분으로
