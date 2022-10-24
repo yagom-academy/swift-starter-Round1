@@ -8,20 +8,21 @@
 
 import Foundation
 
-func drawStick(dan: Int) {
-    for count in 1...dan {
+func drawIcecream(heightIcecream: Int) {
+    for _ in 1...heightIcecream {
         print("***********")
     }
 }
 
-func drawIcecream(heightStick: Int) {
-    for count in 1...heightStick {
+func drawStick(heightStick: Int) {
+    for _ in 1...heightStick {
         print("    | |")
     }
 }
 
-let dan = 8
+let heightIcecream = 8
 let heightStick = 4
 
-drawStick(dan: dan)
-drawIcecream(heightStick: heightStick)
+drawIcecream(heightIcecream: heightIcecream)
+drawStick(heightStick: heightStick)
+
