@@ -8,5 +8,22 @@
 
 import Foundation
 
-print("Hello, World!")
+// Mark: - 아이스크림 몸통을 그리는 함수
+func drawIcecreamBody(height: Int) {
+    for n in 0..<height {
+        print ("***********")
+    }
+}
 
+// Mark: - 아이스크림 스틱을 그리는 함수
+func drawIcecreamStick(height: Int) {
+    for n in 0..<height {
+        print ("    | |")
+    }
+}
+
+drawIcecreamBody(height: 8)
+drawIcecreamStick(height: 4)
+
+
+          
