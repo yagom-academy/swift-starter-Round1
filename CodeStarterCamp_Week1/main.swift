@@ -7,30 +7,37 @@
 //
 
 import Foundation
+// 길이에 따라 막대를 그리는 함수
+func makeHandle(length: Int, handle: String) {
+    for length in 1...length {
+        print("\(handle)")
+    }
+}
 
 
 //몸통, 토핑을 그리는 함수
-func makeBody(몸통: String, 토핑: String){
-    print("\(토핑)\(몸통)\(토핑)")}
+func makeBody(body: String, topping: String) {
+    print("\(topping)\(body)\(topping)")
+}
 
-var makeBodyFunction: (String, String) -> Void = makeBody(몸통:토핑:)
 
 //길이에 따라 몸통을 그리는 함수
-func makeBodyByLenght(length: Int, 몸통: String, 토핑: String){
-    for _ in 1...length{
-        print("\(토핑)\(몸통)\(토핑)")
-    }
-    }
-
-//각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
-func makeBbebbeRo(bodylength: Int, 몸통: String, 토핑: String, handlelength: Int, 막대: String){
-    for _ in 1...bodylength{
-        print("\(토핑)\(몸통)\(토핑)")}
-    for _ in 1...handlelength{
-        print("\(막대)")
+func makeBodyByLenght(length: Int, body: String, topping: String) {
+    for _ in 1...length {
+        print("\(topping)\(body)\(topping)")
     }
 }
-var makeBbebbeRoFunction: (Int, String, String, Int, String) -> Void = makeBbebbeRo(bodylength:몸통:토핑:handlelength:막대:)
+
+//각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
+func makeBbebbeRo(bodylength: Int, body: String, topping: String, handlelength: Int, handle: String) {
+    for _ in 1...bodylength {
+        print("\(topping)\(body)\(topping)")
+    }
+    for _ in 1...handlelength {
+        print("\(handle)")
+    }
+}
+var makeBbebbeRoFunction: (Int, String, String, Int, String) -> Void = makeBbebbeRo(bodylength:body:topping:handlelength:handle:)
 
 
 
