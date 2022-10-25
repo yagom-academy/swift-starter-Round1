@@ -22,3 +22,4 @@ func makeStick(stickHeight: Int){
 
 makeIceCream(iceHeight: 8)
 makeStick(stickHeight: 4)
+

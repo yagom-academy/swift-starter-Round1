@@ -15,7 +15,7 @@ func makeStick(length: Int) {
 }
 
 // 토핑과 몸통을 그리는 함수
-func makeBodyTopping(body: String, topping: String) {
+func makeBodyAndTopping(body: String, topping: String) {
     print("\(topping)\(body)\(topping)")
 }
 
@@ -23,14 +23,18 @@ func makeBodyTopping(body: String, topping: String) {
 // 길이에 따라 몸통을 그리는 함수
 func makeBody(length: Int, body: String, topping: String) {
     for _ in 1...length {
-        makeBodyTopping(body: body, topping: topping)
+        makeBodyAndTopping(body: body, topping: topping)
     }
 }
 
+// 빼빼로 정보 출력문
+func peperoInfoInput(bodyLength: Int, bodyShape: String, toppingShape: String, stickLength: Int) {
+    print("\n<정보>\n길이: \(bodyLength)\n몸통: \(bodyShape)\n토핑: \(toppingShape)\n막대길이: \(stickLength)\n")
+}
 
 // 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
 func makePepero(bodyLength: Int, bodyShape: String, toppingShape: String, stickLength: Int) {
-    print("<정보>\n길이: \(bodyLength)\n몸통: \(bodyShape)\n토핑: \(toppingShape)\n막대길이: \(stickLength)")
+    peperoInfoInput(bodyLength: bodyLength, bodyShape: bodyShape, toppingShape: toppingShape, stickLength: stickLength)
     makeBody(length: bodyLength, body: bodyShape, topping: toppingShape)
     makeStick(length: stickLength)
     }
