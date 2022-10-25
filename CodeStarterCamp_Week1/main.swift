@@ -8,9 +8,9 @@
 
 import Foundation
 
-var icecreamWidth = 11
+let icecreamWidth = 11
 
-func icecream(ingredient: String, height: Int) -> Void {
+func makeIcecreamBody(ingredient: String, height: Int) -> Void {
     for _ in 1...height {
         for _ in 1...icecreamWidth {
             print("\(ingredient)", terminator: "")
@@ -18,8 +18,7 @@ func icecream(ingredient: String, height: Int) -> Void {
         print("")
     }
 }
-
-func stick(height: Int) -> Void {
+func makeStick(height: Int) -> Void {
     for _ in 1...height {
         for _ in 1...icecreamWidth/2-1 {
             print(" ", terminator: "")
@@ -28,5 +27,5 @@ func stick(height: Int) -> Void {
     }
 }
 
-icecream(ingredient: "*", height: 8)
-stick(height: 4)
+makeIcecreamBody(ingredient: "*", height: 8)
+makeStick(height: 4)
