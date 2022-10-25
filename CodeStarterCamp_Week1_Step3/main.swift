@@ -9,7 +9,7 @@ import Foundation
 
 /* week2 Step3 Exercise */
 
-/// ⭐️ 변수 선언부
+/// ⭐️ Property 선언부
 let bodyLengthInput: Int
 let bodyInput: String
 var toppingInput: String
