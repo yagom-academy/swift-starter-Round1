@@ -5,8 +5,25 @@
 //  Created by yagom.
 //  Copyright © yagom academy. All rights reserved.
 //
+//
+//import Foundation
 
-import Foundation
+var cream = "***********"
+var stick = "    ||    "
 
-print("Hello, World!")
+func drawPop() {
+    for _ in 1...8 {
+        print(cream)
+    }
+}
 
+
+func drawPopStick() {
+    for _ in 1...4 {
+        print(stick)
+    }
+
+}
+
+drawPop()
+drawPopStick()
