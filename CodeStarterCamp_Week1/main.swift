@@ -6,7 +6,16 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
+func icecreamMaker() {
+    for _ in 1...8{
+        print("***********")
+    }
+}
+func stickMaker() {
+    for _ in 1...4{
+        print("    | |")
+    }
+}
 
-print("Hello, World!")
-
+icecreamMaker()
+stickMaker()
