@@ -7,18 +7,18 @@
 
 import Foundation
 
-func icecream1() {
+func makeIcecream1() {
     for _ in 1...8 {
         print("***********")
     }
 }
 
-func icecream2() {
+func makeIcecream2() {
     for _ in 1...4 {
         print("    | |")
     }
 }
 
 
-icecream1()
-icecream2()
+makeIcecream1()
+makeIcecream2()
