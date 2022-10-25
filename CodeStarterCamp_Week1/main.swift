@@ -5,39 +5,25 @@
 //  Created by yagom.
 //  Copyright © yagom academy. All rights reserved.
 //
-
-import Foundation
-
-
 //
-//func icecream() {
-//
-//    for cream in 1...8 {
-//        print("***********")
-//    }
-//
-//    for woodBar in 1...4 {
-//        print("    | |    ")
-//    }
-//}
-//
-//icecream()
+//import Foundation
 
 var cream = "***********"
 var stick = "    ||    "
 
-func iceCream() {
+func drawPop() {
     for _ in 1...8 {
         print(cream)
     }
 }
 
-func iceCreamstick() {
+
+func drawPopStick() {
     for _ in 1...4 {
         print(stick)
     }
-    
+
 }
 
-iceCream()
-iceCreamstick()
+drawPop()
+drawPopStick()
