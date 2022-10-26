@@ -13,8 +13,8 @@ func makePeperoStickHeight(stickHeight: Int, stick: String){
 }
 
 // 빼빼로의 몸통과 토핑을 합치는 함수
-func makePeperoBody(peperoBody: String, peperoTopping: String) -> String {
-    return(peperoTopping + peperoBody + peperoTopping)
+func makePeperoBody(_ peperoBody: String, with peperoTopping: String) -> String {
+    return (peperoTopping + peperoBody + peperoTopping)
 }
 
 // 빼빼로의 윗부분을 만드는 함수
@@ -26,9 +26,16 @@ func makePeperoBodyHeight(bodyHeight: Int, pepero: String){
 
 //전체 빼빼로 만들기
 func makePepero(bodyHeight: Int, peperoBody: String, peperoTopping: String = " ", stickHeight: Int, stick: String = " | | "){
-    print("\n<정보>", "길이: \(bodyHeight)", "몸통: \(peperoBody)", "토핑: \(peperoTopping)", "막대길이: \(stickHeight)\n", separator: "\n")
+    print(
+    """
+    <정보>
+    길이: \(bodyHeight)
+    몸통: \(peperoBody)
+    토핑: \(peperoTopping)
+    막대길이: \(stickHeight)\n
+    """)
     
-    let pepero: String = makePeperoBody(peperoBody: peperoBody, peperoTopping: peperoTopping)
+    let pepero: String = makePeperoBody(peperoBody, with: peperoTopping)
     
     makePeperoBodyHeight(bodyHeight: bodyHeight, pepero: pepero)
     
