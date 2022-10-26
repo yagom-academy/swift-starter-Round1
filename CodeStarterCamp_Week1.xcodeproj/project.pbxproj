@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
 		B4988EF129043BB60051A4EC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4988EF029043BB60051A4EC /* main.swift */; };
+		B4FB78DD29098A0900AE5FD9 /* PeperoMaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB78DC29098A0900AE5FD9 /* PeperoMaking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B4988EEE29043BB60051A4EC /* Pepero */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Pepero; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4988EF029043BB60051A4EC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B4FB78DC29098A0900AE5FD9 /* PeperoMaking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeperoMaking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				B4988EF029043BB60051A4EC /* main.swift */,
+				B4FB78DC29098A0900AE5FD9 /* PeperoMaking.swift */,
 			);
 			path = Pepero;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4988EF129043BB60051A4EC /* main.swift in Sources */,
+				B4FB78DD29098A0900AE5FD9 /* PeperoMaking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
