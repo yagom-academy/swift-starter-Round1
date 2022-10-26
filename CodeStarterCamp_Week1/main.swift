@@ -1,30 +1,47 @@
 //
-//  main.swift
+//  week1_step3.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
 //
 
 import Foundation
 
-let icecreamBody : String = "***********" // 상수 ice 할당 값
-let icecreamBar : String = "    | |    " // 상수 bar 할당 값
 
-// 아이스크림 부분 함수
-func draw_icecreamBody() {
-    for _ in 1...8 { // 상수 ice 8번 반복
-        print(icecreamBody)
+var peperoBar = " | | "
+
+func drawPeperoLengthbar(peperoLengthbar: Int) {
+    for _ in 1...peperoLengthbar {
+        print(peperoBar)
     }
 }
 
-// 스틱 부분 함수
-func draw_icecreamBar() {
-    for _ in 1...4 { // 상수 bar 4번 반복
-        print(icecreamBar)
-    }
+func drawPeperoBody(body peperoBody: String, topping peperoTopping: String) {
+        print("\(peperoTopping)\(peperoBody)\(peperoTopping)")
 }
 
-// 함수 호출
-draw_icecreamBody()
-draw_icecreamBar()
+func drawPeperoLengthbody(peperoLengthbody: Int) -> Int {
+    return peperoLengthbody
+}
+
+
+func drawPepero(lengthBody: Int, partBody: String, partTopping: String, lengthBar: Int) {
+    print("""
+<정보>
+길이: \(lengthBody)
+몸통: \(partBody)
+토핑: \(partTopping)
+막대길이: \(lengthBar)
+
+""")
+    for _ in 1...drawPeperoLengthbody(peperoLengthbody: lengthBody) {
+        drawPeperoBody(body: partBody, topping: partTopping)
+    }
+    drawPeperoLengthbar(peperoLengthbar: lengthBar)
+    print()
+}
+
+drawPepero(lengthBody: 10, partBody: "***", partTopping: " ", lengthBar: 4)
+drawPepero(lengthBody: 12, partBody: "***", partTopping: "&", lengthBar: 4)
+drawPepero(lengthBody: 12, partBody: "***", partTopping: "#", lengthBar: 6)
+drawPepero(lengthBody: 6, partBody: "|0|", partTopping: " ", lengthBar: 4)
+drawPepero(lengthBody: 6, partBody: "vvv", partTopping: "*", lengthBar: 4)
