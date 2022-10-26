@@ -19,10 +19,3 @@ func drawStick(heightStick: Int) {
         print("    | |")
     }
 }
-
-let heightIcecream = 8
-let heightStick = 4
-
-drawIcecream(heightIcecream: heightIcecream)
-drawStick(heightStick: heightStick)
-
