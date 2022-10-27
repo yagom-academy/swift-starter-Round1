@@ -8,17 +8,17 @@
 
 import Foundation
 
-func iceCreamMaking() -> Void {
+func makeIceCream() -> Void {
     print("***********")
 }
 
-func iceCreamStickMaking() -> Void {
+func makeStick() -> Void {
     print("    | |")
 }
 
 for _ in 1...8 {
-    iceCreamMaking()
+    makeIceCream()
 }
 for _ in 1...4 {
-    iceCreamStickMaking()
+    makeStick()
 }
