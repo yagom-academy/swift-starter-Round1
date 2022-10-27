@@ -1,27 +1,42 @@
 //
 //  main.swift
-//  CodeStarterCamp_Week1
+//  SomeProject
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 정경우 on 2022/10/22.
 //
-/**
-for stars in 1...8{
-        print(stars, "***********" )
+func makeStars (count: Int) {
+    print("***********" )
 }
-for bars in 1...4{
-    print(bars, "\t |  |")
+
+for count in 1...8 {
+    makeStars(count: count)
+}
+ 
+ func makeBars (count: Int) {
+ print("   |   |" )
+ }
+ 
+ for count in 1...4 {
+ makeBars(count: count)
+ }
+ 
+/*
+func makeBars (count: Int) {
+    let stick : String = "   |   |"
+    
+    for a in 1...4 {
+        print(stick)
+    }
 }
 */
-func stars (count: Int){
-    print(count, "***********" )
-}
-for count in 1...8{
-    stars(count: count)
-}
-func bars (count: Int){
-    print(count, "\t |  |" )
-}
-for count in 1...4{
-    bars(count: count)
-}
+
+
+
+
+
+
+
+
+
+
+
