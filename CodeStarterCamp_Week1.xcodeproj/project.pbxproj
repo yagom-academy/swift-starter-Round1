@@ -8,10 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
+		B4988EF129043BB60051A4EC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4988EF029043BB60051A4EC /* main.swift */; };
+		B4FB78DD29098A0900AE5FD9 /* PeperoMaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB78DC29098A0900AE5FD9 /* PeperoMaking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		34811DA9274B938F00A1E994 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B4988EEC29043BB60051A4EC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +36,20 @@
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B4988EEE29043BB60051A4EC /* Pepero */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Pepero; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4988EF029043BB60051A4EC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B4FB78DC29098A0900AE5FD9 /* PeperoMaking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeperoMaking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		34811DA8274B938F00A1E994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4988EEB29043BB60051A4EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */,
+				B4988EEF29043BB60051A4EC /* Pepero */,
 				34811DAC274B938F00A1E994 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */,
+				B4988EEE29043BB60051A4EC /* Pepero */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +83,15 @@
 				34811DAE274B938F00A1E994 /* main.swift */,
 			);
 			path = CodeStarterCamp_Week1;
+			sourceTree = "<group>";
+		};
+		B4988EEF29043BB60051A4EC /* Pepero */ = {
+			isa = PBXGroup;
+			children = (
+				B4988EF029043BB60051A4EC /* main.swift */,
+				B4FB78DC29098A0900AE5FD9 /* PeperoMaking.swift */,
+			);
+			path = Pepero;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,17 +114,37 @@
 			productReference = 34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */;
 			productType = "com.apple.product-type.tool";
 		};
+		B4988EED29043BB60051A4EC /* Pepero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4988EF229043BB60051A4EC /* Build configuration list for PBXNativeTarget "Pepero" */;
+			buildPhases = (
+				B4988EEA29043BB60051A4EC /* Sources */,
+				B4988EEB29043BB60051A4EC /* Frameworks */,
+				B4988EEC29043BB60051A4EC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pepero;
+			productName = Pepero;
+			productReference = B4988EEE29043BB60051A4EC /* Pepero */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		34811DA3274B938F00A1E994 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					34811DAA274B938F00A1E994 = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					B4988EED29043BB60051A4EC = {
+						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
 			};
@@ -110,6 +162,7 @@
 			projectRoot = "";
 			targets = (
 				34811DAA274B938F00A1E994 /* CodeStarterCamp_Week1 */,
+				B4988EED29043BB60051A4EC /* Pepero */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +173,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4988EEA29043BB60051A4EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4988EF129043BB60051A4EC /* main.swift in Sources */,
+				B4FB78DD29098A0900AE5FD9 /* PeperoMaking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +321,28 @@
 			};
 			name = Release;
 		};
+		B4988EF329043BB60051A4EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B4988EF429043BB60051A4EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +360,15 @@
 			buildConfigurations = (
 				34811DB3274B938F00A1E994 /* Debug */,
 				34811DB4274B938F00A1E994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4988EF229043BB60051A4EC /* Build configuration list for PBXNativeTarget "Pepero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4988EF329043BB60051A4EC /* Debug */,
+				B4988EF429043BB60051A4EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
