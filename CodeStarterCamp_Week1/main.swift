@@ -22,17 +22,17 @@ func drawBody(topping:String, body:String){
 }
 func drawVeticalBody(topping:String, body:String, length:Int){
     for _ in 1...(length-1){
-//        var drawBodyShape: (String, String) -> String = drawBody(topping:body:)
+        //        var drawBodyShape: (String, String) -> String = drawBody(topping:body:)
         print("\(topping)\(body)\(topping)")
     }
 }
-func drawingComplete(topping: String, body: String, length:Int, stick:Int){
+func makePepero(topping: String, body: String, length:Int, stick:Int){
     drawBody(topping: topping, body: body)
     drawVeticalBody(topping: topping, body: body, length: length)
     drawStick(stick: stick)
 }
 
-drawingComplete(topping: " ", body: "***", length: 10, stick: 4)
-drawingComplete(topping: "&", body: "***", length: 12, stick: 4)
-drawingComplete(topping: "#", body: "***", length: 12, stick: 6)
-drawingComplete(topping: " ", body: "|0|", length: 6, stick: 4)
+makePepero(topping: " ", body: "***", length: 10, stick: 4)
+makePepero(topping: "&", body: "***", length: 12, stick: 4)
+makePepero(topping: "#", body: "***", length: 12, stick: 6)
+makePepero(topping: " ", body: "|0|", length: 6, stick: 4)
