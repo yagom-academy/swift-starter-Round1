@@ -2,27 +2,14 @@
 //  main.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 강민수 on 2022/10/25.
 //
 
 import Foundation
 
-func drawIcecream(heightIcecream: Int) {
-    for _ in 1...heightIcecream {
-        print("***********")
-    }
-}
+let length = 8 // 아이스크림 길이 Int
+let body = "***" // 아이스크림 몸통 구성 String
+let topping = "&" // 아이스크림 몸통 앞과 뒤에 출력되어야할 토핑 String??
+let lengthStick = 3 // 아이스크림 막대 길이 Int
 
-func drawStick(heightStick: Int) {
-    for _ in 1...heightStick {
-        print("    | |")
-    }
-}
-
-let heightIcecream = 8
-let heightStick = 4
-
-drawIcecream(heightIcecream: heightIcecream)
-drawStick(heightStick: heightStick)
-
+printIcecream(length: length, body: body, topping: topping, lengthStick: lengthStick)
