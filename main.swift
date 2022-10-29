@@ -9,7 +9,7 @@ import Foundation
 
 
 func printInformation(height: Int, body: String, topping: String, stickHeight : Int) {
-    print("<정보>","길이: \(height)","몸통: \(body)","토핑: \(topping)","막대길이: \(stickHeight)", separator: "\n")
+    print("<정보>", "길이: \(height)", "몸통: \(body)", "토핑: \(topping)", "막대길이: \(stickHeight)", separator: "\n")
 }
 
 func drawStick(stickHeight: Int) {
@@ -19,7 +19,7 @@ func drawStick(stickHeight: Int) {
 }
 
 func drawBody(body: String, topping: String) {
-    print("\(topping)","\(body)","\(topping)", separator: "")
+    print("\(topping)", "\(body)", "\(topping)", separator: "")
 }
 
 
@@ -48,3 +48,4 @@ print("\n")
 
 drawPaparo(height: 6, body: "|0|", topping: " ", stickHeight: 4)
 print("\n")
+
