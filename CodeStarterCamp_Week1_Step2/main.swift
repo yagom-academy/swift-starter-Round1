@@ -1,9 +1,10 @@
 //
-//  main.swift
-//  SomeProject
+//  makeicecream.swift
+//  CodeStarterCamp_Week1
 //
-//  Created by 정경우 on 2022/10/22.
+//  Created by 정경우 on 2022/10/27.
 //
+import Foundation
 func makeStars (count: Int) {
     print("***********" )
 }
@@ -12,11 +13,11 @@ for count in 1...8 {
     makeStars(count: count)
 }
  
- func makeBars (count: Int) {
+func makeBars (count: Int) {
  print("   |   |" )
  }
  
- for count in 1...4 {
+for count in 1...4 {
  makeBars(count: count)
  }
  
@@ -28,15 +29,6 @@ func makeBars (count: Int) {
         print(stick)
     }
 }
-*/
-
-
-
-
-
-
-
-
-
-
+ makeBars()
+ */
 
