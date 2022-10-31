@@ -1,10 +1,10 @@
 //
-//  main.swift
-//  SomeProject
+//  new.swift
+//  CodeStarterCamp_Week1
 //
-//  Created by 정경우 on 2022/10/22.
+//  Created by 정경우 on 2022/10/31.
 //
-/*
+
 var peperobody: String = ""
 var bodyLength: Int = 1
 var stickLength: Int = 1
@@ -44,7 +44,3 @@ func drawPepero() {
     }
     
 }
-*/
-
-
-drawPepero()
