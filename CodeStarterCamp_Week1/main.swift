@@ -1,7 +1,4 @@
-let blank: String = " "
-let stick: String = "| |"
-
-func printPeperoInfo(mainLength: Int, stickLength: Int, peperoMain: String, peperoTopping: String) {
+func printPeperoInfo(_ mainLength: Int, _ stickLength: Int, _ peperoMain: String, _ peperoTopping: String) {
     print("<정보>")
     print("길이: \(mainLength)")
     print("몸통: \(peperoMain)")
@@ -9,27 +6,30 @@ func printPeperoInfo(mainLength: Int, stickLength: Int, peperoMain: String, pepe
     print("막대길이: \(stickLength)\n")
 }
 
-func combineToppingWithMain(peperoMain: String, peperoTopping: String) -> String {
-    return peperoTopping + peperoMain + peperoTopping
+func combineToppingWithMain(_ peperoMain: String, _ peperoTopping: String) {
+    print(peperoTopping + peperoMain + peperoTopping)
 }
 
-func drawMain(mainLength: Int, peperoMain: String, peperoTopping: String) {
+func drawMain(_ mainLength: Int, _ peperoMain: String, _ peperoTopping: String) {
     for _ in 1...mainLength {
-        print(combineToppingWithMain(peperoMain: peperoMain, peperoTopping: peperoTopping))
+        combineToppingWithMain(peperoMain, peperoTopping)
     }
 }
 
-func drawStick(stickLength: Int) {
+func drawStick(_ stickLength: Int) {
+    let blank: String = " "
+    let stick: String = "| |"
+    
     for _ in 1...stickLength {
         print(blank + stick + blank)
     }
     print("\n")
 }
 
-func drawPepero(mainLength: Int, stickLength: Int, peperoMain: String = "***", peperoTopping: String = blank) {
-    printPeperoInfo(mainLength: mainLength, stickLength: stickLength, peperoMain: peperoMain, peperoTopping: peperoTopping)
-    drawMain(mainLength: mainLength, peperoMain: peperoMain, peperoTopping: peperoTopping)
-    drawStick(stickLength: stickLength)
+func drawPepero(mainLength: Int, stickLength: Int, peperoMain: String = "***", peperoTopping: String = " ") {
+    printPeperoInfo(mainLength, stickLength, peperoMain, peperoTopping)
+    drawMain(mainLength, peperoMain, peperoTopping)
+    drawStick(stickLength)
 }
 
 
