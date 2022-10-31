@@ -11,5 +11,7 @@ import Foundation
 //makeIcecreamBody(ingredient: "*", height: 8)
 //makeStick(height: 4)
 
-makePeperoStick(stickLength: 4)
-makePeperoBody(bodyLength: 4, function: setPeperoBody(body:topping:), peperoBody: "00", peperoTopping: "**")
+makePepero(body: "***", topping: " ", bodyLength: 10, stickLength: 4)
+makePepero(body: "***", topping: "&", bodyLength: 12, stickLength: 4)
+makePepero(body: "***", topping: "#", bodyLength: 12, stickLength: 6)
+makePepero(body: "|0|", topping: " ", bodyLength: 6, stickLength: 4)
