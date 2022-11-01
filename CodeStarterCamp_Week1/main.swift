@@ -39,7 +39,7 @@ drawIceCream()
 drawStick()
  */
 
-// 여기서부터 Week1 [STEP 2]
+// 여기서부터 Week1 [STEP 3]
 
 // 실행 예시 1 출력
 drawIceCream(lenthOfBody: 10, shapeOfIceCream: "***", shapeOfTopping: " ", lenthOfStick: 4, shapeOfStick: "| |")
