@@ -17,6 +17,7 @@ func makeIcecreamBody(ingredient: String, height: Int) -> Void {
         print("")
     }
 }
+
 func makeStick(height: Int) -> Void {
     for _ in 1...height {
         for _ in 1...icecreamWidth/2-1 {

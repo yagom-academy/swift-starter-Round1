@@ -8,9 +8,6 @@
 
 import Foundation
 
-//makeIcecreamBody(ingredient: "*", height: 8)
-//makeStick(height: 4)
-
 makePepero(body: "***", topping: " ", bodyLength: 10, stickLength: 4)
 makePepero(body: "***", topping: "&", bodyLength: 12, stickLength: 4)
 makePepero(body: "***", topping: "#", bodyLength: 12, stickLength: 6)
