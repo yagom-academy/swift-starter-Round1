@@ -9,9 +9,9 @@
 import Foundation
 
 // 길이(Int)에 따른 막대(빼빼로 손잡이)를 그리는 함수
-func drawStick(lenthOfStick: Int, shapeOfStick: String, lenthOfBlankOfStick: Int) -> Void {
+func drawStick(lenthOfStick: Int, shapeOfStick: String, leftBlank: Int) -> Void {
     for _ in 1...lenthOfStick {
-        for _ in 1...lenthOfBlankOfStick {
+        for _ in 1...leftBlank {
             print(" ", terminator: "")
         }
         print(shapeOfStick)
@@ -32,9 +32,9 @@ func drawFullBody(lenthOfBody: Int, shapeOfIceCream: String, shapeOfTopping: Str
 
 // 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
 func drawIceCream(lenthOfBody: Int, shapeOfIceCream: String, shapeOfTopping: String, lenthOfStick: Int, shapeOfStick: String ) -> Void {
-    let lenthOfBlankOfStick: Int = ((shapeOfTopping + shapeOfIceCream + shapeOfTopping).count - shapeOfStick.count) / 2
+    let leftBlank: Int = ((shapeOfTopping + shapeOfIceCream + shapeOfTopping).count - shapeOfStick.count) / 2
 
     drawFullBody(lenthOfBody: lenthOfBody, shapeOfIceCream: shapeOfIceCream, shapeOfTopping: shapeOfTopping)
-    drawStick(lenthOfStick: lenthOfStick, shapeOfStick: shapeOfStick, lenthOfBlankOfStick: lenthOfBlankOfStick)
+    drawStick(lenthOfStick: lenthOfStick, shapeOfStick: shapeOfStick, leftBlank: leftBlank)
     
 }
