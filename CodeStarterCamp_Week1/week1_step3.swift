@@ -4,7 +4,6 @@
 //
 //  Created by 정경우 on 2022/10/31.
 
-
 func choosePeperoBody(body: String, topping: String) {
     print("\(topping)\(body)\(topping)")
 }
@@ -35,7 +34,7 @@ func makePepero(peperoBodylength: Int, peperoBodyShape: String, peperoToppingSha
     print()
 }
 
-/* givePeperoBody 함수를 매개변수로
+/* givePeperoBody 함수를 매개변수로 -> 더 간단한 방법으로 수정
  func choosePeperoBody(body: String, topping: String) {
  print("\(topping)\(body)\(topping)")
  }
