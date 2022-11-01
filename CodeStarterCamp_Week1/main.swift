@@ -8,6 +8,8 @@
 
 import Foundation
 
+/* Week1 [STEP 2]
+ 
 let sizeOfIceCream : Int = 11
 
 func drawIceCream() {
@@ -35,3 +37,21 @@ func drawStick() {
 
 drawIceCream()
 drawStick()
+ */
+
+// 여기서부터 Week1 [STEP 3]
+
+// 실행 예시 1 출력
+drawIceCream(lenthOfBody: 10, shapeOfIceCream: "***", shapeOfTopping: " ", lenthOfStick: 4, shapeOfStick: "| |")
+print("")
+
+// 실행 예시 2 출력
+drawIceCream(lenthOfBody: 12, shapeOfIceCream: "***", shapeOfTopping: "&", lenthOfStick: 4, shapeOfStick: "| |")
+print("")
+
+// 실행 예시 3 출력
+drawIceCream(lenthOfBody: 12, shapeOfIceCream: "***", shapeOfTopping: "#", lenthOfStick: 6, shapeOfStick: "| |")
+print("")
+
+// 나만의 빼빼로
+drawIceCream(lenthOfBody: 12, shapeOfIceCream: "***", shapeOfTopping: "$$", lenthOfStick: 5, shapeOfStick: "|...|")
