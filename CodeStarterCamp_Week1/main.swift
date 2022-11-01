@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+// MARK: - 출력함수
 func makePepero(length: Int, peperoBody: String, topping: Character, stick: Int) {
     print("""
     <정보>
@@ -16,23 +16,26 @@ func makePepero(length: Int, peperoBody: String, topping: Character, stick: Int)
     막대길이: \(stick)
     
     """)
-    makePeperoBody(Length: length, peperoBody: peperoBody, topping: topping)
+    makePeperoBody(length: length, peperoBody: peperoBody, topping: topping)
     makeStick(stick: stick)
     
 }
 
-func makePeperoBody(Length: Int, peperoBody: String, topping: Character) {
-    for _ in 1...Length {
+// MARK: - 빼빼로 몸통 만들기
+func makePeperoBody(length: Int, peperoBody: String, topping: Character) {
+    for _ in 1...length {
         print("\(topping)\(peperoBody)\(topping)")
     }
 }
 
+// MARK: - 손잡이 만들기
 func makeStick(stick: Int) {
     for _ in 1...stick {
         print(" | |")
     }
 }
 
+// MARK: - 출력
 makePepero(length: 10, peperoBody: "***", topping: " ", stick: 4)
 makePepero(length: 12, peperoBody: "***", topping: "&", stick: 4)
 makePepero(length: 12, peperoBody: "***", topping: "#", stick: 6)
