@@ -6,8 +6,10 @@
 //
 
 import Foundation
-// MARK: - 출력함수
-func makePepero(length: Int, peperoBody: String, topping: Character, stick: Int) {
+// 1차 피드백
+
+import Foundation
+func peperoInfo(topping: String, length: Int, peperoBody: String, stick: Int) {
     print("""
     <정보>
     길이: \(length)
@@ -16,27 +18,28 @@ func makePepero(length: Int, peperoBody: String, topping: Character, stick: Int)
     막대길이: \(stick)
     
     """)
-    makePeperoBody(length: length, peperoBody: peperoBody, topping: topping)
-    makeStick(stick: stick)
-    
 }
 
-// MARK: - 빼빼로 몸통 만들기
-func makePeperoBody(length: Int, peperoBody: String, topping: Character) {
+func makePeperoBody(topping: String, length: Int, peperoBody: String) {
     for _ in 1...length {
         print("\(topping)\(peperoBody)\(topping)")
     }
 }
 
-// MARK: - 손잡이 만들기
-func makeStick(stick: Int) {
-    for _ in 1...stick {
+func makeStick(length: Int) {
+    for _ in 1...length {
         print(" | |")
     }
 }
 
-// MARK: - 출력
-makePepero(length: 10, peperoBody: "***", topping: " ", stick: 4)
-makePepero(length: 12, peperoBody: "***", topping: "&", stick: 4)
-makePepero(length: 12, peperoBody: "***", topping: "#", stick: 6)
-makePepero(length: 6, peperoBody: "|0|", topping: " ", stick: 4)
+func printPepero(topping: String = " ", length: Int, peperoBody: String, stick: Int) {
+    peperoInfo(topping: topping, length: length, peperoBody: peperoBody, stick: stick)
+    makePeperoBody(topping: topping, length: length, peperoBody: peperoBody)
+    makeStick(length: stick)
+    print("\n")
+}
+
+printPepero(length: 10, peperoBody: "***", stick: 4)
+printPepero(topping: "&", length: 12, peperoBody: "***", stick: 4)
+printPepero(topping: "#", length: 12, peperoBody: "***", stick: 6)
+printPepero(length: 6, peperoBody: "|0|", stick: 4)
