@@ -3,13 +3,13 @@ import Foundation
 let iceCream: String = "***********"
 let stick: String = "    | |"
 
-func drewIceCream() {
+func drawIceCream() {
     for _ in 1...8 { print(iceCream) }
 }
 
-func drewStick() {
+func drawStick() {
     for _ in 1...4 { print(stick) }
 }
 
-drewIceCream()
-drewStick()
+drawIceCream()
+drawStick()
