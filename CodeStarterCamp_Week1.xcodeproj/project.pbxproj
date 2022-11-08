@@ -6,6 +6,10 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		715E024829193CF50084F827 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B19788290EA56000AFA473 /* main.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		34811DA9274B938F00A1E994 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -115,6 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715E024829193CF50084F827 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
