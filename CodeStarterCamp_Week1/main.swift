@@ -6,29 +6,29 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
 
-print("Hello, World!")
+import Foundation
 
 // Step 2: 아이스크림 그리기
 
+func drawIceCreamBody(){
+     for _ in 1...8{
+         for _ in 1...11{
+             print("*",terminator:"")
+         }
+         print("")
+         }
+     }
 
-func IceCreamBar(){
+
+func drawIceCreamBar(){
     for _ in 1...4{
         print ("    | |")
     }
 }
 
-func IceCream(){
-    for _ in 1...8{
-        for _ in 1...11{
-            print("*",terminator:"")
-        }
-        print("")
-        }
-    }
 
-IceCream()
-IceCreamBar()
+drawIceCreamBody()
+drawIceCreamBar()
 
 
