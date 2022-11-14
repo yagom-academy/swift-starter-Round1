@@ -22,7 +22,7 @@ func drawPepero (bodyLength: Int, body: String, topping: String, stickLength: In
 }
 
 //실행 예시1
-drawPepero(bodyLength: 10, body: "***", topping: " ", stickLength: 4)
+
 //실행 예시2
 drawPepero(bodyLength: 10, body: "***", topping: "&", stickLength: 4)
 //실행 예시3
