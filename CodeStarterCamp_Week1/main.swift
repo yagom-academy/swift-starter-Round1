@@ -11,17 +11,17 @@ import Foundation
 
 // Step 2: 아이스크림 그리기
 
-func drawIceCreamBody(){
+func drawIceCreamBody() {
      for _ in 1...8{
          for _ in 1...11{
-             print("*",terminator:"")
+             print("*", terminator: "")
          }
          print("")
          }
      }
 
 
-func drawIceCreamBar(){
+func drawIceCreamBar() {
     for _ in 1...4{
         print ("    | |")
     }
@@ -30,5 +30,4 @@ func drawIceCreamBar(){
 
 drawIceCreamBody()
 drawIceCreamBar()
-
 
