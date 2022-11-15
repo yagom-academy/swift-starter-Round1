@@ -8,9 +8,9 @@
 import Foundation
 
 //step3: 주문에 따른 뺴빼로 그리기
-func drawPepero (bodyLength: Int, body: String, topping: String, stickLength: Int) {
+func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int) {
     
-    print("<정보> 길이: \(bodyLength), 몸통: \(body), 토핑: \(topping), 막대길이: \(stickLength)")
+    print("<정보>\n길이: \(bodyLength)\n몸통: \(body)\n토핑: \(topping)\n막대길이: \(stickLength)")
     for _ in 1...bodyLength {
         print(topping, body, topping, separator: "")
     }
@@ -18,7 +18,6 @@ func drawPepero (bodyLength: Int, body: String, topping: String, stickLength: In
     for _ in 1...stickLength {
         print(" | | ")
     }
-    
 }
 
 //실행 예시1
