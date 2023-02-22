@@ -8,5 +8,31 @@
 
 import Foundation
 
-print("Hello, World!")
+func printIce() -> Void {
+    print("""
+***********
+***********
+***********
+***********
+***********
+***********
+***********
+***********
+""")
+}
 
+
+func printHandle() -> Void {
+    print("""
+    | |
+    | |
+    | |
+    | |
+
+""")
+}
+    
+for _ in 1...2 {
+    printIce()
+    printHandle()
+}
