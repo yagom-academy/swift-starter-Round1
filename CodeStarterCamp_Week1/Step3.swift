@@ -7,16 +7,31 @@
 
 import Foundation
 
-func length(x: Int) {
-    
-}
 
-func body(y: String) {
-    
+//let body : String = " ***"
+let stick: String = " | |"
+
+///길이
+func length(x: Int) {
+    for _ in 1...x {
+        print(body(y: " ***"))
+    }
 }
+/// 막대 길이
+func stick(v: Int) {
+    for _ in 1...v {
+        print(stick)
+    }
+}
+// 몸통
+func body(y: String) -> String {
+    return y
+}
+// 토핑
 func topping(z: String) {
     
 }
+
 
 //func 함수이름(매개변수1이름: 매개변수1타입, 매개변수2이름: 매개변수2타입 = 매개변수 기본값 ...) -> 반환타입 {
 //    /* 함수 구현부 */
