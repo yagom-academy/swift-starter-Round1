@@ -14,27 +14,27 @@ let bodyComponent: String = """
 let barComponent: String = "    | |"
 
 
-func icecreamBody(component: String) -> String {
+func makeIcecreamBody(component: String) -> String {
     var body: String = ""
     for _ in 1 ... 8 {
         for _ in 1 ... 11 {
-            body += bodyComponent
+            body += component
         }
         body += "\n"
     }
-    body.remove(at: body.index(before: body.endIndex))
+    body.removeLast()
     return body
 }
 
 
-func icecreamBar(component: String)  {
+func makeIcecreamBar(component: String)  {
     for _ in 1 ... 4 {
         print(component)
     }
 }
 
-print(icecreamBody(component: bodyComponent))
-icecreamBar(component: barComponent)
+print(makeIcecreamBody(component: bodyComponent))
+makeIcecreamBar(component: barComponent)
 
 
 
