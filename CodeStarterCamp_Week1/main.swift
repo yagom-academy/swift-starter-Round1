@@ -11,21 +11,21 @@ import Foundation
 
 
 /*기본 적으로 만들어진 함수입니다 이 함수는 For문인 반복문을 1번에서부터 8번까지 8번 반복하게끔 진행하였습니다.*/
-func fo() {
+func first() {
     for _ in 1...8 {
         print("***********")
     }
 }
 /*위의 함수와 같이 반복문을 사용하여 1번부터 4번까지 4번 반복하게 진행했습니다.*/
-func fortwo() {
+func second() {
     for _ in 1...4 {
         print("    | |    ")
     }
 }
 /*위에 만들 함수들을 호출하여 사용합니다.*/
 print("함수 사용하기")
-fo()
-fortwo()
+first()
+second()
 print("함수 끝")
 // 함수 를 불러오면 자동으로 출력된다.
 
