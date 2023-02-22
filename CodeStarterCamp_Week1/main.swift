@@ -8,5 +8,16 @@
 
 import Foundation
 
-print("Hello, World!")
+//1주차 Step2
+func iceCream_head(){
+    for _ in 1...8 {
+        print("***********")
+    }
+}
+
+func iceCream_body(){
+    for _ in 1...4 {
+        print("    | |    ")
+    }
+}
 
