@@ -73,21 +73,21 @@ import Foundation
 //print("   테스트   끝        ")
 
 print("----- 뺴빼로 -------   ")
-length(length: 10, body: " ***", topping: "")
-stick(stick: 4, stickMessage: " | |")
+snackBody(length: 10, body: " ***", topping: "")
+stickLength(stickLength: 4, stickShape: " | |")
 
 print("------& 뺴빼로-------")
-length(length: 12, body: "***", topping: "&")
-stick(stick: 4, stickMessage: " | |")
+snackBody(length: 12, body: "***", topping: "&")
+stickLength(stickLength: 4, stickShape: " | |")
 
 print("------# 뺴빼로-------")
-length(length: 12, body: "***", topping: "#")
-stick(stick: 6, stickMessage: " | |")
+snackBody(length: 12, body: "***", topping: "#")
+stickLength(stickLength: 6, stickShape: " | |")
 
 print("------누드 뺴빼로-------")
-length(length: 6, body: " |0|", topping: "")
-stick(stick: 4, stickMessage: " | |")
+snackBody(length: 6, body: " |0|", topping: "")
+stickLength(stickLength: 4, stickShape: " | |")
 
 
-//프린트를 하지않고 진행하니 () 줄이 출력되는 현상이없어졌다.  print함로 출력을 진행하면 () 이것이 왜 생길까??
+//프린트를 하지않고 진행하니 () 줄이 출력되는 현상이없어졌다.  print로 함수출력을 진행하면 () 이것이 왜 생길까??
 

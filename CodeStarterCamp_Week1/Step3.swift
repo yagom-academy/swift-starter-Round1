@@ -8,16 +8,16 @@
 import Foundation
 
 
-///몸통과길이
-func length(length: Int, body: String, topping: String) {
+///몸통의길이
+func snackBody(length: Int, body: String, topping: String) {
     for _ in 1...length {
         print("\(topping)"+body+"\(topping)")
     }
 }
 /// 막대 길이
-func stick(stick: Int, stickMessage: String) {
-    for _ in 1...stick {
-        print(stickMessage)
+func stickLength(stickLength: Int, stickShape: String) {
+    for _ in 1...stickLength {
+        print(stickShape)
     }
 }
 
