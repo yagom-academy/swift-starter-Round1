@@ -72,12 +72,22 @@ import Foundation
 // */
 //print("   테스트   끝        ")
 
+print("----- 뺴빼로 -------   ")
+length(length: 10, body: " ***", topping: "")
+stick(stick: 4, stickMessage: " | |")
 
-length(x: 10)
-stick(v: 4)
+print("------& 뺴빼로-------")
+length(length: 12, body: "***", topping: "&")
+stick(stick: 4, stickMessage: " | |")
+
+print("------# 뺴빼로-------")
+length(length: 12, body: "***", topping: "#")
+stick(stick: 6, stickMessage: " | |")
+
+print("------누드 뺴빼로-------")
+length(length: 6, body: " |0|", topping: "")
+stick(stick: 4, stickMessage: " | |")
+
+
 //프린트를 하지않고 진행하니 () 줄이 출력되는 현상이없어졌다.  print함로 출력을 진행하면 () 이것이 왜 생길까??
 
-print("== ex2) ==")
-length(x: 12)
-stick(v: 4)
-topping(z: "&")
