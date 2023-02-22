@@ -8,5 +8,21 @@
 
 import Foundation
 
-print("Hello, World!")
+func drawIce() {
+    for columnStar in 0...7 {
+        for rowStar in 0...10 {
+            print("*", terminator: "")
+        }
+        print("")
+    }
+}
+
+func drawBar() {
+    for columnVerticalBar in 0...3 {
+        print("    | |")
+    }
+}
+
+drawIce()
+drawBar()
 
