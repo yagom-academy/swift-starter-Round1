@@ -28,7 +28,7 @@
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6390AFD529A5B54C0037E1AC /* Step3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3.swift; sourceTree = "<group>"; };
 		6390AFDA29A5E81A0037E1AC /* step2 순서도.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step2 순서도.png"; sourceTree = "<group>"; };
-		6390AFDB29A5E91F0037E1AC /* step2-1 순서도.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step2-1 순서도.png"; sourceTree = "<group>"; };
+		6390AFDC29A5E9DA0037E1AC /* step2-1 순서도.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step2-1 순서도.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				34811DAE274B938F00A1E994 /* main.swift */,
 				6390AFD529A5B54C0037E1AC /* Step3.swift */,
 				6390AFDA29A5E81A0037E1AC /* step2 순서도.png */,
-				6390AFDB29A5E91F0037E1AC /* step2-1 순서도.png */,
+				6390AFDC29A5E9DA0037E1AC /* step2-1 순서도.png */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
