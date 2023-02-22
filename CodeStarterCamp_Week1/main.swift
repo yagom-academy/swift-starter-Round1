@@ -72,22 +72,37 @@ import Foundation
 // */
 //print("   테스트   끝        ")
 
-print("----- 뺴빼로 -------   ")
-snackBody(length: 10, body: " ***", topping: "")
-stickLength(stickLength: 4, stickShape: " | |")
 
-print("------& 뺴빼로-------")
-snackBody(length: 12, body: "***", topping: "&")
-stickLength(stickLength: 4, stickShape: " | |")
+//print("------& 뺴빼로-------")
+//snackBody(length: 12, snackBody: "***")
+//stickLength(stickLength: 4, stickShape: " | |")
+//
+//print("------# 뺴빼로-------")
+//
+//stickLength(stickLength: 6, stickShape: " | |")
+//
+//print("------누드 뺴빼로-------")
+//
+//stickLength(stickLength: 4, stickShape: " | |")
+//
+//
+//print("------custom 뺴빼로-------")
+//
+//stickLength(stickLength: 2, stickShape: "  | |")
 
-print("------# 뺴빼로-------")
-snackBody(length: 12, body: "***", topping: "#")
-stickLength(stickLength: 6, stickShape: " | |")
 
-print("------누드 뺴빼로-------")
-snackBody(length: 6, body: " |0|", topping: "")
-stickLength(stickLength: 4, stickShape: " | |")
+//프린트를 하지않고 진행하니 () 줄이 출력되는 현상이없어졌다.  print로 함수출력을 진행하면
+//    () 이것이 왜 생길까??
 
 
-//프린트를 하지않고 진행하니 () 줄이 출력되는 현상이없어졌다.  print로 함수출력을 진행하면 () 이것이 왜 생길까??
 
+
+
+
+
+
+
+
+
+print("----- 뺴빼로 시작-------   ")
+result()
