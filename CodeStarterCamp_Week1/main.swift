@@ -1,12 +1,11 @@
 //
-//  Step3.swift
+//  main.swift
 //  CodeStarterCamp_Week1
 //
 //  Created by 김형철 on 2023/02/23.
 //
 
 import Foundation
-
 
 var fragment: String = ""
 

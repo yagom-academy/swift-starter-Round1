@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DCBEA17429A66CAF00B2DB81 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBEA16F29A66ACA00B2DB81 /* main.swift */; };
+		DC945F3B29A6737C00996CB0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC945F3A29A6737C00996CB0 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +24,9 @@
 
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
-		34811DAE274B938F00A1E994 /* step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step1.swift; sourceTree = "<group>"; };
+		34811DAE274B938F00A1E994 /* step2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step2.swift; sourceTree = "<group>"; };
 		DC58A59B29A5F9A600832707 /* step2Diagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step2Diagram.png; sourceTree = "<group>"; };
-		DCBEA16F29A66ACA00B2DB81 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		DCBEA17529A66CF600B2DB81 /* step3Diagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = step3Diagram.png; path = ../../../step3Diagram.png; sourceTree = "<group>"; };
+		DC945F3A29A6737C00996CB0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +59,9 @@
 		34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {
 			isa = PBXGroup;
 			children = (
-				34811DAE274B938F00A1E994 /* step1.swift */,
+				34811DAE274B938F00A1E994 /* step2.swift */,
 				DC58A59B29A5F9A600832707 /* step2Diagram.png */,
-				DCBEA16F29A66ACA00B2DB81 /* main.swift */,
-				DCBEA17529A66CF600B2DB81 /* step3Diagram.png */,
+				DC945F3A29A6737C00996CB0 /* main.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -99,6 +97,7 @@
 				TargetAttributes = {
 					34811DAA274B938F00A1E994 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -125,7 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCBEA17429A66CAF00B2DB81 /* main.swift in Sources */,
+				DC945F3B29A6737C00996CB0 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +249,15 @@
 		34811DB3274B938F00A1E994 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -259,7 +265,13 @@
 		34811DB4274B938F00A1E994 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
