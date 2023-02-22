@@ -37,7 +37,6 @@ func makeBar(height: UInt) {
     }
 }
 
-
 /* 아이스크림 만들기 */
 makeIcecream(height: 8)
 makeBar(height: 4)
