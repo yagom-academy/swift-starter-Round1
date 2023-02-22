@@ -104,5 +104,5 @@ import Foundation
 
 
 
-print("----- 뺴빼로 시작-------   ")
+
 result()
