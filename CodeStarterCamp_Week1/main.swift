@@ -28,4 +28,12 @@ func drawIceCreamPart(){
     }
 } */
 
+//막대기 부분을 그리는 함수
 
+func drawBarPart(){
+    for _ in 1...4{
+        print ("    | |    ")
+    }
+}
+
+drawBarPart()
