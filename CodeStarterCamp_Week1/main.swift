@@ -8,5 +8,19 @@
 
 import Foundation
 
-print("Hello, World!")
+func makeIceCreamBody() {     //아이스크림 몸통 만드는 함수
+    for _ in 1...8 {
+        print("***********")
+    }
+}
+
+
+func makeIceCreamStick() {    //아이스크림 스틱 만드는 함수
+        for _ in 1...4 {
+            print("    | |")
+        }
+}
+
+makeIceCreamBody()
+makeIceCreamStick()
 
