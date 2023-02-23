@@ -7,20 +7,19 @@
 
 import Foundation
 
-var fragment: String = ""
 
-func makeHandle(length: Int) {
+
+func makePeperoHandle(length: Int) {
     for _ in 1 ... length {
         print(" | |")
     }
 }
 
-func makeFragment(body: String, topping: String = " ") -> String {
-    fragment = topping.appending(body).appending(topping)
-    return fragment
+func makePeperoFragment(body: String, topping: String = " ") -> String {
+    return topping.appending(body).appending(topping)
 }
 
-func makeBody(length: Int) {
+func makePeperoBody(length: Int, fragment: String) {
     for _ in 1 ... length {
         print(fragment)
     }
@@ -31,12 +30,11 @@ func combine(handleLength: Int, peperoBody: String, peperoTopping: String = " ",
     print("길이: \(bodyLength)")
     print("몸통: \(peperoBody)")
     print("토핑: \(peperoTopping)")
-    print("막대길이: \(handleLength)")
-    print()
+    print("막대길이: \(handleLength)", terminator: "\n\n")
     
-    makeFragment(body: peperoBody, topping: peperoTopping)
-    makeBody(length: bodyLength)
-    makeHandle(length: handleLength)
+    let peperoFragment = makePeperoFragment(body: peperoBody, topping: peperoTopping)
+    makePeperoBody(length: bodyLength, fragment: peperoFragment)
+    makePeperoHandle(length: handleLength)
     print()
 }
 
