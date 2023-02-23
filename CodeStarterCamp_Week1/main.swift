@@ -16,10 +16,11 @@ func makeIceCreamBody() {
 }
 
 
-func makeIceCreamStick() {         //아이스크림 스틱 만드는 함수
-        for _ in 1...4 {
-            print("    | |")
-        }
+func makeIceCreamStick() {  //아이스크림 스틱 만드는 함수
+    let iceCreamStick:String = "    | |"
+    for _ in 1...4 {
+        print(iceCreamStick)
+    }
 }
 
 makeIceCreamBody()
