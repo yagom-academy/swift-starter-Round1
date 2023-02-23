@@ -8,30 +8,29 @@
 
 import Foundation
 
-func print_icecream (width: Int, height: Int) {
-    for _ in 1...height {           // flowchart - h
-        for _ in 1...width {        // flowchart - w
-            print("* ", terminator: "")
+func drawIceCream(iceCreamWidth: Int, iceCreamHeight: Int) {
+    for heightCount in 1...iceCreamHeight {
+        for widthCount in 1...iceCreamWidth {
+            print("*", terminator: "")
         }
-        print("\n")
+        print("")
     }
 }
 
-func print_bar (width: Int) {
-    for _ in 1...4 {                // flowchart - stick_h
-        for w in 1...width {
-            if (w == (width/2) || w == (width/2+2)) {
-                print("| ", terminator: "")
-            }
-            else {
-                print("  ", terminator: "")
+func drawIceCreamStick(iceCreamWidth: Int) {
+    for iceCreamStick in 1...4 {
+        for widthCount in 1...iceCreamWidth {
+            if (widthCount == (iceCreamWidth/2) || widthCount == (iceCreamWidth/2+2)) {
+                print("|", terminator: "")
+            } else {
+                print(" ", terminator: "")
             }
         }
-        print("\n")
+        print("")
     }
 }
-    
-var width = 11
-var height = 8
-print_icecream(width: width, height: height)
-print_bar(width: width)
+
+var iceCreamWidth = 11
+var iceCreamHeight = 8
+drawIceCream(iceCreamWidth: iceCreamWidth, iceCreamHeight: iceCreamHeight)
+drawIceCreamStick(iceCreamWidth: iceCreamWidth)
