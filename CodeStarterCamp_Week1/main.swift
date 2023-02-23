@@ -8,21 +8,21 @@
 
 import Foundation
 
-func drawIce() {
-    for columnStar in 0...7 {
-        for rowStar in 0...10 {
+func drawIceCream() {
+    for _ in 0...7 {
+        for _ in 0...10 {
             print("*", terminator: "")
         }
         print("")
     }
 }
 
-func drawBar() {
-    for columnVerticalBar in 0...3 {
+func drawIceCreamBar() {
+    for _ in 0...3 {
         print("    | |")
     }
 }
 
-drawIce()
-drawBar()
+drawIceCream()
+drawIceCreamBar()
 
