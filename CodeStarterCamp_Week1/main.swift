@@ -2,27 +2,18 @@
 //  main.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by minsong kim on 2023/02/23.
 //
 
 import Foundation
 
 
-func drawIceCreamPart() {
-    for _ in 1...8 {
-        for _ in 1...11 {
-            print("*", terminator: "")
-        }
-        print()
-    }
-}
+inputPeperoBodyAndTopping(bodyInformation: "###", toppingInformation: "*")
 
-func drawIceCreamBarPart() {
-    for _ in 1...4 {
-        print("    | |    ")
-    }
-}
+inputInformation(bodyLengthInformation: 10, barLengthInformation: 4)
 
-drawIceCreamPart()
-drawIceCreamBarPart()
+viewPeperoInformation()
+
+drawPeperoBodyPart()
+
+drawPeperoBarPart()
