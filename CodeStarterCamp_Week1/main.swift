@@ -9,18 +9,17 @@
 import Foundation
 
 //1주차 Step2
-func create_iceCreamBody(){
+func createIceCreamBody(){
     for _ in 1...8 {
         print("***********")
     }
 }
 
-func create_iceCreamStick(){
+func createIceCreamStick(){
     for _ in 1...4 {
         print("    | |    ")
     }
 }
 
-create_iceCreamBody()
-create_iceCreamStick()
-
+//createIceCreamBody()
+//createIceCreamStick()
