@@ -6,7 +6,17 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
+func IceCream() {
+    for iceCream in 1...8 {
+        print(iceCream, "***********")
+    }
+}
 
-print("Hello, World!")
+func Stick() {
+    for stick in 1...4 {
+        print(stick, "    | |    ")
+    }
+}
 
+IceCream()
+Stick()
