@@ -14,14 +14,18 @@ var topping: String = " "
 var barLength: Int = 1
 let bar: String = " | |"
 
-func inputPeperoBodyAndTopping(bodyInformation: String, toppingInformation: String){
-    body = bodyInformation
-    topping = toppingInformation
-}
 
-func inputInformation(bodyLengthInformation: Int, barLengthInformation: Int){
+
+func inputLengthInformation(bodyLengthInformation: Int, barLengthInformation: Int){
     bodyLength = bodyLengthInformation
     barLength = barLengthInformation
+}
+
+func inputPeperoBodyAndTopping(bodyInformation: String, toppingInformation: String){
+    body = bodyInformation
+    if toppingInformation != "" {
+        topping = toppingInformation
+    }
 }
 
 func viewPeperoInformation() {
