@@ -60,6 +60,16 @@ func makeStick(height: UInt, shape: String, body: String, topping: String) {
 
 /// 빼빼로 그리기
 func makePepero(bodyHeight: UInt, body: String, topping: String = "", stickHeight: UInt) {
+    print(
+        """
+         <정보>
+         길이: \(bodyHeight)
+         몸통: \(body)
+         토핑: \(topping)
+         막대길이: \(stickHeight)\n
+        """
+    ) // 정보 출력
+    
     let shape = makeBodyShape(body: body, topping: topping)
     if shape.count > 0 {
         makeBody(height: bodyHeight, shape: shape)
