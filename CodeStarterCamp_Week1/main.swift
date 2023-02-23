@@ -18,7 +18,7 @@ func printIceCreamPart(width: Int = 7, height: Int = 9) {
 }
 
 func printIceCreamStickPart(iceCreamWidth: Int = 7, length: Int = 3) {
-    let iceCreamWidthHalf = iceCreamWidth/2
+    let iceCreamWidthHalf = iceCreamWidth / 2
     for _ in 1...length {
         for _ in 1...iceCreamWidthHalf-1 {
             print(" ", terminator: "")
