@@ -10,20 +10,19 @@ import Foundation
 
 
 func drawIceCreamPart() {
-    for _ in 1...8{
-        for _ in 1...11{
+    for _ in 1...8 {
+        for _ in 1...11 {
             print("*", terminator: "")
         }
         print()
     }
 }
 
-drawIceCreamPart()
-
-func drawBarPart() {
-    for _ in 1...4{
+func drawIceCreamBarPart() {
+    for _ in 1...4 {
         print("    | |    ")
     }
 }
 
-drawBarPart()
+drawIceCreamPart()
+drawIceCreamBarPart()

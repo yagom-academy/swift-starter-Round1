@@ -8,3 +8,7 @@
 import Foundation
 
 
+func viewInformation () {
+    let informationTitle: String = "<정보>"
+    print(informationTitle)
+}
