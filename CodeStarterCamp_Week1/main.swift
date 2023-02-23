@@ -8,5 +8,23 @@
 
 import Foundation
 
-print("Hello, World!")
 
+func printIceCream() {
+    let iceCreamContent: String = "***********"
+    
+    for _ in 0...7 {
+        print(iceCreamContent)
+    }
+}
+
+func printStick() {
+    let stickContent: String = "    | |    "
+    
+    for _ in 0...3 {
+        print(stickContent)
+    }
+}
+
+
+printIceCream()
+printStick()
