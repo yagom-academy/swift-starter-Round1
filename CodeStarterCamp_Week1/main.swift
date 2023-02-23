@@ -8,7 +8,7 @@
 
 import Foundation
 
-func printIceCream() {
+func makeIceCream() {
     for _ in 1...8 {
         for _ in 1...11 {
             print("*", terminator: "")
@@ -17,11 +17,11 @@ func printIceCream() {
     }
 }
 
-func printStick() {
+func makeStick() {
     for _ in 1...4 {
         print("    | |")
     }
 }
 
-printIceCream()
-printStick()
+makeIceCream()
+makeStick()
