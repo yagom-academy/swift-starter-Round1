@@ -9,23 +9,20 @@
 
 import Foundation
 
-print("Hello, World!")
-
-func icecream() {
-    print("***********")
+func makeIce() {
+    for _ in 1...8 {
+        print("***********")
+    }
 }
 
-func stick() {
-    print("    | |")
+func makeStick() {
+    for _ in 1...4 {
+        print("    | |")
+    }
 }
 
-for _ in 1...8 {
-    icecream()
-}
-
-for _ in 1...4 {
-    stick()
-}
+makeIce()
+makeStick()
 
 //var icecreamwidth = 11
 //var icecreamlength = 8
