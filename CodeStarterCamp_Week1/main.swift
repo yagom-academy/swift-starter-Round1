@@ -21,5 +21,5 @@ func createIceCreamStick(){
     }
 }
 
-//createIceCreamBody()
-//createIceCreamStick()
+createIceCreamBody()
+createIceCreamStick()
