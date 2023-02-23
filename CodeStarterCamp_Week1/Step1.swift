@@ -2,11 +2,11 @@
 //  Step1.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by eve on 2023/02/20.
 //
 
 import Foundation
 
-print("Hello, World!")
-
+func printHello() {
+    print("Hello, World!")
+}
