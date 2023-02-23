@@ -8,14 +8,15 @@
 
 import Foundation
 
-func makeIceCreamBody() {     //아이스크림 몸통 만드는 함수
+func makeIceCreamBody() {
+    let iceCreamParts:String = "***********" //아이스크림 몸통 만드는 함수
     for _ in 1...8 {
-        print("***********")
+        print(iceCreamParts)
     }
 }
 
 
-func makeIceCreamStick() {    //아이스크림 스틱 만드는 함수
+func makeIceCreamStick() {         //아이스크림 스틱 만드는 함수
         for _ in 1...4 {
             print("    | |")
         }
