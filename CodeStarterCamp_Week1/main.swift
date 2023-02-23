@@ -14,7 +14,7 @@ func drawIceCreamPart() {
         for _ in 1...11{
             print("*", terminator: "")
         }
-        print ()
+        print()
     }
 }
 
