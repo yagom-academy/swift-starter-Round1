@@ -9,9 +9,7 @@
 import Foundation
 
 
-/// 아이스크림 & 아이스크림 막대 그리기
-
-func makeIceCream() {
+func printIceCream() {
     let iceCreamContent: String = "***********"
     
     for _ in 0...7 {
@@ -19,7 +17,7 @@ func makeIceCream() {
     }
 }
 
-func makeStick() {
+func printStick() {
     let stickContent: String = "    | |    "
     
     for _ in 0...3 {
@@ -28,5 +26,5 @@ func makeStick() {
 }
 
 
-makeIceCream()
-makeStick()
+printIceCream()
+printStick()
