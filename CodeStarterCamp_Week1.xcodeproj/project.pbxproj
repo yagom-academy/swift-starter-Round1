@@ -29,7 +29,7 @@
 		6390AFD529A5B54C0037E1AC /* Step3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3.swift; sourceTree = "<group>"; };
 		6390AFDD29A5FF920037E1AC /* step2-1 순서도.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step2-1 순서도.png"; sourceTree = "<group>"; };
 		6390AFDE29A5FF950037E1AC /* step2-2 순서도.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step2-2 순서도.png"; sourceTree = "<group>"; };
-		6390AFDF29A722420037E1AC /* 빼빼로 순서도.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "빼빼로 순서도.png"; sourceTree = "<group>"; };
+		63B738A029A740140091B587 /* 빼빼로 순서도 수정.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "빼빼로 순서도 수정.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 				6390AFD529A5B54C0037E1AC /* Step3.swift */,
 				6390AFDD29A5FF920037E1AC /* step2-1 순서도.png */,
 				6390AFDE29A5FF950037E1AC /* step2-2 순서도.png */,
-				6390AFDF29A722420037E1AC /* 빼빼로 순서도.png */,
+				63B738A029A740140091B587 /* 빼빼로 순서도 수정.png */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
