@@ -1,6 +1,6 @@
 import Swift
 
-func icecream() {
+func drawIcecream() {
     for one in 1...8 {
         for two in 1...11 {
             print("*", terminator: "")
@@ -9,11 +9,11 @@ func icecream() {
     }
 }
 
-func stick() {
+func drawStick() {
     for one in 1...4 {
         print("    | |")
     }
 }
 
-icecream()
-stick()
+drawIcecream()
+drawStick()
