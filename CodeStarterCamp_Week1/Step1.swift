@@ -1,5 +1,5 @@
 //
-//  Step1.swift
+//  step1.swift
 //  CodeStarterCamp_Week1
 //
 //  Created by eve on 2023/02/20.
