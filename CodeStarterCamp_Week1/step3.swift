@@ -7,34 +7,47 @@
 
 import Foundation
 
-
-func printPeperoStick(len: Int) {
-    for _ in 1...len {
+func printPeperoStick(stickLength: Int) {
+    for _ in 1...stickLength {
         print(" | |")
     }
 }
 
-func getPeperoBody(basic: String, topping: String) -> String {
-    let leftTopping = topping == "" ? " " : topping
-    return leftTopping + basic + topping
+func makePeperoBodyPart(basicBody: String, toppingBody: String) -> String {
+    let leftToppingBody = toppingBody == "" ? " " : toppingBody
+    return leftToppingBody + basicBody + toppingBody
 }
 
-func printPeperoBody(len: Int, bodyStr: String) {
-    for _ in 1...len {
-        print(bodyStr)
+func printPeperoBody(bodyLength: Int, bodyString: String) {
+    for _ in 1...bodyLength {
+        print(bodyString)
     }
 }
 
-func printPeperoAll(bodyLen: Int, stickLen: Int, bodyBasic: String, bodyTopping: String = "") {
+func printPeperoInfo(bodyLength: Int, stickLength: Int, basicBody: String, toppingBody: String = "") {
     print("""
     <정보>
-    길이: \(bodyLen)
-    몸통: \(bodyBasic)
-    토핑: \(bodyTopping)
-    막대길이: \(stickLen)
+    길이: \(bodyLength)
+    몸통: \(basicBody)
+    토핑: \(toppingBody)
+    막대길이: \(stickLength)
     
     """)
-    let totalBodyStr = getPeperoBody(basic: bodyBasic, topping: bodyTopping)
-    printPeperoBody(len: bodyLen, bodyStr: totalBodyStr)
-    printPeperoStick(len: stickLen)
 }
+
+func printEndLine() {
+    print("""
+    
+    ----------
+    
+    """)
+}
+
+func printPeperoAll(bodyLength: Int, stickLength: Int, basicBody: String, toppingBody: String = "") {
+    printPeperoInfo(bodyLength: bodyLength, stickLength: stickLength, basicBody: basicBody, toppingBody: toppingBody)
+    let totalBodyString = makePeperoBodyPart(basicBody: basicBody, toppingBody: toppingBody)
+    printPeperoBody(bodyLength: bodyLength, bodyString: totalBodyString)
+    printPeperoStick(stickLength: stickLength)
+    printEndLine()
+}
+

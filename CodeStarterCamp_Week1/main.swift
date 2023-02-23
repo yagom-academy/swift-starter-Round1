@@ -35,7 +35,7 @@ func printIceMerge(isHead: Bool) {
 //printIceMerge(isHead:true)
 //printIceMerge(isHead:false)
 
-printPeperoAll(bodyLen: 10, stickLen: 4, bodyBasic: "***")
-printPeperoAll(bodyLen: 12, stickLen: 4, bodyBasic: "***", bodyTopping: "&")
-printPeperoAll(bodyLen: 12, stickLen: 6, bodyBasic: "***", bodyTopping: "#")
-printPeperoAll(bodyLen: 6, stickLen: 4, bodyBasic: "|0|")
+printPeperoAll(bodyLength: 10, stickLength: 4, basicBody: "***")
+printPeperoAll(bodyLength: 12, stickLength: 4, basicBody: "***", toppingBody: "&")
+printPeperoAll(bodyLength: 12, stickLength: 6, basicBody: "***", toppingBody: "#")
+printPeperoAll(bodyLength: 6, stickLength: 4, basicBody: "|0|")
