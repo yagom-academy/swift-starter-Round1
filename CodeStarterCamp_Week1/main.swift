@@ -8,7 +8,7 @@
 
 import Foundation
 
-func printIceCreamPart(width: Int = 7, height: Int = 9) {
+func printIceCreamPart(width: Int, height: Int) {
     for _ in 1...height {
         for _ in 1...width {
             print("*", terminator: "")
@@ -17,14 +17,14 @@ func printIceCreamPart(width: Int = 7, height: Int = 9) {
     }
 }
 
-func printIceCreamStickPart(iceCreamWidth: Int = 7, length: Int = 3) {
+func printIceCreamStickPart(iceCreamWidth: Int, length: Int) {
     let iceCreamWidthHalf = iceCreamWidth / 2
     for _ in 1...length {
         for _ in 1...iceCreamWidthHalf-1 {
             print(" ", terminator: "")
         }
         print("|", terminator: "")
-        if iceCreamWidth%2 == 1 {
+        if iceCreamWidth % 2 == 1 {
             print(" ", terminator: "")
         }
         print("|")
@@ -38,5 +38,3 @@ var stickLength = 3
 printIceCreamPart(width: width, height: height)
 printIceCreamStickPart(iceCreamWidth: width, length: stickLength)
 
-printIceCreamPart()
-printIceCreamStickPart()
