@@ -5,7 +5,7 @@
 //  Created by yagom.
 //  Copyright © yagom academy. All rights reserved.
 //
-//  CodeStarterCamp_Week1_tag
+//  CodeStarterCamp_Week1_step2_tag
 
 import Foundation
 
