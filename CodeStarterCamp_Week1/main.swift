@@ -9,15 +9,18 @@
 import Foundation
 
 //1주차 Step2
-func iceCream_head(){
+func create_iceCreamBody(){
     for _ in 1...8 {
         print("***********")
     }
 }
 
-func iceCream_body(){
+func create_iceCreamStick(){
     for _ in 1...4 {
         print("    | |    ")
     }
 }
+
+create_iceCreamBody()
+create_iceCreamStick()
 
