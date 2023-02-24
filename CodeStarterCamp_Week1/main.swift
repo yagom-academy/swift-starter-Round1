@@ -10,26 +10,26 @@ func drawBodyLength(to length: Int, with body: String, by topping: String) {
     }
 }
 
-func drawStick(sticklength: Int) {
-    for two in 1...sticklength {
+func drawStick(stickLength: Int) {
+    for two in 1...stickLength {
         print(" | |")
     }
 }
 
-func drawPepero(length: Int, body: String, topping: String, sticklength: Int) {
+func drawPepero(length: Int, body: String, topping: String, stickLength: Int) {
     print("<정보>")
     print("길이: \(length)")
     print("몸통: \(body)")
     print("토핑: \(topping)")
-    print(("막대길이: \(sticklength)"))
+    print(("막대길이: \(stickLength)"))
     print()
     drawBodyLength(to: length, with: body, by: topping)
-    drawStick(sticklength: sticklength)
+    drawStick(stickLength: stickLength)
 }
 
-drawPepero(length: 10, body: "***", topping: " ", sticklength: 4)
-drawPepero(length: 12, body: "***", topping: "&", sticklength: 4)
-drawPepero(length: 12, body: "***", topping: "#", sticklength: 6)
-drawPepero(length: 6, body: "|0|", topping: " ", sticklength: 4)
-drawPepero(length: 8, body: "|◼︎|", topping: "#", sticklength: 4)
+drawPepero(length: 10, body: "***", topping: " ", stickLength: 4)
+drawPepero(length: 12, body: "***", topping: "&", stickLength: 4)
+drawPepero(length: 12, body: "***", topping: "#", stickLength: 6)
+drawPepero(length: 6, body: "|0|", topping: " ", stickLength: 4)
+drawPepero(length: 8, body: "|◼︎|", topping: "#", stickLength: 4)
 
