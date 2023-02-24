@@ -37,7 +37,7 @@ func viewPeperoInformation(bodyLength: Int, barLength: Int, body: String, toppin
     }
     print("토핑:", newTopping)
     print("막대길이:", barLength)
-    print("\n")
+    print()
     
     let fullBody = drawPepero.drawBodyLine(topping: newTopping, body: body)
     
