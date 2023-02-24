@@ -8,7 +8,7 @@
 import Foundation
 
 class drawPepero {
-    static  func drawBodyLine(topping: String, body: String) -> String {
+    static  func setFullBody(topping: String, body: String) -> String {
         var fullBody: String {topping + body + topping}
         return fullBody
     }
@@ -27,7 +27,7 @@ class drawPepero {
 
 }
 
-func make이Pepero(bodyLength: Int, barLength: Int, body: String, topping: String) {
+func makePepero(bodyLength: Int, barLength: Int, body: String, topping: String) {
     print("<정보>")
     print("길이:", bodyLength)
     print("몸통:", body)
@@ -39,7 +39,7 @@ func make이Pepero(bodyLength: Int, barLength: Int, body: String, topping: Strin
     print("막대길이:", barLength)
     print()
     
-    let fullBody = drawPepero.drawBodyLine(topping: newTopping, body: body)
+    let fullBody = drawPepero.setFullBody(topping: newTopping, body: body)
     
     drawPepero.drawBody(bodyLength: bodyLength, fullBody: fullBody)
     
