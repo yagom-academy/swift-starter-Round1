@@ -8,22 +8,8 @@
 
 import Foundation
 
-print(createIceCream())
-
-func createIceCream() {
-    createIceCreamBody()
-    createIceCreamBar()
-}
-
-func createIceCreamBody() {
-    for _ in 0...7 {
-        print("***********")
-    }
-}
-
-func createIceCreamBar() {
-    for _ in 0...3 {
-        print("    | |    ")
-    }
-}
+/**
+ Step 2: 아이스크림 그리기
+ */
+print(createIceCream(width: 11, bodyHeight: 8, barHeight: 4))
 
