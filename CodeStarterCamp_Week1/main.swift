@@ -22,15 +22,20 @@ func printIceBody() {
 }
 
 func printIceMerge(isHead: Bool) {
-    let repeatCount:UInt = isHead ? 8 : 4
-    let repeatChar:String = isHead ? String(repeating: "*", count: 11) : "    | |"
+    let repeatCount: UInt = isHead ? 8 : 4
+    let repeatChar: String = isHead ? String(repeating: "*", count: 11) : "    | |"
     for _ in 1...repeatCount {
         print(repeatChar)
     }
 }
 
 
-printIceHead()
-printIceBody()
+//printIceHead()
+//printIceBody()
 //printIceMerge(isHead:true)
 //printIceMerge(isHead:false)
+
+printPeperoAll(bodyLength: 10, stickLength: 4, basicBody: "***")
+printPeperoAll(bodyLength: 12, stickLength: 4, basicBody: "***", toppingBody: "&")
+printPeperoAll(bodyLength: 12, stickLength: 6, basicBody: "***", toppingBody: "#")
+printPeperoAll(bodyLength: 6, stickLength: 4, basicBody: "|0|")
