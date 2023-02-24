@@ -8,10 +8,10 @@
 
 import Foundation
 
-func makeIceBody(ice: String) {
+func makeIceCreamBody(material: String) {
     for _ in 1...8 {
         for _ in 1...11 {
-            print(ice, terminator: "")
+            print(material, terminator: "")
         }
         print("")
     }
@@ -23,5 +23,5 @@ func makeStick() {
     }
 }
 
-makeIceBody(ice: "*")
+makeIceCreamBody(material: "*")
 makeStick()
