@@ -11,10 +11,10 @@ func drawPepero(length: Int, body: String, topping: String, stickLength: Int) {
     
     let toppingBody: String = makeToppingBody(body: body, topping: topping)
     let stick: String = "| |"
-    let toppingBodySpace: String = String(repeating: " ", count: calcSpaceCount(toppingBody: toppingBody, stick: stick, type: "body"))
-    let stickSpace: String = String(repeating: " ", count: calcSpaceCount(toppingBody: toppingBody, stick: stick, type: "stick"))
+    let toppingBodySpace: String = makeToppingBodySpace(toppingBody: toppingBody, stick: stick)
+    let stickSpace: String = makeStickSpace(toppingBody: toppingBody, stick: stick)
     
-    printPeperoInfo(length: length, body: body, topping: topping, stickLength: stickLength)
+    printPeperoInformation(length: length, body: body, topping: topping, stickLength: stickLength)
 
     drawToppingBody(length: length, toppingBody: toppingBody, toppingBodySpace: toppingBodySpace)
     
@@ -23,30 +23,35 @@ func drawPepero(length: Int, body: String, topping: String, stickLength: Int) {
     print("----------")
 }
 
-func calcSpaceCount(toppingBody: String, stick: String, type: String) -> Int {
+func makeToppingBodySpace(toppingBody: String, stick: String) -> String {
     if toppingBody.count == stick.count {
-        return 1
+        return " "
     }
     
-    if type == "body" {
-        return 0
-    } else if type == "stick" {
-        return (toppingBody.count - stick.count) / 2
+    return ""
+}
+
+func makeStickSpace(toppingBody: String, stick: String) -> String {
+    if toppingBody.count == stick.count {
+        return " "
+    } else {
+        let count: Int = (toppingBody.count - stick.count) / 2
+        return String(repeating: " ", count: count)
     }
-    
-    return 0
 }
 
 func makeToppingBody(body: String, topping: String) -> String {
     return topping + body + topping
 }
 
-func printPeperoInfo(length: Int, body: String, topping: String, stickLength: Int) {
-    print("<정보>")
-    print("길이: \(length)")
-    print("몸통: \(body)")
-    print("토핑: \(topping)")
-    print("막대길이: \(stickLength)\n")
+func printPeperoInformation(length: Int, body: String, topping: String, stickLength: Int) {
+    print("""
+    <정보>
+    길이: \(length)
+    몸통: \(body)
+    토핑: \(topping)
+    막대길이: \(stickLength)\n
+    """)
 }
 
 func drawToppingBody(length: Int, toppingBody: String, toppingBodySpace: String) {
