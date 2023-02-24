@@ -11,26 +11,26 @@ import Foundation
 
 //Step2
 
-func PrintIceCreamPart(NumberOfRow: Int) {
-    for _ in 1...NumberOfRow {
+func printIceCreamPart(numberOfRow: Int) {
+    for _ in 1...numberOfRow {
         print("**********")
     }
 }
 
-func PrintStickPart(NumberOfRow: Int) {
-    for _ in 1...NumberOfRow {
+func printIceCreamStickPart(numberOfRow: Int) {
+    for _ in 1...numberOfRow {
         print("   | |")
     }
 }
-PrintIceCreamPart(NumberOfRow: 8)
-PrintStickPart(NumberOfRow: 4)
+printIceCreamPart(numberOfRow: 8)
+printIceCreamStickPart(numberOfRow: 4)
 
 
 
 //Step3
-//새로운 파일을 만들면 오류가 나서 여기에다가 부득이 하게 Step3도 넣었습니다
+//새로운 파일을 만들면 오류가 나서 여기에다가 Step3도 넣었습니다
 
-func makePeperoStick(lenght: Int, body: String, topping: String, stickLenght: Int) {
+func printPepero(lenght: Int, body: String, topping: String, stickLenght: Int) {
     
     for _ in 1...lenght {
         print(" " + topping + body + topping)
@@ -40,7 +40,7 @@ func makePeperoStick(lenght: Int, body: String, topping: String, stickLenght: In
     }
 }
 
-func printInformation(lenght: Int, body: String, topping: String, stickLenght: Int) {
+func printPeperoInformation(lenght: Int, body: String, topping: String, stickLenght: Int) {
     print("""
     
     <정보>
@@ -53,16 +53,16 @@ func printInformation(lenght: Int, body: String, topping: String, stickLenght: I
 }
 
 //실행 예시1
-printInformation(lenght: 10, body: "***", topping: " ", stickLenght: 4)
-makePeperoStick(lenght: 10, body: "***", topping: " ", stickLenght: 4)
+printPeperoInformation(lenght: 10, body: "***", topping: " ", stickLenght: 4)
+printPepero(lenght: 10, body: "***", topping: " ", stickLenght: 4)
 //실행 예시2
-printInformation(lenght: 12, body: "***", topping: "&", stickLenght: 4)
-makePeperoStick(lenght: 12, body: "***", topping: "&", stickLenght: 4)
+printPeperoInformation(lenght: 12, body: "***", topping: "&", stickLenght: 4)
+printPepero(lenght: 12, body: "***", topping: "&", stickLenght: 4)
 //실행 예시3
-printInformation(lenght: 12, body: "***", topping: "#", stickLenght: 6)
-makePeperoStick(lenght: 12, body: "***", topping: "#", stickLenght: 6)
+printPeperoInformation(lenght: 12, body: "***", topping: "#", stickLenght: 6)
+printPepero(lenght: 12, body: "***", topping: "#", stickLenght: 6)
 //실행 예시4
-printInformation(lenght: 6, body: "|0|", topping: " ", stickLenght: 4)
-makePeperoStick(lenght: 6, body: "|0|", topping: " ", stickLenght: 4)
+printPeperoInformation(lenght: 6, body: "|0|", topping: " ", stickLenght: 4)
+printPepero(lenght: 6, body: "|0|", topping: " ", stickLenght: 4)
 
 
