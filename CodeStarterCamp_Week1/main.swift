@@ -6,17 +6,22 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-func IceCream() {
-    for iceCream in 1...8 {
-        print(iceCream, "***********")
+import Foundation
+
+func makeBody(ice: String) {
+    for _ in 1...8 {
+        for _ in 1...11 {
+            print(ice, terminator: "")
+        }
+        print("")
     }
 }
 
-func Stick() {
-    for stick in 1...4 {
-        print(stick, "    | |    ")
+func makeStick() {
+    for _ in 1...4 {
+        print("    | |    ")
     }
 }
 
-IceCream()
-Stick()
+makeBody(ice: "*")
+makeStick()
