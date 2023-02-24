@@ -1,5 +1,5 @@
 //
-//  Week1Step3.swift
+//  Step3.swift
 //  CodeStarterCamp_Week1
 //
 //  Created by Tom on 2023/02/22.
@@ -7,40 +7,28 @@
 
 import Foundation
 
-func length(x: Int) {
-    
+
+///몸통
+func bodys(startTopping:String, body: String, lastTopping: String) {
+    print(startTopping+body+lastTopping)
 }
 
-func body(y: String) {
-    
+///몸통의길이
+func snackBody(length: Int, body: () -> Void) {
+    for _ in 1...length {
+        body()
+    }
 }
-func topping(z: String) {
-    
+///막대 길이
+func stickLength(stickLength: Int) {
+    for _ in 1...stickLength {
+        print(" | |")
+    }
 }
 
-//func 함수이름(매개변수1이름: 매개변수1타입, 매개변수2이름: 매개변수2타입 = 매개변수 기본값 ...) -> 반환타입 {
-//    /* 함수 구현부 */
-//    return 반환값
-//}
-//
-//func greeting(friend: String, me: String = "yagom") {
-//    print("Hello \(friend)! I'm \(me)")
-//}
-//
-//// 매개변수 기본값을 가지는 매개변수는 호출시 생략할 수 있습니다
-//greeting(friend: "hana") // Hello hana! I'm yagom
-//greeting(friend: "john", me: "eric") // Hello john! I'm eric
 
-
-//func 함수이름(전달인자 레이블 매개변수1이름: 매개변수1타입, 전달인자 레이블 매개변수2이름: 매개변수2타입 ...) -> 반환타입 {
-//    /* 함수 구현부 */
-//    return
-//}
-//
-//// 함수 내부에서 전달인자를 사용할 때에는 매개변수 이름을 사용합니다
-//func greeting(to friend: String, from me: String) {
-//    print("Hello \(friend)! I'm \(me)")
-//}
-//
-//// 함수를 호출할 때에는 전달인자 레이블을 사용해야 합니다
-//greeting(to: "hana", from: "yagom") // Hello hana! I'm yagom
+func result(바길이: Int, 몸통: String, 토핑: String, 몸통길이: Int) {
+    print("<정보> \n몸통길이: \(몸통길이) \n몸통: \(몸통) \n토핑:\(토핑) \n바길이: \(바길이)")
+    snackBody(length: 몸통길이, body: {bodys(startTopping: 토핑, body: 몸통, lastTopping: 토핑)})
+    stickLength(stickLength: 바길이)
+}
