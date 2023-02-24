@@ -8,13 +8,4 @@
 import Foundation
 
 
-
-inputLengthInformation(bodyLengthInformation: 15, barLengthInformation: 5)
-
-inputPeperoBodyAndTopping(bodyInformation: "###", toppingInformation: "")
-
-viewPeperoInformation()
-
-drawPeperoBodyPart()
-
-drawPeperoBarPart()
+viewPeperoInformation(bodyLength: 15, barLength: 5, body: "%%%", topping: "")

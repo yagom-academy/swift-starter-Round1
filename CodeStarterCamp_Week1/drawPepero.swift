@@ -7,45 +7,44 @@
 
 import Foundation
 
-let informationTitle: String = "<정보>"
-var bodyLength: Int = 12
-var body: String = "***"
-var topping: String = " "
-var barLength: Int = 1
-let bar: String = " | |"
-
-
-
-func inputLengthInformation(bodyLengthInformation: Int, barLengthInformation: Int){
-    bodyLength = bodyLengthInformation
-    barLength = barLengthInformation
-}
-
-func inputPeperoBodyAndTopping(bodyInformation: String, toppingInformation: String){
-    body = bodyInformation
-    if toppingInformation != "" {
-        topping = toppingInformation
+class drawPepero {
+    static  func drawBodyLine(topping: String, body: String) -> String {
+        var fullBody: String {topping + body + topping}
+        return fullBody
     }
+    
+    static  func drawBody(bodyLength: Int, fullBody: String) {
+        for _ in 1...bodyLength {
+            print(fullBody, separator: "")
+        }
+    }
+    
+    static  func drawBar(barLength: Int) {
+        for _ in 1...barLength {
+            print(" | |")
+        }
+    }
+
 }
 
-func viewPeperoInformation() {
-    print(informationTitle)
+func viewPeperoInformation(bodyLength: Int, barLength: Int, body: String, topping: String) {
+    print("<정보>")
     print("길이:", bodyLength)
     print("몸통:", body)
-    print("토핑:", topping)
+    var newTopping: String = topping
+    if topping == "" {
+        newTopping = " "
+    }
+    print("토핑:", newTopping)
     print("막대길이:", barLength)
     print("\n")
+    
+    let fullBody = drawPepero.drawBodyLine(topping: newTopping, body: body)
+    
+    drawPepero.drawBody(bodyLength: bodyLength, fullBody: fullBody)
+    
+    drawPepero.drawBar(barLength: barLength)
+    
 }
 
 
-func drawPeperoBodyPart() {
-    for _ in 1...bodyLength {
-        print(topping,body,topping, separator: "")
-    }
-}
-
-func drawPeperoBarPart() {
-    for _ in 1...barLength {
-        print(bar)
-    }
-}
