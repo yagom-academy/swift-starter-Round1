@@ -27,7 +27,7 @@ class drawPepero {
 
 }
 
-func viewPeperoInformation(bodyLength: Int, barLength: Int, body: String, topping: String) {
+func make이Pepero(bodyLength: Int, barLength: Int, body: String, topping: String) {
     print("<정보>")
     print("길이:", bodyLength)
     print("몸통:", body)

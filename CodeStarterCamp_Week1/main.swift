@@ -8,4 +8,4 @@
 import Foundation
 
 
-viewPeperoInformation(bodyLength: 15, barLength: 5, body: "%%%", topping: "")
+makePepero(bodyLength: 15, barLength: 5, body: "%%%", topping: "")
