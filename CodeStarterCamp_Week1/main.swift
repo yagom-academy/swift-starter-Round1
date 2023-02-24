@@ -8,5 +8,19 @@
 
 import Foundation
 
-print("Hello, World!")
+// 아이스크림 부분 만드는 함수
+func icecreamLength() {
+    for _ in 1...8 {
+        print("***********")
+    }
+}
 
+// 아이스크림막대기 부분 만드는 함수
+func icecreamBarLength() {
+    for _ in 1...4 {
+        print("    | |")
+    }
+}
+
+icecreamLength()
+icecreamBarLength()
