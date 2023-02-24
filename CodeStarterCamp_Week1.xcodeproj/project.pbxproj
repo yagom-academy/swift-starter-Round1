@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
+		C735467B29A8626400DB8D38 /* step3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735467A29A8626400DB8D38 /* step3.swift */; };
+		C735467D29A893DD00DB8D38 /* step2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735467C29A893DD00DB8D38 /* step2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C735467A29A8626400DB8D38 /* step3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step3.swift; sourceTree = "<group>"; };
+		C735467C29A893DD00DB8D38 /* step2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step2.swift; sourceTree = "<group>"; };
 		C7D6901429A5D0FE00AF5D77 /* Week1_20230222.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = Week1_20230222.md; path = TIL/Week1_20230222.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -60,6 +64,8 @@
 			children = (
 				34811DAE274B938F00A1E994 /* main.swift */,
 				C7D6901429A5D0FE00AF5D77 /* Week1_20230222.md */,
+				C735467C29A893DD00DB8D38 /* step2.swift */,
+				C735467A29A8626400DB8D38 /* step3.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -122,6 +128,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
+				C735467B29A8626400DB8D38 /* step3.swift in Sources */,
+				C735467D29A893DD00DB8D38 /* step2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
