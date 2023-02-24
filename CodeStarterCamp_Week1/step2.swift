@@ -27,13 +27,17 @@ func createIceCreamBody(width: Int, height: Int) {
 }
 
 func createIceCreamBar(width: Int, height: Int) {
+    let half = width/2  //너비를 반으로 갈라서 중심을 찾습니다.
     for _ in 1...height {
-        let half = width/2  //너비를 반으로 갈라서 중심을 찾습니다.
-        for idx in 1...width {
-            if idx == half || idx == half+2 {   //중심에 선 하나 중심 옆옆에 선 하나를 그어 아이스크림 바 모양을 만듭니다.
+        for index in 1...width {
+            if index == half || index == half+2 {   //중심에 선 하나 중심 옆옆에 선 하나를 그어 아이스크림 바 모양을 만듭니다.
                 print("|", terminator: "")
             } else {
-                print(" ", terminator: "")
+                if half%2==0 && index == half+1{
+                   print("", terminator: "")
+                } else {
+                    print(" ", terminator: "")
+                }
             }
         }
         print()
