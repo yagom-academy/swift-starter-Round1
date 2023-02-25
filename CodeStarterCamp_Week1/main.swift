@@ -7,4 +7,29 @@
 
 import Foundation
 
-print("<정보>\n길이:\n몸통:\n토핑:\n막대길이:")
+func inputLenght() {
+    print("길이: ", terminator: "")
+    let lenght = Int(readLine()!)!
+}
+
+func inputBody() {
+    print("몸통: ", terminator: "")
+    let body = readLine()!
+}
+
+func inputTopping() {
+    print("토핑: ", terminator: "")
+    let topping = readLine()!
+}
+
+func inputStickLenght() {
+    print("막대길이: ", terminator: "")
+    let stickLenght = Int(readLine()!)!
+}
+
+print("<정보>")
+
+//print(type(of:lenght))
+//print(type(of:body))
+//print(type(of:topping))
+//print(type(of:stickLenght))
