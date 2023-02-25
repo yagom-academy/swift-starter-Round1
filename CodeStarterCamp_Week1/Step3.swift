@@ -13,11 +13,11 @@ func makeBodyShape(body: String, topping: String = "") -> String {
 }
 
 /// 몸통 그리기
-func makeBody(height: Int, bodyShape: String) {
+func makeBody(height: Int, bodyShape: String, topping: String) {
     if height < 1 { return }
     
     for _ in 1...height {
-        print(" \(bodyShape)") // 좌측에 기본 빈 칸
+        print("\(topping.isEmpty ? " " : "")\(bodyShape)")
     }
 }
 
@@ -40,7 +40,7 @@ func makeStick(height: Int, bodyShape: String, body: String, topping: String) {
                 break
             }
         }
-        print(" \(stick)\n", terminator: "") // 좌측에 기본 빈 칸
+        print("\(topping.isEmpty ? " " : "")\(stick)\n", terminator: "")
     }
 }
 
@@ -50,7 +50,7 @@ func makePepero(bodyHeight: Int, body: String, topping: String = "", stickHeight
     
     let bodyShape = makeBodyShape(body: body, topping: topping)
     if bodyShape.count > 0 {
-        makeBody(height: bodyHeight, bodyShape: bodyShape)
+        makeBody(height: bodyHeight, bodyShape: bodyShape, topping: topping)
         makeStick(height: stickHeight, bodyShape: bodyShape, body: body, topping: topping)
         print("")
     }
