@@ -7,10 +7,10 @@
 
 import Foundation
 
-func createStick(stickLength stick: Int) -> Void { // 막대기 만드는 함수
-    var outputStickLength : Int = stick
+func createStick(length : Int) -> Void {
+    var outputStickLength : Int = length
     
-    if outputStickLength <= 0 { // 0 or 음수 거르기용
+    if outputStickLength <= 0 {
         outputStickLength = 4
     }
     
@@ -19,10 +19,10 @@ func createStick(stickLength stick: Int) -> Void { // 막대기 만드는 함수
     }
 }
 
-func setBody(body: String, topping: String) -> String { // 몸통과 토핑 만들어서 반환하는 함수
+func setBody(body: String, topping: String) -> String {
     var outputTopping : String = topping
     
-    if outputTopping == ""{ //입력받은 토핑이 없으면 공백 1칸
+    if outputTopping == ""{
         outputTopping = " "
     }
     
@@ -31,7 +31,7 @@ func setBody(body: String, topping: String) -> String { // 몸통과 토핑 만�
     return outputTopping
 }
 
-func createBody(bodyLength: Int, body: String, topping: String) -> Void{ //반환받은 몸통과 토핑을 입력받은 값만큼 출력하는 함수
+func createBody(bodyLength: Int, body: String, topping: String) -> Void{
     let getBody : String = setBody(body: body, topping: topping)
     
     for _ in 1...bodyLength{
@@ -40,22 +40,17 @@ func createBody(bodyLength: Int, body: String, topping: String) -> Void{ //반�
 }
 
 func createPepero(bodyLength: Int, body: String, topping: String, stickLength: Int) -> Void{
-    print("<정보>")
-    print("길이: \(bodyLength)")
-    print("몸통: \(body)")
-    print("토핑: \(topping)")
-    print("막대길이: \(stickLength)\n")
-    
-    /* 위의 방식이 좋을지 아래의 방식이 좋을지 모르겠어요
-    var peperoInfo : String = "<정보>\n"
+
+    var writePeperoInfo : String = "<정보>\n"
     writePeperoInfo.append("길이: \(bodyLength)\n")
     writePeperoInfo.append("몸통: \(body)\n")
     writePeperoInfo.append("토핑: \(topping)\n")
     writePeperoInfo.append("막대길이: \(stickLength)\n")
-    print(peperoInfo)
-    */
+    print(writePeperoInfo)
+    
     
     createBody(bodyLength: bodyLength, body: body, topping: topping)
-    createStick(stickLength: stickLength)
+    createStick(length: stickLength)
+    print()
 }
 
