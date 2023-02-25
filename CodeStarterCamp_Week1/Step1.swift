@@ -7,6 +7,4 @@
 
 import Foundation
 
-func printHello() {
-    print("Hello, World!")
-}
+// print("Hello, World!")
