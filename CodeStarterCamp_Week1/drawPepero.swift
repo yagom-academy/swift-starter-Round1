@@ -23,7 +23,7 @@ class drawPepero {
         let bar: String = " | |"
         var space: String = " "
         var fullBar: String {space + bar}
-        if (fullBody.count / 2 < 3) {
+        if (fullBody.count < 7) {
             for _ in 1...barLength {
                 print(bar)
             }
