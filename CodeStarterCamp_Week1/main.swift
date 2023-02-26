@@ -8,5 +8,20 @@
 
 import Foundation
 
-print("Hello, World!")
+
+//Step2
+
+func printIceCreamPart(numberOfRow: Int) {
+    for _ in 1...numberOfRow {
+        print("**********")
+    }
+}
+
+func printIceCreamStickPart(numberOfRow: Int) {
+    for _ in 1...numberOfRow {
+        print("   | |")
+    }
+}
+printIceCreamPart(numberOfRow: 8)
+printIceCreamStickPart(numberOfRow: 4)
 
