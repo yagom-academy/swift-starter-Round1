@@ -19,9 +19,26 @@ class drawPepero {
         }
     }
     
-    static  func drawBar(barLength: Int) {
-        for _ in 1...barLength {
-            print(" | |")
+    static  func drawBar(barLength: Int, fullBody: String) {
+        let bar: String = " | |"
+        var space: String = " "
+        var fullBar: String {space + bar}
+        if (fullBody.count / 2 < 3) {
+            for _ in 1...barLength {
+                print(bar)
+            }
+        } else if (fullBody.count == 7) {
+            for _ in 1...barLength {
+                print(fullBar)
+            }
+        } else {
+            let spaceCount: Int = (fullBody.count / 2) - 3
+            for _ in 1...spaceCount {
+                space = space + " "
+            }
+            for _ in 1...barLength {
+                print(fullBar)
+            }
         }
     }
 
@@ -43,7 +60,7 @@ func makePepero(bodyLength: Int, barLength: Int, body: String, topping: String) 
     
     drawPepero.drawBody(bodyLength: bodyLength, fullBody: fullBody)
     
-    drawPepero.drawBar(barLength: barLength)
+    drawPepero.drawBar(barLength: barLength, fullBody: fullBody)
     
 }
 
