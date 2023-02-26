@@ -30,8 +30,8 @@ func printCookie(bodyLength: Int = 10, body: String = "***", topping: String = "
     print("토핑: \(topping)")
     print("막대길이: \(handleLength)\n")
     
-    printCookiesBody(length: bodyLength, body: body, topping: topping)
-    printCookiesHandle(length: handleLength)
+    printCookiesBody(length: bodyLength <= 0 : 10, body: body.isEmpty ? "***" : body, topping: topping.isEmpty ? " " : topping)
+    printCookiesHandle(length: handleLength <= 0 : 10)
 }
 
 printCookie()
