@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+// 아이스크림 부분을 그리는 함수
+func drawIceCream() {
+    // 8층의 아이스크림 부분을 표현
+    for _ in 1...8 {
+        print("***********")
+    }
+}
+
+// 막대기(손잡이) 부분을 그리는 함수
+func drawStick() {
+    // 4층의 막대 부분을 표현
+    for _ in 1...4 {
+        print("    | |")
+    }
+}

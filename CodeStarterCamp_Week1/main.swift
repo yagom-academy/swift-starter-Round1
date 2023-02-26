@@ -8,5 +8,8 @@
 
 import Foundation
 
-print("Hello, World!")
-
+// Step2: 아이스크림 그리기
+// 아이스크림 부분을 그리는 함수
+drawIceCream()
+// 막대기(손잡이) 부분을 그리는 함수
+drawStick()
