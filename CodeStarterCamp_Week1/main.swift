@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/*
 func makeSweet(x: String) {
     var count = 1
     while count <= 10 {
@@ -20,7 +20,7 @@ func makeSweet(x: String) {
 func makeBar(x: String) {
     print("    \(x) \(x)    ")
 }
-/*
+
 var line = 1
 while line <= 8 {
     makeSweet(x: "*")
@@ -32,7 +32,7 @@ while line <= 4 {
     makeBar(x: "|")
     line += 1
 }
-*/
+
 
 // 처음엔 아이스크림 합치는 것도 while문으로 했는데 for문으로 할 수 있겠구나 싶어서 수정했습니다!!
 
@@ -59,3 +59,21 @@ func makeIcecream(a: String, b: String) {
 
 makeIcecream(a: "*", b: "|")
 // 훨씬 깔끔해져서 아주아주 마음에 들었습니다!!
+*/
+
+// PR 받고 수정하기
+func makeSweet(x: String) {
+    for _ in 1...8 {
+        for _ in 1...10 {
+            print(x, terminator: "")
+        }
+        print(x)
+    }
+}
+func makeBar(x: String) {
+    for _ in 1...4 {
+        print("    \(x) \(x)    ")
+    }
+}
+makeSweet(x: "*")
+makeBar(x: "|")
