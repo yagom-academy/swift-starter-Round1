@@ -2,35 +2,41 @@
 //  main.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by MARY on 2023/02/24.
 //
 
 import Foundation
 
-func drawIceCream(iceCreamWidth: Int, iceCreamHeight: Int) {
-    for heightCount in 1...iceCreamHeight {
-        for widthCount in 1...iceCreamWidth {
-            print("*", terminator: "")
-        }
-        print("")
+func drawPeperoStick(_ length: Int) {
+    for _ in 1...length {
+        print(" | | ")
     }
 }
 
-func drawIceCreamStick(iceCreamWidth: Int) {
-    for iceCreamStick in 1...4 {
-        for widthCount in 1...iceCreamWidth {
-            if (widthCount == (iceCreamWidth/2) || widthCount == (iceCreamWidth/2+2)) {
-                print("|", terminator: "")
-            } else {
-                print(" ", terminator: "")
-            }
-        }
-        print("")
+func drawPeperoHead(_ shape: String, _ topping: String) {
+    print(topping+shape+topping)
+}
+
+func drawPeperoBody(_ length: Int, _ shape: String, _ topping: String) {
+    for _ in 1...length {
+        drawPeperoHead(shape, topping)
     }
 }
 
-var iceCreamWidth = 11
-var iceCreamHeight = 8
-drawIceCream(iceCreamWidth: iceCreamWidth, iceCreamHeight: iceCreamHeight)
-drawIceCreamStick(iceCreamWidth: iceCreamWidth)
+func drawPepero(bodyLength: Int, bodyShape: String, topping: inout String, stickLength: Int) {
+    if topping.isEmpty {topping = " "}
+    drawPeperoBody(bodyLength, bodyShape, topping)
+    drawPeperoStick(stickLength)
+}
+
+var bodyLength = 6
+var bodyShape = "|0|"
+var topping = ""
+var stickLength = 4
+
+print("<정보>")
+print("길이: \(bodyLength)")
+print("몸통: \(bodyShape)")
+print("토핑: \(topping)")
+print("막대길이: \(stickLength)")
+drawPepero(bodyLength: bodyLength, bodyShape: bodyShape, topping: &topping, stickLength: stickLength)
