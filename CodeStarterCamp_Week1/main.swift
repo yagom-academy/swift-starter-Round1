@@ -1,48 +1,58 @@
 //
-//  main.swift
+//  week1_step3_tag.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 윤해수 on 2023/02/23.
 //
-//  CodeStarterCamp_Week1_step2_tag
 
 import Foundation
 
-func makeIce() {
-    for _ in 1...8 {
-        print("***********")
+var bodyAndTopping: String = ""
+
+func makeBody(body: String, topping: String) {
+    return bodyAndTopping = "\(topping)\(body)\(topping)"
+}
+
+func makeAllBody(bodyLenght: Int, bodyAndTopping: String) {
+    for _ in 1...lenght {
+        if bodyAndTopping.count > 3 {
+            print(bodyAndTopping)
+        } else {
+            print(" " + bodyAndTopping)
+        }
     }
 }
 
-func makeStick() {
-    for _ in 1...4 {
-        print("    | |")
+func makeStick(stickLenght: Int) {
+    for _ in 1...stickLenght {
+        print(" | |")
     }
 }
 
-makeIce()
-makeStick()
+func makePepero(lenght: Int, body: String, topping: String, stickLenght: Int) {
+    makeBody(body: body, topping: topping)
+    makeAllBody(bodyLenght: lenght, bodyAndTopping: bodyAndTopping)
+    makeStick(stickLenght: stickLenght)
+    print("\n맛있게 드세요~욤뇸뇸")
+}
 
-//var icecreamwidth = 11
-//var icecreamlength = 8
-////var stickwidth = 1 *막대부분의 길이도 조절이 가능한가?
-//var sticklength = 4
-//
-//func icecream() {
-//    for _ in 1...icecreamlength {
-//        for _ in 1...icecreamwidth {
-//            print("*", terminator: "")
-//        }
-//        print("")
-//    }
-//}
-//
-//func stick() {
-//    for _ in 1...sticklength {
-//        print("    | |")
-//    }
-//}
-//
-//icecream()
-//stick()
+print("<정보>")
+print("길이: ", terminator: "")
+let lenght = Int(readLine()!)!
+print("몸통: ", terminator: "")
+let body = readLine()!
+print("토핑: ", terminator: "")
+let topping = readLine()!
+print("막대길이: ", terminator: "")
+let stickLenght = Int(readLine()!)!
+print("")
+makePepero(lenght: lenght, body: body, topping: topping, stickLenght: stickLenght)
+
+//makeBody(body: body, topping: topping)
+//makeAllBody(bodyLenght: lenght, bodyAndTopping: bodyAndTopping)
+//makeStick(stickLenght: stickLenght)
+
+//print(type(of:lenght))
+//print(type(of:body))
+//print(type(of:topping))
+//print(type(of:stickLenght))
