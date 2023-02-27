@@ -10,6 +10,16 @@
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		01F0DEE729AA4651003090AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01F0DEDA29AA4651003090AD /* pj.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01F0DECC29AA40BD003090AD;
+			remoteInfo = pj;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		34811DA9274B938F00A1E994 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -23,6 +33,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		01F0DED929AA4651003090AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		01F0DEDA29AA4651003090AD /* pj.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = pj.xcodeproj; sourceTree = "<group>"; };
+		01F0DEDD29AA4651003090AD /* CodeStarterCamp_Week1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CodeStarterCamp_Week1.xcodeproj; sourceTree = "<group>"; };
+		01F0DEE029AA4651003090AD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		01F0DEE129AA4651003090AD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		01F0DEE329AA4651003090AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		01F0DEE429AA4651003090AD /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		01F0DEE529AA4651003090AD /* toki.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = toki.txt; sourceTree = "<group>"; };
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +56,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01F0DED629AA4651003090AD /* swift-starter-week1 */ = {
+			isa = PBXGroup;
+			children = (
+				01F0DED729AA4651003090AD /* pj */,
+				01F0DEDD29AA4651003090AD /* CodeStarterCamp_Week1.xcodeproj */,
+				01F0DEE029AA4651003090AD /* README.md */,
+				01F0DEE129AA4651003090AD /* .gitignore */,
+				01F0DEE229AA4651003090AD /* CodeStarterCamp_Week1 */,
+				01F0DEE429AA4651003090AD /* test.txt */,
+				01F0DEE529AA4651003090AD /* toki.txt */,
+			);
+			name = "swift-starter-week1";
+			sourceTree = SOURCE_ROOT;
+		};
+		01F0DED729AA4651003090AD /* pj */ = {
+			isa = PBXGroup;
+			children = (
+				01F0DED829AA4651003090AD /* pj */,
+				01F0DEDA29AA4651003090AD /* pj.xcodeproj */,
+			);
+			path = pj;
+			sourceTree = "<group>";
+		};
+		01F0DED829AA4651003090AD /* pj */ = {
+			isa = PBXGroup;
+			children = (
+				01F0DED929AA4651003090AD /* main.swift */,
+			);
+			path = pj;
+			sourceTree = "<group>";
+		};
+		01F0DEDB29AA4651003090AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01F0DEE829AA4651003090AD /* pj */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01F0DEDE29AA4651003090AD /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01F0DEE229AA4651003090AD /* CodeStarterCamp_Week1 */ = {
+			isa = PBXGroup;
+			children = (
+				01F0DEE329AA4651003090AD /* main.swift */,
+			);
+			path = CodeStarterCamp_Week1;
+			sourceTree = "<group>";
+		};
 		34811DA2274B938F00A1E994 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +127,7 @@
 		34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {
 			isa = PBXGroup;
 			children = (
+				01F0DED629AA4651003090AD /* swift-starter-week1 */,
 				34811DAE274B938F00A1E994 /* main.swift */,
 			);
 			path = CodeStarterCamp_Week1;
@@ -107,12 +178,32 @@
 			mainGroup = 34811DA2274B938F00A1E994;
 			productRefGroup = 34811DAC274B938F00A1E994 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 01F0DEDE29AA4651003090AD /* Products */;
+					ProjectRef = 01F0DEDD29AA4651003090AD /* CodeStarterCamp_Week1.xcodeproj */;
+				},
+				{
+					ProductGroup = 01F0DEDB29AA4651003090AD /* Products */;
+					ProjectRef = 01F0DEDA29AA4651003090AD /* pj.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				34811DAA274B938F00A1E994 /* CodeStarterCamp_Week1 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		01F0DEE829AA4651003090AD /* pj */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pj;
+			remoteRef = 01F0DEE729AA4651003090AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		34811DA7274B938F00A1E994 /* Sources */ = {

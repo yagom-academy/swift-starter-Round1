@@ -1,0 +1,10 @@
+var name = "길동"
+var name2 = "춘향"
+
+func jump (count: Int) {
+    print("\(name)이 \(count)번째 폴짝!!")
+    print("\(name2)이 \(count)번째 폴짝!!")
+}
+for count in 1...3 {
+    jump(count: count)
+}
