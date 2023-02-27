@@ -2,7 +2,7 @@
 //  step3.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by 손윤호 on 2023/02/27.
+//  Created by Dawn on 2023/02/27.
 //
 
 import Foundation
