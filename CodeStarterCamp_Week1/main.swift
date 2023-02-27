@@ -8,23 +8,36 @@
 
 import Foundation
 
-func makeIceCream (iceWidth: Int, iceHeight: Int, bar: Int) {
+var iceWidth, iceHeight, barHeight : Int
+
+func makeIceCream(iceWidth: Int, iceHeight: Int) {
     for _ in 1...iceHeight {
         for _ in 1...iceWidth {
             print("*", terminator: "")
-        }
+            }
         print()
+        }
     }
+
+
+func makeBar(iceWidth: Int, barHeight: Int) {
     
-    let numb : Int = (iceWidth-(iceWidth%2))/2-1
+    let barBlank : Int = (iceWidth-iceWidth%2)/2-1
     
-    for _ in 1...bar {
-        for _ in 1...numb {
+    for _ in 1...barHeight {
+        for _ in 1...barBlank {
             print(" ", terminator: "")
             }
-            print("| |")
+            if iceWidth%2==1 {
+                print("| |")
+            }
+            else if iceWidth%2==0 {
+                print("||")
+            }
         }
-}
+    }
 
-makeIceCream(iceWidth: 11, iceHeight: 9, bar: 4)
+makeIceCream(iceWidth: 10, iceHeight: 9)
+makeBar(iceWidth: 10, barHeight: 4)
+
 
