@@ -7,36 +7,33 @@
 
 import Foundation
 
-func drawPeperoStick(_ length: Int) {
+func drawPeperoStick(length: Int) {
     for _ in 1...length {
         print(" | | ")
     }
 }
 
-func drawPeperoHead(_ shape: String, _ topping: String) {
+func drawPeperoElement(shape: String, topping: String) {
     print(topping+shape+topping)
 }
 
-func drawPeperoBody(_ length: Int, _ shape: String, _ topping: String) {
+func drawPeperoBody(length: Int, shape: String, topping: String) {
     for _ in 1...length {
-        drawPeperoHead(shape, topping)
+        drawPeperoElement(shape: shape, topping: topping)
     }
 }
 
-func drawPepero(bodyLength: Int, bodyShape: String, topping: inout String, stickLength: Int) {
+func drawPepero(bodyLength: Int, bodyShape: String, stickLength: Int, topping: String = " ") {
+    print("<정보>")
+    print("길이: \(bodyLength)")
+    print("몸통: \(bodyShape)")
+    print("토핑: \(topping)")
+    print("막대길이: \(stickLength)")
+    
+    var topping = topping
     if topping.isEmpty {topping = " "}
-    drawPeperoBody(bodyLength, bodyShape, topping)
-    drawPeperoStick(stickLength)
+    drawPeperoBody(length: bodyLength, shape: bodyShape, topping: topping)
+    drawPeperoStick(length: stickLength)
 }
 
-var bodyLength = 6
-var bodyShape = "|0|"
-var topping = ""
-var stickLength = 4
-
-print("<정보>")
-print("길이: \(bodyLength)")
-print("몸통: \(bodyShape)")
-print("토핑: \(topping)")
-print("막대길이: \(stickLength)")
-drawPepero(bodyLength: bodyLength, bodyShape: bodyShape, topping: &topping, stickLength: stickLength)
+drawPepero(bodyLength: 6, bodyShape: "|0|", stickLength: 4, topping: "")
