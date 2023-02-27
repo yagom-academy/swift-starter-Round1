@@ -8,29 +8,6 @@
 
 import Foundation
 
-//func bbabbaroPartBody(content: String, topping: String = " "){
-//    print("\(topping)\(content)\(topping)")
-//}
-//
-//func bbabbaroFullBody(length: Int, content: String, topping: String = " "){
-//    for _ in 1...length{
-//        bbabbaroPartBody(content: content, topping: topping)
-//    }
-//}
-//
-//func bbabbaroBar(length: Int){
-//    for _ in 1...length{
-//        print(" | | ")
-//    }
-//}
-//
-//func bbabbaro(lengthBody:Int, lengthBar:Int, content:String, topping:String=" "){
-//    bbabbaroFullBody(length: lengthBody, content: content, topping: topping)
-//    bbabbaroBar(length: lengthBar)
-//}
-//
-//bbabbaro(lengthBody: 10, lengthBar: 4, content: "***", topping: "$")
-
 func icecreamRow(rowNum:Int){
     for _ in 1...rowNum{
         print("*",terminator: "")
@@ -50,4 +27,4 @@ func icecream(rowNum:Int, columnNum:Int, barLength:Int){
     }
 }
 
-icecream(rowNum: 8, columnNum: 10, barLength: 4)
+icecream(rowNum: 9, columnNum: 10, barLength: 4)
