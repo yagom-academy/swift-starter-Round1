@@ -14,27 +14,33 @@ func drawPeperoStick(stickLength: Int, bodyCenter: Int) {
     if stickLength < 1 {
         return
     }
-    else {
+    
+    else if bodyCenter > 1 {
+        
         for _ in 1...stickLength {
-            //빼빼로를 중앙에 오도록 bodyCount 만큼 띄어쓰기
+            print(" |", terminator: "")
+            
+            //빼빼로 막대를 양 사이드에 맞도록 bodyCount 만큼 띄어쓰기
             for _ in 1...bodyCenter{
                 print(" ", terminator: "")
             }
-            print("| |")
+            
+            print("|")
+        }
+    }
+    else {
+        for _ in 1...stickLength {
+            print(" | |")
         }
     }
 }
 
 
 //빼빼로 토핑과 몸통 그리기
-func drawPeperoBodyAndTopping(bodyLength: Int, body: String, topping: String, stickLength: Int) {
+func drawPeperoBodyAndTopping(bodyLength: Int, body: String, topping: String) {
     
-    if bodyLength < 1 {
-        return
-    }
-    else {
-        print(" " + topping + body + topping)
-    }
+    print(" " + topping + body + topping)
+
 }
 
 //빼빼로 몸통 길이를 받고 그리기
@@ -45,7 +51,7 @@ func drawPeperoBody(bodyLength: Int, body: String, topping: String, stickLength:
     }
     else {
         for _ in 1...bodyLength - 1 {
-            drawPeperoBodyAndTopping(bodyLength: bodyLength, body: body, topping: topping, stickLength: stickLength)
+            drawPeperoBodyAndTopping(bodyLength: bodyLength, body: body, topping: topping)
         }
     }
 }
@@ -60,15 +66,17 @@ func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int
     print("막대길이: \(stickLength)")
     print("")
     
-    //스틱이 빼빼로의 중앙에 위치하도록 하는 값
+    //스틱이 빼빼로의 양 사이드에 위치하도록 하는 값
     var bodyCenter: Int = 0
     
-    drawPeperoBodyAndTopping(bodyLength: bodyLength, body: body, topping: topping, stickLength: stickLength)
+    drawPeperoBodyAndTopping(bodyLength: bodyLength, body: body, topping: topping)
     
-    bodyCenter = (((topping.count * 2) + body.count) / 2) 
-    //print(bodyCenter) 센터 확인용 test code
+    //빼빼로 몸통두께 = 스틱두께
+    bodyCenter = (body.count - 2) + (topping.count * 2)
+
     drawPeperoBody(bodyLength: bodyLength, body: body, topping: topping, stickLength: stickLength)
     drawPeperoStick(stickLength: stickLength, bodyCenter: bodyCenter)
     
+    //2줄 개행
     print("\n")
 }
