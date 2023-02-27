@@ -23,7 +23,7 @@ func drawLengthBodyTopping(bodyLength: Int, bodyShape: String, toppingShape: Str
     }
 }
 
-func writePpeppero(bodyLength: Int, bodyShape: String, toppingShape: String, stickLength: Int) {
+func drawPpeppero(bodyLength: Int, bodyShape: String, toppingShape: String, stickLength: Int) {
     print("""
           <정보>
           길이: \(bodyLength)
@@ -35,8 +35,8 @@ func writePpeppero(bodyLength: Int, bodyShape: String, toppingShape: String, sti
     drawStick(stickLength: stickLength)
 }
 
-writePpeppero(bodyLength: 10, bodyShape: "***", toppingShape: " ", stickLength: 4)
-writePpeppero(bodyLength: 12, bodyShape: "***", toppingShape: "&", stickLength: 4)
-writePpeppero(bodyLength: 12, bodyShape: "***", toppingShape: "#", stickLength: 6)
-writePpeppero(bodyLength: 6, bodyShape: "|0|", toppingShape: " ", stickLength: 4)
-writePpeppero(bodyLength: 10, bodyShape: "$$$", toppingShape: "#", stickLength: 3)
+drawPpeppero(bodyLength: 10, bodyShape: "***", toppingShape: " ", stickLength: 4)
+drawPpeppero(bodyLength: 12, bodyShape: "***", toppingShape: "&", stickLength: 4)
+drawPpeppero(bodyLength: 12, bodyShape: "***", toppingShape: "#", stickLength: 6)
+drawPpeppero(bodyLength: 6, bodyShape: "|0|", toppingShape: " ", stickLength: 4)
+drawPpeppero(bodyLength: 10, bodyShape: "$$$", toppingShape: "#", stickLength: 3)
