@@ -1,5 +1,5 @@
 //
-//  step2.swift
+//  Step2.swift
 //  CodeStarterCamp_Week1
 //
 //  Created by eve on 2023/02/21.
@@ -21,7 +21,7 @@ public func makeIcecream(height: UInt) {
     }
 }
 
-/// 막대 바 그리기
+/// 막대 그리기
 public func makeBar(height: UInt) {
     if (width < 1 || height < 1) { return }
     let barSize = width % 2 == 0 ? 1 : 2
