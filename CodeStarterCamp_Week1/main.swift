@@ -62,18 +62,25 @@ makeIcecream(a: "*", b: "|")
 */
 
 // PR 받고 수정하기
-func makeSweet(x: String) {
+func makeIcecreamBody(kind: String) {
     for _ in 1...8 {
         for _ in 1...10 {
-            print(x, terminator: "")
+            print(kind, terminator: "")
         }
-        print(x)
+        print(kind)
     }
 }
-func makeBar(x: String) {
+func makeBar(bar: String) {
     for _ in 1...4 {
-        print("    \(x) \(x)    ")
+        print("    \(bar) \(bar)    ")
     }
 }
-makeSweet(x: "*")
-makeBar(x: "|")
+makeIcecreamBody(kind: "*")
+makeBar(bar: "|")
+
+print("STEP3")
+makePaparo(lengthBody: 10, lengthBar: 4) //실행 예시 1
+makePaparo(lengthBody: 12, lengthBar: 4, toping: "&") //실행 예시 2
+makePaparo(lengthBody: 12, lengthBar: 6, toping: "#") //실행 예시 3
+makePaparo(lengthBody: 6, lengthBar: 4, body: "|0|") //실행 예시 4
+makePaparo(lengthBody: 12, lengthBar: 6, toping: "&#", body: "*") //나만의 빼빼로
