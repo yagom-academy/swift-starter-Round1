@@ -8,7 +8,7 @@
 import Foundation
 
 /// 몸통 모양 그리기
-func makeBodyShape(body: String, topping: String = "") -> String {
+func makeBodyShape(body: String, topping: String) -> String {
     return topping + body + topping
 }
 
@@ -24,23 +24,24 @@ func makeBody(height: Int, bodyShape: String, topping: String) {
 /// 막대 그리기
 func makeStick(height: Int, bodyShape: String, body: String, topping: String) {
     if height < 1 { return }
-    let ignoreSpaceBodyWidth = body.trimmingCharacters(in: .whitespaces).count // 공백을 제외한 몸통 너비
-    let betweenStickSpace = ignoreSpaceBodyWidth - 2 // 막대 사이 빈 칸
+    let bodyWidth = body.trimmingCharacters(in: .whitespaces).count // 공백을 제외한 몸통 너비
+    let betweenStickSpace = bodyWidth - 2 // 막대 사이 빈 칸
+    
+    var stick = ""
+    for character in bodyShape {
+        if String(character) == " " || String(character) == topping {
+            stick += " "
+        } else {
+            stick += "|"
+            if betweenStickSpace < 0 { break }
+            stick += String(repeating: " ", count: betweenStickSpace)
+            stick += "|"
+            break
+        }
+    }
     
     for _ in 1...height {
-        var stick = ""
-        for character in bodyShape {
-            if String(character) == " " || String(character) == topping {
-                stick += " "
-            } else {
-                stick += "|"
-                if betweenStickSpace < 0 { break }
-                stick += String(repeating: " ", count: betweenStickSpace)
-                stick += "|"
-                break
-            }
-        }
-        print("\(topping.isEmpty ? " " : "")\(stick)\n", terminator: "")
+        print("\(topping.isEmpty ? " " : "")\(stick)")
     }
 }
 
@@ -53,6 +54,8 @@ func makePepero(bodyHeight: Int, body: String, topping: String = "", stickHeight
         makeBody(height: bodyHeight, bodyShape: bodyShape, topping: topping)
         makeStick(height: stickHeight, bodyShape: bodyShape, body: body, topping: topping)
         print("")
+    } else {
+        print("( 몸통을 입력해주세요 )\n")
     }
 }
 
