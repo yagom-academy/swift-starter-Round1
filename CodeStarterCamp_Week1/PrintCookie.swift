@@ -1,13 +1,11 @@
 //
-//  main.swift
+//  OrderCookies.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by hoon Kim on 2023/02/23.
 //
 
 import Foundation
-
 
 func printCookiesBodyAndTopping(_ body: String, _ topping: String) {
     print("\(topping)\(body)\(topping)")
@@ -26,22 +24,15 @@ func printCookiesHandle(length: Int) {
 }
 
 func printCookie(bodyLength: Int = 10, body: String = "***", topping: String = " ", handleLength: Int = 4) {
-    print("""
-\n<정보>
-길이: \(bodyLength)
-몸통: \(body)
-토핑: \(topping)
-막대길이: \(handleLength)\n
-""")
-//    print("<정보>")
-//    print("길이: \(bodyLength)")
-//    print("몸통: \(body)")
-//    print("토핑: \(topping)")
-//    print("막대길이: \(handleLength)\n")
+    print("<정보>")
+    print("길이: \(bodyLength)")
+    print("몸통: \(body)")
+    print("토핑: \(topping)")
+    print("막대길이: \(handleLength)\n")
     
     printCookiesBody(length: bodyLength <= 0 : 10, body: body.isEmpty ? "***" : body, topping: topping.isEmpty ? " " : topping)
     printCookiesHandle(length: handleLength <= 0 : 10)
 }
 
-printCookie(bodyLength: 12, body: "|0|", topping: "", handleLength: 5)
+printCookie()
 
