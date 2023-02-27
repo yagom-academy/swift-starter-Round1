@@ -33,6 +33,7 @@ func makePepero(lenght: Int, body: String, topping: String, stickLenght: Int) {
     makeBody(body: body, topping: topping)
     makeAllBody(bodyLenght: lenght, bodyAndTopping: bodyAndTopping)
     makeStick(stickLenght: stickLenght)
+    print("\n맛있게 드세요~욤뇸뇸")
 }
 
 print("<정보>")
