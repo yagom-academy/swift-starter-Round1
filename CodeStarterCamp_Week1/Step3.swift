@@ -46,6 +46,7 @@ class ChocoStick {
         for _ in 0..<barLength {
             print(" | |")
         }
+        print()
     }
     
 }
