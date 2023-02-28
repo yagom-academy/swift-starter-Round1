@@ -4,9 +4,6 @@
 //
 //  Created by Appledayz on 2023/02/24.
 //
-/*
- 주문에 따른 빼빼로 그리기
- */
 
 import Foundation
 
