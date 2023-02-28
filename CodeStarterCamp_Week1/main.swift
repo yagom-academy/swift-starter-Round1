@@ -8,25 +8,8 @@
 
 import Foundation
 
-drawIceCream()
-
-func drawIceCream() {
-    drawIceCreamBody()
-    drawIceCreamBar()
-}
-
-func drawIceCreamBody() {
-    for _ in 0...7 {
-        for _ in 0...10 {
-            print("*", terminator: "")
-        }
-        print()
-    }
-}
-
-func drawIceCreamBar() {
-    for _ in 0...3 {
-        print("    | |")
-    }
-}
-
+let step3 = Step3()
+step3.drawChocoStickFromOrder(bodyLength: 12,
+                              body: "***",
+                              topping: "#",
+                              barLength: 6)
