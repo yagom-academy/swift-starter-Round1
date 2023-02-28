@@ -23,7 +23,7 @@ func drawPeperoBodyShape(bodyBase: String, topping: String) -> String {
 
 func drawPeperoBody(bodyLength: Int, bodyShape: String) {
     for _ in 1...bodyLength {
-        print("\(bodyShape)")
+        print(bodyShape)
     }
 }
 
