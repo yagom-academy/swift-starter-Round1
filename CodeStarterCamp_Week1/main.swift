@@ -8,36 +8,35 @@
 
 import Foundation
 
-var iceWidth, iceHeight, barHeight : Int
-
 func makeIceCream(iceWidth: Int, iceHeight: Int) {
     for _ in 1...iceHeight {
         for _ in 1...iceWidth {
             print("*", terminator: "")
-            }
-        print()
         }
+        print()
     }
-
+}
 
 func makeBar(iceWidth: Int, barHeight: Int) {
-    
-    let barBlank : Int = (iceWidth-iceWidth%2)/2-1
-    
+    let barBlank : Int = (iceWidth - iceWidth % 2)/2 - 1
     for _ in 1...barHeight {
         for _ in 1...barBlank {
             print(" ", terminator: "")
-            }
-            if iceWidth%2==1 {
-                print("| |")
-            }
-            else if iceWidth%2==0 {
-                print("||")
-            }
+        }
+        if iceWidth%2==1 {
+            print("| |")
+        }
+        else if iceWidth%2==0 {
+            print("||")
         }
     }
+}
 
-makeIceCream(iceWidth: 10, iceHeight: 9)
-makeBar(iceWidth: 10, barHeight: 4)
+func makeWholeIceCream (iceWidth: Int, iceHeight: Int, barHeight: Int) {
+    makeIceCream(iceWidth: iceWidth, iceHeight: iceHeight)
+    makeBar(iceWidth: iceWidth, barHeight: barHeight)
+}
+
+makeWholeIceCream(iceWidth: 10, iceHeight: 9, barHeight: 5)
 
 
