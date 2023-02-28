@@ -19,32 +19,32 @@ func createPepero(bodyHeight: Int, body: String, toping: String?, barHeight: Int
     createPeperoBody(bodyHeight: bodyHeight, body: body, toping: toping)
     createPeperoBar(barHeight: barHeight, bodyWidth: body.count, topingWidth: toping?.count ?? 0)
 }
-        
+
 /**
  길이(Int)에 따른 막대(빼빼로 손잡이)를 그리는 함수
  */
 private func createPeperoBar(barHeight: Int, bodyWidth: Int, topingWidth: Int) {
+    
+    let half = bodyWidth/2  //너비를 반으로 갈라서 중심을 찾습니다.
+    
     for _ in 1...barHeight {
         if (topingWidth > 0) {  //빼빼로 토핑이 있을때만 실행
             for _ in 1...topingWidth {
                 print(" ", terminator: "")
             }
         }
-        
-        let half = bodyWidth/2  //너비를 반으로 갈라서 중심을 찾습니다.
-        
         for index in 1...bodyWidth {
             if index == half || index == half+2 {   //중심에 선 하나 중심 옆옆에 선 하나를 그어 빼빼로 바 모양을 만듭니다.
                 print("|", terminator: "")
             } else {
                 if half%2==0 && index == half+1{
-                   print("", terminator: "")
+                    print("", terminator: "")
                 } else {
                     print(" ", terminator: "")
                 }
             }
         }
-    
+        
         print()
     }
 }
