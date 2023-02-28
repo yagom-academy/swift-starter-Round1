@@ -1,48 +1,46 @@
 //
-//  main.swift
+//  week1_step3_tag.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 윤해수 on 2023/02/23.
 //
-//  CodeStarterCamp_Week1_step2_tag
 
 import Foundation
 
-func makeIce() {
-    for _ in 1...8 {
-        print("***********")
+func makeBody(peperoBody: String, peperoTopping: String) -> String {
+    if "\(peperoTopping + peperoBody + peperoTopping)".count > 3 {
+        return peperoTopping + peperoBody + peperoTopping
+    } else {
+        return " " + peperoTopping + peperoBody + peperoTopping
     }
 }
 
-func makeStick() {
-    for _ in 1...4 {
-        print("    | |")
+func makeAllBody(bodyLength: Int, bodyWithTopping: String) {
+    for _ in 1...bodyLength {
+        print(bodyWithTopping)
     }
 }
 
-makeIce()
-makeStick()
+func makeStick(stickLength: Int) {
+    for _ in 1...stickLength {
+        print(" | |")
+    }
+}
 
-//var icecreamwidth = 11
-//var icecreamlength = 8
-////var stickwidth = 1 *막대부분의 길이도 조절이 가능한가?
-//var sticklength = 4
-//
-//func icecream() {
-//    for _ in 1...icecreamlength {
-//        for _ in 1...icecreamwidth {
-//            print("*", terminator: "")
-//        }
-//        print("")
-//    }
-//}
-//
-//func stick() {
-//    for _ in 1...sticklength {
-//        print("    | |")
-//    }
-//}
-//
-//icecream()
-//stick()
+func makePepero(length: Int, body: String, topping: String = "", stickLength: Int) {
+    print("""
+        <정보>
+        길이: \(length)
+        몸통: \(body)
+        토핑: \(topping)
+        막대길이: \(stickLength)\n
+        """)
+    makeAllBody(bodyLength: length, bodyWithTopping: makeBody(peperoBody: body, peperoTopping: topping))
+    makeStick(stickLength: stickLength)
+    print("\n맛있게 드세요~욤뇸뇸\n")
+}
+
+makePepero(length: 10, body: "***", stickLength: 4)
+makePepero(length: 12, body: "***", topping: "&", stickLength: 4)
+makePepero(length: 12, body: "***", topping: "#", stickLength: 6)
+makePepero(length: 6, body: "|0|", stickLength: 4)
