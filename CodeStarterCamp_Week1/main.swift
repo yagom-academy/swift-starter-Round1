@@ -22,5 +22,5 @@ func iceBar (barLength : Int) {
     }
 }
 
-ice(length:8,wide:11)
-iceBar(barLength:4)
+ice(length:8,wide:11) //아이스크림 만드는 함수호출
+iceBar(barLength:4)   //막대기 만드는 함수호출
