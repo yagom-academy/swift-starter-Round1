@@ -1,27 +1,42 @@
 //
-//  main.swift
+//  writePPeppero.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 전민석 on 2023/02/26.
 //
 
 import Foundation
 
-func makeIceCreamBody(material: String) {
-    for _ in 1...8 {
-        for _ in 1...11 {
-            print(material, terminator: "")
-        }
-        print("")
+func drawStick(stickLength: Int) {
+    for _ in 1...stickLength {
+        print(" | |")
     }
 }
 
-func makeStick() {
-    for _ in 1...4 {
-        print("    | |")
+func drawBodyTopping(bodyShape: String, toppingShape: String) {
+    print("\(toppingShape)\(bodyShape)\(toppingShape)")
+}
+
+func drawLengthBodyTopping(bodyLength: Int, bodyShape: String, toppingShape: String) {
+    for _ in 1...bodyLength {
+        drawBodyTopping(bodyShape: bodyShape, toppingShape: toppingShape)
     }
 }
 
-makeIceCreamBody(material: "*")
-makeStick()
+func drawPpeppero(bodyLength: Int, bodyShape: String, toppingShape: String, stickLength: Int) {
+    print("""
+          <정보>
+          길이: \(bodyLength)
+          몸통: \(bodyShape)
+          토핑: \(toppingShape)
+          막대길이: \(stickLength)\n
+          """)
+    drawLengthBodyTopping(bodyLength: bodyLength, bodyShape: bodyShape, toppingShape: toppingShape)
+    drawStick(stickLength: stickLength)
+}
+
+drawPpeppero(bodyLength: 10, bodyShape: "***", toppingShape: " ", stickLength: 4)
+drawPpeppero(bodyLength: 12, bodyShape: "***", toppingShape: "&", stickLength: 4)
+drawPpeppero(bodyLength: 12, bodyShape: "***", toppingShape: "#", stickLength: 6)
+drawPpeppero(bodyLength: 6, bodyShape: "|0|", toppingShape: " ", stickLength: 4)
+drawPpeppero(bodyLength: 10, bodyShape: "$$$", toppingShape: "#", stickLength: 3)
