@@ -22,6 +22,5 @@ func icecreamBarLength() {
     }
 }
 
-
-icecreamLength()
-icecreamBarLength()
+//icecreamLength()
+//icecreamBarLength()
