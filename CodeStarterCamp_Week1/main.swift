@@ -13,9 +13,9 @@ drawIceCream()
 drawIceCreamStick()
 
 // Step3
-drawPeperoMain(bodyLength: 10, bodyBase: "***", topping: "", stickLength: 4)
-drawPeperoMain(bodyLength: 12, bodyBase: "***", topping: "&", stickLength: 4)
-drawPeperoMain(bodyLength: 12, bodyBase: "***", topping: "#", stickLength: 6)
-drawPeperoMain(bodyLength: 6, bodyBase: "|0|", topping: "", stickLength: 4)
-drawPeperoMain(bodyLength: 7, bodyBase: "$$$", topping: "|", stickLength: 3)
+orderPepero(bodyLength: 10, bodyBase: "***", topping: "", stickLength: 4)
+orderPepero(bodyLength: 12, bodyBase: "***", topping: "&", stickLength: 4)
+orderPepero(bodyLength: 12, bodyBase: "***", topping: "#", stickLength: 6)
+orderPepero(bodyLength: 6, bodyBase: "|0|", topping: "", stickLength: 4)
+orderPepero(bodyLength: 7, bodyBase: "$$$", topping: "|", stickLength: 3)
 
