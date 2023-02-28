@@ -23,10 +23,10 @@ func makeBar(iceWidth: Int, barHeight: Int) {
         for _ in 1...barBlank {
             print(" ", terminator: "")
         }
-        if iceWidth%2==1 {
+        if iceWidth % 2 == 1 {
             print("| |")
         }
-        else if iceWidth%2==0 {
+        else if iceWidth % 2 == 0 {
             print("||")
         }
     }
