@@ -8,33 +8,14 @@
 
 import Foundation
 
-func printIceCreamPart(width: Int, height: Int) {
-    for _ in 1...height {
-        for _ in 1...width {
-            print("*", terminator: "")
-        }
-        print("")
-    }
-}
+//var width = 5
+//var height = 5
+//var stickLength = 3
+//
+//printIceCreamPart(width: width, height: height)
+//printIceCreamStickPart(iceCreamWidth: width, length: stickLength)
 
-func printIceCreamStickPart(iceCreamWidth: Int, length: Int) {
-    let iceCreamWidthHalf = iceCreamWidth / 2
-    for _ in 1...length {
-        for _ in 1...iceCreamWidthHalf-1 {
-            print(" ", terminator: "")
-        }
-        print("|", terminator: "")
-        if iceCreamWidth % 2 == 1 {
-            print(" ", terminator: "")
-        }
-        print("|")
-    }
-}
-
-var width = 5
-var height = 5
-var stickLength = 3
-
-printIceCreamPart(width: width, height: height)
-printIceCreamStickPart(iceCreamWidth: width, length: stickLength)
-
+printPepero(bodyLength: 10, body: "***", topping: "", stickLength: 4)
+printPepero(bodyLength: 12, body: "***", topping: "&", stickLength: 4)
+printPepero(bodyLength: 10, body: "***", topping: "#", stickLength: 6)
+printPepero(bodyLength: 6, body: "|0|", topping: "", stickLength: 4)
