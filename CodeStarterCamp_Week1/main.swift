@@ -14,38 +14,38 @@ func makeBodyTopping(body: String, topping: String) {
     print(" " + topping + body + topping)
 }
 
-func printBodyPart(body: String, topping: String, lenght: Int) {
-    for _ in 1...lenght {
+func printBodyPart(body: String, topping: String, length: Int) {
+    for _ in 1...length {
         makeBodyTopping(body: body, topping: topping)
     }
 }
 
-func printStickPart(stickLenght: Int) {
-    for _ in 1...stickLenght {
+func printStickPart(stickLength: Int) {
+    for _ in 1...stickLength {
         print("  " + "| |")
     }
 }
 
-func printPeperoInformation(lenght: Int, body: String, topping: String, stickLenght: Int) {
+func printPeperoInformation(length: Int, body: String, topping: String, stickLength: Int) {
     print("""
     
     <정보>
-    길이: \(lenght)
+    길이: \(length)
     몸통: \(body)
     토핑: \(topping)
-    막대길이: \(stickLenght)
+    막대길이: \(stickLength)
     
     """)
 }
 
-func printPepero(lenght: Int, body: String, topping: String, stickLenght: Int) {
-    printPeperoInformation(lenght: lenght, body: body, topping: topping, stickLenght: stickLenght)
-    printBodyPart(body: body, topping: topping, lenght: lenght)
-    printStickPart(stickLenght: stickLenght)
+func printPepero(length: Int, body: String, topping: String, stickLength: Int) {
+    printPeperoInformation(length: length, body: body, topping: topping, stickLength: stickLength)
+    printBodyPart(body: body, topping: topping, length: length)
+    printStickPart(stickLength: stickLength)
 }
 
-printPepero(lenght: 10, body: "***", topping: " ", stickLenght: 4)
-printPepero(lenght: 12, body: "***", topping: "&", stickLenght: 4)
-printPepero(lenght: 12, body: "***", topping: "#", stickLenght: 6)
-printPepero(lenght: 6, body: "|0|", topping: " ", stickLenght: 4)
+printPepero(length: 10, body: "***", topping: " ", stickLength: 4)
+printPepero(length: 12, body: "***", topping: "&", stickLength: 4)
+printPepero(length: 12, body: "***", topping: "#", stickLength: 6)
+printPepero(length: 6, body: "|0|", topping: " ", stickLength: 4)
 
