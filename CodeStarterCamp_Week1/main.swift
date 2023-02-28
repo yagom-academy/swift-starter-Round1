@@ -1,26 +1,35 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
+func makePeperoBodyAndTopping(_ body: String, _ topping: String) {
+    if topping == "" {
+        print(" \(topping)\(body)\(topping)")
+    } else {
+        print("\(topping)\(body)\(topping)")
+    }
+    
+}
 
-import Foundation
-
-// 아이스크림 부분 만드는 함수
-func icecreamLength() {
-    for _ in 1...8 {
-        print("***********")
+func makePeperoTop(_ length: Int, _ body: String, _ topping: String) {
+    for _ in 1...length {
+        makePeperoBodyAndTopping(body, topping)
     }
 }
 
-// 아이스크림막대기 부분 만드는 함수
-func icecreamBarLength() {
-    for _ in 1...4 {
-        print("    | |")
+func makePeperoBottom(_ length: Int) {
+    for _ in 1...length {
+        print(" | |")
     }
 }
 
-icecreamLength()
-icecreamBarLength()
+func makeFinishedPepero(bodyLength: Int, body: String, topping: String, bottomLength: Int) {
+    print("<정보>")
+    print("길이:", bodyLength)
+    print("몸통:", body)
+    print("토핑:", topping)
+    print("막대길이:", bottomLength, "\n")
+    makePeperoTop(bodyLength, body, topping)
+    makePeperoBottom(bottomLength)
+    print()
+}
+makeFinishedPepero(bodyLength: 10, body: "***", topping: "", bottomLength: 4)
+makeFinishedPepero(bodyLength: 12, body: "***", topping: "&", bottomLength: 4)
+makeFinishedPepero(bodyLength: 12, body: "***", topping: "#", bottomLength: 6)
+makeFinishedPepero(bodyLength: 6, body: "|0|", topping: "", bottomLength: 4)
