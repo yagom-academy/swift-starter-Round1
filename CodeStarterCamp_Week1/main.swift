@@ -8,19 +8,19 @@
 
 import Foundation
 
-func ice (length : Int , wide : Int){
-    for lengthTime in 1...length{
-        for wideTime in 1...wide{
+func createIce(length: Int , width: Int) {
+    for _ in 1...length{
+        for _ in 1...width{
             print("*",terminator: "")
         }
-    print("")       // 한 줄로 이어지는걸 방지
+        print("")       // 한 줄로 이어지는걸 방지
     }
 }
-func iceBar (barLength : Int) {
-    for barLengthTime in 1...barLength {
+func createIcebar(barLength: Int) {
+    for _ in 1...barLength {
         print("    | |    ")
     }
 }
 
-ice(length:8,wide:11) //아이스크림 만드는 함수호출
-iceBar(barLength:4)   //막대기 만드는 함수호출
+createIce(length:8,width:11) //아이스크림 만드는 함수호출
+createIcebar(barLength:4)   //막대기 만드는 함수호출
