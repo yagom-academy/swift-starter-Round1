@@ -7,15 +7,15 @@
 
 import Foundation
 
-class Step2 {
+class IceCream {
     
-    func drawIceCream() {
-        drawIceCreamBody()
-        drawIceCreamBar()
+    func draw() {
+        drawBody()
+        drawBar()
     }
 
     private
-    func drawIceCreamBody() {
+    func drawBody() {
         for _ in 0...7 {
             for _ in 0...10 {
                 print("*", terminator: "")
@@ -25,7 +25,7 @@ class Step2 {
     }
     
     private
-    func drawIceCreamBar() {
+    func drawBar() {
         for _ in 0...3 {
             print("    | |")
         }

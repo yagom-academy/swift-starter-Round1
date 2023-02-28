@@ -8,8 +8,8 @@
 
 import Foundation
 
-let step3 = Step3()
-step3.drawChocoStickFromOrder(bodyLength: 12,
-                              body: "***",
-                              topping: "#",
-                              barLength: 6)
+let chocoStick = ChocoStick()
+chocoStick.drawFromOrder(bodyLength: 12,
+                         body: "***",
+                         topping: "#",
+                         barLength: 6)
