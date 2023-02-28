@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01F0DEF529ADC7C4003090AD /* jump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F0DEF429ADC7C4003090AD /* jump.swift */; };
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,9 +39,9 @@
 		01F0DEDD29AA4651003090AD /* CodeStarterCamp_Week1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CodeStarterCamp_Week1.xcodeproj; sourceTree = "<group>"; };
 		01F0DEE029AA4651003090AD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		01F0DEE129AA4651003090AD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		01F0DEE329AA4651003090AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		01F0DEE429AA4651003090AD /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		01F0DEE329AA4651003090AD /* iceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iceCream.swift; sourceTree = "<group>"; };
 		01F0DEE529AA4651003090AD /* toki.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = toki.txt; sourceTree = "<group>"; };
+		01F0DEF429ADC7C4003090AD /* jump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jump.swift; sourceTree = "<group>"; };
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +65,6 @@
 				01F0DEE029AA4651003090AD /* README.md */,
 				01F0DEE129AA4651003090AD /* .gitignore */,
 				01F0DEE229AA4651003090AD /* CodeStarterCamp_Week1 */,
-				01F0DEE429AA4651003090AD /* test.txt */,
 				01F0DEE529AA4651003090AD /* toki.txt */,
 			);
 			name = "swift-starter-week1";
@@ -103,7 +103,8 @@
 		01F0DEE229AA4651003090AD /* CodeStarterCamp_Week1 */ = {
 			isa = PBXGroup;
 			children = (
-				01F0DEE329AA4651003090AD /* main.swift */,
+				01F0DEE329AA4651003090AD /* iceCream.swift */,
+				01F0DEF429ADC7C4003090AD /* jump.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -160,7 +161,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					34811DAA274B938F00A1E994 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -210,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F0DEF529ADC7C4003090AD /* jump.swift in Sources */,
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +253,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -312,6 +315,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -335,7 +339,9 @@
 		34811DB3274B938F00A1E994 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -344,7 +350,9 @@
 		34811DB4274B938F00A1E994 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
