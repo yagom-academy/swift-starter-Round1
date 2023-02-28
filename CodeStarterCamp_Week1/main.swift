@@ -1,5 +1,10 @@
 func makePeperoBodyAndTopping(_ body: String, _ topping: String) {
-    print("\(topping)\(body)\(topping)")
+    if topping == "" {
+        print(" \(topping)\(body)\(topping)")
+    } else {
+        print("\(topping)\(body)\(topping)")
+    }
+    
 }
 
 func makePeperoTop(_ length: Int, _ body: String, _ topping: String) {
@@ -24,7 +29,7 @@ func makeFinishedPepero(bodyLength: Int, body: String, topping: String, bottomLe
     makePeperoBottom(bottomLength)
     print()
 }
-makeFinishedPepero(bodyLength: 10, body: "***", topping: " ", bottomLength: 4)
+makeFinishedPepero(bodyLength: 10, body: "***", topping: "", bottomLength: 4)
 makeFinishedPepero(bodyLength: 12, body: "***", topping: "&", bottomLength: 4)
 makeFinishedPepero(bodyLength: 12, body: "***", topping: "#", bottomLength: 6)
-makeFinishedPepero(bodyLength: 6, body: "|0|", topping: " ", bottomLength: 4)
+makeFinishedPepero(bodyLength: 6, body: "|0|", topping: "", bottomLength: 4)
