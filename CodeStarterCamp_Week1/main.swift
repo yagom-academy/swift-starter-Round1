@@ -7,52 +7,40 @@
 
 import Foundation
 
-var bodyAndTopping: String = ""
-
-func makeBody(body: String, topping: String) {
-    return bodyAndTopping = "\(topping)\(body)\(topping)"
-}
-
-func makeAllBody(bodyLenght: Int, bodyAndTopping: String) {
-    for _ in 1...lenght {
-        if bodyAndTopping.count > 3 {
-            print(bodyAndTopping)
-        } else {
-            print(" " + bodyAndTopping)
-        }
+func makeBody(peperoBody: String, peperoTopping: String) -> String {
+    if "\(peperoTopping + peperoBody + peperoTopping)".count > 3 {
+        return peperoTopping + peperoBody + peperoTopping
+    } else {
+        return " " + peperoTopping + peperoBody + peperoTopping
     }
 }
 
-func makeStick(stickLenght: Int) {
-    for _ in 1...stickLenght {
+func makeAllBody(bodyLength: Int, bodyWithTopping: String) {
+    for _ in 1...bodyLength {
+        print(bodyWithTopping)
+    }
+}
+
+func makeStick(stickLength: Int) {
+    for _ in 1...stickLength {
         print(" | |")
     }
 }
 
-func makePepero(lenght: Int, body: String, topping: String, stickLenght: Int) {
-    makeBody(body: body, topping: topping)
-    makeAllBody(bodyLenght: lenght, bodyAndTopping: bodyAndTopping)
-    makeStick(stickLenght: stickLenght)
-    print("\n맛있게 드세요~욤뇸뇸")
+func makePepero(length: Int, body: String, topping: String = "", stickLength: Int) {
+    print("""
+        <정보>
+        길이: \(length)
+        몸통: \(body)
+        토핑: \(topping)
+        막대길이: \(stickLength)\n
+        """)
+    makeAllBody(bodyLength: length, bodyWithTopping: makeBody(peperoBody: body, peperoTopping: topping))
+    makeStick(stickLength: stickLength)
+    print("\n맛있게 드세요~욤뇸뇸\n")
 }
 
-print("<정보>")
-print("길이: ", terminator: "")
-let lenght = Int(readLine()!)!
-print("몸통: ", terminator: "")
-let body = readLine()!
-print("토핑: ", terminator: "")
-let topping = readLine()!
-print("막대길이: ", terminator: "")
-let stickLenght = Int(readLine()!)!
-print("")
-makePepero(lenght: lenght, body: body, topping: topping, stickLenght: stickLenght)
-
-//makeBody(body: body, topping: topping)
-//makeAllBody(bodyLenght: lenght, bodyAndTopping: bodyAndTopping)
-//makeStick(stickLenght: stickLenght)
-
-//print(type(of:lenght))
-//print(type(of:body))
-//print(type(of:topping))
-//print(type(of:stickLenght))
+makePepero(length: 10, body: "***", stickLength: 4)
+makePepero(length: 12, body: "***", topping: "&", stickLength: 4)
+makePepero(length: 12, body: "***", topping: "#", stickLength: 6)
+makePepero(length: 6, body: "|0|", stickLength: 4)
