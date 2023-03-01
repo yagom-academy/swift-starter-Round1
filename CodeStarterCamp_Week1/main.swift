@@ -8,20 +8,12 @@
 
 import Foundation
 
-func makeIceCreamBody(kind: String) {
-    for _ in 1...8 {
-        for _ in 1...10 {
-            print(kind, terminator: "")
-        }
-        print(kind)
-    }
-}
-
-func makeBar(bar: String) {
-    for _ in 1...4 {
-        print("    \(bar) \(bar)    ")
-    }
-}
-
 makeIceCreamBody(kind: "*")
 makeBar(bar: "|")
+
+print("\nSTEP3")
+makePepero(lengthBody: 10, lengthBar: 4) //실행 예시 1
+makePepero(lengthBody: 12, lengthBar: 4, topping: "&") //실행 예시 2
+makePepero(lengthBody: 12, lengthBar: 6, topping: "#") //실행 예시 3
+makePepero(lengthBody: 6, lengthBar: 4, body: "|0|") //실행 예시 4
+makePepero(lengthBody: 12, lengthBar: 6, topping: "&#", body: "*") //나만의 빼빼로
