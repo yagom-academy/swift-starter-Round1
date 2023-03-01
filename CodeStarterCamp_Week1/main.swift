@@ -8,8 +8,7 @@
 
 import Foundation
 
-// PR 받고 수정하기
-func makeIcecreamBody(kind: String) {
+func makeIceCreamBody(kind: String) {
     for _ in 1...8 {
         for _ in 1...10 {
             print(kind, terminator: "")
@@ -17,10 +16,12 @@ func makeIcecreamBody(kind: String) {
         print(kind)
     }
 }
+
 func makeBar(bar: String) {
     for _ in 1...4 {
         print("    \(bar) \(bar)    ")
     }
 }
-makeIcecreamBody(kind: "*")
+
+makeIceCreamBody(kind: "*")
 makeBar(bar: "|")
