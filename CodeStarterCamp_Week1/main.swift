@@ -8,5 +8,19 @@
 
 import Foundation
 
-print("Hello, World!")
+func makeIceCream () {
+    for _ in 1...7 {
+        print("***********")
+    }
+}
 
+func makeBar () {
+    for _ in 1...4 {
+        print("    | |")
+    }
+}
+
+makeIceCream()
+makeBar()
+
+// 아이스크림 그리기 -
