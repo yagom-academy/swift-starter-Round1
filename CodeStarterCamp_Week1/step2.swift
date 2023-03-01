@@ -7,7 +7,7 @@
 
 import Foundation
 
-func drawIceCream() {
+func drawIceCreamBody() {
     for _ in 1...8 {
         for _ in 1...11 {
             print("*", terminator: "")
