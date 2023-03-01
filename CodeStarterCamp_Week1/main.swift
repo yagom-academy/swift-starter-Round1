@@ -8,25 +8,23 @@
 
 import Foundation
 
-// 가로 길이를 입력받아 아이스크림의 가로 한줄을 출력하는 함수
-func makePartIcecream(rowNumber:Int){
-    for _ in 1...rowNumber{
+func drawPartIcecream(width: Int) {
+    for _ in 1...width {
         print("*",terminator: "")
     }
-    print("\r") //print()도 가능
+    print("\r")
 }
 
-// 세로 길이와 바의 길이를 입력받아 전체 아이스크림을 출력하는 함수
-func makeFullIcecream(rowNumber:Int, columnNumber:Int, barLength:Int){
-    for _ in 1...columnNumber{
-        makePartIcecream(rowNumber: rowNumber)
+func makeFullIcecream(width: Int, height: Int, barLength: Int) {
+    for _ in 1...height {
+        drawPartIcecream(width: width)
     }
     
-    var barStartIndex:Int = (rowNumber - 3)/2  //바가 시작하는 위치 구하기
-    var barRightWidth = String(repeating: " ", count: barStartIndex)    //바의 우측 공백길이 구하기
-    for _ in 1...barLength{
-        print("\(barRightWidth)| |")
+    let barStartingPosition: Int = (width - 3) / 2
+    let barBetweenSpace = String(repeating: " ", count: barStartingPosition)
+    for _ in 1...barLength {
+        print("\(barBetweenSpace)| |")
     }
 }
 
-makeFullIcecream(rowNumber: 9, columnNumber: 10, barLength: 4)
+makeFullIcecream(width: 9, height: 10, barLength: 4)
