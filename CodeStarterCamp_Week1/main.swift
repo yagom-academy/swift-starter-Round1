@@ -2,26 +2,11 @@
 //  main.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by Dean on 2023/03/01.
 //
 
 import Foundation
 
-func makeIceCream() {
-    for _ in 1...8 {
-        for _ in 1...11 {
-            print("*", terminator: "")
-        }
-        print("")
-    }
-}
+makePepero(body: "***", topping: " ", bodyLength: 12, stickLength: 6)
 
-func makeStick() {
-    for _ in 1...4 {
-        print("    | |")
-    }
-}
 
-makeIceCream()
-makeStick()
