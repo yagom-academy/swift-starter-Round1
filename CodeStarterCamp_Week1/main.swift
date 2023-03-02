@@ -17,4 +17,8 @@ import Foundation
 /**
  Step 3: 주문에 따른 빼빼로 그리기
  */
-createPepero(bodyHeight: 6, body: "|0|", toping: "", barHeight: 4)
+createPepero(bodyHeight: 10, body: "***", toping: nil, barHeight: 4)
+createPepero(bodyHeight: 12, body: "***", toping: "&", barHeight: 4)
+createPepero(bodyHeight: 12, body: "***", toping: "#", barHeight: 6)
+createPepero(bodyHeight: 6, body: "|0|", toping: nil, barHeight: 4)
+createPepero(bodyHeight: 10, body: "*****", toping: "", barHeight: 4)
