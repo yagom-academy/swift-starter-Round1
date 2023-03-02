@@ -8,25 +8,28 @@
 
 import Foundation
 
-func iceCream() {
+func madeIceCream() {
 	for _ in 1...7 {
-		var star = "\n"
+		var star = ""
 		for _ in 1...11 {
 			star += "*"
 		}
+		star += "\n"
 		print(star)
 	}
 }
 
-func stick() {
-	var stick = ""
+func madeIceCreamStick() {
 	for _ in 1...4 {
-		stick += "\n    | |    \n"
+		var stick = "    "
+		for _ in 1...2 {
+			stick += "| "
+		}
+		stick += "\n"
+		print(stick)
 	}
-	print(stick)
 }
 
-
-iceCream()
-stick()
+madeIceCream()
+madeIceCreamStick()
 
