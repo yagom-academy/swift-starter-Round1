@@ -14,6 +14,9 @@ func makePeperoStick(length: Int) {
 }
 
 func setPeperoBody(body: String, topping: String) -> String {
+    if topping.isEmpty {
+        return " \(body) "
+    }
     return topping + body + topping
 }
 

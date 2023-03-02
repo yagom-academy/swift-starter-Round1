@@ -7,6 +7,6 @@
 
 import Foundation
 
-makePepero(body: "***", topping: " ", bodyLength: 12, stickLength: 6)
+makePepero(body: "***", topping: "", bodyLength: 12, stickLength: 6)
 
 
