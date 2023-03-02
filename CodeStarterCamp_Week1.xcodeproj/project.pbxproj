@@ -6,11 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		01F0DEF529ADC7C4003090AD /* jump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F0DEF429ADC7C4003090AD /* jump.swift */; };
-		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		01F0DEE729AA4651003090AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -211,8 +206,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01F0DEF529ADC7C4003090AD /* jump.swift in Sources */,
-				34811DAF274B938F00A1E994 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
