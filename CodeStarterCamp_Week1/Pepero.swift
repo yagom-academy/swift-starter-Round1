@@ -7,12 +7,11 @@
 
 import Foundation
 
-//STEP3 빼빼로만들기
 func makeBar(lengthBar: Int) {
     for _ in 1...lengthBar {
         print(" | | ")
     }
-    print("") // 여러 개 빼빼로 출력 시 떨어져 있는게 보기 좋을 것 같아 추가했어요
+    print("")
 }
 
 func makeBody(topping: String, body: String) -> String {
