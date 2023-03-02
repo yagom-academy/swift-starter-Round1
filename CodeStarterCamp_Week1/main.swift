@@ -8,20 +8,9 @@
 
 import Foundation
 
-func makeIceCreamBody(kind: String) {
-    for _ in 1...8 {
-        for _ in 1...10 {
-            print(kind, terminator: "")
-        }
-        print(kind)
-    }
-}
-
-func makeBar(bar: String) {
-    for _ in 1...4 {
-        print("    \(bar) \(bar)    ")
-    }
-}
-
-makeIceCreamBody(kind: "*")
-makeBar(bar: "|")
+print("STEP3")
+makePepero(lengthBody: 10, lengthBar: 4)
+makePepero(lengthBody: 12, lengthBar: 4, topping: "&")
+makePepero(lengthBody: 12, lengthBar: 6, topping: "#")
+makePepero(lengthBody: 6, lengthBar: 4, body: "|0|")
+makePepero(lengthBody: 12, lengthBar: 6, topping: "&#", body: "*")
