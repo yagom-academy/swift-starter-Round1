@@ -8,16 +8,13 @@
 
 import Foundation
 
-func createIceCreamHead() {
-    for _ in 1...8 {
-        print("***********")
-    }
-}
-func createIceCreamBody() {
-    for _ in 1...4 {
-        print("    | |    ")
-    }
-}
+//createIceCreamHead()
+//createIceCreamBody()
 
-createIceCreamHead()
-createIceCreamBody()
+
+createPpeppero(bodyType: "***", bodyLength: 10,  topping : "", barLength: 4)
+createPpeppero(bodyType: "***", bodyLength: 12,  topping : "&", barLength: 4)
+createPpeppero(bodyType: "***", bodyLength: 12,  topping : "#", barLength: 6)
+createPpeppero(bodyType: "|0|", bodyLength: 6,  topping : "", barLength: 4)
+
+
