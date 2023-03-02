@@ -8,33 +8,32 @@
 import Foundation
 
 
-func stickDraw(sLength: Int){
-    for _ in 1...sLength{
+func drawStick(length: Int){
+    for _ in 1...length{
         print(" | | ")
     }
 }
 
-func bodyForm(body: String, topping: String) -> String{
+func makeBody(body: String, topping: String) -> String{
     return topping+body+topping
 }
 
-func bodyDraw(bLength: Int, body: String, stick: Int){
-    for _ in 1...bLength{
+func drawBody(length: Int, body: String, stick: Int){
+    for _ in 1...length{
         print(body)
     }
-    stickDraw(sLength: stick)
+    drawStick(length: stick)
 }
 
-func drawPpaeppaero(body: String, topping: String, length: Int, stickLength: Int) {
+func drawPpaeppaero(body: String, topping: String, bodyLength: Int, stickLength: Int) {
     
     print("""
         <정보>
-        길이: \(length)
+        길이: \(bodyLength)
         몸통: \(body)
         토핑: \(topping)
         막대길이: \(stickLength)
         """)
-    let bodyD:String = bodyForm(body: body, topping: topping)
-    bodyDraw(bLength: length, body: bodyD, stick: stickLength)
+    let bodyline:String = makeBody(body: body, topping: topping)
+    drawBody(length: bodyLength, body: bodyline, stick: stickLength)
 }
-
