@@ -8,13 +8,13 @@
 
 import Foundation
 
-func makeIceCream () {
+func makeIceCream() {
     for _ in 1...7 {
         print("***********")
     }
 }
 
-func makeBar () {
+func makeBar() {
     for _ in 1...4 {
         print("    | |")
     }
@@ -22,5 +22,3 @@ func makeBar () {
 
 makeIceCream()
 makeBar()
-
-// 아이스크림 그리기 -
