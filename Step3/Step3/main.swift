@@ -23,7 +23,7 @@ func drawBbabbaroBar(length: Int) {
     }
 }
 
-func makeBbabbaro(lengthBody: Int, lengthBar: Int, content: String, topping: String=" ") {
+func makeBbabbaro(lengthBody: Int, lengthBar: Int, content: String, topping: String = " ") {
     drawBbabbaroFullBody(length: lengthBody, content: content, topping: topping)
     drawBbabbaroBar(length: lengthBar)
 }
