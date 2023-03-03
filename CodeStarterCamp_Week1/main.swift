@@ -13,27 +13,27 @@ func makePeperoBar(barHeight: Int) {
     }
 }
 
-func makePeperoBody(bodyIs body: String, heightIs height: Int, with topping: String) {
-    for _ in 1...height {
+func makePeperoBody(with bodyShape: String, with bodyHeight: Int, with topping: String) {
+    for _ in 1...bodyHeight {
         if topping == "" {
-            print(" \(body)")
+            print(" \(bodyShape)")
         } else {
-            print("\(topping)\(body)\(topping)")
+            print("\(topping)\(bodyShape)\(topping)")
         }
     }
 }
 
-func makeWholePepero(bodyIs body: String, heightIs height: Int, with topping: String, barHeight: Int) {
+func makeWholePepero(with bodyHeight: Int, with bodyShape: String, with topping: String, barHeight: Int) {
     print("""
     <정보>
-    길이: \(height)
-    몸통: \(body)
+    길이: \(bodyHeight)
+    몸통: \(bodyShape)
     토핑: \(topping)
     막대길이: \(barHeight)
     
     """)
-    makePeperoBody(bodyIs: body, heightIs: height, with: topping)
+    makePeperoBody(with: bodyShape, with: bodyHeight, with: topping)
     makePeperoBar(barHeight: barHeight)
 }
 
-makeWholePepero(bodyIs: "***", heightIs: 14, with: "$", barHeight: 4)
+makeWholePepero(with: 14, with: "***", with: "&", barHeight: 4)
