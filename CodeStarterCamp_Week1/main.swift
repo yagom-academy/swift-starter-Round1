@@ -1,8 +1,9 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by 양주원 on 2023/03/02.
-//
+func doIceCream () {
+    for _ in 1...11 {
+        print("*" * \(length), terminator: "")
+    }
+}
+for _ in 1...9 {
+    print(\(doIceCream) * \n)
+}
 
-import Foundation
