@@ -1,6 +1,6 @@
 func doIceCream () {
     for _ in 1...11 {
-        print("*" * \(length), terminator: "")
+        print("*", terminator: "")
     }
 }
 for _ in 1...9 {
