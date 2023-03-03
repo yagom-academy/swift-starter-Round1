@@ -7,25 +7,25 @@
 
 import Foundation
 
-func drawBbabbaroPartBody(content: String, topping: String = " ") {
+func drawBbabbaroPartBody(_ content: String, _ topping: String = " ") {
     print("\(topping)\(content)\(topping)")
 }
 
-func drawBbabbaroFullBody(length: Int, content: String, topping: String = " ") {
+func drawBbabbaroFullBody(_ length: Int, _ content: String, _ topping: String = " ") {
     for _ in 1...length {
-        drawBbabbaroPartBody(content: content, topping: topping)
+        drawBbabbaroPartBody(content, topping)
     }
 }
 
-func drawBbabbaroBar(length: Int) {
+func drawBbabbaroBar(_ length: Int) {
     for _ in 1...length {
         print(" | |")
     }
 }
 
-func makeBbabbaro(lengthBody: Int, lengthBar: Int, content: String, topping: String = " ") {
-    drawBbabbaroFullBody(length: lengthBody, content: content, topping: topping)
-    drawBbabbaroBar(length: lengthBar)
+func makeBbabbaro(_ bodyLength: Int, _ barLength: Int, _ content: String, _ topping: String = " ") {
+    drawBbabbaroFullBody(bodyLength, content, topping)
+    drawBbabbaroBar(barLength)
 }
 
-makeBbabbaro(lengthBody: 10, lengthBar: 4, content: "***", topping: "$")
+makeBbabbaro(10, 4, "***", "$")
