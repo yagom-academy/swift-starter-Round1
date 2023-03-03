@@ -1,42 +1,40 @@
 //
-//  main.swift
+//  makePpr.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 나연  강 on 2023/03/02.
 //
 
 import Foundation
 
-func makeIceCream(iceWidth: Int, iceHeight: Int) {
-    for _ in 1...iceHeight {
-        for _ in 1...iceWidth {
-            print("*", terminator: "")
-        }
-        print()
-    }
-}
-
-func makeBar(iceWidth: Int, barHeight: Int) {
-    let barBlank : Int = (iceWidth - iceWidth % 2)/2 - 1
+func makePeperoBar(barHeight: Int) {
     for _ in 1...barHeight {
-        for _ in 1...barBlank {
-            print(" ", terminator: "")
-        }
-        if iceWidth % 2 == 1 {
-            print("| |")
-        }
-        else if iceWidth % 2 == 0 {
-            print("||")
+        print(" | |")
+    }
+}
+
+func makePeperoBodyWith(bodyShape: String, bodyHeight: Int, topping: String) {
+    for _ in 1...bodyHeight {
+        if topping == "" {
+            print(" \(bodyShape)")
+        } else {
+            print("\(topping)\(bodyShape)\(topping)")
         }
     }
 }
 
-func makeWholeIceCream (iceWidth: Int, iceHeight: Int, barHeight: Int) {
-    makeIceCream(iceWidth: iceWidth, iceHeight: iceHeight)
-    makeBar(iceWidth: iceWidth, barHeight: barHeight)
+func makeWholePeperoWith(bodyHeight: Int, bodyShape: String, topping: String, barHeight: Int) {
+    print("""
+    <정보>
+    길이: \(bodyHeight)
+    몸통: \(bodyShape)
+    토핑: \(topping)
+    막대길이: \(barHeight)
+    
+    """)
+    makePeperoBodyWith(bodyShape: bodyShape, bodyHeight: bodyHeight, topping: topping)
+    makePeperoBar(barHeight: barHeight)
 }
 
-makeWholeIceCream(iceWidth: 10, iceHeight: 9, barHeight: 5)
-
+makeWholePeperoWith(bodyHeight: 14, bodyShape: "***", topping: "&", barHeight: 4)
 
