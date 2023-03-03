@@ -8,6 +8,4 @@ func pollzacBoth(name: String,count: Int) {
     }
 }
 
-let name1 = "loki"
-let count1 = 1
-pollzacBoth(name: name1, count: count1)
+pollzacBoth(name: "길동", count: 1)
