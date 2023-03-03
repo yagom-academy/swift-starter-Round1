@@ -33,8 +33,8 @@ func createIceCreamBar(width: Int, height: Int) {
             if index == half || index == half+2 {   //중심에 선 하나 중심 옆옆에 선 하나를 그어 아이스크림 바 모양을 만듭니다.
                 print("|", terminator: "")
             } else {
-                if half%2==0 && index == half+1{
-                   print("", terminator: "")
+                if half%2==0 && index == half+1 {
+                    print("", terminator: "")
                 } else {
                     print(" ", terminator: "")
                 }
