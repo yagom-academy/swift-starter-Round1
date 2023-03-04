@@ -19,20 +19,20 @@ print("몸통: \(assignCenterIce)")
 print("토핑: \(assignSideIce)")
 print("막대길이: \(assignBarLength)\n")
 
-func createPartofIce(centerIce: String,sideIce: String) -> String{
+func createPartOfIce(centerIce: String,sideIce: String) -> String{
     
     let iceLine: String = sideIce + centerIce + sideIce
     return iceLine
 }
 
-func createAllofIce(iceLength: Int) {
+func createAllOfIce(iceLength: Int) {
     for _ in 1...iceLength {
-        print(createPartofIce(centerIce: assignCenterIce, sideIce: assignSideIce))
+        print(createPartOfIce(centerIce: assignCenterIce, sideIce: assignSideIce))
     }
 }
 
 func createBar(barLength: Int) {
-    let spaceCount: Int = ((createPartofIce(centerIce: assignCenterIce, sideIce: assignSideIce).count) + 1) / 2 - 2
+    let spaceCount: Int = ((createPartOfIce(centerIce: assignCenterIce, sideIce: assignSideIce).count) + 1) / 2 - 2
     let centerBar: String = "| |"
     var bar: String = String()
     
@@ -48,6 +48,6 @@ func createBar(barLength: Int) {
     
 }
 
-createAllofIce(iceLength: assignIceLength)
+createAllOfIce(iceLength: assignIceLength)
 createBar(barLength: assignBarLength)
 
