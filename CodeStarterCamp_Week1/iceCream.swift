@@ -7,17 +7,18 @@
 
 import Foundation
 
-func doIceCream() {
-    for _ in 1...11 {
-        for _ in 1...9 {
-            print("*", separator: "", terminator: "")
+func cookIceCream() {
+    for _ in 1...8 {
+        for _ in 1...11 {
+            print("*", terminator: "")
         }
         print()
     }
 }
 
-func addLength() {
+func cookIceCreamBar() {
     for _ in 1...4 {
-        print("   | |")
+        print("    | |")
     }
 }
+

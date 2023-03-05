@@ -8,5 +8,7 @@
 
 import Foundation
 
-doIceCream()
-addLength()
+cookIceCream()
+cookIceCreamBar()
+
+
