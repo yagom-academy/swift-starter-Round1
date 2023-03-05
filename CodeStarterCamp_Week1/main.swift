@@ -1,16 +1,24 @@
+//
+//  main.swift
+//  CodeStarterCamp_Week1
+//
+//  Created by yagom.
+//  Copyright © yagom academy. All rights reserved.
+
+
 func makeIcecream(size: Int) {
-    for _ in 1...10{
+    for _ in 1...size{
         print( "***********")
     }
 }
 
-makeIcecream(size: 1)
+makeIcecream(size: 10)
 
 func makeStick(size: Int) {
-    for _ in 1...4{
+    for _ in 1...size{
         print("    | |")
     }
 }
-makeStick(size: 1)
+makeStick(size: 4)
 
 
