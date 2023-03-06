@@ -7,12 +7,12 @@
 
 import Foundation
 
-    
+/*
 var assignCenterCHoco: String = "***"
 var assignSideTopping: String = "&"
 var assignBarLength: Int = 4
 var assignPeperoLength: Int = 12
-
+*/
 
 func printInformation(peperoLength: Int, centerChoco: String, sideTopping: String, barLength: Int) {
     print("<정보>")
@@ -29,34 +29,42 @@ func createPartOfPepero(centerChoco: String,sideTopping: String) -> String{
     return peperoLine
 }
 
-func createAllOfPepero(Length: Int) {
+func createAllOfPepero(Length: Int, assignCenterCHoco: String, assignSideTopping: String) {
     for _ in 1...Length {
         print(createPartOfPepero(centerChoco: assignCenterCHoco, sideTopping: assignSideTopping))
     }
 }
 
-func createBar(Length: Int) {
-    let spaceCount: Int = ((createPartOfPepero(centerChoco: assignCenterCHoco, sideTopping: assignSideTopping).count) + 1) / 2 - 2
+func createBar(Length: Int, assignCenterCHoco: String, assignSideTopping: String) {
+    var spaceCount: Int = ((createPartOfPepero(centerChoco: assignCenterCHoco, sideTopping: assignSideTopping).count) + 1) / 2 - 2
+  
     let centerBar: String = "| |"
     var bar: String = String()
     
-    for _ in 1...spaceCount {
-        bar = bar + " "
+    if spaceCount > 0 {
+        for _ in 1...spaceCount {
+            bar = bar + " "
+        }
+    } else if spaceCount <= 0 {
+            bar = bar + ""
+        }
+        
+     
+//    for _ in 1...spaceCount {
+//        bar = bar + " "
+//    }
+        
+        bar = bar + centerBar
+        
+        for _ in 1...Length {
+            print(bar)
+        }
     }
-    
-    bar = bar + centerBar
-    
-    for _ in 1...Length {
-        print(bar)
-    }
-    
-}
-
 
 func createPepero(assignCenterChoco: String, assignSideTopping: String, assignBarLength: Int, assginPeperoLength: Int) {
     printInformation(peperoLength: assginPeperoLength, centerChoco: assignCenterChoco , sideTopping: assignSideTopping, barLength: assignBarLength)
-    createAllOfPepero(Length: assginPeperoLength)
-    createBar(Length: assignBarLength)
+    createAllOfPepero(Length: assginPeperoLength, assignCenterCHoco: assignCenterChoco, assignSideTopping: assignSideTopping)
+    createBar(Length: assignBarLength, assignCenterCHoco: assignCenterChoco, assignSideTopping: assignSideTopping)
 }
 
-createPepero(assignCenterChoco: "***", assignSideTopping: "&", assignBarLength: 4, assginPeperoLength: 12)
+createPepero(assignCenterChoco: "***", assignSideTopping: "", assignBarLength: 4, assginPeperoLength: 12)
