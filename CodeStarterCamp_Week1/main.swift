@@ -31,3 +31,17 @@ func makeIceCreamStick() {
 makeIceCream()
 makeIceCreamStick()
 
+// MARK: - 실행예시 1
+callDrawNormalPeperoMethods(stickLength: 4, bodyComponent: "***", toppingComponent: nil, height: 10)
+
+// MARK: - 실행예시 2
+callDrawPeperoMethods(stickLength: 4, bodyComponent: "***", toppingComponent: "&", height: 12)
+
+// MARK: - 실행예시 3
+callDrawPeperoMethods(stickHeight: 6, bodyComponent: "***", topping: "#", bodyHeight: 12)
+
+// MARK: - 실행예시 4
+callDrawNudePeperoMethods(stickLength: 4, bodyComponent: "|0|", toppingComponent: nil, bodyLong: 6)
+
+// MARK: - 다양한 빼빼로 출력해보기
+makePepero(bodyHeight: 7, bodyComponent: "|0|", toppingComponent: "*", stickHeight: 3)
