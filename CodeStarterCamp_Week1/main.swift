@@ -19,7 +19,12 @@ func setInformation(peperoLength: Int, centerChoco: String, sideTopping: String,
 
 func getPartOfPepero(centerChoco: String,sideTopping: String) -> String{
     
-    let partOfPepero: String = sideTopping + centerChoco + sideTopping
+    var partOfPepero: String = sideTopping + centerChoco + sideTopping
+    
+    if (sideTopping.count == 0) {
+        partOfPepero = " " + partOfPepero
+    }
+    
     return partOfPepero
 }
 
@@ -30,23 +35,17 @@ func createAllOfPepero(Length: Int, assignCenterCHoco: String, assignSideTopping
 }
 
 func createBar(Length: Int, assignCenterCHoco: String, assignSideTopping: String) {
-    var spaceCount: Int = ((getPartOfPepero(centerChoco: assignCenterCHoco, sideTopping: assignSideTopping).count) + 1) / 2 - 2
-  
+    let spaceCountForBarLocation: Int = ((getPartOfPepero(centerChoco: assignCenterCHoco, sideTopping: assignSideTopping).count) + 1) / 2 - 2
     let centerBar: String = "| |"
     var bar: String = String()
     
-    if spaceCount > 0 {
-        for _ in 1...spaceCount {
+    if spaceCountForBarLocation > 0 {
+        for _ in 1...spaceCountForBarLocation {
             bar = bar + " "
         }
-    } else if spaceCount <= 0 {
-            bar = bar + ""
+    } else if spaceCountForBarLocation <= 0 {
+            bar = bar + " "
         }
-        
-     
-//    for _ in 1...spaceCount {
-//        bar = bar + " "
-//    }
         
         bar = bar + centerBar
         
@@ -64,4 +63,4 @@ func createPepero(assignCenterChoco: String, assignSideTopping: String, assignBa
     createBar(Length: assignBarLength, assignCenterCHoco: assignCenterChoco, assignSideTopping: assignSideTopping)
 }
 
-createPepero(assignCenterChoco: "***", assignSideTopping: "", assignBarLength: 4, assginPeperoLength: 12)
+createPepero(assignCenterChoco: "***", assignSideTopping: "@", assignBarLength: 4, assginPeperoLength: 12)
