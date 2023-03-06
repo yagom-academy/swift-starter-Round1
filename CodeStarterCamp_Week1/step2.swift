@@ -1,12 +1,12 @@
-₩   //
-//  main.swift
+//
+//  step2.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 허준하 on 2023/03/05.
 //
-
+/*
 import Foundation
+
 
 func createIce(length: Int, width: Int) {                   //쉼표다음에는 띄우기
     for _ in 1...length {
@@ -25,3 +25,4 @@ func createIcebar(barLength: Int) {
 
 createIce(length: 8, width: 11) //아이스크림 만드는 함수호출
 createIcebar(barLength: 4)   //막대기 만드는 함수호출
+*/

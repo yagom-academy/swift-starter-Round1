@@ -7,32 +7,36 @@
 
 import Foundation
 
-
-var assignCenterIce: String = "*********"
-var assignSideIce: String = "&"
-var assignBarLength: Int = 4
-var assignIceLength: Int = 12
-
-print("<정보>")
-print("길이: \(assignIceLength)")
-print("몸통: \(assignCenterIce)")
-print("토핑: \(assignSideIce)")
-print("막대길이: \(assignBarLength)\n")
-
-func createPartOfIce(centerIce: String,sideIce: String) -> String{
     
-    let iceLine: String = sideIce + centerIce + sideIce
-    return iceLine
+var assignCenterCHoco: String = "***"
+var assignSideTopping: String = "&"
+var assignBarLength: Int = 4
+var assignPeperoLength: Int = 12
+
+
+func printInformation(peperoLength: Int, centerChoco: String, sideTopping: String, barLength: Int) {
+    print("<정보>")
+    print("길이: \(peperoLength)")
+    print("몸통: \(centerChoco)")
+    print("토핑: \(sideTopping)")
+    print("막대길이: \(barLength)\n")
 }
 
-func createAllOfIce(iceLength: Int) {
-    for _ in 1...iceLength {
-        print(createPartOfIce(centerIce: assignCenterIce, sideIce: assignSideIce))
+
+func createPartOfPepero(centerChoco: String,sideTopping: String) -> String{
+    
+    let peperoLine: String = sideTopping + centerChoco + sideTopping
+    return peperoLine
+}
+
+func createAllOfPepero(Length: Int) {
+    for _ in 1...Length {
+        print(createPartOfPepero(centerChoco: assignCenterCHoco, sideTopping: assignSideTopping))
     }
 }
 
-func createBar(barLength: Int) {
-    let spaceCount: Int = ((createPartOfIce(centerIce: assignCenterIce, sideIce: assignSideIce).count) + 1) / 2 - 2
+func createBar(Length: Int) {
+    let spaceCount: Int = ((createPartOfPepero(centerChoco: assignCenterCHoco, sideTopping: assignSideTopping).count) + 1) / 2 - 2
     let centerBar: String = "| |"
     var bar: String = String()
     
@@ -42,12 +46,17 @@ func createBar(barLength: Int) {
     
     bar = bar + centerBar
     
-    for _ in 1...barLength {
+    for _ in 1...Length {
         print(bar)
     }
     
 }
 
-createAllOfIce(iceLength: assignIceLength)
-createBar(barLength: assignBarLength)
 
+func createPepero(assignCenterChoco: String, assignSideTopping: String, assignBarLength: Int, assginPeperoLength: Int) {
+    printInformation(peperoLength: assginPeperoLength, centerChoco: assignCenterChoco , sideTopping: assignSideTopping, barLength: assignBarLength)
+    createAllOfPepero(Length: assginPeperoLength)
+    createBar(Length: assignBarLength)
+}
+
+createPepero(assignCenterChoco: "***", assignSideTopping: "&", assignBarLength: 4, assginPeperoLength: 12)
