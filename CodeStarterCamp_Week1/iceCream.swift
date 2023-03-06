@@ -16,7 +16,7 @@ func cookIceCream() {
     }
 }
 
-func cookIceCreamBar() {
+func createIceCreamBar() {
     for _ in 1...4 {
         print("    | |")
     }
