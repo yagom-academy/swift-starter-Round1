@@ -7,13 +7,13 @@
 
 import Foundation
 
-func cookNudePeperoCream (nudeBody: String, cream: String) -> String {
+func cookNudePeperoBody (nudeBody: String, nudeTopping: String) -> String {
     return " |0|"
 }
 
-func createNudePeperoLength (nudeBody: String, cream: String, nudeBodyLength: Int) {
+func createNudePeperoLength (nudeBody: String, nudeTopping: String, nudeBodyLength: Int) {
     for _ in 1...nudeBodyLength {
-        print(cookNudePeperoCream(nudeBody: nudeBody, cream: cream))
+        print(cookNudePeperoBody(nudeBody: nudeBody, nudeTopping: nudeTopping))
     }
 }
 
@@ -23,7 +23,7 @@ func createNudeBarLength (nudePeperoBarLength: Int) {
     }
 }
 
-func cookNudePepero (nudeBody: String, cream: String, nudeBodyLength: Int, nudePeperoBarLength: Int) {
-    createNudePeperoLength(nudeBody: nudeBody, cream: cream, nudeBodyLength: 6)
+func cookNudePepero (nudeBody: String, nudeTopping: String, nudeBodyLength: Int, nudePeperoBarLength: Int) {
+    createNudePeperoLength(nudeBody: nudeBody, nudeTopping: nudeTopping, nudeBodyLength: 6)
     createNudeBarLength(nudePeperoBarLength: 4)
 }

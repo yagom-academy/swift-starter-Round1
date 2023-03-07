@@ -11,8 +11,8 @@ func cookAmpPeperoCream (ampBody: String, amp: String) -> String {
     return "&***&"
 }
 
-func createAmpPeperoLength (ampBody: String, amp: String, length: Int) {
-    for _ in 1...length {
+func createAmpPeperoLength (ampBody: String, amp: String, ampBodyLength: Int) {
+    for _ in 1...ampBodyLength {
         print(cookAmpPeperoCream(ampBody: ampBody, amp: amp))
     }
 }
@@ -23,7 +23,7 @@ func createAmpBarLength (ampPeperoBar: Int) {
     }
 }
 
-func cookAmpPepero (ampBody: String, amp: String, length: Int, ampPeperoBar: Int) {
-    createAmpPeperoLength(ampBody: "***", amp: "&", length: 12)
+func cookAmpPepero (ampBody: String, amp: String, ampBodyLength: Int, ampPeperoBar: Int) {
+    createAmpPeperoLength(ampBody: "***", amp: "&", ampBodyLength: 12)
     createAmpBarLength(ampPeperoBar: 4)
 }

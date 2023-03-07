@@ -19,13 +19,13 @@ func createPeperoLength (chocoBody: String, topping: String, length: Int) {
     }
 }
 
-func createBarLength (PeperoBar: Int) {
-    for _ in 1...PeperoBar {
+func createBarLength (peperoBar: Int) {
+    for _ in 1...peperoBar {
         print(" | |")
     }
 }
 
-func cookPepero (chocoBody: String, topping: String, length: Int, PeperoBar: Int) {
+func cookPepero (chocoBody: String, topping: String, length: Int, peperoBar: Int) {
     createPeperoLength(chocoBody: "***", topping: ",", length: 10)
-    createBarLength(PeperoBar: 4)
+    createBarLength(peperoBar: 4)
 }

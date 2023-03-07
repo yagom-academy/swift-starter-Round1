@@ -11,8 +11,8 @@ func cooksharpPeperoCream (sharpBody: String, sharp: String) -> String {
     return "#***#"
 }
 
-func createSharpPeperoLength (sharpBody: String, sharp: String, length: Int) {
-    for _ in 1...length {
+func createSharpPeperoLength (sharpBody: String, sharp: String, sharpBodylength: Int) {
+    for _ in 1...sharpBodylength {
         print(cooksharpPeperoCream(sharpBody: sharpBody, sharp: sharp))
     }
 }
@@ -23,7 +23,7 @@ func createsharpBarLength (sharpPeperoBar: Int) {
     }
 }
 
-func cookSharpPepero (sharpBody: String, sharp: String, length: Int, sharpPeperoBar: Int) {
-    createSharpPeperoLength(sharpBody: "***", sharp: "#", length: 12)
+func cookSharpPepero (sharpBody: String, sharp: String, sharpBodylength: Int, sharpPeperoBar: Int) {
+    createSharpPeperoLength(sharpBody: "***", sharp: "#", sharpBodylength: 12)
     createsharpBarLength(sharpPeperoBar: 6)
 }
