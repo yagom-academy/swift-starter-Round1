@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0183DA6329B45A5C003C6E6F /* iceCream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0183DA6229B45A5C003C6E6F /* iceCream.swift */; };
-		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
+		017E047C29B70E4600A16F3C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017E047B29B70E4600A16F3C /* main.swift */; };
+		017E047E29B7165C00A16F3C /* sharpPepero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017E047D29B7165C00A16F3C /* sharpPepero.swift */; };
+		017E048029B716A200A16F3C /* nudePepero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017E047F29B716A200A16F3C /* nudePepero.swift */; };
+		017E048229B716C400A16F3C /* ampPepero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017E048129B716C400A16F3C /* ampPepero.swift */; };
+		017E048429B7173800A16F3C /* pepero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017E048329B7173800A16F3C /* pepero.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,9 +27,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0183DA6229B45A5C003C6E6F /* iceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iceCream.swift; sourceTree = "<group>"; };
+		017E047B29B70E4600A16F3C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../main.swift; sourceTree = "<group>"; };
+		017E047D29B7165C00A16F3C /* sharpPepero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sharpPepero.swift; sourceTree = "<group>"; };
+		017E047F29B716A200A16F3C /* nudePepero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nudePepero.swift; sourceTree = "<group>"; };
+		017E048129B716C400A16F3C /* ampPepero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ampPepero.swift; sourceTree = "<group>"; };
+		017E048329B7173800A16F3C /* pepero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pepero.swift; sourceTree = "<group>"; };
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
-		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +65,11 @@
 		34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {
 			isa = PBXGroup;
 			children = (
-				34811DAE274B938F00A1E994 /* main.swift */,
-				0183DA6229B45A5C003C6E6F /* iceCream.swift */,
+				017E047B29B70E4600A16F3C /* main.swift */,
+				017E047D29B7165C00A16F3C /* sharpPepero.swift */,
+				017E048129B716C400A16F3C /* ampPepero.swift */,
+				017E047F29B716A200A16F3C /* nudePepero.swift */,
+				017E048329B7173800A16F3C /* pepero.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -122,8 +131,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0183DA6329B45A5C003C6E6F /* iceCream.swift in Sources */,
-				34811DAF274B938F00A1E994 /* main.swift in Sources */,
+				017E048029B716A200A16F3C /* nudePepero.swift in Sources */,
+				017E047C29B70E4600A16F3C /* main.swift in Sources */,
+				017E047E29B7165C00A16F3C /* sharpPepero.swift in Sources */,
+				017E048229B716C400A16F3C /* ampPepero.swift in Sources */,
+				017E048429B7173800A16F3C /* pepero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
