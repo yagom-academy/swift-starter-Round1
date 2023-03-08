@@ -14,47 +14,17 @@ func drawNormalPeperoWith(bodyComponent: String, toppingComponent: String?) {
 		var body = ""
 		body += toppingComponent
 		body += bodyComponent
+		body += toppingComponent
 		print(body)
 	} else {
-		var body = ""
+		var body = " "
 		body += bodyComponent
 		print(body)
 	}
 }
 
 // 길이(length)에 따른 막대(빼빼로 손잡이)를 그리는 함수
-func drawNormalPeperoStick(length: Int) -> () {
-	for _ in 1...length {
-		var stick = " "
-		for _ in 1...2 {
-			stick += "| "
-		}
-		print(stick)
-	}
-}
-
-// 길이(height)에 따라 몸통을 그리는 함수
-func drawNormalPeperoBodyWith(height: Int) {
-	for _ in 1...height {
-		let body = "***"
-		print(body)
-	}
-}
-
-func callDrawNormalPeperoMethods(stickLength: Int, bodyComponent: String, toppingComponent: String?, height: Int) {
-	for _ in 1...height {
-		var body = ""
-		if let toppingComponent = toppingComponent {
-			body += toppingComponent
-			body += bodyComponent
-			body += toppingComponent
-			print(body)
-		} else {
-			body += bodyComponent
-			print(body)
-		}
-	}
-	
+func drawNormalPeperoStick(stickLength: Int, toppingComponent: String?) {
 	if toppingComponent != nil {
 		for _ in 1...stickLength {
 			var stick = " "
@@ -67,59 +37,61 @@ func callDrawNormalPeperoMethods(stickLength: Int, bodyComponent: String, toppin
 		for _ in 1...stickLength {
 			var stick = ""
 			for _ in 1...2 {
-				stick += "| "
+				stick += " |"
 			}
 			print(stick)
 		}
 	}
+}
+
+// 길이(height)에 따라 몸통을 그리는 함수
+func drawNormalPeperoBodyWith(height: Int?, bodyComponent: String, toppingComponent: String?) {
+	if let height = height {
+		for _ in 1...height {
+			if let toppingComponent = toppingComponent {
+				var body = ""
+				body += toppingComponent
+				body += bodyComponent
+				body += toppingComponent
+				print(body)
+			} else {
+				var body = " "
+				body += bodyComponent
+				print(body)
+			}
+		}
+	}
+}
+
+func callDrawNormalPeperoMethods(stickLength: Int, bodyComponent: String, toppingComponent: String?, height: Int?) {
+	guard let height = height else { return }
+	
+	print("<정보>\n길이: \(height)\n몸통: \(bodyComponent)\n토핑: \(toppingComponent ?? "")\n막대길이: \(stickLength)\n")
+	
+	drawNormalPeperoWith(bodyComponent: bodyComponent, toppingComponent: toppingComponent)
+	drawNormalPeperoBodyWith(height: height, bodyComponent: bodyComponent, toppingComponent: toppingComponent)
+	drawNormalPeperoStick(stickLength: stickLength, toppingComponent: toppingComponent)
 }
 
 // MARK: - 실행예시 2
 // 길이: 12, 몸통: ***, 토핑: &, 막대길이: 4
 // 몸통(body), 토핑(topping)을 매개변수로 받아 몸통과 토핑을 그리는 함수
-func drawPeperoWith(bodyComponents: String, toppingComponents: String) {
-	for _ in 1...12 {
+func drawPeperoWith(bodyComponents: String, toppingComponents: String?) {
+	if let toppingComponents = toppingComponents {
 		var body = ""
 		body += toppingComponents
 		body += bodyComponents
 		body += toppingComponents
 		print(body)
-	}
-}
-
-// 길이(length)에 따른 막대(빼빼로 손잡이)를 그리는 함수
-func drawPeperoStick(length: Int) {
-	for _ in 1...length {
-		var stick = " "
-		for _ in 1...2 {
-			stick += "| "
-		}
-		print(stick)
-	}
-}
-
-// 길이(height)에 따라 몸통을 그리는 함수
-func drawPeperoBodyWith(height: Int)  {
-	for _ in 1...height {
-		let body = "&***&"
+	} else {
+		var body = " "
+		body += bodyComponents
 		print(body)
 	}
 }
 
-func callDrawPeperoMethods(stickLength: Int, bodyComponent: String, toppingComponent: String?, height: Int) {
-	for _ in 1...height {
-		var body = ""
-		if let toppingComponent = toppingComponent {
-			body += toppingComponent
-			body += bodyComponent
-			body += toppingComponent
-			print(body)
-		} else {
-			body += bodyComponent
-			print(body)
-		}
-	}
-	
+// 길이(length)에 따른 막대(빼빼로 손잡이)를 그리는 함수
+func drawPeperoStick(stickLength: Int, toppingComponent: String?) {
 	if toppingComponent != nil {
 		for _ in 1...stickLength {
 			var stick = " "
@@ -132,59 +104,63 @@ func callDrawPeperoMethods(stickLength: Int, bodyComponent: String, toppingCompo
 		for _ in 1...stickLength {
 			var stick = ""
 			for _ in 1...2 {
-				stick += "| "
+				stick += " |"
 			}
 			print(stick)
 		}
 	}
 }
 
+// 길이(height)에 따라 몸통을 그리는 함수
+func drawPeperoBodyWith(height: Int?, bodyComponent: String, toppingComponent: String?)  {
+	if let height = height {
+		for _ in 1...height {
+			if let toppingComponent = toppingComponent {
+				var body = ""
+				body += toppingComponent
+				body += bodyComponent
+				body += toppingComponent
+				print(body)
+			} else {
+				var body = " "
+				body += bodyComponent
+				print(body)
+			}
+		}
+	}
+}
+
+func callDrawPeperoMethods(stickLength: Int, bodyComponent: String, toppingComponent: String?, height: Int?) {
+	guard let height = height else { return }
+	
+	print("<정보>\n길이: \(height)\n몸통: \(bodyComponent)\n토핑: \(toppingComponent ?? "")\n막대길이: \(stickLength)\n")
+	
+	drawPeperoWith(bodyComponents: bodyComponent, toppingComponents: toppingComponent)
+	drawPeperoBodyWith(height: height, bodyComponent: bodyComponent, toppingComponent: toppingComponent)
+	drawPeperoStick(stickLength: stickLength, toppingComponent: toppingComponent)
+}
+
 // MARK: - 실행예시 3
 // 길이: 12, 몸통: ***, 토핑: #, 막대길이: 6
 // 몸통(body), 토핑(topping)을 매개변수로 받아 몸통과 토핑을 그리는 함수
-func drawPepero(body bodyComponent: String, topping toppingComponent: String) {
-	for _ in 1...12 {
+func drawPepero(body bodyComponent: String, topping toppingComponent: String?) {
+	if let toppingComponent = toppingComponent {
 		var body = ""
-		body = (toppingComponent + bodyComponent + toppingComponent)
+		body += toppingComponent
+		body += bodyComponent
+		body += toppingComponent
+		print(body)
+	} else {
+		var body = " "
+		body += bodyComponent
 		print(body)
 	}
 }
 
 // 길이(length)에 따른 막대(빼빼로 손잡이)를 그리는 함수
-func drawPeperoStickWith(length: Int) {
-	for _ in 1...length {
-		var stick = ""
-		for _ in 1...2 {
-			stick += " |"
-		}
-		print(stick)
-	}
-}
-
-// 길이(height)에 따라 몸통을 그리는 함수
-func drawPeperoBody(with height: Int) {
-	for _ in 1...height {
-		let body = "#***#"
-		print(body)
-	}
-}
-
-func callDrawPeperoMethods(stickHeight: Int, bodyComponent: String, topping: String?, bodyHeight: Int) {
-	for _ in 1...bodyHeight {
-		var body = ""
-		if let topping = topping {
-			body += topping
-			body += bodyComponent
-			body += topping
-			print(body)
-		} else {
-			body += bodyComponent
-			print(body)
-		}
-	}
-	
-	if topping != nil {
-		for _ in 1...stickHeight {
+func drawPeperoStickWith(stickLength: Int, toppingComponent: String?) {
+	if toppingComponent != nil {
+		for _ in 1...stickLength {
 			var stick = " "
 			for _ in 1...2 {
 				stick += "| "
@@ -192,14 +168,43 @@ func callDrawPeperoMethods(stickHeight: Int, bodyComponent: String, topping: Str
 			print(stick)
 		}
 	} else {
-		for _ in 1...stickHeight {
+		for _ in 1...stickLength {
 			var stick = ""
 			for _ in 1...2 {
-				stick += "| "
+				stick += " |"
 			}
 			print(stick)
 		}
 	}
+}
+
+// 길이(height)에 따라 몸통을 그리는 함수
+func drawPeperoBody(height: Int?, bodyComponent: String, toppingComponent: String?) {
+	if let height = height {
+		for _ in 1...height {
+			if let toppingComponent = toppingComponent {
+				var body = ""
+				body += toppingComponent
+				body += bodyComponent
+				body += toppingComponent
+				print(body)
+			} else {
+				var body = " "
+				body += bodyComponent
+				print(body)
+			}
+		}
+	}
+}
+
+func callDrawPeperoMethods(stickHeight: Int, bodyComponent: String, topping: String?, bodyHeight: Int?) {
+	guard let bodyHeight = bodyHeight else { return }
+	
+	print("<정보>\n길이: \(bodyHeight)\n몸통: \(bodyComponent)\n토핑: \(topping ?? "")\n막대길이: \(stickHeight)\n")
+	
+	drawPeperoBody(height: bodyHeight, bodyComponent: bodyComponent, toppingComponent: topping)
+	drawPepero(body: bodyComponent, topping: topping)
+	drawPeperoStickWith(stickLength: stickHeight, toppingComponent: topping)
 }
 
 // MARK: - 실행예시 4
@@ -207,55 +212,21 @@ func callDrawPeperoMethods(stickHeight: Int, bodyComponent: String, topping: Str
 // 몸통(body), 토핑(topping)을 매개변수로 받아 몸통과 토핑을 그리는 함수
 func drawNudePepero(body bodyComponent: String, topping toppingComponent: String?) {
 	
-	for _ in 1...6 {
+	if let toppingComponent = toppingComponent {
 		var body = ""
-		let space = " "
-		for _ in 1...2 {
-			body = space + ((toppingComponent ?? "") + bodyComponent + (toppingComponent ?? ""))
-		}
+		body += toppingComponent
+		body += bodyComponent
+		body += toppingComponent
+		print(body)
+	} else {
+		var body = " "
+		body += bodyComponent
 		print(body)
 	}
 }
 
 // 길이(length)에 따른 막대(빼빼로 손잡이)를 그리는 함수
-func drawNudePeperoStick(length: Int) {
-	for _ in 1...length {
-		var stick = " "
-		for _ in 1...2 {
-			stick += "| "
-		}
-		print(stick, terminator: "\n")
-	}
-}
-
-// 길이(height)에 따라 몸통을 그리는 함수
-func drawNudePeperoBody(long height: Int) {
-	for _ in 1...height {
-		var body = ""
-		let component = "|0|"
-		let space = " "
-		
-		body += space
-		body += component
-		
-		print(body, terminator: "\n")
-	}
-}
-
-func callDrawNudePeperoMethods(stickLength: Int, bodyComponent: String, toppingComponent: String?, bodyLong: Int) {
-	for _ in 1...bodyLong {
-		var body = ""
-		if let toppingComponent = toppingComponent {
-			body += toppingComponent
-			body += bodyComponent
-			body += toppingComponent
-			print(body)
-		} else {
-			body += bodyComponent
-			print(body)
-		}
-	}
-	
+func drawNudePeperoStick(stickLength: Int, toppingComponent: String?) {
 	if toppingComponent != nil {
 		for _ in 1...stickLength {
 			var stick = " "
@@ -268,11 +239,41 @@ func callDrawNudePeperoMethods(stickLength: Int, bodyComponent: String, toppingC
 		for _ in 1...stickLength {
 			var stick = ""
 			for _ in 1...2 {
-				stick += "| "
+				stick += " |"
 			}
 			print(stick)
 		}
 	}
+}
+
+// 길이(height)에 따라 몸통을 그리는 함수
+func drawNudePeperoBody(height: Int?, bodyComponent: String, toppingComponent: String?) {
+	if let height = height {
+		for _ in 1...height {
+			if let toppingComponent = toppingComponent {
+				var body = ""
+				body += toppingComponent
+				body += bodyComponent
+				body += toppingComponent
+				print(body)
+			} else {
+				var body = " "
+				body += bodyComponent
+				print(body)
+			}
+		}
+	}
+}
+
+func callDrawNudePeperoMethods(stickLength: Int, bodyComponent: String, toppingComponent: String?, height: Int?) {
+	guard let height = height else { return }
+	
+	print("<정보>\n길이: \(height)\n몸통: \(bodyComponent)\n토핑: \(toppingComponent ?? "")\n막대길이: \(stickLength)\n")
+	
+	drawNudePepero(body: bodyComponent, topping: toppingComponent)
+	drawNudePeperoBody(height: height, bodyComponent: bodyComponent, toppingComponent: toppingComponent)
+	drawNudePeperoStick(stickLength: stickLength, toppingComponent: toppingComponent)
+	
 }
 
 //MARK: - 다양한 빼빼로 출력해보기

@@ -27,21 +27,22 @@ func makeIceCreamStick() {
 		print(stick)
 	}
 }
+// MARK: - STEP 2 [아이스크림 그리기]
+//makeIceCream()
+//makeIceCreamStick()
 
-makeIceCream()
-makeIceCreamStick()
-
-// MARK: - 실행예시 1
-callDrawNormalPeperoMethods(stickLength: 4, bodyComponent: "***", toppingComponent: nil, height: 10)
-
-// MARK: - 실행예시 2
-callDrawPeperoMethods(stickLength: 4, bodyComponent: "***", toppingComponent: "&", height: 12)
-
-// MARK: - 실행예시 3
-callDrawPeperoMethods(stickHeight: 6, bodyComponent: "***", topping: "#", bodyHeight: 12)
-
-// MARK: - 실행예시 4
-callDrawNudePeperoMethods(stickLength: 4, bodyComponent: "|0|", toppingComponent: nil, bodyLong: 6)
-
-// MARK: - 다양한 빼빼로 출력해보기
-makePepero(bodyHeight: 7, bodyComponent: "|0|", toppingComponent: "*", stickHeight: 3)
+// MARK: - STEP 3 [주문에 따른 빼빼로 그리기]
+// 실행예시 1
+//callDrawNormalPeperoMethods(stickLength: 4, bodyComponent: "***", toppingComponent: nil, height: 3)
+//
+// 실행예시 2
+//callDrawPeperoMethods(stickLength: 4, bodyComponent: "***", toppingComponent: "&", height: 12)
+//
+// 실행예시 3
+//callDrawPeperoMethods(stickHeight: 6, bodyComponent: "***", topping: "#", bodyHeight: 12)
+//
+// 실행예시 4
+//callDrawNudePeperoMethods(stickLength: 4, bodyComponent: "|0|", toppingComponent: nil, height: 6)
+//
+// 다양한 빼빼로 출력해보기
+//makePepero(bodyHeight: 7, bodyComponent: "|0|", toppingComponent: "*", stickHeight: 3)
