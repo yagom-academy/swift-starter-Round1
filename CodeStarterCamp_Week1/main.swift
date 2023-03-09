@@ -8,28 +8,10 @@
 
 import Foundation
 
-//MARK: STEP 2. 아이스크림 그리기
 
-func createIceOfPopsicle() {
-    // for _ in 1...8 {
-    for ice in 1...8 {
-        print("***********")
-    }
-}
+//MARK: STEP3 함수 호출
 
-func createStickOfPopsicle() {
-    // for _ in 1...4 {
-    for stick in 1...4 {
-        print("    | |")
-    }
-}
-
-func printPopsicle(number: Int) {
-    // for _ in 1...number {
-    for popsicle in 1...number {
-        createIceOfPopsicle()
-        createStickOfPopsicle()
-    }
-}
-
-printPopsicle(number: 2)
+drawPepero(bodyLength: 10, body: "***", stickLength: 4)
+drawPepero(bodyLength: 12, body: "***", topping: "&", stickLength: 4)
+drawPepero(bodyLength: 12, body: "***", topping: "#", stickLength: 6)
+drawPepero(bodyLength: 6, body: "|0|", stickLength: 4)
