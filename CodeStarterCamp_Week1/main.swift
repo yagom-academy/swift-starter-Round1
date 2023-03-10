@@ -33,7 +33,7 @@ func makeIceCreamStick() {
 
 // MARK: - STEP 3 [주문에 따른 빼빼로 그리기]
 // 실행예시 1
-//callDrawNormalPeperoMethods(stickLength: 4, bodyComponent: "***", toppingComponent: "", height: 3)
+//callDrawNormalPeperoMethods(stickLength: 4, bodyComponent: "***", toppingComponent: nil, height: 3)
 
 //
 // 실행예시 2
