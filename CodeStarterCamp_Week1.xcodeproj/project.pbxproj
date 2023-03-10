@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0132DC5B29B84D7500BAFC5E /* pepero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0132DC5A29B84D7500BAFC5E /* pepero.swift */; };
-		0132DC5D29B84FF700BAFC5E /* ampPepero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0132DC5C29B84FF700BAFC5E /* ampPepero.swift */; };
-		0132DC5F29B8530D00BAFC5E /* sharpPepero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0132DC5E29B8530D00BAFC5E /* sharpPepero.swift */; };
-		0132DC6129B8555D00BAFC5E /* nudePepero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0132DC6029B8555D00BAFC5E /* nudePepero.swift */; };
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,9 +25,6 @@
 
 /* Begin PBXFileReference section */
 		0132DC5A29B84D7500BAFC5E /* pepero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pepero.swift; sourceTree = "<group>"; };
-		0132DC5C29B84FF700BAFC5E /* ampPepero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ampPepero.swift; sourceTree = "<group>"; };
-		0132DC5E29B8530D00BAFC5E /* sharpPepero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sharpPepero.swift; sourceTree = "<group>"; };
-		0132DC6029B8555D00BAFC5E /* nudePepero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nudePepero.swift; sourceTree = "<group>"; };
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,9 +61,6 @@
 			children = (
 				34811DAE274B938F00A1E994 /* main.swift */,
 				0132DC5A29B84D7500BAFC5E /* pepero.swift */,
-				0132DC5C29B84FF700BAFC5E /* ampPepero.swift */,
-				0132DC5E29B8530D00BAFC5E /* sharpPepero.swift */,
-				0132DC6029B8555D00BAFC5E /* nudePepero.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -131,11 +122,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0132DC5D29B84FF700BAFC5E /* ampPepero.swift in Sources */,
-				0132DC5F29B8530D00BAFC5E /* sharpPepero.swift in Sources */,
 				0132DC5B29B84D7500BAFC5E /* pepero.swift in Sources */,
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
-				0132DC6129B8555D00BAFC5E /* nudePepero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
