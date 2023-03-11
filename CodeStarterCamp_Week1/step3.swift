@@ -16,16 +16,17 @@ func makeStick(stickSize: Int) {
 }
 
 // 몸통과 토핑을 매게변수로 받아 토핑과 몸통을 그리는 함수
-func makePeperoTopping(body: String, topping: String = "") {
+func makePeperoTopping(body: String, topping: String) {
     print("\(topping)\(body)\(topping)")
 }
 
 
 // 길이에 따라 몸통을 그리는 함수
 func makePeperoBody(body: String, topping: String, peperoSize: Int) {
-    for _ in 1...peperoSize {
-        print("\(topping)\(body)\(topping)")
+    for _ in 1...peperoSize{
+        makePeperoTopping(body: body, topping: topping)
     }
+        
 }
 
 // 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
