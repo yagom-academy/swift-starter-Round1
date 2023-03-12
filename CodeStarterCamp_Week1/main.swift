@@ -8,6 +8,10 @@
 
 import Foundation
 
-cookIceCream()
-createIceCreamBar()
+createPepero(choco: "***", length: 10, barLength: 4, topping: "")
 
+createPepero(choco: "***", length: 12, barLength: 4, topping: "&")
+
+createPepero(choco: "***", length: 12, barLength: 6, topping: "#")
+
+createPepero(choco: " |0|", length: 6, barLength: 4, topping: "")
