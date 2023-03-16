@@ -1,4 +1,4 @@
-func printIcecream(length: Int) -> Void {
+func printIcecreamSoft(length: Int) -> Void {
     for _ in 1...length {
         print("***********")
     }
