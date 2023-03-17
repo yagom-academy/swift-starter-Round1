@@ -6,22 +6,54 @@
 import Foundation
 
 while true {
-    print("초콜릿 과자의 길이를 입력하세요 (종료하려면 0): ", terminator: "")
-    let chocoSnackLength = Int(readLine()!)!
-    if (chocoSnackLength == 0) {
+    var chocoSnackLength: Int = 0
+    var barLength: Int = 0
+    var chocoShape: String = ""
+    
+    print("초콜릿 과자의 길이를 입력하세요: ", terminator: "")
+    if let prompt = readLine() {
+        if let intPrompt = Int(prompt) {
+            if (intPrompt <= 0) {
+                print("프로그램을 종료합니다.")
+                break
+            } else {
+                chocoSnackLength = intPrompt
+            }
+        } else {
+            print("프로그램을 종료합니다.")
+            break
+        }
+    } else {
         print("프로그램을 종료합니다.")
         break
     }
     
     print("초콜릿 모양을 입력하세요: ", terminator: "")
-    let chocoShape = readLine()!
+    if let prompt = readLine() {
+        if (prompt == "" || prompt.count < 3) {
+            chocoShape = "|0|"
+        } else {
+            chocoShape = prompt
+        }
+    }
     
     print("토핑 모양을 입력하세요: ", terminator: "")
-    let topingShape = readLine()!
+    let topingShape = readLine() ?? ""
     
-    print("바의 길이를 입력하세요 (종료하려면 0): ", terminator: "")
-    let barLength = Int(readLine()!)!
-    if (barLength == 0) {
+    print("바의 길이를 입력하세요: ", terminator: "")
+    if let prompt = readLine() {
+        if let intPrompt = Int(prompt) {
+            if (intPrompt < 0) {
+                print("프로그램을 종료합니다.")
+                break
+            } else {
+                barLength = intPrompt
+            }
+        } else {
+            print("프로그램을 종료합니다.")
+            break
+        }
+    } else {
         print("프로그램을 종료합니다.")
         break
     }

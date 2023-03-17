@@ -4,10 +4,16 @@
 ///    - topingSize: 바의 시작 위치를 알기 위한 빼빼로의 크기
 ///    - barLength: 바의 총 길이
 func printBar(topingSize: Int, barLength: Int) -> Void {
-    let emtpySpace = String(repeating: " ", count: topingSize)
+    var emptySpace: String = ""
+    
+    if (topingSize == 0) {
+        emptySpace = " "
+    } else {
+        emptySpace = String(repeating: " ", count: topingSize)
+    }
     
     for _ in 1...barLength {
-        print(emtpySpace + " | |")
+        print(emptySpace + "| |")
     }
 }
 
@@ -18,7 +24,11 @@ func printBar(topingSize: Int, barLength: Int) -> Void {
 ///     - topingShape: 초콜릿 양옆에 위치한 토핑 모양
 /// - Returns: 초콜릿 과자 모양의 한 블럭
 func makeChocoSnackShape(chocoShape: String, topingShape: String) -> String {
-    return " " + topingShape + chocoShape + topingShape
+    if (topingShape.count == 0) {
+        return " " + chocoShape
+    } else {
+        return topingShape + chocoShape + topingShape
+    }
 }
 
 /// 빼빼로의 초콜릿 과자 전체를 출력함
@@ -51,5 +61,8 @@ func printPepero(chocoShape: String, topingShape: String, chocoSnackLength: Int,
     let chocoSnackShape = makeChocoSnackShape(chocoShape: chocoShape, topingShape: topingShape)
     
     printChocoSnack(chocoSnackShape: chocoSnackShape, chocoSnackLength: chocoSnackLength)
-    printBar(topingSize: topingShape.count, barLength: barLength)
+    
+    if (barLength > 0) {
+        printBar(topingSize: topingShape.count, barLength: barLength)
+    }
 }
