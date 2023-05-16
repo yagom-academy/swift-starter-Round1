@@ -8,17 +8,4 @@
 
 import Foundation
 
-func drawCreamPart() {
-    for _ in 1...8 {
-        print("***********")
-    }
-}
-
-func drawHandlePart() {
-    for _ in 1...4 {
-        print("    | |")
-    }
-}
-
-drawCreamPart()
-drawHandlePart()
+print("Hello, World!")
