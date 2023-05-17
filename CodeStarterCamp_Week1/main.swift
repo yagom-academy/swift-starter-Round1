@@ -8,5 +8,5 @@
 
 import Foundation
 
-print("Hello, World!")
-
+makeIceCreamBody(width: 11, height: 8)
+makeIceCreamBar(width: 11, height: 4)
