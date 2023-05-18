@@ -284,3 +284,20 @@
 	};
 	rootObject = 34811DA3274B938F00A1E994 /* Project object */;
 }
+
+import Foundation
+
+func eatstarcream() {
+    for _ in 1...9 {
+    print("***********")
+    }
+}
+
+func eatbarcream() {
+    for _ in 1...4 {
+        print("    | |")
+    }
+}
+
+eatstarcream()
+eatbarcream()
