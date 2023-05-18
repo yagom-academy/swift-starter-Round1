@@ -25,6 +25,7 @@ func drawHandlePart(handle height: Int, shape handle: String) {
 //drawCreamPart(cream: 8, shape: "***********")
 //drawHandlePart(handle: 4, shape: "    | |")
 
+// 실제 아이스크림을 그리는 함수 호출 부분
 let drawIceCream = IceCreamOrder(creamHeight: 6, creamShape: "|0|", topping: nil, handleHeight: 4)
 drawIceCream.drawCreamByHeightAndShape(cream: drawIceCream.creamHeight, shape: drawIceCream.creamShape, topping: drawIceCream.topping)
 drawIceCream.drawHandleByHeight(handle: drawIceCream.handleHeight)
