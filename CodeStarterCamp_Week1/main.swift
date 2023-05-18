@@ -8,17 +8,19 @@
 
 import Foundation
 
-func drawCreamPart(creamLength: Int, creamComponent: String) {
-    for _ in 1...creamLength {
-        print(creamComponent)
+// 아이스크림 몸통? 부분의 길이와 모양을 인자로 받아 몸통 길이 만큼 반복하여 모양을 print한다.
+func drawCreamPart(cream height: Int, shape cream: String) {
+    for _ in 1...height {
+        print(cream)
     }
 }
 
-func drawHandlePart(handleLength: Int, handleComponent: String) {
-    for _ in 1...handleLength {
-        print(handleComponent)
+// 아이스크림의 손잡이 길이와 모양을 인자로 받아 손잡이 길이 만큼 반복하여 모양을 print한다.
+func drawHandlePart(handle height: Int, shape handle: String) {
+    for _ in 1...height {
+        print(handle)
     }
 }
 
-drawCreamPart(creamLength: 8, creamComponent: "***********")
-drawHandlePart(handleLength: 4, handleComponent: "    | |")
+drawCreamPart(cream: 8, shape: "***********")
+drawHandlePart(handle: 4, shape: "    | |")
