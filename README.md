@@ -1,1 +1,3 @@
-![제목 없는 다이어그램 drawio](https://github.com/yagom-academy/swift-starter-week1/assets/125941932/a8cb169f-9edb-414f-94a6-fdddb5bbd729)
+> **미르입니다**<br>
+> 만나서 너무 반갑습니다. 잘부탁드립니다. 열정이 넘쳐납니다.<br>
+> 모르는 것이 많아 질문이 많을 수 있지만 잘부탁드립니다. 감사합니다.
