@@ -7,15 +7,7 @@
 
 import Foundation
 
-protocol DrawCream {
-    func drawCreamByHeightAndShape(cream height: Int, shape cream: String, topping: String?)
-}
-
-protocol DrawHandle {
-    func drawHandleByHeight(handle height: Int)
-}
-
-class IceCreamOrder: DrawCream, DrawHandle {
+class IceCreamOrder {
     // 길이에 따른 막대를 그리는 함수
     func drawHandleByHeight(handle height: Int) {
         for _ in 1...height {
