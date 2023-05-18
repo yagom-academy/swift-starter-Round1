@@ -8,18 +8,17 @@
 
 import Foundation
 
-func drawIceCream(size: Int = 8) {
-    for _ in 0 ..< size {
-        print(String (repeating: "*", count: 11))
+func drawIceCream(width: Int, height: Int, stickSize: Int) {
+    
+    for _ in 0 ..< height {
+        print(String(repeating: "*", count: width))
     }
     
-    for _ in 0 ..< 4 {
-        drawStick()
+    for _ in 0 ..< stickSize {
+        print(String(repeating: " ", count: (width-3)/2), terminator: "")
+        print("| |")
     }
 }
 
-func drawStick() {
-    print("    | |")
-}
 
-drawIceCream()
+drawIceCream(width: 10, height: 8, stickSize: 4)
