@@ -22,6 +22,7 @@ func drawHandlePart(handle height: Int, shape handle: String) {
     }
 }
 
+
 //drawCreamPart(cream: 8, shape: "***********")
 //drawHandlePart(handle: 4, shape: "    | |")
 
