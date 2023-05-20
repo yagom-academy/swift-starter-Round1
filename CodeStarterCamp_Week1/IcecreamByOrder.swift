@@ -16,20 +16,24 @@ class IceCreamOrder {
     }
     
     // 길이(Int)에 따라 몸통을 그리는 함수
-    func drawCreamByHeightAndShape(cream height: Int, shape cream: String, topping: String?) {
+    func drawCreamByHeightAndShape(height: Int, shape: String, topping: String?) {
         for _ in 1...height {
-            let shapeOfIcecreamBody = self.getCreamShapeWithTopping(shape: cream, topping: topping)
-            print(shapeOfIcecreamBody)
+            if let topping = topping {
+                self.getCreamShapeWithTopping(shape: shape, topping: topping)
+            } else {
+                self.getCreamShape(shape: shape)
+            }
         }
     }
     
+    // 몸통(String)을 매개변수로 받아 토핑과 몸통을 그리는 함수
+    func getCreamShape(shape: String) {
+        print(" \(shape)")
+    }
+    
     // 몸통(String), 토핑(String)을 매개변수로 받아 토핑과 몸통을 그리는 함수
-    private func getCreamShapeWithTopping(shape cream: String, topping: String?) -> String {
-        var shapeOfCream = " \(cream)"
-        if let topping = topping {
-            shapeOfCream = "\(topping)\(cream)\(topping)"
-        }
-        return shapeOfCream
+    func getCreamShapeWithTopping(shape: String, topping: String) {
+        print("\(topping)\(shape)\(topping)")
     }
     
     let creamHeight: Int
