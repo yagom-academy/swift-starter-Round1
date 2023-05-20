@@ -49,19 +49,4 @@ class IceCreamOrder {
     }
 }
 
-enum Gender: String {
-    case man = "남자"
-    case woman = "여자"
-}
-
-enum Direction: String {
-    case east = "동"
-    case west = "서"
-    case south = "남"
-    case north = "북"
-}
-
-func yourGender(gender: Gender) {
-    print("나의 성별은 \(gender.rawValue)입니다")
-}
 
