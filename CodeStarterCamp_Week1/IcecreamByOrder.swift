@@ -16,20 +16,24 @@ class IceCreamOrder {
     }
     
     // 길이(Int)에 따라 몸통을 그리는 함수
-    func drawCreamByHeightAndShape(cream height: Int, shape cream: String, topping: String?) {
+    func drawCreamByHeightAndShape(height: Int, shape: String, topping: String?) {
         for _ in 1...height {
-            let shapeOfIcecreamBody = self.getCreamShapeWithTopping(shape: cream, topping: topping)
-            print(shapeOfIcecreamBody)
+            if let topping = topping {
+                self.getCreamShapeWithTopping(shape: shape, topping: topping)
+            } else {
+                self.getCreamShape(shape: shape)
+            }
         }
     }
     
+    // 몸통(String)을 매개변수로 받아 토핑과 몸통을 그리는 함수
+    func getCreamShape(shape: String) {
+        print(" \(shape)")
+    }
+    
     // 몸통(String), 토핑(String)을 매개변수로 받아 토핑과 몸통을 그리는 함수
-    private func getCreamShapeWithTopping(shape cream: String, topping: String?) -> String {
-        var shapeOfCream = " \(cream)"
-        if let topping = topping {
-            shapeOfCream = "\(topping)\(cream)\(topping)"
-        }
-        return shapeOfCream
+    func getCreamShapeWithTopping(shape: String, topping: String) {
+        print("\(topping)\(shape)\(topping)")
     }
     
     let creamHeight: Int
@@ -43,5 +47,21 @@ class IceCreamOrder {
         self.topping = topping
         self.handleHeight = handleHeight
     }
+}
+
+enum Gender: String {
+    case man = "남자"
+    case woman = "여자"
+}
+
+enum Direction: String {
+    case east = "동"
+    case west = "서"
+    case south = "남"
+    case north = "북"
+}
+
+func yourGender(gender: Gender) {
+    print("나의 성별은 \(gender.rawValue)입니다")
 }
 
