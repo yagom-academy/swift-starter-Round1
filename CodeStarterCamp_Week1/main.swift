@@ -8,5 +8,17 @@
 
 import Foundation
 
-print("Hello, World!")
+func eatsatarcream(){
+    for _ in 1...9{
+        print("**********")
+    }
+}
 
+func eatbarcream(){
+    for _ in 1...4{
+        print("   | |")
+    }
+}
+
+eatsatarcream()
+eatbarcream()
