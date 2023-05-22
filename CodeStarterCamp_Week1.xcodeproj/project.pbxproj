@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1842C6DA2A1498050084A435 /* MakeIceCream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842C6D92A1498050084A435 /* MakeIceCream.swift */; };
+		18FB82502A1BCF0200789634 /* OrderSnack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB824F2A1BCF0200789634 /* OrderSnack.swift */; };
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		1842C6D92A1498050084A435 /* MakeIceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeIceCream.swift; sourceTree = "<group>"; };
 		1842C6DC2A151AFB0084A435 /* 아이스크림_그리기_순서도.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "아이스크림_그리기_순서도.png"; path = "../../../Downloads/아이스크림_그리기_순서도.png"; sourceTree = "<group>"; };
+		18FB824F2A1BCF0200789634 /* OrderSnack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSnack.swift; sourceTree = "<group>"; };
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +64,7 @@
 			children = (
 				34811DAE274B938F00A1E994 /* main.swift */,
 				1842C6D92A1498050084A435 /* MakeIceCream.swift */,
+				18FB824F2A1BCF0200789634 /* OrderSnack.swift */,
 				1842C6DC2A151AFB0084A435 /* 아이스크림_그리기_순서도.png */,
 			);
 			path = CodeStarterCamp_Week1;
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1842C6DA2A1498050084A435 /* MakeIceCream.swift in Sources */,
+				18FB82502A1BCF0200789634 /* OrderSnack.swift in Sources */,
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
