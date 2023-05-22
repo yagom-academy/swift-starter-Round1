@@ -25,3 +25,16 @@ func printHandle(place popsicle: String) {
 
 printIceCream(topping: "*")
 printHandle(place: "   | |    ")
+
+
+bakeCookies(cookieBits: firstCookie.cookieBits, topping: firstCookie.topping, height: firstCookie.height)
+addSticks(length: firstCookie.handleSize)
+
+bakeCookies(cookieBits: secondCookie.cookieBits, topping: secondCookie.topping, height: secondCookie.height)
+addSticks(length: secondCookie.handleSize)
+
+bakeCookies(cookieBits: thirdCookie.cookieBits, topping: thirdCookie.topping, height: thirdCookie.height)
+addSticks(length: thirdCookie.handleSize)
+
+bakeCookies(cookieBits: fourthCookie.cookieBits, topping: fourthCookie.topping, height: fourthCookie.height)
+addSticks(length: fourthCookie.handleSize)
