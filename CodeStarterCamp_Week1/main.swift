@@ -17,11 +17,11 @@ func printIceCream(topping: String) {
     }
 }
 
-func printHandle(draw: String) {
+func printHandle(place popsicle: String) {
     for _ in 1...4 {
-        print("\(draw)")
+        print("\(popsicle)")
     }
 }
 
 printIceCream(topping: "*")
-printHandle(draw: "   | |    ")
+printHandle(place: "   | |    ")
