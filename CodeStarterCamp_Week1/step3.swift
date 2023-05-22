@@ -50,7 +50,3 @@ func drawBar(barLength: Int, body:String) {
     }
     
 }
-
-inputdata()
-drawIceCream(bodyLength: bodyLength, body: body, topping: topping)
-drawBar(barLength: barLength, body: body)
