@@ -8,6 +8,4 @@
 
 import Foundation
 
-inputdata()
-drawIceCream(bodyLength: bodyLength, body: body, topping: topping)
-drawBar(barLength: barLength, body: body)
+printPepero()
