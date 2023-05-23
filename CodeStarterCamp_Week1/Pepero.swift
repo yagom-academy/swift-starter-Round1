@@ -13,7 +13,7 @@ func makeStick(sticksize:Int) {
     }
 }
 
-func makePeproBody(body: String, size: Int) {
+func makePeproBody(body: String, bodysize: Int) {
     for _ in 0 ..< size {
         print(body)
     }
