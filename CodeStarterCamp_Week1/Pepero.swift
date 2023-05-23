@@ -2,7 +2,7 @@ import Foundation
 
 func makePepero(size: Int, body: String, topping: String = "", sticksize: Int) {
      let OriginPepero = makeOriginPepro (body: body, topping: topping)
-        makePeproBody(body: OriginPepero, size: size)
+        makePeproBody(body: OriginPepero, bodysize: bodysize)
         makeStick(sticksize: sticksize)
 }
 
