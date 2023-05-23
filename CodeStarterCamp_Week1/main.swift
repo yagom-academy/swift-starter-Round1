@@ -8,33 +8,15 @@
 
 import Foundation
 
-func printIceCream(topping: String) {
-    for _ in 1...8 {
-        for _ in 1...11 {
-            print("\(topping)", terminator: "")
-        }
-        print()
-    }
-}
+bakeCookies(cookie: firstCookie)
+addSticks(bar: firstCookie.bar, cookieBits: firstCookie.cookieBits)
 
-func printHandle(place popsicle: String) {
-    for _ in 1...4 {
-        print("\(popsicle)")
-    }
-}
+bakeCookies(cookie: secondCookie)
+addSticks(bar: secondCookie.bar, cookieBits: secondCookie.cookieBits)
 
-printIceCream(topping: "*")
-printHandle(place: "   | |    ")
+bakeCookies(cookie: thirdCookie)
+addSticks(bar: thirdCookie.bar, cookieBits: thirdCookie.cookieBits)
 
+bakeCookies(cookie: fourthCookie)
+addSticks(bar: fourthCookie.bar, cookieBits: fourthCookie.cookieBits)
 
-bakeCookies(cookieBits: firstCookie.cookieBits, topping: firstCookie.topping, height: firstCookie.height)
-addSticks(length: firstCookie.handleSize)
-
-bakeCookies(cookieBits: secondCookie.cookieBits, topping: secondCookie.topping, height: secondCookie.height)
-addSticks(length: secondCookie.handleSize)
-
-bakeCookies(cookieBits: thirdCookie.cookieBits, topping: thirdCookie.topping, height: thirdCookie.height)
-addSticks(length: thirdCookie.handleSize)
-
-bakeCookies(cookieBits: fourthCookie.cookieBits, topping: fourthCookie.topping, height: fourthCookie.height)
-addSticks(length: fourthCookie.handleSize)

@@ -11,53 +11,44 @@ struct Cookie {
     var height: Int
     var topping: String?
     var cookieBits: String
-    var handleSize: Int
+    var bar: Int
 }
 
-func makeCookieShape(with cookieBits: String, topping: String?) {
-    guard let topping = topping else {
-        for line in 1...6 {
-            if line == 1 || line == 6 {
-                print(" ", terminator: "")
-            } else if line == 2 {
-                print("\(cookieBits)", terminator: "")
-            }
-        }
-        print()
+let firstCookie = Cookie(height: 10, topping: nil, cookieBits: "***", bar: 4)
+let secondCookie = Cookie(height: 12, topping: "&", cookieBits: "***", bar: 4)
+let thirdCookie = Cookie(height: 12, topping: "#", cookieBits: "***", bar: 6)
+let fourthCookie = Cookie(height: 6, topping: nil, cookieBits: "|0|", bar: 4)
+
+/// 몸통 + 토핑 한 줄 만드는 함수
+func shapeCookie(with cookie: Cookie) {
+    guard let topping = cookie.topping else {
+        /// topping이 없으면 아래 코드 실행
+        print("\(" " + cookie.cookieBits)")
         return
     }
-    
-    for line in 1...6 {
-        if line == 1 || line == 6  {
-            print("\(topping)", terminator: "")
-        } else if line == 2 {
-            print("\(cookieBits)", terminator: "")
-        }
+    print("\(topping)\(cookie.cookieBits)\(topping)")
+}
+
+/// 높게 쿠키를 쌓는 함수
+func makeCookie(cookie: Cookie) {
+    for _ in 1...cookie.height {
+        shapeCookie(with: cookie)
+    }
+}
+
+/// 막대기 만드는 함수
+func addSticks(bar: Int, cookieBits: String) {
+    for _ in 1...bar {
+        let totalLength = cookieBits.count + 2
+        let bar = String(repeating: " ", count:totalLength / 2-1)
+        print(bar, terminator: "")
+        print("| |")
     }
     print()
 }
 
-func bakeCookies(cookieBits: String, topping: String?, height: Int) {
-    for _ in 1...height {
-        makeCookieShape(with: cookieBits, topping: topping)
-    }
+/// 쿠키 함수들을 실행하는 함수
+func bakeCookies(cookie: Cookie) {
+    shapeCookie(with: cookie)
+    makeCookie(cookie: cookie)
 }
-
-func addSticks(length: Int) {
-    for _ in 1...length {
-        for place in 1...6 {
-            if place == 2 || place == 4 {
-                print("|", terminator: "")
-            } else {
-                print(" ", terminator: "")
-            }
-        }
-        print()
-    }
-}
-
-
-let firstCookie = Cookie(height: 10, topping: nil, cookieBits: "***", handleSize: 4)
-let secondCookie = Cookie(height: 12, topping: "&", cookieBits: "***", handleSize: 4)
-let thirdCookie = Cookie(height: 12, topping: "#", cookieBits: "***", handleSize: 6)
-let fourthCookie = Cookie(height: 6, topping: nil, cookieBits: "|0|", handleSize: 4)
