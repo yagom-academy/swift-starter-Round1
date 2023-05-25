@@ -17,12 +17,12 @@ func bodyAndTopping(inputBody: String, inputTopping: String) {
     print(inputTopping + inputBody + inputTopping)
 }
 
-func makeBbe(iceLength: Int) {
-    for _ in 1...iceLength {
+func makeBbebbero(bbebberoLength: Int) {
+    for _ in 1...bbebberoLength {
         bodyAndTopping(inputBody: "&", inputTopping: "**")
     }
 }
 
 
-makeBbe(iceLength: 6)
+makeBbebbero(bbebberoLength: 6)
 makeBbebberoBar(barLength: 3)
