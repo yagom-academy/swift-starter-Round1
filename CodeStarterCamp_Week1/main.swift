@@ -2,23 +2,27 @@
 //  main.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 정원형 on 2023/05/25.
 //
 
 import Foundation
 
-func makeIce() {
-    for _ in 1...8 {
-        print("***********")
+func makeBbebberoBar(barLength: Int) {
+    for _ in 1...barLength {
+        print(" | |")
     }
 }
 
-func makeBar() {
-    for _ in 1...4 {
-        print("    | |")
+func bodyAndTopping(inputBody: String, inputTopping: String) {
+    print(inputTopping + inputBody + inputTopping)
+}
+
+func makeBbe(iceLength: Int) {
+    for _ in 1...iceLength {
+        bodyAndTopping(inputBody: "&", inputTopping: "**")
     }
 }
 
-makeIce()
-makeBar()
+
+makeBbe(iceLength: 6)
+makeBbebberoBar(barLength: 3)
