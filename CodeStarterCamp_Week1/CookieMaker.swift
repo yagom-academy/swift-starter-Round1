@@ -19,26 +19,24 @@ let secondCookie = Cookie(height: 12, topping: "&", cookieBits: "***", bar: 4)
 let thirdCookie = Cookie(height: 12, topping: "#", cookieBits: "***", bar: 6)
 let fourthCookie = Cookie(height: 6, topping: nil, cookieBits: "|0|", bar: 4)
 
-// 몸통 + 토핑 한 줄 만드는 함수
 func shapeCookie(with cookie: Cookie) {
     guard let topping = cookie.topping else {
-        // topping이 없으면 아래 코드 실행
         print("\(" " + cookie.cookieBits)")
         return
     }
     print("\(topping)\(cookie.cookieBits)\(topping)")
 }
 
-// 높게 쿠키를 쌓는 함수
+// 쿠키를 높게 쌓는 함수
 func makeCookie(cookie: Cookie) {
     for _ in 1...cookie.height {
         shapeCookie(with: cookie)
     }
 }
 
-// 막대기 만드는 함수
 func addSticks(bar: Int, cookieBits: String) {
     for _ in 1...bar {
+        // 하드 코딩된 내용에서 조건에 맞춰 막대기가 출력 되도록 수정
         let totalLength = cookieBits.count + 2
         let bar = String(repeating: " ", count: totalLength / 2 - 1)
         print(bar, terminator: "")
@@ -47,7 +45,6 @@ func addSticks(bar: Int, cookieBits: String) {
     print()
 }
 
-// 쿠키 함수들을 실행하는 함수
 func bakeCookies(cookie: Cookie) {
     shapeCookie(with: cookie)
     makeCookie(cookie: cookie)
