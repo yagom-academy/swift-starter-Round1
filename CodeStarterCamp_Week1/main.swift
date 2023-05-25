@@ -8,20 +8,17 @@
 
 import Foundation
 
-func ice() {
-    for _ in 1...8{
+func makeIce() {
+    for _ in 1...8 {
         print("***********")
     }
 }
 
-func bar(){
-    for _ in 1...4{
+func makeBar() {
+    for _ in 1...4 {
         print("    | |")
     }
 }
 
-ice()
-bar()
-
-
-
+makeIce()
+makeBar()
