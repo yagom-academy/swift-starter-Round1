@@ -8,36 +8,55 @@
 
 import Foundation
 
-// 2023-05-20
-//STEP 2: 아이스크림 그리기
-//공통
+//--------------------------------------------------------------------------------
+//STEP2
+//--------------------------------------------------------------------------------
 func drawIcecream(line: String, loop: Int) {
     for _ in 1...loop {
         print(line)
     }
 }
 
-//아이스크림 부분을 그리는 함수
 drawIcecream(line: "***********", loop: 8)
-//막대기(손잡이) 부분을 그리는 함수
 drawIcecream(line: "    | |    ", loop: 4)
 
+//--------------------------------------------------------------------------------
+//STEP3
+//--------------------------------------------------------------------------------
+func drawPepero(chocolateLenghth: Int, stickLength: Int, base: String, topping: String) {
+    print("""
+          <정보>\n
+          길이: \(chocolateLenghth)\n
+          몸통: \(base)\n
+          토핑: \(topping)\n
+          막대길이: \(stickLength)\n
+          """)
+    drawChocolateSide(chocolateLenghth: chocolateLenghth, base: base, topping: topping)
+    drawStickSide(stickLength: stickLength)
+}
+func drawChocolateSide(chocolateLenghth: Int, base: String, topping: String) {
+    for _ in 1...chocolateLenghth {
+        print(topping+base+topping)
+    }
+}
+func drawStickSide(stickLength: Int) {
+    for _ in 1...stickLength {
+        print(" | | ")
+    }
 
-// 2023-05-19
-//STEP 2: 아이스크림 그리기
-//icecreamPart()
-//stickPart()
-//
-////아이스크림 부분을 그리는 함수
-//func icecreamPart() {
-//    for _ in 1...8 {
-//        print("***********")
-//    }
-//}
-//
-////막대기(손잡이) 부분을 그리는 함수
-//func stickPart() {
-//    for _ in 1...4 {
-//        print("    | |    ")
-//    }
-//}
+}
+
+//실행 예시 1
+drawPepero(chocolateLenghth: 10, stickLength: 4, base: "***", topping: " ")
+
+//실행 예시 2
+drawPepero(chocolateLenghth: 12, stickLength: 4, base: "***", topping: "&")
+
+//실행 예시 3
+drawPepero(chocolateLenghth: 12, stickLength: 6, base: "***", topping: "#")
+
+//실행 예시. 4
+drawPepero(chocolateLenghth: 6, stickLength: 4, base: "|0|", topping: " ")
+
+
+
