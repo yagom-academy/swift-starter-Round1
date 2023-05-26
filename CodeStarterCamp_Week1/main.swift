@@ -31,18 +31,12 @@ func make(_ bar: Int) {
     }
 }
 
-wholeIceCream(w: 11, h: 8, bar: 4)
+//wholeIceCream(w: 11, h: 8, bar: 4)
 
-/*
- 순서도
- 
- 시작
- wholeIceCream을 호출한다.(넓이: 11, 높이: 8, 막대: 4)
- |
- 
- 
- 
- 
- */
- 
- 
+makePepero(length: 10, body: "***", toping: nil, barLength: 4)
+print("")
+makePepero(length: 12, body: "***", toping: "&", barLength: 4)
+print("")
+makePepero(length: 12, body: "***", toping: "#", barLength: 6)
+print("")
+makePepero(length: 6, body: "|0|", toping: nil, barLength: 4)
