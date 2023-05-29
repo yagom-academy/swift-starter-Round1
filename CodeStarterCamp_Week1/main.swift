@@ -7,8 +7,8 @@
 //
 import Foundation
 func makeIcecreamHead() {
-    for _ in 0...7{
-        for _ in 0...10{
+    for _ in 0...7 {
+        for _ in 0...10 {
             print("*", terminator: "")
         }
         print()
@@ -16,8 +16,8 @@ func makeIcecreamHead() {
 }
 
 func makeIcecreamStick() {
-    for _ in 0...3{
-        for i in 0...10{
+    for _ in 0...3 {
+        for i in 0...10 {
             if i==4 || i==6 {
                 print("|", terminator: "")
             }else{
