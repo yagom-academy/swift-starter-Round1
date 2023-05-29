@@ -6,7 +6,7 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 import Foundation
-func icecreamHead(){
+func makeIcecreamHead() {
     for _ in 0...7{
         for _ in 0...10{
             print("*", terminator: "")
@@ -15,18 +15,18 @@ func icecreamHead(){
     }
 }
 
-func icecreamStick(){
+func makeIcecreamStick() {
     for _ in 0...3{
         for i in 0...10{
-            if(i==4 || i==6){
-                print("|",terminator: "")
+            if i==4 || i==6 {
+                print("|", terminator: "")
             }else{
-                print(" ",terminator: "")
+                print(" ", terminator: "")
             }
         }
         print()
     }
 }
 
-icecreamHead()
-icecreamStick()
+makeIcecreamHead()
+makeIcecreamStick()
