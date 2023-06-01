@@ -8,21 +8,28 @@
 
 import Foundation
 
-func makeIcecreamHead(body: String, toping: String = " ") {
-    for _ in 0...7 {
+func makePeperoHead(peperoSize: Int, body: String, toping: String = " ") {
+    for _ in 0...peperoSize {
         print("\(toping)\(body)\(toping)")
     }
 }
 
-func makeIcecreamStick() {
-    for _ in 0...3 {
+func makePeperoStick(stickSize: Int) {
+    for _ in 0...stickSize {
         print(" | | ")
     }
 }
+func makePepero( peperoSize: Int, body: String, toping: String = " ", stickSize: Int) {
+    makePeperoHead(peperoSize: peperoSize, body: body, toping: toping)
+    makePeperoStick(stickSize: stickSize)
+}
 
-
-makeIcecreamHead(body: "***", toping: "%")
-makeIcecreamStick()
-makeIcecreamHead(body: "|0|")
-makeIcecreamStick()
-
+makePepero(peperoSize: 10, body: "***", stickSize: 4)
+print()
+makePepero(peperoSize: 12, body: "***", toping: "&", stickSize: 4)
+print()
+makePepero(peperoSize: 12, body: "***", toping: "#", stickSize: 6)
+print()
+makePepero(peperoSize: 6, body: "|0|", stickSize: 4)
+print()
+makePepero(peperoSize: 10, body: "***", toping: "\\", stickSize: 4)
