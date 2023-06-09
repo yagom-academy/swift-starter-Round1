@@ -5,8 +5,15 @@
 //  Created by yagom.
 //  Copyright © yagom academy. All rights reserved.
 //
-
 import Foundation
+func makeIcecreamHead() {
+    for _ in 0...7 {
+        for _ in 0...10 {
+            print("*", terminator: "")
+        }
+        print()
+    }
+}
 
 //뺴뺴로 머리 함수
 func makePeperoHead(peperoSize: Int, body: String, toping: String = " ") {
