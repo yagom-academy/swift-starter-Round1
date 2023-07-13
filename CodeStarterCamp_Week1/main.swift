@@ -7,7 +7,7 @@
 
 //Step2: 아이스크림 그리기
 import Foundation
-func icecream_Draw(column: Int) {
+func iceCreamDraw(column: Int) {
     for _ in 1...column {
         for _ in 1...11 {
             print("*", terminator: "")
@@ -16,7 +16,7 @@ func icecream_Draw(column: Int) {
     }
 }
 
-func stick_Draw2(column: Int) {
+func stickDraw(column: Int) {
     let space = "    "
     let stick = "| |"
     for _ in 1...column {
@@ -25,5 +25,5 @@ func stick_Draw2(column: Int) {
     }
 }
 
-icecream_Draw(column: 8)
-stick_Draw2(column: 4)
+iceCreamDraw(column: 8)
+stickDraw(column: 4)
