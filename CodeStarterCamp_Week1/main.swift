@@ -7,7 +7,7 @@
 
 import Foundation
 
-func drawIcecream(_ width:Int, _ height:Int) {
+func drawIceCream(width:Int, height:Int) {
     var str:String = ""
     for _ in 1...width {
         str.append("*")
@@ -17,7 +17,7 @@ func drawIcecream(_ width:Int, _ height:Int) {
     }
 }
 
-func drawBar(_ width:Int, _ height:Int) {
+func drawBar(width:Int, height:Int) {
     var str:String = ""
     
     for index in 1...width {
@@ -31,5 +31,5 @@ func drawBar(_ width:Int, _ height:Int) {
     }
 }
 
-drawIcecream(10, 8)
-drawBar(10, 4)
+drawIceCream(width:11, height:8)
+drawBar(width:11, height:4)
