@@ -1,12 +1,17 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
-
 import Foundation
 
-print("Hello, World!")
+func icecream(count: Int){
+    print("  ***********")
+}
 
+for count in 1...8{
+        icecream(count: count)
+    }
+
+func stick(num: Int){
+    print("      | |")
+}
+
+for num in 1...4{
+        stick(num: num)
+    }
