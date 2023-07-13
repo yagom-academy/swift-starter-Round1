@@ -8,5 +8,17 @@
 
 import Foundation
 
-print("Hello, World!")
+func makeTheEatingPartOfIceCream() {
+    for _ in 1...8 {
+        print("***********")
+    }
+}
 
+func makeIceCreamBar() {
+    for _ in 1...4 {
+        print("    | |    ")
+    }
+}
+
+makeTheEatingPartOfIceCream()
+makeIceCreamBar()
