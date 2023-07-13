@@ -8,18 +8,9 @@
 
 import Foundation
 
-func drawIceCream(length: Int) -> Void {
-    for _ in 1...length {
-        print("***********")
-    }
-}
-
-func drawBar(length: Int) -> Void {
-    for _ in 1...length {
-        print("    | |    ")
-    }
-}
-
-
-drawIceCream(length: 8)
-drawBar(length: 4)
+//drawIceCream(length: 8)
+//drawIceBar(length: 4)
+drawIceCream(length: 10, body: "***", topping: " ", barLength: 4)
+drawIceCream(length: 12, body: "***", topping: "&", barLength: 4)
+drawIceCream(length: 12, body: "***", topping: "#", barLength: 6)
+drawIceCream(length: 6, body: "|0|", topping: " ", barLength: 4)
