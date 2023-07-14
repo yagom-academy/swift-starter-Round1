@@ -23,8 +23,8 @@ func printIce2(tiems: Int) {
 }
 
 func printIce() {
-    printIce1(tiems: 8)
-    printIce2(tiems: 4)
+    printIce1(tiems: 7)
+    printIce2(tiems: 3)
 }
 
 printIce()
