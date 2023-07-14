@@ -7,21 +7,21 @@
 //
 import Foundation
 
-func printIce_1(tiems: Int) {
+func printIce1(tiems: Int) {
     for _ in 0...tiems {
         print("***********")
     }
 }
 
-func printIce_2(tiems: Int) {
+func printIce2(tiems: Int) {
     for _ in 0...tiems {
         print("    | |   ")
     }
 }
 
 func printIce() {
-    printIce_1(tiems: 8)
-    printIce_2(tiems: 4)
+    printIce1(tiems: 8)
+    printIce2(tiems: 4)
 }
 
 printIce()
