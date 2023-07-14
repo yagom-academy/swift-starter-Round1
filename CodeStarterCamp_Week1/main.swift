@@ -9,7 +9,10 @@ import Foundation
 
 func printIce1(tiems: Int) {
     for _ in 0...tiems {
-        print("***********")
+        for _ in 0...10 {
+            print("*", terminator: "")
+        }
+        print("")
     }
 }
 
