@@ -8,7 +8,7 @@
 
 import Foundation
 
-func drawCream2() {
+func drawCream() {
     let cream = "***********"
     
     for _ in 1...8 {
@@ -16,7 +16,7 @@ func drawCream2() {
     }
 }
 
-func drawBar2() {
+func drawBar() {
     let bar = "    | |    "
     
     for _ in 1...4 {
@@ -24,5 +24,5 @@ func drawBar2() {
     }
 }
 
-drawCream2()
-drawBar2()
+drawCream()
+drawBar()
