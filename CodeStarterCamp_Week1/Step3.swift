@@ -30,7 +30,7 @@ func makeBody(height: Int, body: String, topping: String = " ") {
 }
 
 func drawBar(barHeight: Int) {
-    if (height <= 0) {
+    if (barHeight <= 0) {
         return
     }
     for _ in 1...barHeight {
@@ -39,7 +39,7 @@ func drawBar(barHeight: Int) {
 }
 
 func makePepero(bodyHeight: Int, body: String, topping: String = " ", barHeight: Int) {
-    printOutInfo(bodyHeight: bodyHeight, body: body, topping: topping, barHeight: barHeight)
+    printOutInfo(bodyHeight: bodyHeight, body: String(body.prefix(3)), topping: String(topping.prefix(1)), barHeight: barHeight)
     makeBody(height: bodyHeight, body: String(body.prefix(3)), topping: String(topping.prefix(1)))
     drawBar(barHeight: barHeight)
 }
