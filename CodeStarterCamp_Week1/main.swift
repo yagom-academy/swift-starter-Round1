@@ -31,4 +31,4 @@ func drawBar(width:Int, height:Int) {
     }
 }
 
-makePepero(height: 5, body: "***$!@#$", topping: "##!@", barHeight: 3)
+makePepero(bodyHeight: 3, body: "***$!@#$", topping: "##!@", barHeight: 3)
