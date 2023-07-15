@@ -8,5 +8,21 @@
 
 import Foundation
 
-print("Hello, World!")
+func drawCream2() {
+    let cream = "***********"
+    
+    for _ in 1...8 {
+        print(cream)
+    }
+}
 
+func drawBar2() {
+    let bar = "    | |    "
+    
+    for _ in 1...4 {
+        print(bar)
+    }
+}
+
+drawCream2()
+drawBar2()
