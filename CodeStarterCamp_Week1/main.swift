@@ -7,6 +7,7 @@
 //
 import Foundation
 
+step2
 func printIce1(tiems: Int) {
     for _ in 0...tiems {
         for _ in 0...10 {
