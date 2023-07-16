@@ -31,5 +31,4 @@ func drawBar(width:Int, height:Int) {
     }
 }
 
-drawIceCream(width:11, height:8)
-drawBar(width:11, height:4)
+makePepero(bodyHeight: 3, body: "***$!@#$", topping: "##!@", barHeight: 3)
