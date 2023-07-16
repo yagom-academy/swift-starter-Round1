@@ -46,7 +46,7 @@ func printPepero(stickLength: Int, bodyLength: Int, body: String, topping: Strin
 }
 
 /*다양한 빼빼로 출력해보기
- main.swift 파일이 아닌, step3로 코드를 옮기니까 expressions are not allowed at top level 이라는 오류가 발생하여, 함수 호출은 주석처리함. 이를 해결할 방법 조언 구합니다...
+ main.swift 파일이 아닌, step3로 코드를 옮기니까 expressions are not allowed at top level 이라는 오류가 발생하여, 함수 호출은 주석처리
 printPepero(stickLength: 3, bodyLength: 9, body: "***")
 printPepero(stickLength: 3, bodyLength: 11, body: "***", topping: "&")
 printPepero(stickLength: 5, bodyLength: 11, body: "***", topping: "#")

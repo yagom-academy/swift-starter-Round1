@@ -23,5 +23,5 @@ func printIceCream(body:Int, stickk:Int) {
         }
     }
 
-// printIceCream(body: 7 , stickk: 3 )
+// top level expression 오류로 호출 주석처리 printIceCream(body: 7 , stickk: 3 )
 
