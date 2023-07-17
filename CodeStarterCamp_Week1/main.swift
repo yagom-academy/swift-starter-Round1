@@ -8,17 +8,18 @@
 
 import Foundation
 
-func makeTheEatingPartOfIceCream() {
+// Ice cream 만들기
+func productTheEatingPartOfIceCream() {
     for _ in 1...8 {
         print("***********")
     }
 }
 
-func makeIceCreamBar() {
+func productIceCreamBar() {
     for _ in 1...4 {
         print("    | |    ")
     }
 }
 
-makeTheEatingPartOfIceCream()
-makeIceCreamBar()
+productTheEatingPartOfIceCream()
+productIceCreamBar()
