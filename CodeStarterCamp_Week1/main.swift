@@ -8,10 +8,10 @@ for line1 in 1...8{
     drawIceCreamsBody(line1: line1)
     }
 
-func drawIceCreamsStick(line2: Int){
+func drawIceCreamsStick(line23: Int){
     print("      | |")
 }
 
-for line2 in 1...4{
-    drawIceCreamsStick(line2: line2)
+for line23 in 1...4{
+    drawIceCreamsStick(line23: line23)
     }
