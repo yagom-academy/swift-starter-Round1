@@ -5,11 +5,11 @@ func drawIceCream(height: Int){
         print("***********")
     }
 }
-func drawStick(){
-    for _ in 1...4{
+func drawStick(height: Int){
+    for _ in 1...height{
         print("    | |    ")
     }
 }
 
-drawIceCream(height: 1)
-drawStick()
+drawIceCream(height: 10)
+drawStick(height: 4)
