@@ -2,11 +2,20 @@
 //  main.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
+//  Created by greatness.
 //  Copyright © yagom academy. All rights reserved.
 //
+func printIceCream(height : Int) {
+    for _ in 1...height {
+        print("***********")
+    }
+}
 
-import Foundation
+func printIceStick(height : Int) {
+    for _ in 1...height {
+        print("    | |    ")
+    }
+}
 
-print("Hello, World!")
-
+printIceCream(height:11)
+printIceStick(height:4)
