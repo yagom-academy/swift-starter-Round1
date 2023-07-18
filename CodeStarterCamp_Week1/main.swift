@@ -5,17 +5,17 @@
 //  Created by greatness.
 //  Copyright © yagom academy. All rights reserved.
 //
-func printIceCream(height : Int) {
+func printIceCream(height: Int, area: Int) {
     for _ in 1...height {
-        print("***********")
+        print(String(repeating: "*", count: area))
     }
 }
 
-func printIceStick(height : Int) {
+func printIceStick(height: Int, area: Int) {
     for _ in 1...height {
-        print("    | |    ")
+        print(String(repeating:" ", count: area), "| |")
     }
 }
 
-printIceCream(height:11)
-printIceStick(height:4)
+printIceCream(height:8, area:11)
+printIceStick(height:4, area:3)
