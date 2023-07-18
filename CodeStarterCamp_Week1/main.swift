@@ -30,4 +30,9 @@ func printIceCream(body: Int, stick: Int){
 
 printIceCream(body: 7, stick: 3)
 
+printPepero(stickLength: 3, bodyLength: 9, shape: "***")
+printPepero(stickLength: 3, bodyLength: 11, shape: "***", topping: "&")
+printPepero(stickLength: 5, bodyLength: 11, shape: "***", topping: "#")
+printPepero(stickLength: 3, bodyLength: 5, shape: "|0|")
+printPepero(stickLength: 3, bodyLength: 5, shape: "|0|", topping: "@")
 

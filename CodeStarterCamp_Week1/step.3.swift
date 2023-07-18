@@ -7,36 +7,31 @@
 
 import Foundation
 
-func printPeperoToppingwithBody(bodyShape: String, topping: String = "") {
-    print("\(topping)\(bodyShape)\(topping)")
+func printPeperoToppingwithBody(shape: String, topping: String = "") {
+    print("\(topping)\(shape)\(topping)")
 }
 
-func printPeperoBody(bodyLength: Int, bodyShape: String, topping: String) {
+func printPeperoBody(bodyLength: Int, shape: String, topping: String) {
     for _ in 0...bodyLength {
-        printPeperoToppingwithBody(bodyShape: bodyShape, topping: topping)
+        printPeperoToppingwithBody(shape: shape, topping: topping)
     }
 }
 
 func printPeperoStick(stickLength: Int, topping: String = "") {
-    let stick1 = "| |"
-    let stick2 = " | | "
+    let stickWithoutTopping = "| |"
+    let stickWithTopping = " | | "
     for _ in 0...stickLength {
         if topping == "" {
-            print(stick1)
+            print(stickWithoutTopping)
         } else {
-            print(stick2)
+            print(stickWithTopping)
         }
     }
 }
     
-func printPepero(stickLength: Int, bodyLength: Int, bodyShape: String, topping: String = "") {
-    print("\n<정보>\n길이: \(bodyLength)\n몸통: \(bodyShape)\n토핑: \(topping)\n막대길이: \(stickLength)")
-    printPeperoBody(bodyLength: bodyLength, bodyShape: bodyShape, topping: topping)
+func printPepero(stickLength: Int, bodyLength: Int, shape: String, topping: String = "") {
+    print("\n<정보>\n길이: \(bodyLength)\n몸통: \(shape)\n토핑: \(topping)\n막대길이: \(stickLength)")
+    printPeperoBody(bodyLength: bodyLength, shape: shape, topping: topping)
     printPeperoStick(stickLength: stickLength, topping: topping)
 }
     
-//printPepero(stickLength: 3, bodyLength: 9, bodyShape: "***")
-//printPepero(stickLength: 3, bodyLength: 11, bodyShape: "***", topping: "&")
-//printPepero(stickLength: 5, bodyLength: 11, bodyShape: "***", topping: "#")
-//printPepero(stickLength: 3, bodyLength: 5, bodyShape: "|0|")
-//printPepero(stickLength: 3, bodyLength: 5, bodyShape: "|0|", topping: "@")
