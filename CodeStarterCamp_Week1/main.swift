@@ -2,33 +2,33 @@
 //  main.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by 박신영 on 2023/07/13.
+//  Created by 박신영 on 2023/07/18.
+//
 
-//Step2: 아이스크림 그리기
 import Foundation
 
-/*
- # 23.07.14 코드리뷰 이후:
- 
- 1️⃣ 순서도 작성: 순서도는 이전에 만들었던 코드를 기준으로 만들었으나, 수정을 거치다가 차마 수정하는 것을 깜빡하였습니다! (이번 commit에 함께 수정하여 올렸어요!)
- 3️⃣ for문 범위 심화, 4️⃣ 함수 네이밍, 5️⃣ 함수 단위: 3가지 사항들 아래에 반영하였습니다!
- */
+func Drawsank_to_Order(length: Int, body: String, topping: String, stickLength: Int) {
+    print("")
+    print("<정보>")
+    print("길이: \(length)")
+    print("몸통: \(body)")
+    print("토핑: \(topping)")
+    print("막대길이: \(stickLength)")
+    print("")
 
-func drawIceCream(bodyColumn: Int, stickColumn: Int) {
-    for _ in 0..<bodyColumn {
-        for _ in 0..<11 {
-            print("*", terminator: "")
+
+    for _ in 0..<length {
+        if topping == "" {
+            print(" "+body)
         }
-        print("")
+        else {
+            print(topping + body + topping)
+        }
     }
-    
-    let space = "    "
-    let stick = "| |"
-    for _ in 0..<stickColumn {
-        print(space, terminator: "")
-        print(stick)
+
+    for _ in 0..<stickLength {
+        print(" | | ")
     }
-    
-    
 }
-drawIceCream(bodyColumn: 8, stickColumn: 4)
+
+Drawsank_to_Order(length: 12, body: "***", topping: "&", stickLength: 4)
