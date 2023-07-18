@@ -7,7 +7,7 @@
 
 import Foundation
 
-func  printPeperoToppingwithBody(bodyShape: String, topping: String = "") {
+func printPeperoToppingwithBody(bodyShape: String, topping: String = "") {
     print("\(topping)\(bodyShape)\(topping)")
 }
 
