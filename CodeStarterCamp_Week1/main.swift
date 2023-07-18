@@ -9,7 +9,7 @@
 import Foundation
 
 func drawCream() {
-    let cream = "***********"
+    let cream: String = "***********"
     
     for _ in 1...8 {
         print(cream)
@@ -17,7 +17,7 @@ func drawCream() {
 }
 
 func drawBar() {
-    let bar = "    | |    "
+    let bar: String = "    | |    "
     
     for _ in 1...4 {
         print(bar)
