@@ -1,12 +1,15 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
-
 import Foundation
 
-print("Hello, World!")
+func drawIceCreamBody(line: Int){
+    for draw in 1...line{
+        print(draw, "  ***********")
+    }
+}
+drawIceCreamBody(line: 8)
 
+func drawIceCreamStick(line: Int){
+    for draw in 1...line{
+    print(draw, "      | |")
+    }
+}
+drawIceCreamStick(line: 4)
