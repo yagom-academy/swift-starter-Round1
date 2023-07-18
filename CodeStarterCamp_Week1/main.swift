@@ -1,12 +1,15 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
-
 import Foundation
 
-print("Hello, World!")
+func drawIceCream(height: Int){
+    for _ in 1...height{
+        print("***********")
+    }
+}
+func drawStick(height: Int){
+    for _ in 1...height{
+        print("    | |    ")
+    }
+}
 
+drawIceCream(height: 10)
+drawStick(height: 4)
