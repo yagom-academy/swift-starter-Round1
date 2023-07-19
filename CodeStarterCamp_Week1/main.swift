@@ -7,24 +7,41 @@
 //
 import Foundation
 
-func printIce1(tiems: Int) {
-    for _ in 0...tiems {
-        for _ in 0...10 {
-            print("*", terminator: "")
-        }
-        print("")
+
+//step3
+
+func printBody(body: String, topping: String = "") {
+    print("\(topping)\(body)\(topping)")
+}
+
+func printLength(length: Int, body: String, topping: String) {
+    for _ in 0..<length {
+        printBody(body: body, topping: topping)
     }
 }
 
-func printIce2(tiems: Int) {
-    for _ in 0...tiems {
-        print("    | |   ")
+func printStick(stickLength: Int) {
+    for _ in 0..<stickLength {
+        print(" | | ")
     }
 }
 
-func printIce() {
-    printIce1(tiems: 7)
-    printIce2(tiems: 3)
+func makePepero(lengthInfo: Int, bodyInfo: String, toppingInfo: String = "", stickInfo: Int) {
+    print("길이 : \(lengthInfo)")
+    print("몸통 : \(bodyInfo)")
+    print("토핑 : \(toppingInfo)")
+    print("막대길이 : \(stickInfo)")
+    print()
+    printLength(length: lengthInfo, body: bodyInfo, topping: toppingInfo)
+    printStick(stickLength: stickInfo)
+    print()
 }
 
-printIce()
+func printPepero() {
+    makePepero(lengthInfo: 10, bodyInfo: " *** ", stickInfo: 4)
+    makePepero(lengthInfo: 12, bodyInfo: "***" ,toppingInfo: "&", stickInfo: 4)
+    makePepero(lengthInfo: 12, bodyInfo: "***",toppingInfo: "#", stickInfo: 6)
+    makePepero(lengthInfo: 6, bodyInfo: " |0| ", stickInfo: 4)
+}
+
+printPepero()
