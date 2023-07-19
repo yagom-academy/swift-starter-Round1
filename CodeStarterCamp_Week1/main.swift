@@ -1,17 +1,5 @@
 import Foundation
 
-func snacksBody(length: Int, body: String, topping: String) {
-    for _ in 1...length {
-        print("\(topping)\(body)\(topping)")
-    }
-}
-
-func snacksStick(length: Int, stick: String) {
-    for _ in 1...length {
-        print("\(stick)")
-    }
-}
-
 print("길이: 10")
 print("몸통: ***")
 print("토핑: ")
