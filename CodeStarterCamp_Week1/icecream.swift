@@ -8,17 +8,17 @@
 
 import Foundation
 
-//func drawIcecream() {
-//    for _ in 1...8 {
-//        print("***********")
-//    }
-//}
-//
-//func drawStick() {
-//    for _ in 1...4 {
-//        print("    ⎮ ⎮    ")
-//    }
-//}
-//
+func drawIcecream() {
+    for _ in 1...8 {
+        print("***********")
+    }
+}
+
+func drawStick() {
+    for _ in 1...4 {
+        print("    ⎮ ⎮    ")
+    }
+}
+
 //drawIcecream()
 //drawStick()
