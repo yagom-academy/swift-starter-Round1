@@ -8,7 +8,10 @@
 
 import Foundation
 
-drawPepero(bodyLength: 10, bodyShape: "***", stickLength: 4)
-drawPepero(bodyLength: 12, bodyShape: "***", topping: "&", stickLength: 4)
-drawPepero(bodyLength: 12, bodyShape: "***", topping: "#", stickLength: 6)
-drawPepero(bodyLength: 6, bodyShape: " |0|", stickLength: 4)
+drawPepero(chocoLength: 10, choco: "***", stickLength: 4)
+drawPepero(chocoLength: 12, choco: "***", topping: "&", stickLength: 4)
+drawPepero(chocoLength: 12, choco: "***", topping: "#", stickLength: 6)
+drawPepero(chocoLength: 6, choco: " |0|", stickLength: 4)
+
+// 나만의 빼빼로
+drawPepero(chocoLength: 4, choco: "*******", topping: "+", stickLength: 2)

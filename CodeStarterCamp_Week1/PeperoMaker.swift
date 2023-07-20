@@ -8,35 +8,51 @@
 
 import Foundation
 
+// 몸통 샘플 너비에 따른 막대 샘플을 그리는 함수
+func drawStickSample(by chocoSample: String) -> String {
+    let stickSample: String
+    let chocoWidth: Int = chocoSample.count
+    let cookie: String = "| |"
+    var leftBlank: String = ""
+    for _ in 1...chocoWidth/2-1 {
+        leftBlank += " "
+    }
+    stickSample = leftBlank + cookie
+    return stickSample
+}
+
 // 길이(Int)에 따른 막대(빼빼로 손잡이)를 그리는 함수
-func drawStick(stickLength length: Int, bodyShape shape: String) {
-    for _ in 1...length{
-        shape.count == 3 ? print(" | |") : print("  | |")
+func drawWholeStick(from stickSample: String, with stickLength: Int) {
+    for _ in 1...stickLength {
+        print(stickSample)
     }
 }
 
-// 몸통(String), 토핑(String)을 매개변수로 받아 토핑과 몸통을 그리는 함수
-func drawBodySample(bodyShape body: String, topping: String) -> String {
-    return topping + body + topping
+// 몸통, 토핑을 매개변수로 받아 토핑과 몸통을 그리는 함수
+func drawChocoSample(from choco: String, with topping: String) -> String {
+    let chocoSample: String = topping + choco + topping
+    return chocoSample
 }
 
 // 길이(Int)에 따라 몸통을 그리는 함수
-func drawBody(bodyLength length: Int, bodyShape shape: String) {
-    for _ in 1...length{
-        print(shape)
+func drawWholeChoco(from chocoSample: String, with chocoLength: Int) {
+    for _ in 1...chocoLength {
+        print(chocoSample)
     }
 }
 
-// 각종 매개변수를 받아 위의 세 메서드를 호출하는 함수
-func drawPepero(bodyLength: Int, bodyShape: String, topping: String = " ", stickLength: Int) {
-    print("<정보>\n",
-          "길이: \(bodyLength)\n",
-          "몸통: \(bodyShape)\n",
-          "토핑: \(topping)\n",
-          "막대길이: \(stickLength)\n", separator: "")
-    
-    let sample: String = drawBodySample(bodyShape: bodyShape, topping: topping)
-    drawBody(bodyLength: bodyLength, bodyShape: sample)
-    drawStick(stickLength: stickLength, bodyShape: bodyShape)
+// 각 매개변수를 받아 위의 4개 메서드를 호출하는 함수
+func drawPepero(chocoLength: Int, choco: String, topping: String = " ", stickLength: Int) {
+    let peperoInfo: String =
+        "<정보>\n" +
+        "길이: \(chocoLength)\n" +
+        "몸통: \(choco)\n" +
+        "토핑: \(topping)\n" +
+        "막대길이: \(stickLength)\n"
+    print(peperoInfo)
+    let chocoSample: String = drawChocoSample(from: choco, with: topping)
+    let stickSample: String = drawStickSample(by: chocoSample)
+    drawWholeChoco(from: chocoSample, with: chocoLength)
+    drawWholeStick(from: stickSample, with: stickLength)
     print("")
 }
