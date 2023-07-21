@@ -8,7 +8,7 @@
 
 import Foundation
 
-// 몸통 샘플 너비에 따른 막대 샘플을 그리는 함수
+// 몸통 샘플 너비에 따른 막대 샘플을 그리는 함수(기능 분리)
 func drawStickSample(by chocoSample: String) -> String {
     let stickSample: String
     let chocoWidth: Int = chocoSample.count
@@ -22,7 +22,8 @@ func drawStickSample(by chocoSample: String) -> String {
 }
 
 // 길이(Int)에 따른 막대(빼빼로 손잡이)를 그리는 함수
-func drawWholeStick(from stickSample: String, with stickLength: Int) {
+func drawWholeStick(refer chocoSample: String, with stickLength: Int) {
+    let stickSample: String = drawStickSample(by: chocoSample)
     for _ in 1...stickLength {
         print(stickSample)
     }
@@ -41,7 +42,7 @@ func drawWholeChoco(from chocoSample: String, with chocoLength: Int) {
     }
 }
 
-// 각 매개변수를 받아 위의 4개 메서드를 호출하는 함수
+// 각 매개변수를 받아 위의 3개 메서드를 호출하는 함수
 func drawPepero(chocoLength: Int, choco: String, topping: String = " ", stickLength: Int) {
     let peperoInfo: String =
         "<정보>\n" +
@@ -51,8 +52,7 @@ func drawPepero(chocoLength: Int, choco: String, topping: String = " ", stickLen
         "막대길이: \(stickLength)\n"
     print(peperoInfo)
     let chocoSample: String = drawChocoSample(from: choco, with: topping)
-    let stickSample: String = drawStickSample(by: chocoSample)
     drawWholeChoco(from: chocoSample, with: chocoLength)
-    drawWholeStick(from: stickSample, with: stickLength)
+    drawWholeStick(refer: chocoSample, with: stickLength)
     print("")
 }
