@@ -8,21 +8,10 @@
 
 import Foundation
 
-func drawCream() {
-    let cream: String = "***********"
-    
-    for _ in 1...8 {
-        print(cream)
-    }
-}
+drawPepero(chocoLength: 10, choco: "***", stickLength: 4)
+drawPepero(chocoLength: 12, choco: "***", topping: "&", stickLength: 4)
+drawPepero(chocoLength: 12, choco: "***", topping: "#", stickLength: 6)
+drawPepero(chocoLength: 6, choco: " |0|", stickLength: 4)
 
-func drawBar() {
-    let bar: String = "    | |    "
-    
-    for _ in 1...4 {
-        print(bar)
-    }
-}
-
-drawCream()
-drawBar()
+// 나만의 빼빼로
+drawPepero(chocoLength: 4, choco: "*******", topping: "+", stickLength: 2)
