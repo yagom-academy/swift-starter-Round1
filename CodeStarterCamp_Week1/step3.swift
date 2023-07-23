@@ -7,24 +7,24 @@
 
 import Foundation
 
-func makeSnacksBody(bodyLength: Int, body: String, topping: String) {
-    for _ in 1...bodyLength {
+func makeSnacksBody(spread: Int, body: String, topping: String) {
+    for _ in 1...spread {
         print("\(topping)\(body)\(topping)")
     }
 }
 
-func makeSnacksStick(stickLength: Int, stick: String) {
-    for _ in 1...stickLength {
-        print("\(stick)")
+func makeSnacksStick(length: Int, shape: String) {
+    for _ in 1...length {
+        print("\(shape)")
     }
 }
 
 
-func printSnacks(bodyLength: Int, body: String, topping: String, stickLength: Int, stick: String) {
-    print("길이: \(bodyLength)")
+func printSnacks(spread: Int, body: String, topping: String, length: Int, shape: String) {
+    print("길이: \(spread)")
     print("몸통: \(body)")
     print("토핑: \(topping)")
-    print("막대길이:\(stickLength)")
-    makeSnacksBody(bodyLength: bodyLength, body: body, topping: topping)
-    makeSnacksStick(stickLength: stickLength, stick: stick )
+    print("막대길이:\(length)")
+    makeSnacksBody(spread: spread, body: body, topping: topping)
+    makeSnacksStick(length: length, shape: shape )
 }
