@@ -1,15 +1,6 @@
 import Foundation
 
-func drawIceCreamBody(line: Int){
-    for draw in 1...line{
-        print(draw, "  ***********")
-    }
-}
-drawIceCreamBody(line: 8)
-
-func drawIceCreamStick(line: Int){
-    for draw in 1...line{
-    print(draw, "      | |")
-    }
-}
-drawIceCreamStick(line: 4)
+printSnacks(spread: 10, body: " ***", topping: "", length: 4, shape: " | |")
+printSnacks(spread: 12, body: "***", topping: "&", length: 4, shape: " | |")
+printSnacks(spread: 12, body: "***", topping: "#", length: 6, shape: " | |")
+printSnacks(spread: 6, body: " |0|", topping: "", length: 4, shape: " | |")
