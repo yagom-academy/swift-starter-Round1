@@ -6,7 +6,7 @@ func drawStick(length: Int) {
         print(" | | ")
     }
 }
-func drawBodyAndTopping(body: String, topping: String) {
+func makeBodyAndTopping(body: String, topping: String) {
      bodyWithTopping = topping + body + topping
 }
 func drawBody(length: Int) {
