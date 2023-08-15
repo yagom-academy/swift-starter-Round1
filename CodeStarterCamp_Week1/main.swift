@@ -8,5 +8,20 @@
 
 import Foundation
 
-print("Hello, World!")
+func myHead(){
+    for i in 1...8{
+        for j in 1...11{
+            print("*",terminator: "")
+        }
+        print()
+    }
+}
+func myBody(){
+    for i in 1...4{
+        print("    |","|",separator: " ")
+    }
+}
 
+
+myHead()
+myBody()
