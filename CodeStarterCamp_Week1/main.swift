@@ -8,7 +8,7 @@
 
 import Foundation
 
-func myHead(){
+func myIceCreamHead(){
     for _ in 1...8{
         for _ in 1...11{
             print("*",terminator: "")
@@ -16,12 +16,11 @@ func myHead(){
         print()
     }
 }
-func myBody(){
+func myIceCreamBody(){
     for _ in 1...4{
         print("    |","|")
     }
 }
 
-
-myHead()
-myBody()
+myIceCreamHead()
+myIceCreamBody()
