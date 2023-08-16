@@ -8,8 +8,6 @@
 
 import Foundation
 
-print("Hello, World!")
-
 print("\nRound 1 STEP 2 - 아이스크림 그리기")
 printIceCream()
 printIceCreamBar()
