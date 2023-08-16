@@ -8,5 +8,29 @@
 
 import Foundation
 
-print("Hello, World!")
+func icecream() {
+    for _ in 1...8{
+        for _ in 1...11{
+            print("*",terminator: "")
+        }
+        print("")
+    }
+}
+
+func bar() {
+    for _ in 1...4{
+        for count in 1...11{
+            if (count != 5 && count != 7){
+                print(" ",terminator: "")
+            }
+            else{
+                print("|",terminator: "")
+            }
+        }
+        print("")
+    }
+}
+
+icecream()
+bar()
 
