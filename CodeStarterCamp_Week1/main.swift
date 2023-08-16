@@ -1,13 +1,17 @@
 import Foundation
 
-func makeIceCream(iceCreamBody: Int, iceCreamBar: Int) {
-    for _ in 1...iceCreamBody {
+func makeIceCreamBody(iceCreamBodySize: Int) {
+    for _ in 1...iceCreamBodySize {
         print("***********")
     }
-    for _ in 1...iceCreamBar {
+}
+
+func makeIceCreamBar(iceCreamBarSize: Int){
+    for _ in 1...iceCreamBarSize {
         print("    | |")
     }
 }
 
-makeIceCream(iceCreamBody: 8, iceCreamBar: 4)
+makeIceCreamBody(iceCreamBodySize: 20)
+makeIceCreamBar(iceCreamBarSize: 5 )
 
