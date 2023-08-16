@@ -13,8 +13,7 @@ func drawingIceCream() {
         for _ in 1...11 {
             print("*", terminator: "")
         }
-        
-        print(separator: "\n")
+        print()
     }
 }
 
