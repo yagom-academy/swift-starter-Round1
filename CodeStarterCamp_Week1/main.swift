@@ -8,6 +8,10 @@
 
 import Foundation
 
-print("\nRound 1 STEP 2 - 아이스크림 그리기")
-printIceCream()
-printIceCreamBar()
+//print("\nRound 1 STEP 2 - 아이스크림 그리기")
+//printIceCream()
+//printIceCreamBar()
+
+print("\nRound 1 STEP 3")
+step3Main()
+

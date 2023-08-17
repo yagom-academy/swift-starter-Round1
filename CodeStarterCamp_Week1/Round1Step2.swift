@@ -21,22 +21,3 @@ func printIceCreamBar() {
     let rowCount = 4
     print(repeatRowString(rowString, count: rowCount))
 }
-
-// MARK: - File Private
-
-// 정해진 문자열을 줄바꿈 포함하여 반복하여 반환하며 마지막은 줄바꿈이 없음
-fileprivate func repeatRowString(_ repeating: String, count: Int) -> String {
-    if count < 1 {
-        return ""
-    }
-
-    var result = ""
-    for rowNumber in 1...count {
-        result += repeating
-        if rowNumber != count {
-            result += "\n"
-        }
-    }
-
-    return result
-}
