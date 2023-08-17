@@ -8,18 +8,17 @@
 
 import Foundation
 
-func drawIcecream() {
-    print("***********")
+func drawIcecream(icecreamCount: Int) {
+    for time in 1...icecreamCount {
+        print("***********")
+    }
 }
 
-func drawStick() {
-    print("    | |    ")
+func drawStick(stickCount: Int) {
+    for time in 1...stickCount {
+        print("    | |    ")
+    }
 }
 
-for icecreamCount in 1...8 {
-    drawIcecream()
-}
-
-for stickCount in 1...4 {
-    drawStick()
-}
+drawIcecream(icecreamCount: 8)
+drawStick(stickCount: 4)
