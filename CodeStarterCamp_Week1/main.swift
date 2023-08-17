@@ -6,12 +6,12 @@ func makeIceCreamBody(length: Int) {
     }
 }
 
-func makeIceCreamBar(barLength: Int){
-    for _ in 1...barLength {
+func makeIceCreamBar(length: Int){
+    for _ in 1...length {
         print("    | |")
     }
 }
 
 makeIceCreamBody(length: 20)
-makeIceCreamBar(barLength: 5 )
+makeIceCreamBar(length: 5 )
 
