@@ -1,12 +1,25 @@
 //
 //  main.swift
-//  CodeStarterCamp_Week1
+//  CodeStarProject
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 유지완 on 2023/08/17.
 //
 
 import Foundation
 
-print("Hello, World!")
+// *** 함수
+func Star(cont: Int){
+    print("***********")
+}
 
+// 막대기 함수
+func Stick(xont: Int){
+    print("    | |")
+}
+
+for cont in 1...7{
+    Star(cont: cont)
+}
+for xont in 1...4{
+    Stick(xont: xont)
+}
