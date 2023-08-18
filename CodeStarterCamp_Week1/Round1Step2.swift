@@ -11,7 +11,7 @@ import Foundation
 func printIceCream() {
     let rowString = String(repeating: "*", count: 11)
     let rowCount = 8
-    print(repeatRowString(rowString, count: rowCount))
+    print(repeatLine(row: rowString, count: rowCount))
 
 }
 
@@ -19,5 +19,5 @@ func printIceCream() {
 func printIceCreamBar() {
     let rowString = "    | |"
     let rowCount = 4
-    print(repeatRowString(rowString, count: rowCount))
+    print(repeatLine(row: rowString, count: rowCount))
 }
