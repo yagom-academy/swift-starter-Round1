@@ -38,7 +38,7 @@ func readInt(message: String) -> Int? {
     return Int(numberString)
 }
 
-// 문자열과 길이를 받아 앞에서 부터 원하는 길이만큼 자르거나, 모자른경우 정해진 값으로 채워 넣어 고정된 글자 길이로 변경
+// 문자열과 길이를 받아 앞에서 부터 원하는 길이만큼 자르거나, 모자른경우 입력 받은 첫번째 글자로 값으로 채워 넣어 필요한 글자 길이로 변경
 func changeLength(at original: String, toLength length: Int) -> String {
     // https://developer.apple.com/documentation/swift/substring
     var result = original
