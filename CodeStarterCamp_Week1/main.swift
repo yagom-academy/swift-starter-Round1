@@ -1,25 +1,29 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
-/*
- 
-func drawIceCream(length: Int) {
-    for _ in 1...length {
-        print("***********")
-    }
+var body: String = "@@@", topping: String = "!", bodyLength: Int = 12, barLength: Int = 3
+
+func showInfo() {
+    print(" <정보> ")
+    print("몸통 : \(body)")
+    print("토핑 : \(topping)")
+    print("몸통 길이 : \(bodyLength)")
+    print("손잡이 길이 : \(barLength)\n")
 }
-func drawBar(length: Int) {
-    for _ in 1...length {
-        print("    | |    ")
+func drawBody() {
+    print("\(topping)\(body)\(topping)")
+}
+
+func drawBar() {
+    for _ in 1...barLength {
+        print(" | | ")
     }
 }
 
-drawIceCream(length: 15)
-drawBar(length: 4)
+func drawFullBody() {
+    for _ in 1...bodyLength {
+        drawBody()
+    }
+}
 
- */
-drawPpeppero(length: 14, body: "&&&", barLength: 3, topping: "*")
+showInfo()
+drawFullBody()
+drawBar()
+
