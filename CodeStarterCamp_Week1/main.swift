@@ -1,6 +1,6 @@
 import Foundation
 
-func IceCream (){
+func IceCream(){
     for _ in 0..<8{
         for _ in 0..<11 {
             print("*",terminator: "") //출력후 마지막에 덧붙힐 ""하여 *끼리 붙여서 출력
@@ -9,7 +9,7 @@ func IceCream (){
     }
 }
 
-func IceCreamBar () {
+func IceCreamBar() {
     for _ in 0..<4{
         print("    ||    ")
     }
