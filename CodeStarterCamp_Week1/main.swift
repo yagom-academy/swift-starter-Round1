@@ -20,7 +20,7 @@ for ic in 1...8{
 func stick() {
     print("    | |    ")
 }
-for sc in 1...3 {
+for sc in 1...4 {
     stick()
 }
 
