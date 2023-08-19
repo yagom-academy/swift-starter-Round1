@@ -8,28 +8,28 @@
 
 import Foundation
 
-func makeIceCream(row: Int, col: Int) {
-    for _ in 1...col {
-        for _ in 1...row {
+func drawIceCream(x: Int, y: Int) {
+    for _ in 1...y {
+        for _ in 1...x {
             print("*", terminator: "")
         }
-        print("")
+        print()
     }
 }
 
-func makeBarSpace(row: Int) {
-    for _ in 0...row/3 {
-    print(" ", terminator: "")
+func drawBarSpace(x: Int) {
+    for _ in 0...x/3 {
+        print(" ", terminator: "")
     }
     
 }
 
-func makeIceCreamBar(row: Int) {
+func drawIceCreamBar(x: Int) {
     for _ in 1...4 {
-        makeBarSpace(row: 11)
-    print("| |")
+        drawBarSpace(x: x)
+        print("| |")
     }
 }
 
-makeIceCream(row: 11, col: 8)
-makeIceCreamBar(row: 11)
+drawIceCream(x: 11, y: 8)
+drawIceCreamBar(x: 11)
