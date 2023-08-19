@@ -12,7 +12,7 @@ import Foundation
 func icecream() {
     print("***********")
 }
-for _ in 0...7{
+for ic in 1...8{
     icecream()
 }
 
@@ -20,7 +20,7 @@ for _ in 0...7{
 func stick() {
     print("    | |    ")
 }
-for _ in 0...2 {
+for sc in 1...3 {
     stick()
 }
 
