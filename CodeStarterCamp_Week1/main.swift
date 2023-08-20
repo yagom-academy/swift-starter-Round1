@@ -1,12 +1,15 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
+func icecreamBody(x: String) -> String {
+    let str = String(repeating: x, count: 11)
+    return str
+}
 
-import Foundation
-
-print("Hello, World!")
-
+for row in 1...12 {
+    if row <= 8 {
+        let result = icecreamBody(x: "*")
+        print(result)
+        // 몸통 부분 그리기
+    } else {
+        print("    | |    ")
+        // 스틱 부분 그리기
+    }
+}
