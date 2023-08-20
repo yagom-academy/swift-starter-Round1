@@ -21,6 +21,13 @@ func myIceCreamBody(){
         print("    |","|")
     }
 }
+//myIceCreamHead()
+//myIceCreamBody()
+oneExample()
+print()
+twoExample()
+print()
+threeExample()
+print()
+fourExample()
 
-myIceCreamHead()
-myIceCreamBody()
