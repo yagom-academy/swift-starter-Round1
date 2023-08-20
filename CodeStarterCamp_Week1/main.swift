@@ -1,21 +1,29 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
+var body: String = "@@@", topping: String = "!", bodyLength: Int = 12, barLength: Int = 3
 
-func drawIceCream(length: Int) {
-    for _ in 1...length {
-        print("***********")
-    }
-} // 아이스크림을 * 11개로 length 만큼 반복 출력
-func drawBar(length: Int) {
-    for _ in 1...length {
-        print("    | |    ")
-    }
-} // 막대기를 length 만큼 반복 출력
+func showInfo() {
+    print(" <정보> ")
+    print("몸통 : \(body)")
+    print("토핑 : \(topping)")
+    print("몸통 길이 : \(bodyLength)")
+    print("손잡이 길이 : \(barLength)\n")
+}
+func drawBody() {
+    print("\(topping)\(body)\(topping)")
+}
 
-drawIceCream(length: 15)
-drawBar(length: 4)
+func drawBar() {
+    for _ in 1...barLength {
+        print(" | | ")
+    }
+}
+
+func drawFullBody() {
+    for _ in 1...bodyLength {
+        drawBody()
+    }
+}
+
+showInfo()
+drawFullBody()
+drawBar()
+
