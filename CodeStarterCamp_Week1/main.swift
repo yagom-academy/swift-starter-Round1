@@ -25,3 +25,12 @@ func drawIceCreamStick() {
 
 drawIceCream()
 drawIceCreamStick()
+
+
+// Pepero.swift
+makePePero(body: " ***", topping: "", bodyLength: 12, stick: " | |", stickLength: 4)
+makePePero(body: "***", topping: "&", bodyLength: 12, stick: " | |", stickLength: 4)
+makePePero(body: "***", topping: "#", bodyLength: 12, stick: " | |", stickLength: 6)
+makePePero(body: " |0|", topping: "", bodyLength: 6, stick: " | |",stickLength: 4)
+makePePero(body: "*0*", topping: "#", bodyLength: 10, stick: " | |", stickLength: 6)
+
