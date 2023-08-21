@@ -6,7 +6,6 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
 
 
 //단 수를 입력하면 아이스크림 부분을 그리는 함수
@@ -29,3 +28,4 @@ func drawBar(length: Int) {
 //아이스크림 그리기
 drawIcecream(layerCount: 8)
 drawBar(length: 4)
+
