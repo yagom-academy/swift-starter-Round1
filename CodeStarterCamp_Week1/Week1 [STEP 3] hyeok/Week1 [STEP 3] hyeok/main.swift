@@ -11,6 +11,10 @@ func makepeperoHandle(length: Int, body: String) {
         for _ in 0..<length {
             print(" |\(handleBlank)|")
         }
+    }else if body.count == 3{
+            for _ in 0..<length {
+                print(" | |")
+        }
     }else if body.count == 2{
         for _ in 0..<length {
             print(" ||")
@@ -22,7 +26,7 @@ func makepeperoHandle(length: Int, body: String) {
     }
 }
 
-func peperoBodyToping(body: String, toping: String = " ") {
+func peperoBodyToping(body: String, toping: String) {
     print("\(toping)\(body)\(toping)")
     
 }
@@ -34,7 +38,7 @@ func bodyLength(length: Int, body: String, toping: String) {
     }
 }
 
-func makepepero(length: Int, body: String, toping: String, handle: Int) {
+func makepepero(length: Int, body: String, toping: String = " ", handle: Int) {
     print("""
           <정보>
           길이: \(length)
@@ -44,8 +48,8 @@ func makepepero(length: Int, body: String, toping: String, handle: Int) {
           
           """)
     bodyLength(length: length , body: body, toping: toping)
-    makepeperoHandle(length: handle,body: body)
+    makepeperoHandle(length: handle, body: body)
     
 }
 
-makepepero(length: 8, body: "*", toping: "&", handle: 4)
+makepepero(length: 10, body: "*****", toping: "&", handle: 4)
