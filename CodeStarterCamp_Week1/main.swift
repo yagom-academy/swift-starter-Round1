@@ -1,21 +1,18 @@
 import Foundation
 
-func IceCream(){
-    for _ in 0..<8{
-        for _ in 0..<11 {
-            print("*",terminator: "") //출력후 마지막에 덧붙힐 ""하여 *끼리 붙여서 출력
-        }
-        print() //*한줄 완성시 줄바꿈
+let iceCreamRow = String(repeating: "*", count: 11)
+
+func drawIceCream() {
+    for _ in 0..<8 {
+        print(iceCreamRow)
     }
 }
 
-func IceCreamBar() {
-    for _ in 0..<4{
+func drawIceCreamBar() {
+    for _ in 0..<4 {
         print("    ||    ")
     }
 }
 
-IceCream()
-IceCreamBar()
-
-
+drawIceCream()
+drawIceCreamBar()
