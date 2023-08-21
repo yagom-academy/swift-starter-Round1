@@ -7,19 +7,17 @@
 
 import Foundation
 
-// *** 함수
-func Star(cont: Int){
-    print("***********")
+func createStar(){
+    for _ in 1...8{
+        print("***********")
+    }
 }
 
-// 막대기 함수
-func Stick(xont: Int){
-    print("    | |")
+func creatStick(){
+    for _ in 1...4{
+        print("    | |")
+    }
 }
 
-for cont in 1...7{
-    Star(cont: cont)
-}
-for xont in 1...4{
-    Stick(xont: xont)
-}
+createStar()
+creatStick()
