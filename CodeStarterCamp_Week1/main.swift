@@ -1,12 +1,18 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
-
 import Foundation
 
-print("Hello, World!")
+let iceCreamRow = String(repeating: "*", count: 11)
 
+func drawIceCream() {
+    for _ in 0..<8 {
+        print(iceCreamRow)
+    }
+}
+
+func drawIceCreamBar() {
+    for _ in 0..<4 {
+        print("    ||    ")
+    }
+}
+
+drawIceCream()
+drawIceCreamBar()
