@@ -9,13 +9,13 @@
 import Foundation
 
 func drawIcecream(icecreamCount: Int) {
-    for time in 1...icecreamCount {
+    for _ in 1...icecreamCount {
         print("***********")
     }
 }
 
 func drawStick(stickCount: Int) {
-    for time in 1...stickCount {
+    for _ in 1...stickCount {
         print("    | |    ")
     }
 }
