@@ -20,7 +20,7 @@ func drawIcecream(layerCount: Int) {
 //1. 중괄호 컨벤션 지키기 2. 축약어 nope
 func drawBar(barLength: Int) {
     for _ in 1...barLength {
-        print("| |")
+        print(" | | ")
     }
 }
 
