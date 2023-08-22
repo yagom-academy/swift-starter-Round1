@@ -8,8 +8,8 @@
 import Foundation
 
 
-//몸통과 토핑 나타내기
-func plusBodyAndTopping(body: String, topping: String = " ") -> String {
+//몸통과 토핑 합치기
+func add(body: String, with topping: String = " ") -> String {
     return topping + body + topping
 }
 
@@ -32,7 +32,7 @@ func drawFullPepero(body: String, barLength: Int, bodyLength: Int, topping: Stri
     """
     )
     
-    let row: String = plusBodyAndTopping(body: body, topping: topping)
+    let row: String = add(body: body, with: topping)
     drawBody(row: row, bodyLength: bodyLength)
     drawBar(barLength: barLength)
     print("\n")
