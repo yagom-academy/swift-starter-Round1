@@ -7,39 +7,34 @@
 
 import Foundation
 
-func bbeberoHead(headShape : String, lengthHead : Int){
-        for _ in 1...lengthHead{
-            print(" \(headShape)")
-    }
+//WEEK1 STEP 3 함수
+func drawOneLineBody(bodyShape: String, hasTopping: String? = " ")->String{
+    return "\(hasTopping!)\(bodyShape)\(hasTopping!)"
 }
-func bbebberoLength(bodyShape : String, bodyLength : Int){
+func drawBodyLength(bodyLength: Int, with oneLineBody: String){
     for _ in 1...bodyLength{
-        print(" \(bodyShape)",bodyShape)
+        print(oneLineBody)
     }
 }
-func drawBodyLength(bodyLength : Int,bodyShape : String, hasTopping : String? = ""){
-    for _ in 1...bodyLength{
-        print("\(hasTopping!)", bodyShape,"\(hasTopping!)",separator: "")
-    }
-}
-func drawStick( stickLength : Int ){
+func drawStick(stickLength : Int){
     for _ in 1...stickLength{
         print(" |","|")
     }
 }
+
 func oneExample(){
-    drawBodyLength(bodyLength: 12,bodyShape: " ***")
+    drawBodyLength(bodyLength: 10, with: oneLineBody)
     drawStick(stickLength: 4)
 }
 func twoExample(){
-    drawBodyLength(bodyLength: 12, bodyShape: "***",hasTopping: "&")
+    drawBodyLength(bodyLength: 12, with: oneLineBody)
     drawStick(stickLength: 4)
 }
 func threeExample(){
-    drawBodyLength(bodyLength: 12, bodyShape: "***",hasTopping: "#")
+    drawBodyLength(bodyLength: 12, with: oneLineBody)
     drawStick(stickLength: 6)
 }
 func fourExample(){
-    drawBodyLength(bodyLength: 12, bodyShape: " |0|")
+    drawBodyLength(bodyLength: 6, with: oneLineBody)
     drawStick(stickLength: 4)
 }
