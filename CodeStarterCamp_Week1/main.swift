@@ -8,5 +8,23 @@
 
 import Foundation
 
-print("Hello, World!")
+func printIceBar(rows: Int) {
+    for _ in 1...rows {
+        var star = ""
+        for _ in 1...11 {
+            star = star + "*"
+            //star += "*"
+        }
+        print(star)
+    }
+}
 
+func printIceStick() {
+    let bar = "    | |    "
+    for _ in 1...4 {
+        print(bar)
+    }
+}
+
+printIceBar(rows: 8)
+printIceStick()
