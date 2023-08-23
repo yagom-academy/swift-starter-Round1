@@ -8,25 +8,58 @@
 
 import Foundation
 
-let height = 8
+// Execution example 1
 
-func makeIceCreamBody(){
-    for _ in 0..<height{
-        for _ in 0..<11{
-            print("*", terminator: "")
-        }
-        print()
-    }
-}
+var bodyLengthValue = 10
+var bodyValue = "***"
+var toppingValue = " "
+var barLengthValue = 4
 
-func makeIceCreamBar(){
-    for _ in 0..<4{
-        for _ in 0..<4{
-            print(" ", terminator: "")
-        }
-        print("| |")
-    }
-}
+// TODO 0. 정보 출력하기
+print("<정보>\n길이: \(bodyLengthValue)\n몸통:  \(bodyValue)\n토핑: \(toppingValue)\n막대길이: \(barLengthValue)\n")
 
-makeIceCreamBody()
-makeIceCreamBar()
+makeWholePepero(bodyLength: bodyLengthValue, body: bodyValue, topping: toppingValue, barLength: barLengthValue)
+
+print("\n===== Example 1 =====\n")
+
+
+// Execution example 2
+
+bodyLengthValue = 12
+bodyValue = "***"
+toppingValue = "&"
+barLengthValue = 4
+
+print("<정보>\n길이: \(bodyLengthValue)\n몸통:  \(bodyValue)\n토핑: \(toppingValue)\n막대길이: \(barLengthValue)\n")
+
+makeWholePepero(bodyLength: bodyLengthValue, body: bodyValue, topping: toppingValue, barLength: barLengthValue)
+
+print("\n===== Example 2 =====\n")
+
+
+// Execution example 3
+
+bodyLengthValue = 12
+bodyValue = "***"
+toppingValue = "#"
+barLengthValue = 6
+
+print("<정보>\n길이: \(bodyLengthValue)\n몸통:  \(bodyValue)\n토핑: \(toppingValue)\n막대길이: \(barLengthValue)\n")
+
+makeWholePepero(bodyLength: bodyLengthValue, body: bodyValue, topping: toppingValue, barLength: barLengthValue)
+
+print("\n===== Example 3 =====\n")
+
+
+// Execution example 4
+
+bodyLengthValue = 6
+bodyValue = "|0|"
+toppingValue = " "
+barLengthValue = 4
+
+print("<정보>\n길이: \(bodyLengthValue)\n몸통:  \(bodyValue)\n토핑: \(toppingValue)\n막대길이: \(barLengthValue)\n")
+
+makeWholePepero(bodyLength: bodyLengthValue, body: bodyValue, topping: toppingValue, barLength: barLengthValue)
+
+print("\n===== Example 4 =====\n")
