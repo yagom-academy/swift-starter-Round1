@@ -8,19 +8,20 @@
 
 import Foundation
 
-print("Hello, World!")
 
-func printIceBar(x: Int) {
-    let star = String(repeating:"*", count: x)
-    for _ in 1...8 {
+func printIceBar(rows: Int) {
+    let star = String(repeating:"*", count: 11)
+    
+    for _ in 1...rows {
         print(star)
     }
 }
 func printIceStick() {
     let bar = "    | |    "
+    
     for _ in 1...4 {
         print(bar)
     }
 }
-printIceBar(x: 11)
+printIceBar(rows: 8)
 printIceStick()
