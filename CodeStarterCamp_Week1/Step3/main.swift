@@ -2,7 +2,6 @@
 
 import Foundation
 
-
 func createPeperoBodyPart(body: String, topping: String) -> String {
         let bodyPart = topping+body+topping
         return bodyPart
@@ -40,7 +39,7 @@ var topping = " "
 createPepero(barLength: barLength, peperoLength: peperoLength, body: body, topping: topping)
 
 print("")
-print("-------------------------")
+print("----------------------")
 print("")
 
 print("< 2번 빼빼로 정보 >")
@@ -57,7 +56,7 @@ topping = "&"
 createPepero(barLength: barLength, peperoLength: peperoLength, body: body, topping: topping)
 
 print("")
-print("-------------------------")
+print("----------------------")
 print("")
 
 print("< 3번 빼빼로 정보 >")
@@ -74,7 +73,7 @@ topping = "#"
 createPepero(barLength: barLength, peperoLength: peperoLength, body: body, topping: topping)
 
 print("")
-print("-------------------------")
+print("----------------------")
 print("")
 
 print("< 4번 빼빼로 정보 >")
