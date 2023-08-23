@@ -8,5 +8,5 @@
 
 import Foundation
 
-print("Hello, World!")
-
+let maker = IceCreamMaker()
+maker.makeIceCream()
