@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 func printIceBar(rows: Int) {
     for _ in 1...rows {
         var star = ""
