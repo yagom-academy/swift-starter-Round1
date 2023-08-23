@@ -18,15 +18,14 @@ func printIceBar(rows: Int) {
         }
         print(star)
     }
-    
 }
 
 func printIceStick() {
     let bar = "    | |    "
+    
     for _ in 1...4 {
         print(bar)
     }
 }
-
 printIceBar(rows: 8)
 printIceStick()
