@@ -31,15 +31,15 @@ printBar()
 // printPepero.swift
 
 // 실행 예시 1 (일반 빼빼로 1)
-printPepero(length: Int(10), body: "***", topping: " ", barLength: Int(4))
+peperoMain(length: 10, body: "***", barLength: 4)
 
 // 실행 예시 2 (일반 빼빼로 2)
-printPepero(length: Int(12), body: "***", topping: "&", barLength: Int(4))
+peperoMain(length: 12, body: "***", topping: "&", barLength: 4)
 
 // 실행 예시 3 (일반 빼빼로 3)
-printPepero(length: Int(12), body: "***", topping: "#", barLength: Int(6))
+peperoMain(length: 12, body: "***", topping: "#", barLength: 6)
 
 // 실행 예시 4 (누드 빼빼로)
-printPepero(length: Int(6), body: "|0|", topping: " ", barLength: Int(4))
+peperoMain(length: 6, body: "|0|", barLength: 4)
 
 
