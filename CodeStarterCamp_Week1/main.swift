@@ -23,19 +23,18 @@ import Foundation
 //}
 //myIceCreamHead()
 //myIceCreamBody()
+func drawIceCream(inputBodyLength : Int, inputBodyShape : String, hasTopping : String, inputStickLength : Int, stickSpacingString: String){
+    let body = drawOneLineBody(bodyShape: inputBodyShape, hasTopping: hasTopping)
+    drawBodyLength(bodyLength: inputBodyLength, with: body)
+    drawStick(stickLength: inputStickLength,spacingString: stickSpacingString)
+}
 
-var oneLineBody : String = drawOneLineBody(bodyShape: "***")
-oneExample()
+drawIceCream(inputBodyLength: 12, inputBodyShape: " ***", hasTopping: "", inputStickLength: 6, stickSpacingString: "")
 print()
-
-oneLineBody = drawOneLineBody(bodyShape: "***",hasTopping: "&")
-twoExample()
+drawIceCream(inputBodyLength: 10, inputBodyShape: "***", hasTopping: "&", inputStickLength: 6, stickSpacingString: "")
 print()
-
-oneLineBody = drawOneLineBody(bodyShape: "***",hasTopping: "#")
-threeExample()
+drawIceCream(inputBodyLength: 12, inputBodyShape: "***", hasTopping: "#", inputStickLength: 6, stickSpacingString: "")
 print()
-
-oneLineBody = drawOneLineBody(bodyShape: "|0|")
-fourExample()
-
+drawIceCream(inputBodyLength: 12, inputBodyShape: " |0|", hasTopping: "", inputStickLength: 6, stickSpacingString: "")
+// Body의 길이가 변한다면 stickSpacingString으로 빈칸을 삽입할 수 있다.
+drawIceCream(inputBodyLength: 12, inputBodyShape: "*****", hasTopping: "@", inputStickLength: 6, stickSpacingString: " ")
