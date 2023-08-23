@@ -23,10 +23,10 @@ import Foundation
 //}
 //myIceCreamHead()
 //myIceCreamBody()
-func drawIceCream(inputBodyLength : Int, inputBodyShape : String, hasTopping : String, inputStickLength : Int, stickSpacingString: String){
+func drawIceCream(inputBodyLength: Int, inputBodyShape: String, hasTopping: String, inputStickLength: Int, stickSpacingString: String){
     let body = drawOneLineBody(bodyShape: inputBodyShape, hasTopping: hasTopping)
     drawBodyLength(bodyLength: inputBodyLength, with: body)
-    drawStick(stickLength: inputStickLength,spacingString: stickSpacingString)
+    drawStick(stickLength: inputStickLength, spacingString: stickSpacingString)
 }
 
 drawIceCream(inputBodyLength: 12, inputBodyShape: " ***", hasTopping: "", inputStickLength: 6, stickSpacingString: "")
