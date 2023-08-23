@@ -3,13 +3,13 @@ import Foundation
 orderAndDraw()
 
 //길이(Int)에 따른 막대(빼빼로 손잡이)를 그리는 함수
-func drawPeperoStick(_ stickHeight: Int, _ peperoRow: String) {
-    let peperoRowLen: Int = peperoRow.count
+func drawPeperoStick(ofPeperoRow peperoRow: String, byStickHeight stickHeight: Int) {
+    let peperoRowLength: Int = peperoRow.count
     var stick: String = " | |"
-    let midIndex = Int(peperoRowLen / 2)
+    let midIndex = Int(peperoRowLength / 2)
     let index = stick.firstIndex(of: "|")
 
-    if peperoRowLen > 5 {
+    if peperoRowLength > 5 {
         for _ in 1 ..< midIndex - 1 {
             stick.insert(contentsOf: " ", at: index!)
         }
@@ -21,15 +21,15 @@ func drawPeperoStick(_ stickHeight: Int, _ peperoRow: String) {
 }
 
 //몸통(String), 토핑(String)을 매개변수로 받아 토핑과 몸통을 그리는 함수
-func makePeperoRow(_ peperoBody: String, _ topping: String) -> String {
+func makePeperoRow(withPeperoBody peperoBody: String, withTopping topping: String) -> String {
     let PeperoRow = String(format: "%@%@%@", arguments: [topping, peperoBody, topping])
     return PeperoRow
 }
 
 //길이(Int)에 따라 몸통을 그리는 함수
-func drawPeperoBody(_ peperoBody: String, _ peperoBodyHeight: Int) {
+func drawPeperoBody(ofpeperoRow peperoRow: String, bypeperoBodyHeight peperoBodyHeight: Int) {
     for _ in 1...peperoBodyHeight {
-        print(peperoBody)
+        print(peperoRow)
     }
 }
 
@@ -51,9 +51,9 @@ func orderAndDraw() {
     let stickHeight : Int = Int(readLine()!)!
     print()
     
-    let peperoRow = topping.isEmpty ? makePeperoRow(peperoBody, " ") : makePeperoRow(peperoBody, topping)
+    let peperoRow = topping.isEmpty ? makePeperoRow(withPeperoBody: peperoBody, withTopping: " ") : makePeperoRow(withPeperoBody: peperoBody, withTopping: topping)
     
-    drawPeperoBody(peperoRow, peperoBodyHeight)
-    drawPeperoStick(stickHeight, peperoRow)
+    drawPeperoBody(ofpeperoRow: peperoRow, bypeperoBodyHeight: peperoBodyHeight)
+    drawPeperoStick(ofPeperoRow: peperoRow, byStickHeight: stickHeight)
 
 }
