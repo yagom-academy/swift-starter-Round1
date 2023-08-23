@@ -18,7 +18,7 @@ var barLengthValue = 4
 // TODO 0. 정보 출력하기
 print("<정보>\n길이: \(bodyLengthValue)\n몸통:  \(bodyValue)\n토핑: \(toppingValue)\n막대길이: \(barLengthValue)\n")
 
-makeWholePepero(bodyLength: bodyLengthValue, body: bodyValue, topping: toppingValue, barLength: barLengthValue)
+drawWholePepero(bodyLength: bodyLengthValue, body: bodyValue, topping: toppingValue, barLength: barLengthValue)
 
 print("\n===== Example 1 =====\n")
 
@@ -32,7 +32,7 @@ barLengthValue = 4
 
 print("<정보>\n길이: \(bodyLengthValue)\n몸통:  \(bodyValue)\n토핑: \(toppingValue)\n막대길이: \(barLengthValue)\n")
 
-makeWholePepero(bodyLength: bodyLengthValue, body: bodyValue, topping: toppingValue, barLength: barLengthValue)
+drawWholePepero(bodyLength: bodyLengthValue, body: bodyValue, topping: toppingValue, barLength: barLengthValue)
 
 print("\n===== Example 2 =====\n")
 
@@ -46,7 +46,7 @@ barLengthValue = 6
 
 print("<정보>\n길이: \(bodyLengthValue)\n몸통:  \(bodyValue)\n토핑: \(toppingValue)\n막대길이: \(barLengthValue)\n")
 
-makeWholePepero(bodyLength: bodyLengthValue, body: bodyValue, topping: toppingValue, barLength: barLengthValue)
+drawWholePepero(bodyLength: bodyLengthValue, body: bodyValue, topping: toppingValue, barLength: barLengthValue)
 
 print("\n===== Example 3 =====\n")
 
@@ -60,6 +60,6 @@ barLengthValue = 4
 
 print("<정보>\n길이: \(bodyLengthValue)\n몸통:  \(bodyValue)\n토핑: \(toppingValue)\n막대길이: \(barLengthValue)\n")
 
-makeWholePepero(bodyLength: bodyLengthValue, body: bodyValue, topping: toppingValue, barLength: barLengthValue)
+drawWholePepero(bodyLength: bodyLengthValue, body: bodyValue, topping: toppingValue, barLength: barLengthValue)
 
 print("\n===== Example 4 =====\n")
