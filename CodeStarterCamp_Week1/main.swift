@@ -28,18 +28,14 @@ printBar()
  */
 
 // Week1 [STEP 3]
-// printPepero.swift
+// pepero.swift
 
-// 실행 예시 1 (일반 빼빼로 1)
-peperoMain(length: 10, body: "***", barLength: 4)
+drawPeperoBlueprint(length: 10, body: "***", stickLength: 4)
 
-// 실행 예시 2 (일반 빼빼로 2)
-peperoMain(length: 12, body: "***", topping: "&", barLength: 4)
+drawPeperoBlueprint(length: 12, body: "***", topping: "&", stickLength: 4)
 
-// 실행 예시 3 (일반 빼빼로 3)
-peperoMain(length: 12, body: "***", topping: "#", barLength: 6)
+drawPeperoBlueprint(length: 12, body: "***", topping: "#", stickLength: 6)
 
-// 실행 예시 4 (누드 빼빼로)
-peperoMain(length: 6, body: "|0|", barLength: 4)
+drawPeperoBlueprint(length: 6, body: "|0|", stickLength: 4)
 
 
