@@ -1,23 +1,24 @@
 //
-//  main.swift
+//  ice.swift
 //  CodeStarProject
 //
-//  Created by 유지완 on 2023/08/17.
+//  Created by 유지완 on 2023/08/24.
 //
 
 import Foundation
 
-func createStar(){
+
+func createBodyIceCream(){
     for _ in 1...8{
         print("***********")
     }
 }
-
-func creatStick(){
+func createStick(){
     for _ in 1...4{
         print("    | |")
     }
 }
 
-createStar()
-creatStick()
+createBodyIceCream()
+createStick()
+
