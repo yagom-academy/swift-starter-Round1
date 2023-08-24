@@ -8,20 +8,10 @@
 
 import Foundation
 
-// Week1 [STEP 2]
-// 아이스크림 부분을 그리는 함수
-func printIceCream() {
-    for _ in 1...8 {
-        print("***********")
-    }
-}
-// 막대기(손잡이) 부분을 그리는 함수
-func printBar() {
-    for _ in 1...4 {
-        print("    | |")
-    }
-}
+drawPeperoBlueprint(length: 10, body: "***", stickLength: 4)
 
-// 아이스크림, 막대기 함수 호출
-printIceCream()
-printBar()
+drawPeperoBlueprint(length: 12, body: "***", topping: "&", stickLength: 4)
+
+drawPeperoBlueprint(length: 12, body: "***", topping: "#", stickLength: 6)
+
+drawPeperoBlueprint(length: 6, body: "|0|", stickLength: 4)
