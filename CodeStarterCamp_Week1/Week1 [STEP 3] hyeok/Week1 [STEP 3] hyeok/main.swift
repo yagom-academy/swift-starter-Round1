@@ -1,55 +1,43 @@
 import Foundation
 
-
-func makepeperoHandle(length: Int, body: String) {
-    let handleExtent = 3
-    var handleBlank = " "
-    if body.count >= 4 {
-        for _ in 0..<body.count - handleExtent{
-            handleBlank += " "
-        }
-        for _ in 0..<length {
-            print(" |\(handleBlank)|")
-        }
-    }else if body.count == 3{
-            for _ in 0..<length {
-                print(" | |")
-        }
-    }else if body.count == 2{
-        for _ in 0..<length {
-            print(" ||")
-        }
-    }else if body.count == 1{
-        for _ in 0..<length {
-            print("| |")
+func makePeperoStick(stickLength: Int, body: String) {
+    var peperoStick = " | |"
+    if body.count > 3 {
+        for _ in 0..<body.count - 3 {
+            peperoStick.insert(" ", at: peperoStick.index(peperoStick.startIndex, offsetBy: 3))
         }
     }
+    for _ in 0..<stickLength {
+        print(peperoStick)
+    }
 }
+    
 
-func peperoBodyToping(body: String, toping: String) {
-    print("\(toping)\(body)\(toping)")
+func connectBodyTopping(body: String, topping: String) {
+    print("\(topping)\(body)\(topping)")
     
 }
 
-func bodyLength(length: Int, body: String, toping: String) {
-    for _ in 0..<length {
-        peperoBodyToping(body: body, toping: toping)
+func makePeperoBody(bodyLength: Int, body: String, topping: String) {
+    for _ in 0..<bodyLength {
+        connectBodyTopping(body: body, topping: topping)
 
     }
 }
 
-func makepepero(length: Int, body: String, toping: String = " ", handle: Int) {
+func makePepero(bodyLength: Int, body: String, topping: String = " ", stickLength: Int) {
     print("""
           <정보>
-          길이: \(length)
-          몸통: \(toping)\(body)\(toping)
-          토핑: \(toping)
-          막대길이: \(handle)
+          길이: \(bodyLength)
+          몸통: \(topping)\(body)\(topping)
+          토핑: \(topping)
+          막대길이: \(stickLength)
           
           """)
-    bodyLength(length: length , body: body, toping: toping)
-    makepeperoHandle(length: handle, body: body)
+    makePeperoBody(bodyLength: bodyLength , body: body, topping: topping)
+    makePeperoStick(stickLength: stickLength, body: body)
     
 }
 
-makepepero(length: 10, body: "*****", toping: "&", handle: 4)
+makePepero(bodyLength: 10, body: "*****", topping: "&", stickLength: 4)
+
