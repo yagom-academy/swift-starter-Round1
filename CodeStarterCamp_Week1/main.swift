@@ -42,8 +42,8 @@ func drawPepero(bodyLength: Int, stickLength: Int, bodyShape: String, toppingSha
     drawStick(length: stickLength)
 }
 
-drawPepero(bodyLength: 10, stickLength: 4, bodyShape: "***", toppingShape: "") // 실행 예시 1
-drawPepero(bodyLength: 12, stickLength: 4, bodyShape: "***", toppingShape: "&") // 실행 예시 2
-drawPepero(bodyLength: 12, stickLength: 6, bodyShape: "***", toppingShape: "#") // 실행 예시 3
-drawPepero(bodyLength: 6, stickLength: 4, bodyShape: "|0|", toppingShape: "") // 실행 예시 4
-drawPepero(bodyLength: 7, stickLength: 3, bodyShape: "***", toppingShape: "$") // 나만의 빼빼로
+drawPepero(bodyLength: 10, stickLength: 4, bodyShape: "***", toppingShape: "")
+drawPepero(bodyLength: 12, stickLength: 4, bodyShape: "***", toppingShape: "&")
+drawPepero(bodyLength: 12, stickLength: 6, bodyShape: "***", toppingShape: "#")
+drawPepero(bodyLength: 6, stickLength: 4, bodyShape: "|0|", toppingShape: "")
+drawPepero(bodyLength: 7, stickLength: 3, bodyShape: "***", toppingShape: "$")
