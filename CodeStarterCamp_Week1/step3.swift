@@ -18,9 +18,11 @@ func drawStick(length: Int) {
 }
 
 func setBodyandTopping(body: String, topping: String) -> String {
-    let bodyStr = topping + body + topping
-    let body = String(format: "%5@", bodyStr)
-    return body
+    var bodyStr = topping + body + topping
+    if bodyStr.count <= 3 {
+        bodyStr = " " + bodyStr
+    }
+    return bodyStr
 }
 
 func setBodyLength(length: Int, bodyPattern: String) {
