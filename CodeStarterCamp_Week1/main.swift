@@ -8,21 +8,18 @@
 
 import Foundation
 
-//print("Hello, World!")
-
-func iceCream(){
+func iceCreamBody() {
     for _ in 1...8{
         print("***********")
     }
 
 }
 
-func bar(){
-
+func iceCreamBar() {
     for _ in 1...4{
         print("    | |")
     }
 }
 
-iceCream()
-bar()
+iceCreamBody()
+iceCreamBar()
