@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  icecream.swift
 //  CodeStarterCamp_Week1
 //
 //  Created by yagom.

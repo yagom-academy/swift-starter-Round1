@@ -1,77 +1,61 @@
 //
 //  main.swift
-//  Pepero
+//  CodeStarterCamp_Week1
 //
-//  Created by RammerSon on 2023/08/23.
+//  Created by yagom.
+//  Copyright © yagom academy. All rights reserved.
 //
 
 import Foundation
 
-func drawPepero(length: Int, topping: String) {
-    for _ in 1...length {
-        drawPeperoLine(topping: topping)
+func drawBody(bodyLength: Int, body: String, topping: String) {
+    for _ in 1...bodyLength {
+        drawBodyLine(body: body, topping: topping)
     }
 }
 
-func drawPeperoLine(topping: String){
+func drawBodyLine(body: String, topping: String){
     print(topping, terminator: "")
-    print("*", terminator: "")
-    print("*", terminator: "")
-    print("*", terminator: "")
+    print(body, terminator: "")
     print(topping)
 }
 
-func drawNudePepero(length: Int) {
-    for _ in 1...length {
-        drawNudePeperoLine()
+func drawBottom(bottomLength: Int, body: String, topping: String) {
+    for _ in 1...bottomLength {
+        drawBottomLine(body: body, topping: topping)
     }
 }
 
-func drawNudePeperoLine() {
-    print(" ", terminator: "")
-    print("|", terminator: "")
-    print("0", terminator: "")
-    print("|", terminator: "")
-    print()
-}
-
-
-func drawBottom(length: Int) {
-    for _ in 1...length {
-        drawBottomLine()
+func drawBottomLine(body: String, topping: String) {
+    for _ in 1...(body.count + topping.count)/2-1 {
+       print(" ", terminator: "")
     }
-}
-
-func drawBottomLine() {
-    print(" ", terminator: "")
-    print("|", terminator: "")
-    print(" ", terminator: "")
-    print("|", terminator: "")
+    print("| |", terminator: "")
     print(" ")
 }
 
+func drawPepero(bodyLength: Int, body: String, topping: String, bottomLength: Int) {
+    drawBody(bodyLength: bodyLength, body: body, topping: topping)
+    drawBottom(bottomLength: bottomLength, body: body, topping: topping)
+}
+
 //일반빼빼로
-drawPepero(length: 10, topping: " ")
-drawBottom(length: 4)
+drawPepero(bodyLength: 10, body: "**********", topping: " ", bottomLength: 4)
 print()
 
 //&빼빼로
-drawPepero(length: 12, topping: "&")
-drawBottom(length: 4)
+drawPepero(bodyLength: 12, body: "***", topping: "&", bottomLength: 4)
 print()
 
 //#빼빼로
-drawPepero(length: 12, topping: "#")
-drawBottom(length: 6)
+drawPepero(bodyLength: 12, body: "***", topping: "#", bottomLength: 6)
 print()
 
 //누드빼빼로
-drawNudePepero(length: 6)
-drawBottom(length: 4)
+drawPepero(bodyLength: 12, body: "|0|", topping: " ", bottomLength: 4)
 print()
 
 //커스텀빼빼로
-drawPepero(length: 12, topping: "W")
-drawBottom(length: 4)
+drawPepero(bodyLength: 12, body: "***", topping: "W", bottomLength: 4)
 print()
 
