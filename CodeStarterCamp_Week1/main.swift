@@ -5,16 +5,17 @@
 //  Created by yagom.
 //  Copyright © yagom academy. All rights reserved.
 //
-func cream () {
-    print("***********")
+import Foundation
+func makeCream () {
+    for _ in 1...8 {
+        print("***********")
+    }
 }
-for _ in 1...8 {
-    cream()
+func makeStick() {
+    for _ in 1...4 {
+        print("    | |    ")
+    }
 }
-func stick() {
-    print("    | |    ")
-    
-}
-for _ in 1...4 {
-    stick()
-}
+makeCream()
+makeStick()
+
