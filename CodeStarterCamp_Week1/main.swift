@@ -11,7 +11,7 @@ import Foundation
 // 실행 예시1
 func createBodyPepero1(length: Int = 10, body: String = "***"){
     for _ in 1...length{
-        print(" \(body)")
+        print("\(body)")
     }
 }
 
@@ -32,26 +32,26 @@ func createBodyPepero3(length: Int = 12, body: String = "***",topping : String =
 // 실행 예시4
 func createBodyPepero4(length: Int = 6, body: String = "|0|"){
     for _ in 1...length{
-        print(" \(body)")
+        print("\(body)")
     }
 }
 
 // 실행 예시1 출력
 print("=exampleOne=")
 createBodyPepero1()
-createBodyStick(StickBody: 4)
+createBodyStick(stickBody: 4, stickWidth: 2)
 
 // 실행 예시2 출력
 print("=exampleTwo=")
 createBodyPepero2()
-createBodyStick(StickBody: 4)
+createBodyStick(stickBody: 4, stickWidth: 6)
 
 // 실행 예시3 출력
 print("=exampleThree=")
 createBodyPepero3()
-createBodyStick(StickBody: 6)
+createBodyStick(stickBody: 6, stickWidth: 6)
 
 // 실행 예시4 출력
 print("=exampleFour=")
 createBodyPepero4()
-createBodyStick(StickBody: 4)
+createBodyStick(stickBody: 4, stickWidth: 2)
