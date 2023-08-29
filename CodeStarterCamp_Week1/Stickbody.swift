@@ -8,16 +8,12 @@
 import Foundation
 
 
-// 막대길이 4
-func createBodyStick4(stickbody : Int = 4){
-    for _ in 1...stickbody{
+
+func createBodyStick(StickBody : Int ){
+    for _ in 1...StickBody{
         print(" | |")
     }
 }
 
-// 막대길이 6
-func createBodyStick6(stickbody : Int = 6){
-    for _ in 1...stickbody{
-        print(" | |")
-    }
-}
+
+

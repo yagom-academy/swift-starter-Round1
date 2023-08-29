@@ -39,19 +39,19 @@ func createBodyPepero4(length: Int = 6, body: String = "|0|"){
 // 실행 예시1 출력
 print("=exampleOne=")
 createBodyPepero1()
-createBodyStick4()
+createBodyStick(StickBody: 4)
 
 // 실행 예시2 출력
 print("=exampleTwo=")
 createBodyPepero2()
-createBodyStick4()
+createBodyStick(StickBody: 4)
 
 // 실행 예시3 출력
 print("=exampleThree=")
 createBodyPepero3()
-createBodyStick6()
+createBodyStick(StickBody: 6)
 
 // 실행 예시4 출력
 print("=exampleFour=")
 createBodyPepero4()
-createBodyStick4()
+createBodyStick(StickBody: 4)
