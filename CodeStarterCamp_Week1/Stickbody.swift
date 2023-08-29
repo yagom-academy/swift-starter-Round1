@@ -9,11 +9,14 @@ import Foundation
 
 
 
-func createBodyStick(StickBody : Int ){
-    for _ in 1...StickBody{
-        print(" | |")
+func createBodyStick(stickBody : Int, stickWidth : Int ){
+    for _ in 1...stickBody{
+        let spaces = String(repeating: " ", count: (stickWidth - 3) / 2)
+        print(spaces+"| |"+spaces)
     }
 }
+
+
 
 
 
