@@ -1,9 +1,8 @@
 //
-//  main.swift
+//  step2.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 이승연 on 2023/08/29.
 //
 
 import Foundation
@@ -21,5 +20,5 @@ func iceCreamBarMaking() {
     }
 }
 
-iceCreamBodyMaking()
-iceCreamBarMaking()
+//iceCreamBodyMaking()
+//iceCreamBarMaking()
