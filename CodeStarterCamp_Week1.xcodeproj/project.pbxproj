@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A1823B82A9C984500D740F2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1823B72A9C984500D740F2 /* main.swift */; };
+		7A1823B82A9C984500D740F2 /* step3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1823B72A9C984500D740F2 /* step3.swift */; };
+		7A1823BC2A9DD45000D740F2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1823BB2A9DD45000D740F2 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +26,8 @@
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* step2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step2.swift; sourceTree = "<group>"; };
-		7A1823B72A9C984500D740F2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7A1823B72A9C984500D740F2 /* step3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step3.swift; sourceTree = "<group>"; };
+		7A1823BB2A9DD45000D740F2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				34811DAE274B938F00A1E994 /* step2.swift */,
-				7A1823B72A9C984500D740F2 /* main.swift */,
+				7A1823B72A9C984500D740F2 /* step3.swift */,
+				7A1823BB2A9DD45000D740F2 /* main.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -121,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A1823B82A9C984500D740F2 /* main.swift in Sources */,
+				7A1823BC2A9DD45000D740F2 /* main.swift in Sources */,
+				7A1823B82A9C984500D740F2 /* step3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
