@@ -1,12 +1,10 @@
 //
-//  pepero.swift
 //  CodeStarterCamp_Week1
 //
 //  Created by Camilla S. Park on 2023/08/30.
 //
 
 import Foundation
-
 
 
 func printPeperoToppingwithBody(bodyShape: String, topping: String = "") {
