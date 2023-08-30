@@ -13,18 +13,18 @@ func barMaking(barLength: Int) {
     }
 }
 
-func bodyMaking(peperoBody: String, peperoTopping: String) {
-    print(peperoTopping, peperoBody, peperoTopping,separator: "")
+func bodyMaking(body: String, topping: String) {
+    print(topping, body, topping,separator: "")
 }
 
-func bodyLenghtMaking(peperoLength: Int, peperoBody: String, peperoTopping: String) {
-    for _ in 1...peperoLength {
-        bodyMaking(peperoBody: peperoBody, peperoTopping: peperoTopping)
+func bodyLenghtMaking(length: Int, body: String, topping: String) {
+    for _ in 1...length {
+        bodyMaking(body: body, topping: topping)
     }
 }
 
-func peperoMaking (peperoLength:Int, peperoBody:String, peperoTopping:String, barLength:Int) {
-    bodyLenghtMaking(peperoLength: peperoLength, peperoBody: peperoBody, peperoTopping: peperoTopping)
+func peperoMaking(length: Int, body: String, topping: String, barLength:Int) {
+    bodyLenghtMaking(length: length, body: body, topping: topping)
     barMaking(barLength: barLength)
 }
 
