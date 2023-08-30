@@ -2,30 +2,44 @@
 //  main.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by 콩지.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by 콩지 on 2023/08/30.
 //
+
 import Foundation
 
-func drawIcecream() {
-    for _ in 1...11 {
-        print("*", terminator: "")
+func drawStick(stick: Int) {
+    for _ in 1...stick {
+        print(" | |")
+        print("", terminator: "\n")
     }
-    print("", terminator: "\n") 
 }
 
-func drawIcebar() {
-    for _ in 1...4 {
-        print(" ", terminator: "")
+
+func drawPepero(pepero: String, topping: String) {
+    print(topping + pepero + topping)
+}
+
+
+func makePepero() {
+    print("길이: ", terminator: "")
+    let length = Int(readLine()!)!
+    
+    print("몸통: ", terminator: "")
+    guard let pepero = readLine() else {
+        return
     }
-    print("| |")
-    print("", terminator: "\n")
+    
+    print("토핑: ", terminator: "")
+    let topping = readLine()
+    
+    print("막대길이: ", terminator: "")
+    let stick = Int(readLine()!)!
+    
+    for _ in 1...length {
+        let actualTopping = topping ?? " " 
+        drawPepero(pepero: pepero, topping: actualTopping)
+    }
+    drawStick(stick: stick)
 }
 
-for _ in 1...8 {
-    drawIcecream()
-}
-
-for _ in 1...4 {
-    drawIcebar()
-}
+makePepero()
