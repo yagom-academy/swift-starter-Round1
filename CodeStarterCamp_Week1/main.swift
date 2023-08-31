@@ -8,19 +8,19 @@
 import Foundation
 
 
-func createBodyPepero1(length: Int = 10, body: String = "***"){
+func createBodyPepero1(length: Int, body: String){
     for _ in 1...length{
         print("\(body)")
     }
 }
 
-func createBodyPepero2(length: Int = 12, body: String = "***",topping : String = "&"){
+func createBodyPepero2(length: Int, body: String,topping : String){
     for _ in 1...length{
         print("\(topping)\(body)\(topping)")
     }
 }
 
-func createBodyPepero3(length: Int = 12, body: String = "***",topping : String = "#"){
+func createBodyPepero3(length: Int, body: String, topping : String){
     for _ in 1...length{
         print("\(topping)\(body)\(topping)")
     }
@@ -29,20 +29,20 @@ func createBodyPepero3(length: Int = 12, body: String = "***",topping : String =
 
 // 실행 예시1 출력
 print("=exampleOne=")
-createBodyPepero1()
+createBodyPepero1(length: 10, body: "***")
 createPeperoStick(stickBody: 4, stickWidth: 2)
 
 // 실행 예시2 출력
 print("=exampleTwo=")
-createBodyPepero2()
+createBodyPepero2(length: 12, body: "***", topping: "&")
 createPeperoStick(stickBody: 4, stickWidth: 6)
 
 // 실행 예시3 출력
 print("=exampleThree=")
-createBodyPepero3()
+createBodyPepero3(length: 12, body: "***", topping: "#")
 createPeperoStick(stickBody: 6, stickWidth: 6)
 
 // 실행 예시4 출력
 print("=exampleFour=")
-createBodyPepero1(body: "|0|")
+createBodyPepero1(length: 10, body: "|0|")
 createPeperoStick(stickBody: 4, stickWidth: 2)
