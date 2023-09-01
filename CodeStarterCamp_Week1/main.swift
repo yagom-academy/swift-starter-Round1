@@ -10,7 +10,6 @@ import Foundation
 func drawStick(stick: Int) {
     for _ in 1...stick {
         print(" | |")
-        print("", terminator: "\n")
     }
 }
 
@@ -20,7 +19,7 @@ func drawPepero(pepero: String, topping: String) {
 }
 
 
-func makePepero() {
+func orderPepero() {
     print("길이: ", terminator: "")
     let length = Int(readLine()!)!
     
@@ -33,13 +32,18 @@ func makePepero() {
     let topping = readLine()
     
     print("막대길이: ", terminator: "")
-    let stick = Int(readLine()!)!
-    
-    for _ in 1...length {
-        let actualTopping = topping ?? " " 
-        drawPepero(pepero: pepero, topping: actualTopping)
+    if let stickNum = readLine(), let stickLength = Int(stickNum) {
+        for _ in 1...length {
+            let actualTopping = topping ?? " "
+            drawPepero(pepero: pepero, topping: actualTopping)
+        }
+        drawStick(stick: stickLength)
+    } else {
+        print("올바른 숫자를 입력하세요.")
     }
-    drawStick(stick: stick)
 }
+    orderPepero()
 
-makePepero()
+
+
+
