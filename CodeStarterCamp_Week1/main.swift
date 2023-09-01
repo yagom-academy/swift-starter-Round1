@@ -26,23 +26,23 @@ func drawPeperoWithTopping(bodyLength: Int, peperoBody: String, topping: String)
         print(topping + peperoBody + topping)
     }
 }
-// 실행 예시 1
+
 printPeperoInfo(bodyLength: 10, peperoBody: "***", topping: " ", stickLength: 4)
 drawPeperoWithTopping(bodyLength: 10, peperoBody: "***", topping: " ")
 drawPeperoStick(stickLength: 4)
-// 실행 예시 2
+
 printPeperoInfo(bodyLength: 12, peperoBody: "***", topping: "&", stickLength: 4)
 drawPeperoWithTopping(bodyLength: 12, peperoBody: "***", topping: "&")
 drawPeperoStick(stickLength: 4)
-// 실행 예시 3
+
 printPeperoInfo(bodyLength: 12, peperoBody: "***", topping: "#", stickLength: 6)
 drawPeperoWithTopping(bodyLength: 12, peperoBody: "***", topping: "#")
 drawPeperoStick(stickLength: 6)
-// 실행 예시 4
+
 printPeperoInfo(bodyLength: 6, peperoBody: "|0|", topping: " ", stickLength: 4)
 drawPeperoWithTopping(bodyLength: 6, peperoBody: "|0|", topping: " ")
 drawPeperoStick(stickLength: 4)
-// 임의 예시
+
 printPeperoInfo(bodyLength: 10, peperoBody: "***", topping: "s", stickLength: 5)
 drawPeperoWithTopping(bodyLength: 10, peperoBody: "***", topping: "s")
 drawPeperoStick(stickLength: 5)
