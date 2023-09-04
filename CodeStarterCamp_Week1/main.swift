@@ -9,8 +9,8 @@
 import Foundation
 
 func drawHard(x : Int, y: Int){
-    for yCount in 1...y {
-        for xCount in 1...x{
+    for _ in 1...y {
+        for _ in 1...x {
             print("*",terminator: "")
         }
         print("")
@@ -18,21 +18,20 @@ func drawHard(x : Int, y: Int){
 }
 
 func drawBar(x : Int, y:Int){
-    for yCount in 1...y/2{
-        for xCount in 1...(x-3)/2{
+    let barWidth = 3
+    let side = 2
+    let emptyWidth = (x-barWidth)/side
+    for _ in 1...y {
+        for _ in 1...emptyWidth{
             print(" ",terminator:"")
         }
         print("| |",terminator:"")
-        for count in 1...(x-3)/2{
-            print(" ", terminator: "")
-        }
         print("")
     }
-    
 }
 
-drawHard(x: 11, y: 10)
-drawBar(x: 11, y: 10)
+drawHard(x: 11, y: 8)
+drawBar(x: 11, y: 4)
 
 
 
