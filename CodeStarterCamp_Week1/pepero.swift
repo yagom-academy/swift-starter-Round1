@@ -13,7 +13,6 @@ func drawPeperoShape(peperoBody : String, peperoTopping :String) -> String {
 }
 
 func drawPeperoBody(peperoBodyLength : Int, peperoShape : String) {
-    
     for _ in 1...peperoBodyLength {
         print(peperoShape)
     }
