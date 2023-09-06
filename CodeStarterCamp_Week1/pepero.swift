@@ -24,7 +24,7 @@ func drawPeperoBar(peperoBarLength : Int) {
     }
 }
 
-func drawPepero(peperoBodyLength : Int, peperoBody : String , peperoTopping : String, peperoBarLength : Int) {
+func drawPepero(peperoBodyLength : Int, peperoBody : String = "***", peperoTopping : String = " ", peperoBarLength : Int) {
     let peperoShape = drawPeperoShape(peperoBody: peperoBody, peperoTopping: peperoTopping)
     print("<정보>")
     print("길이: \(peperoBodyLength)")
