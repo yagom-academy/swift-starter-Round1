@@ -8,30 +8,12 @@
 
 import Foundation
 
-func drawHard(x : Int, y: Int){
-    for _ in 1...y {
-        for _ in 1...x {
-            print("*",terminator: "")
-        }
-        print("")
-    }
-}
+//drawHard(x: 11, y: 8)
+//drawBar(x: 11, y: 4)
 
-func drawBar(x : Int, y:Int){
-    let barWidth = 3
-    let side = 2
-    let emptyWidth = (x-barWidth)/side
-    for _ in 1...y {
-        for _ in 1...emptyWidth{
-            print(" ",terminator:"")
-        }
-        print("| |",terminator:"")
-        print("")
-    }
-}
-
-drawHard(x: 11, y: 8)
-drawBar(x: 11, y: 4)
-
-
+drawPepero(peperoBodyLength: 12, peperoBody: "***", peperoTopping: "#", peperoBarLength: 6)
+drawPepero(peperoBodyLength: 12, peperoBody: "***", peperoTopping: "&", peperoBarLength: 4)
+drawPepero(peperoBodyLength: 10, peperoBarLength: 6)
+drawPepero(peperoBodyLength: 6, peperoBody: "|0|", peperoBarLength: 4)
+drawPepero(peperoBodyLength: 6, peperoBody: "000", peperoBarLength: 6)
 
