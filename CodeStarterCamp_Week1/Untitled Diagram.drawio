@@ -1,0 +1,78 @@
+<mxfile host="app.diagrams.net" modified="2023-09-27T04:50:35.612Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="ZmEMzdgR50VejVsDKGHT" version="21.8.2" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1306" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vQqRaT7oNBATYiPyKbp9-0" target="vQqRaT7oNBATYiPyKbp9-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-0" value="makePepero(길이, 몸통, 막대길이, 토핑)&lt;br&gt;함수 호출" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="30" y="230" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vQqRaT7oNBATYiPyKbp9-2" target="vQqRaT7oNBATYiPyKbp9-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-2" value="&amp;lt;정보&amp;gt;&lt;br&gt;길이: 12&lt;br&gt;몸통 : ***&lt;br&gt;토핑 : #&lt;br&gt;막대길이:: 6&lt;br&gt;&lt;br&gt;출력" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="30" y="340" width="270" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vQqRaT7oNBATYiPyKbp9-4" target="vQqRaT7oNBATYiPyKbp9-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-4" value="시작" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="105" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vQqRaT7oNBATYiPyKbp9-5" target="vQqRaT7oNBATYiPyKbp9-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-5" value="길이 : 12&lt;br&gt;몸통: ***&lt;br&gt;토핑 : #&lt;br&gt;막대길이 : 6" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="105" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-8" value="몸통을 만드는&lt;br&gt;makePeperoBody&lt;br&gt;함수 호출" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="30" y="525" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vQqRaT7oNBATYiPyKbp9-10" target="vQqRaT7oNBATYiPyKbp9-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="540" />
+              <mxPoint x="360" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-10" value="몸통 cell을 만드는&lt;br&gt;makePeperoSingleBody&lt;br&gt;함수 호출" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="475" y="520" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vQqRaT7oNBATYiPyKbp9-12" target="vQqRaT7oNBATYiPyKbp9-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-12" value="길이(12) 만큼&lt;br&gt;singleBody(#***#) 출력" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="30" y="658" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.006;entryY=0.59;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vQqRaT7oNBATYiPyKbp9-8" target="vQqRaT7oNBATYiPyKbp9-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-17" value="몸통 cell 반환(singleBody)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="311" y="518" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.498;entryY=-0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vQqRaT7oNBATYiPyKbp9-8" target="vQqRaT7oNBATYiPyKbp9-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vQqRaT7oNBATYiPyKbp9-19" target="vQqRaT7oNBATYiPyKbp9-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-19" value="막대를 만드는&lt;br&gt;makePeperoHnad&lt;br&gt;함수 호출" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="30" y="798" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vQqRaT7oNBATYiPyKbp9-21" target="vQqRaT7oNBATYiPyKbp9-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-21" value="막대길이(6) 만큼&lt;br&gt;&quot; | |&quot;&lt;br&gt;출력" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="30" y="938" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vQqRaT7oNBATYiPyKbp9-23" value="끝" style="ellipse;whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="80" y="1068" width="170" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
