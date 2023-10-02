@@ -1,12 +1,10 @@
 
-// drawing ice cream
 func drawIceCream(sizeIceCream: Int) {
     for _ in 1...sizeIceCream {
         print("***********")
     }
 }
 
-// drawing ice cream holder
 func drawHolder(sizeHolder: Int) {
     for _ in 1...sizeHolder {
         print("    | |    ")
