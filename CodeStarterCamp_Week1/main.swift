@@ -8,5 +8,17 @@
 
 import Foundation
 
-print("Hello, World!")
+createIceCream()
+createStick()
 
+func createIceCream(iceCreamIndex: Int = 8) {
+	for _ in 0..<iceCreamIndex {
+		print("***********")
+	}
+}
+
+func createStick(stickIndex: Int = 4) {
+	for _ in 0..<stickIndex {
+		print("    | |")
+	}
+}
