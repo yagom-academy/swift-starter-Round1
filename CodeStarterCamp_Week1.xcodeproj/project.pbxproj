@@ -23,6 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A342C542AC86EA30062DA4A /* iceCream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iceCream.png; sourceTree = "<group>"; };
+		0A342C562AC86F3F0062DA4A /* stick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stick.png; path = ../../../../Desktop/stick.png; sourceTree = "<group>"; };
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +40,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A342C532AC86E7F0062DA4A /* flowchart */ = {
+			isa = PBXGroup;
+			children = (
+				0A342C542AC86EA30062DA4A /* iceCream.png */,
+				0A342C562AC86F3F0062DA4A /* stick.png */,
+			);
+			path = flowchart;
+			sourceTree = "<group>";
+		};
 		34811DA2274B938F00A1E994 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +68,7 @@
 		34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {
 			isa = PBXGroup;
 			children = (
+				0A342C532AC86E7F0062DA4A /* flowchart */,
 				34811DAE274B938F00A1E994 /* main.swift */,
 			);
 			path = CodeStarterCamp_Week1;
