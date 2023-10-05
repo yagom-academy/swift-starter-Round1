@@ -14,7 +14,7 @@ func makeIcecream(width: Int, height: Int, shape: String) {
     }
 }
 
-func makeStick(height: Int,shape: String) {
+func makeStick(height: Int, shape: String) {
     for _ in 1...height {
         print(String("    \(shape) \(shape)"))
     }
