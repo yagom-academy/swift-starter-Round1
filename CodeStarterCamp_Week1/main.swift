@@ -8,8 +8,6 @@
 
 import Foundation
 
-var count: Int
-
 func bodyPrint(maxCount: Int)
 {
     for _ in 1...6 {
