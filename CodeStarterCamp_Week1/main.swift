@@ -1,16 +1,2 @@
-
-func drawIceCream(sizeIceCream: Int) {
-    for _ in 1...sizeIceCream {
-        print("***********")
-    }
-}
-
-func drawHolder(sizeHolder: Int) {
-    for _ in 1...sizeHolder {
-        print("    | |    ")
-    }
-}
-
-// 사용자가 원하는 아이스크림과 홀더 사이즈 설정
-drawIceCream(sizeIceCream: 8)
-drawHolder(sizeHolder: 4)
+// Week1 STEP3 - 주문에 따른 빼빼로 그리기
+drawPepero(peperoLength: 10, body: "|0|", holderLength: 4, topping: "#")

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
+		7F0271742ACF9BAF008E3AD7 /* drawPepero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0271732ACF9BAF008E3AD7 /* drawPepero.swift */; };
+		7FA654192ACED66300AF98E1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA654172ACED5B600AF98E1 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
-		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		34811DAE274B938F00A1E994 /* drawIceCream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawIceCream.swift; sourceTree = "<group>"; };
+		7F0271732ACF9BAF008E3AD7 /* drawPepero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawPepero.swift; sourceTree = "<group>"; };
+		7FA654172ACED5B600AF98E1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {
 			isa = PBXGroup;
 			children = (
-				34811DAE274B938F00A1E994 /* main.swift */,
+				34811DAE274B938F00A1E994 /* drawIceCream.swift */,
+				7FA654172ACED5B600AF98E1 /* main.swift */,
+				7F0271732ACF9BAF008E3AD7 /* drawPepero.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -119,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34811DAF274B938F00A1E994 /* main.swift in Sources */,
+				7F0271742ACF9BAF008E3AD7 /* drawPepero.swift in Sources */,
+				7FA654192ACED66300AF98E1 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
