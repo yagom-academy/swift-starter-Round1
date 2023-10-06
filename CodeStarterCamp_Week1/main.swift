@@ -15,8 +15,8 @@ func printIce() {
 }
 
 func printStick() {
-    for count in 1...4 {
-        print("   | |")
+    for _ in 0..<4 {
+        print("    | |")
     }
 }
 
