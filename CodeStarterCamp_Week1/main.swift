@@ -8,19 +8,19 @@
 
 import Foundation
 
-func bodyPrint(maxCount: Int)
+func drawBody(maxCount: Int)
 {
-    for _ in 1...6 {
+    for _ in 1...maxCount {
         print("***********")
     }
 }
 
-func polePrint(maxCount: Int)
+func drawPole(maxCount: Int)
 {
-    for _ in 1...4 {
+    for _ in 1...maxCount {
         print("    | |    ")
     }
 }
 
-bodyPrint(maxCount: 8)
-polePrint(maxCount: 4)
+drawBody(maxCount: 8)
+drawPole(maxCount: 4)
