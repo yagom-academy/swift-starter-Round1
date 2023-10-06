@@ -13,17 +13,17 @@ func drawHolder(length: Int) {
     }
 }
 
-func choiceBodyAndTopping(body: String, topping: String) -> String {
+func fetchBodyAndTopping(body: String, topping: String) -> String {
     return topping + body + topping
 }
 
-func drawBody(body: String, length: Int) {
+func drawBody(bodyWithToppings: String, length: Int) {
     for _ in 1...length {
-        print(body)
+        print(bodyWithToppings)
     }
 }
 
-func drawPepero(holderLength: Int, body: String, topping: String = " ", peperoLength: Int) {
+func drawPepero(peperoLength: Int, body: String, holderLength: Int, topping: String = " ") {
     print("""
     <정보>
     길이: \(peperoLength)
@@ -32,6 +32,8 @@ func drawPepero(holderLength: Int, body: String, topping: String = " ", peperoLe
     막대길이: \(holderLength)
     
     """)
-    drawBody(body: choiceBodyAndTopping(body: body, topping: topping), length: peperoLength)
+    
+    let bodyWithToppings = fetchBodyAndTopping(body: body, topping: topping)
+    drawBody(bodyWithToppings: bodyWithToppings, length: peperoLength)
     drawHolder(length: holderLength)
 }
