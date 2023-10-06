@@ -8,5 +8,18 @@
 
 import Foundation
 
-print("Hello, Lucie!")
+func printIce() {
+    for count in 1...8 {
+        print("**********")
+    }
+}
+
+func printStick() {
+    for count in 1...4 {
+        print("   | |")
+    }
+}
+
+printIce()
+printStick()
 
