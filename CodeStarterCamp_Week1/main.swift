@@ -9,8 +9,8 @@
 import Foundation
 
 func printIce() {
-    for count in 1...8 {
-        print("**********")
+    for _ in 0..<8 {
+        print("***********")
     }
 }
 
