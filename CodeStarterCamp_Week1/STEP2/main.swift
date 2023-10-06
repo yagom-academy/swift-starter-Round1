@@ -8,7 +8,7 @@
 import Foundation
 
 
-func ice(col: Int, row: Int)
+func ice(col: Int, row: Int)            //아이스크림 생성 함수
 {
     var fcol: Int = 0, frow: Int = 0
 
@@ -25,9 +25,16 @@ func ice(col: Int, row: Int)
     }
 }
 
-func stick(row: Int, stick: Int)
+
+func stick(row: Int, stick: Int)            //막대 생성 함수
 {
-    let space: Int = row/2 - 2
+
+    var space: Int = row/2 - 2
+    
+    if row % 2 == 1
+    {
+        space += 1
+    }
     
     for _ in 1 ... stick
     {
@@ -35,15 +42,18 @@ func stick(row: Int, stick: Int)
         {
             print(" ", terminator: "")
         }
-        print("|  |")
+        print("| |")
     }
 }
 
-print("아이스크림의 세로길이를 입력해주세요 : ", terminator: "")
+
+print("아이스크림의 세로길이를 입력해주세요 : ", terminator: "")             //아이스크림 세로 길이 입력받기
 var icecol = Int(readLine()!)!
-print("아이스크림의 가로 길이를 입력해주세요 : ", terminator: "")
+
+print("아이스크림의 가로 길이를 입력해주세요 : ", terminator: "")            //아이스크림 가로 길이 입력받기
 var icerow = Int(readLine()!)!
-print("아이스크림 막대 길이를 입력해주세요 : ", terminator: "")
+
+print("아이스크림 막대 길이를 입력해주세요 : ", terminator: "")             //막대 길이 입력받기
 var icestick = Int(readLine()!)!
 
 
