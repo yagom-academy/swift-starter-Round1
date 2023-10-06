@@ -8,5 +8,19 @@
 
 import Foundation
 
-print("Hello, World!")
+func drawBody(maxCount: Int)
+{
+    for _ in 1...maxCount {
+        print("***********")
+    }
+}
 
+func drawPole(maxCount: Int)
+{
+    for _ in 1...maxCount {
+        print("    | |    ")
+    }
+}
+
+drawBody(maxCount: 8)
+drawPole(maxCount: 4)
