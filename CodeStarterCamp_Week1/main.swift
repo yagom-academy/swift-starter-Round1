@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 func printIce() {
     for _ in 0..<8 {
         print("***********")
