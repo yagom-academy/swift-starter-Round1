@@ -8,19 +8,20 @@
 
 import Foundation
 
-func drawBody(maxCount: Int)
-{
-    for _ in 1...maxCount {
-        print("***********")
-    }
-}
+print("####### ORDER ########")
+print("How long body do you want: ", terminator: "")
+var inputLen = readLine()
+let inputBodyLen = Int(inputLen!)
+print("Which body do you want: ", terminator: "")
+let inputBody = readLine()
+print("Which topping do you want: ", terminator: "")
+let inputTopping = readLine()
+print("How long bar do you want: ", terminator: "")
+inputLen = readLine()
+let inputBarLen = Int(inputLen!)
 
-func drawPole(maxCount: Int)
-{
-    for _ in 1...maxCount {
-        print("    | |    ")
-    }
-}
 
-drawBody(maxCount: 8)
-drawPole(maxCount: 4)
+printMenu()
+defineMenu(bodyMenu: inputBody!, topingMenu: inputTopping!)
+drawBody(maxCount: inputBodyLen!)
+drawPole(maxCount: inputBarLen!)
