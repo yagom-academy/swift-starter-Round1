@@ -57,6 +57,7 @@
 		34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {
 			isa = PBXGroup;
 			children = (
+				6CE2D1652AD1DAEA008D310F /* STEP3 */,
 				6CC49C022AD01F5A002565D7 /* STEP2 */,
 			);
 			path = CodeStarterCamp_Week1;
@@ -68,6 +69,13 @@
 				34811DAE274B938F00A1E994 /* main.swift */,
 			);
 			path = STEP2;
+			sourceTree = "<group>";
+		};
+		6CE2D1652AD1DAEA008D310F /* STEP3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = STEP3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

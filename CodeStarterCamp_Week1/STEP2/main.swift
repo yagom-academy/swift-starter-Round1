@@ -8,9 +8,21 @@
 import Foundation
 
 
-func ice(col: Int, row: Int)            //아이스크림 생성 함수
+func convertReadLine() -> Int
 {
-    var fcol: Int = 0, frow: Int = 0
+    var done = 0
+    
+    if let before = readLine(),
+       let after = Int(before)
+    {
+        done = after
+    }
+    return done
+}
+
+
+func drawIce(col: Int, row: Int)
+{
 
     
     for _ in 1 ... col
@@ -18,27 +30,25 @@ func ice(col: Int, row: Int)            //아이스크림 생성 함수
         for _ in 1 ... row
         {
             print("*", terminator: "")
-            frow += 1
         }
         print("")
-        fcol += 1
     }
 }
 
 
-func stick(row: Int, stick: Int)            //막대 생성 함수
+func drawStick(row: Int, stick: Int)
 {
 
-    var space: Int = row/2 - 2
+    var typeSpace = row/2 - 2
     
     if row % 2 == 1
     {
-        space += 1
+        typeSpace += 1
     }
     
     for _ in 1 ... stick
     {
-        for _ in 1 ... space
+        for _ in 1 ... typeSpace
         {
             print(" ", terminator: "")
         }
@@ -47,15 +57,15 @@ func stick(row: Int, stick: Int)            //막대 생성 함수
 }
 
 
-print("아이스크림의 세로길이를 입력해주세요 : ", terminator: "")             //아이스크림 세로 길이 입력받기
-var icecol = Int(readLine()!)!
+print("아이스크림의 세로길이를 입력해주세요 : ", terminator: "")
+let iceCol = convertReadLine()
 
-print("아이스크림의 가로 길이를 입력해주세요 : ", terminator: "")            //아이스크림 가로 길이 입력받기
-var icerow = Int(readLine()!)!
+print("아이스크림의 가로 길이를 입력해주세요 : ", terminator: "")
+let iceRow = convertReadLine()
 
-print("아이스크림 막대 길이를 입력해주세요 : ", terminator: "")             //막대 길이 입력받기
-var icestick = Int(readLine()!)!
+print("아이스크림 막대 길이를 입력해주세요 : ", terminator: "")
+let iceStick = convertReadLine()
 
 
-ice(col: icecol, row: icerow)
-stick(row: icerow, stick: icestick)
+drawIce(col: iceCol, row: iceRow)
+drawStick(row: iceRow, stick: iceStick)
