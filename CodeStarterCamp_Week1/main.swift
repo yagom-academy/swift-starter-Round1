@@ -6,7 +6,17 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
+func makeIcecream() {
+    for _ in 1...8 {
+        print ("***********")
+    }
+}
 
-print("Hello, World!")
+func makeIcecreamBar() {
+    for _ in 1...4 {
+        print ("    | |    ")
+    }
+}
 
+makeIcecream()
+makeIcecreamBar()
