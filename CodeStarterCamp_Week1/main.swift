@@ -8,6 +8,8 @@
 
 import Foundation
 
+//MARK: - STEP 2
+
 createIceCream()
 createStick()
 
@@ -22,3 +24,18 @@ func createStick(stickIndex: Int = 4) {
 		print("    | |")
 	}
 }
+
+//MARK: - STEP 3
+
+print()
+print("makePepero1")
+createPepero(bodyCount: 10, bodyElement: "***", stickCount: 6)
+print()
+print("makePepero2")
+createPepero(bodyCount: 12, bodyElement: "***", stickCount: 4, toppingElement: "&")
+print()
+print("makePepero3")
+createPepero(bodyCount: 12, bodyElement: "***", stickCount: 6, toppingElement: "#")
+print()
+print("makePepero4")
+createPepero(bodyCount: 6, bodyElement: "|0|", stickCount: 4)
