@@ -1,39 +1,31 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
-//
-//import Foundation
-//
-//print("Hello, World!")
-
-func iceCream(width: Int, height: Int) {
-    for _ in 1...height{
-        for _ in 1...width{
+func icecream(width: Int, height: Int) {
+    for _ in 1...height {
+        for _ in 1...width {
             print("*",terminator:"")
         }
-        print("")
+        print()
     }
 }
 
 
 
-func iceStick(stickHeight: Int) {
-    for _ in 1...stickHeight{
+func icecreamStick(height: Int) {
+    for _ in 1...height {
         print("    | |")
     }
 }
 
 
 
-var i_width: Int = 11
-var i_height: Int = 8
-var i_stickHeight: Int = 4
+var icecream_width: Int = 11
+var icrecream_height: Int = 8
+var icecreamStick_height: Int = 4
 
 
-iceCream(width: i_width, height: i_height)
-iceStick(stickHeight: i_stickHeight)
+//print("값 변경 후 출력")
+//icecream_width = 13
+//icrecream_height = 10
+//icecreamStick_height = 4
+icecream(width: icecream_width, height: icrecream_height)
+icecreamStick(height: icecreamStick_height)
 
