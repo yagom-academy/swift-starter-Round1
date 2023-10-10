@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04D558DA2AD5790C00D63CB8 /* paparo */ = {isa = PBXFileReference; lastKnownFileType = folder; name = paparo; path = CodeStarterCamp_Week1/paparo; sourceTree = "<group>"; };
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +42,7 @@
 		34811DA2274B938F00A1E994 = {
 			isa = PBXGroup;
 			children = (
+				04D558DA2AD5790C00D63CB8 /* paparo */,
 				34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */,
 				34811DAC274B938F00A1E994 /* Products */,
 			);
