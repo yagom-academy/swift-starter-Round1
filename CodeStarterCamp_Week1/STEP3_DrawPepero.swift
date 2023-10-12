@@ -5,27 +5,29 @@
 //  Created by podo on 2023/10/10.
 //
 
-import Foundation
-
-func drawStick(stickLength: Int) {
-    for _ in 1...stickLength {
+func drawStick(length: Int) {
+    for _ in 1...length {
         print(" | |")
     }
 }
 
-func drawBodyWithTopping(bodyLength: Int, body: String, topping: String) {
-    for _ in 1...bodyLength {
+func drawBodyWithTopping(body: String, topping: String) {
         print("\(topping)\(body)\(topping)")
+    }
+
+func reapeatBodyWithTopping(length: Int, body: String, topping: String) {
+    for _ in 1...length {
+        drawBodyWithTopping(body: body, topping: topping)
     }
 }
 
-func printPepero(bodyLength: Int, body: String, topping: String, stickLength: Int) {
+func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int) {
     print("<정보>")
     print("길이: \(bodyLength)")
     print("몸통: \(body)")
     print("토핑: \(topping)")
     print("막대길이: \(stickLength)")
-    print("")
-    drawBodyWithTopping(bodyLength: bodyLength, body: body, topping: topping)
-    drawStick(stickLength: stickLength)
+    print()
+    reapeatBodyWithTopping(length: bodyLength, body: body, topping: topping)
+    drawStick(length: stickLength)
 }

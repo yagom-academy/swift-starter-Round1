@@ -5,8 +5,6 @@
 //  Created by Me on 2023/10/11.
 //
 
-import Foundation
-
 func makeIcecream(width: Int, height: Int, shape: String) {
     for _ in 1...height {
         print(String(repeating: shape, count: width))
