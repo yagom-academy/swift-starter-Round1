@@ -45,7 +45,7 @@ struct Paparo {
 
 
 
-var myPaparo : Paparo = Paparo(length:10, body:"|0|", barLength:4, toping:"#")
+var myPaparo: Paparo = Paparo(length: 10, body: "|0|", barLength: 4, toping: "#")
 
 myPaparo.showInfo()
 myPaparo.drawBodyLength(length: myPaparo.length)
