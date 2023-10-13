@@ -15,7 +15,7 @@ func drawBodyWithTopping(body: String, topping: String) {
         print("\(topping)\(body)\(topping)")
     }
 
-func reapeatBodyWithTopping(length: Int, body: String, topping: String) {
+func repeatBodyWithTopping(length: Int, body: String, topping: String) {
     for _ in 1...length {
         drawBodyWithTopping(body: body, topping: topping)
     }
@@ -28,6 +28,7 @@ func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int
     print("토핑: \(topping)")
     print("막대길이: \(stickLength)")
     print()
-    reapeatBodyWithTopping(length: bodyLength, body: body, topping: topping)
+    repeatBodyWithTopping(length: bodyLength, body: body, topping: topping)
+
     drawStick(length: stickLength)
 }
