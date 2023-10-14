@@ -20,11 +20,10 @@ func printPepero() {
     print("몸통: \(body)")
     print("토핑: \(topping)")
     print("막대길이: \(stick)")
-    print(" ")
+    print("\n")
     drawPeperoBody(body: body, topping: topping, length: length)
     drawPeperoStick(stick: stick)
-    print(" ")
-    print(" ")
+    print("\n\n")
 }
 
 //빼빼로의 몸통 부분을 그려주는 함수입니다.
@@ -39,7 +38,6 @@ func drawPeperoStick(stick: Int) {
     for _ in 0..<(stick) {
         print(" | |")
     }
-            
 }
 
 //실행 예시 1의 빼빼로를 주문합니다.
