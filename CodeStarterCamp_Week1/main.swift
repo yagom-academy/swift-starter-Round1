@@ -6,17 +6,7 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-func makeIcecream() {
-    for _ in 1...8 {
-        print ("***********")
-    }
-}
-
-func makeIcecreamBar() {
-    for _ in 1...4 {
-        print ("    | |    ")
-    }
-}
-
-makeIcecream()
-makeIcecreamBar()
+drawPaparo(length: 10, body: "***", topping: " ", barLength: 4)
+drawPaparo(length: 12, body: "***", topping: "&", barLength: 4)
+drawPaparo(length: 12, body: "***", topping: "#", barLength: 6)
+drawPaparo(length: 10, body: "|0|", topping: " ", barLength: 4)

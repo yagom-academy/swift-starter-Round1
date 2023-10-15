@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04AE309A2ADAA6B6007405CA /* paparo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE30992ADAA6B6007405CA /* paparo.swift */; };
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04AE308B2ADA883B007405CA /* 빼빼로 순서도.drawio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "빼빼로 순서도.drawio.png"; sourceTree = "<group>"; };
+		04AE30992ADAA6B6007405CA /* paparo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = paparo.swift; path = CodeStarterCamp_Week1/paparo/paparo.swift; sourceTree = SOURCE_ROOT; };
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04AE308E2ADA88A0007405CA /* Paparo */ = {
+			isa = PBXGroup;
+			children = (
+				04AE308B2ADA883B007405CA /* 빼빼로 순서도.drawio.png */,
+				04AE30992ADAA6B6007405CA /* paparo.swift */,
+			);
+			path = Paparo;
+			sourceTree = "<group>";
+		};
 		34811DA2274B938F00A1E994 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				34811DAE274B938F00A1E994 /* main.swift */,
+				04AE308E2ADA88A0007405CA /* Paparo */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -119,6 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AE309A2ADAA6B6007405CA /* paparo.swift in Sources */,
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
