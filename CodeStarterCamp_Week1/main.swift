@@ -71,4 +71,3 @@ topping = " "
 stick = 4
 
 printPepero()
-
