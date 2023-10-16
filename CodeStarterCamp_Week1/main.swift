@@ -14,7 +14,7 @@ func makeIcecream() {
         {
             print("*", terminator: "")
         }
-        print("")
+        print()
     }
 }
 
@@ -24,15 +24,13 @@ func makeStick() {
             if width == 5 || width == 7 {
                 print("|", terminator: "")
                 
-            }
-            else {
+            } else {
                 print(" ", terminator: "")
             }
         }
-        print("")
+        print()
     }
 }
 
 makeIcecream()
 makeStick()
-
