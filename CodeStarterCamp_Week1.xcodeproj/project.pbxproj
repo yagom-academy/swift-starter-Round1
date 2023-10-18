@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BFB8F2C2ADE750A001FFCEE /* Pepero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFB8F2B2ADE750A001FFCEE /* Pepero.swift */; };
+		2BFB8F2E2ADF7FE8001FFCEE /* Icecream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFB8F2D2ADF7FE8001FFCEE /* Icecream.swift */; };
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2BFB8F2B2ADE750A001FFCEE /* Pepero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pepero.swift; sourceTree = "<group>"; };
+		2BFB8F2D2ADF7FE8001FFCEE /* Icecream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icecream.swift; sourceTree = "<group>"; };
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				34811DAE274B938F00A1E994 /* main.swift */,
+				2BFB8F2B2ADE750A001FFCEE /* Pepero.swift */,
+				2BFB8F2D2ADF7FE8001FFCEE /* Icecream.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -119,6 +125,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BFB8F2C2ADE750A001FFCEE /* Pepero.swift in Sources */,
+				2BFB8F2E2ADF7FE8001FFCEE /* Icecream.swift in Sources */,
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
