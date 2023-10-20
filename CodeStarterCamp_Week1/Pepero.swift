@@ -14,7 +14,6 @@ func makeStick(height length: Int) {
         for width in 1...4 {
             if width % 2 == 0 {
                 print("|", terminator: "")
-                
             } else {
                 print(" ", terminator: "")
             }
@@ -22,7 +21,6 @@ func makeStick(height length: Int) {
         print()
     }
 }
-
 
 // 몸통을 그리는 함수
 func makeBody(_ body: String, _ topping: String) -> String {
@@ -34,11 +32,10 @@ func makeBody(_ body: String, _ topping: String) -> String {
 }
 var bodyFunction: (String, String) -> String = makeBody
 
-
 // 길이에 따라 몸통을 그리는 함수
-func makePepero(height length: Int, _ function: (String, String) -> String, _ body: String, _ toping: String = "") -> Void {
+func makePepero(length: Int,  function: (String, String) -> String, body: String, topping: String) -> Void {
     for _ in 1...length {
-        print(function(body, toping))
+        print(function(body, topping))
     }
 }
 
@@ -50,6 +47,6 @@ func drawPepero(bodyHeight: Int, body: String, topping: String, stickHeight: Int
     print("막대길이: \(stickHeight)")
     print()
     
-    makePepero(height: bodyHeight, bodyFunction, body, topping)
+    makePepero(length: bodyHeight, function: bodyFunction, body: body, topping: topping)
     makeStick(height: stickHeight)
 }
