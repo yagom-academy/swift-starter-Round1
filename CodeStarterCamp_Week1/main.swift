@@ -8,29 +8,7 @@
 
 import Foundation
 
-func makeIcecream() {
-    for length in 1...8 {
-        for _ in 1...11
-        {
-            print("*", terminator: "")
-        }
-        print()
-    }
-}
-
-func makeStick() {
-    for _ in 1...4 {
-        for width in 1...7 {
-            if width == 5 || width == 7 {
-                print("|", terminator: "")
-                
-            } else {
-                print(" ", terminator: "")
-            }
-        }
-        print()
-    }
-}
-
-makeIcecream()
-makeStick()
+drawPepero(bodyHeight: 10, body: "***", topping: " ", stickHeight: 4)
+drawPepero(bodyHeight: 12, body: "***", topping: "&", stickHeight: 4)
+drawPepero(bodyHeight: 12, body: "***", topping: "#", stickHeight: 6)
+drawPepero(bodyHeight: 6, body: "|0|", topping: " ", stickHeight: 4)
