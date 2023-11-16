@@ -22,6 +22,7 @@
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* Basic+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic+Functions.swift"; sourceTree = "<group>"; };
 		872350DA2B05DA3C00A3B64D /* Basic+Loops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic+Loops.swift"; sourceTree = "<group>"; };
+		872350DC2B05DF4000A3B64D /* Basic+StringPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic+StringPrint.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 			children = (
 				34811DAE274B938F00A1E994 /* Basic+Functions.swift */,
 				872350DA2B05DA3C00A3B64D /* Basic+Loops.swift */,
+				872350DC2B05DF4000A3B64D /* Basic+StringPrint.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
