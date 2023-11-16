@@ -15,7 +15,7 @@ func muyaho(x: Int) -> String {
 	return ""
 }
 muyaho(x: 5)
-print("Tim","Steve","Swift","Seohyun", separator: "  ")
+print("Tim","Steve","Swift", "Nat", separator: "  ")
 // Print
 print(1, 2, 3, separator: "!")
 print("내가 좋아하는 계절", terminator: " : ")
