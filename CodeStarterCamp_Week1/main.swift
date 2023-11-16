@@ -16,7 +16,6 @@ func icecream(){
         print(" ")
     }
 }
-
 func stick(){
     for _ in 0...3{
         print("    "," ","   ", separator: "|")
