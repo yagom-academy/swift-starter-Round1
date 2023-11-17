@@ -1,12 +1,12 @@
 //
-//  main.swift
+//  practice.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by Yeji on 11/18/23.
 //
 
 import Foundation
 
-print("Hello, World!")
 
+//test()
+loopTest()
