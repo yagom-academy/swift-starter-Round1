@@ -8,5 +8,15 @@
 
 import Foundation
 
-print("Hello, World!!")
-
+func makeIcecream(){
+    for _ in 0...7{
+        print("**********")
+    }
+}
+func drawStick(){
+    for _ in 0...3{
+        print("   | |")
+    }
+}
+makeIcedream()
+drawStick()
