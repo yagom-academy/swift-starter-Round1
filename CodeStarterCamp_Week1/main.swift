@@ -8,18 +8,15 @@
 
 import Foundation
 
-func icecream(){
+func makeIcecream(){
     for _ in 0...7{
-        for _ in 0...10{
-            print(terminator:"*")
-        }
-        print(" ")
+        print("**********")
     }
 }
-func stick(){
+func drawStick(){
     for _ in 0...3{
-        print("    "," ","   ", separator: "|")
+        print("   | |")
     }
 }
-icecream()
-stick()
+makeIcedream()
+drawStick()
