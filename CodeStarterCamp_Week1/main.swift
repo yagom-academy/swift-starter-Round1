@@ -2,19 +2,21 @@
 //  main.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by 유제민 on 11/18/23.
+//  Created by yagom.
+//  Copyright © yagom academy. All rights reserved.
 //
 
 import Foundation
 
-func makePepero(length : Int, body : String, topping : String, stick : Int){
-    
-    for _ in 1...length{
-        print("\(topping)\(body)\(topping)")
-    }
-    for _ in 1...stick{
-        print(" | |")
+func makeIcecream(){
+    for _ in 0...7{
+        print("**********")
     }
 }
-
-makePepero(length: 6, body: "###", topping: " ", stick: 4)
+func drawStick(){
+    for _ in 0...3{
+        print("   | |")
+    }
+}
+makeIcecream()
+drawStick()
