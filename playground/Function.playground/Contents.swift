@@ -1,5 +1,19 @@
 import Swift
 
+func plusTwo(x: Int) -> Int {  // parameter
+    return x + 2 // 반환값
+}
+
+var a: Int
+a = plusTwo(x: 4)
+print(a)
+
+func printHelloWorld() {
+    print("Hello,World")
+}
+
+printHelloWorld()
+
 //MARK: - 함수의 선언
 
 //MARK: 함수의 기본 형태

@@ -7,6 +7,4 @@
 
 import Foundation
 
-
-//test()
-loopTest()
+print("헬로월드")
