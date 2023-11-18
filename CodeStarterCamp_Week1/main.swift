@@ -7,4 +7,20 @@
 
 import Foundation
 
-print("헬로월드")
+func icecream() {
+    for _ in 1...8 {
+        for _ in 1...11 {
+            print("*", terminator: "")
+        }
+        print()
+    }
+}
+
+func bar() {
+    for _ in 1...4 {
+        print("    | |")
+    }
+}
+
+icecream()
+bar()
