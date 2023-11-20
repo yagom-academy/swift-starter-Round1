@@ -7,7 +7,7 @@
 
 import Foundation
 
-func icecream() {
+func makeIcecream() {
     for _ in 1...8 {
         for _ in 1...11 {
             print("*", terminator: "")
@@ -16,11 +16,11 @@ func icecream() {
     }
 }
 
-func bar() {
+func makeStick() {
     for _ in 1...4 {
         print("    | |")
     }
 }
 
-icecream()
-bar()
+makeIcecream()
+makeStick()
