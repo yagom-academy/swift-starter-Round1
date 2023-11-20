@@ -24,6 +24,8 @@
 		872350DA2B05DA3C00A3B64D /* Basic+Loops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic+Loops.swift"; sourceTree = "<group>"; };
 		872350DC2B05DF4000A3B64D /* Basic+StringPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic+StringPrint.swift"; sourceTree = "<group>"; };
 		874F19472B0A7327003C6F06 /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
+		874F19492B0B63B8003C6F06 /* AnyAnyObjectNil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyAnyObjectNil.swift; sourceTree = "<group>"; };
+		874F194B2B0BB714003C6F06 /* AdvancedFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedFunction.swift; sourceTree = "<group>"; };
 		87D7B3222B06052B008BE9F5 /* [step2]_iceCream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[step2]_iceCream.png"; sourceTree = "<group>"; };
 		87FB74512B05EE0700DF66A1 /* makingIcecream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makingIcecream.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +66,8 @@
 				872350DC2B05DF4000A3B64D /* Basic+StringPrint.swift */,
 				87FB74512B05EE0700DF66A1 /* makingIcecream.swift */,
 				874F19472B0A7327003C6F06 /* DataType.swift */,
+				874F19492B0B63B8003C6F06 /* AnyAnyObjectNil.swift */,
+				874F194B2B0BB714003C6F06 /* AdvancedFunction.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
