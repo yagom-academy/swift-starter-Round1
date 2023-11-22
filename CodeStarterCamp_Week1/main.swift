@@ -8,39 +8,45 @@
 
 import Foundation
 
-func 입력받고빼뺴로그리기() {
+func input() -> (Int, String, String, Int) {
     print("<정보>")
     print("길이: ", terminator: "")
-    let 빼빼로길이 = Int(readLine() ?? "0") ?? 0
+    let peperoLength = Int(readLine() ?? "0") ?? 0
     print("몸통: ", terminator: "")
-    let 몸통 = readLine() ?? ""
+    let peperoBody = readLine() ?? ""
     print("토핑: ", terminator: "")
-    let 토핑 = readLine()?.isEmpty == true ? " " : (readLine() ?? " ")
+    let input = readLine()
+    let peperoTopping = input?.isEmpty == true ? " " : (input ?? " ")
     print("막대길이: ", terminator: "")
-    let 막대길이 = Int(readLine() ?? "0") ?? 0
+    let barLength = Int(readLine() ?? "0") ?? 0
     print()
-    
-    빼빼로그리기(
-        빼빼로길이: 빼빼로길이,
-        몸통: 몸통,
-        토핑: 토핑,
-        막대길이: 막대길이
-    )
+        
+    return (peperoLength, peperoBody, peperoTopping, barLength)
 }
 
-func 빼빼로그리기(
-    빼빼로길이: Int,
-    몸통: String,
-    토핑: String,
-    막대길이: Int
+func drawPepero(
+    peperoLength: Int,
+    peperoBody: String,
+    peperoTopping: String,
+    barLength: Int
 ) {
-    let 빼빼로한칸 = 토핑 + 몸통 + 토핑
-    for _ in 0..<빼빼로길이 {
-        print(빼빼로한칸)
+    let pieceOfPepero = peperoTopping + peperoBody + peperoTopping
+    for _ in 0..<peperoLength {
+        print(pieceOfPepero)
     }
-    for _ in 0..<막대길이 {
-        print(" | |")
+    for _ in 0..<barLength {
+        let barSpace = (pieceOfPepero.count - 3) / 2
+        for _ in 0..<barSpace {
+            print(" ", terminator: "")
+        }
+        print("| |")
     }
 }
 
-입력받고빼뺴로그리기()
+let (peperoLength, peperoBody, peperoTopping, barLength) = input()
+drawPepero(
+    peperoLength: peperoLength,
+    peperoBody: peperoBody,
+    peperoTopping: peperoTopping,
+    barLength: barLength
+)
