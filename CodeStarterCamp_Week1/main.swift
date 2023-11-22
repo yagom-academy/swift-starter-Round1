@@ -47,7 +47,7 @@ func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int
 
 
 
-print(drawPepero(bodyLength: 12, body: "***", topping: "&", stickLength: 4))
-print(drawPepero(bodyLength: 12, body: "***", topping: "#", stickLength: 6))
-print(drawPepero(bodyLength: 10, body: " ***", topping: "", stickLength: 4))
-print(drawPepero(bodyLength: 6, body: " |0|", topping: "", stickLength: 4))
+drawPepero(bodyLength: 12, body: "***", topping: "&", stickLength: 4)
+drawPepero(bodyLength: 12, body: "***", topping: "#", stickLength: 6)
+drawPepero(bodyLength: 10, body: " ***", topping: "", stickLength: 4)
+drawPepero(bodyLength: 6, body: " |0|", topping: "", stickLength: 4)
