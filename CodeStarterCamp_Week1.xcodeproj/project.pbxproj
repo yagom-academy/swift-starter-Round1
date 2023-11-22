@@ -24,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		1AB7A2CA2B0E3FA700208F10 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1AB7A2E62B0E86E300208F10 /* peperoFlowChart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peperoFlowChart.jpg; sourceTree = "<group>"; };
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* Basic+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic+Functions.swift"; sourceTree = "<group>"; };
 		872350DA2B05DA3C00A3B64D /* Basic+Loops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic+Loops.swift"; sourceTree = "<group>"; };
@@ -46,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AB7A2E52B0E86AC00208F10 /* [Step3]_peperoFlowChart */ = {
+			isa = PBXGroup;
+			children = (
+				1AB7A2E62B0E86E300208F10 /* peperoFlowChart.jpg */,
+			);
+			path = "[Step3]_peperoFlowChart";
+			sourceTree = "<group>";
+		};
 		34811DA2274B938F00A1E994 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +74,7 @@
 		34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {
 			isa = PBXGroup;
 			children = (
+				1AB7A2E52B0E86AC00208F10 /* [Step3]_peperoFlowChart */,
 				87D7B3212B060503008BE9F5 /* [Step2]_iceCream_FlowChart_img */,
 				34811DAE274B938F00A1E994 /* Basic+Functions.swift */,
 				872350DA2B05DA3C00A3B64D /* Basic+Loops.swift */,
