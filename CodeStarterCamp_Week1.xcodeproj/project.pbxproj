@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		874F194E2B0BD00C003C6F06 /* AdvancedFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874F194B2B0BB714003C6F06 /* AdvancedFunction.swift */; };
+		1AB7A2CB2B0E3FA700208F10 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB7A2CA2B0E3FA700208F10 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1AB7A2CA2B0E3FA700208F10 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* Basic+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic+Functions.swift"; sourceTree = "<group>"; };
 		872350DA2B05DA3C00A3B64D /* Basic+Loops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic+Loops.swift"; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 				874F19472B0A7327003C6F06 /* DataType.swift */,
 				874F19492B0B63B8003C6F06 /* AnyAnyObjectNil.swift */,
 				874F194B2B0BB714003C6F06 /* AdvancedFunction.swift */,
+				1AB7A2CA2B0E3FA700208F10 /* main.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -142,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				874F194E2B0BD00C003C6F06 /* AdvancedFunction.swift in Sources */,
+				1AB7A2CB2B0E3FA700208F10 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +271,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -281,6 +284,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
