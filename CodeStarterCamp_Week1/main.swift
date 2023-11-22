@@ -71,11 +71,7 @@ func typeOfPepero(bodyLength: Int, body: String, topping: String, stickLength: I
   // 막대 출력
   for _ in 0..<stickLength {
     var stickLine = String(repeating: whiteSpace, count: stickWhiteSpaceCount)
-    if body.contains(peperoBody) {
-      stickLine += peperoStick
-    } else {
-      stickLine += peperoStick
-    }
+    stickLine += peperoStick
     print(stickLine)
   }
   
