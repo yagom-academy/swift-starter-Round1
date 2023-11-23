@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		87FB74522B05EE0700DF66A1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB74512B05EE0700DF66A1 /* main.swift */; };
+		1AB7A2CB2B0E3FA700208F10 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB7A2CA2B0E3FA700208F10 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,12 +23,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1AB7A2CA2B0E3FA700208F10 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1AB7A2E62B0E86E300208F10 /* peperoFlowChart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peperoFlowChart.jpg; sourceTree = "<group>"; };
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* Basic+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic+Functions.swift"; sourceTree = "<group>"; };
 		872350DA2B05DA3C00A3B64D /* Basic+Loops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic+Loops.swift"; sourceTree = "<group>"; };
 		872350DC2B05DF4000A3B64D /* Basic+StringPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic+StringPrint.swift"; sourceTree = "<group>"; };
+		874F19472B0A7327003C6F06 /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
+		874F19492B0B63B8003C6F06 /* AnyAnyObjectNil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyAnyObjectNil.swift; sourceTree = "<group>"; };
+		874F194B2B0BB714003C6F06 /* AdvancedFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedFunction.swift; sourceTree = "<group>"; };
 		87D7B3222B06052B008BE9F5 /* [step2]_iceCream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "[step2]_iceCream.png"; sourceTree = "<group>"; };
-		87FB74512B05EE0700DF66A1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		87FB74512B05EE0700DF66A1 /* makingIcecream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makingIcecream.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AB7A2E52B0E86AC00208F10 /* [Step3]_peperoFlowChart */ = {
+			isa = PBXGroup;
+			children = (
+				1AB7A2E62B0E86E300208F10 /* peperoFlowChart.jpg */,
+			);
+			path = "[Step3]_peperoFlowChart";
+			sourceTree = "<group>";
+		};
 		34811DA2274B938F00A1E994 = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +74,16 @@
 		34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {
 			isa = PBXGroup;
 			children = (
+				1AB7A2E52B0E86AC00208F10 /* [Step3]_peperoFlowChart */,
 				87D7B3212B060503008BE9F5 /* [Step2]_iceCream_FlowChart_img */,
 				34811DAE274B938F00A1E994 /* Basic+Functions.swift */,
 				872350DA2B05DA3C00A3B64D /* Basic+Loops.swift */,
 				872350DC2B05DF4000A3B64D /* Basic+StringPrint.swift */,
-				87FB74512B05EE0700DF66A1 /* main.swift */,
+				87FB74512B05EE0700DF66A1 /* makingIcecream.swift */,
+				874F19472B0A7327003C6F06 /* DataType.swift */,
+				874F19492B0B63B8003C6F06 /* AnyAnyObjectNil.swift */,
+				874F194B2B0BB714003C6F06 /* AdvancedFunction.swift */,
+				1AB7A2CA2B0E3FA700208F10 /* main.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -136,7 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87FB74522B05EE0700DF66A1 /* main.swift in Sources */,
+				1AB7A2CB2B0E3FA700208F10 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +281,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -275,6 +294,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
