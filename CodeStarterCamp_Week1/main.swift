@@ -20,5 +20,8 @@ func makeStick(stickLength: Int) {
     }
 }
 
-makeIcecream(icecreamLength: 8)
-makeStick(stickLength: 4)
+//makeIcecream(icecreamLength: 8)
+//makeStick(stickLength: 4)
+
+makeOrder()
+makeCustomizedPepero()
