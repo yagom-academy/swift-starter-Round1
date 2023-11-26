@@ -59,3 +59,6 @@ drawPeperoWithInfo(height: 10, body: "|0|", stickHeight: 4)
 
 // 자신만의 토핑, 몸통, 막대 등을 만들어 출력
 drawPeperoWithInfo(height: 5, body: ">*<", stickHeight: 3)
+
+// 함수 타입을 사용하여 출력
+drawPepero(6, "@@@", "~", 3)
