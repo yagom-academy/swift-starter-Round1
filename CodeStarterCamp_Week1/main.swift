@@ -25,7 +25,7 @@ func drawIceCream(height: Int, width: Int) {
 }
 
 func drawStick(height: Int) {
-    for _ in 1...stickHeight {
+    for _ in 1...height {
         print(stickSymbol)
     }
 }
