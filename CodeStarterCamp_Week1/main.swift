@@ -22,5 +22,3 @@ func iceCreamStick(leng: Int) -> Void{
 
 iceCreamMain(leng: 6, body: "|0|", topping:" ")
 iceCreamStick(leng: 4)
-
-
