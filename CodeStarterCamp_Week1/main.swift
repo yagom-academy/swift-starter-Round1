@@ -8,5 +8,27 @@
 
 import Foundation
 
-print("Hello, World!")
+func drawHead() {
+    print("""
+    ***********
+    ***********
+    ***********
+    ***********
+    ***********
+    ***********
+    ***********
+    ***********
+    """)
+}
 
+func drawBody() {
+    print("""
+        | |
+        | |
+        | |
+        | |
+    """)
+}
+
+drawHead()
+drawBody()
