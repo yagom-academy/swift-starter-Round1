@@ -8,21 +8,19 @@
 
 import Foundation
 
-func iceCreamMain() -> Void{
-    for _ in 0...7{
-        for _ in 0...10{
-            print("*", terminator: "")
-        }
-        print()
+func iceCreamMain(leng: Int, body: String, topping: String) -> Void{
+    for _ in 1...leng{
+        print(topping, body, topping, separator: "")
     }
 }
 
-func iceCreamStick() -> Void{
-    for _ in 0...3{
-        print("    | |")
+func iceCreamStick(leng: Int) -> Void{
+    for _ in 1...leng{
+        print(" | | ")
     }
 }
 
-iceCreamMain()
-iceCreamStick()
+iceCreamMain(leng: 6, body: "|0|", topping:" ")
+iceCreamStick(leng: 4)
+
 
