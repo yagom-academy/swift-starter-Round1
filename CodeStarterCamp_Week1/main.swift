@@ -8,17 +8,18 @@
 
 import Foundation
 
-func iceCreamMain(leng: Int, body: String, topping: String) -> Void{
-    for _ in 1...leng{
+func makeIceCreamMain(length: Int, body: String, topping: String) -> Void {
+    for _ in 1...length{
         print(topping, body, topping, separator: "")
     }
 }
 
-func iceCreamStick(leng: Int) -> Void{
-    for _ in 1...leng{
+func makeIceCreamStick(length: Int) -> Void {
+    for _ in 1...length{
         print(" | | ")
     }
 }
 
-iceCreamMain(leng: 6, body: "|0|", topping:" ")
-iceCreamStick(leng: 4)
+makeIceCreamMain(length: 6, body: "|0|", topping:" ")
+makeIceCreamStick(length: 4)
+
