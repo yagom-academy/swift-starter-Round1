@@ -8,5 +8,7 @@
 
 import Foundation
 
-print("Hello, World!")
+// STEP 2 - 아이스크림 그리기
+drawIcecream()
+drawStick()
 
