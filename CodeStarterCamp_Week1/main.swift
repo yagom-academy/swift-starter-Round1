@@ -8,5 +8,17 @@
 
 import Foundation
 
-print("Hello, World!")
+func drawBody() {
+    for _ in 1...8 {
+        print("**********")
+    }
+}
 
+func drawStick() {
+    for _ in 1...4 {
+        print("    | |")
+    }
+}
+
+drawBody()
+drawStick()
