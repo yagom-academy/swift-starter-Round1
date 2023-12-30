@@ -9,6 +9,4 @@
 import Foundation
 
 // STEP 2 - 아이스크림 그리기
-drawIcecream()
-drawStick()
-
+drawIcecream(width: 5, bodyHeight: 7, stickHeight: 3)
