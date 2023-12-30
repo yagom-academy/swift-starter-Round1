@@ -8,15 +8,15 @@
 
 import Foundation
 
-func drawBody(){
+func drawBody() {
     for _ in 1...8 {
         print("**********")
     }
 }
 
-func drawStick(){
+func drawStick() {
     for _ in 1...4 {
-        print("    | |   ")
+        print("    | |")
     }
 }
 
