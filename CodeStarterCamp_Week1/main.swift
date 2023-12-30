@@ -8,5 +8,15 @@
 
 import Foundation
 
-print("Hello, World!")
-
+func iceBody() {
+    for ice in 1...10 {
+        print("***********")
+    }
+}
+func iceStick() {
+    for stick in 1...4 {
+        print("    | |    ")
+    }
+}
+iceBody()
+iceStick()
