@@ -6,16 +6,17 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-func ice() {
-    for x in 1...8 {
-        print("***********")
+func chocolate(length: Int, body: String, topping: String) {
+    for _ in 1...length {
+        print("\(topping)\(body)\(topping)")
     }
 }
-func bar() {
-    for y in 1...4 {
-        print("    | |")
+func bar(count: Int) {
+    for _ in 1...count {
+        print(" | |")
     }
 }
 
-ice()
-bar()
+chocolate(length: 10, body: "***", topping: " ")
+bar(count: 4)
+
