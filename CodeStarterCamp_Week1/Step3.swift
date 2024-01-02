@@ -16,10 +16,15 @@ func drawStick(length: Int) {
     print()
 }
 
-func drawBody(length: Int, body: String, topping: String) {
+func makeBody(body: String, topping: String) -> String {
+    
+    return topping + body + topping
+}
+
+func drawBody(length: Int, body: String) {
     
     for _ in 1...length {
-        print(topping + body + topping)
+        print(body)
     }
 }
 
@@ -31,6 +36,6 @@ func printInfo(bodyLength: Int, body: String, topping: String, stickLength: Int)
     print("토핑: \(topping)")
     print("막대길이: \(stickLength)", terminator: "\n\n")
     
-    drawBody(length: bodyLength, body: body, topping: topping)
+    drawBody(length: bodyLength, body: makeBody(body: body, topping: topping))
     drawStick(length: stickLength)
 }
