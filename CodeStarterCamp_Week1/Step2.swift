@@ -9,7 +9,7 @@ import Foundation
 
 func drawIcecream(width: Int, bodyHeight: UInt, stickHeight: UInt) throws {
   
-  guard width >= 3 else { throw error.invalidArgument }
+  guard width >= 3 else { throw icecreamError.invalidArgument }
   
   drawBody()
   drawStick()
@@ -40,6 +40,6 @@ func drawIcecream(width: Int, bodyHeight: UInt, stickHeight: UInt) throws {
   
 }
 
-enum error: Error {
+enum icecreamError: Error {
   case invalidArgument
 }
