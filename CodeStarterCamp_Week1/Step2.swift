@@ -7,12 +7,9 @@
 
 import Foundation
 
-func drawIcecream(width: Int, bodyHeight: Int, stickHeight: Int) {
+func drawIcecream(width: Int, bodyHeight: UInt, stickHeight: UInt) throws {
   
-  if width < 3 || bodyHeight < 0 || stickHeight < 0 {
-    print("Error: Invalid Argument")
-    return
-  }
+  guard width >= 3 else { throw error.invalidArgument }
   
   drawBody()
   drawStick()
@@ -27,9 +24,12 @@ func drawIcecream(width: Int, bodyHeight: Int, stickHeight: Int) {
   }
 
   func drawStick() {
+    let leftStick = width / 2 - 1
+    let rightStick = width / 2 + 1
+    
     for _ in 0..<stickHeight {
       for i in 0..<width {
-        if i == width / 2 - 1 || i == width / 2 + 1 {
+        if i == leftStick || i == rightStick {
           print("|", terminator: i == width - 1 ? "\n" : "")
         } else {
           print(" ", terminator: i == width - 1 ? "\n" : "")
@@ -38,4 +38,8 @@ func drawIcecream(width: Int, bodyHeight: Int, stickHeight: Int) {
     }
   }
   
+}
+
+enum error: Error {
+  case invalidArgument
 }

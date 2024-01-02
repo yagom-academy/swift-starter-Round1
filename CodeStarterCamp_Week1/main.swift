@@ -9,4 +9,8 @@
 import Foundation
 
 // STEP 2 - 아이스크림 그리기
-drawIcecream(width: 5, bodyHeight: 7, stickHeight: 3)
+do {
+  try drawIcecream(width: 1, bodyHeight: 7, stickHeight: 3)
+} catch error.invalidArgument {
+  print("Error: Invalid Argument")
+}
