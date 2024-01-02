@@ -6,7 +6,16 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
+func ice() {
+    for x in 1...8 {
+        print("***********")
+    }
+}
+func bar() {
+    for y in 1...4 {
+        print("    | |")
+    }
+}
 
-print("Hello, World!")
-
+ice()
+bar()
