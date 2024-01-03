@@ -9,8 +9,8 @@ import Foundation
 
 func drawPepero(length: UInt, stickLength: UInt, body: String = "***", topping: String = " ") throws {
   
-  guard body.count >= 3 else { throw PeperoError.body }
-  guard topping != "" else { throw PeperoError.topping }
+  guard body.count >= 3 else { throw PeperoError.notEnoughBodyLength }
+  guard !topping.isEmpty else { throw PeperoError.notEnoughToppingLength }
   
   let width = body.count + topping.count * 2
   
@@ -56,6 +56,6 @@ private func drawStick(length: UInt, width: Int) {
 }
 
 enum PeperoError: Error {
-  case body
-  case topping
+  case notEnoughBodyLength
+  case notEnoughToppingLength
 }
