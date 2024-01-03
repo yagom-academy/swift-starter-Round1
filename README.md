@@ -4,5 +4,6 @@
 
 3. 열심히 해볼게요. 감사합니다. 
 
-4. location : main 
+4. location : main 수정 중
+
 
