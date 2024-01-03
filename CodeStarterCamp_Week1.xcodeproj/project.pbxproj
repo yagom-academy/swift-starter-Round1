@@ -30,7 +30,7 @@
 		8B6688372B3F2C7E0088B6E7 /* Step2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2.swift; sourceTree = "<group>"; };
 		8B6688392B3F3E8D0088B6E7 /* IcecreamFlowChart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IcecreamFlowChart.png; sourceTree = "<group>"; };
 		8B66883A2B40C6B90088B6E7 /* Step3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3.swift; sourceTree = "<group>"; };
-		8B72BA5C2B455B7C004151CD /* PeperoFlowChart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PeperoFlowChart.png; sourceTree = "<group>"; };
+		8B72BA5D2B456345004151CD /* PeperoFlowChart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PeperoFlowChart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 				34811DAE274B938F00A1E994 /* main.swift */,
 				8B6688372B3F2C7E0088B6E7 /* Step2.swift */,
 				8B66883A2B40C6B90088B6E7 /* Step3.swift */,
-				8B72BA5C2B455B7C004151CD /* PeperoFlowChart.png */,
+				8B72BA5D2B456345004151CD /* PeperoFlowChart.png */,
 				8B6688392B3F3E8D0088B6E7 /* IcecreamFlowChart.png */,
 			);
 			path = CodeStarterCamp_Week1;
