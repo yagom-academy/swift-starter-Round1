@@ -1,12 +1,16 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
 
-import Foundation
+func iceCreamHead (number: Int) {
+    for _ in 1...number {
+        print("***********")
+    }
+}
 
-print("Hello, World!")
+func iceCreamBody (number: Int) {
+    for _ in 1...number {
+        print("    | |    ")
+    }
+}
+
+iceCreamHead(number: 8)
+iceCreamBody(number: 4)
 
