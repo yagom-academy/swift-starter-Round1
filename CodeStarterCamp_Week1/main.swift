@@ -9,34 +9,37 @@
 import Foundation
 
 // Step 2
-func iceCream(number: Int){
+func printIcecream(number: Int) {
     for _ in 0...number {
         print("***********")
     }
 }
 
-func iceCreamStick(number: Int){
+func printIcecreamStick(number: Int) {
     for _ in 0...number {
         print("    | |")
     }
 }
 
-iceCream(number: 9)
-iceCreamStick(number: 4)
+printIcecream(number: 9)
+printIcecreamStick(number: 4)
 
 // Step 3
 print()
-print("실행 예시1")
-createPepero(stickLength: 6, bodyLength: 10, body: "***")
+let peperoExample1 = Pepero(bodyLength: 10, body: "***", stickLength: 4)
+peperoExample1.printPepero()
 
 print()
 print("실행 예시2")
-createPepero(stickLength: 4, bodyLength: 12, body: "***", topping: "&")
+let peperoExample2 = Pepero(bodyLength: 12, body: "***",topping: "&", stickLength: 6)
+peperoExample2.printPepero()
 
 print()
 print("실행 예시3")
-createPepero(stickLength: 6, bodyLength: 12, body: "***", topping: "#")
+let peperoExample3 = Pepero(bodyLength: 12, body: "***",topping: "#", stickLength: 6)
+peperoExample3.printPepero()
 
 print()
 print("실행 예시4")
-createPepero(stickLength: 4, bodyLength: 6, body: "|0|")
+let peperoExample4 = Pepero(bodyLength: 6, body: "|0|", stickLength: 4)
+peperoExample4.printPepero()
