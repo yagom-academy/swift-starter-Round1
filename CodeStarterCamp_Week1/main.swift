@@ -10,7 +10,9 @@ func iceCreamBody(number: Int) {
         print("    | |    ")
     }
 }
-
-// 예제 호출
 iceCreamHead(starCount: 11, repeatCount: 8)
 iceCreamBody(number: 4)
+
+
+
+
