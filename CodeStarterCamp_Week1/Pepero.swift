@@ -52,39 +52,3 @@ struct Pepero {
     }
 }
 
-
-
-func createPeperoStick (stickLength: Int) {
-    for _ in 0...stickLength {
-        print(" | |")
-    }
-}
-
-func createToppedPeperoBody(bodyLength: Int, body: String, topping: String = " ") {
-    let toppedPeperoBody = topping + body + topping
-    
-    for _ in 0...bodyLength {
-        print(toppedPeperoBody)
-    }
-}
-
-func createPepero(bodyLength: Int, body: String, topping: String = " ", stickLength: Int) {
-    createToppedPeperoBody(bodyLength: bodyLength, body: body, topping: topping)
-    createPeperoStick(stickLength: stickLength)
-}
-
-func printInformation(bodyLength: Int, body: String, topping: String = " ", stickLength: Int){
-    print("""
-<정보>
-길이: \(bodyLength)
-몸통: \(body)
-토핑: \(topping)
-막대길이: \(stickLength)
-
-""")
-}
-
-func printPepero(bodyLength: Int, body: String, topping: String = " ", stickLength: Int) {
-    printInformation( bodyLength: bodyLength, body: body, topping: topping, stickLength: stickLength)
-    createPepero(bodyLength: bodyLength, body: body, topping: topping, stickLength: stickLength)
-}
