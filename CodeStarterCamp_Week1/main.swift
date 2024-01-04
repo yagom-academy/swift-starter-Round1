@@ -1,12 +1,16 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
+func iceCreamHead(starCount: Int, repeatCount: Int) {
+    for _ in 1...repeatCount {
+        let stars = String(repeating: "*", count: starCount)
+        print(stars)
+    }
+}
 
-import Foundation
+func iceCreamBody(number: Int) {
+    for _ in 1...number {
+        print("    | |    ")
+    }
+}
 
-print("Hello, World!")
-
+// 예제 호출
+iceCreamHead(starCount: 11, repeatCount: 8)
+iceCreamBody(number: 4)
