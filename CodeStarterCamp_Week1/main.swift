@@ -20,3 +20,5 @@ func iceCreamBody(iceCreamBodyStick: String, stickRepeatCount: Int){
 iceCreamMake(iceCreamHead: "*", iceCreamHeadRepeat: 11, repeatCount: 8)
 iceCreamBody(iceCreamBodyStick:"    | |    ", stickRepeatCount: 4)
 
+//수정 완료
+
