@@ -1,24 +1,29 @@
 
-//iceCream
 
 
 
-func iceCreamMake(iceCreamHead: String, iceCreamHeadRepeat: Int, repeatCount: Int){
-    for _ in 1...repeatCount{
-        let iceCream = String(repeating: iceCreamHead, count: iceCreamHeadRepeat)
-        print(iceCream)
+
+
+func peperoMakeHead(peperoLength: Int, peperoBody: String, peperoTopping: String){
+    for _ in 1...peperoLength{
+        print(peperoTopping + peperoBody + peperoTopping)
+    }
+}
+func peperoMakeBody(stickBody: String, stickLength: Int){
+    for _ in 1...stickLength{
+        print(stickBody)
     }
 }
 
-func iceCreamBody(iceCreamBodyStick: String, stickRepeatCount: Int){
-    for _ in 1...stickRepeatCount {
-        print(iceCreamBodyStick)
-    }
-}
+peperoMakeHead(peperoLength: 10, peperoBody: "***", peperoTopping: " ")
+peperoMakeBody(stickBody: " | | ", stickLength: 4)
 
+peperoMakeHead(peperoLength: 12, peperoBody: "***", peperoTopping: "&")
+peperoMakeBody(stickBody: " | | ", stickLength: 4)
 
-iceCreamMake(iceCreamHead: "*", iceCreamHeadRepeat: 11, repeatCount: 8)
-iceCreamBody(iceCreamBodyStick:"    | |    ", stickRepeatCount: 4)
+peperoMakeHead(peperoLength: 12, peperoBody: "***", peperoTopping: "#")
+peperoMakeBody(stickBody: " | | ", stickLength: 6)
 
-//수정 완료
+peperoMakeHead(peperoLength: 6, peperoBody: "|0|", peperoTopping: " ")
+peperoMakeBody(stickBody: " | | ", stickLength: 4)
 
