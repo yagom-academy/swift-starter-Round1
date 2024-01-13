@@ -9,7 +9,7 @@ import Foundation
 
 func drawStick(length: Int, stickLength: Int) {
     for _ in 1...stickLength {
-        print(" | |")
+        print(" | | ")
     }
 }
 
@@ -19,24 +19,27 @@ func drawBar(body: String, topping: String, length: Int) {
     }
 }
 
-func drawPocky(length: Int, stickLength: Int, body: String, topping: String) {
+func printPockyInfo(length: Int, stickLength: Int, body: String, topping: String) {
     print("<정보>")
     print("길이: \(length)")
     print("몸통: \(body)")
     print("토핑: \(topping)")
     print("막대길이: \(stickLength)")
+}
 
+func drawingPocky(length: Int, stickLength: Int, body: String, topping: String) {
+    printPockyInfo(length: length, stickLength: stickLength, body: body, topping: topping)
     drawBar(body: body, topping: topping, length: length)
     drawStick(length: length, stickLength: stickLength)
 }
 
-drawPocky(length: 10, stickLength: 4, body: "***", topping: "")
+drawingPocky(length: 10, stickLength: 4, body: "***", topping: " ")
 print("\n----------------------\n")
 
-drawPocky(length: 12, stickLength: 4, body: "***", topping: "&")
+drawingPocky(length: 12, stickLength: 4, body: "***", topping: "&")
 print("\n----------------------\n")
 
-drawPocky(length: 12, stickLength: 6, body: "***", topping: "#")
+drawingPocky(length: 12, stickLength: 6, body: "***", topping: "#")
 print("\n----------------------\n")
 
-drawPocky(length: 6, stickLength: 4, body: "|0|", topping: "")
+drawingPocky(length: 6, stickLength: 4, body: "|0|", topping: " ")
