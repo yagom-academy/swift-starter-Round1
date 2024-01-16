@@ -9,7 +9,7 @@ import Foundation
 
 func drawStick(length: Int, stickLength: Int) {
     for _ in 1...stickLength {
-        print(" | |")
+        print(" | | ")
     }
 }
 
@@ -30,7 +30,7 @@ func drawPocky(length: Int, stickLength: Int, body: String, topping: String) {
     drawStick(length: length, stickLength: stickLength)
 }
 
-drawPocky(length: 10, stickLength: 4, body: "***", topping: "")
+drawPocky(length: 10, stickLength: 4, body: "***", topping: " ")
 print("\n----------------------\n")
 
 drawPocky(length: 12, stickLength: 4, body: "***", topping: "&")
@@ -39,4 +39,4 @@ print("\n----------------------\n")
 drawPocky(length: 12, stickLength: 6, body: "***", topping: "#")
 print("\n----------------------\n")
 
-drawPocky(length: 6, stickLength: 4, body: "|0|", topping: "")
+drawPocky(length: 6, stickLength: 4, body: "|0|", topping: " ")
