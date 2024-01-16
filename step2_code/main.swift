@@ -17,7 +17,7 @@ func printStar() {
 
 func printBar() {
     for _ in 1...4 {
-        print("    | |")
+        print("    | |    ")
     }
 }
 
