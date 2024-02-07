@@ -8,13 +8,13 @@
 
 
 func icecreamBody(line: Int) {
-    for _ in 1...line {
+    for i in 1...line {
         print("***********")
     }
 }
 
 func icecreamStick(line: Int) {
-    for _ in 1...line {
+    for i in 1...line {
         print("    | |    ")
     }
 }
