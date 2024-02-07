@@ -8,5 +8,14 @@
 
 import Foundation
 
-print("Hello, World!")
+let star = "***********"
+let bar = "    | |"
+
+for count in 1...10 {
+    print("\(star)")
+}
+
+for count in 1...4 {
+    print("\(bar)")
+}
 
