@@ -6,7 +6,17 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
+drawIceCream()
+drawBar()
 
-print("Hello, World!")
+func drawIceCream() {
+    for _ in 0..<8 {
+        print("***********")
+    }
+}
 
+func drawBar() {
+    for _ in 0..<4 {
+        print("    | |")
+    }
+}
