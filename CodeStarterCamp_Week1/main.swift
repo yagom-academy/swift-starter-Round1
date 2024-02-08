@@ -16,8 +16,6 @@ makePepero(bodyLength: 12, body: "*****", stickLength: 6, topping: "0")
 makePepero(bodyLength: 8, body: "00", stickLength: 3, topping: "*")
 makePepero(bodyLength: 4, body: "#", stickLength: 2)
 
-
-
 func makePepero(bodyLength: UInt, body: String, stickLength: UInt, topping: String = " ") {
     print("""
     <정보>
