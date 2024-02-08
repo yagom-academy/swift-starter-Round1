@@ -26,19 +26,19 @@ func makePepero(bodyLength: UInt, body: String, stickLength: UInt, topping: Stri
 
     """)
     
-    drawBody(length: bodyLength, body: body, topping: topping)
-    drawStick(length: stickLength, body: body, topping: topping)
+    drawBody(bodyLength: bodyLength, bodyShape: body, toppingShape: topping)
+    drawStick(stickLength: stickLength, bodySize: body.count, toppingSize: topping.count)
 }
 
-func drawBody(length: UInt, body: String, topping: String) {
-    let combinedBody = makeBody(body: body, topping: topping)
+func drawBody(bodyLength length: UInt, bodyShape body: String, toppingShape topping: String) {
+    let combinedBody = makeBodyRow(bodyShape: body, toppingShape: topping)
     
     for _ in 0..<length {
         print(combinedBody)
     }
 }
 
-func makeBody(body: String, topping: String) -> String {
+func makeBodyRow(bodyShape body: String, toppingShape topping: String) -> String {
     if topping.count > 1 {
         return topping + body + String(topping.reversed())
     } else {
@@ -46,22 +46,21 @@ func makeBody(body: String, topping: String) -> String {
     }
 }
 
-func drawStick(length: UInt, body: String, topping: String) {
-    let stick = makeStick(body: body, topping: topping)
+func drawStick(stickLength length: UInt, bodySize: Int, toppingSize: Int) {
+    let stick = makeStickRow(bodySize: bodySize, toppingSize: toppingSize)
     
     for _ in 0..<length {
         print(stick)
     }
 }
 
-func makeStick(body: String, topping: String) -> String {
-    let size = body.count
-    var stick = String(repeating: " ", count: topping.count)
+func makeStickRow(bodySize: Int, toppingSize: Int) -> String {
+    var stick = String(repeating: " ", count: toppingSize)
     
-    if size == 1 {
+    if bodySize == 1 {
         stick += "|"
     } else {
-        stick += ("|" + String(repeating: " ", count: size - 2) + "|")
+        stick += ("|" + String(repeating: " ", count: bodySize - 2) + "|")
     }
     
     return stick
