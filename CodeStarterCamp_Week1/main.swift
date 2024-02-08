@@ -6,17 +6,3 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-drawIceCream()
-drawBar()
-
-func drawIceCream() {
-    for _ in 0..<8 {
-        print("***********")
-    }
-}
-
-func drawBar() {
-    for _ in 0..<4 {
-        print("    | |")
-    }
-}
