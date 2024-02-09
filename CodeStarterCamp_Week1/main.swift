@@ -7,17 +7,18 @@
 //
 
 
-func icecreamBody(line: Int) {
-    for i in 1...line {
+
+func drawIcecreamBody() {
+    for _ in 1...8 {
         print("***********")
     }
 }
 
-func icecreamStick(line: Int) {
-    for i in 1...line {
+func drawIcecreamStcik() {
+    for _ in 1...4 {
         print("    | |    ")
     }
 }
 
-icecreamBody(line: 8)
-icecreamStick(line: 4)
+drawIcecreamBody()
+drawIcecreamStcik()
