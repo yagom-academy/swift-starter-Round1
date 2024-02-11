@@ -8,14 +8,24 @@
 
 import Foundation
 
-let star = "***********"
-let bar = "    | |"
-
-for count in 1...10 {
-    print("\(star)")
+func iceCream() -> String {
+    return "*"
 }
 
-for count in 1...4 {
-    print("\(bar)")
+func bar() -> String {
+    return "| |"
 }
 
+for _ in 1...8 {
+    for _ in 1...10 {
+        print(iceCream(), terminator: "")
+    }
+    print(iceCream())
+}
+
+for _ in 1...4 {
+    for _ in 1...4 {
+        print(" ", terminator: "")
+    }
+    print(bar())
+}
