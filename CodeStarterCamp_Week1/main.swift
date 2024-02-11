@@ -8,24 +8,23 @@
 
 import Foundation
 
-func iceCream() -> String {
-    return "*"
-}
-
-func bar() -> String {
-    return "| |"
-}
-
-for _ in 1...8 {
-    for _ in 1...10 {
-        print(iceCream(), terminator: "")
-    }
-    print(iceCream())
-}
-
-for _ in 1...4 {
+func iceCream() {
+     for _ in 1...8 {
+         for _ in 1...11{
+             print("*", terminator: "")
+         }
+         print()
+     }
+ }
+ 
+func bar() {
     for _ in 1...4 {
-        print(" ", terminator: "")
+        for _ in 1...4 {
+            print(" ", terminator: "")
+        }
+        print("| |")
     }
-    print(bar())
 }
+
+iceCream()
+bar()
