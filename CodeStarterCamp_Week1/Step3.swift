@@ -1,5 +1,5 @@
 //
-//  second.swift
+//  Step3.swift
 //  CodeStarterCamp_Week1
 //
 //  Created by Jeong Min Lee on 2/13/24.
@@ -7,35 +7,29 @@
 
 import Foundation
 
-func drawPepero(bodyWidth width: Int,pockyBody body: String ,peperoTopping topping: String, barLength length : Int) {
+func drawPepero(bodyLength length: Int, peperoBody body: String, topping: String, stickLength sticklength : Int) {
     print ("""
             <정보>
-            길이: \(width)
+            길이: \(length)
             몸통: \(body)
             토핑: \(topping)
-            막대길이: \(length)
-            """)
-    drawPeperoBody(width: width, body: body, topping: topping)
-    drawPeperoBar(length: length)
+            막대길이: \(sticklength)
+           """)
+    drawPeperoBody(length: length, body: body, topping: topping)
+    drawPeperoStick(sticklength: length, body: body)
 }
 
-func drawPeperoBody(width: Int, body: String, topping: String) {
-    for _ in 1...width {
-        for _ in 1...1 {
-            print("",topping, terminator: "")
-        }
-        print(body, topping, separator: "")
-    }
-    
-}
-
-func drawPeperoBar(length: Int) {
+func drawPeperoBody(length: Int, body: String, topping: String) {
     for _ in 1...length {
-        for _ in 1...2 {
-            print(" ", terminator: "")
-        }
-        print("| |")
+        print(" ",topping, body, topping, separator: "")
     }
 }
 
-
+func drawPeperoStick(sticklength: Int,body: String) {
+    for _ in 1...sticklength {
+        let totalLength = body.count + 2
+        let bar = String(repeating: " ", count: totalLength / 2 - 1)
+        print(bar, terminator: "")
+        print(" | | ")
+    }
+}
