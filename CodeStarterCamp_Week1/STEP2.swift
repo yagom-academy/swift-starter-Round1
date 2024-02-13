@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  STEP2.swift
 //  CodeStarterCamp_Week1
 //
 //  Created by yagom.
@@ -22,6 +22,3 @@ func drawIceCreamStick(stickLength: Int) {
         print("    | |")
     }
 }
-
-drawIceCreamBody(bodyWidth: 11, bodyHeight: 8)
-drawIceCreamStick(stickLength: 5)
