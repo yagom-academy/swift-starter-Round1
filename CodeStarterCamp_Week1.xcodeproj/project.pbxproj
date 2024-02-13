@@ -25,7 +25,7 @@
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		AC51BEDD2B7BB01D001FFAE4 /* img_diagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_diagram.png; path = ../../../Downloads/img_diagram.png; sourceTree = "<group>"; };
+		AC51BEDE2B7BC36E001FFAE4 /* img_diagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_diagram.png; path = ../../Downloads/img_diagram.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +42,7 @@
 		34811DA2274B938F00A1E994 = {
 			isa = PBXGroup;
 			children = (
+				AC51BEDE2B7BC36E001FFAE4 /* img_diagram.png */,
 				34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */,
 				34811DAC274B938F00A1E994 /* Products */,
 			);
@@ -59,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				34811DAE274B938F00A1E994 /* main.swift */,
-				AC51BEDD2B7BB01D001FFAE4 /* img_diagram.png */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
