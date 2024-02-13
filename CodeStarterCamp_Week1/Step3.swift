@@ -7,7 +7,7 @@
 
 import Foundation
 
-func drawIceCream(bodyWidth width: Int,IceBody body: String ,Icetopping topping: String, barLength length : Int) {
+func drawPepero(bodyWidth width: Int,pockyBody body: String ,peperoTopping topping: String, barLength length : Int) {
     print ("""
             <정보>
             길이: \(width)
@@ -15,11 +15,11 @@ func drawIceCream(bodyWidth width: Int,IceBody body: String ,Icetopping topping:
             토핑: \(topping)
             막대길이: \(length)
             """)
-    drawIceCreamBody(width: width, body: body, topping: topping)
-    drawIceCreamBar(length: length)
+    drawPeperoBody(width: width, body: body, topping: topping)
+    drawPeperoBar(length: length)
 }
 
-func drawIceCreamBody(width: Int, body: String, topping: String) {
+func drawPeperoBody(width: Int, body: String, topping: String) {
     for _ in 1...width {
         for _ in 1...1 {
             print("",topping, terminator: "")
@@ -29,7 +29,7 @@ func drawIceCreamBody(width: Int, body: String, topping: String) {
     
 }
 
-func drawIceCreamBar(length: Int) {
+func drawPeperoBar(length: Int) {
     for _ in 1...length {
         for _ in 1...2 {
             print(" ", terminator: "")
@@ -38,7 +38,4 @@ func drawIceCreamBar(length: Int) {
     }
 }
 
-
-
-drawIceCream(bodyWidth: 4, IceBody: "*-*", Icetopping: "$", barLength: 3)
 
