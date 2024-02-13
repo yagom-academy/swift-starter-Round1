@@ -10,7 +10,7 @@ import Foundation
 
 func icecreamBody()
 {
-    for count in 1...12
+    for _count in 1...12
     {
         print("************")
     }
@@ -18,7 +18,7 @@ func icecreamBody()
 
 func icecreamBar()
 {
-    for count in 1...4
+    for _count1 in 1...4
     {
         print("    | |    ")
     }
