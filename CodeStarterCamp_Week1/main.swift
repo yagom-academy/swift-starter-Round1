@@ -2,26 +2,15 @@
 //  main.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by Jay Shin on 2/12/24.
 //
 
 import Foundation
 
-func drawIceCreamBody(bodyWidth: Int, bodyHeight: Int) {
-    for _ in 1...bodyHeight {
-        for _ in 1...bodyWidth {
-            print("*", terminator: "")
-        }
-        print("")
-    }
-}
+drawPepero(length: 10, base: "***", topping: " ", stickLength: 4)
+drawPepero(length: 12, base: "***", topping: "&", stickLength: 4)
+drawPepero(length: 12, base: "***", topping: "#", stickLength: 6)
+drawPepero(length: 6, base: "|0|", topping: " ", stickLength: 4)
 
-func drawIceCreamStick(stickLength: Int) {
-    for _ in 1...stickLength {
-        print("    | |")
-    }
-}
-
-drawIceCreamBody(bodyWidth: 11, bodyHeight: 8)
-drawIceCreamStick(stickLength: 5)
+// drawIceCreamBody(bodyWidth: 11, bodyHeight: 8)
+// drawIceCreamStick(stickLength: 5)
