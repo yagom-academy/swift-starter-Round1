@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
+		500F57332B7B8DDD006BC04A /* pocky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F57322B7B8DDD006BC04A /* pocky.swift */; };
+		500F57352B7B9095006BC04A /* icecream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F57342B7B9095006BC04A /* icecream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		500F57322B7B8DDD006BC04A /* pocky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pocky.swift; sourceTree = "<group>"; };
+		500F57342B7B9095006BC04A /* icecream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icecream.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				34811DAE274B938F00A1E994 /* main.swift */,
+				500F57322B7B8DDD006BC04A /* pocky.swift */,
+				500F57342B7B9095006BC04A /* icecream.swift */,
 			);
 			path = CodeStarterCamp_Week1;
 			sourceTree = "<group>";
@@ -119,6 +125,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500F57352B7B9095006BC04A /* icecream.swift in Sources */,
+				500F57332B7B8DDD006BC04A /* pocky.swift in Sources */,
 				34811DAF274B938F00A1E994 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

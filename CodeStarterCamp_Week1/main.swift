@@ -6,19 +6,12 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-
-
-func drawIcecreamBody() {
-    for _ in 1...8 {
-        print("***********")
-    }
-}
-
-func drawIcecreamStcik() {
-    for _ in 1...4 {
-        print("    | |    ")
-    }
-}
+// 아이스크림 그리기
 
 drawIcecreamBody()
 drawIcecreamStcik()
+
+
+// 빼빼로 그리기
+
+drawPocky(bodyLength: 6, body: "*****", stickLength: 4, topping: "|")
