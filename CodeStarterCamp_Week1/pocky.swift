@@ -6,12 +6,9 @@
 //
 
 
-func drawStick(length: Int, lengthOfBody: Int) {
+func drawStick(length: Int, widthOfBody: Int) {
     for _ in 1...length {
-        for _ in 1...(lengthOfBody-1) {
-            print(" ", terminator: "")
-        }
-        print("| |")
+        print(String(repeating: " ", count: widthOfBody/2 - 2), "| |")
     }
 }
 
@@ -19,9 +16,9 @@ func makeOneLineOfBody(body: String, topping: String) -> String {
     return(topping + body + topping)
 }
 
-func drawBody(length: Int, body: String, topping: String) {
+func drawBody(length: Int, oneLineOfBody: String) {
     for _ in 1...length{
-        print(makeOneLineOfBody(body: body, topping: topping))
+        print(oneLineOfBody)
     }
 }
 
@@ -34,11 +31,11 @@ func drawPocky(bodyLength: Int, body: String, stickLength: Int, topping: String 
     막대길이: \(stickLength)
     
     """)
+    let oneLineOfBody = makeOneLineOfBody(body: body, topping: topping)
+    let widthOfBody = oneLineOfBody.count
     
-    let lengthOfBody = makeOneLineOfBody(body: body, topping: topping).count / 2
-    
-    drawBody(length: bodyLength, body: body, topping: topping)
-    drawStick(length: stickLength, lengthOfBody: lengthOfBody)
+    drawBody(length: bodyLength, oneLineOfBody: oneLineOfBody)
+    drawStick(length: stickLength, widthOfBody: widthOfBody)
 
 }
 
