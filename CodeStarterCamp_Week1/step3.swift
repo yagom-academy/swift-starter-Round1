@@ -8,11 +8,10 @@
 
 import Foundation
 
-var length: Int = 6
-var body: String = "|0|"
+var length: Int = 10
+var body: String = "***"
 var topping: String = " " //one blank or topping
 var barLength: Int = 4
-
 
 func printInfo(){
     print(
@@ -33,8 +32,7 @@ func drawBar(len: Int){
 }
 
 func fixBody(main: String, top: String) -> String{
-    var completeBody = top + main + top
-    return completeBody
+    return top + main + top
 }
 
 func drawBody(body: String, len: Int){
@@ -43,8 +41,36 @@ func drawBody(body: String, len: Int){
     }
 }
 
+func printAll(toppedBody: String){
+    printInfo()
+    drawBody(body: toppedBody, len: length)
+    drawBar(len: barLength)
+}
 
-printInfo()
-var toppedBody: String = fixBody(main: body, top: topping)
-drawBody(body: toppedBody, len: length)
-drawBar(len: barLength)
+
+//실행 예시 1
+printAll(toppedBody: fixBody(main: body, top: topping))
+
+//실행 예시 2
+length = 12
+body = "***"
+topping = "&" //one blank or topping
+barLength = 4
+
+printAll(toppedBody: fixBody(main: body, top: topping))
+
+//실행 예시 3
+length = 12
+body = "***"
+topping = "#" //one blank or topping
+barLength  = 6
+
+printAll(toppedBody: fixBody(main: body, top: topping))
+
+//실행 예시 4
+length = 6
+body = "|0|"
+topping = " " //one blank or topping
+barLength = 4
+
+printAll(toppedBody: fixBody(main: body, top: topping))
