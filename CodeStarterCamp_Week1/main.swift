@@ -9,25 +9,27 @@
 import Foundation
 
 let sweetIce = "*"
-let woodStick = "|"
+let wood = "|"
 
-func makeIce(ice: String, level: Int) {
-    for _ in 1...level {
-        for _ in 1...11 {
-            print(ice,terminator:"")
-        }
-        print()
+func makeIcecream(ingredient ice: String, height: Int, width: Int) {
+    var icecream = ""
+    for currentHieght in 1...height {
+        for _ in 1...width { icecream += ice }
+        if(currentHieght != height) { icecream += "\n" }
     }
+    print(icecream)
 }
 
-func makeBar(stick: String, length: Int) {
-    for _ in 1...length {
-        print("    \(stick) \(stick)")
+func makeIcecreamBar(ingredient bar: String, height: Int) {
+    var icecreamBar = ""
+    for _ in 1...height {
+        icecreamBar += "    \(bar) \(bar)\n"
     }
+    print(icecreamBar)
 }
 
-makeIce(ice: sweetIce, level: 8)
-makeBar(stick: woodStick, length: 4)
+makeIcecream(ingredient: sweetIce, height: 8, width: 11)
+makeIcecreamBar(ingredient: wood, height: 4)
 
 
 
