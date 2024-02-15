@@ -14,4 +14,8 @@ drawIcecreamStcik()
 
 // 빼빼로 그리기
 
-drawPocky(bodyLength: 6, body: "*****", stickLength: 4, topping: "|")
+drawPocky(bodyLength: 6, body: "*****", stickLength: 4, topping: "&")
+drawPocky(bodyLength: 10, body: "***", stickLength: 4)
+drawPocky(bodyLength: 12, body: "***", stickLength: 4, topping: "&")
+drawPocky(bodyLength: 12, body: "***", stickLength: 6, topping: "#")
+drawPocky(bodyLength: 6, body: "|0|", stickLength: 4)
