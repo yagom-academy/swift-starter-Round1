@@ -8,21 +8,23 @@
 
 import Foundation
 
-func icecreamBody()
+func icecreamBodyDraw(i : Int)
 {
-    for _count in 1...12
+    for count1 in 1...i
     {
         print("************")
     }
 }
 
-func icecreamBar()
+func icecreamStickDraw(j : Int)
 {
-    for _count1 in 1...4
+    for count2 in 1...j
     {
         print("    | |    ")
     }
 }
+var i : Int = 12
+var j : Int = 4
 
-icecreamBody()
-icecreamBar()
+icecreamBodyDraw(i:i)
+icecreamStickDraw(j:j)
