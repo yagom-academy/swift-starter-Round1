@@ -28,5 +28,11 @@ let pigBar = 20
 let screwBar = 5
 let seojuBar = 11
 
-makeIcecream(ingredient: sweetIce, height: 8, width: pigBar)
-makeIcecreamBar(ingredient: wood, height: 4, iceCreamWidth: pigBar)
+//makeIcecream(ingredient: sweetIce, height: 8, width: pigBar)
+//makeIcecreamBar(ingredient: wood, height: 4, iceCreamWidth: pigBar)
+
+//pepero menu : basic, and, sharp, nude
+makePepero(menu: basic)
+//makePepero(menu: and)
+//makePepero(menu: sharp)
+//makePepero(menu: nude)
