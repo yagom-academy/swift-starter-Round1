@@ -13,7 +13,7 @@ let wood = "| |"
 
 func makeIcecream(ingredient ice: String, height: Int, width: Int) {
     let line = String(repeating: ice, count: width)
-    var icecream = Array(repeating: line, count: height).joined(separator: "\n")
+    let icecream = Array(repeating: line, count: height).joined(separator: "\n")
     print(icecream)
 }
 

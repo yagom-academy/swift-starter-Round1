@@ -26,7 +26,8 @@ let nude = pepero (handleLength: 4, body: "|0|", topping: " ", bodyLength: 6)
 
 
 func makeHandle(handleLength: Int) {
-    for _ in 1...handleLength { print(" | | ") }
+    let handle = Array(repeating: " | |", count: handleLength).joined(separator: "\n")
+    print(handle)
 }
 
 func setTaste(body: String, topping: String) -> String {
@@ -34,7 +35,8 @@ func setTaste(body: String, topping: String) -> String {
 }
 
 func makeBody(bodyLength: Int, taste: String) {
-    for _ in 1...bodyLength { print(taste) }
+    let body = Array(repeating: taste, count: bodyLength).joined(separator: "\n")
+    print(body)
 }
 
 func makePepero (menu: pepero) {
