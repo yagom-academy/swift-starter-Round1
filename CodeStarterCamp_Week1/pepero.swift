@@ -40,9 +40,7 @@ func makeBody(bodyLength: Int, taste: String) {
 }
 
 func makePepero (menu: pepero) {
-    makeBody(bodyLength: menu.bodyLength, taste: setTaste(body: menu.body, topping: menu.topping))
+    makeBody(bodyLength: menu.bodyLength,
+             taste: setTaste(body: menu.body, topping: menu.topping))
     makeHandle(handleLength: menu.handleLength)
 }
-
-
-
