@@ -8,5 +8,25 @@
 
 import Foundation
 
-print("Hello, World!")
+let sweetIce = "*"
+let wood = "| |"
 
+func makeIcecream(ingredient ice: String, height: Int, width: Int) {
+    let line = String(repeating: ice, count: width)
+    var icecream = Array(repeating: line, count: height).joined(separator: "\n")
+    print(icecream)
+}
+
+func makeIcecreamBar(ingredient bar: String, height: Int, iceCreamWidth: Int) {
+    let gap = String(repeating: " ", count: iceCreamWidth/2-1)
+    let line = "\(gap)\(bar)"
+    let icecreamBar = Array(repeating: line, count: height).joined(separator: "\n")
+    print(icecreamBar)
+}
+
+let pigBar = 20
+let screwBar = 5
+let seojuBar = 11
+
+makeIcecream(ingredient: sweetIce, height: 8, width: pigBar)
+makeIcecreamBar(ingredient: wood, height: 4, iceCreamWidth: pigBar)
