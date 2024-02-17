@@ -36,6 +36,7 @@
 		34811DAB274B938F00A1E994 /* CodeStarterCamp_Week1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeStarterCamp_Week1; sourceTree = BUILT_PRODUCTS_DIR; };
 		34811DAE274B938F00A1E994 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AC708AD32B8109D900121710 /* Mission3.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mission3.xcodeproj; path = Mission2/Mission3.xcodeproj; sourceTree = "<group>"; };
+		AC708AE82B811DF000121710 /* img_diagram_mission3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_diagram_mission3.png; path = ../../Downloads/img_diagram_mission3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +53,7 @@
 		34811DA2274B938F00A1E994 = {
 			isa = PBXGroup;
 			children = (
+				AC708AE82B811DF000121710 /* img_diagram_mission3.png */,
 				AC708AD32B8109D900121710 /* Mission3.xcodeproj */,
 				34811DAD274B938F00A1E994 /* CodeStarterCamp_Week1 */,
 				34811DAC274B938F00A1E994 /* Products */,
