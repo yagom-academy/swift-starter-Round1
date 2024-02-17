@@ -10,6 +10,16 @@
 		34811DAF274B938F00A1E994 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34811DAE274B938F00A1E994 /* main.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AC708AE42B811CA100121710 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC708AD32B8109D900121710 /* Mission3.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AC708AC92B8109D900121710;
+			remoteInfo = Mission3;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		34811DA9274B938F00A1E994 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -29,6 +39,7 @@
 		AC708ADC2B8119E200121710 /* img_diagram_mission3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_diagram_mission3.png; path = ../../Downloads/img_diagram_mission3.png; sourceTree = "<group>"; };
 		AC708ADD2B8119E800121710 /* img_diagram2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_diagram2.png; path = ../../Downloads/img_diagram2.png; sourceTree = "<group>"; };
 		AC708ADF2B811C5800121710 /* img_diagram_mission3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_diagram_mission3.png; path = ../../Downloads/img_diagram_mission3.png; sourceTree = "<group>"; };
+		AC708AE62B811D4600121710 /* img_diagram_mission3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_diagram_mission3.png; path = ../../Downloads/img_diagram_mission3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +56,7 @@
 		34811DA2274B938F00A1E994 = {
 			isa = PBXGroup;
 			children = (
+				AC708AE62B811D4600121710 /* img_diagram_mission3.png */,
 				AC708ADD2B8119E800121710 /* img_diagram2.png */,
 				AC708ADC2B8119E200121710 /* img_diagram_mission3.png */,
 				AC708ADF2B811C5800121710 /* img_diagram_mission3.png */,
@@ -68,6 +80,14 @@
 				34811DAE274B938F00A1E994 /* main.swift */,
 			);
 			path = CodeStarterCamp_Week1;
+			sourceTree = "<group>";
+		};
+		AC708AE12B811CA100121710 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC708AE52B811CA100121710 /* Mission3 */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,12 +136,28 @@
 			mainGroup = 34811DA2274B938F00A1E994;
 			productRefGroup = 34811DAC274B938F00A1E994 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AC708AE12B811CA100121710 /* Products */;
+					ProjectRef = AC708AD32B8109D900121710 /* Mission3.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				34811DAA274B938F00A1E994 /* CodeStarterCamp_Week1 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AC708AE52B811CA100121710 /* Mission3 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Mission3;
+			remoteRef = AC708AE42B811CA100121710 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		34811DA7274B938F00A1E994 /* Sources */ = {
