@@ -1,24 +1,19 @@
+let iceWidth: Int = 11
+let iceHeight: Int = 8
+let barWidth: Int = iceWidth / 2
+let barHeight: Int = iceHeight / 2
 
-import Foundation
+makeIceBody(iceWidth: iceWidth, iceHeight: iceHeight)
+makeBar(barWidth: barWidth, barHeight: barHeight)
 
-func makeIceCream(bodyWidth : Int){
-    for bodyHeight in 1...8 {
-        print("*",terminator: "")
+func makeIceBody(iceWidth: Int, iceHeight: Int) {
+    for _ in 1...iceHeight{
+        print(String(repeating: "*", count: iceWidth))
     }
-    print("")
-} //아이스크림을 만드는 함수
-
-for bodyWidth in 1...10 {
-    makeIceCream(bodyWidth: bodyWidth)
 }
 
-func makeBar() {
-    for barHeight in 1...4 {
-        print("  | |  ")
+func makeBar (barWidth: Int, barHeight: Int) {
+    for _ in 1...barHeight{
+        print(String(repeating: " ", count: barWidth - 1) + "| |")
     }
-}//막대기를 만드는 함수
-
-
-makeBar()
-
-
+}
