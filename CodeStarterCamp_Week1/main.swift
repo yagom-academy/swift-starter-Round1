@@ -17,3 +17,4 @@ func makeBar (barWidth: Int, barHeight: Int) {
         print(String(repeating: " ", count: barWidth - 1) + "| |")
     }
 }
+
