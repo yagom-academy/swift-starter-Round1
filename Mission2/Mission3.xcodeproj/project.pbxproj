@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		AC708AC92B8109D900121710 /* Mission3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mission3; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC708ACC2B8109D900121710 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AC708ADE2B811BD300121710 /* img_diagram_mission3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_diagram_mission3.png; path = ../../../../Downloads/img_diagram_mission3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		AC708ACB2B8109D900121710 /* Mission3 */ = {
 			isa = PBXGroup;
 			children = (
+				AC708ADE2B811BD300121710 /* img_diagram_mission3.png */,
 				AC708ACC2B8109D900121710 /* main.swift */,
 			);
 			path = Mission3;
