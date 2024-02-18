@@ -1,14 +1,11 @@
 //
-//  main.swift
+//  File.swift
 //  CodeStarterCamp_Week1
 //
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
+//  Created by SeongHoon Jung on 2/18/24.
 //
 
 import Foundation
-
-print("Hello, World!")
 
 
 func drawIceCream() {
@@ -27,7 +24,3 @@ func drawStick() {
             print("    | |   ")
     }
 }
-
-
-drawIceCream()
-drawStick()
