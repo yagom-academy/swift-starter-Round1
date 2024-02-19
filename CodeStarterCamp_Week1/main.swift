@@ -36,3 +36,5 @@ makePepero(menu: basic)
 //makePepero(menu: and)
 //makePepero(menu: sharp)
 //makePepero(menu: nude)
+
+var optionalValue: Optional<String> = nil

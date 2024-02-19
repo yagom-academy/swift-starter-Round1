@@ -5,7 +5,7 @@
 //  Created by CHYUN on 2/16/24.
 //
 
-class pepero {
+struct Pepero {
     var handleLength: Int
     var body: String
     var topping: String
@@ -19,28 +19,28 @@ class pepero {
     }
 }
 
-let basic = pepero (handleLength: 4, body: "***", topping: " ", bodyLength: 10)
-let and = pepero (handleLength: 4, body: "***", topping: "&", bodyLength: 12)
-let sharp = pepero (handleLength: 6, body: "***", topping: "#", bodyLength: 12)
-let nude = pepero (handleLength: 4, body: "|0|", topping: " ", bodyLength: 6)
+let basic = Pepero (handleLength: 4, body: "***", topping: " ", bodyLength: 10)
+let and = Pepero (handleLength: 4, body: "***", topping: "&", bodyLength: 12)
+let sharp = Pepero (handleLength: 6, body: "***", topping: "#", bodyLength: 12)
+let nude = Pepero (handleLength: 4, body: "|0|", topping: " ", bodyLength: 6)
 
 
-func makeHandle(handleLength: Int) {
+func makeHandle(handleLength: Int) -> String {
     let handle = Array(repeating: " | |", count: handleLength).joined(separator: "\n")
-    print(handle)
+    return handle
 }
 
-func setTaste(body: String, topping: String) -> String {
+func assembleTaste(body: String, topping: String) -> String {
     return "\(topping)\(body)\(topping)"
 }
 
-func makeBody(bodyLength: Int, taste: String) {
+func makeBody(bodyLength: Int, taste: String) -> String {
     let body = Array(repeating: taste, count: bodyLength).joined(separator: "\n")
-    print(body)
+    return body
 }
 
-func makePepero (menu: pepero) {
-    makeBody(bodyLength: menu.bodyLength,
-             taste: setTaste(body: menu.body, topping: menu.topping))
-    makeHandle(handleLength: menu.handleLength)
+func makePepero (menu: Pepero) {
+    print(makeBody(bodyLength: menu.bodyLength,
+                   taste: assembleTaste(body: menu.body, topping: menu.topping))
+    + "\n" + makeHandle(handleLength: menu.handleLength))
 }
