@@ -13,7 +13,7 @@ let wood = "| |"
 
 func makeIcecream(ingredient ice: String, height: Int, width: Int) {
     let line = String(repeating: ice, count: width)
-    var icecream = Array(repeating: line, count: height).joined(separator: "\n")
+    let icecream = Array(repeating: line, count: height).joined(separator: "\n")
     print(icecream)
 }
 
@@ -28,5 +28,13 @@ let pigBar = 20
 let screwBar = 5
 let seojuBar = 11
 
-makeIcecream(ingredient: sweetIce, height: 8, width: pigBar)
-makeIcecreamBar(ingredient: wood, height: 4, iceCreamWidth: pigBar)
+//makeIcecream(ingredient: sweetIce, height: 8, width: pigBar)
+//makeIcecreamBar(ingredient: wood, height: 4, iceCreamWidth: pigBar)
+
+//pepero menu : basic, and, sharp, nude
+makePepero(menu: basic)
+//makePepero(menu: and)
+//makePepero(menu: sharp)
+//makePepero(menu: nude)
+
+var optionalValue: Optional<String> = nil
