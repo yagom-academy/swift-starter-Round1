@@ -10,13 +10,6 @@ struct Pepero {
     var body: String
     var topping: String
     var bodyLength: Int
-    
-    init(handleLength: Int, body: String, topping: String, bodyLength: Int) {
-        self.handleLength = handleLength
-        self.body = body
-        self.topping = topping
-        self.bodyLength = bodyLength
-    }
 }
 
 let basic = Pepero (handleLength: 4, body: "***", topping: " ", bodyLength: 10)
