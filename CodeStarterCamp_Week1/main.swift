@@ -6,7 +6,31 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
+//import Foundation
 
-print("Hello, World!")
+
+// let icecreamHead = "***********"
+// let icecreamStick = "    | |    "
+// for _ in 1...8 {
+//    print(icecreamHead)
+// }
+// for _ in 1...4 {
+//    print(icecreamStick)
+// }
+
+
+
+func draw(iceCreamHead: String) {
+    for _ in 1...8 {
+        print(iceCreamHead)
+    }
+ }
+
+func draw(iceCreamStick : String) {
+    for _ in 1...4 {
+        print(iceCreamStick)
+    }
+}
+draw(iceCreamHead: "***********")
+draw(iceCreamStick: "    | |")
 
