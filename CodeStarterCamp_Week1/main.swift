@@ -8,18 +8,14 @@
 
 import Foundation
 
-func drawIceCreamBody(bodyWidth : Int)
-{
-    for bodyDrawCount in 1...bodyWidth
-    {
+func drawIceCreamBody(bodyWidth : Int) {
+    for bodyDrawCount in 1...bodyWidth {
         print("************")
     }
 }
 
-func drawIceCreamStick(stickWidth : Int)
-{
-    for stickDrawCount in 1...stickWidth
-    {
+func drawIceCreamStick(stickWidth : Int) {
+    for stickDrawCount in 1...stickWidth {
         print("    | |    ")
     }
 }
