@@ -8,31 +8,21 @@
 
 //import Foundation
 
-/* step2 수정했습니다.
 
-func drawIceCreamHead() {
-    for _ in 1...8 {
-        print()
-        for _ in 1...11 {
-            print("*", terminator: "")
-        }
-    }
-}
-
-
-func drawIceCreamStick() {
-    print()
-    for _ in 1...4 {
-        print("    | |")
-    }
-}
-
-drawIceCreamHead()
-drawIceCreamStick()
-
-*/
 
 // step3
+
+
+func drawPepero(body: String, topping: String, stick: String, bodyLength: Int, stickLength: Int) {
+    for _ in 1...bodyLength {
+        print(topping, body, topping, separator: "")
+    }
+    for _ in 1...stickLength {
+        print("", stick)
+    }
+}
+
+
 
 print(
 """
@@ -44,16 +34,7 @@ print(
 막대길이: 4
 
 """)
-
-func drawBasicPepero(body: String, stick: String, bodyLength: Int, stickLength: Int) {
-    for _ in 1...bodyLength {
-        print(body)
-    }
-    for _ in 1...stickLength {
-        print(stick)
-    }
-}
-drawBasicPepero(body: " ***", stick: " | |", bodyLength: 10, stickLength: 4)
+drawPepero(body: " ***",topping: "", stick: "| |", bodyLength: 10, stickLength: 4)
 print(
 """
 
@@ -66,17 +47,7 @@ print(
  막대길이: 4
 
 """)
-
-
-func drawSecondPepero(body: String, topping: String, stick: String, bodyLength: Int, stickLength: Int) {
-    for _ in 1...bodyLength {
-        print(topping, body, topping, separator: "")
-    }
-    for _ in 1...stickLength {
-        print(stick)
-    }
-}
-drawSecondPepero(body: "***", topping: "&", stick: " | |", bodyLength: 12, stickLength: 4)
+drawPepero(body: "***", topping: "&", stick: "| |", bodyLength: 12, stickLength: 4)
 print(
 """
 
@@ -89,16 +60,7 @@ print(
 막대길이: 6
 
 """)
-
-func drawThirdPepero(body: String, topping: String, stick: String, bodyLength: Int, stickLength: Int) {
-    for _ in 1...bodyLength {
-        print(topping, body, topping, separator: "")
-    }
-    for _ in 1...stickLength {
-        print(stick)
-    }
-}
-drawThirdPepero(body: "***", topping: "#", stick: " | |", bodyLength: 12, stickLength: 6)
+drawPepero(body: "***", topping: "#", stick: "| |", bodyLength: 12, stickLength: 6)
 print(
 """
 
@@ -111,16 +73,7 @@ print(
 막대길이: 4
 
 """)
-
-func drawNudePepero(body: String, stick: String, bodyLength: Int, stickLength: Int) {
-    for _ in 1...bodyLength {
-        print(body)
-    }
-    for _ in 1...stickLength {
-        print(stick)
-    }
-}
-drawNudePepero(body: " |0|", stick: " | |", bodyLength: 6, stickLength: 4)
+drawPepero(body: " |0|",topping: "", stick: "| |", bodyLength: 6, stickLength: 4)
 print(
 """
 
@@ -133,14 +86,5 @@ print(
 막대길이: 6
 
 """)
-
-func drawMyPepero(body: String, topping: String, stick: String, bodyLength: Int, stickLength: Int) {
-    for _ in 1...bodyLength {
-        print(topping, body, topping, separator: "")
-    }
-    for _ in 1...stickLength {
-        print(stick)
-    }
-}
-drawMyPepero(body: "ooo", topping: "@", stick: " |||", bodyLength: 12, stickLength: 6)
+drawPepero(body: "ooo", topping: "@", stick: "|||", bodyLength: 12, stickLength: 6)
 
