@@ -24,3 +24,26 @@ func drawStick() {
             print("    | |   ")
     }
 }
+
+
+
+
+
+func drawIcecream(width x: Int, length y: Int) {
+    
+    for _ in 1...y {
+        for _ in 1...x {
+            print("*", terminator: "")
+        }
+        print()
+    }
+    
+}
+
+
+func drawStick(height h: Int) {
+        for _ in 1...h {
+            print("    | |")
+    }
+}
+
