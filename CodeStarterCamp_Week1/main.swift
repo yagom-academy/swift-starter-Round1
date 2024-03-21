@@ -10,8 +10,8 @@ import Foundation
 
 
 func iceCream(){
-    for i in 1...8{
-        for j in 1...11{
+    for _ in 1...8{
+        for _ in 1...11{
             print("*", terminator: "")
         }
         print()
@@ -19,8 +19,8 @@ func iceCream(){
 }
 
 func iceCreamBar(){
-    for i in 1...4{
-        for j in 1...4{
+    for _ in 1...4{
+        for _ in 1...4{
             print(" ", terminator: "")
         }
         print("|", terminator: " ")
