@@ -1,12 +1,16 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
-
 import Foundation
 
-print("Hello, World!")
+func makeCream() {
+    for layer in 1...8 {
+        print("***********")
+    }
+}
 
+func makeStick() {
+    for layer in 1...4 {
+        print("    | |    ")
+    }
+}
+
+makeCream()
+makeStick()
