@@ -20,5 +20,5 @@ func chocoSnack(lengthOfChoco: Int, shapeOfbody: String, toping: String, lengthO
         print("  | |")
     }
 }
-//빼빼로 좌측엔 빈칸 하나가 있음
+//빼빼로 좌측엔 빈칸 하나가 있다.
 chocoSnack(lengthOfChoco: 4, shapeOfbody: " ***", toping: " ", lengthOfBar: 4)
