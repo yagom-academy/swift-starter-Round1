@@ -21,5 +21,5 @@ func makeBar() {
 }
 
 makeIce()
-makeIce()
+makeBar()
 
