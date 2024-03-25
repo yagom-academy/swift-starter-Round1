@@ -1,25 +1,25 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
+    //
+    //  main.swift
+    //  CodeStarterCamp_Week1
+    //
+    //  Created by yagom.
+    //  Copyright © yagom academy. All rights reserved.
+    //
 
-import Foundation
+    import Foundation
 
-func makeIce() {
-    for _ in 1...8 {
-        print("**********")
+    func makeIce() {
+        for _ in 1...8 {
+            print("**********")
+        }
     }
-}
 
-func makeBar() {
-    for _ in 1...4 {
-        print("|  |")
+    func makeBar() {
+        for _ in 1...4 {
+            print("|  |")
+        }
     }
-}
 
-makeIce()
-makeBar()
+    makeIce()
+    makeBar()
 
