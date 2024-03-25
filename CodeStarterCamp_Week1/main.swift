@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+//아이스크림 부분
 func iceCream(){
     for _ in 1...8{
         for _ in 1...11{
@@ -17,7 +17,7 @@ func iceCream(){
         print()
     }
 }
-
+//아이스크림 바 부분
 func iceCreamBar(){
     for _ in 1...4{
         for _ in 1...4{
