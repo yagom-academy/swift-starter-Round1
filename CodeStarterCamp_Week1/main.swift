@@ -8,5 +8,18 @@
 
 import Foundation
 
-print("Hello, World!")
+func makeIce() {
+    for _ in 1...8 {
+        print("**********")
+    }
+}
+
+func makeBar() {
+    for _ in 1...4 {
+        print("|  |")
+    }
+}
+
+makeIce()
+makeIce()
 
