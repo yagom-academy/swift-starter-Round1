@@ -1,9 +1,25 @@
 import Foundation
 
-makeIceCream()
+func makeStick(stickLength: Int) {
+    for _ in 0..<stickLength {
+        print(" | | ")
+    }
+}
 
-makePepero(길이: 10, 몸통: "***", 막대길이: 4)
-makePepero(길이: 12, 몸통: "***", 토핑: "&", 막대길이: 4)
-makePepero(길이: 12, 몸통: "***", 토핑: "#", 막대길이: 6)
-makePepero(길이: 6, 몸통: "|0|", 막대길이: 4)
+func makePeperoBody(body: String, topping: String = " ") -> String {
+    return topping + body + topping
+}
 
+func makePeperoBodyLength(bodyLength: Int, body: String, topping: String = " ") {
+    for _ in 0..<bodyLength {
+        print(makePeperoBody(body: body, topping: topping))
+    }
+}
+
+func makePepero(bodyLength: Int, body: String, topping: String = " ", stickLength: Int) {
+    makePeperoBodyLength(bodyLength: bodyLength, body: body, topping: topping)
+    makeStick(stickLength: stickLength)
+}
+
+
+makePepero(bodyLength: 12, body: "***", topping: "#", stickLength: 6)
