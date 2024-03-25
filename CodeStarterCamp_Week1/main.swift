@@ -1,24 +1,24 @@
 import Foundation
 
-func makeStick(stickLength: Int) {
-    for _ in 0..<stickLength {
+func makeStick(length: Int) {
+    for _ in 0..<length {
         print(" | | ")
     }
 }
 
-func makePeperoBody(body: String, topping: String = " ") -> String {
+func makeBody(body: String, topping: String = " ") -> String {
     return topping + body + topping
 }
 
-func makePeperoBodyLength(bodyLength: Int, body: String, topping: String = " ") {
-    for _ in 0..<bodyLength {
-        print(makePeperoBody(body: body, topping: topping))
+func makeBodyLength(length: Int, body: String, topping: String = " ") {
+    for _ in 0..<length {
+        print(makeBody(body: body, topping: topping))
     }
 }
 
 func makePepero(bodyLength: Int, body: String, topping: String = " ", stickLength: Int) {
-    makePeperoBodyLength(bodyLength: bodyLength, body: body, topping: topping)
-    makeStick(stickLength: stickLength)
+    makeBodyLength(length: bodyLength, body: body, topping: topping)
+    makeStick(length: stickLength)
 }
 
 
