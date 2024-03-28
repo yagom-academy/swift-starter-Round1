@@ -1,19 +1,26 @@
 // Step 2: 아이스크림 그리기
 
-func iceCream(icecreamCulumn culumn : Int, icecreamRow row : Int) {
+func makeIceCream(icecreamCulumn culumn : Int, icecreamRow row : Int) {
+    var icecreamStr = ""
     for _ in 1...culumn {
         for _ in 1...row {
-            print("*", terminator: "")
+            icecreamStr += "*"
         }
-        print("")
+        icecreamStr += "\n"
     }
+    print(icecreamStr, terminator: "")
 }
 
-func iceCreamStick(stickLength : Int) {
+func makeIceCreamStick(stickLength : Int, icecreamRow row : Int) {
+    var stickStr = ""
     for _ in 1...stickLength {
-        print("    | |    ")
+        var blankspace = ""
+        for _ in 1...(row - 3) / 2 {
+            blankspace += " "
+        }
+        stickStr += blankspace + (row % 2 == 0 ? "|  |" : "| |") + "\n"
     }
+    print(stickStr)
 }
-
-iceCream(icecreamCulumn : 8, icecreamRow : 11)
-iceCreamStick(stickLength : 4)
+makeIceCream(icecreamCulumn : 8, icecreamRow : 11)
+makeIceCreamStick(stickLength : 4, icecreamRow : 11)
